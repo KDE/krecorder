@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=voicememo
+Comment=voicememo Kirigami Application
+Version=1.0
+Exec=voicememo
+MimeType=application/x-voicememo;
+Icon=applications-development
+Type=Application
+Terminal=false
+Categories=Qt;KDE;
