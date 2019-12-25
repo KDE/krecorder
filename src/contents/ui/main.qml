@@ -13,8 +13,9 @@ Kirigami.ApplicationWindow {
 
     globalDrawer: Kirigami.GlobalDrawer {
         actions: Kirigami.Action {
-            text: i18n("Settings")
+            text: i18n("Advanced Settings")
             icon.name: "settings-configure"
+            onTriggered: pageStack.layers.push("qrc:/Settings.qml", {recorder: audioRecorder})
         }
     }
 
@@ -26,11 +27,13 @@ Kirigami.ApplicationWindow {
             "fileName": ""
         }
 
+        // TODO
+        // reasonable defaults for codec and container
+
         onDurationChanged: lastRecording["duration"] = duration
         onActualLocationChanged: lastRecording["fileName"] = audioRecorder.outputLocation.toString()
         onStatusChanged: {
             if (status == AudioRecorder.StartingStatus) {
-                print("hi")
                 lastRecording["recordingTime"] = Date()
             }
         }

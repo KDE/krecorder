@@ -8,6 +8,7 @@
 
 #include "recordingmodel.h"
 #include "utils.h"
+#include "audiorecorder.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -17,7 +18,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("voicememo");
 
-    qmlRegisterType<QAudioRecorder>("VoiceMemo", 1, 0, "AudioRecorder");
+    qmlRegisterType<AudioRecorder>("VoiceMemo", 1, 0, "AudioRecorder");
+    //qmlRegisterUncreatableType<QAudioEncoderSettings>("VoiceMemo", 1, 0, "AudioEncoderSettings", "Created by AudioRecorder");
     qmlRegisterType<RecordingModel>("VoiceMemo", 1, 0, "RecordingModel");
     qmlRegisterSingletonType<Utils>("VoiceMemo", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return new Utils;

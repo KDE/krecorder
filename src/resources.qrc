@@ -4,5 +4,6 @@
         <file alias="GradientBar.qml">contents/ui/GradientBar.qml</file>
         <file alias="Visualization.qml">contents/ui/Visualization.qml</file>
         <file alias="Bar.qml">contents/ui/Bar.qml</file>
+        <file alias="Settings.qml">Settings.qml</file>
     </qresource>
 </RCC>
