@@ -1,9 +1,10 @@
-import QtQuick 2.1
+import QtQuick 2.12
 import org.kde.kirigami 2.4 as Kirigami
 import QtQuick.Controls 2.2 as Controls
 import QtMultimedia 5.12
 import VoiceMemo 1.0
 import QtQuick.Layouts 1.2
+import QtQml 2.14
 
 Kirigami.ApplicationWindow {
     id: root
@@ -19,8 +20,27 @@ Kirigami.ApplicationWindow {
 
     AudioRecorder {
         id: audioRecorder
-        onStateChanged: console.log("state changed", state)
-        onStatusChanged: console.log("Status chaged", status)
+        property var lastRecording: {
+            "recordingTime": "",
+            "duration": "",
+            "fileName": ""
+        }
+
+        onDurationChanged: lastRecording["duration"] = duration
+        onActualLocationChanged: lastRecording["fileName"] = audioRecorder.outputLocation.toString()
+        onStatusChanged: {
+            if (status == AudioRecorder.StartingStatus) {
+                print("hi")
+                lastRecording["recordingTime"] = Date()
+            }
+        }
+
+        onStateChanged: {
+            if (state === AudioRecorder.StoppedState && outputLocation) {
+                print(JSON.stringify(lastRecording))
+                recordingModel.insertRecording(lastRecording)
+            }
+        }
     }
 
     pageStack.initialPage: Kirigami.Page {
@@ -41,34 +61,81 @@ Kirigami.ApplicationWindow {
             anchors.fill: parent
             interactive: false
             currentIndex: audioRecorder.status === AudioRecorder.RecordingStatus ? 1 : 0
+
+            // Child 0
             Controls.ScrollView {
                 ListView {
-                    anchors.fill: parent
-                    model: ListModel {
-                        ListElement {
-                            name: "Aufnahme 1"
-                        }
-                        ListElement {
-                            name: "Aufnahme 3"
-                        }
+                    Controls.Label {
+                        anchors.centerIn: parent
+                        visible: parent.count === 0
+                        text: i18n("No recordings yet, record your first!")
                     }
 
-                    delegate: Kirigami.BasicListItem {
-                        text: name
+                    anchors.fill: parent
+                    model: RecordingModel {id: recordingModel}
+
+                    delegate: Kirigami.SwipeListItem {
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            Controls.Label {
+                                text: model.recordingTime
+                            }
+                            Controls.Label {
+                                color: Kirigami.Theme.disabledTextColor
+                                text: Utils.formatTime(model.duration)
+                            }
+                        }
+
+                        actions: [
+                            Kirigami.Action {
+                                text: i18n("Delete recording")
+                                icon.name: "list-remove"
+                                onTriggered: recordingModel.deleteRecording(model.currentIndex)
+                            }
+                        ]
                     }
                 }
             }
+
+            // Child 1
             Rectangle {
-                color: "lightblue"
+                color: Kirigami.Theme.hoverColor
 
                 ColumnLayout {
-                    Rectangle {
-                        Layout.alignment: Qt.AlignHCenter
-                        width: 500
+                    anchors.fill: parent
+                    anchors.bottomMargin: 100
+                    spacing: 0
+
+                    Visualization {
+                        Layout.fillWidth: true
                         height: 500
+
+                        Timer {
+                            interval: 100
+                            running: true
+                            repeat: true
+                            onTriggered: {
+                                parent.value1 = Utils.randomNumber()
+                                parent.value2 = Utils.randomNumber()
+                                parent.value3 = Utils.randomNumber()
+                                parent.value4 = Utils.randomNumber()
+                                parent.value5 = Utils.randomNumber()
+                            }
+                        }
                     }
-                    Controls.Label {
-                        text: audioRecorder.duration
+
+                    GradientBar {
+                        Layout.alignment: Qt.AlignHCenter
+                    }
+
+                    Kirigami.Heading {
+                        id: timeText
+                        Layout.alignment: Qt.AlignHCenter
+                        text: Utils.formatTime(audioRecorder.duration)
+                    }
+
+                    GradientBar {
+                        Layout.alignment: Qt.AlignHCenter
                     }
                 }
             }

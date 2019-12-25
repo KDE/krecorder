@@ -6,6 +6,9 @@
 #include <KLocalizedContext>
 #include <QAudioRecorder>
 
+#include "recordingmodel.h"
+#include "utils.h"
+
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -15,6 +18,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("voicememo");
 
     qmlRegisterType<QAudioRecorder>("VoiceMemo", 1, 0, "AudioRecorder");
+    qmlRegisterType<RecordingModel>("VoiceMemo", 1, 0, "RecordingModel");
+    qmlRegisterSingletonType<Utils>("VoiceMemo", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+        return new Utils;
+    });
 
     QQmlApplicationEngine engine;
 

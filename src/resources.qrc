@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
+        <file alias="GradientBar.qml">contents/ui/GradientBar.qml</file>
+        <file alias="Visualization.qml">contents/ui/Visualization.qml</file>
+        <file alias="Bar.qml">contents/ui/Bar.qml</file>
     </qresource>
 </RCC>
