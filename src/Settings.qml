@@ -31,6 +31,7 @@ Kirigami.ScrollablePage {
 
         Controls.Slider {
             Kirigami.FormData.label: i18n("Audio Quality")
+            value: recorder.audioQuality
             // enum values
             from: 0
             to: 4
