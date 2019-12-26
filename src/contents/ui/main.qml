@@ -46,6 +46,12 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    Audio {
+        id: audioPlayer
+
+        onSourceChanged: print(source)
+    }
+
     pageStack.initialPage: Kirigami.Page {
         leftPadding: 0
         rightPadding: 0
@@ -78,6 +84,10 @@ Kirigami.ApplicationWindow {
                     model: RecordingModel {id: recordingModel}
 
                     delegate: Kirigami.SwipeListItem {
+                        onClicked: {
+                            audioPlayer.source = "file://" + model.fileName
+                            audioPlayer.play()
+                        }
                         ColumnLayout {
                             Layout.fillWidth: true
                             Controls.Label {
