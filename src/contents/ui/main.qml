@@ -44,6 +44,8 @@ Kirigami.ApplicationWindow {
                 recordingModel.insertRecording(lastRecording)
             }
         }
+
+        //onVolumesListChanged: console.log(volumesList)
     }
 
     Audio {
@@ -123,18 +125,7 @@ Kirigami.ApplicationWindow {
                         Layout.fillWidth: true
                         height: 500
 
-                        Timer {
-                            interval: 100
-                            running: true
-                            repeat: true
-                            onTriggered: {
-                                parent.value1 = Utils.randomNumber()
-                                parent.value2 = Utils.randomNumber()
-                                parent.value3 = Utils.randomNumber()
-                                parent.value4 = Utils.randomNumber()
-                                parent.value5 = Utils.randomNumber()
-                            }
-                        }
+                        volumes: audioRecorder.volumesList
                     }
 
                     GradientBar {

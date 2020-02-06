@@ -16,9 +16,3 @@ QString Utils::formatTime(int time)
 {
     return QTime::fromMSecsSinceStartOfDay(time).toString();
 }
-
-int Utils::randomNumber()
-{
-    auto generator = QRandomGenerator::securelySeeded();
-    return generator.bounded(500);
-}

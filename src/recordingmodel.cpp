@@ -53,7 +53,7 @@ int RecordingModel::rowCount(const QModelIndex &parent) const
     return parent.isValid() ? 0 : m_recordings.count();
 }
 
-void RecordingModel::insertRecording(QJsonObject recording)
+void RecordingModel::insertRecording(const QJsonObject &recording)
 {
     beginInsertRows({}, m_recordings.count(), m_recordings.count());
     m_recordings.append(recording.toVariantHash());

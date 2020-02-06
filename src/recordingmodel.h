@@ -25,7 +25,7 @@ public:
     QHash<int, QByteArray> roleNames() const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
-    Q_INVOKABLE void insertRecording(QJsonObject recording);
+    Q_INVOKABLE void insertRecording(const QJsonObject& recording);
     Q_INVOKABLE void deleteRecording(const int index);
 
 signals:
