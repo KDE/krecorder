@@ -2,6 +2,7 @@
 #define AUDIORECORDER_H
 
 #include <QAudioRecorder>
+#include <QAudioProbe>
 #include <QAudioEncoderSettings>
 
 class AudioRecorder : public QAudioRecorder
@@ -14,8 +15,16 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
 
+    Q_PROPERTY(QList<int> volumesList READ volumesList NOTIFY volumesListChanged)
+
 private:
     QAudioEncoderSettings m_encoderSettings {};
+    QAudioProbe *m_audioProbe;
+
+    void process(QAudioBuffer buffer);
+    int m_probeN = 0;
+
+    QList<int> m_volumesList;
 
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
@@ -37,9 +46,14 @@ public:
         emit audioQualityChanged();
     }
 
+    QList<int> volumesList() const;
+    void setVolumesList(const QList<int> &volumesList);
+
 signals:
     void audioCodecChanged();
     void audioQualityChanged();
+
+    void volumesListChanged();
 };
 
 #endif // AUDIORECORDER_H

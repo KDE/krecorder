@@ -1,31 +1,22 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.12
 
+import org.kde.quickcharts 1.0 as Charts
+import org.kde.quickcharts.controls 1.0 as ChartsControls
+
 Item {
+    id: visualization
     height: 500
+    property var volumes: []
 
-    property int value1
-    property int value2
-    property int value3
-    property int value4
-    property int value5
+    onVolumesChanged: console.log(volumes)
 
-    RowLayout {
+    ChartsControls.LineChartControl {
+        id: lineChart
+
         anchors.fill: parent
-        Bar {
-            height: value1
-        }
-        Bar {
-            height: value2
-        }
-        Bar {
-            height: value3
-        }
-        Bar {
-            height: value4
-        }
-        Bar {
-            height: value5
-        }
+        valueSources: [
+            Charts.ArraySource { array: visualization.volumes }
+        ]
     }
 }
