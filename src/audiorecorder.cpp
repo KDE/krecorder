@@ -6,10 +6,14 @@
 
 AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 {
-    m_audioProbe = new QAudioProbe();
+    m_audioProbe = new QAudioProbe(parent);
     connect(m_audioProbe, &QAudioProbe::audioBufferProbed, this, &AudioRecorder::process);
 
     m_audioProbe->setSource(this);
+
+    for (int n = 0; n < 1000; ++n) {
+        m_volumesList.append(0);
+    }
 }
 
 void AudioRecorder::process(QAudioBuffer buffer) {
@@ -18,13 +22,32 @@ void AudioRecorder::process(QAudioBuffer buffer) {
     for(int i = 0; i < buffer.sampleCount(); i++) {
         sum += abs(static_cast<short *>(buffer.data())[i]);
     }
-    sum/=buffer.sampleCount();
+    sum /= buffer.sampleCount();
+    /*int previous = 0;
+    for(int i = 901; i < 1000; i++) {
+        previous += m_volumesList[i];
+    }
+    previous += sum;
+    previous /= 100;*/
 
-    m_volumesList.append(sum);
+    /*if (previous > 1000) {
+        m_volumesList.append(1000);
+    } else {
+        m_volumesList.append(previous);
+    }*/
+    if (sum > 1000) {
+        m_volumesList.append(1000);
+    } else {
+        m_volumesList.append(sum);
+    }
+
+    if (m_volumesList.count() > 300) {
+        m_volumesList.removeFirst();
+    }
     volumesListChanged();
 }
 
-QList<int> AudioRecorder::volumesList() const
+QVariantList AudioRecorder::volumesList() const
 {
-    return m_volumesList;
+    return QVariantList(m_volumesList.begin(), m_volumesList.end());
 }

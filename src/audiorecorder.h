@@ -15,7 +15,7 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
 
-    Q_PROPERTY(QList<int> volumesList READ volumesList NOTIFY volumesListChanged)
+    Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
 
 private:
     QAudioEncoderSettings m_encoderSettings {};
@@ -46,7 +46,7 @@ public:
         emit audioQualityChanged();
     }
 
-    QList<int> volumesList() const;
+    QVariantList volumesList() const;
     void setVolumesList(const QList<int> &volumesList);
 
 signals:
