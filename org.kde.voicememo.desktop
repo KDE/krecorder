@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=voicememo
-Comment=voicememo Kirigami Application
+Name=Recorder
+Comment=Audio Recorder
 Version=1.0
-Exec=voicememo
+Exec=krecorder
 MimeType=application/x-voicememo;
 Icon=applications-development
 Type=Application

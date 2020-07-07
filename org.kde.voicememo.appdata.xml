@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
-  <id>org.kde.voicememo</id>
-  <name>Kirigami Application</name>
-  <summary>A short summary describing what this software is about</summary>
+  <id>org.kde.krecorder</id>
+  <name>Recorder</name>
+  <summary>Audio Recorder</summary>
   <metadata_license>A permissive license for this metadata, e.g. "FSFAP"</metadata_license>
   <project_license>The license of this software as SPDX string, e.g. "GPL-3+"</project_license>
   <developer_name>The software vendor name, e.g. "ACME Corporation"</developer_name>
