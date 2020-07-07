@@ -6,46 +6,81 @@
 
 #include "utils.h"
 #include <QDebug>
+#include <QJsonDocument>
+#include <QJsonArray>
 
+/* ~ Recording ~ */
+
+Recording::Recording(QObject* parent, QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
+    : QObject(parent)
+    , filePath_(filePath)
+    , fileName_(fileName)
+    , recordDate_(recordDate)
+    , recordingLength_(recordingLength)
+{}
+
+Recording::Recording(const QJsonObject &obj)
+{
+    filePath_ = obj["filePath"].toString();
+    fileName_ = obj["fileName"].toString();
+    recordDate_ = QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate);
+    recordingLength_ = obj["recordingLength"].toInt();
+}
+
+Recording::~Recording()
+{
+}
+
+
+QJsonObject Recording::toJson()
+{
+    QJsonObject obj;
+    obj["filePath"] = filePath_;
+    obj["fileName"] = fileName_;
+    obj["recordDate"] = recordDate_.toString(Qt::DateFormat::ISODate);
+    obj["recordingLength"] = recordingLength_;
+    return obj;
+}
+
+
+/* ~ RecordingModel ~ */
 
 RecordingModel::RecordingModel(QObject *parent) : QAbstractListModel(parent)
 {
     m_settings = new QSettings(parent);
-    m_recordings = m_settings->value(QStringLiteral("recordings")).toList();
+    load();
 }
 
 RecordingModel::~RecordingModel()
 {
-    m_settings->setValue(QStringLiteral("recordings"), m_recordings);
+    save();
     delete m_settings;
+    
+    for (auto *v : m_recordings)
+        delete v;
+}
+
+void RecordingModel::load()
+{
+    QJsonDocument doc = QJsonDocument::fromJson(m_settings->value(QStringLiteral("recordings")).toString().toUtf8());
+    for (QJsonValueRef r : doc.array()) {
+        QJsonObject obj = r.toObject();
+        m_recordings.append(new Recording(obj));
+    }
+}
+
+void RecordingModel::save()
+{
+    QJsonArray arr;
+    for (auto rec : m_recordings)
+        arr.push_back(rec->toJson());
+    
+    m_settings->setValue(QStringLiteral("recordings"), QString(QJsonDocument(arr).toJson(QJsonDocument::Compact)));
 }
 
 QVariant RecordingModel::data(const QModelIndex &index, int role) const
 {
-    if (!index.isValid() || index.row() < 0 || index.row() >= m_recordings.count()) {
-        return {};
-    }
-
-    switch(role) {
-    case Roles::RecordingTimeRole:
-        return Utils::formatDateTime(m_recordings[index.row()].toHash().value(QLatin1String("recordingTime")).toString());
-    case Roles::FileNameRole:
-        return m_recordings[index.row()].toHash().value(QLatin1String("fileName")).toString();
-    case Roles::DurationRole:
-        return m_recordings[index.row()].toHash().value(QLatin1String("duration")).toString();
-    }
-
     return {};
-}
-
-QHash<int, QByteArray> RecordingModel::roleNames() const
-{
-    QHash<int, QByteArray> roleNames;
-    roleNames[Roles::RecordingTimeRole] = QByteArray("recordingTime");
-    roleNames[Roles::FileNameRole] = QByteArray("fileName");
-    roleNames[Roles::DurationRole] = QByteArray("duration");
-
-    return roleNames;
 }
 
 int RecordingModel::rowCount(const QModelIndex &parent) const
@@ -53,18 +88,16 @@ int RecordingModel::rowCount(const QModelIndex &parent) const
     return parent.isValid() ? 0 : m_recordings.count();
 }
 
-void RecordingModel::insertRecording(const QJsonObject &recording)
+void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {
     beginInsertRows({}, m_recordings.count(), m_recordings.count());
-    m_recordings.append(recording.toVariantHash());
-
-    qDebug() << recording.toVariantHash().value("fileName");
+    m_recordings.append(new Recording(this, filePath, fileName, recordDate, recordingLength));
     endInsertRows();
 }
 
 void RecordingModel::deleteRecording(const int index)
 {
-    QFile::remove(m_recordings[index].toHash().value(QStringLiteral("fileName")).toString());
+    QFile::remove(m_recordings[index]->filePath());
     beginRemoveRows({}, index, index);
     m_recordings.removeAt(index);
     endRemoveRows();

@@ -4,6 +4,11 @@
 #include <QAudioRecorder>
 #include <QAudioProbe>
 #include <QAudioEncoderSettings>
+#include <QStandardPaths>
+#include <QUrl>
+#include <QFileInfo>
+
+#include <recordingmodel.h>
 
 class AudioRecorder : public QAudioRecorder
 {
@@ -26,6 +31,8 @@ private:
 
     QList<int> m_volumesList;
 
+    QString recordingName = ""; // rename recording after recording finishes
+    
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
@@ -49,6 +56,13 @@ public:
     QVariantList volumesList() const;
     void setVolumesList(const QList<int> &volumesList);
 
+    Q_INVOKABLE void saveRecording();
+
+    void renameCurrentRecording();
+    Q_INVOKABLE void setRecordingName(QString recordingName) {
+        this->recordingName = recordingName;
+    }
+    
 signals:
     void audioCodecChanged();
     void audioQualityChanged();
