@@ -1,4 +1,4 @@
-project(voicememo)
+project(krecorder)
 
 cmake_minimum_required(VERSION 3.0)
 
@@ -21,6 +21,7 @@ include(ECMPoQmTools)
 find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets Qml QuickControls2 Multimedia)
 find_package(KF5Kirigami2)
 find_package(KF5I18n)
+find_package(KF5Config)
 
 ################# Enable C++11 features for clang and gcc #################
 set(CMAKE_CXX_STANDARD 11)
@@ -28,7 +29,7 @@ set(CMAKE_CXX_STANDARD 11)
 ################# build and install #################
 add_subdirectory(src)
 
-install(PROGRAMS org.kde.voicememo.desktop DESTINATION ${KDE_INSTALL_APPDIR})
-install(FILES org.kde.voicememo.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(PROGRAMS org.kde.krecorder.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.krecorder.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

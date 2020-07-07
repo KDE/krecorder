@@ -1,4 +1,24 @@
-qt5_add_resources(voicememo_SRCS resources.qrc)
-add_executable(voicememo recordingmodel.cpp audiorecorder.cpp utils.cpp main.cpp ${voicememo_SRCS})
-target_link_libraries(voicememo Qt5::Core Qt5::Gui Qt5::Qml Qt5::Quick Qt5::Widgets Qt5::QuickControls2 Qt5::Multimedia KF5::I18n)
-install(TARGETS voicememo ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+set(krecorder_SRCS
+    main.cpp
+    audiorecorder.cpp
+    recordingmodel.cpp
+    utils.cpp
+    resources.qrc
+)
+
+kconfig_add_kcfg_files(krecorder_SRCS krecordersettings.kcfgc GENERATE_MOC)
+
+add_executable(krecorder ${krecorder_SRCS})
+target_link_libraries(krecorder 
+    Qt5::Core 
+    Qt5::Gui 
+    Qt5::Qml 
+    Qt5::Quick 
+    Qt5::Widgets 
+    Qt5::QuickControls2 
+    Qt5::Multimedia 
+    KF5::I18n
+    KF5::ConfigGui
+)
+
+install(TARGETS krecorder ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})

@@ -6,5 +6,6 @@
         <file alias="Bar.qml">contents/ui/Bar.qml</file>
         <file alias="RecordingListPage.qml">contents/ui/RecordingListPage.qml</file>
         <file alias="RecordPage.qml">contents/ui/RecordPage.qml</file>
+        <file alias="Settings.qml">contents/ui/Settings.qml</file>
     </qresource>
 </RCC>
