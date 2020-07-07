@@ -14,7 +14,7 @@ class Recording : public QObject
     Q_OBJECT
     Q_PROPERTY(QString filePath READ filePath WRITE setFilePath NOTIFY propertyChanged)
     Q_PROPERTY(QString fileName READ fileName WRITE setFileName NOTIFY propertyChanged)
-    Q_PROPERTY(QString recordDate READ recordDate NOTIFY propertyChanged)
+    Q_PROPERTY(QString recordDate READ recordDatePretty NOTIFY propertyChanged)
     Q_PROPERTY(QString recordingLength READ recordingLengthPretty NOTIFY propertyChanged)
     
 public:
@@ -36,7 +36,7 @@ public:
     {
         return recordDate_;
     }
-    QString prettyRecordDate()
+    QString recordDatePretty()
     {
         return recordDate_.toString("yyyy-MM-dd");
     }
@@ -90,13 +90,6 @@ class RecordingModel : public QAbstractListModel
 {
     Q_OBJECT
 
-    enum Roles {
-        RecordingTimeRole = Qt::UserRole,
-        DurationRole,
-        FilePathRole,
-        FileNameRole
-    };
-
 public:
     explicit RecordingModel(QObject *parent = nullptr);
     ~RecordingModel();
@@ -116,6 +109,7 @@ public:
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
+    Q_INVOKABLE Recording* at(int index);
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
     Q_INVOKABLE void deleteRecording(const int index);
 

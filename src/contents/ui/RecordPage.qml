@@ -2,7 +2,7 @@ import QtQuick 2.12
 import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
-import VoiceMemo 1.0
+import KRecorder 1.0
 
 Kirigami.Page {
     
@@ -75,16 +75,19 @@ Kirigami.Page {
             Item {
                 Layout.fillWidth: true
             }
+            
             Controls.Button {
                 flat: false
                 text: "Delete"
                 Layout.alignment: Qt.AlignRight
             }
+            
             Controls.Button {
                 flat: false
                 text: "Save"
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
+                    audioRecorder.setRecordingName(recordingName.text);
                     audioRecorder.stop();
                     pageStack.layers.pop();
                 }

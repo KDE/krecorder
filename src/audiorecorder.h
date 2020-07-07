@@ -32,6 +32,8 @@ private:
     QList<int> m_volumesList;
 
     QString recordingName = ""; // rename recording after recording finishes
+    QString savedPath = ""; // updated after the audio file is renamed
+    int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
     
 public:
     explicit AudioRecorder(QObject *parent = nullptr);

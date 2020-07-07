@@ -88,11 +88,20 @@ int RecordingModel::rowCount(const QModelIndex &parent) const
     return parent.isValid() ? 0 : m_recordings.count();
 }
 
+Recording* RecordingModel::at(int index)
+{
+    if (index < 0 || index >= m_recordings.size())
+        return {};
+    return m_recordings.at(index);
+}
+
 void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {
     beginInsertRows({}, m_recordings.count(), m_recordings.count());
     m_recordings.append(new Recording(this, filePath, fileName, recordDate, recordingLength));
     endInsertRows();
+    
+    save();
 }
 
 void RecordingModel::deleteRecording(const int index)
@@ -101,5 +110,7 @@ void RecordingModel::deleteRecording(const int index)
     beginRemoveRows({}, index, index);
     m_recordings.removeAt(index);
     endRemoveRows();
+    
+    save();
 }
 

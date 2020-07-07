@@ -2,7 +2,7 @@ import QtQuick 2.12
 import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
-import VoiceMemo 1.0
+import KRecorder 1.0
 
 Kirigami.ScrollablePage {
     title: i18n("Recordings")
@@ -36,19 +36,25 @@ Kirigami.ScrollablePage {
         }
         
         delegate: Kirigami.SwipeListItem {
+            property Recording recording: recordingModel.at(index)
+            
             onClicked: {
-                audioPlayer.source = "file://" + model.fileName
+                audioPlayer.source = "file://" + recording.fileName
                 audioPlayer.play()
             }
             
             ColumnLayout {
                 Layout.fillWidth: true
                 Controls.Label {
-                    text: model.recordingTime
+                    text: recording.fileName
                 }
                 Controls.Label {
                     color: Kirigami.Theme.disabledTextColor
-                    text: Utils.formatTime(model.duration)
+                    text: recording.recordingLength
+                }
+                Controls.Label {
+                    color: Kirigami.Theme.disabledTextColor
+                    text: recording.recordDate
                 }
             }
 
@@ -60,7 +66,7 @@ Kirigami.ScrollablePage {
                 Kirigami.Action {
                     text: i18n("Delete recording")
                     icon.name: "delete"
-                    onTriggered: recordingModel.deleteRecording(model.currentIndex)
+                    onTriggered: recordingModel.deleteRecording(index)
                 }
             ]
         }

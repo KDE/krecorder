@@ -3,7 +3,7 @@ import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.1
 
 import org.kde.kirigami 2.8 as Kirigami
-import VoiceMemo 1.0
+import KRecorder 1.0
 
 Kirigami.ScrollablePage {
     title: i18n("Advanced Settings")

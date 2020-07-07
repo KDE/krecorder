@@ -14,10 +14,15 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
         m_volumesList.append(0);
     }
     
+    // once the file is done writing, save recording to model
     connect(this, &QAudioRecorder::stateChanged, this, [this] (QAudioRecorder::State state) -> void {
         if (state == QAudioRecorder::StoppedState) {
             // rename file to desired file name
             renameCurrentRecording();
+            // create recording
+            saveRecording();
+        } else if (state == QAudioRecorder::PausedState) {
+            cachedDuration = duration();
         }
     });
 }
@@ -25,6 +30,7 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 void AudioRecorder::renameCurrentRecording()
 {
     if (recordingName != "") {
+        // determine new file name
         QStringList spl = actualLocation().fileName().split(".");
         QString suffix = spl.size() > 0 ? "." + spl[spl.size()-1] : "";
         QString path = QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + "/" + recordingName;
@@ -39,8 +45,12 @@ void AudioRecorder::renameCurrentRecording()
         }
         
         QFile(actualLocation().path()).rename(updatedPath);
-        
+     
+     
+        savedPath = updatedPath;
         recordingName = "";
+    } else {
+        savedPath = actualLocation().path();
     }
 }
 
@@ -71,5 +81,8 @@ QVariantList AudioRecorder::volumesList() const
 
 void AudioRecorder::saveRecording() 
 {
-    RecordingModel::inst();
+    QStringList spl = savedPath.split("/");
+    QString fileName = spl[spl.size()-1].split(".")[0];
+    
+    RecordingModel::inst()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
 }
