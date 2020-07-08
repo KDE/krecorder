@@ -30,10 +30,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return new Utils;
     });
+    qmlRegisterSingletonType<RecordingModel>("KRecorder", 1, 0, "RecordingModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+        return RecordingModel::inst();
+    });
     
     QQmlApplicationEngine engine;
-    
-    engine.rootContext()->setContextProperty("recordingModel", RecordingModel::inst());
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

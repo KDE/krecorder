@@ -26,67 +26,67 @@ public:
     
     QString filePath() 
     {
-        return filePath_;
+        return m_filePath;
     }
     QString fileName()
     {
-        return fileName_;
+        return m_fileName;
     }
     QDateTime recordDate() 
     {
-        return recordDate_;
+        return m_recordDate;
     }
     QString recordDatePretty()
     {
-        return recordDate_.toString("yyyy-MM-dd");
+        return m_recordDate.toString("yyyy-MM-dd");
     }
     int recordingLength() 
     {
-        return recordingLength_;
+        return m_recordingLength;
     }
     QString recordingLengthPretty()
     {
-        int hours = recordingLength_ / 60 / 60;
-        int min = recordingLength_ / 60 - hours * 60;
-        int sec = recordingLength_ - min * 60 - hours * 60 * 60;
+        int hours = m_recordingLength / 60 / 60;
+        int min = m_recordingLength / 60 - hours * 60;
+        int sec = m_recordingLength - min * 60 - hours * 60 * 60;
         return QString("%1:%2:%3").arg(hours, 2, 10, QLatin1Char('0')).arg(min, 2, 10, QLatin1Char('0')).arg(sec, 2, 10, QLatin1Char('0'));
     }
     
     void setFilePath(QString filePath)
     {
-        QFile(filePath_).rename(filePath);
-        filePath_ = filePath;
+        QFile(m_filePath).rename(filePath);
+        m_filePath = filePath;
         
         QStringList spl = filePath.split("/");
-        fileName_ = spl[spl.size()-1].split(".")[0];
+        m_fileName = spl[spl.size()-1].split(".")[0];
         
         emit propertyChanged();
     }
     void setFileName(QString fileName)
     {
-        QString oldPath = filePath_;
+        QString oldPath = m_filePath;
 
-        filePath_.replace(QRegExp(fileName_ + "(?!.*" + fileName_ + ")"), fileName);
-        QFile(oldPath).rename(filePath_);
+        m_filePath.replace(QRegExp(m_fileName + "(?!.*" + m_fileName + ")"), fileName);
+        QFile(oldPath).rename(m_filePath);
 
-        fileName_ = fileName;        
+        m_fileName = fileName;        
         emit propertyChanged();
     }
     void setRecordDate(QDateTime date)
     {
-        recordDate_ = date;
+        m_recordDate = date;
         emit propertyChanged();
     }
     void setRecordingLength(int recordingLength)
     {
-        recordingLength_ = recordingLength;
+        m_recordingLength = recordingLength;
         emit propertyChanged();
     }
     
 private:
-    QString filePath_, fileName_;
-    QDateTime recordDate_;
-    int recordingLength_; // seconds
+    QString m_filePath, m_fileName;
+    QDateTime m_recordDate;
+    int m_recordingLength; // seconds
     
 signals:
     void propertyChanged();

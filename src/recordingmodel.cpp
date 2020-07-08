@@ -13,18 +13,18 @@
 
 Recording::Recording(QObject* parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
     : QObject(parent)
-    , filePath_(filePath)
-    , fileName_(fileName)
-    , recordDate_(recordDate)
-    , recordingLength_(recordingLength)
+    , m_filePath(filePath)
+    , m_fileName(fileName)
+    , m_recordDate(recordDate)
+    , m_recordingLength(recordingLength)
 {}
 
 Recording::Recording(const QJsonObject &obj)
 {
-    filePath_ = obj["filePath"].toString();
-    fileName_ = obj["fileName"].toString();
-    recordDate_ = QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate);
-    recordingLength_ = obj["recordingLength"].toInt();
+    m_filePath = obj["filePath"].toString();
+    m_fileName = obj["fileName"].toString();
+    m_recordDate = QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate);
+    m_recordingLength = obj["recordingLength"].toInt();
 }
 
 Recording::~Recording()
@@ -35,10 +35,10 @@ Recording::~Recording()
 QJsonObject Recording::toJson()
 {
     QJsonObject obj;
-    obj["filePath"] = filePath_;
-    obj["fileName"] = fileName_;
-    obj["recordDate"] = recordDate_.toString(Qt::DateFormat::ISODate);
-    obj["recordingLength"] = recordingLength_;
+    obj["filePath"] = m_filePath;
+    obj["fileName"] = m_fileName;
+    obj["recordDate"] = m_recordDate.toString(Qt::DateFormat::ISODate);
+    obj["recordingLength"] = m_recordingLength;
     return obj;
 }
 
