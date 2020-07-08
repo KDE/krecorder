@@ -31,6 +31,7 @@ private:
     
     void process(QAudioBuffer buffer);
     void processVolumeBar();
+    
     int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
 
     QList<int> m_volumesList;

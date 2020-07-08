@@ -35,8 +35,10 @@ void AudioRecorder::handleStateChange(QAudioRecorder::State state)
             saveRecording();
         }
         
+        // clear volumes list
         while (!m_volumesList.empty())
             m_volumesList.removeFirst();
+        emit volumesListChanged();
         
     } else if (state == QAudioRecorder::PausedState) {
         cachedDuration = duration();

@@ -31,6 +31,7 @@ Item {
         model: visualization.volumes
         orientation: Qt.Horizontal
         
+        interactive: false
         anchors.top: centralLine.top
         height: 70
         width: parent.width
@@ -51,6 +52,7 @@ Item {
         model: visualization.volumes
         orientation: Qt.Horizontal
         
+        interactive: false
         anchors.top: centralLine.top
         height: 70
         width: parent.width

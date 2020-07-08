@@ -44,7 +44,7 @@ Kirigami.Page {
             Controls.Label {
                 id: timeText
                 Layout.alignment: Qt.AlignHCenter
-                text: Utils.formatTime(audioRecorder.duration)
+                text: isStopped() ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
                 font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
             }
             
