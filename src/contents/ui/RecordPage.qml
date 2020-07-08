@@ -27,9 +27,6 @@ Kirigami.Page {
         }
     }
     
-    Rectangle {
-        anchors.fill: parent
-
         ColumnLayout {
             anchors.fill: parent
 
@@ -43,14 +40,13 @@ Kirigami.Page {
                 Layout.fillWidth: true
                 
                 showLine: true
-                height: 200
-                maxBarHeight: 70
+                height: Kirigami.Units.gridUnit * 15
+                maxBarHeight: Kirigami.Units.gridUnit * 5
                 animationIndex: audioRecorder.prober.animationIndex
                 
                 volumes: audioRecorder.prober.volumesList
             }
         }
-    }
     
     Kirigami.OverlaySheet {
         id: saveDialog
@@ -76,6 +72,8 @@ Kirigami.Page {
                 text: i18nc("@action:button", "Save")
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
+                    console.log(audioRecorder.actualLocation); // TODO
+                    
                     audioRecorder.setRecordingName(recordingName.text);
                     audioRecorder.stop();
                     pageStack.layers.pop();

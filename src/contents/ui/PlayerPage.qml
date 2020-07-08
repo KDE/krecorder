@@ -40,9 +40,9 @@ Kirigami.Page {
             Layout.fillWidth: true
             
             showLine: false
-            height: 200
-            maxBarHeight: 70
-            animationIndex: -1
+            height: Kirigami.Units.gridUnit * 15
+            maxBarHeight: Kirigami.Units.gridUnit * 5
+            animationIndex: audioPlayer.prober.animationIndex
         
             volumes: audioPlayer.prober.volumesList
         }
