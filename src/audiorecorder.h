@@ -22,6 +22,7 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
+    Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
     
 private:
     QAudioEncoderSettings m_encoderSettings {};
@@ -37,7 +38,7 @@ private:
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
-    Q_INVOKABLE AudioProber* prober()
+    AudioProber* prober()
     {
         return m_audioProbe;
     }
@@ -62,7 +63,6 @@ public:
         setAudioSettings(m_encoderSettings);
         emit audioQualityChanged();
     }
-//     void setVolumesList(const QList<int> &volumesList);
     
     Q_INVOKABLE void reset()
     {

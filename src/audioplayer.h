@@ -11,13 +11,14 @@
 class AudioPlayer : public QMediaPlayer
 {
     Q_OBJECT
-
+    Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
+    
 public:
     explicit AudioPlayer(QObject *parent = nullptr);
     
     void handleStateChange(QMediaPlayer::State state);
     
-    Q_INVOKABLE AudioProber* prober()
+    AudioProber* prober()
     {
         return m_audioProbe;
     }

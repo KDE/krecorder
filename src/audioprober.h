@@ -12,6 +12,7 @@ class AudioProber : public QAudioProbe
     Q_OBJECT
     Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
     Q_PROPERTY(int animationIndex READ animationIndex NOTIFY animationIndexChanged)
+    Q_PROPERTY(int maxVolumes WRITE setMaxVolumes CONSTANT)
     
 public:
     explicit AudioProber(QObject *parent = nullptr);
@@ -24,7 +25,7 @@ public:
         return {m_volumesList.begin(), m_volumesList.end()};
     }
     
-    Q_INVOKABLE void setMaxVolumes(int m)
+    void setMaxVolumes(int m)
     {
         maxVolumes = m;
     }

@@ -32,7 +32,7 @@ Kirigami.Page {
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
-            text: audioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(audioPlayer.duration)
+            text: audioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(audioPlayer.position)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
         }           
         
@@ -44,7 +44,7 @@ Kirigami.Page {
             maxBarHeight: 70
             animationIndex: -1
         
-            volumes: audioPlayer.prober().volumesList
+            volumes: audioPlayer.prober.volumesList
         }
         
         Controls.Slider {

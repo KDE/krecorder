@@ -12,13 +12,13 @@ Item {
     property bool showLine
     
     Component.onCompleted: {
-        audioRecorder.prober().setMaxVolumes(width / 4);
-        audioPlayer.prober().setMaxVolumes(width / 4);
+        audioRecorder.prober.maxVolumes = width / 4;
+        audioPlayer.prober.maxVolumes = width / 4;
     }
     
     onWidthChanged: {
-        audioRecorder.prober().setMaxVolumes(width / 4);
-        audioPlayer.prober().setMaxVolumes(width / 4);
+        audioRecorder.prober.maxVolumes = width / 4;
+        audioPlayer.prober.maxVolumes = width / 4;
     }
     
     // central line

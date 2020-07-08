@@ -7,10 +7,7 @@ import KRecorder 1.0
 Kirigami.Page {
     
     title: i18n("Record Audio")
-    
-    function isStopped() {
-        return audioRecorder.state === AudioRecorder.StoppedState;
-    }
+    property bool isStopped: audioRecorder.state === AudioRecorder.StoppedState
     function isPaused() {
         return audioRecorder.state === AudioRecorder.PausedState;
     }
@@ -50,9 +47,9 @@ Kirigami.Page {
                 showLine: true
                 height: 200
                 maxBarHeight: 70
-                animationIndex: audioRecorder.prober().animationIndex
+                animationIndex: audioRecorder.prober.animationIndex
                 
-                volumes: audioRecorder.prober().volumesList
+                volumes: audioRecorder.prober.volumesList
             }
         }
     }
