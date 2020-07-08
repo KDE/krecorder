@@ -11,7 +11,7 @@
 
 /* ~ Recording ~ */
 
-Recording::Recording(QObject* parent, QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
+Recording::Recording(QObject* parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
     : QObject(parent)
     , filePath_(filePath)
     , fileName_(fileName)

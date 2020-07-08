@@ -9,10 +9,10 @@ Kirigami.Page {
     title: i18n("Record Audio")
     
     function isStopped() {
-        return audioRecorder.state == AudioRecorder.StoppedState;
+        return audioRecorder.state === AudioRecorder.StoppedState;
     }
     function isPaused() {
-        return audioRecorder.state == AudioRecorder.PausedState;
+        return audioRecorder.state === AudioRecorder.PausedState;
     }
     
     actions {
@@ -47,11 +47,12 @@ Kirigami.Page {
             Visualization {
                 Layout.fillWidth: true
                 
+                showLine: true
                 height: 200
                 maxBarHeight: 70
-                animationIndex: audioRecorder.animationIndex
+                animationIndex: audioRecorder.prober().animationIndex
                 
-                volumes: audioRecorder.volumesList
+                volumes: audioRecorder.prober().volumesList
             }
         }
     }

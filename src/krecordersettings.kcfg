@@ -5,9 +5,5 @@
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
   <kcfgfile name="krecorderrc" />
   <group name="General">
-    <!--<entry name="s" type="String">
-      <label>Temperature Unit</label>
-      <default>Celsius</default>
-    </entry>-->
   </group>
 </kcfg>

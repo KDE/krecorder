@@ -14,7 +14,6 @@ Kirigami.ApplicationWindow {
     width: 650
     height: 500
     
-//     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar
     
     globalDrawer: Kirigami.GlobalDrawer {
         actions: Kirigami.Action {
@@ -24,9 +23,8 @@ Kirigami.ApplicationWindow {
         }
     }
 
-    Audio {
+    AudioPlayer {
         id: audioPlayer
-        onSourceChanged: print(source)
     }
 
     AudioRecorder {

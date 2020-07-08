@@ -18,7 +18,7 @@ class Recording : public QObject
     Q_PROPERTY(QString recordingLength READ recordingLengthPretty NOTIFY propertyChanged)
     
 public:
-    explicit Recording(QObject *parent = nullptr, QString filePath = "", QString fileName = "", QDateTime recordDate = QDateTime::currentDateTime(), int recordingLength = 0);
+    explicit Recording(QObject *parent = nullptr, const QString &filePath = {}, const QString &fileName = {}, QDateTime recordDate = QDateTime::currentDateTime(), int recordingLength = 0);
     explicit Recording(const QJsonObject &obj);
     ~Recording();
     

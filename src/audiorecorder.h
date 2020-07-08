@@ -8,7 +8,9 @@
 #include <QUrl>
 #include <QFileInfo>
 #include <QTimer>
+#include <QQmlEngine>
 
+#include <audioprober.h>
 #include <recordingmodel.h>
 
 class AudioRecorder : public QAudioRecorder
@@ -20,43 +22,24 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
-
-    Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
-    Q_PROPERTY(int animationIndex READ animationIndex NOTIFY animationIndexChanged)
-
+    
 private:
     QAudioEncoderSettings m_encoderSettings {};
-    QAudioProbe *m_audioProbe;
+    AudioProber *m_audioProbe;
 
     void handleStateChange(QAudioRecorder::State state);
-    
-    void process(QAudioBuffer buffer);
-    void processVolumeBar();
-    
-    int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
-    int m_animationIndex = 0; // which index rectangle is being expanded
-    
-    QList<int> m_volumesList;
-    
-    int maxVolumes = 100; // based on width of screen
 
     QString recordingName = ""; // rename recording after recording finishes
     QString savedPath = ""; // updated after the audio file is renamed
     int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
     bool resetRequest = false;
     
-    QTimer* volumeBarTimer;
-    
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
-    Q_INVOKABLE void setMaxVolumes(int m)
+    Q_INVOKABLE AudioProber* prober()
     {
-        maxVolumes = m;
-    }
-    
-    int animationIndex() {
-        return m_animationIndex;
+        return m_audioProbe;
     }
     
     QString audioCodec() 
@@ -79,9 +62,7 @@ public:
         setAudioSettings(m_encoderSettings);
         emit audioQualityChanged();
     }
-
-    QVariantList volumesList() const;
-    void setVolumesList(const QList<int> &volumesList);
+//     void setVolumesList(const QList<int> &volumesList);
     
     Q_INVOKABLE void reset()
     {
@@ -93,15 +74,12 @@ public:
 
     void renameCurrentRecording();
     Q_INVOKABLE void setRecordingName(QString recordingName) {
-        this->recordingName = recordingName;
+        recordingName = recordingName;
     }
     
 signals:
     void audioCodecChanged();
     void audioQualityChanged();
-
-    void volumesListChanged();
-    void animationIndexChanged();
 };
 
 #endif // AUDIORECORDER_H

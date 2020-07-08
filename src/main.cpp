@@ -8,7 +8,9 @@
 
 #include "recordingmodel.h"
 #include "utils.h"
+#include "audioplayer.h"
 #include "audiorecorder.h"
+#include "audioprober.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -22,6 +24,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioRecorder>("KRecorder", 1, 0, "AudioRecorder");
+    qmlRegisterType<AudioPlayer>("KRecorder", 1, 0, "AudioPlayer");
+    qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
     //qmlRegisterUncreatableType<QAudioEncoderSettings>("VoiceMemo", 1, 0, "AudioEncoderSettings", "Created by AudioRecorder");
     qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return new Utils;

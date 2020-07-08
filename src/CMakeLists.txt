@@ -1,7 +1,9 @@
 set(krecorder_SRCS
     main.cpp
     audiorecorder.cpp
+    audioplayer.cpp
     recordingmodel.cpp
+    audioprober.cpp
     utils.cpp
     resources.qrc
 )

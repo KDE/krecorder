@@ -2,7 +2,6 @@ import QtQuick 2.0
 import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.2 as Controls
 
-// import org.kde.quickcharts 1.0 as Charts
 
 Item {
     id: visualization
@@ -10,17 +9,21 @@ Item {
     property int maxBarHeight
     property int animationIndex // which index rectangle is being expanded
     property var volumes: []
+    property bool showLine
     
     Component.onCompleted: {
-        audioRecorder.setMaxVolumes(width / 4);
+        audioRecorder.prober().setMaxVolumes(width / 4);
+        audioPlayer.prober().setMaxVolumes(width / 4);
     }
     
     onWidthChanged: {
-        audioRecorder.setMaxVolumes(width / 4);
+        audioRecorder.prober().setMaxVolumes(width / 4);
+        audioPlayer.prober().setMaxVolumes(width / 4);
     }
     
     // central line
     Rectangle {
+        visible: showLine
         id: centralLine
         width: parent.width
         height: 3
@@ -28,7 +31,6 @@ Item {
         color: "#e0e0e0"
     }
     
-    // below centre line
     ListView {
         model: visualization.volumes
         orientation: Qt.Horizontal
@@ -40,11 +42,11 @@ Item {
         
         delegate: Item {
             width: 4
+            // below centre line
             Rectangle {
-                id: rect
                 color: "#616161"
                 width: 2
-                height: index == animationIndex ? 0 : maxBarHeight * modelData / 1000
+                height: index === animationIndex ? 0 : maxBarHeight * modelData / 1000
                 antialiasing: true
                 
                 Behavior on height {
@@ -53,21 +55,7 @@ Item {
                     }
                 }
             }
-        }
-    }
-    
-    // above centre line
-    ListView {
-        model: visualization.volumes
-        orientation: Qt.Horizontal
-        
-        interactive: false
-        anchors.top: centralLine.top
-        height: maxBarHeight
-        width: parent.width
-        
-        delegate: Item {
-            width: 4
+            // above centre line
             Rectangle {
                 color: "#616161"
                 width: 2
@@ -83,18 +71,4 @@ Item {
             }
         }
     }
-    
-    
-
-//     Charts.LineChart {
-//         smooth: true
-//         id: lineChart
-// 
-//         anchors.fill: parent
-//         valueSources: [
-//             Charts.ArraySource { array: visualization.volumes }
-//         ]
-//     }
-
-    
 }

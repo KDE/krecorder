@@ -1,0 +1,23 @@
+#include "audioplayer.h"
+
+AudioPlayer::AudioPlayer(QObject *parent) : QMediaPlayer(parent)
+{
+    m_audioProbe = new AudioProber(parent);
+    m_audioProbe->setSource(this);
+    
+    QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
+    
+    connect(this, &AudioPlayer::stateChanged, this, &AudioPlayer::handleStateChange);
+}
+
+void AudioPlayer::handleStateChange(QMediaPlayer::State state)
+{
+    if (state == QMediaPlayer::StoppedState) {
+        wasStopped = true;
+    } else if (state == QMediaPlayer::PlayingState && wasStopped) {
+        wasStopped = false;
+        m_audioProbe->clearVolumesList();
+    }
+}
+
+

@@ -34,15 +34,18 @@ Kirigami.ScrollablePage {
             
             icon.name: "microphone"
             text: i18n("No recordings yet, record your first!")
-            visible: parent.count == 0
+            visible: parent.count === 0
         }
         
         delegate: Kirigami.SwipeListItem {
             property Recording recording: recordingModel.at(index)
             
             onClicked: {
-                audioPlayer.source = "file://" + recording.filePath
+                audioPlayer.setVolume(100);
+                audioPlayer.setMediaPath(recording.filePath)
                 audioPlayer.play()
+                
+                pageStack.layers.push("qrc:/PlayerPage.qml", {recording: recording});
             }
             
             ColumnLayout {
@@ -88,45 +91,49 @@ Kirigami.ScrollablePage {
             recording.fileName = name;
         }
         
-        footer: RowLayout {
-            Item {
-                Layout.fillWidth: true
-            }
-            
-            Controls.Button {
-                flat: false
-                text: "Cancel"
-                Layout.alignment: Qt.AlignRight
-            }
-            
-            Controls.Button {
-                flat: false
-                text: "Done"
-                Layout.alignment: Qt.AlignRight
-                onClicked: {
-                    currentRecordingToEdit.fileName = editDialogName.text;
+        ColumnLayout {
+            GridLayout {
+                columns: 2
+                rowSpacing: Kirigami.Units.largeSpacing
+                
+                Kirigami.Heading {
+                    text: i18n("Name")
+                    level: 4
+                }
+                Controls.TextField {
+                    id: editDialogName
+                }
+                
+                Kirigami.Heading {
+                    text: i18n("Location")
+                    level: 4
+                }
+                Controls.Label {
+                    id: editDialogLocation 
                 }
             }
-        }
-        
-        GridLayout {
-            columns: 2
-            rowSpacing: Kirigami.Units.largeSpacing
             
-            Kirigami.Heading {
-                text: i18n("Name")
-                level: 4
-            }
-            Controls.TextField {
-                id: editDialogName
-            }
-            
-            Kirigami.Heading {
-                text: i18n("Location")
-                level: 4
-            }
-            Controls.Label {
-                id: editDialogLocation 
+            RowLayout {
+                Item {
+                    Layout.fillWidth: true
+                }
+                
+                Controls.Button {
+                    flat: false
+                    text: "Cancel"
+                    Layout.alignment: Qt.AlignRight
+                    onClicked: editNameDialog.close();
+                }
+                
+                Controls.Button {
+                    flat: false
+                    text: "Done"
+                    Layout.alignment: Qt.AlignRight
+                    onClicked: {
+                        currentRecordingToEdit.fileName = editDialogName.text;
+                        editNameDialog.close();
+                    }
+                }
             }
         }
     }
