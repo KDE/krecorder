@@ -1,7 +1,6 @@
 #include "audiorecorder.h"
 
 constexpr int MAX_VOLUME = 1000;
-constexpr int MAX_DATA_COUNT = 300;
 
 AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 {
@@ -9,32 +8,41 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
     connect(m_audioProbe, &QAudioProbe::audioBufferProbed, this, &AudioRecorder::process);
 
     m_audioProbe->setSource(this);
-
-    for (int n = 0; n < MAX_DATA_COUNT; ++n) {
-        m_volumesList.append(0);
-    }
+    m_volumesList.append(0);
     
     // once the file is done writing, save recording to model
-    connect(this, &QAudioRecorder::stateChanged, this, [this] (QAudioRecorder::State state) -> void {
-        if (state == QAudioRecorder::StoppedState) {
-            if (resetRequest) {
-                
-                // reset
-                resetRequest = false;
-                QFile(actualLocation().fileName()).remove();
-                recordingName = "";
-                
-            } else {
-                // rename file to desired file name
-                renameCurrentRecording();
-                // create recording
-                saveRecording();
-            }
-        } else if (state == QAudioRecorder::PausedState) {
-            cachedDuration = duration();
-        }
-    });
+    connect(this, &QAudioRecorder::stateChanged, this, &AudioRecorder::handleStateChange);
+
+    // loop to add volume bars 
+    volumeBarTimer = new QTimer(this);
+    connect(volumeBarTimer, &QTimer::timeout, this, &AudioRecorder::processVolumeBar);
+    volumeBarTimer->start(150);
 }
+
+void AudioRecorder::handleStateChange(QAudioRecorder::State state)
+{
+    if (state == QAudioRecorder::StoppedState) {
+        if (resetRequest) {
+            // reset
+            resetRequest = false;
+            QFile(actualLocation().fileName()).remove();
+            recordingName = "";
+            
+        } else {
+            // rename file to desired file name
+            renameCurrentRecording();
+            // create recording
+            saveRecording();
+        }
+        
+        while (!m_volumesList.empty())
+            m_volumesList.removeFirst();
+        
+    } else if (state == QAudioRecorder::PausedState) {
+        cachedDuration = duration();
+    }
+}
+
 
 void AudioRecorder::renameCurrentRecording()
 {
@@ -64,24 +72,40 @@ void AudioRecorder::renameCurrentRecording()
     }
 }
 
+void AudioRecorder::processVolumeBar() 
+{
+    if (m_audioLen != 0) {
+        int val = m_audioSum / m_audioLen;
+        
+        m_volumesList.append(val);
+
+        if (m_volumesList.count() > maxVolumes) {
+            m_volumesList.removeFirst();
+        }
+        
+        // remove volume if it is zero
+        while (m_volumesList.size() > 0 && m_volumesList[0] == 0)
+            m_volumesList.removeFirst();
+            
+        volumesListChanged();
+        
+        m_audioSum = 0;
+        m_audioLen = 0;
+    }
+}
+
 void AudioRecorder::process(QAudioBuffer buffer) 
 {
-    m_probeN++;
     int sum = 0;
     for (int i = 0; i < buffer.sampleCount(); i++) {
         sum += abs(static_cast<short *>(buffer.data())[i]);
     }
     sum /= buffer.sampleCount();
-    if (sum > MAX_VOLUME) {
-        m_volumesList.append(MAX_VOLUME);
-    } else {
-        m_volumesList.append(sum);
-    }
-
-    if (m_volumesList.count() > MAX_DATA_COUNT) {
-        m_volumesList.removeFirst();
-    }
-    volumesListChanged();
+    if (sum > MAX_VOLUME)
+        sum = MAX_VOLUME;
+    
+    m_audioSum += sum;
+    m_audioLen++;
 }
 
 QVariantList AudioRecorder::volumesList() const

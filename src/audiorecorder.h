@@ -7,6 +7,7 @@
 #include <QStandardPaths>
 #include <QUrl>
 #include <QFileInfo>
+#include <QTimer>
 
 #include <recordingmodel.h>
 
@@ -26,19 +27,31 @@ private:
     QAudioEncoderSettings m_encoderSettings {};
     QAudioProbe *m_audioProbe;
 
+    void handleStateChange(QAudioRecorder::State state);
+    
     void process(QAudioBuffer buffer);
-    int m_probeN = 0;
+    void processVolumeBar();
+    int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
 
     QList<int> m_volumesList;
+    
+    int maxVolumes = 100; // based on width of screen
 
     QString recordingName = ""; // rename recording after recording finishes
     QString savedPath = ""; // updated after the audio file is renamed
     int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
     bool resetRequest = false;
     
+    QTimer* volumeBarTimer;
+    
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
+    Q_INVOKABLE void setMaxVolumes(int m)
+    {
+        maxVolumes = m;
+    }
+    
     QString audioCodec() 
     {
         return m_encoderSettings.codec();

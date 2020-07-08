@@ -33,7 +33,7 @@ Kirigami.Page {
     }
     
     Rectangle {
-        color: Kirigami.Theme.hoverColor
+//         color: Kirigami.Theme.hoverColor
         anchors.fill: parent
 
         ColumnLayout {
@@ -41,25 +41,18 @@ Kirigami.Page {
             anchors.bottomMargin: 100
             spacing: 0
 
+            Controls.Label {
+                id: timeText
+                Layout.alignment: Qt.AlignHCenter
+                text: Utils.formatTime(audioRecorder.duration)
+                font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
+            }
+            
             Visualization {
                 Layout.fillWidth: true
                 height: 200
 
                 volumes: audioRecorder.volumesList
-            }
-
-            GradientBar {
-                Layout.alignment: Qt.AlignHCenter
-            }
-
-            Kirigami.Heading {
-                id: timeText
-                Layout.alignment: Qt.AlignHCenter
-                text: Utils.formatTime(audioRecorder.duration)
-            }
-
-            GradientBar {
-                Layout.alignment: Qt.AlignHCenter
             }
         }
     }
