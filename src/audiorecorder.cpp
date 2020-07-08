@@ -19,7 +19,8 @@ void AudioRecorder::handleStateChange(QAudioRecorder::State state)
         if (resetRequest) {
             // reset
             resetRequest = false;
-            QFile(actualLocation().fileName()).remove();
+            QFile(actualLocation().toString()).remove();
+            qDebug() << "Discarded recording " << actualLocation().toString();
             recordingName = "";
             
         } else {
@@ -44,20 +45,23 @@ void AudioRecorder::renameCurrentRecording()
         
         // determine new file name
         QStringList spl = actualLocation().fileName().split(".");
-        QString suffix = spl.size() > 0 ? spl[spl.size()-1] : "";
+        QString suffix = spl.size() > 0 ? "." + spl[spl.size()-1] : "";
         QString path = QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + "/" + recordingName;
         QString updatedPath = path + suffix;
         
-        // if the file already exists, add a number to the end
-        int cur = 1;
-        QFileInfo check(path + suffix);
-        while (check.exists()) {
-            updatedPath = QString("%1-%2.%3").arg(path, QString::number(cur), suffix);
-            check = QFileInfo(updatedPath);
-            cur++;
+        // ignore if the file destination is the same as the one currently being written to
+        if (actualLocation().path() != (path+suffix)) {
+            // if the file already exists, add a number to the end
+            int cur = 1;
+            QFileInfo check(path + suffix);
+            while (check.exists()) {
+                updatedPath = QString("%1_%2%3").arg(path, QString::number(cur), suffix);
+                check = QFileInfo(updatedPath);
+                cur++;
+            }
+            
+            QFile(actualLocation().path()).rename(updatedPath);
         }
-        
-        QFile(actualLocation().path()).rename(updatedPath);
      
         savedPath = updatedPath;
         recordingName = "";

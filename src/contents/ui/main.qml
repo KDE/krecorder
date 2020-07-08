@@ -14,7 +14,6 @@ Kirigami.ApplicationWindow {
     width: 650
     height: 500
     
-    
     globalDrawer: Kirigami.GlobalDrawer {
         actions: Kirigami.Action {
             text: i18n("Settings")
@@ -29,7 +28,6 @@ Kirigami.ApplicationWindow {
 
     AudioRecorder {
         id: audioRecorder
-        //onVolumesListChanged: console.log(volumesList)
     }
     
     pageStack.initialPage: RecordingListPage {}

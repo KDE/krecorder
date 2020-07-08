@@ -20,6 +20,7 @@ Kirigami.Page {
             text: i18n("Stop")
             icon.name: "media-playback-stop"
             onTriggered: {
+                recordingName.text = RecordingModel.nextDefaultRecordingName();
                 saveDialog.open();
                 audioRecorder.pause();
             }
@@ -27,26 +28,26 @@ Kirigami.Page {
         }
     }
     
-        ColumnLayout {
-            anchors.fill: parent
+    ColumnLayout {
+        anchors.fill: parent
 
-            Controls.Label {
-                id: timeText
-                Layout.alignment: Qt.AlignHCenter
-                text: isStopped ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
-                font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
-            }            
-            Visualization {
-                Layout.fillWidth: true
-                
-                showLine: true
-                height: Kirigami.Units.gridUnit * 15
-                maxBarHeight: Kirigami.Units.gridUnit * 5
-                animationIndex: audioRecorder.prober.animationIndex
-                
-                volumes: audioRecorder.prober.volumesList
-            }
+        Controls.Label {
+            id: timeText
+            Layout.alignment: Qt.AlignHCenter
+            text: isStopped ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
+            font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
+        }            
+        Visualization {
+            Layout.fillWidth: true
+            
+            showLine: true
+            height: Kirigami.Units.gridUnit * 15
+            maxBarHeight: Kirigami.Units.gridUnit * 5
+            animationIndex: audioRecorder.prober.animationIndex
+            
+            volumes: audioRecorder.prober.volumesList
         }
+    }
     
     Kirigami.OverlaySheet {
         id: saveDialog
@@ -64,7 +65,10 @@ Kirigami.Page {
                 flat: false
                 text: i18nc("@action:button", "Delete")
                 Layout.alignment: Qt.AlignRight
-                onClicked: audioRecorder.reset()
+                onClicked: {
+                    audioRecorder.reset()
+                    saveDialog.close();
+                }
             }
             
             Controls.Button {
@@ -72,19 +76,24 @@ Kirigami.Page {
                 text: i18nc("@action:button", "Save")
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
-                    console.log(audioRecorder.actualLocation); // TODO
-                    
                     audioRecorder.setRecordingName(recordingName.text);
                     audioRecorder.stop();
                     pageStack.layers.pop();
                     recordingName.text = "";
+                    
+                    saveDialog.close();
                 }
             }
         }
-        
-        Controls.TextField {
-            id: recordingName
-            placeholderText: i18n("Name (optional)")
+        RowLayout {
+            Controls.Label {
+                Layout.alignment: Qt.AlignVCenter
+                text: "Name"
+            }
+            Controls.TextField {
+                id: recordingName
+                placeholderText: i18n("Name (optional)")
+            }
         }
     }
 }

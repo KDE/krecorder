@@ -3,11 +3,13 @@
 #include <QFile>
 #include <QStandardPaths>
 #include <QJsonObject>
-
-#include "utils.h"
 #include <QDebug>
 #include <QJsonDocument>
 #include <QJsonArray>
+
+#include "utils.h"
+
+const QString DEF_RECORD_PREFIX = "clip";
 
 /* ~ Recording ~ */
 
@@ -98,6 +100,29 @@ int RecordingModel::rowCount(const QModelIndex &parent) const
 {
     return parent.isValid() ? 0 : m_recordings.count();
 }
+
+QString RecordingModel::nextDefaultRecordingName()
+{
+    QSet<QString> s;
+    for (auto r : m_recordings)
+        s.insert(r->fileName());
+ 
+    // determine valid clip name (ex. clip_0001, clip_0002, etc.)
+    
+    int num = 1;
+    QString build = "0001";
+        
+    while (s.contains(DEF_RECORD_PREFIX + "_" + build)) {
+        num++;
+        build = QString::number(num);
+        while (build.length() < 4) {
+            build = "0" + build;
+        }
+    }
+    
+    return DEF_RECORD_PREFIX + "_" + build;
+}
+
 
 void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {

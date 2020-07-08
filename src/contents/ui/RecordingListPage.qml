@@ -120,14 +120,15 @@ Kirigami.ScrollablePage {
                 
                 Controls.Button {
                     flat: false
-                    text: "Cancel"
+                    text: i18nc("@action:button", "Cancel")
                     Layout.alignment: Qt.AlignRight
                     onClicked: editNameDialog.close();
                 }
                 
                 Controls.Button {
                     flat: false
-                    text: "Done"
+                    text: i18nc("@action:button", "Done")
+
                     Layout.alignment: Qt.AlignRight
                     onClicked: {
                         currentRecordingToEdit.fileName = editDialogName.text;

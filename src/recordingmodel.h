@@ -6,6 +6,7 @@
 #include <QSettings>
 #include <QFile>
 #include <QJsonObject>
+#include <QDateTime>
 
 class RecordingModel;
 
@@ -122,6 +123,8 @@ public:
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
+    Q_INVOKABLE QString nextDefaultRecordingName();
+    
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
     Q_INVOKABLE void deleteRecording(const int index);
 
