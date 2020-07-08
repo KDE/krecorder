@@ -73,8 +73,8 @@ public:
     Q_INVOKABLE void saveRecording();
 
     void renameCurrentRecording();
-    Q_INVOKABLE void setRecordingName(QString recordingName) {
-        recordingName = recordingName;
+    Q_INVOKABLE void setRecordingName(QString rName) {
+        recordingName = rName;
     }
     
 signals:

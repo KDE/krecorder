@@ -102,6 +102,10 @@ public:
     explicit RecordingModel(QObject *parent = nullptr);
     ~RecordingModel();
     
+    enum Roles {
+        RecordingRole = Qt::UserRole
+    };
+    
     static void init()
     {
         recordingModel_ = new RecordingModel();
@@ -114,10 +118,10 @@ public:
     void load();
     void save();
 
+    QHash<int, QByteArray> roleNames() const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
-    Q_INVOKABLE Recording* at(int index);
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
     Q_INVOKABLE void deleteRecording(const int index);
 

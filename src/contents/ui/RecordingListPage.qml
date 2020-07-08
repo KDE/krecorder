@@ -24,7 +24,7 @@ Kirigami.ScrollablePage {
     
     ListView {
         anchors.fill: parent
-        model: recordingModel
+        model: RecordingModel
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
@@ -38,7 +38,7 @@ Kirigami.ScrollablePage {
         }
         
         delegate: Kirigami.SwipeListItem {
-            property Recording recording: recordingModel.at(index)
+            property Recording recording: modelData
             
             onClicked: {
                 audioPlayer.setVolume(100);
@@ -78,7 +78,7 @@ Kirigami.ScrollablePage {
                 Kirigami.Action {
                     text: i18n("Delete recording")
                     icon.name: "delete"
-                    onTriggered: recordingModel.deleteRecording(index)
+                    onTriggered: RecordingModel.deleteRecording(index)
                 }
             ]
         }

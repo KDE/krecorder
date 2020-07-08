@@ -20,7 +20,7 @@ void AudioProber::processVolumeBar()
         
         m_volumesList.append(val);
 
-        if (m_volumesList.count() > maxVolumes) {
+        if (m_volumesList.count() > m_maxVolumes) {
             m_volumesList.removeFirst();
         }
         

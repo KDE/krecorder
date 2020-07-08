@@ -12,7 +12,7 @@ class AudioProber : public QAudioProbe
     Q_OBJECT
     Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
     Q_PROPERTY(int animationIndex READ animationIndex NOTIFY animationIndexChanged)
-    Q_PROPERTY(int maxVolumes WRITE setMaxVolumes NOTIFY maxVolumesChanged)
+    Q_PROPERTY(int maxVolumes READ maxVolumes WRITE setMaxVolumes NOTIFY maxVolumesChanged)
     
 public:
     explicit AudioProber(QObject *parent = nullptr);
@@ -25,9 +25,14 @@ public:
         return {m_volumesList.begin(), m_volumesList.end()};
     }
     
+    int maxVolumes()
+    {
+        return m_maxVolumes;
+    }
+    
     void setMaxVolumes(int m)
     {
-        maxVolumes = m;
+        m_maxVolumes = m;
         emit maxVolumesChanged();
     }
     
@@ -46,7 +51,7 @@ public:
 private:
     int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
     int m_animationIndex = 0; // which index rectangle is being expanded
-    int maxVolumes = 100; // based on width of screen
+    int m_maxVolumes = 100; // based on width of screen
     
     QList<int> m_volumesList;
     

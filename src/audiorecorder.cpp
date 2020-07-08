@@ -44,7 +44,7 @@ void AudioRecorder::renameCurrentRecording()
         
         // determine new file name
         QStringList spl = actualLocation().fileName().split(".");
-        QString suffix = spl.size() > 0 ? "." + spl[spl.size()-1] : "";
+        QString suffix = spl.size() > 0 ? spl[spl.size()-1] : "";
         QString path = QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + "/" + recordingName;
         QString updatedPath = path + suffix;
         

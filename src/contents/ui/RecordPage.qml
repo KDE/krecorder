@@ -8,15 +8,13 @@ Kirigami.Page {
     
     title: i18n("Record Audio")
     property bool isStopped: audioRecorder.state === AudioRecorder.StoppedState
-    function isPaused() {
-        return audioRecorder.state === AudioRecorder.PausedState;
-    }
+    property bool isPaused: audioRecorder.state === AudioRecorder.PausedState
     
     actions {
         main: Kirigami.Action {
-            text: (isStopped() || isPaused()) ? i18n("Record") : i18n("Pause")
-            icon.name: (isStopped() || isPaused()) ? "media-record" : "media-playback-pause"
-            onTriggered: (isStopped() || isPaused()) ? audioRecorder.record() : audioRecorder.pause()
+            text: (isStopped || isPaused) ? i18n("Record") : i18n("Pause")
+            icon.name: (isStopped || isPaused) ? "media-record" : "media-playback-pause"
+            onTriggered: (isStopped || isPaused) ? audioRecorder.record() : audioRecorder.pause()
         }
         right: Kirigami.Action {
             text: i18n("Stop")
@@ -25,7 +23,7 @@ Kirigami.Page {
                 saveDialog.open();
                 audioRecorder.pause();
             }
-            visible: !isStopped()
+            visible: !isStopped
         }
     }
     
@@ -38,7 +36,7 @@ Kirigami.Page {
             Controls.Label {
                 id: timeText
                 Layout.alignment: Qt.AlignHCenter
-                text: isStopped() ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
+                text: isStopped ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
                 font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
             }            
             Visualization {
@@ -68,14 +66,14 @@ Kirigami.Page {
             
             Controls.Button {
                 flat: false
-                text: "Delete"
+                text: i18nc("@action:button", "Delete")
                 Layout.alignment: Qt.AlignRight
                 onClicked: audioRecorder.reset()
             }
             
             Controls.Button {
                 flat: false
-                text: "Save"
+                text: i18nc("@action:button", "Save")
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
                     audioRecorder.setRecordingName(recordingName.text);

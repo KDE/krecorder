@@ -78,8 +78,19 @@ void RecordingModel::save()
     m_settings->setValue(QStringLiteral("recordings"), QString(QJsonDocument(arr).toJson(QJsonDocument::Compact)));
 }
 
+QHash<int, QByteArray> RecordingModel::roleNames() const
+{
+    return {{Roles::RecordingRole, "recording"}};
+}
+
 QVariant RecordingModel::data(const QModelIndex &index, int role) const
 {
+    if (!index.isValid() || index.row() >= m_recordings.count() || index.row() < 0)
+        return {};
+    
+    auto *recording = m_recordings[index.row()];
+    if (role == Roles::RecordingRole)
+        return QVariant::fromValue(recording);
     return {};
 }
 
@@ -88,15 +99,9 @@ int RecordingModel::rowCount(const QModelIndex &parent) const
     return parent.isValid() ? 0 : m_recordings.count();
 }
 
-Recording* RecordingModel::at(int index)
-{
-    if (index < 0 || index >= m_recordings.size())
-        return {};
-    return m_recordings.at(index);
-}
-
 void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {
+    qDebug() << "Adding recording " << filePath;
     beginInsertRows({}, m_recordings.count(), m_recordings.count());
     m_recordings.append(new Recording(this, filePath, fileName, recordDate, recordingLength));
     endInsertRows();
@@ -106,6 +111,8 @@ void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTi
 
 void RecordingModel::deleteRecording(const int index)
 {
+    qDebug() << "Removing recording " << m_recordings[index]->filePath();
+    
     QFile::remove(m_recordings[index]->filePath());
     beginRemoveRows({}, index, index);
     m_recordings.removeAt(index);
