@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QAbstractListModel>
 #include <QSettings>
-
+#include <QFile>
 #include <QJsonObject>
 
 class RecordingModel;
@@ -54,14 +54,22 @@ public:
     
     void setFilePath(QString filePath)
     {
+        QFile(filePath_).rename(filePath);
         filePath_ = filePath;
-        // TODO move file and change name
+        
+        QStringList spl = filePath.split("/");
+        fileName_ = spl[spl.size()-1].split(".")[0];
+        
         emit propertyChanged();
     }
     void setFileName(QString fileName)
     {
-        fileName_ = fileName;
-        // TODO move file and change path
+        QString oldPath = filePath_;
+
+        filePath_.replace(QRegExp(fileName_ + "(?!.*" + fileName_ + ")"), fileName);
+        QFile(oldPath).rename(filePath_);
+
+        fileName_ = fileName;        
         emit propertyChanged();
     }
     void setRecordDate(QDateTime date)

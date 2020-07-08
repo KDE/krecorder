@@ -18,7 +18,7 @@ Kirigami.ApplicationWindow {
     
     globalDrawer: Kirigami.GlobalDrawer {
         actions: Kirigami.Action {
-            text: i18n("Advanced Settings")
+            text: i18n("Settings")
             icon.name: "settings-configure"
             onTriggered: pageStack.layers.push("qrc:/Settings.qml", {recorder: audioRecorder})
         }
@@ -26,7 +26,6 @@ Kirigami.ApplicationWindow {
 
     Audio {
         id: audioPlayer
-
         onSourceChanged: print(source)
     }
 

@@ -20,6 +20,8 @@ Kirigami.ScrollablePage {
         }
     }
     
+    property Recording currentRecordingToEdit
+    
     ListView {
         anchors.fill: parent
         model: recordingModel
@@ -39,7 +41,7 @@ Kirigami.ScrollablePage {
             property Recording recording: recordingModel.at(index)
             
             onClicked: {
-                audioPlayer.source = "file://" + recording.fileName
+                audioPlayer.source = "file://" + recording.filePath
                 audioPlayer.play()
             }
             
@@ -62,6 +64,13 @@ Kirigami.ScrollablePage {
                 Kirigami.Action {
                     text: i18n("Edit")
                     icon.name: "entry-edit"
+                    onTriggered: {
+                        editDialogName.text = recording.fileName;
+                        editDialogLocation.text = recording.filePath;
+                        currentRecordingToEdit = recording;
+                        
+                        editNameDialog.open();
+                    }
                 },
                 Kirigami.Action {
                     text: i18n("Delete recording")
@@ -69,6 +78,56 @@ Kirigami.ScrollablePage {
                     onTriggered: recordingModel.deleteRecording(index)
                 }
             ]
+        }
+    }
+    
+    Kirigami.OverlaySheet {
+        id: editNameDialog
+        
+        function updateFileName(name) {
+            recording.fileName = name;
+        }
+        
+        footer: RowLayout {
+            Item {
+                Layout.fillWidth: true
+            }
+            
+            Controls.Button {
+                flat: false
+                text: "Cancel"
+                Layout.alignment: Qt.AlignRight
+            }
+            
+            Controls.Button {
+                flat: false
+                text: "Done"
+                Layout.alignment: Qt.AlignRight
+                onClicked: {
+                    currentRecordingToEdit.fileName = editDialogName.text;
+                }
+            }
+        }
+        
+        GridLayout {
+            columns: 2
+            rowSpacing: Kirigami.Units.largeSpacing
+            
+            Kirigami.Heading {
+                text: i18n("Name")
+                level: 4
+            }
+            Controls.TextField {
+                id: editDialogName
+            }
+            
+            Kirigami.Heading {
+                text: i18n("Location")
+                level: 4
+            }
+            Controls.Label {
+                id: editDialogLocation 
+            }
         }
     }
 }

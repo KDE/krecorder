@@ -43,7 +43,7 @@ Kirigami.Page {
 
             Visualization {
                 Layout.fillWidth: true
-                height: 500
+                height: 200
 
                 volumes: audioRecorder.volumesList
             }
@@ -80,6 +80,7 @@ Kirigami.Page {
                 flat: false
                 text: "Delete"
                 Layout.alignment: Qt.AlignRight
+                onClicked: audioRecorder.reset()
             }
             
             Controls.Button {
@@ -90,13 +91,14 @@ Kirigami.Page {
                     audioRecorder.setRecordingName(recordingName.text);
                     audioRecorder.stop();
                     pageStack.layers.pop();
+                    recordingName.text = "";
                 }
             }
         }
         
         Controls.TextField {
             id: recordingName
-            placeholderText: "Name"
+            placeholderText: i18n("Name (optional)")
         }
     }
 }

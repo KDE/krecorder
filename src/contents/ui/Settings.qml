@@ -6,7 +6,7 @@ import org.kde.kirigami 2.8 as Kirigami
 import KRecorder 1.0
 
 Kirigami.ScrollablePage {
-    title: i18n("Advanced Settings")
+    title: i18n("Settings")
     property AudioRecorder recorder: null
 
     Kirigami.FormLayout {

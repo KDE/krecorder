@@ -34,22 +34,27 @@ private:
     QString recordingName = ""; // rename recording after recording finishes
     QString savedPath = ""; // updated after the audio file is renamed
     int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
+    bool resetRequest = false;
     
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
-    QString audioCodec() {
+    QString audioCodec() 
+    {
         return m_encoderSettings.codec();
     }
-    void setAudioCodec(const QString &codec) {
+    void setAudioCodec(const QString &codec) 
+    {
         m_encoderSettings.setCodec(codec);
         setAudioSettings(m_encoderSettings);
         emit audioCodecChanged();
     }
-    int audioQuality() {
+    int audioQuality() 
+    {
         return m_encoderSettings.quality();
     }
-    void setAudioQuality(int quality) {
+    void setAudioQuality(int quality) 
+    {
         m_encoderSettings.setQuality(QMultimedia::EncodingQuality(quality));
         setAudioSettings(m_encoderSettings);
         emit audioQualityChanged();
@@ -57,7 +62,13 @@ public:
 
     QVariantList volumesList() const;
     void setVolumesList(const QList<int> &volumesList);
-
+    
+    Q_INVOKABLE void reset()
+    {
+        resetRequest = true;
+        stop();
+    }
+    
     Q_INVOKABLE void saveRecording();
 
     void renameCurrentRecording();

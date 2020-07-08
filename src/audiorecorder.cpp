@@ -17,10 +17,19 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
     // once the file is done writing, save recording to model
     connect(this, &QAudioRecorder::stateChanged, this, [this] (QAudioRecorder::State state) -> void {
         if (state == QAudioRecorder::StoppedState) {
-            // rename file to desired file name
-            renameCurrentRecording();
-            // create recording
-            saveRecording();
+            if (resetRequest) {
+                
+                // reset
+                resetRequest = false;
+                QFile(actualLocation().fileName()).remove();
+                recordingName = "";
+                
+            } else {
+                // rename file to desired file name
+                renameCurrentRecording();
+                // create recording
+                saveRecording();
+            }
         } else if (state == QAudioRecorder::PausedState) {
             cachedDuration = duration();
         }
@@ -30,12 +39,14 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 void AudioRecorder::renameCurrentRecording()
 {
     if (recordingName != "") {
+        
         // determine new file name
         QStringList spl = actualLocation().fileName().split(".");
         QString suffix = spl.size() > 0 ? "." + spl[spl.size()-1] : "";
         QString path = QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + "/" + recordingName;
         QString updatedPath = path + suffix;
         
+        // if the file already exists, add a number to the end
         int cur = 1;
         QFileInfo check(path + suffix);
         while (check.exists()) {
@@ -45,7 +56,6 @@ void AudioRecorder::renameCurrentRecording()
         }
         
         QFile(actualLocation().path()).rename(updatedPath);
-     
      
         savedPath = updatedPath;
         recordingName = "";
