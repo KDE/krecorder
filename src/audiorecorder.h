@@ -22,6 +22,7 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
 
     Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
+    Q_PROPERTY(int animationIndex READ animationIndex NOTIFY animationIndexChanged)
 
 private:
     QAudioEncoderSettings m_encoderSettings {};
@@ -33,7 +34,8 @@ private:
     void processVolumeBar();
     
     int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
-
+    int m_animationIndex = 0; // which index rectangle is being expanded
+    
     QList<int> m_volumesList;
     
     int maxVolumes = 100; // based on width of screen
@@ -51,6 +53,10 @@ public:
     Q_INVOKABLE void setMaxVolumes(int m)
     {
         maxVolumes = m;
+    }
+    
+    int animationIndex() {
+        return m_animationIndex;
     }
     
     QString audioCodec() 
@@ -95,6 +101,7 @@ signals:
     void audioQualityChanged();
 
     void volumesListChanged();
+    void animationIndexChanged();
 };
 
 #endif // AUDIORECORDER_H

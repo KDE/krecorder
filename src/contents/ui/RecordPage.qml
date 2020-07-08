@@ -33,25 +33,24 @@ Kirigami.Page {
     }
     
     Rectangle {
-//         color: Kirigami.Theme.hoverColor
         anchors.fill: parent
 
         ColumnLayout {
             anchors.fill: parent
-            anchors.bottomMargin: 100
-            spacing: 0
 
             Controls.Label {
                 id: timeText
                 Layout.alignment: Qt.AlignHCenter
                 text: isStopped() ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
                 font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
-            }
-            
+            }            
             Visualization {
                 Layout.fillWidth: true
+                
                 height: 200
-
+                maxBarHeight: 70
+                animationIndex: audioRecorder.animationIndex
+                
                 volumes: audioRecorder.volumesList
             }
         }

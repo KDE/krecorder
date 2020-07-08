@@ -9,7 +9,7 @@ import QtQml 2.14
 Kirigami.ApplicationWindow {
     id: root
 
-    title: i18n("Audio Recorder")
+    title: i18n("Recorder")
 
     width: 650
     height: 500

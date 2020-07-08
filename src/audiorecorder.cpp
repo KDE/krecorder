@@ -89,7 +89,13 @@ void AudioRecorder::processVolumeBar()
         while (m_volumesList.size() > 0 && m_volumesList[0] == 0)
             m_volumesList.removeFirst();
             
-        volumesListChanged();
+        emit volumesListChanged();
+        
+        // index of rectangle to animate
+        if (m_volumesList.count() != 0) {
+            m_animationIndex = m_volumesList.count();
+            emit animationIndexChanged();
+        }
         
         m_audioSum = 0;
         m_audioLen = 0;
@@ -117,6 +123,7 @@ QVariantList AudioRecorder::volumesList() const
 
 void AudioRecorder::saveRecording() 
 {
+    // get file name from path
     QStringList spl = savedPath.split("/");
     QString fileName = spl[spl.size()-1].split(".")[0];
     

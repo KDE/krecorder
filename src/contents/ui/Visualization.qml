@@ -6,7 +6,9 @@ import QtQuick.Controls 2.2 as Controls
 
 Item {
     id: visualization
-    height: 500
+    
+    property int maxBarHeight
+    property int animationIndex // which index rectangle is being expanded
     property var volumes: []
     
     Component.onCompleted: {
@@ -33,16 +35,23 @@ Item {
         
         interactive: false
         anchors.top: centralLine.top
-        height: 70
+        height: maxBarHeight
         width: parent.width
         
         delegate: Item {
             width: 4
             Rectangle {
+                id: rect
                 color: "#616161"
                 width: 2
-                height: 70 * modelData / 1000
+                height: index == animationIndex ? 0 : maxBarHeight * modelData / 1000
                 antialiasing: true
+                
+                Behavior on height {
+                    SmoothedAnimation {
+                        duration: 500
+                    }
+                }
             }
         }
     }
@@ -54,7 +63,7 @@ Item {
         
         interactive: false
         anchors.top: centralLine.top
-        height: 70
+        height: maxBarHeight
         width: parent.width
         
         delegate: Item {
@@ -62,9 +71,15 @@ Item {
             Rectangle {
                 color: "#616161"
                 width: 2
-                height: 70 * modelData / 1000
+                height: index == animationIndex ? 0 : maxBarHeight * modelData / 1000
                 antialiasing: true
                 y: -height
+                
+                Behavior on height {
+                    SmoothedAnimation {
+                        duration: 500
+                    }
+                }
             }
         }
     }
