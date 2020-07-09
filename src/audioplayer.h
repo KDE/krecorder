@@ -8,17 +8,30 @@
 
 #include <audioprober.h>
 
+class AudioPlayer;
+static AudioPlayer *s_audioPlayer;
+
 class AudioPlayer : public QMediaPlayer
 {
     Q_OBJECT
-    Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
+    Q_PROPERTY(AudioProber *prober READ prober CONSTANT)
     
 public:
     explicit AudioPlayer(QObject *parent = nullptr);
     
+    static void init()
+    {
+        s_audioPlayer = new AudioPlayer();
+    }
+    
+    static AudioPlayer *inst()
+    {
+        return s_audioPlayer;
+    }
+    
     void handleStateChange(QMediaPlayer::State state);
     
-    AudioProber* prober()
+    AudioProber *prober()
     {
         return m_audioProbe;
     }

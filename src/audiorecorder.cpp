@@ -41,7 +41,7 @@ void AudioRecorder::handleStateChange(QAudioRecorder::State state)
 
 void AudioRecorder::renameCurrentRecording()
 {
-    if (recordingName != "") {
+    if (!recordingName.isEmpty()) {
         
         // determine new file name
         QStringList spl = actualLocation().fileName().split(".");
@@ -74,7 +74,7 @@ void AudioRecorder::saveRecording()
 {
     // get file name from path
     QStringList spl = savedPath.split("/");
-    QString fileName = spl[spl.size()-1].split(".")[0];
+    QString fileName = spl.at(spl.size()-1).split(".")[0];
     
     RecordingModel::inst()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
 }

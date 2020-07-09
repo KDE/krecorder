@@ -13,6 +13,9 @@
 #include <audioprober.h>
 #include <recordingmodel.h>
 
+class AudioRecorder;
+static AudioRecorder *s_audioRecorder;
+
 class AudioRecorder : public QAudioRecorder
 {
     Q_OBJECT
@@ -38,6 +41,16 @@ private:
 public:
     explicit AudioRecorder(QObject *parent = nullptr);
 
+    static void init()
+    {
+        s_audioRecorder = new AudioRecorder();
+    }
+    
+    static AudioRecorder* inst()
+    {
+        return s_audioRecorder;
+    }
+    
     AudioProber* prober()
     {
         return m_audioProbe;

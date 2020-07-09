@@ -7,14 +7,14 @@ import KRecorder 1.0
 Kirigami.Page {
     
     title: i18n("Record Audio")
-    property bool isStopped: audioRecorder.state === AudioRecorder.StoppedState
-    property bool isPaused: audioRecorder.state === AudioRecorder.PausedState
+    property bool isStopped: AudioRecorder.state === AudioRecorder.StoppedState
+    property bool isPaused: AudioRecorder.state === AudioRecorder.PausedState
     
     actions {
         main: Kirigami.Action {
             text: (isStopped || isPaused) ? i18n("Record") : i18n("Pause")
             icon.name: (isStopped || isPaused) ? "media-record" : "media-playback-pause"
-            onTriggered: (isStopped || isPaused) ? audioRecorder.record() : audioRecorder.pause()
+            onTriggered: (isStopped || isPaused) ? AudioRecorder.record() : AudioRecorder.pause()
         }
         right: Kirigami.Action {
             text: i18n("Stop")
@@ -22,7 +22,7 @@ Kirigami.Page {
             onTriggered: {
                 recordingName.text = RecordingModel.nextDefaultRecordingName();
                 saveDialog.open();
-                audioRecorder.pause();
+                AudioRecorder.pause();
             }
             visible: !isStopped
         }
@@ -34,7 +34,7 @@ Kirigami.Page {
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
-            text: isStopped ? "00:00:00" : Utils.formatTime(audioRecorder.duration)
+            text: isStopped ? "00:00:00" : Utils.formatTime(AudioRecorder.duration)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
         }            
         Visualization {
@@ -43,9 +43,9 @@ Kirigami.Page {
             showLine: true
             height: Kirigami.Units.gridUnit * 15
             maxBarHeight: Kirigami.Units.gridUnit * 5
-            animationIndex: audioRecorder.prober.animationIndex
+            animationIndex: AudioRecorder.prober.animationIndex
             
-            volumes: audioRecorder.prober.volumesList
+            volumes: AudioRecorder.prober.volumesList
         }
     }
     
@@ -66,7 +66,7 @@ Kirigami.Page {
                 text: i18nc("@action:button", "Delete")
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
-                    audioRecorder.reset()
+                    AudioRecorder.reset()
                     saveDialog.close();
                 }
             }
@@ -76,8 +76,8 @@ Kirigami.Page {
                 text: i18nc("@action:button", "Save")
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
-                    audioRecorder.setRecordingName(recordingName.text);
-                    audioRecorder.stop();
+                    AudioRecorder.setRecordingName(recordingName.text);
+                    AudioRecorder.stop();
                     pageStack.layers.pop();
                     recordingName.text = "";
                     

@@ -8,8 +8,6 @@
 #include <QJsonObject>
 #include <QDateTime>
 
-class RecordingModel;
-
 class Recording : public QObject
 {
     Q_OBJECT
@@ -93,7 +91,8 @@ signals:
     void propertyChanged();
 };
 
-static RecordingModel* recordingModel_;
+class RecordingModel;
+static RecordingModel *s_recordingModel;
 
 class RecordingModel : public QAbstractListModel
 {
@@ -109,11 +108,11 @@ public:
     
     static void init()
     {
-        recordingModel_ = new RecordingModel();
+        s_recordingModel = new RecordingModel();
     }
     static RecordingModel* inst()
     {
-        return recordingModel_;
+        return s_recordingModel;
     }
     
     void load();

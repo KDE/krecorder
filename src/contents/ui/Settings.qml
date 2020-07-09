@@ -7,37 +7,56 @@ import KRecorder 1.0
 
 Kirigami.ScrollablePage {
     title: i18n("Settings")
-    property AudioRecorder recorder: null
-
+    property bool showAdvanced: false
+    
     Kirigami.FormLayout {
-        Controls.ComboBox {
-            Kirigami.FormData.label: i18n("Audio Input")
-            currentIndex: recorder.audioInputs.indexOf(recorder.audioInput)
-            model: recorder.audioInputs
-            onCurrentValueChanged: recorder.audioInput = currentValue
-        }
-        Controls.ComboBox {
-            Kirigami.FormData.label: i18n("Audio Codec")
-            currentIndex: recorder.supportedAudioCodecs.indexOf(recorder.audioCodec)
-            model: recorder.supportedAudioCodecs
-            onCurrentValueChanged: recorder.audioCodec = currentValue
-        }
-        Controls.ComboBox {
-            Kirigami.FormData.label: i18n("Container Format")
-            currentIndex: recorder.supportedContainers.indexOf(recorder.containerFormat)
-            model: recorder.supportedContainers
-            onCurrentValueChanged: recorder.containerFormat = currentValue
-        }
 
+        Controls.ComboBox {
+            Kirigami.FormData.label: i18n("Format")
+            model: [i18n("Ogg Vorbis"), i18n("Ogg Opus"), i18n("FLAC"), i18n("MP3"), i18n("WAV")]
+            currentIndex: SettingsModel.simpleAudioFormat
+            onActivated: SettingsModel.simpleAudioFormat = currentIndex
+        }
+        
         Controls.Slider {
             Kirigami.FormData.label: i18n("Audio Quality")
-            value: recorder.audioQuality
+            value: SettingsModel.audioQuality
             // enum values
             from: 0
             to: 4
             stepSize: 1
-            onValueChanged: recorder.audioQuality = value
+            onValueChanged: SettingsModel.audioQuality = value
             snapMode: Controls.Slider.SnapAlways
         }
+        
+        Controls.Button {
+            text: showAdvanced ? i18n("Hide Advanced Settings") : i18n("Show Advanced Settings")
+            onClicked: showAdvanced = !showAdvanced
+        }
+        
+        // advanced settings
+        Controls.ComboBox {
+            visible: showAdvanced
+            Kirigami.FormData.label: i18n("Audio Input")
+            currentIndex: AudioRecorder.audioInputs.indexOf(AudioRecorder.audioInput)
+            model: AudioRecorder.audioInputs
+            onActivated: AudioRecorder.audioInput = currentValue
+        }
+        
+        Controls.ComboBox {
+            visible: showAdvanced
+            Kirigami.FormData.label: i18n("Audio Codec")
+            currentIndex: AudioRecorder.supportedAudioCodecs.indexOf(SettingsModel.audioCodec)
+            model: AudioRecorder.supportedAudioCodecs
+            onActivated: SettingsModel.audioCodec = currentValue
+        }
+        Controls.ComboBox {
+            visible: showAdvanced
+            Kirigami.FormData.label: i18n("Container Format")
+            currentIndex: AudioRecorder.supportedContainers.indexOf(SettingsModel.containerFormat)
+            model: AudioRecorder.supportedContainers
+            onActivated: SettingsModel.containerFormat = currentValue
+        }
+        
     }
 }

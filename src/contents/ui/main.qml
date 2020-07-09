@@ -18,16 +18,8 @@ Kirigami.ApplicationWindow {
         actions: Kirigami.Action {
             text: i18n("Settings")
             icon.name: "settings-configure"
-            onTriggered: pageStack.layers.push("qrc:/Settings.qml", {recorder: audioRecorder})
+            onTriggered: pageStack.layers.push("qrc:/Settings.qml", {recorder: AudioRecorder})
         }
-    }
-
-    AudioPlayer {
-        id: audioPlayer
-    }
-
-    AudioRecorder {
-        id: audioRecorder
     }
     
     pageStack.initialPage: RecordingListPage {}

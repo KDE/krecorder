@@ -10,19 +10,19 @@ Kirigami.Page {
     
     title: recording.fileName
     
-    onBackRequested: audioPlayer.stop()
+    onBackRequested: AudioPlayer.stop()
     
     actions {
         main: Kirigami.Action {
-            text: audioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
-            icon.name: audioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
-            onTriggered: audioPlayer.state === AudioPlayer.PlayingState ? audioPlayer.pause() : audioPlayer.play()
+            text: AudioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
+            icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
+            onTriggered: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
         }
         right: Kirigami.Action {
-            visible: audioPlayer.state !== AudioPlayer.StoppedState
+            visible: AudioPlayer.state !== AudioPlayer.StoppedState
             text: i18n("Stop")
             icon.name: "media-playback-stop"
-            onTriggered: audioPlayer.stop();
+            onTriggered: AudioPlayer.stop();
         }
     }
     
@@ -32,7 +32,7 @@ Kirigami.Page {
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
-            text: audioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(audioPlayer.position)
+            text: AudioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(AudioPlayer.position)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
         }           
         
@@ -42,18 +42,18 @@ Kirigami.Page {
             showLine: false
             height: Kirigami.Units.gridUnit * 15
             maxBarHeight: Kirigami.Units.gridUnit * 5
-            animationIndex: audioPlayer.prober.animationIndex
+            animationIndex: AudioPlayer.prober.animationIndex
         
-            volumes: audioPlayer.prober.volumesList
+            volumes: AudioPlayer.prober.volumesList
         }
         
         Controls.Slider {
             Layout.alignment: Qt.AlignHCenter
             from: 0
-            to: audioPlayer.duration
-            value: audioPlayer.position
+            to: AudioPlayer.duration
+            value: AudioPlayer.position
             
-            onMoved: audioPlayer.setPosition(value)
+            onMoved: AudioPlayer.setPosition(value)
         }
     }
 }

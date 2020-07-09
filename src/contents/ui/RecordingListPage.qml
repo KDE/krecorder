@@ -41,9 +41,9 @@ Kirigami.ScrollablePage {
             property Recording recording: modelData
             
             onClicked: {
-                audioPlayer.setVolume(100);
-                audioPlayer.setMediaPath(recording.filePath)
-                audioPlayer.play()
+                AudioPlayer.setVolume(100);
+                AudioPlayer.setMediaPath(recording.filePath)
+                AudioPlayer.play()
                 
                 pageStack.layers.push("qrc:/PlayerPage.qml", {recording: recording});
             }

@@ -5,10 +5,9 @@ set(krecorder_SRCS
     recordingmodel.cpp
     audioprober.cpp
     utils.cpp
+    settingsmodel.cpp
     resources.qrc
 )
-
-kconfig_add_kcfg_files(krecorder_SRCS krecordersettings.kcfgc GENERATE_MOC)
 
 add_executable(krecorder ${krecorder_SRCS})
 target_link_libraries(krecorder 

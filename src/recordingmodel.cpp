@@ -127,6 +127,7 @@ QString RecordingModel::nextDefaultRecordingName()
 void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {
     qDebug() << "Adding recording " << filePath;
+    
     beginInsertRows({}, m_recordings.count(), m_recordings.count());
     m_recordings.append(new Recording(this, filePath, fileName, recordDate, recordingLength));
     endInsertRows();

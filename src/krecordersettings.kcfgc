@@ -1,6 +1,0 @@
-File=krecordersettings.kcfgc
-ClassName=KRecorderSettings
-Mutators=true
-DefaultValueGetters=true
-GenerateProperties=true
-ParentInConstructor=true
