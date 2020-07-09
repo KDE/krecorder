@@ -91,50 +91,48 @@ Kirigami.ScrollablePage {
             recording.fileName = name;
         }
         
-        ColumnLayout {
-            GridLayout {
-                columns: 2
-                rowSpacing: Kirigami.Units.largeSpacing
-                
-                Kirigami.Heading {
-                    text: i18n("Name")
-                    level: 4
-                }
-                Controls.TextField {
-                    id: editDialogName
-                }
-                
-                Kirigami.Heading {
-                    text: i18n("Location")
-                    level: 4
-                }
-                Controls.Label {
-                    id: editDialogLocation 
-                }
+        footer: RowLayout {
+            Item {
+                Layout.fillWidth: true
             }
             
-            RowLayout {
-                Item {
-                    Layout.fillWidth: true
-                }
-                
-                Controls.Button {
-                    flat: false
-                    text: i18nc("@action:button", "Cancel")
-                    Layout.alignment: Qt.AlignRight
-                    onClicked: editNameDialog.close();
-                }
-                
-                Controls.Button {
-                    flat: false
-                    text: i18nc("@action:button", "Done")
+            Controls.Button {
+                flat: false
+                text: i18nc("@action:button", "Cancel")
+                Layout.alignment: Qt.AlignRight
+                onClicked: editNameDialog.close();
+            }
+            
+            Controls.Button {
+                flat: false
+                text: i18nc("@action:button", "Done")
 
-                    Layout.alignment: Qt.AlignRight
-                    onClicked: {
-                        currentRecordingToEdit.fileName = editDialogName.text;
-                        editNameDialog.close();
-                    }
+                Layout.alignment: Qt.AlignRight
+                onClicked: {
+                    currentRecordingToEdit.fileName = editDialogName.text;
+                    editNameDialog.close();
                 }
+            }
+        }
+        
+        GridLayout {
+            columns: 2
+            rowSpacing: Kirigami.Units.largeSpacing
+            
+            Kirigami.Heading {
+                text: i18n("Name")
+                level: 4
+            }
+            Controls.TextField {
+                id: editDialogName
+            }
+            
+            Kirigami.Heading {
+                text: i18n("Location")
+                level: 4
+            }
+            Controls.Label {
+                id: editDialogLocation 
             }
         }
     }
