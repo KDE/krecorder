@@ -1,3 +1,8 @@
+<!--
+  SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <RCC>
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>

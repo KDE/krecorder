@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 import QtQuick 2.0
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.1

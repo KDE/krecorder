@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #ifndef UTILS_H
 #define UTILS_H
 

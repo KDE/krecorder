@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #ifndef SETTINGSMODEL_H
 #define SETTINGSMODEL_H
 

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+- Copyright 2020 Jonah Brüchert <jbb@kaidan.im>
+- SPDX-License-Identifier: GPL-2.0-or-later
+-->
 <component type="desktop-application">
   <id>org.kde.krecorder</id>
   <name>Recorder</name>
   <summary>Audio Recorder</summary>
-  <metadata_license>A permissive license for this metadata, e.g. "FSFAP"</metadata_license>
-  <project_license>The license of this software as SPDX string, e.g. "GPL-3+"</project_license>
-  <developer_name>The software vendor name, e.g. "ACME Corporation"</developer_name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3+</project_license>
+  <developer_name>KDE Community</developer_name>
   <description>
-    <p>Multiple paragraphs of long description, describing this software component.</p>
-    <p>You can also use ordered and unordered lists:</p>
-    <ul>
-      <li>Feature 1</li>
-      <li>Feature 2</li>
-    </ul>
-    <p>Keep in mind to XML-escape characters, and that this is not HTML markup.</p>
+    <p>Recorder is a simple, cross-platform audio recording application.</p>
   </description>
 </component>

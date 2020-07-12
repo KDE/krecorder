@@ -1,3 +1,10 @@
+/*
+ * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #ifndef AUDIOPROBER_H
 #define AUDIOPROBER_H
 
