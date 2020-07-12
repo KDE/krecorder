@@ -36,7 +36,7 @@ void SettingsModel::setSimpleAudioFormat(int audioFormat)
 
 QString SettingsModel::audioCodec() const
 {
-    return settings->value("General/audioCodec", "audio/x-vorbis").toString();
+    return settings->value("General/audioCodec", "audio/x-opus").toString();
 }
 
 void SettingsModel::setAudioCodec(QString audioCodec)

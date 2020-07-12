@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.2 as Controls
-
+import KRecorder 1.0
 
 Item {
     id: visualization
@@ -12,13 +12,13 @@ Item {
     property bool showLine
     
     Component.onCompleted: {
-        audioRecorder.prober.maxVolumes = width / 4;
-        audioPlayer.prober.maxVolumes = width / 4;
+        AudioRecorder.prober.maxVolumes = width / 4;
+        AudioPlayer.prober.maxVolumes = width / 4;
     }
     
     onWidthChanged: {
-        audioRecorder.prober.maxVolumes = width / 4;
-        audioPlayer.prober.maxVolumes = width / 4;
+        AudioRecorder.prober.maxVolumes = width / 4;
+        AudioPlayer.prober.maxVolumes = width / 4;
     }
     
     // central line
