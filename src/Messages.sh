@@ -1,2 +1,2 @@
 #!/bin/sh
-$XGETTEXT `find -name \*.cpp -o -name \*.qml` -o $podir/krecoreder.pot
+$XGETTEXT `find -name \*.cpp -o -name \*.qml` -o $podir/krecorder.pot
