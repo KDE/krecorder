@@ -6,7 +6,19 @@
 
 [Desktop Entry]
 Name=Recorder
+Name[ca]=Enregistrador
+Name[es]=Recorder
+Name[nl]=Recorder
+Name[pt]=Gravador
+Name[uk]=Записувач
+Name[x-test]=xxRecorderxx
 Comment=Audio Recorder
+Comment[ca]=Enregistrador d'àudio
+Comment[es]=Grabadora de sonido
+Comment[nl]=Geluidsrecorder
+Comment[pt]=Gravador de Áudio
+Comment[uk]=Записувач звукових даних
+Comment[x-test]=xxAudio Recorderxx
 Version=1.0
 Exec=krecorder
 MimeType=application/x-voicememo;
