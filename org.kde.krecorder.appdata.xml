@@ -8,14 +8,18 @@
   <name>Recorder</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="es">Recorder</name>
+  <name xml:lang="nl">Recorder</name>
   <name xml:lang="pt">Gravador</name>
+  <name xml:lang="sk">Záznamník</name>
   <name xml:lang="sv">Inspelare</name>
   <name xml:lang="uk">Записувач</name>
   <name xml:lang="x-test">xxRecorderxx</name>
   <summary>Audio Recorder</summary>
   <summary xml:lang="ca">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
+  <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pt">Gravador de Áudio</summary>
+  <summary xml:lang="sk">Zvukový záznamník</summary>
   <summary xml:lang="sv">Ljudinspelare</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
   <summary xml:lang="x-test">xxAudio Recorderxx</summary>
@@ -24,7 +28,9 @@
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
+  <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
+  <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
@@ -32,7 +38,9 @@
     <p>Recorder is a simple, cross-platform audio recording application.</p>
     <p xml:lang="ca">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
     <p xml:lang="es">Recorder es una sencilla aplicación de grabación de sonido multiplataforma.</p>
+    <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="pt">O Gravador é uma aplicação simples e multi-plataforma para a gravação de áudio.</p>
+    <p xml:lang="sk">Záznamník je jednoduchá cross platformová aplikácia na nahrávanie zvuku.</p>
     <p xml:lang="sv">Recorder är ett enkelt ljudinspelningsprogram för flera plattformar.</p>
     <p xml:lang="uk">«Записувач» є простою програмою для запису звукових даних, яка може працювати на багатьох програмних платформах.</p>
     <p xml:lang="x-test">xxRecorder is a simple, cross-platform audio recording application.xx</p>
