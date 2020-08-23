@@ -8,6 +8,7 @@
 Name=Recorder
 Name[ca]=Enregistrador
 Name[es]=Recorder
+Name[fr]=Enregistreur
 Name[nl]=Recorder
 Name[pt]=Gravador
 Name[sk]=Záznamník
@@ -17,6 +18,7 @@ Name[x-test]=xxRecorderxx
 Comment=Audio Recorder
 Comment[ca]=Enregistrador d'àudio
 Comment[es]=Grabadora de sonido
+Comment[fr]=Enregistreur audio
 Comment[nl]=Geluidsrecorder
 Comment[pt]=Gravador de Áudio
 Comment[sk]=Zvukový záznamník
