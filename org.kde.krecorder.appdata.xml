@@ -10,6 +10,7 @@
   <name xml:lang="ca-valencia">Enregistrador</name>
   <name xml:lang="es">Recorder</name>
   <name xml:lang="fr">Enregistreur</name>
+  <name xml:lang="it">Registratore</name>
   <name xml:lang="nl">Recorder</name>
   <name xml:lang="pt">Gravador</name>
   <name xml:lang="sk">Záznamník</name>
@@ -22,6 +23,7 @@
   <summary xml:lang="ca-valencia">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
+  <summary xml:lang="it">Registratore audio</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pt">Gravador de Áudio</summary>
   <summary xml:lang="sk">Zvukový záznamník</summary>
@@ -36,6 +38,7 @@
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
@@ -49,6 +52,7 @@
     <p xml:lang="ca-valencia">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
     <p xml:lang="es">Recorder es una sencilla aplicación de grabación de sonido multiplataforma.</p>
     <p xml:lang="fr">Recorder est une application simple, multiplate-forme d'enregistreur audio.</p>
+    <p xml:lang="it">Registratore è un'applicazione di registrazione audio semplice e multi-piattaforma.</p>
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="pt">O Gravador é uma aplicação simples e multi-plataforma para a gravação de áudio.</p>
     <p xml:lang="sk">Záznamník je jednoduchá cross platformová aplikácia na nahrávanie zvuku.</p>
