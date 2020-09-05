@@ -3,5 +3,25 @@
 - SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# krecorder
-A cross-platform audio recorder built with Kirigami + Qt Quick technologies.
+# KRecorder <img src="logo.png" width="40"/>
+A convergent audio recording application for Plasma.
+
+## Features
+* Record audio with a visualizer, and pausing functionality
+* Ability to select audio sources
+* Ability to select encoding and container formats
+* Audio playback with a visualizer
+
+## Links
+* Project page: https://invent.kde.org/plasma-mobile/krecorder
+* Issues: https://invent.kde.org/plasma-mobile/krecorder/-/issues
+* Development channel: https://matrix.to/#/#plasmamobile:matrix.org
+
+## Installing
+```
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
