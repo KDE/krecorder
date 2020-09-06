@@ -8,6 +8,7 @@
   <name>Recorder</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="ca-valencia">Enregistrador</name>
+  <name xml:lang="cs">Nahrávací nástroj</name>
   <name xml:lang="es">Recorder</name>
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="it">Registratore</name>
@@ -21,6 +22,7 @@
   <summary>Audio Recorder</summary>
   <summary xml:lang="ca">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
   <summary xml:lang="ca-valencia">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
+  <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="it">Registratore audio</summary>
@@ -36,6 +38,7 @@
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
+  <developer_name xml:lang="cs">Komunita KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
