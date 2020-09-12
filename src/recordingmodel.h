@@ -13,6 +13,7 @@
 #include <QFile>
 #include <QJsonObject>
 #include <QDateTime>
+#include <QCoreApplication>
 
 class Recording : public QObject
 {
@@ -27,97 +28,62 @@ public:
     explicit Recording(const QJsonObject &obj);
     ~Recording();
     
-    QJsonObject toJson();
+    QJsonObject toJson() const;
     
-    QString filePath() 
+    QString filePath() const
     {
         return m_filePath;
     }
-    QString fileName()
+    QString fileName() const
     {
         return m_fileName;
     }
-    QDateTime recordDate() 
+    QDateTime recordDate() const
     {
         return m_recordDate;
     }
-    QString recordDatePretty()
+    QString recordDatePretty() const
     {
         return m_recordDate.toString("yyyy-MM-dd");
     }
-    int recordingLength() 
+    int recordingLength() const
     {
         return m_recordingLength;
     }
-    QString recordingLengthPretty()
-    {
-        int hours = m_recordingLength / 60 / 60;
-        int min = m_recordingLength / 60 - hours * 60;
-        int sec = m_recordingLength - min * 60 - hours * 60 * 60;
-        return QString("%1:%2:%3").arg(hours, 2, 10, QLatin1Char('0')).arg(min, 2, 10, QLatin1Char('0')).arg(sec, 2, 10, QLatin1Char('0'));
-    }
-    
-    void setFilePath(QString filePath)
-    {
-        QFile(m_filePath).rename(filePath);
-        m_filePath = filePath;
-        
-        QStringList spl = filePath.split("/");
-        m_fileName = spl[spl.size()-1].split(".")[0];
-        
-        emit propertyChanged();
-    }
-    void setFileName(QString fileName)
-    {
-        QString oldPath = m_filePath;
+    QString recordingLengthPretty() const;
 
-        m_filePath.replace(QRegExp(m_fileName + "(?!.*" + m_fileName + ")"), fileName);
-        QFile(oldPath).rename(m_filePath);
+    void setFilePath(const QString &filePath);
+    void setFileName(const QString &fileName);
 
-        m_fileName = fileName;        
-        emit propertyChanged();
-    }
-    void setRecordDate(QDateTime date)
-    {
-        m_recordDate = date;
-        emit propertyChanged();
-    }
-    void setRecordingLength(int recordingLength)
-    {
-        m_recordingLength = recordingLength;
-        emit propertyChanged();
-    }
-    
+    void setRecordDate(const QDateTime &date);
+    void setRecordingLength(int recordingLength);
+
 private:
     QString m_filePath, m_fileName;
     QDateTime m_recordDate;
     int m_recordingLength; // seconds
-    
+
 signals:
     void propertyChanged();
 };
 
 class RecordingModel;
-static RecordingModel *s_recordingModel;
+static RecordingModel *s_recordingModel = nullptr;
 
 class RecordingModel : public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit RecordingModel(QObject *parent = nullptr);
-    ~RecordingModel();
-    
     enum Roles {
         RecordingRole = Qt::UserRole
     };
-    
-    static void init()
+
+    static RecordingModel* instance()
     {
-        s_recordingModel = new RecordingModel();
-    }
-    static RecordingModel* inst()
-    {
+        if (!s_recordingModel) {
+            s_recordingModel = new RecordingModel(qApp);
+        }
         return s_recordingModel;
     }
     
@@ -133,9 +99,10 @@ public:
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
     Q_INVOKABLE void deleteRecording(const int index);
 
-signals:
-
 private:
+    explicit RecordingModel(QObject *parent = nullptr);
+    ~RecordingModel();
+
     QSettings* m_settings;
     QList<Recording*> m_recordings;
 };

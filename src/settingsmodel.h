@@ -10,11 +10,12 @@
 #include <QObject>
 #include <QString>
 #include <QMultimedia>
+#include <QCoreApplication>
 
 #include <audiorecorder.h>
 
 class SettingsModel;
-static SettingsModel *s_settingsModel;
+static SettingsModel *s_settingsModel = nullptr;
 
 class SettingsModel : public QObject
 {
@@ -23,11 +24,8 @@ class SettingsModel : public QObject
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat NOTIFY containerFormatChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
-    
+
 public:
-    explicit SettingsModel(QObject *parent = nullptr);
-    ~SettingsModel();
-    
     enum SimpleAudioFormat {
         VORBIS, // codec: audio/x-vorbis, container: audio/ogg
         OPUS, // codec: audio/x-opus, container: audio/ogg
@@ -36,7 +34,7 @@ public:
         WAV, // codec: audio/x-raw, container: audio/x-wav
         OTHER // not listed here
     };
-    
+
     const QMap<SimpleAudioFormat, std::pair<QString, QString>> formatMap = {
         {SimpleAudioFormat::VORBIS, {"audio/x-vorbis", "audio/ogg"}},
         {SimpleAudioFormat::OPUS, {"audio/x-opus", "audio/ogg"}},
@@ -45,34 +43,35 @@ public:
         {SimpleAudioFormat::WAV, {"audio/x-raw", "audio/x-wav"}},
         {SimpleAudioFormat::OTHER, {"", ""}}
     };
-    
-    static void init()
+
+    static SettingsModel* instance()
     {
-        s_settingsModel = new SettingsModel();
-    }
-    static SettingsModel* inst()
-    {
+        if (s_settingsModel) {
+            s_settingsModel = new SettingsModel(qApp);
+        }
         return s_settingsModel;
     }
-    
+
     int simpleAudioFormat() const;
     void setSimpleAudioFormat(int audioFormat);
     QString audioCodec() const;
-    void setAudioCodec(QString audioCodec);
+    void setAudioCodec(const QString &audioCodec);
     QString containerFormat() const;
-    void setContainerFormat(QString audioContainerFormat);
+    void setContainerFormat(const QString &audioContainerFormat);
     int audioQuality() const;
     void setAudioQuality(int audioQuality);
-    
+
 private:
+    explicit SettingsModel(QObject *parent = nullptr);
+    ~SettingsModel();
+
     QSettings *settings;
-    
+
 signals:
     void simpleAudioFormatChanged();
     void audioCodecChanged();
     void containerFormatChanged();
     void audioQualityChanged();
-    
 };
 
 #endif //SETTINGSMODEL_H

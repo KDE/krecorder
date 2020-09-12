@@ -7,17 +7,29 @@
 
 #include "audiorecorder.h"
 
-constexpr int MAX_VOLUME = 1000;
-
 AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 {
     m_audioProbe = new AudioProber(parent);
     m_audioProbe->setSource(this);
     
     QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
-    
+
     // once the file is done writing, save recording to model
     connect(this, &QAudioRecorder::stateChanged, this, &AudioRecorder::handleStateChange);
+}
+
+void AudioRecorder::setAudioCodec(const QString &codec)
+{
+    m_encoderSettings.setCodec(codec);
+    setAudioSettings(m_encoderSettings);
+    emit audioCodecChanged();
+}
+
+void AudioRecorder::setAudioQuality(int quality)
+{
+    m_encoderSettings.setQuality(QMultimedia::EncodingQuality(quality));
+    setAudioSettings(m_encoderSettings);
+    emit audioQualityChanged();
 }
 
 void AudioRecorder::handleStateChange(QAudioRecorder::State state)
@@ -83,5 +95,5 @@ void AudioRecorder::saveRecording()
     QStringList spl = savedPath.split("/");
     QString fileName = spl.at(spl.size()-1).split(".")[0];
     
-    RecordingModel::inst()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
+    RecordingModel::instance()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
 }

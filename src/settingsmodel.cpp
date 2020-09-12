@@ -23,14 +23,16 @@ SettingsModel::~SettingsModel()
 
 int SettingsModel::simpleAudioFormat() const
 {
-    SimpleAudioFormat format = SimpleAudioFormat::OTHER;
-    for (auto p : formatMap.keys()) {
-        if (formatMap[p].first == audioCodec() && formatMap[p].second == containerFormat()) {
-            format = p;
-            break;
-        }
+    const auto keys = formatMap.keys();
+    auto format_it = std::find_if(keys.begin(), keys.end(), [&](const SimpleAudioFormat p) -> bool {
+        return formatMap[p].first == audioCodec() && formatMap[p].second == containerFormat();
+    });
+
+    if (format_it == keys.end()) {
+        return SimpleAudioFormat::OTHER;
     }
-    return format;
+
+    return *format_it;
 }
 
 void SettingsModel::setSimpleAudioFormat(int audioFormat)
@@ -45,11 +47,11 @@ QString SettingsModel::audioCodec() const
     return settings->value("General/audioCodec", "audio/x-opus").toString();
 }
 
-void SettingsModel::setAudioCodec(QString audioCodec)
+void SettingsModel::setAudioCodec(const QString &audioCodec)
 {
-    AudioRecorder::inst()->setAudioCodec(audioCodec);
+    AudioRecorder::instance()->setAudioCodec(audioCodec);
     settings->setValue("General/audioCodec", audioCodec);
-    
+
     emit audioCodecChanged();
     emit simpleAudioFormatChanged();
 }
@@ -59,9 +61,9 @@ QString SettingsModel::containerFormat() const
     return settings->value("General/containerFormat", "audio/ogg").toString();
 }
 
-void SettingsModel::setContainerFormat(QString audioContainerFormat)
+void SettingsModel::setContainerFormat(const QString &audioContainerFormat)
 {
-    AudioRecorder::inst()->setContainerFormat(audioContainerFormat);
+    AudioRecorder::instance()->setContainerFormat(audioContainerFormat);
     settings->setValue("General/containerFormat", audioContainerFormat);
     
     emit containerFormatChanged();
@@ -75,9 +77,9 @@ int SettingsModel::audioQuality() const
 
 void SettingsModel::setAudioQuality(int audioQuality)
 {
-    QAudioEncoderSettings s = AudioRecorder::inst()->audioSettings();
+    QAudioEncoderSettings s = AudioRecorder::instance()->audioSettings();
     s.setQuality(static_cast<QMultimedia::EncodingQuality>(audioQuality));
-    AudioRecorder::inst()->setAudioSettings(s);
+    AudioRecorder::instance()->setAudioSettings(s);
     
     settings->setValue("General/audioQuality", audioQuality);
     

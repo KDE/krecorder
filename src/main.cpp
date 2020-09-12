@@ -27,11 +27,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("KRecorder");
 
-    AudioPlayer::init();
-    AudioRecorder::init();
-    RecordingModel::init();
-    SettingsModel::init();
-    
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
     //qmlRegisterUncreatableType<QAudioEncoderSettings>("VoiceMemo", 1, 0, "AudioEncoderSettings", "Created by AudioRecorder");
@@ -39,16 +34,16 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         return new Utils;
     });
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "AudioPlayer", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return AudioPlayer::inst(); 
+       return AudioPlayer::instance();
     });
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "AudioRecorder", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return AudioRecorder::inst(); 
+       return AudioRecorder::instance();
     });
     qmlRegisterSingletonType<RecordingModel>("KRecorder", 1, 0, "RecordingModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-        return RecordingModel::inst();
+        return RecordingModel::instance();
     });
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return SettingsModel::inst(); 
+       return SettingsModel::instance();
     });
     
     QQmlApplicationEngine engine;

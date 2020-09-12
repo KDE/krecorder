@@ -16,12 +16,13 @@
 #include <QFileInfo>
 #include <QTimer>
 #include <QQmlEngine>
+#include <QCoreApplication>
 
 #include <audioprober.h>
 #include <recordingmodel.h>
 
 class AudioRecorder;
-static AudioRecorder *s_audioRecorder;
+static AudioRecorder *s_audioRecorder = nullptr;
 
 class AudioRecorder : public QAudioRecorder
 {
@@ -35,26 +36,23 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
     
 private:
+    explicit AudioRecorder(QObject *parent = nullptr);
+    void handleStateChange(QAudioRecorder::State state);
+
     QAudioEncoderSettings m_encoderSettings {};
     AudioProber *m_audioProbe;
 
-    void handleStateChange(QAudioRecorder::State state);
-
-    QString recordingName = ""; // rename recording after recording finishes
-    QString savedPath = ""; // updated after the audio file is renamed
+    QString recordingName = {}; // rename recording after recording finishes
+    QString savedPath = {}; // updated after the audio file is renamed
     int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
     bool resetRequest = false;
     
 public:
-    explicit AudioRecorder(QObject *parent = nullptr);
-
-    static void init()
+    static AudioRecorder* instance()
     {
-        s_audioRecorder = new AudioRecorder();
-    }
-    
-    static AudioRecorder* inst()
-    {
+        if (!s_audioRecorder) {
+            s_audioRecorder = new AudioRecorder(qApp);
+        }
         return s_audioRecorder;
     }
     
@@ -67,22 +65,14 @@ public:
     {
         return m_encoderSettings.codec();
     }
-    void setAudioCodec(const QString &codec) 
-    {
-        m_encoderSettings.setCodec(codec);
-        setAudioSettings(m_encoderSettings);
-        emit audioCodecChanged();
-    }
+
+    void setAudioCodec(const QString &codec);
+
     int audioQuality() 
     {
         return m_encoderSettings.quality();
     }
-    void setAudioQuality(int quality) 
-    {
-        m_encoderSettings.setQuality(QMultimedia::EncodingQuality(quality));
-        setAudioSettings(m_encoderSettings);
-        emit audioQualityChanged();
-    }
+    void setAudioQuality(int quality);
     
     Q_INVOKABLE void reset()
     {
@@ -93,7 +83,7 @@ public:
     Q_INVOKABLE void saveRecording();
 
     void renameCurrentRecording();
-    Q_INVOKABLE void setRecordingName(QString rName) {
+    Q_INVOKABLE void setRecordingName(const QString &rName) {
         recordingName = rName;
     }
     

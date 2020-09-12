@@ -54,6 +54,7 @@ void AudioProber::process(QAudioBuffer buffer)
     for (int i = 0; i < buffer.sampleCount(); i++) {
         sum += abs(static_cast<short *>(buffer.data())[i]);
     }
+
     sum /= buffer.sampleCount();
     
     if (sum > MAX_VOLUME)
