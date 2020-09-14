@@ -29,7 +29,7 @@ public:
 
     QVariantList volumesList() const
     {
-        return {m_volumesList.begin(), m_volumesList.end()};
+        return m_volumesList;
     }
 
     int maxVolumes()
@@ -56,11 +56,12 @@ public:
     }
 
 private:
-    int m_audioSum = 0, m_audioLen = 0; // used for calculating the value of one volume bar from many
+    int m_audioSum = 0;  //
+    int m_audioLen = 0; // used for calculating the value of one volume bar from many
     int m_animationIndex = 0; // which index rectangle is being expanded
     int m_maxVolumes = 100; // based on width of screen
 
-    QList<int> m_volumesList;
+    QVariantList m_volumesList;
 
     QTimer* volumeBarTimer;
     
