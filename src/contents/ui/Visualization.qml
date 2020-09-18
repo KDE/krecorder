@@ -39,6 +39,7 @@ Item {
     }
     
     ListView {
+        id: list
         model: visualization.volumes
         orientation: Qt.Horizontal
         
@@ -49,27 +50,15 @@ Item {
         
         delegate: Item {
             width: 4
-            // below centre line
+            height: list.height
+        
             Rectangle {
                 color: "#616161"
                 width: 2
-                height: index === animationIndex ? 0 : maxBarHeight * modelData / 1000
+                height: index === animationIndex ? 0 : maxBarHeight * modelData / 500
                 antialiasing: true
-                
-                Behavior on height {
-                    SmoothedAnimation {
-                        duration: 500
-                    }
-                }
-            }
-            // above centre line
-            Rectangle {
-                color: "#616161"
-                width: 2
-                height: index == animationIndex ? 0 : maxBarHeight * modelData / 1000
-                antialiasing: true
-                y: -height
-                
+                anchors.verticalCenter: parent.verticalCenter
+
                 Behavior on height {
                     SmoothedAnimation {
                         duration: 500
