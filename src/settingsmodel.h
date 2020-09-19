@@ -46,7 +46,7 @@ public:
 
     static SettingsModel* instance()
     {
-        if (s_settingsModel) {
+        if (!s_settingsModel) {
             s_settingsModel = new SettingsModel(qApp);
         }
         return s_settingsModel;
