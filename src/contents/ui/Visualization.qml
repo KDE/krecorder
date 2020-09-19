@@ -44,7 +44,7 @@ Item {
         orientation: Qt.Horizontal
         
         interactive: false
-        anchors.top: centralLine.top
+        anchors.verticalCenter: centralLine.verticalCenter
         height: maxBarHeight
         width: parent.width
         
@@ -55,7 +55,7 @@ Item {
             Rectangle {
                 color: "#616161"
                 width: 2
-                height: index === animationIndex ? 0 : maxBarHeight * modelData / 500
+                height: index === animationIndex ? 0 : 2 * maxBarHeight * modelData / 1000
                 antialiasing: true
                 anchors.verticalCenter: parent.verticalCenter
 
