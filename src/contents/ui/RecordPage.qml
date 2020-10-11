@@ -34,6 +34,13 @@ Kirigami.Page {
             visible: !isStopped
         }
     }
+
+    Connections {
+        target: AudioRecorder
+        function onError(error) {
+            console.warn("Error on the recorder", error)
+        }
+    }
     
     ColumnLayout {
         anchors.fill: parent
