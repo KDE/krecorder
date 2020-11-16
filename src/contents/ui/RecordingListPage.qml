@@ -22,7 +22,7 @@ Kirigami.ScrollablePage {
     actions {
         main: Kirigami.Action {
             text: i18n("Record")
-            icon.name: "microphone"
+            icon.name: "audio-input-microphone-symbolic"
             onTriggered: pageStack.layers.push(recordPage)
         }
     }
@@ -39,7 +39,7 @@ Kirigami.ScrollablePage {
             anchors.right: parent.right
             anchors.margins: Kirigami.Units.largeSpacing
             
-            icon.name: "microphone"
+            icon.name: "audio-input-microphone-symbolic"
             text: i18n("No recordings yet, record your first!")
             visible: parent.count === 0
         }

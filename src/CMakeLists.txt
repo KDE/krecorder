@@ -33,7 +33,7 @@ install(TARGETS krecorder ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 if(CMAKE_SYSTEM_NAME STREQUAL "Android")
     kirigami_package_breeze_icons(ICONS
         media-playback-pause media-playback-start
-        media-playback-stop media-record microphone
+        media-playback-stop media-record audio-input-microphone-symbolic
         entry-edit delete settings-configure
     )
 
