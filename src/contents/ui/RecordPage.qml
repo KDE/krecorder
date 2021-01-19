@@ -67,7 +67,7 @@ Kirigami.Page {
         id: saveDialog
         
         header: Kirigami.Heading {
-            text: "Save recording"
+            text: i18n("Save recording")
         }
         
         footer: RowLayout {
@@ -102,7 +102,7 @@ Kirigami.Page {
         RowLayout {
             Controls.Label {
                 Layout.alignment: Qt.AlignVCenter
-                text: "Name"
+                text: i18n("Name")
             }
             Controls.TextField {
                 id: recordingName
