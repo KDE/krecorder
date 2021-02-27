@@ -32,6 +32,9 @@ Kirigami.ScrollablePage {
     ListView {
         anchors.fill: parent
         model: RecordingModel
+        
+        // prevent default highlight
+        currentIndex: -1
 
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
@@ -106,6 +109,7 @@ Kirigami.ScrollablePage {
             Controls.Button {
                 flat: false
                 text: i18nc("@action:button", "Cancel")
+                icon.name: "dialog-cancel"
                 Layout.alignment: Qt.AlignRight
                 onClicked: editNameDialog.close();
             }
@@ -113,6 +117,7 @@ Kirigami.ScrollablePage {
             Controls.Button {
                 flat: false
                 text: i18nc("@action:button", "Done")
+                icon.name: "dialog-ok"
 
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
@@ -124,22 +129,25 @@ Kirigami.ScrollablePage {
         
         GridLayout {
             columns: 2
-            rowSpacing: Kirigami.Units.largeSpacing
+            rowSpacing: Kirigami.Units.largeSpacing * 2
             
             Kirigami.Heading {
-                text: i18n("Name")
+                text: i18n("Name:")
                 level: 4
             }
             Controls.TextField {
                 id: editDialogName
+                Layout.fillWidth: true
             }
             
             Kirigami.Heading {
-                text: i18n("Location")
+                text: i18n("Location:")
                 level: 4
             }
             Controls.Label {
                 id: editDialogLocation 
+                Layout.fillWidth: true
+                wrapMode: Text.Wrap
             }
         }
     }

@@ -67,6 +67,7 @@ Kirigami.Page {
         id: saveDialog
         
         header: Kirigami.Heading {
+            level: 2
             text: i18n("Save recording")
         }
         
@@ -78,6 +79,7 @@ Kirigami.Page {
             Controls.Button {
                 flat: false
                 text: i18nc("@action:button", "Delete")
+                icon.name: "delete"
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
                     AudioRecorder.reset()
@@ -88,6 +90,7 @@ Kirigami.Page {
             Controls.Button {
                 flat: false
                 text: i18nc("@action:button", "Save")
+                icon.name: "dialog-ok-apply"
                 Layout.alignment: Qt.AlignRight
                 onClicked: {
                     AudioRecorder.setRecordingName(recordingName.text);
@@ -99,13 +102,17 @@ Kirigami.Page {
                 }
             }
         }
+        
         RowLayout {
+            implicitWidth: Kirigami.Units.gridUnit * 12
             Controls.Label {
+                id: nameLabel
                 Layout.alignment: Qt.AlignVCenter
-                text: i18n("Name")
+                text: i18n("Name:")
             }
             Controls.TextField {
                 id: recordingName
+                Layout.fillWidth: true
                 placeholderText: i18n("Name (optional)")
             }
         }
