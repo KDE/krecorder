@@ -17,6 +17,13 @@ A convergent audio recording application for Plasma.
 * Issues: https://invent.kde.org/plasma-mobile/krecorder/-/issues
 * Development channel: https://matrix.to/#/#plasmamobile:matrix.org
 
+## Dependencies
+
+* extra-cmake-modules
+* kconfig
+* ki18n
+* kirigami2 (runtime only)
+
 ## Installing
 ```
 mkdir build
