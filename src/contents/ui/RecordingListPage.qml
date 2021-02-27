@@ -13,7 +13,7 @@ import KRecorder 1.0
 
 Kirigami.ScrollablePage {
     title: i18n("Recordings")
-    
+
     RecordPage {
         id: recordPage
         visible: false
@@ -97,8 +97,9 @@ Kirigami.ScrollablePage {
     Kirigami.OverlaySheet {
         id: editNameDialog
         
-        function updateFileName(name) {
-            recording.fileName = name;
+        header: Kirigami.Heading {
+            level: 2
+            text: i18n("Editing") + " " + editDialogName.text
         }
         
         footer: RowLayout {
