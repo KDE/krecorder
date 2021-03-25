@@ -11,30 +11,12 @@ import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
 import KRecorder 1.0
 
-Kirigami.Page {
-    
-    title: i18n("Record Audio")
+Item {
     property bool isStopped: AudioRecorder.state === AudioRecorder.StoppedState
     property bool isPaused: AudioRecorder.state === AudioRecorder.PausedState
-    
-    actions {
-        main: Kirigami.Action {
-            text: (isStopped || isPaused) ? i18n("Record") : i18n("Pause")
-            icon.name: (isStopped || isPaused) ? "media-record" : "media-playback-pause"
-            onTriggered: (isStopped || isPaused) ? AudioRecorder.record() : AudioRecorder.pause()
-        }
-        right: Kirigami.Action {
-            text: i18n("Stop")
-            icon.name: "media-playback-stop"
-            onTriggered: {
-                recordingName.text = RecordingModel.nextDefaultRecordingName();
-                saveDialog.open();
-                AudioRecorder.pause();
-            }
-            visible: !isStopped
-        }
-    }
 
+    signal openSheet()
+    
     Connections {
         target: AudioRecorder
         function onError(error) {
@@ -43,26 +25,76 @@ Kirigami.Page {
     }
     
     ColumnLayout {
+        id: column
         anchors.fill: parent
-
+         
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
             text: isStopped ? "00:00:00" : Utils.formatTime(AudioRecorder.duration)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
-        }            
+            font.weight: Font.Light
+        }
+         
         Visualization {
             Layout.fillWidth: true
             
             showLine: true
-            height: Kirigami.Units.gridUnit * 15
+            height: Kirigami.Units.gridUnit * 10
             maxBarHeight: Kirigami.Units.gridUnit * 5
             animationIndex: AudioRecorder.prober.animationIndex
             
             volumes: AudioRecorder.prober.volumesList
         }
+        RowLayout {
+            spacing: Kirigami.Units.largeSpacing
+            Layout.fillWidth: true
+            
+            Item { Layout.fillWidth: true }
+            Controls.RoundButton {
+                implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
+                implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
+                
+                text: (isStopped || isPaused) ? i18n("Record") : i18n("Pause")
+                icon.name: (isStopped || isPaused) ? "media-record" : "media-playback-pause"
+                display: Controls.AbstractButton.IconOnly
+                
+                onClicked: (isStopped || isPaused) ? AudioRecorder.record() : AudioRecorder.pause()
+            }
+            Controls.RoundButton {
+                implicitWidth: Math.round(Kirigami.Units.gridUnit * 3)
+                implicitHeight: Math.round(Kirigami.Units.gridUnit * 3)
+                
+                text: i18n("Stop")
+                icon.name: "media-playback-stop"
+                display: Controls.AbstractButton.IconOnly
+                enabled: !isStopped
+                
+                onClicked: {
+                    recordingName.text = RecordingModel.nextDefaultRecordingName();
+                    openSheet();
+                    saveDialog.open();
+                    AudioRecorder.pause();
+                }
+            }
+            Controls.RoundButton {
+                implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
+                implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
+                
+                text: i18n("Delete")
+                icon.name: "delete"
+                display: Controls.AbstractButton.IconOnly
+                
+                onClicked: {
+                    openSheet();
+                    AudioRecorder.reset()
+                    saveDialog.close();
+                }
+            }
+            Item { Layout.fillWidth: true }
+        }
     }
-    
+
     Kirigami.OverlaySheet {
         id: saveDialog
         
@@ -72,9 +104,7 @@ Kirigami.Page {
         }
         
         footer: RowLayout {
-            Item {
-                Layout.fillWidth: true
-            }
+            Item { Layout.fillWidth: true }
             
             Controls.Button {
                 flat: false

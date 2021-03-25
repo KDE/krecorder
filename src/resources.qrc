@@ -8,7 +8,8 @@
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="Visualization.qml">contents/ui/Visualization.qml</file>
         <file alias="RecordingListPage.qml">contents/ui/RecordingListPage.qml</file>
-        <file alias="RecordPage.qml">contents/ui/RecordPage.qml</file>
+        <file alias="Record.qml">contents/ui/Record.qml</file>
+        <file alias="RecordingComponent.qml">contents/ui/RecordingComponent.qml</file>
         <file alias="Settings.qml">contents/ui/Settings.qml</file>
         <file alias="PlayerPage.qml">contents/ui/PlayerPage.qml</file>
         <file alias="DefaultPage.qml">contents/ui/DefaultPage.qml</file>

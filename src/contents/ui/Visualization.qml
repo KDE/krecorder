@@ -8,6 +8,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.2 as Controls
+import org.kde.kirigami 2.12 as Kirigami
 import KRecorder 1.0
 
 Item {
@@ -49,12 +50,13 @@ Item {
         width: parent.width
         
         delegate: Item {
-            width: 4
+            width: Math.round(Kirigami.Units.gridUnit * 0.4)
             height: list.height
         
             Rectangle {
-                color: "#616161"
-                width: 2
+                color: Kirigami.Theme.disabledTextColor
+                width: Math.round(Kirigami.Units.gridUnit * 0.12)
+                radius: Math.round(width / 2)
                 height: index === animationIndex ? 0 : 2 * maxBarHeight * modelData / 1000
                 antialiasing: true
                 anchors.verticalCenter: parent.verticalCenter

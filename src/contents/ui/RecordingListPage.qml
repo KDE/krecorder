@@ -16,7 +16,7 @@ Kirigami.ScrollablePage {
     title: i18n("Recordings")
 
     property Recording currentRecordingToEdit
-    implicitWidth: appwindow.isWidescreen ? Kirigami.Units.gridUnit * 8 : undefined
+    implicitWidth: appwindow.isWidescreen ? Kirigami.Units.gridUnit * 8 : appwindow.width
     
     ListView {
         model: RecordingModel
@@ -24,9 +24,8 @@ Kirigami.ScrollablePage {
         // prevent default highlight
         currentIndex: -1
         
-        RecordPage {
-            id: recordPage
-            visible: false
+        Record {
+            id: recordComponent
         }
 
         add: Transition {
@@ -64,7 +63,7 @@ Kirigami.ScrollablePage {
             id: recordButton
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: Kirigami.Units.gridUnit
+            anchors.bottomMargin: Kirigami.Units.largeSpacing
             implicitWidth: Kirigami.Units.gridUnit * 3
             implicitHeight: Kirigami.Units.gridUnit * 3
             radius: width / 2
@@ -80,7 +79,11 @@ Kirigami.ScrollablePage {
                     }
                 }
                 onClicked: {
-                    pageStack.layers.push(recordPage)
+                    if (Kirigami.Settings.isMobile) {
+                        recordComponent.item.open();
+                    } else {
+                        pageStack.layers.push(recordComponent.item);
+                    }
                 }
             }
             
@@ -178,7 +181,7 @@ Kirigami.ScrollablePage {
 
                     Layout.alignment: Qt.AlignRight
                     onClicked: {
-                        if (deleteDialog.toDelete.filePath == appwindow.currentRecording.filePath) {
+                        if (appwindow.currentRecording && deleteDialog.toDelete.filePath == appwindow.currentRecording.filePath) {
                             appwindow.switchToRecording(null);
                         }
                         RecordingModel.deleteRecording(deleteDialog.toDeleteIndex);
