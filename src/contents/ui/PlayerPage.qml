@@ -18,21 +18,12 @@ Kirigami.Page {
     
     onBackRequested: AudioPlayer.stop()
     
-    actions {
-        main: Kirigami.Action {
-            text: AudioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
-            icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
-            onTriggered: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
-        }
-        right: Kirigami.Action {
-            visible: AudioPlayer.state !== AudioPlayer.StoppedState
-            text: i18n("Stop")
-            icon.name: "media-playback-stop"
-            onTriggered: AudioPlayer.stop();
-        }
-    }
+    property int yTranslate: 0
+    property int mainOpacity: 0
     
     ColumnLayout {
+        opacity: mainOpacity
+        transform: Translate { y: yTranslate }
         anchors.fill: parent
         
         Controls.Label {
@@ -40,6 +31,7 @@ Kirigami.Page {
             Layout.alignment: Qt.AlignHCenter
             text: AudioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(AudioPlayer.position)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
+            font.weight: Font.Light
         }           
         
         Visualization {
@@ -60,6 +52,23 @@ Kirigami.Page {
             value: AudioPlayer.position
             
             onMoved: AudioPlayer.setPosition(value)
+        }
+        RowLayout {
+            Layout.alignment: Qt.AlignHCenter
+            spacing: Kirigami.Units.largeSpacing
+            Controls.ToolButton {
+                implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
+                implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
+                icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
+                onClicked: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
+            }
+            Controls.ToolButton {
+                implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
+                implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
+                visible: AudioPlayer.state !== AudioPlayer.StoppedState
+                icon.name: "media-playback-stop"
+                onClicked: AudioPlayer.stop();
+            }
         }
     }
 }
