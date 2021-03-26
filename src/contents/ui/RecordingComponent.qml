@@ -90,20 +90,24 @@ Item {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
                 
-                text: i18n("Delete")
-                icon.name: "delete"
+                text: i18n("Settings")
+                icon.name: "settings-configure"
                 display: Controls.AbstractButton.IconOnly
+                enabled: isStopped
                 
                 onClicked: {
                     openSheet();
-                    AudioRecorder.reset()
-                    saveDialog.close();
+                    settingsDialog.open();
                 }
             }
             Item { Layout.fillWidth: true }
         }
     }
 
+    Settings {
+        id: settingsDialog
+    }
+    
     Kirigami.OverlaySheet {
         id: saveDialog
         

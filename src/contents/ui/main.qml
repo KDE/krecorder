@@ -71,15 +71,7 @@ Kirigami.ApplicationWindow {
         yAnim.restart();
         anim.restart();
     }
-    
-    globalDrawer: Kirigami.GlobalDrawer {
-        actions: Kirigami.Action {
-            text: i18n("Settings")
-            icon.name: "settings-configure"
-            onTriggered: pageStack.layers.push("qrc:/Settings.qml", {recorder: AudioRecorder})
-        }
-    }
-    
+
     pageStack.initialPage: RecordingListPage {}
     Component.onCompleted: switchToRecording(null)
 }

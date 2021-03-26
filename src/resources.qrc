@@ -11,6 +11,7 @@
         <file alias="Record.qml">contents/ui/Record.qml</file>
         <file alias="RecordingComponent.qml">contents/ui/RecordingComponent.qml</file>
         <file alias="Settings.qml">contents/ui/Settings.qml</file>
+        <file alias="SettingsComponent.qml">contents/ui/SettingsComponent.qml</file>
         <file alias="PlayerPage.qml">contents/ui/PlayerPage.qml</file>
         <file alias="DefaultPage.qml">contents/ui/DefaultPage.qml</file>
     </qresource>

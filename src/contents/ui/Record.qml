@@ -36,10 +36,7 @@ Loader {
             
             ColumnLayout {
                 id: contents
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.top: parent.top
+                anchors.fill: parent
                 spacing: 0
                 
                 Kirigami.Icon {

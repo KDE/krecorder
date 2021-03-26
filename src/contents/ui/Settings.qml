@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ * SPDX-FileCopyrightText: 2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -11,58 +12,65 @@ import QtQuick.Layouts 1.1
 import org.kde.kirigami 2.8 as Kirigami
 import KRecorder 1.0
 
-Kirigami.ScrollablePage {
-    title: i18n("Settings")
-    property bool showAdvanced: false
+Loader {
+    sourceComponent: appwindow.isWidescreen ? widescreenComponent : narrowComponent
     
-    Kirigami.FormLayout {
-
-        Controls.ComboBox {
-            Kirigami.FormData.label: i18n("Format")
-            model: [i18n("Ogg Vorbis"), i18n("Ogg Opus"), i18n("FLAC"), i18n("MP3"), i18n("WAV")]
-            currentIndex: SettingsModel.simpleAudioFormat
-            onActivated: SettingsModel.simpleAudioFormat = currentIndex
+    function open() {
+        item.open();
+    }
+    
+    Component {
+        id: widescreenComponent
+        Kirigami.OverlaySheet {
+            parent: parent.overlay
+            header: Kirigami.Heading {
+                level: 2
+                text: i18n("Settings")
+            }
+            
+            contentItem: SettingsComponent {}
         }
-        
-        Controls.Slider {
-            Kirigami.FormData.label: i18n("Audio Quality")
-            value: SettingsModel.audioQuality
-            // enum values
-            from: 0
-            to: 4
-            stepSize: 1
-            onValueChanged: SettingsModel.audioQuality = value
-            snapMode: Controls.Slider.SnapAlways
+    }
+    
+    Component {
+        id: narrowComponent
+        Kirigami.OverlayDrawer {
+            id: drawer
+            height: Math.max(appwindow.height * 0.4, contents.height + Kirigami.Units.largeSpacing * 2)
+            width: appwindow.width
+            edge: Qt.BottomEdge
+            z: -1
+            
+            Behavior on height {
+                NumberAnimation { duration: Kirigami.Units.shortDuration }
+            }
+            
+            ColumnLayout {
+                id: contents
+                anchors.left: parent.left
+                anchors.right: parent.right
+                spacing: 0
+                
+                Kirigami.Icon {
+                    Layout.margins: Kirigami.Units.smallSpacing
+                    source: "arrow-down"
+                    implicitWidth: Kirigami.Units.gridUnit
+                    implicitHeight: Kirigami.Units.gridUnit
+                    Layout.alignment: Qt.AlignHCenter
+                }
+                
+                Kirigami.Heading {
+                    level: 3
+                    text: i18n("<b>Settings</b>")
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing * 2
+                }
+                
+                SettingsComponent {
+                    Layout.fillWidth: true
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing
+                }
+            }
         }
-        
-        Controls.Button {
-            text: showAdvanced ? i18n("Hide Advanced Settings") : i18n("Show Advanced Settings")
-            onClicked: showAdvanced = !showAdvanced
-        }
-        
-        // advanced settings
-        Controls.ComboBox {
-            visible: showAdvanced
-            Kirigami.FormData.label: i18n("Audio Input")
-            currentIndex: AudioRecorder.audioInputs.indexOf(AudioRecorder.audioInput)
-            model: AudioRecorder.audioInputs
-            onActivated: AudioRecorder.audioInput = currentValue
-        }
-        
-        Controls.ComboBox {
-            visible: showAdvanced
-            Kirigami.FormData.label: i18n("Audio Codec")
-            currentIndex: AudioRecorder.supportedAudioCodecs.indexOf(SettingsModel.audioCodec)
-            model: AudioRecorder.supportedAudioCodecs
-            onActivated: SettingsModel.audioCodec = currentValue
-        }
-        Controls.ComboBox {
-            visible: showAdvanced
-            Kirigami.FormData.label: i18n("Container Format")
-            currentIndex: AudioRecorder.supportedContainers.indexOf(SettingsModel.containerFormat)
-            model: AudioRecorder.supportedContainers
-            onActivated: SettingsModel.containerFormat = currentValue
-        }
-        
     }
 }
