@@ -21,7 +21,7 @@ Kirigami.ApplicationWindow {
     width: Kirigami.Settings.isMobile ? 400 : 800
     height: Kirigami.Settings.isMobile ? 550 : 500
     
-    property bool isWidescreen: appwindow.width >= appwindow.height
+    property bool isWidescreen: appwindow.wideScreen && appwindow.width >= appwindow.height // prevent being widescreen at first launch
     property Recording currentRecording: null
     
     // page switch animation

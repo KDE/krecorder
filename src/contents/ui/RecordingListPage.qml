@@ -19,7 +19,28 @@ Kirigami.ScrollablePage {
     implicitWidth: appwindow.isWidescreen ? Kirigami.Units.gridUnit * 8 : appwindow.width
     
     ListView {
+        id: listView
         model: RecordingModel
+        
+        // show animation
+        property int yTranslate: 0
+        transform: Translate { y: listView.yTranslate }
+        NumberAnimation on opacity {
+            from: 0
+            to: 1
+            duration: Kirigami.Units.longDuration * 2
+            easing.type: Easing.InOutQuad
+            running: true
+        }
+        NumberAnimation {
+            from: Kirigami.Units.gridUnit * 3
+            to: 0
+            duration: Kirigami.Units.longDuration * 3
+            easing.type: Easing.OutQuint
+            property: "yTranslate"
+            target: listView
+            running: true
+        }
         
         // prevent default highlight
         currentIndex: -1
@@ -45,7 +66,7 @@ Kirigami.ScrollablePage {
             anchors.margins: Kirigami.Units.largeSpacing
             
             icon.name: "audio-input-microphone-symbolic"
-            text: i18n("No recordings yet, record your first!")
+            text: appwindow.isWidescreen ? i18n("No recordings") : i18n("No recordings yet, record your first!")
             visible: parent.count === 0
         }
         
@@ -114,7 +135,7 @@ Kirigami.ScrollablePage {
                     font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 1.1)
                     font.weight: Font.Medium
                     text: recording.fileName
-                    color: (appwindow.currentRecording && appwindow.currentRecording.filePath === recording.filePath) ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor 
+                    color: (appwindow.isWidescreen && appwindow.currentRecording && appwindow.currentRecording.filePath === recording.filePath) ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor 
                 }
                 RowLayout {
                     Layout.bottomMargin: Kirigami.Units.smallSpacing

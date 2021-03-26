@@ -23,7 +23,7 @@ Kirigami.Page {
         anchors.centerIn: parent
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         icon.name: "microphone-sensitivity-medium"
-        text: RecordingModel.count == 0 ? i18n("No recordings") : i18n("Click on a recording to play it, or record a new one")
+        text: i18n("Click on a recording to play it, or record a new one")
     }
 }
  

@@ -29,7 +29,7 @@ Loader {
         id: mobileComponent
         Kirigami.OverlayDrawer {
             id: drawer
-            height: appwindow.height * 0.7
+            height: appwindow.height * 0.8
             width: appwindow.width
             edge: Qt.BottomEdge
             parent: applicationWindow().overlay
@@ -38,6 +38,8 @@ Loader {
                 id: contents
                 anchors.left: parent.left
                 anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.top: parent.top
                 spacing: 0
                 
                 Kirigami.Icon {
@@ -50,9 +52,9 @@ Loader {
                 
                 Kirigami.Heading {
                     level: 3
-                    text: i18n("<b>Record Audio</b>")
+                    text: i18n("<b>New Recording</b>")
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.bottomMargin: Kirigami.Units.smallSpacing
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing * 2
                 }
                 
                 RecordingComponent {

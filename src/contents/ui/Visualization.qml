@@ -18,25 +18,30 @@ Item {
     property int animationIndex // which index rectangle is being expanded
     property var volumes: []
     property bool showLine
+    property bool showBarsFromMiddle
+    
+    property int reservedBarWidth: Math.round(Kirigami.Units.gridUnit * 0.4)
     
     Component.onCompleted: {
-        AudioRecorder.prober.maxVolumes = width / 4;
-        AudioPlayer.prober.maxVolumes = width / 4;
+        AudioRecorder.prober.maxVolumes = width / reservedBarWidth;
+        AudioPlayer.prober.maxVolumes = width / reservedBarWidth;
     }
     
     onWidthChanged: {
-        AudioRecorder.prober.maxVolumes = width / 4;
-        AudioPlayer.prober.maxVolumes = width / 4;
+        AudioRecorder.prober.maxVolumes = width / reservedBarWidth;
+        AudioPlayer.prober.maxVolumes = width / reservedBarWidth;
     }
     
     // central line
     Rectangle {
+        id: verticalBar
         visible: showLine
-        id: centralLine
-        width: parent.width
-        height: 3
-        anchors.verticalCenter: parent.verticalCenter
-        color: "#e0e0e0"
+        z: 1
+        anchors.top: list.top
+        anchors.bottom: list.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: Math.round(Kirigami.Units.gridUnit * 0.1)
+        color: Kirigami.Theme.negativeTextColor
     }
     
     ListView {
@@ -45,27 +50,23 @@ Item {
         orientation: Qt.Horizontal
         
         interactive: false
-        anchors.verticalCenter: centralLine.verticalCenter
         height: maxBarHeight
-        width: parent.width
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: showBarsFromMiddle ? Math.max(0, parent.width / 2 - list.count * reservedBarWidth) : 0 // gradually expand list
+        anchors.right: showBarsFromMiddle ? verticalBar.left : parent.right
         
         delegate: Item {
-            width: Math.round(Kirigami.Units.gridUnit * 0.4)
+            width: reservedBarWidth
             height: list.height
         
             Rectangle {
                 color: Kirigami.Theme.disabledTextColor
                 width: Math.round(Kirigami.Units.gridUnit * 0.12)
                 radius: Math.round(width / 2)
-                height: index === animationIndex ? 0 : 2 * maxBarHeight * modelData / 1000
+                height: Math.max(Math.round(Kirigami.Units.gridUnit * 0.15), maxBarHeight * modelData / 1000)
                 antialiasing: true
                 anchors.verticalCenter: parent.verticalCenter
-
-                Behavior on height {
-                    SmoothedAnimation {
-                        duration: 500
-                    }
-                }
             }
         }
     }

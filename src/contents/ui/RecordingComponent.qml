@@ -31,24 +31,33 @@ Item {
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
+            Layout.bottomMargin: Kirigami.Units.largeSpacing
             text: isStopped ? "00:00:00" : Utils.formatTime(AudioRecorder.duration)
             font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
             font.weight: Font.Light
         }
+        
+        Item { Layout.fillHeight: true }
          
         Visualization {
             Layout.fillWidth: true
             
+            showBarsFromMiddle: true
             showLine: true
             height: Kirigami.Units.gridUnit * 10
-            maxBarHeight: Kirigami.Units.gridUnit * 5
+            maxBarHeight: Kirigami.Units.gridUnit * 5 * 2
             animationIndex: AudioRecorder.prober.animationIndex
             
             volumes: AudioRecorder.prober.volumesList
         }
+        
+        Item { Layout.fillHeight: true }
+        
         RowLayout {
-            spacing: Kirigami.Units.largeSpacing
+            spacing: Kirigami.Units.largeSpacing * 2
             Layout.fillWidth: true
+            Layout.bottomMargin: Kirigami.Units.gridUnit
+            Layout.topMargin: Kirigami.Units.largeSpacing
             
             Item { Layout.fillWidth: true }
             Controls.RoundButton {
