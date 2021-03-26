@@ -23,13 +23,13 @@ Item {
     property int reservedBarWidth: Math.round(Kirigami.Units.gridUnit * 0.4)
     
     Component.onCompleted: {
-        AudioRecorder.prober.maxVolumes = width / reservedBarWidth;
-        AudioPlayer.prober.maxVolumes = width / reservedBarWidth;
+        AudioRecorder.prober.maxVolumes = (showBarsFromMiddle ? width : width / 2) / reservedBarWidth;
+        AudioPlayer.prober.maxVolumes = (showBarsFromMiddle ? width : width / 2) / reservedBarWidth;
     }
     
     onWidthChanged: {
-        AudioRecorder.prober.maxVolumes = width / reservedBarWidth;
-        AudioPlayer.prober.maxVolumes = width / reservedBarWidth;
+        AudioRecorder.prober.maxVolumes = (showBarsFromMiddle ? width : width / 2) / reservedBarWidth;
+        AudioPlayer.prober.maxVolumes = (showBarsFromMiddle ? width : width / 2) / reservedBarWidth;
     }
     
     // central line
