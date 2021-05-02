@@ -104,4 +104,7 @@
     <p xml:lang="uk">«Записувач» є простою програмою для запису звукових даних, яка може працювати на багатьох програмних платформах.</p>
     <p xml:lang="x-test">xxRecorder is a simple, cross-platform audio recording application.xx</p>
   </description>
+  <url type="bugtracker">https://invent.kde.org/plasma-mobile/krecorder/-/issues</url>
+  <launchable type="desktop-id">org.kde.krecorder.desktop</launchable>
+  
 </component>
