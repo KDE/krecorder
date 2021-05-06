@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 - Copyright 2020 Jonah Brüchert <jbb@kaidan.im>
-- SPDX-License-Identifier: GPL-2.0-or-later
+- SPDX-License-Identifier: CC0-1.0
 -->
 <component type="desktop-application">
   <id>org.kde.krecorder</id>
