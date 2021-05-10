@@ -28,6 +28,8 @@ target_link_libraries(krecorder
     KF5::ConfigGui
 )
 
+target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})
+
 install(TARGETS krecorder ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Android")

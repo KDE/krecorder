@@ -5,6 +5,7 @@
 #
 
 project(krecorder)
+set(PROJECT_VERSION "21.05")
 
 cmake_minimum_required(VERSION 3.0)
 
@@ -23,6 +24,11 @@ include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 
+# setup version
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX KRECORDER
+    VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
+)
 ################# Find dependencies #################
 find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets Qml QuickControls2 Multimedia)
 find_package(KF5Kirigami2)

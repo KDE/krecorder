@@ -11,6 +11,7 @@
 #include <QUrl>
 #include <KLocalizedContext>
 #include <QAudioRecorder>
+#include <QCommandLineParser>
 
 #include "recordingmodel.h"
 #include "utils.h"
@@ -18,14 +19,19 @@
 #include "audiorecorder.h"
 #include "audioprober.h"
 #include "settingsmodel.h"
+#include "version.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+    QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    parser.addVersionOption();
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("KRecorder");
+    QCoreApplication::setApplicationVersion(QStringLiteral(KRECORDER_VERSION_STRING));
+    parser.process(app);
 
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
