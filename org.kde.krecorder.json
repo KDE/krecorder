@@ -1,0 +1,32 @@
+{
+    "id": "org.kde.krecorder",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15",
+    "sdk": "org.kde.Sdk",
+    "command": "krecorder",
+    "tags": ["nightly"],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+        "--socket=x11",
+        "--socket=wayland",
+        "--talk-name=org.freedesktop.Notifications",
+        "--device=dri",
+        "--socket=pulseaudio",
+        "--filesystem=xdg-music",
+        "--filesystem=xdg-config"
+    ],
+    "separate-locales": false,
+
+    "modules": [
+        {
+            "name": "krecorder",
+            "buildsystem": "cmake-ninja",
+            "sources": [ 
+                { "type": "git", "url": "https://invent.kde.org/plasma-mobile/krecorder.git"} 
+            ]
+        }
+    ]
+}
