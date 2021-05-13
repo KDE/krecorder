@@ -5,6 +5,9 @@
 -->
 <component type="desktop-application">
   <id>org.kde.krecorder</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <content_rating type="oars-1.1"/>
   <name>Recorder</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="ca-valencia">Enregistrador</name>
@@ -53,8 +56,11 @@
   <summary xml:lang="sv">Ljudinspelare</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
   <summary xml:lang="x-test">xxAudio Recorderxx</summary>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3+</project_license>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </recommends>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
@@ -104,12 +110,20 @@
     <p xml:lang="uk">«Записувач» є простою програмою для запису звукових даних, яка може працювати на багатьох програмних платформах.</p>
     <p xml:lang="x-test">xxRecorder is a simple, cross-platform audio recording application.xx</p>
   </description>
-  <url type="bugtracker">https://invent.kde.org/plasma-mobile/krecorder/-/issues</url>
   <launchable type="desktop-id">org.kde.krecorder.desktop</launchable>
   <categories>
+    <category>Utility</category>
     <category>Multimedia</category>
+    <category>Audio</category>
+    <category>Recorder</category>
+    <category>KDE</category>
   </categories>
   <provides>
     <binary>krecorder</binary>
   </provides>
+  <url type="homepage">https://invent.kde.org/plasma-mobile/krecorder</url>
+  <url type="bugtracker">https://invent.kde.org/plasma-mobile/krecorder/-/issues</url>
+  <releases>
+    <release version="21.05" date="2021-05-10"/>
+  </releases>
 </component>
