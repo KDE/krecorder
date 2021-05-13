@@ -12,11 +12,9 @@
         "--share=network",
         "--socket=x11",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.Notifications",
         "--device=dri",
         "--socket=pulseaudio",
-        "--filesystem=xdg-music",
-        "--filesystem=xdg-config"
+        "--filesystem=xdg-music"
     ],
     "separate-locales": false,
 
@@ -24,9 +22,8 @@
         {
             "name": "krecorder",
             "buildsystem": "cmake-ninja",
-            "sources": [ 
-                { "type": "git", "url": "https://invent.kde.org/plasma-mobile/krecorder.git"} 
-            ]
+            "builddir": true,
+            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
         }
     ]
 }
