@@ -57,4 +57,4 @@ MimeType=application/x-voicememo;
 Icon=org.kde.krecorder
 Type=Application
 Terminal=false
-Categories=Multimedia;Qt;KDE;
+Categories=AudioVideo;Audio;Qt;KDE;
