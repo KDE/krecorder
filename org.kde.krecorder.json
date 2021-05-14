@@ -16,8 +16,6 @@
         "--socket=pulseaudio",
         "--filesystem=xdg-music"
     ],
-    "separate-locales": false,
-
     "modules": [
         {
             "name": "krecorder",

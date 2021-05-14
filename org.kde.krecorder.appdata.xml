@@ -113,7 +113,6 @@
   <launchable type="desktop-id">org.kde.krecorder.desktop</launchable>
   <categories>
     <category>Utility</category>
-    <category>Multimedia</category>
     <category>Audio</category>
     <category>Recorder</category>
     <category>KDE</category>
