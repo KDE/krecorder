@@ -24,6 +24,7 @@
   <name xml:lang="nl">Recorder</name>
   <name xml:lang="nn">Recorder</name>
   <name xml:lang="pa">ਰਿਕਾਰਡਰ</name>
+  <name xml:lang="pl">Recorder</name>
   <name xml:lang="pt">Gravador</name>
   <name xml:lang="pt-BR">Gravador</name>
   <name xml:lang="ro">Recorder</name>
@@ -48,6 +49,7 @@
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="nn">Lydopptakar</summary>
   <summary xml:lang="pa">ਆਡੀਓ ਰਿਕਾਰਡਰ</summary>
+  <summary xml:lang="pl">Nagrywanie dźwięku</summary>
   <summary xml:lang="pt">Gravador de Áudio</summary>
   <summary xml:lang="pt-BR">Gravador de áudio</summary>
   <summary xml:lang="ro">Înregistrator de sunet</summary>
@@ -77,6 +79,7 @@
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
+  <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
@@ -101,6 +104,7 @@
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="nn">Recorder eit eit enkelt program for lydopptak.</p>
     <p xml:lang="pa">ਰਿਕਾਰਡਰ ਸਰਲ, ਕਈ ਪਲੇਟਫਾਰਮਾਂ ਲਈ ਆਡੀਓ ਰਿਕਾਰਡਿੰਗ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</p>
+    <p xml:lang="pl">Recorder jest prostym, wieloplatformowym programem do nagrywania dźwięku.</p>
     <p xml:lang="pt">O Gravador é uma aplicação simples e multi-plataforma para a gravação de áudio.</p>
     <p xml:lang="pt-BR">O gravador é um aplicativo de gravação simples e de múltiplas plataformas.</p>
     <p xml:lang="ro">Recorder e o aplicație simplă pentru înregistrarea sunetului ce rulează pe mai multe platforme.</p>
