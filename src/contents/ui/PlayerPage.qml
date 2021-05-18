@@ -37,6 +37,7 @@ Kirigami.Page {
         Visualization {
             Layout.fillWidth: true
             
+            prober: AudioPlayer.prober
             showBarsFromMiddle: false
             showLine: false
             height: Kirigami.Units.gridUnit * 15

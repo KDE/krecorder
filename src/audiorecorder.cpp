@@ -9,7 +9,7 @@
 
 AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 {
-    m_audioProbe = new AudioProber(parent);
+    m_audioProbe = new AudioProber(parent, this);
     m_audioProbe->setSource(this);
     
     QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
@@ -49,9 +49,6 @@ void AudioRecorder::handleStateChange(QAudioRecorder::State state)
             saveRecording();
         }
         
-        // clear volumes list
-        m_audioProbe->clearVolumesList();
-        
     } else if (state == QAudioRecorder::PausedState) {
         cachedDuration = duration();
     }
@@ -69,10 +66,10 @@ void AudioRecorder::renameCurrentRecording()
         QString updatedPath = path + suffix;
         
         // ignore if the file destination is the same as the one currently being written to
-        if (actualLocation().path() != (path+suffix)) {
+        if (actualLocation().path() != updatedPath) {
             // if the file already exists, add a number to the end
             int cur = 1;
-            QFileInfo check(path + suffix);
+            QFileInfo check(updatedPath);
             while (check.exists()) {
                 updatedPath = QString("%1_%2%3").arg(path, QString::number(cur), suffix);
                 check = QFileInfo(updatedPath);

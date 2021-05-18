@@ -42,6 +42,7 @@ Item {
         Visualization {
             Layout.fillWidth: true
             
+            prober: AudioRecorder.prober
             showBarsFromMiddle: true
             showLine: true
             height: Kirigami.Units.gridUnit * 10

@@ -12,6 +12,8 @@
 #include <QObject>
 #include <QTimer>
 #include <QVariant>
+#include <QAudioRecorder>
+#include <QMediaPlayer>
 #include <QDebug>
 
 class AudioProber : public QAudioProbe
@@ -22,7 +24,9 @@ class AudioProber : public QAudioProbe
     Q_PROPERTY(int maxVolumes READ maxVolumes WRITE setMaxVolumes NOTIFY maxVolumesChanged)
 
 public:
-    explicit AudioProber(QObject *parent = nullptr);
+    AudioProber(QObject *parent = nullptr) {}
+    AudioProber(QObject *parent, QAudioRecorder *source);
+    AudioProber(QObject *parent, QMediaPlayer *source);
 
     void process(QAudioBuffer buffer);
     void processVolumeBar();
@@ -40,7 +44,7 @@ public:
     void setMaxVolumes(int m)
     {
         m_maxVolumes = m;
-        emit maxVolumesChanged();
+        Q_EMIT maxVolumesChanged();
     }
 
     int animationIndex()
@@ -52,10 +56,14 @@ public:
     {
         while (!m_volumesList.empty())
             m_volumesList.removeFirst();
-        emit volumesListChanged();
+        Q_EMIT volumesListChanged();
+        Q_EMIT volumesListCleared();
     }
 
 private:
+    void handleRecorderState(QAudioRecorder::State state);
+    void handlePlayerState(QMediaPlayer::State state);
+    
     int m_audioSum = 0;  //
     int m_audioLen = 0; // used for calculating the value of one volume bar from many
     int m_animationIndex = 0; // which index rectangle is being expanded
@@ -63,12 +71,16 @@ private:
 
     QVariantList m_volumesList;
 
-    QTimer* volumeBarTimer;
+    QTimer *volumeBarTimer;
+    QAudioRecorder *m_recorderSource;
+    QMediaPlayer *m_playerSource;
     
 signals:
+    void volumesListAdded(int volume);
     void volumesListChanged();
     void animationIndexChanged();
     void maxVolumesChanged();
+    void volumesListCleared();
 };
 
 #endif

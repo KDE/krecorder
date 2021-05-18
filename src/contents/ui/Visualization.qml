@@ -14,6 +14,8 @@ import KRecorder 1.0
 Item {
     id: visualization
     
+    property var prober
+    
     property int maxBarHeight
     property int animationIndex // which index rectangle is being expanded
     property var volumes: []
@@ -22,14 +24,22 @@ Item {
     
     property int reservedBarWidth: Math.round(Kirigami.Units.gridUnit * 0.4)
     
-    Component.onCompleted: {
-        AudioRecorder.prober.maxVolumes = width / reservedBarWidth;
-        AudioPlayer.prober.maxVolumes = width / reservedBarWidth;
-    }
+    // maximum volume to base off volume bar height
+    // 1000 works for most audio formats, but some audio formats have higher average volumes
+    property int maxVolumeData: 1000
     
-    onWidthChanged: {
-        AudioRecorder.prober.maxVolumes = (showBarsFromMiddle ? width : width) / reservedBarWidth;
-        AudioPlayer.prober.maxVolumes = (showBarsFromMiddle ? width : width) / reservedBarWidth;
+    Component.onCompleted: visualization.prober.maxVolumes = (showBarsFromMiddle ? list.width : width) / reservedBarWidth;
+    onWidthChanged: visualization.prober.maxVolumes = (showBarsFromMiddle ? list.width : width) / reservedBarWidth;
+    
+    Connections {
+        target: visualization.prober
+        function onVolumesListCleared() {
+            visualization.maxVolumeData = 1000; // reset max
+        }
+        function onVolumesListAdded(volume) {
+            console.log(volume);
+            visualization.maxVolumeData = Math.max(visualization.maxVolumeData, volume);
+        }
     }
     
     // central line
@@ -55,6 +65,7 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: showBarsFromMiddle ? Math.max(0, parent.width / 2 - list.count * reservedBarWidth) : 0 // gradually expand list
         anchors.right: showBarsFromMiddle ? verticalBar.left : parent.right
+        spacing: 0
         
         delegate: Item {
             width: reservedBarWidth
@@ -64,7 +75,7 @@ Item {
                 color: Kirigami.Theme.disabledTextColor
                 width: Math.round(Kirigami.Units.gridUnit * 0.12)
                 radius: Math.round(width / 2)
-                height: Math.max(Math.round(Kirigami.Units.gridUnit * 0.15), maxBarHeight * modelData / 1000)
+                height: Math.max(Math.round(Kirigami.Units.gridUnit * 0.15), maxBarHeight * modelData / visualization.maxVolumeData)
                 antialiasing: true
                 anchors.verticalCenter: parent.verticalCenter
             }
