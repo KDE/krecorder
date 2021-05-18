@@ -37,7 +37,6 @@ Item {
             visualization.maxVolumeData = 1000; // reset max
         }
         function onVolumesListAdded(volume) {
-            console.log(volume);
             visualization.maxVolumeData = Math.max(visualization.maxVolumeData, volume);
         }
     }
