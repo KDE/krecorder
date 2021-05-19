@@ -11,6 +11,9 @@ cmake_minimum_required(VERSION 3.0)
 
 include(FeatureSummary)
 
+# only enable QML debugging on debug builds
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG ")
+
 ################# set KDE specific information #################
 find_package(ECM 0.0.8 REQUIRED NO_MODULE)
 

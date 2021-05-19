@@ -28,7 +28,7 @@ A convergent audio recording application for Plasma.
 ```
 mkdir build
 cd build
-cmake ..
+cmake .. # add -DCMAKE_BUILD_TYPE=Release to compile for release
 make
 sudo make install
 ```
