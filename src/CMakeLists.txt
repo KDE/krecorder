@@ -23,7 +23,8 @@ target_link_libraries(krecorder
     Qt5::Quick 
     Qt5::Widgets 
     Qt5::QuickControls2 
-    Qt5::Multimedia 
+    Qt5::Multimedia
+    Qt5::Svg
     KF5::I18n
     KF5::ConfigGui
 )
@@ -32,13 +33,10 @@ target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})
 
 install(TARGETS krecorder ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
-if(CMAKE_SYSTEM_NAME STREQUAL "Android")
+if(ANDROID)
     kirigami_package_breeze_icons(ICONS
         media-playback-pause media-playback-start
         media-playback-stop media-record audio-input-microphone-symbolic
         entry-edit delete settings-configure
     )
-
-    find_package(Qt5Svg REQUIRED)
-    target_link_libraries(krecorder Qt5::Svg)
 endif()
