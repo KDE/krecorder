@@ -4,14 +4,18 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#include <QApplication>
-#include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
 #include <KLocalizedContext>
 #include <QAudioRecorder>
 #include <QCommandLineParser>
+
+#ifdef Q_OS_ANDROID
+#include <QGuiApplication>
+#else
+#include <QApplication>
+#endif
 
 #include "recordingmodel.h"
 #include "utils.h"
@@ -26,7 +30,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     parser.addVersionOption();
+
+#ifdef Q_OS_ANDROID
+    QGuiApplication app(argc, argv);
+#else
     QApplication app(argc, argv);
+#endif
+
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("KRecorder");

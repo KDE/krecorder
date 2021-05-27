@@ -33,8 +33,12 @@ ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KRECORDER
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Widgets Qml QuickControls2 Multimedia Svg)
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Multimedia Svg)
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config)
+
+if(NOT ANDROID)
+    find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets)
+endif()
 
 add_subdirectory(src)
 

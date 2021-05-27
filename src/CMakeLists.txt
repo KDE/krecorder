@@ -16,12 +16,11 @@ set(krecorder_SRCS
 )
 
 add_executable(krecorder ${krecorder_SRCS})
-target_link_libraries(krecorder 
+target_link_libraries(krecorder PRIVATE
     Qt5::Core 
     Qt5::Gui 
     Qt5::Qml 
     Qt5::Quick 
-    Qt5::Widgets 
     Qt5::QuickControls2 
     Qt5::Multimedia
     Qt5::Svg
@@ -39,4 +38,6 @@ if(ANDROID)
         media-playback-stop media-record audio-input-microphone-symbolic
         entry-edit delete settings-configure
     )
+else()
+    target_link_libraries(krecorder PRIVATE Qt5::Widgets)
 endif()
