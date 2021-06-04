@@ -127,7 +127,16 @@
   <url type="homepage">https://invent.kde.org/plasma-mobile/krecorder</url>
   <url type="bugtracker">https://invent.kde.org/plasma-mobile/krecorder/-/issues</url>
   <releases>
-    <release version="21.06" date="2021-06-10"/>
+    <release version="21.06" date="2021-06-10">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Use consistent bar heights for recording and playback views</li>
+          <li>Fixed no audio causing bars to not be created at all</li>
+          <li>Enable qml debugging when compiled in debug mode</li>
+        </ul>
+      </description>
+    </release>
     <release version="21.05" date="2021-05-10"/>
   </releases>
 </component>
