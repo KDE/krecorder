@@ -7,7 +7,7 @@
   <id>org.kde.krecorder</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1" />
   <name>Recorder</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="ca-valencia">Enregistrador</name>
@@ -136,7 +136,8 @@
           <li>Enable qml debugging when compiled in debug mode</li>
         </ul>
       </description>
+      <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
     </release>
-    <release version="21.05" date="2021-05-10"/>
+    <release version="21.05" date="2021-05-10" />
   </releases>
 </component>
