@@ -7,11 +7,13 @@
 #include <QApplication>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QtQml>
 #include <QUrl>
-#include <KLocalizedContext>
 #include <QAudioRecorder>
 #include <QCommandLineParser>
+#include <QQuickStyle>
+#include <QtQml>
+
+#include <KLocalizedContext>
 
 #include "recordingmodel.h"
 #include "utils.h"
@@ -32,6 +34,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("KRecorder");
     QCoreApplication::setApplicationVersion(QStringLiteral(KRECORDER_VERSION_STRING));
     parser.process(app);
+    
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
 
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
