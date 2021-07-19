@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(krecorder)
-set(PROJECT_VERSION "21.06")
+set(PROJECT_VERSION "21.07")
 
 set(QT_MIN_VERSION "5.15.0")
 set(KF_MIN_VERSION "5.82")
