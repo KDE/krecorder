@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ * SPDX-FileCopyrightText: 2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -19,26 +20,21 @@ const QString DEF_RECORD_PREFIX = "clip";
 
 /* ~ Recording ~ */
 
-Recording::Recording(QObject* parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
-    : QObject(parent)
-    , m_filePath(filePath)
-    , m_fileName(fileName)
-    , m_recordDate(recordDate)
-    , m_recordingLength(recordingLength)
+Recording::Recording(QObject *parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
+    : QObject{ parent }
+    , m_filePath{ filePath }
+    , m_fileName{ fileName }
+    , m_recordDate{ recordDate }
+    , m_recordingLength{ recordingLength }
 {}
 
-Recording::Recording(const QJsonObject &obj)
-    : m_filePath(obj["filePath"].toString())
-    , m_fileName(obj["fileName"].toString())
-    , m_recordDate(QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate))
-    , m_recordingLength(obj["recordingLength"].toInt())
-{
-}
-
-Recording::~Recording()
-{
-}
-
+Recording::Recording(QObject *parent, const QJsonObject &obj)
+    : QObject{ parent }
+    , m_filePath{ obj["filePath"].toString() }
+    , m_fileName{ obj["fileName"].toString() }
+    , m_recordDate{ QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate) }
+    , m_recordingLength{ obj["recordingLength"].toInt() }
+{}
 
 QJsonObject Recording::toJson() const
 {
@@ -95,7 +91,8 @@ void Recording::setRecordingLength(int recordingLength)
 
 /* ~ RecordingModel ~ */
 
-RecordingModel::RecordingModel(QObject *parent) : QAbstractListModel(parent)
+RecordingModel::RecordingModel(QObject *parent) 
+    : QObject{ parent }
 {
     m_settings = new QSettings(parent);
     load();
@@ -114,9 +111,11 @@ void RecordingModel::load()
     QJsonDocument doc = QJsonDocument::fromJson(m_settings->value(QStringLiteral("recordings")).toString().toUtf8());
 
     const auto array = doc.array();
-    std::transform(array.begin(), array.end(), std::back_inserter(m_recordings), [](const QJsonValue &rec) {
-        return new Recording(rec.toObject());
+    std::transform(array.begin(), array.end(), std::back_inserter(m_recordings), [this](const QJsonValue &rec) {
+        return new Recording(this, rec.toObject());
     });
+    
+    Q_EMIT recordingsChanged();
 }
 
 void RecordingModel::save()
@@ -131,26 +130,9 @@ void RecordingModel::save()
     m_settings->setValue(QStringLiteral("recordings"), QString(QJsonDocument(arr).toJson(QJsonDocument::Compact)));
 }
 
-QHash<int, QByteArray> RecordingModel::roleNames() const
+QList<Recording *> &RecordingModel::recordings()
 {
-    return {{Roles::RecordingRole, "recording"}};
-}
-
-QVariant RecordingModel::data(const QModelIndex &index, int role) const
-{
-    if (!index.isValid() || index.row() >= m_recordings.count() || index.row() < 0)
-        return {};
-
-    auto *recording = m_recordings.at(index.row());
-    if (role == Roles::RecordingRole)
-        return QVariant::fromValue(recording);
-
-    return {};
-}
-
-int RecordingModel::rowCount(const QModelIndex &parent) const
-{
-    return parent.isValid() ? 0 : m_recordings.count();
+    return m_recordings;
 }
 
 QString RecordingModel::nextDefaultRecordingName()
@@ -182,9 +164,8 @@ void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTi
 {
     qDebug() << "Adding recording " << filePath;
     
-    Q_EMIT beginInsertRows({}, 0, 0);
     m_recordings.insert(0, new Recording(this, filePath, fileName, recordDate, recordingLength));
-    Q_EMIT endInsertRows();
+    Q_EMIT recordingsChanged();
     
     save();
 }
@@ -194,9 +175,8 @@ void RecordingModel::deleteRecording(const int index)
     qDebug() << "Removing recording " << m_recordings[index]->filePath();
     
     QFile::remove(m_recordings[index]->filePath());
-    beginRemoveRows({}, index, index);
     m_recordings.removeAt(index);
-    endRemoveRows();
+    Q_EMIT recordingsChanged();
     
     save();
 }

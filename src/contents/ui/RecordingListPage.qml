@@ -20,7 +20,7 @@ Kirigami.ScrollablePage {
     
     ListView {
         id: listView
-        model: RecordingModel
+        model: RecordingModel.recordings
         
         // show animation
         property int yTranslate: 0

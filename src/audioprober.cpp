@@ -1,13 +1,18 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
- * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 #include "audioprober.h"
 
-AudioProber::AudioProber(QObject *parent, QAudioRecorder *source) : QAudioProbe(parent)
+AudioProber::AudioProber(QObject *parent)
+    : QAudioProbe{ parent }
+{}
+
+AudioProber::AudioProber(QObject *parent, QAudioRecorder *source) 
+    : QAudioProbe(parent)
 {
     m_recorderSource = source;
     connect(this, &AudioProber::audioBufferProbed, this, &AudioProber::process);
@@ -21,7 +26,8 @@ AudioProber::AudioProber(QObject *parent, QAudioRecorder *source) : QAudioProbe(
     volumeBarTimer->setInterval(150);
 }
 
-AudioProber::AudioProber(QObject *parent, QMediaPlayer *source) : QAudioProbe(parent)
+AudioProber::AudioProber(QObject *parent, QMediaPlayer *source) 
+    : QAudioProbe(parent)
 {
     m_playerSource = source;
     connect(this, &AudioProber::audioBufferProbed, this, &AudioProber::process);

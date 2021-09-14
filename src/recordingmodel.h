@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ * SPDX-FileCopyrightText: 2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -25,8 +26,7 @@ class Recording : public QObject
     
 public:
     explicit Recording(QObject *parent = nullptr, const QString &filePath = {}, const QString &fileName = {}, QDateTime recordDate = QDateTime::currentDateTime(), int recordingLength = 0);
-    explicit Recording(const QJsonObject &obj);
-    ~Recording();
+    explicit Recording(QObject *parent, const QJsonObject &obj);
     
     QJsonObject toJson() const;
     
@@ -67,33 +67,26 @@ signals:
     void propertyChanged();
 };
 
-class RecordingModel;
-static RecordingModel *s_recordingModel = nullptr;
-
-class RecordingModel : public QAbstractListModel
+class RecordingModel : public QObject
 {
     Q_OBJECT
+    Q_PROPERTY(QList<Recording *> recordings READ recordings NOTIFY recordingsChanged)
 
 public:
-    enum Roles {
-        RecordingRole = Qt::UserRole
-    };
-
     static RecordingModel* instance()
     {
-        if (!s_recordingModel) {
-            s_recordingModel = new RecordingModel(qApp);
+        static RecordingModel *recordingModel = nullptr;
+        if (!recordingModel) {
+            recordingModel = new RecordingModel(qApp);
         }
-        return s_recordingModel;
+        return recordingModel;
     }
     
     void load();
     void save();
 
-    QHash<int, QByteArray> roleNames() const override;
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
-
+    QList<Recording *> &recordings();
+    
     Q_INVOKABLE QString nextDefaultRecordingName();
     
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
@@ -105,6 +98,10 @@ private:
 
     QSettings* m_settings;
     QList<Recording*> m_recordings;
+    
+Q_SIGNALS:
+    void recordingsChanged();
+
 };
 
 #endif // RECORDINGMODEL_H
