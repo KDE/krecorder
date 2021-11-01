@@ -104,10 +104,6 @@ Item {
             Item { Layout.fillWidth: true }
         }
     }
-
-    Settings {
-        id: settingsDialog
-    }
     
     Kirigami.OverlaySheet {
         id: saveDialog

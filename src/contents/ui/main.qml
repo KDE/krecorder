@@ -24,6 +24,9 @@ Kirigami.ApplicationWindow {
     property bool isWidescreen: appwindow.wideScreen && appwindow.width >= appwindow.height // prevent being widescreen at first launch
     property Recording currentRecording: null
     
+    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar;
+    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
+    
     // page switch animation
     NumberAnimation {
         id: anim
@@ -42,6 +45,10 @@ Kirigami.ApplicationWindow {
     
     Loader {
         id: playerPageLoader
+    }
+    
+    Settings {
+        id: settingsDialog
     }
     
     onIsWidescreenChanged: switchToRecording(currentRecording);

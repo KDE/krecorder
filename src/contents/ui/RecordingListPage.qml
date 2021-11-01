@@ -18,6 +18,14 @@ Kirigami.ScrollablePage {
     property Recording currentRecordingToEdit
     implicitWidth: appwindow.isWidescreen ? Kirigami.Units.gridUnit * 8 : appwindow.width
     
+    mainAction: Kirigami.Action {
+        iconName: "settings-configure"
+        text: i18n("Settings")
+        onTriggered: {
+            settingsDialog.open();
+        }
+    }
+    
     ListView {
         id: listView
         model: RecordingModel.recordings
@@ -113,8 +121,8 @@ Kirigami.ScrollablePage {
                 Kirigami.Theme.inherit: false
                 source: "audio-input-microphone-symbolic"
                 anchors.centerIn: parent
-                implicitWidth: Kirigami.Units.gridUnit * 2
-                implicitHeight: Kirigami.Units.gridUnit * 2
+                implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                implicitHeight: Kirigami.Units.iconSizes.smallMedium
             }
         }
         
