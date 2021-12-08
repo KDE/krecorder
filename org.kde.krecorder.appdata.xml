@@ -34,7 +34,7 @@
   <name xml:lang="uk">Записувач</name>
   <name xml:lang="x-test">xxRecorderxx</name>
   <name xml:lang="zh-CN">录音机</name>
-  <summary>Audio Recorder</summary>
+  <summary>Audio recorder</summary>
   <summary xml:lang="ca">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
   <summary xml:lang="ca-valencia">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
   <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
@@ -65,6 +65,9 @@
     <control>keyboard</control>
     <control>touch</control>
   </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
