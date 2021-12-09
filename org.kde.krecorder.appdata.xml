@@ -35,31 +35,6 @@
   <name xml:lang="x-test">xxRecorderxx</name>
   <name xml:lang="zh-CN">录音机</name>
   <summary>Audio recorder</summary>
-  <summary xml:lang="ca">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
-  <summary xml:lang="ca-valencia">Àudio;Vídeo;Enregistrador;Vídeo de captura de pantalla</summary>
-  <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
-  <summary xml:lang="de">Audioaufnahme</summary>
-  <summary xml:lang="el">Πρόγραμμα ηχογράφησης</summary>
-  <summary xml:lang="en-GB">Audio Recorder</summary>
-  <summary xml:lang="es">Grabadora de sonido</summary>
-  <summary xml:lang="fi">Äänentallennin</summary>
-  <summary xml:lang="fr">Enregistreur audio</summary>
-  <summary xml:lang="id">Perekam Audio</summary>
-  <summary xml:lang="it">Registratore audio</summary>
-  <summary xml:lang="ko">오디오 녹음기</summary>
-  <summary xml:lang="nl">Geluidsrecorder</summary>
-  <summary xml:lang="nn">Lydopptakar</summary>
-  <summary xml:lang="pa">ਆਡੀਓ ਰਿਕਾਰਡਰ</summary>
-  <summary xml:lang="pl">Nagrywanie dźwięku</summary>
-  <summary xml:lang="pt">Gravador de Áudio</summary>
-  <summary xml:lang="pt-BR">Gravador de áudio</summary>
-  <summary xml:lang="ro">Înregistrator de sunet</summary>
-  <summary xml:lang="sk">Zvukový záznamník</summary>
-  <summary xml:lang="sl">Snemalnik zvoka</summary>
-  <summary xml:lang="sv">Ljudinspelare</summary>
-  <summary xml:lang="uk">Записувач звукових даних</summary>
-  <summary xml:lang="x-test">xxAudio Recorderxx</summary>
-  <summary xml:lang="zh-CN">音频录制器</summary>
   <recommends>
     <control>pointing</control>
     <control>keyboard</control>
