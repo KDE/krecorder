@@ -37,8 +37,10 @@
   <summary>Audio recorder</summary>
   <summary xml:lang="ca">Enregistrador d'àudio</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
+  <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pt-BR">Gravador de áudio</summary>
+  <summary xml:lang="sl">Snemalnik zvoka</summary>
   <summary xml:lang="sv">Ljudinspelare</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
   <summary xml:lang="x-test">xxAudio recorderxx</summary>
