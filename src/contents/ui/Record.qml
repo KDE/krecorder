@@ -12,7 +12,7 @@ import QtQuick.Layouts 1.2
 import KRecorder 1.0
 
 Loader {
-    sourceComponent: Kirigami.Settings.isMobile ? mobileComponent : desktopComponent
+    sourceComponent: !applicationWindow().isWidescreen ? mobileComponent : desktopComponent
     
     Component {
         id: desktopComponent
