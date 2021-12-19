@@ -21,9 +21,15 @@ find_package(ECM ${KF_MIN_VERSION} REQUIRED)
 # where to look first for cmake modules, before ${CMAKE_ROOT}/Modules/ is checked
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
+# only enable QML debugging on debug builds
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG ")
+
+include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEClangFormat)
+include(KDEGitCommitHooks)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
@@ -33,8 +39,23 @@ ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KRECORDER
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Widgets Qml QuickControls2 Multimedia Svg)
-find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config)
+
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS 
+    Core 
+    Gui 
+    Widgets 
+    Qml 
+    QuickControls2 
+    Multimedia 
+    Svg
+)
+
+find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS 
+    Kirigami2 
+    I18n 
+    Config 
+    CoreAddons
+)
 
 add_subdirectory(src)
 

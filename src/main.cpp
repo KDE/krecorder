@@ -13,7 +13,9 @@
 #include <QQuickStyle>
 #include <QtQml>
 
+#include <KAboutData>
 #include <KLocalizedContext>
+#include <KLocalizedString>
 
 #include "recordingmodel.h"
 #include "utils.h"
@@ -25,14 +27,34 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    parser.addVersionOption();
+    
     QApplication app(argc, argv);
+    
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
+    
+    KLocalizedString::setApplicationDomain("krecorder");
+    
+    KAboutData aboutData(QStringLiteral("krecorder"),
+                         QStringLiteral("Recorder"),
+                         QStringLiteral(KRECORDER_VERSION_STRING),
+                         QStringLiteral("Audio recorder"),
+                         KAboutLicense::GPL,
+                         i18n("© 2020-2021 KDE Community"));
+    aboutData.setBugAddress("https://invent.kde.org/plasma-mobile/krecorder/-/issues");
+    aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
+    aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
+    KAboutData::setApplicationData(aboutData);
+    
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("KRecorder"));
     QCoreApplication::setApplicationVersion(QStringLiteral(KRECORDER_VERSION_STRING));
+    
+    QCommandLineParser parser;
+    parser.addVersionOption();
     parser.process(app);
     
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
@@ -57,8 +79,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
        return SettingsModel::instance();
     });
     
+    
     QQmlApplicationEngine engine;
-
+    engine.rootContext()->setContextProperty(QStringLiteral("KRecorderAboutData"), QVariant::fromValue(aboutData));
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 

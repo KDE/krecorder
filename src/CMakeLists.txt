@@ -27,7 +27,9 @@ target_link_libraries(krecorder
     Qt5::Multimedia
     Qt5::Svg
     KF5::I18n
+    KF5::ConfigCore
     KF5::ConfigGui
+    KF5::CoreAddons
 )
 
 target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})

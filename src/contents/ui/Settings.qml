@@ -9,7 +9,7 @@ import QtQuick 2.0
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.1
 
-import org.kde.kirigami 2.8 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
 import KRecorder 1.0
 
 Loader {
@@ -21,14 +21,16 @@ Loader {
     
     Component {
         id: widescreenComponent
-        Kirigami.OverlaySheet {
+        Kirigami.Dialog {
+            id: dialog
             parent: parent.overlay
-            header: Kirigami.Heading {
-                level: 2
-                text: i18n("Settings")
-            }
+            title: i18n("Settings")
+            preferredWidth: Kirigami.Units.gridUnit * 20
+            padding: Kirigami.Units.largeSpacing
             
-            contentItem: SettingsComponent {}
+            SettingsComponent {
+                onCloseRequested: dialog.close();
+            }
         }
     }
     
@@ -69,6 +71,7 @@ Loader {
                 SettingsComponent {
                     Layout.fillWidth: true
                     Layout.bottomMargin: Kirigami.Units.largeSpacing
+                    onCloseRequested: drawer.close();
                 }
             }
         }
