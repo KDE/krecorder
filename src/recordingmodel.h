@@ -17,16 +17,23 @@
 
 #include "recording.h"
 
-class RecordingModel : public QObject
+class RecordingModel : public QAbstractListModel
 {
     Q_OBJECT
-    Q_PROPERTY(QList<Recording *> recordings READ recordings NOTIFY recordingsChanged)
 
 public:
     static RecordingModel* instance();
     
+    enum {
+        RecordingRole,
+    };
+    
     void load();
     void save();
+    
+    int rowCount(const QModelIndex &parent) const override;
+    QVariant data(const QModelIndex &index, int role) const override;
+    QHash<int, QByteArray> roleNames() const override;
 
     QList<Recording *> &recordings();
     
@@ -41,8 +48,5 @@ private:
 
     QSettings* m_settings;
     QList<Recording*> m_recordings;
-    
-Q_SIGNALS:
-    void recordingsChanged();
 
 };

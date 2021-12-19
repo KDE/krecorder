@@ -25,30 +25,29 @@ RecordingModel* RecordingModel::instance()
 }
 
 RecordingModel::RecordingModel(QObject *parent) 
-    : QObject{ parent }
+    : QAbstractListModel{ parent }
+    , m_settings{ new QSettings(parent) }
 {
-    m_settings = new QSettings(parent);
     load();
 }
 
 RecordingModel::~RecordingModel()
 {
     save();
-    delete m_settings;
-
-    qDeleteAll(m_recordings);
 }
 
 void RecordingModel::load()
 {
     QJsonDocument doc = QJsonDocument::fromJson(m_settings->value(QStringLiteral("recordings")).toString().toUtf8());
 
+    beginResetModel();
+    
     const auto array = doc.array();
     std::transform(array.begin(), array.end(), std::back_inserter(m_recordings), [this](const QJsonValue &rec) {
         return new Recording(this, rec.toObject());
     });
     
-    Q_EMIT recordingsChanged();
+    endResetModel();
 }
 
 void RecordingModel::save()
@@ -61,6 +60,28 @@ void RecordingModel::save()
     });
     
     m_settings->setValue(QStringLiteral("recordings"), QString::fromStdString(QJsonDocument(arr).toJson(QJsonDocument::Compact).toStdString()));
+    m_settings->sync();
+}
+
+int RecordingModel::rowCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent);
+    return m_recordings.size();
+}
+
+QVariant RecordingModel::data(const QModelIndex &index, int role) const
+{
+    if (!index.isValid() || index.row() >= m_recordings.count()) {
+        return QVariant();
+    }
+
+    auto *recording = m_recordings[index.row()];
+    return recording ? QVariant::fromValue(recording) : QVariant();
+}
+
+QHash<int, QByteArray> RecordingModel::roleNames() const
+{
+    return {{RecordingRole, "recording"}};
 }
 
 QList<Recording *> &RecordingModel::recordings()
@@ -96,21 +117,25 @@ QString RecordingModel::nextDefaultRecordingName()
 void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength)
 {
     qDebug() << "Adding recording " << filePath;
+
+    beginInsertRows(QModelIndex(), 0, 0);
     
     m_recordings.insert(0, new Recording(this, filePath, fileName, recordDate, recordingLength));
-    Q_EMIT recordingsChanged();
-    
     save();
+    
+    endInsertColumns();
 }
 
 void RecordingModel::deleteRecording(const int index)
 {
     qDebug() << "Removing recording " << m_recordings[index]->filePath();
     
+    beginRemoveRows(QModelIndex(), index, index);
+
     QFile::remove(m_recordings[index]->filePath());
     m_recordings.removeAt(index);
-    Q_EMIT recordingsChanged();
-    
     save();
+
+    endRemoveRows();    
 }
 

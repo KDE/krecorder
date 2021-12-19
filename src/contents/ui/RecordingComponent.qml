@@ -6,9 +6,11 @@
  */
 
 import QtQuick 2.12
-import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
+
+import org.kde.kirigami 2.19 as Kirigami
+
 import KRecorder 1.0
 
 Item {
@@ -105,54 +107,32 @@ Item {
         }
     }
     
-    Kirigami.OverlaySheet {
+    Kirigami.Dialog {
         id: saveDialog
+        standardButtons: Kirigami.Dialog.Discard | Kirigami.Dialog.Save
+        padding: Kirigami.Units.largeSpacing
+        bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
         
-        header: Kirigami.Heading {
-            level: 2
-            text: i18n("Save recording")
+        title: i18n("Save recording")
+        
+        onDiscarded: {
+            AudioRecorder.reset()
+            saveDialog.close();
         }
-        
-        footer: RowLayout {
-            Item { Layout.fillWidth: true }
-            
-            Controls.Button {
-                flat: false
-                text: i18nc("@action:button", "Delete")
-                icon.name: "delete"
-                Layout.alignment: Qt.AlignRight
-                onClicked: {
-                    AudioRecorder.reset()
-                    saveDialog.close();
-                }
-            }
-            
-            Controls.Button {
-                flat: false
-                text: i18nc("@action:button", "Save")
-                icon.name: "dialog-ok-apply"
-                Layout.alignment: Qt.AlignRight
-                onClicked: {
-                    AudioRecorder.setRecordingName(recordingName.text);
-                    AudioRecorder.stop();
-                    pageStack.layers.pop();
-                    recordingName.text = "";
+        onAccepted: {
+            AudioRecorder.setRecordingName(recordingName.text);
+            AudioRecorder.stop();
+            pageStack.layers.pop();
+            recordingName.text = "";
                     
-                    saveDialog.close();
-                }
-            }
+            saveDialog.close();
         }
         
-        RowLayout {
-            implicitWidth: Kirigami.Units.gridUnit * 12
-            Controls.Label {
-                id: nameLabel
-                Layout.alignment: Qt.AlignVCenter
-                text: i18n("Name:")
-            }
+        Kirigami.FormLayout {
+            implicitWidth: Kirigami.Units.gridUnit * 16
             Controls.TextField {
                 id: recordingName
-                Layout.fillWidth: true
+                Kirigami.FormData.label: i18n("Name:")
                 placeholderText: i18n("Name (optional)")
             }
         }

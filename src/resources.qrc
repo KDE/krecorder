@@ -14,5 +14,8 @@
         <file alias="SettingsComponent.qml">contents/ui/SettingsComponent.qml</file>
         <file alias="PlayerPage.qml">contents/ui/PlayerPage.qml</file>
         <file alias="DefaultPage.qml">contents/ui/DefaultPage.qml</file>
+        <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
+        <file alias="RecordingListDelegate.qml">contents/ui/RecordingListDelegate.qml</file>
+        <file alias="FloatingActionButton.qml">contents/ui/FloatingActionButton.qml</file>
     </qresource>
 </RCC>
