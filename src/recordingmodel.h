@@ -5,8 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#ifndef RECORDINGMODEL_H
-#define RECORDINGMODEL_H
+#pragma once
 
 #include <QObject>
 #include <QAbstractListModel>
@@ -16,56 +15,7 @@
 #include <QDateTime>
 #include <QCoreApplication>
 
-class Recording : public QObject
-{
-    Q_OBJECT
-    Q_PROPERTY(QString filePath READ filePath WRITE setFilePath NOTIFY propertyChanged)
-    Q_PROPERTY(QString fileName READ fileName WRITE setFileName NOTIFY propertyChanged)
-    Q_PROPERTY(QString recordDate READ recordDatePretty NOTIFY propertyChanged)
-    Q_PROPERTY(QString recordingLength READ recordingLengthPretty NOTIFY propertyChanged)
-    
-public:
-    explicit Recording(QObject *parent = nullptr, const QString &filePath = {}, const QString &fileName = {}, QDateTime recordDate = QDateTime::currentDateTime(), int recordingLength = 0);
-    explicit Recording(QObject *parent, const QJsonObject &obj);
-    
-    QJsonObject toJson() const;
-    
-    QString filePath() const
-    {
-        return m_filePath;
-    }
-    QString fileName() const
-    {
-        return m_fileName;
-    }
-    QDateTime recordDate() const
-    {
-        return m_recordDate;
-    }
-    QString recordDatePretty() const
-    {
-        return m_recordDate.toString("yyyy-MM-dd");
-    }
-    int recordingLength() const
-    {
-        return m_recordingLength;
-    }
-    QString recordingLengthPretty() const;
-
-    void setFilePath(const QString &filePath);
-    void setFileName(const QString &fileName);
-
-    void setRecordDate(const QDateTime &date);
-    void setRecordingLength(int recordingLength);
-
-private:
-    QString m_filePath, m_fileName;
-    QDateTime m_recordDate;
-    int m_recordingLength; // seconds
-
-signals:
-    void propertyChanged();
-};
+#include "recording.h"
 
 class RecordingModel : public QObject
 {
@@ -73,14 +23,7 @@ class RecordingModel : public QObject
     Q_PROPERTY(QList<Recording *> recordings READ recordings NOTIFY recordingsChanged)
 
 public:
-    static RecordingModel* instance()
-    {
-        static RecordingModel *recordingModel = nullptr;
-        if (!recordingModel) {
-            recordingModel = new RecordingModel(qApp);
-        }
-        return recordingModel;
-    }
+    static RecordingModel* instance();
     
     void load();
     void save();
@@ -103,5 +46,3 @@ Q_SIGNALS:
     void recordingsChanged();
 
 };
-
-#endif // RECORDINGMODEL_H

@@ -12,9 +12,9 @@ AudioProber::AudioProber(QObject *parent)
 {}
 
 AudioProber::AudioProber(QObject *parent, QAudioRecorder *source) 
-    : QAudioProbe(parent)
+    : QAudioProbe{ parent }
+    , m_recorderSource{ source }
 {
-    m_recorderSource = source;
     connect(this, &AudioProber::audioBufferProbed, this, &AudioProber::process);
     
     // connect to recorder
@@ -27,9 +27,9 @@ AudioProber::AudioProber(QObject *parent, QAudioRecorder *source)
 }
 
 AudioProber::AudioProber(QObject *parent, QMediaPlayer *source) 
-    : QAudioProbe(parent)
+    : QAudioProbe{ parent }
+    , m_playerSource{ source }
 {
-    m_playerSource = source;
     connect(this, &AudioProber::audioBufferProbed, this, &AudioProber::process);
     
     // connect to player
@@ -102,4 +102,33 @@ void AudioProber::process(QAudioBuffer buffer)
     
     m_audioSum += sum;
     m_audioLen++;
+}
+
+QVariantList AudioProber::volumesList() const
+{
+    return m_volumesList;
+}
+
+int AudioProber::maxVolumes()
+{
+    return m_maxVolumes;
+}
+
+void AudioProber::setMaxVolumes(int m)
+{
+    m_maxVolumes = m;
+    Q_EMIT maxVolumesChanged();
+}
+
+int AudioProber::animationIndex()
+{
+    return m_animationIndex;
+}
+
+void AudioProber::clearVolumesList()
+{
+    while (!m_volumesList.empty())
+        m_volumesList.removeFirst();
+    Q_EMIT volumesListChanged();
+    Q_EMIT volumesListCleared();
 }

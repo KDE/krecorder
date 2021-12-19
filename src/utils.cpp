@@ -8,8 +8,10 @@
 
 #include <QDateTime>
 #include <QRandomGenerator>
+#include <QLocale>
 
-Utils::Utils(QObject *parent) : QObject(parent)
+Utils::Utils(QObject *parent) 
+    : QObject(parent)
 {
 }
 

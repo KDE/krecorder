@@ -1,11 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#ifndef SETTINGSMODEL_H
-#define SETTINGSMODEL_H
+#pragma once
 
 #include <QObject>
 #include <QString>
@@ -13,9 +12,6 @@
 #include <QCoreApplication>
 
 #include <audiorecorder.h>
-
-class SettingsModel;
-static SettingsModel *s_settingsModel = nullptr;
 
 class SettingsModel : public QObject
 {
@@ -36,28 +32,25 @@ public:
     };
 
     const QMap<SimpleAudioFormat, std::pair<QString, QString>> formatMap = {
-        {SimpleAudioFormat::VORBIS, {"audio/x-vorbis", "audio/ogg"}},
-        {SimpleAudioFormat::OPUS, {"audio/x-opus", "audio/ogg"}},
-        {SimpleAudioFormat::FLAC, {"audio/x-flac", "audio/ogg"}},
-        {SimpleAudioFormat::MP3, {"audio/mpeg, mpegversion=(int)4", "audio/mpeg, mpegversion=(int)1"}},
-        {SimpleAudioFormat::WAV, {"audio/x-raw", "audio/x-wav"}},
-        {SimpleAudioFormat::OTHER, {"", ""}}
+        {SimpleAudioFormat::VORBIS, {QStringLiteral("audio/x-vorbis"), QStringLiteral("audio/ogg")}},
+        {SimpleAudioFormat::OPUS, {QStringLiteral("audio/x-opus"), QStringLiteral("audio/ogg")}},
+        {SimpleAudioFormat::FLAC, {QStringLiteral("audio/x-flac"), QStringLiteral("audio/ogg")}},
+        {SimpleAudioFormat::MP3, {QStringLiteral("audio/mpeg, mpegversion=(int)4"), QStringLiteral("audio/mpeg, mpegversion=(int)1")}},
+        {SimpleAudioFormat::WAV, {QStringLiteral("audio/x-raw"), QStringLiteral("audio/x-wav")}},
+        {SimpleAudioFormat::OTHER, {QString(), QString()}}
     };
 
-    static SettingsModel* instance()
-    {
-        if (!s_settingsModel) {
-            s_settingsModel = new SettingsModel(qApp);
-        }
-        return s_settingsModel;
-    }
+    static SettingsModel* instance();
 
     int simpleAudioFormat() const;
     void setSimpleAudioFormat(int audioFormat);
+    
     QString audioCodec() const;
     void setAudioCodec(const QString &audioCodec);
+    
     QString containerFormat() const;
     void setContainerFormat(const QString &audioContainerFormat);
+    
     int audioQuality() const;
     void setAudioQuality(int audioQuality);
 
@@ -67,11 +60,9 @@ private:
 
     QSettings *settings;
 
-signals:
+Q_SIGNALS:
     void simpleAudioFormatChanged();
     void audioCodecChanged();
     void containerFormatChanged();
     void audioQualityChanged();
 };
-
-#endif //SETTINGSMODEL_H

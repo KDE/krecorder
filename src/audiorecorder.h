@@ -21,9 +21,6 @@
 #include <audioprober.h>
 #include <recordingmodel.h>
 
-class AudioRecorder;
-static AudioRecorder *s_audioRecorder = nullptr;
-
 class AudioRecorder : public QAudioRecorder
 {
     Q_OBJECT
@@ -48,46 +45,24 @@ private:
     bool resetRequest = false;
     
 public:
-    static AudioRecorder* instance()
-    {
-        if (!s_audioRecorder) {
-            s_audioRecorder = new AudioRecorder(qApp);
-        }
-        return s_audioRecorder;
-    }
+    static AudioRecorder* instance();
     
-    AudioProber* prober()
-    {
-        return m_audioProbe;
-    }
+    AudioProber* prober();
     
-    QString audioCodec() 
-    {
-        return m_encoderSettings.codec();
-    }
-
+    QString audioCodec();
     void setAudioCodec(const QString &codec);
 
-    int audioQuality() 
-    {
-        return m_encoderSettings.quality();
-    }
+    int audioQuality();
     void setAudioQuality(int quality);
     
-    Q_INVOKABLE void reset()
-    {
-        resetRequest = true;
-        stop();
-    }
+    Q_INVOKABLE void reset();
     
     Q_INVOKABLE void saveRecording();
 
     void renameCurrentRecording();
-    Q_INVOKABLE void setRecordingName(const QString &rName) {
-        recordingName = rName;
-    }
-    
-signals:
+    Q_INVOKABLE void setRecordingName(const QString &rName);
+
+Q_SIGNALS:
     void audioCodecChanged();
     void audioQualityChanged();
 };

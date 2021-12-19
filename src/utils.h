@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#ifndef UTILS_H
-#define UTILS_H
+#pragma once
 
 #include <QObject>
 
@@ -19,5 +18,3 @@ public:
     Q_INVOKABLE static QString formatDateTime(const QString &time);
     Q_INVOKABLE static QString formatTime(int time);
 };
-
-#endif // UTILS_H

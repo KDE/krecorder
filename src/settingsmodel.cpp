@@ -1,10 +1,16 @@
 /*
- * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 #include "settingsmodel.h"
+
+SettingsModel* SettingsModel::instance()
+{
+    static SettingsModel *s_settingsModel = new SettingsModel(qApp);
+    return s_settingsModel;
+}
 
 SettingsModel::SettingsModel(QObject *parent) : 
     QObject(parent)
@@ -44,35 +50,35 @@ void SettingsModel::setSimpleAudioFormat(int audioFormat)
 
 QString SettingsModel::audioCodec() const
 {
-    return settings->value("General/audioCodec", "audio/x-opus").toString();
+    return settings->value(QStringLiteral("General/audioCodec"), QStringLiteral("audio/x-opus")).toString();
 }
 
 void SettingsModel::setAudioCodec(const QString &audioCodec)
 {
     AudioRecorder::instance()->setAudioCodec(audioCodec);
-    settings->setValue("General/audioCodec", audioCodec);
+    settings->setValue(QStringLiteral("General/audioCodec"), audioCodec);
 
-    emit audioCodecChanged();
-    emit simpleAudioFormatChanged();
+    Q_EMIT audioCodecChanged();
+    Q_EMIT simpleAudioFormatChanged();
 }
 
 QString SettingsModel::containerFormat() const
 {
-    return settings->value("General/containerFormat", "audio/ogg").toString();
+    return settings->value(QStringLiteral("General/containerFormat"), QStringLiteral("audio/ogg")).toString();
 }
 
 void SettingsModel::setContainerFormat(const QString &audioContainerFormat)
 {
     AudioRecorder::instance()->setContainerFormat(audioContainerFormat);
-    settings->setValue("General/containerFormat", audioContainerFormat);
+    settings->setValue(QStringLiteral("General/containerFormat"), audioContainerFormat);
     
-    emit containerFormatChanged();
-    emit simpleAudioFormatChanged();
+    Q_EMIT containerFormatChanged();
+    Q_EMIT simpleAudioFormatChanged();
 }
 
 int SettingsModel::audioQuality() const
 {
-    return settings->value("General/audioQuality", 3).toInt();
+    return settings->value(QStringLiteral("General/audioQuality"), 3).toInt();
 }
 
 void SettingsModel::setAudioQuality(int audioQuality)
@@ -81,7 +87,7 @@ void SettingsModel::setAudioQuality(int audioQuality)
     s.setQuality(static_cast<QMultimedia::EncodingQuality>(audioQuality));
     AudioRecorder::instance()->setAudioSettings(s);
     
-    settings->setValue("General/audioQuality", audioQuality);
+    settings->setValue(QStringLiteral("General/audioQuality"), audioQuality);
     
-    emit audioQualityChanged();
+    Q_EMIT audioQualityChanged();
 }

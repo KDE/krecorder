@@ -1,12 +1,11 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
- * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2021 Devin Lin <devin@kde.org>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#ifndef AUDIOPROBER_H
-#define AUDIOPROBER_H
+#pragma once
 
 #include <QAudioProbe>
 #include <QObject>
@@ -31,34 +30,14 @@ public:
     void process(QAudioBuffer buffer);
     void processVolumeBar();
 
-    QVariantList volumesList() const
-    {
-        return m_volumesList;
-    }
+    QVariantList volumesList() const;
 
-    int maxVolumes()
-    {
-        return m_maxVolumes;
-    }
+    int maxVolumes();
+    void setMaxVolumes(int m);
 
-    void setMaxVolumes(int m)
-    {
-        m_maxVolumes = m;
-        Q_EMIT maxVolumesChanged();
-    }
+    int animationIndex();
 
-    int animationIndex()
-    {
-        return m_animationIndex;
-    }
-
-    void clearVolumesList()
-    {
-        while (!m_volumesList.empty())
-            m_volumesList.removeFirst();
-        Q_EMIT volumesListChanged();
-        Q_EMIT volumesListCleared();
-    }
+    void clearVolumesList();
 
 private:
     void handleRecorderState(QAudioRecorder::State state);
@@ -75,12 +54,10 @@ private:
     QAudioRecorder *m_recorderSource;
     QMediaPlayer *m_playerSource;
     
-signals:
+Q_SIGNALS:
     void volumesListAdded(int volume);
     void volumesListChanged();
     void animationIndexChanged();
     void maxVolumesChanged();
     void volumesListCleared();
 };
-
-#endif

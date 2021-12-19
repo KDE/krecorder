@@ -16,80 +16,13 @@
 
 #include "utils.h"
 
-const QString DEF_RECORD_PREFIX = "clip";
+const QString DEF_RECORD_PREFIX = QStringLiteral("clip");
 
-/* ~ Recording ~ */
-
-Recording::Recording(QObject *parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
-    : QObject{ parent }
-    , m_filePath{ filePath }
-    , m_fileName{ fileName }
-    , m_recordDate{ recordDate }
-    , m_recordingLength{ recordingLength }
-{}
-
-Recording::Recording(QObject *parent, const QJsonObject &obj)
-    : QObject{ parent }
-    , m_filePath{ obj["filePath"].toString() }
-    , m_fileName{ obj["fileName"].toString() }
-    , m_recordDate{ QDateTime::fromString(obj["recordDate"].toString(), Qt::DateFormat::ISODate) }
-    , m_recordingLength{ obj["recordingLength"].toInt() }
-{}
-
-QJsonObject Recording::toJson() const
+RecordingModel* RecordingModel::instance()
 {
-    QJsonObject obj;
-    obj["filePath"] = m_filePath;
-    obj["fileName"] = m_fileName;
-    obj["recordDate"] = m_recordDate.toString(Qt::DateFormat::ISODate);
-    obj["recordingLength"] = m_recordingLength;
-    return obj;
+    static RecordingModel *recordingModel = new RecordingModel(qApp);
+    return recordingModel;
 }
-
-QString Recording::recordingLengthPretty() const
-{
-    const int hours = m_recordingLength / 60 / 60;
-    const int min = m_recordingLength / 60 - hours * 60;
-    const int sec = m_recordingLength - min * 60 - hours * 60 * 60;
-    return QStringLiteral("%1:%2:%3").arg(hours, 2, 10, QLatin1Char('0')).arg(min, 2, 10, QLatin1Char('0')).arg(sec, 2, 10, QLatin1Char('0'));
-}
-
-void Recording::setFilePath(const QString &filePath)
-{
-    QFile(m_filePath).rename(filePath);
-    m_filePath = filePath;
-
-    QStringList spl = filePath.split("/");
-    m_fileName = spl[spl.size()-1].split(".")[0];
-
-    emit propertyChanged();
-}
-
-void Recording::setFileName(const QString &fileName)
-{
-    QString oldPath = m_filePath;
-
-    m_filePath.replace(QRegExp(m_fileName + "(?!.*" + m_fileName + ")"), fileName);
-    QFile(oldPath).rename(m_filePath);
-
-    m_fileName = fileName;
-    emit propertyChanged();
-}
-
-void Recording::setRecordDate(const QDateTime &date)
-{
-    m_recordDate = date;
-    emit propertyChanged();
-}
-
-void Recording::setRecordingLength(int recordingLength)
-{
-    m_recordingLength = recordingLength;
-    emit propertyChanged();
-}
-
-
-/* ~ RecordingModel ~ */
 
 RecordingModel::RecordingModel(QObject *parent) 
     : QObject{ parent }
@@ -127,7 +60,7 @@ void RecordingModel::save()
         return QJsonValue(recording->toJson());
     });
     
-    m_settings->setValue(QStringLiteral("recordings"), QString(QJsonDocument(arr).toJson(QJsonDocument::Compact)));
+    m_settings->setValue(QStringLiteral("recordings"), QString::fromStdString(QJsonDocument(arr).toJson(QJsonDocument::Compact).toStdString()));
 }
 
 QList<Recording *> &RecordingModel::recordings()
@@ -146,17 +79,17 @@ QString RecordingModel::nextDefaultRecordingName()
     // determine valid clip name (ex. clip_0001, clip_0002, etc.)
     
     int num = 1;
-    QString build = "0001";
+    QString build = QStringLiteral("0001");
         
-    while (s.contains(DEF_RECORD_PREFIX + "_" + build)) {
+    while (s.contains(DEF_RECORD_PREFIX + QStringLiteral("_") + build)) {
         num++;
         build = QString::number(num);
         while (build.length() < 4) {
-            build = "0" + build;
+            build = QStringLiteral("0") + build;
         }
     }
     
-    return DEF_RECORD_PREFIX + "_" + build;
+    return DEF_RECORD_PREFIX + QStringLiteral("_") + build;
 }
 
 

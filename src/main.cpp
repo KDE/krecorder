@@ -29,9 +29,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     parser.addVersionOption();
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName("KDE");
-    QCoreApplication::setOrganizationDomain("kde.org");
-    QCoreApplication::setApplicationName("KRecorder");
+    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
+    QCoreApplication::setApplicationName(QStringLiteral("KRecorder"));
     QCoreApplication::setApplicationVersion(QStringLiteral(KRECORDER_VERSION_STRING));
     parser.process(app);
     
@@ -41,7 +41,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
-    //qmlRegisterUncreatableType<QAudioEncoderSettings>("VoiceMemo", 1, 0, "AudioEncoderSettings", "Created by AudioRecorder");
     qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return new Utils;
     });

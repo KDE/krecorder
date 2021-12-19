@@ -1,11 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2021 Devin Lin <devin@kde.org>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#ifndef AUDIOPLAYER_H
-#define AUDIOPLAYER_H
+#pragma once
 
 #include <QMediaPlayer>
 #include <QAudioProbe>
@@ -15,34 +14,19 @@
 
 #include <audioprober.h>
 
-class AudioPlayer;
-static AudioPlayer *s_audioPlayer = nullptr;
-
 class AudioPlayer : public QMediaPlayer
 {
     Q_OBJECT
     Q_PROPERTY(AudioProber *prober READ prober CONSTANT)
 
 public:
-    static AudioPlayer *instance()
-    {
-        if (!s_audioPlayer) {
-            s_audioPlayer = new AudioPlayer(qApp);
-        }
-        return s_audioPlayer;
-    }
+    static AudioPlayer *instance();
 
     void handleStateChange(QMediaPlayer::State state);
 
-    AudioProber *prober()
-    {
-        return m_audioProbe;
-    }
+    AudioProber *prober();
 
-    Q_INVOKABLE void setMediaPath(QString path)
-    {
-        setMedia(QUrl::fromLocalFile(path));
-    }
+    Q_INVOKABLE void setMediaPath(QString path);
 
 private:
     explicit AudioPlayer(QObject *parent = nullptr);
@@ -51,5 +35,3 @@ private:
     
     bool wasStopped = false;
 };
-
-#endif
