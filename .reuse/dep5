@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: KRecorder
+Source: https://invent.kde.org/plasma-mobile/krecorder
+
+Files: android/res/drawable/icon.png
+Copyright: 2020 Jonah Brüchert <jbb@kaidan.im>
+License: CC-BY-4.0

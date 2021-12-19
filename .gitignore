@@ -1,3 +1,7 @@
+# Copyright 2020 Jonah Brüchert <jbb@kaidan.im>
+# Copyright 2021 Devin Lin <espidev@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 build 
 .flatpak-builder
 

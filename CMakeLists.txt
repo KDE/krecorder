@@ -1,5 +1,6 @@
 #
 # SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-FileCopyrightText: 2021 Devin Lin <devin@kde.org>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
@@ -9,7 +10,7 @@ project(krecorder)
 set(PROJECT_VERSION "21.12")
 
 set(QT_MIN_VERSION "5.15.0")
-set(KF_MIN_VERSION "5.89")
+set(KF_MIN_VERSION "5.89.0")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
