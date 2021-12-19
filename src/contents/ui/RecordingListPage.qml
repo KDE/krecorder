@@ -14,17 +14,42 @@ import org.kde.kirigami 2.19 as Kirigami
 import KRecorder 1.0
 
 Kirigami.ScrollablePage {
+    id: root
     title: i18n("Recordings")
 
     property Recording currentRecordingToEdit
+    property bool editMode
+    
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
     
-    mainAction: Kirigami.Action {
-        iconName: "settings-configure"
-        text: i18n("Settings")
-        onTriggered: {
-            settingsDialog.open();
+    actions.contextualActions: [
+        Kirigami.Action {
+            iconName: "edit-entry"
+            text: i18n("Edit")
+            onTriggered: root.editMode = !root.editMode
+            checkable: true
+            visible: listView.count > 0
+        },
+        Kirigami.Action {
+            iconName: "settings-configure"
+            text: i18n("Settings")
+            onTriggered: {
+                settingsDialog.open();
+            }
         }
+    ]
+    
+    function editRecordingDialog(recording) {
+        editDialogName.text = recording.fileName;
+        editDialogLocation.text = recording.filePath;
+        currentRecordingToEdit = recording;
+        editNameDialog.open();
+    }
+    
+    function removeRecordingDialog(recording, index) {
+        deleteDialog.toDelete = recording;
+        deleteDialog.toDeleteIndex = index;
+        deleteDialog.open();
     }
     
     ListView {
@@ -94,17 +119,34 @@ Kirigami.ScrollablePage {
         
         delegate: RecordingListDelegate {
             model: recording
+            width: listView.width
+            editMode: root.editMode
+            showSeparator: index != listView.count - 1
             
-            onEditRequested: {
-                editDialogName.text = recording.fileName;
-                editDialogLocation.text = recording.filePath;
-                currentRecordingToEdit = recording;
-                editNameDialog.open();
+            onEditRequested: root.editRecordingDialog(recording)
+            onDeleteRequested: root.removeRecordingDialog(recording, index)
+            onContextMenuRequested: {
+                contextMenu.recording = recording;
+                contextMenu.index = index;
+                contextMenu.popup(this)
             }
-            onDeleteRequested: {
-                deleteDialog.toDelete = recording;
-                deleteDialog.toDeleteIndex = index;
-                deleteDialog.open();
+        }
+        
+        Controls.Menu {
+            id: contextMenu
+            property Recording recording
+            property int index
+
+            Controls.MenuItem {
+                text: qsTr("Edit")
+                icon.name: "edit-entry"
+                onTriggered: root.editRecordingDialog(contextMenu.recording)
+            }
+
+            Controls.MenuItem {
+                text: qsTr("Delete")
+                icon.name: "delete"
+                onTriggered: root.removeRecordingDialog(contextMenu.recording, contextMenu.index)
             }
         }
         

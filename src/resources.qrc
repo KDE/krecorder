@@ -17,5 +17,6 @@
         <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
         <file alias="RecordingListDelegate.qml">contents/ui/RecordingListDelegate.qml</file>
         <file alias="FloatingActionButton.qml">contents/ui/FloatingActionButton.qml</file>
+        <file alias="ListDelegate.qml">contents/ui/ListDelegate.qml</file>
     </qresource>
 </RCC>
