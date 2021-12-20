@@ -134,6 +134,9 @@ Kirigami.ScrollablePage {
         
         Controls.Menu {
             id: contextMenu
+            modal: true
+            Controls.Overlay.modal: Item {}
+            
             property Recording recording
             property int index
 
