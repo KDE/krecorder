@@ -28,6 +28,7 @@
   <name xml:lang="pt">Gravador</name>
   <name xml:lang="pt-BR">Gravador</name>
   <name xml:lang="ro">Recorder</name>
+  <name xml:lang="ru">Recorder</name>
   <name xml:lang="sk">Záznamník</name>
   <name xml:lang="sl">Recorder</name>
   <name xml:lang="sv">Inspelare</name>
@@ -43,6 +44,7 @@
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pl">Nagrywanie dźwięku</summary>
   <summary xml:lang="pt-BR">Gravador de áudio</summary>
+  <summary xml:lang="ru">Запись звука</summary>
   <summary xml:lang="sl">Snemalnik zvoka</summary>
   <summary xml:lang="sv">Ljudinspelare</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
@@ -75,6 +77,7 @@
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
+  <developer_name xml:lang="ru">Сообщество KDE</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
@@ -101,6 +104,7 @@
     <p xml:lang="pt">O Gravador é uma aplicação simples e multi-plataforma para a gravação de áudio.</p>
     <p xml:lang="pt-BR">O gravador é um aplicativo de gravação simples e de múltiplas plataformas.</p>
     <p xml:lang="ro">Recorder e o aplicație simplă pentru înregistrarea sunetului ce rulează pe mai multe platforme.</p>
+    <p xml:lang="ru">Recorder — простая кроссплатформенная программа для записи звука.</p>
     <p xml:lang="sk">Záznamník je jednoduchá cross platformová aplikácia na nahrávanie zvuku.</p>
     <p xml:lang="sl">Recorder je enostavna aplikacija za različne naprave za snemanje zvoka.</p>
     <p xml:lang="sv">Recorder är ett enkelt ljudinspelningsprogram för flera plattformar.</p>
