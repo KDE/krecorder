@@ -47,6 +47,15 @@ void RecordingModel::load()
         return new Recording(this, rec.toObject());
     });
     
+    // check if file exists, and delete recording if it doesn't
+    for (int i = 0; i < m_recordings.size(); ++i) {
+        if (!QFile::exists(m_recordings[i]->filePath())) {
+            m_recordings.erase(m_recordings.begin() + i);
+            --i;
+        }
+    }
+    save();
+    
     endResetModel();
 }
 
