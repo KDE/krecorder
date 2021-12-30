@@ -109,24 +109,34 @@ Item {
     
     Kirigami.Dialog {
         id: saveDialog
-        standardButtons: Kirigami.Dialog.Discard | Kirigami.Dialog.Save
+        standardButtons: Kirigami.Dialog.NoButton // Kirigami.Dialog.Discard | Kirigami.Dialog.Save
         padding: Kirigami.Units.largeSpacing
         bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
         
         title: i18n("Save recording")
         
-        onDiscarded: {
-            AudioRecorder.reset()
-            saveDialog.close();
-        }
-        onAccepted: {
-            AudioRecorder.setRecordingName(recordingName.text);
-            AudioRecorder.stop();
-            pageStack.layers.pop();
-            recordingName.text = "";
-                    
-            saveDialog.close();
-        }
+        customFooterActions: [
+            Kirigami.Action {
+                text: i18n("Discard")
+                iconName: "delete"
+                onTriggered: {
+                    AudioRecorder.reset()
+                    saveDialog.close();
+                }
+            },
+            Kirigami.Action {
+                text: i18n("Save")
+                iconName: "document-save"
+                onTriggered: {
+                    AudioRecorder.setRecordingName(recordingName.text);
+                    AudioRecorder.stop();
+                    pageStack.layers.pop();
+                    recordingName.text = "";
+                            
+                    saveDialog.close();
+                }
+            }
+        ]
         
         Kirigami.FormLayout {
             implicitWidth: Kirigami.Units.gridUnit * 16
