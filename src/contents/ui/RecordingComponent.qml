@@ -109,7 +109,7 @@ Item {
     
     Kirigami.Dialog {
         id: saveDialog
-        standardButtons: Kirigami.Dialog.NoButton // Kirigami.Dialog.Discard | Kirigami.Dialog.Save
+        standardButtons: Kirigami.Dialog.NoButton
         padding: Kirigami.Units.largeSpacing
         bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
         

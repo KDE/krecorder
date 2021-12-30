@@ -123,7 +123,7 @@ void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTi
     m_recordings.insert(0, new Recording(this, filePath, fileName, recordDate, recordingLength));
     save();
     
-    endInsertColumns();
+    endInsertRows();
 }
 
 void RecordingModel::deleteRecording(const int index)
