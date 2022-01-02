@@ -137,6 +137,13 @@ Kirigami.ScrollablePage {
             modal: true
             Controls.Overlay.modal: Item {}
             
+            // HACK: for some reason this fixes the delete/edit dialog closing immediately after
+            // opening from here
+            Component.onCompleted: {
+                contextMenu.open();
+                contextMenu.close();
+            }
+            
             property Recording recording
             property int index
 
@@ -167,7 +174,9 @@ Kirigami.ScrollablePage {
                 Kirigami.Action {
                     text: i18nc("@action:button", "Cancel")
                     iconName: "dialog-cancel"
-                    onTriggered: deleteDialog.close();
+                    onTriggered: {
+                        deleteDialog.close();
+                    }
                 },
                 Kirigami.Action {
                     text: i18nc("@action:button", "Delete")
