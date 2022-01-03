@@ -31,6 +31,7 @@ Control {
             onTapped: root.clicked()
         }
         TapHandler {
+            acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus
             acceptedButtons: Qt.RightButton
             onTapped: root.rightClicked()
         }

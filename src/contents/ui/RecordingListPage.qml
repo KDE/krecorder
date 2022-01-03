@@ -134,15 +134,6 @@ Kirigami.ScrollablePage {
         
         Controls.Menu {
             id: contextMenu
-            modal: true
-            Controls.Overlay.modal: Item {}
-            
-            // HACK: for some reason this fixes the delete/edit dialog closing immediately after
-            // opening from here
-            Component.onCompleted: {
-                contextMenu.open();
-                contextMenu.close();
-            }
             
             property Recording recording
             property int index
@@ -150,13 +141,19 @@ Kirigami.ScrollablePage {
             Controls.MenuItem {
                 text: qsTr("Edit")
                 icon.name: "edit-entry"
-                onTriggered: root.editRecordingDialog(contextMenu.recording)
+                onTriggered: {
+                    root.editRecordingDialog(contextMenu.recording);
+                    contextMenu.close();
+                }
             }
 
             Controls.MenuItem {
                 text: qsTr("Delete")
                 icon.name: "delete"
-                onTriggered: root.removeRecordingDialog(contextMenu.recording, contextMenu.index)
+                onTriggered: {
+                    root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
+                    contextMenu.close();
+                }
             }
         }
         
@@ -202,7 +199,6 @@ Kirigami.ScrollablePage {
             bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
             preferredWidth: Kirigami.Units.gridUnit * 20
             
-            onRejected: editNameDialog.close();
             onApplied: {
                  currentRecordingToEdit.fileName = editDialogName.text;
                  editNameDialog.close();
