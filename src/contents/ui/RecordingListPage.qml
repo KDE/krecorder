@@ -134,6 +134,8 @@ Kirigami.ScrollablePage {
         
         Controls.Menu {
             id: contextMenu
+            modal: true
+            Controls.Overlay.modal: MouseArea {}
             
             property Recording recording
             property int index
@@ -142,8 +144,8 @@ Kirigami.ScrollablePage {
                 text: qsTr("Edit")
                 icon.name: "edit-entry"
                 onTriggered: {
-                    root.editRecordingDialog(contextMenu.recording);
-                    contextMenu.close();
+                    openDialogTimer.run = () => root.editRecordingDialog(contextMenu.recording);
+                    openDialogTimer.restart();
                 }
             }
 
@@ -151,10 +153,19 @@ Kirigami.ScrollablePage {
                 text: qsTr("Delete")
                 icon.name: "delete"
                 onTriggered: {
-                    root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
-                    contextMenu.close();
+                    openDialogTimer.run = () => root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
+                    openDialogTimer.restart();
                 }
             }
+        }
+        
+        // HACK: for some reason the dialog might close immediately if triggered from the context menu
+        // open the dialog a little later to workaround this
+        Timer {
+            id: openDialogTimer
+            interval: 50
+            property var run: () => {}
+            onTriggered: run()
         }
         
         Kirigami.PromptDialog {
