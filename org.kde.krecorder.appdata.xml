@@ -9,6 +9,7 @@
   <project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <name>Recorder</name>
+  <name xml:lang="ar">المسجل</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="ca-valencia">Enregistrador</name>
   <name xml:lang="cs">Nahrávací nástroj</name>
@@ -36,10 +37,13 @@
   <name xml:lang="x-test">xxRecorderxx</name>
   <name xml:lang="zh-CN">录音机</name>
   <summary>Audio recorder</summary>
+  <summary xml:lang="ar">مسجل صوتي</summary>
   <summary xml:lang="ca">Enregistrador d'àudio</summary>
   <summary xml:lang="ca-valencia">Enregistrador d'àudio</summary>
+  <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
   <summary xml:lang="en-GB">Audio recorder</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
+  <summary xml:lang="fi">Äänitallennin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="it">Registratore audio</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
@@ -59,6 +63,7 @@
     <display_length compare="ge">360</display_length>
   </requires>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ar">مجتمع كدي</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
@@ -87,6 +92,7 @@
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <description>
     <p>Recorder is a simple, cross-platform audio recording application.</p>
+    <p xml:lang="ar">المسجل هو تطبيق تسجيل صوتي بسيط متعدد المنصات.</p>
     <p xml:lang="ca">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
     <p xml:lang="ca-valencia">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
     <p xml:lang="de">Recorder ist eine einfache Anwendung für Audioaufnahmen auf allen Plattformen.</p>
