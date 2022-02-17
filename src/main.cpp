@@ -42,7 +42,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          QStringLiteral(KRECORDER_VERSION_STRING),
                          QStringLiteral("Audio recorder"),
                          KAboutLicense::GPL,
-                         i18n("© 2020-2021 KDE Community"));
+                         i18n("© 2020-2022 KDE Community"));
     aboutData.setBugAddress("https://invent.kde.org/plasma-mobile/krecorder/-/issues");
     aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
