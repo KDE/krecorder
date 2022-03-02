@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
+ * SPDX-FileCopyrightText: 2022 Devin Lin <devin@kde.org>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -29,6 +30,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     
+    // set default style
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
+    // if using org.kde.desktop, ensure we use kde style if possible
+    if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORMTHEME")) {
+        qputenv("QT_QPA_PLATFORMTHEME", "kde");
+    }
+
     QApplication app(argc, argv);
     
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
