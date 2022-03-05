@@ -49,6 +49,7 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS
     QuickControls2 
     Multimedia 
     Svg
+    QuickCompiler
 )
 
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS 
