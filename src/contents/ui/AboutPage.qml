@@ -11,5 +11,5 @@ import KRecorder 1.0
 
 Kirigami.AboutPage {
     id: aboutPage
-    aboutData: KRecorderAboutData
+    aboutData: AboutType.aboutData
 }
