@@ -1,0 +1,240 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+# Vit Pelcak <vit@pelcak.org>, 2020, 2021, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-09 00:47+0000\n"
+"PO-Revision-Date: 2022-02-28 10:50+0100\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Vít Pelčák"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vit@pelcak.org"
+
+#: contents/ui/DefaultPage.qml:26
+#, kde-format
+msgid "Click on a recording to play it, or record a new one"
+msgstr "Klikněte na nahrávku pro její přehrání, nebo nahrajte novou"
+
+#: contents/ui/main.qml:19
+#, kde-format
+msgid "Recorder"
+msgstr "Nahrávací zařízení"
+
+#: contents/ui/Record.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Nahrávat zvuk"
+
+#: contents/ui/Record.qml:52
+#, kde-format
+msgid "<b>New Recording</b>"
+msgstr "<b>Nová nahrávka</b>"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Record"
+msgstr "Nahrávat"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: contents/ui/RecordingComponent.qml:80
+#, kde-format
+msgid "Stop"
+msgstr "Zastavit"
+
+#: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
+#: contents/ui/Settings.qml:27
+#, kde-format
+msgid "Settings"
+msgstr "Nastavení"
+
+#: contents/ui/RecordingComponent.qml:116
+#, kde-format
+msgid "Save recording"
+msgstr "Uložit nahrávání"
+
+#: contents/ui/RecordingComponent.qml:120
+#, kde-format
+msgid "Discard"
+msgstr "Zahodit"
+
+#: contents/ui/RecordingComponent.qml:128
+#, kde-format
+msgid "Save"
+msgstr "Uložit"
+
+#: contents/ui/RecordingComponent.qml:145
+#, kde-format
+msgid "Name:"
+msgstr "Název:"
+
+#: contents/ui/RecordingComponent.qml:146
+#, kde-format
+msgid "Name (optional)"
+msgstr "Jméno (volitelné)"
+
+#: contents/ui/RecordingListDelegate.qml:67
+#: contents/ui/RecordingListPage.qml:28
+#, kde-format
+msgid "Edit"
+msgstr "Upravit"
+
+#: contents/ui/RecordingListDelegate.qml:81
+#, kde-format
+msgid "Delete"
+msgstr "Smazat"
+
+#: contents/ui/RecordingListPage.qml:18
+#, kde-format
+msgid "Recordings"
+msgstr "Nahrávky"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings"
+msgstr "Žádné nahrávky"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings yet, record your first!"
+msgstr "Zatím žádná nahrávání. Nahrajte svoje první."
+
+#: contents/ui/RecordingListPage.qml:178
+#, kde-format
+msgid "Delete %1"
+msgstr "Smazat %1"
+
+#: contents/ui/RecordingListPage.qml:179
+#, kde-format
+msgid ""
+"Are you sure you want to delete the recording %1?<br/>It will be "
+"<b>permanently lost</b> forever!"
+msgstr ""
+"Opravdu si přejete smazat nahrávku %1?<br/>Bude <b>navždy ztracena</b>."
+
+#: contents/ui/RecordingListPage.qml:183
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: contents/ui/RecordingListPage.qml:190
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Smazat"
+
+#: contents/ui/RecordingListPage.qml:206
+#, kde-format
+msgid "Editing %1"
+msgstr "Úprava %1"
+
+#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:48
+#, kde-format
+msgid "Audio Input:"
+msgstr "Zvukový vstup:"
+
+#: contents/ui/RecordingListPage.qml:227
+#, kde-format
+msgid "Location:"
+msgstr "Umístění:"
+
+#: contents/ui/Settings.qml:66
+#, kde-format
+msgid "<b>Settings</b>"
+msgstr "<b>Nastavení</b>"
+
+#: contents/ui/SettingsComponent.qml:21
+#, kde-format
+msgid "Format:"
+msgstr "Formát:"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "Ogg Opus"
+msgstr "Ogg Opus"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "FLAC"
+msgstr "FLAC"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "MP3"
+msgstr "MP3"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "WAV"
+msgstr "WAV"
+
+#: contents/ui/SettingsComponent.qml:30
+#, kde-format
+msgid "Audio Quality:"
+msgstr "Kvalita zvuku:"
+
+#: contents/ui/SettingsComponent.qml:41
+#, kde-format
+msgid "Hide Advanced Settings"
+msgstr "Skrýt pokročilá nastavení"
+
+#: contents/ui/SettingsComponent.qml:41
+#, kde-format
+msgid "Show Advanced Settings"
+msgstr "Zobrazit pokročilá nastavení"
+
+#: contents/ui/SettingsComponent.qml:57
+#, kde-format
+msgid "Audio Codec:"
+msgstr "Audio kodek:"
+
+#: contents/ui/SettingsComponent.qml:65
+#, kde-format
+msgid "Container Format:"
+msgstr "Formát kontejneru:"
+
+#: contents/ui/SettingsComponent.qml:73
+#, kde-format
+msgid "About"
+msgstr "O aplikaci"
+
+#: main.cpp:56
+#, kde-format
+msgid "© 2020-2022 KDE Community"
+msgstr "© 2020-2022 Komunita KDE"
+
+#: main.cpp:58
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:59
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"

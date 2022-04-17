@@ -1,0 +1,251 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+#
+# Marcin Stanclik <mstanclik@yahoo.com>, 2021.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-09 00:47+0000\n"
+"PO-Revision-Date: 2022-03-13 11:10+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.03.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Łukasz Wojniłowicz"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lukasz.wojnilowicz@gmail.com"
+
+#: contents/ui/DefaultPage.qml:26
+#, kde-format
+msgid "Click on a recording to play it, or record a new one"
+msgstr "Naciśnij na nagraniu, aby je odtworzyć lub nagraj nowe"
+
+#: contents/ui/main.qml:19
+#, kde-format
+msgid "Recorder"
+msgstr "Nagrywarka"
+
+#: contents/ui/Record.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Nagraj dźwięk"
+
+#: contents/ui/Record.qml:52
+#, kde-format
+msgid "<b>New Recording</b>"
+msgstr "<b>Nowe nagranie</b>"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Record"
+msgstr "Nagraj"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Pause"
+msgstr "Wstrzymaj"
+
+#: contents/ui/RecordingComponent.qml:80
+#, kde-format
+msgid "Stop"
+msgstr "Stop"
+
+#: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
+#: contents/ui/Settings.qml:27
+#, kde-format
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: contents/ui/RecordingComponent.qml:116
+#, kde-format
+msgid "Save recording"
+msgstr "Zapisz nagranie"
+
+#: contents/ui/RecordingComponent.qml:120
+#, kde-format
+msgid "Discard"
+msgstr "Porzuć"
+
+#: contents/ui/RecordingComponent.qml:128
+#, kde-format
+msgid "Save"
+msgstr "Zapisz"
+
+#: contents/ui/RecordingComponent.qml:145
+#, kde-format
+msgid "Name:"
+msgstr "Nazwa:"
+
+#: contents/ui/RecordingComponent.qml:146
+#, kde-format
+msgid "Name (optional)"
+msgstr "Nazwa (dobrowolnie)"
+
+#: contents/ui/RecordingListDelegate.qml:67
+#: contents/ui/RecordingListPage.qml:28
+#, kde-format
+msgid "Edit"
+msgstr "Edytuj"
+
+#: contents/ui/RecordingListDelegate.qml:81
+#, kde-format
+msgid "Delete"
+msgstr "Usuń"
+
+#: contents/ui/RecordingListPage.qml:18
+#, kde-format
+msgid "Recordings"
+msgstr "Nagrania"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings"
+msgstr "Brak nagrań"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings yet, record your first!"
+msgstr "Nie ma jeszcze żadnych nagrań, nagraj pierwsze!"
+
+#: contents/ui/RecordingListPage.qml:178
+#, kde-format
+msgid "Delete %1"
+msgstr "Usuń %1"
+
+#: contents/ui/RecordingListPage.qml:179
+#, kde-format
+msgid ""
+"Are you sure you want to delete the recording %1?<br/>It will be "
+"<b>permanently lost</b> forever!"
+msgstr "Czy na pewno usunąć nagranie %1?<br/>Zostanie <b>trwale</b> utracone!"
+
+#: contents/ui/RecordingListPage.qml:183
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: contents/ui/RecordingListPage.qml:190
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Usuń"
+
+#: contents/ui/RecordingListPage.qml:206
+#, kde-format
+msgid "Editing %1"
+msgstr "Edytowanie %1"
+
+#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:48
+#, kde-format
+msgid "Audio Input:"
+msgstr "Wejście dźwięku:"
+
+#: contents/ui/RecordingListPage.qml:227
+#, kde-format
+msgid "Location:"
+msgstr "Położenie:"
+
+#: contents/ui/Settings.qml:66
+#, kde-format
+msgid "<b>Settings</b>"
+msgstr "<b>Ustawienia</b>"
+
+#: contents/ui/SettingsComponent.qml:21
+#, kde-format
+msgid "Format:"
+msgstr "Format:"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "Ogg Opus"
+msgstr "Ogg Opus"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "FLAC"
+msgstr "FLAC"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "MP3"
+msgstr "MP3"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "WAV"
+msgstr "WAV"
+
+#: contents/ui/SettingsComponent.qml:30
+#, kde-format
+msgid "Audio Quality:"
+msgstr "Jakość dźwięku:"
+
+#: contents/ui/SettingsComponent.qml:41
+#, kde-format
+msgid "Hide Advanced Settings"
+msgstr "Ukryj ustawienia rozszerzone"
+
+#: contents/ui/SettingsComponent.qml:41
+#, kde-format
+msgid "Show Advanced Settings"
+msgstr "Pokaż ustawienia rozszerzone"
+
+#: contents/ui/SettingsComponent.qml:57
+#, kde-format
+msgid "Audio Codec:"
+msgstr "Kodek dźwięku:"
+
+#: contents/ui/SettingsComponent.qml:65
+#, kde-format
+msgid "Container Format:"
+msgstr "Format kontenera:"
+
+#: contents/ui/SettingsComponent.qml:73
+#, kde-format
+msgid "About"
+msgstr "O programie"
+
+#: main.cpp:56
+#, kde-format
+msgid "© 2020-2022 KDE Community"
+msgstr "© 2020-2022 Społeczność KDE"
+
+#: main.cpp:58
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:59
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
+
+#~ msgid "Delete recording"
+#~ msgstr "Usuń nagranie"
+
+#~ msgctxt "@action:button"
+#~ msgid "Done"
+#~ msgstr "Gotowe"
+
+#~ msgid "Play"
+#~ msgstr "Odtwórz"
