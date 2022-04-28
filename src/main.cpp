@@ -42,10 +42,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
     
-    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
-        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
-    }
-    
     KLocalizedString::setApplicationDomain("krecorder");
     
     KAboutData aboutData(QStringLiteral("krecorder"),
@@ -58,11 +54,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
-    
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
-    QCoreApplication::setApplicationName(QStringLiteral("KRecorder"));
-    QCoreApplication::setApplicationVersion(QStringLiteral(KRECORDER_VERSION_STRING));
     
     QCommandLineParser parser;
     parser.addVersionOption();
