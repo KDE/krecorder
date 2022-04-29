@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-09 00:47+0000\n"
+"POT-Creation-Date: 2022-04-29 00:46+0000\n"
 "PO-Revision-Date: 2022-03-24 09:08+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -221,17 +221,17 @@ msgstr "Formato do Contentor:"
 msgid "About"
 msgstr "Acerca"
 
-#: main.cpp:56
+#: main.cpp:52
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 da Comunidade do KDE"
 
-#: main.cpp:58
+#: main.cpp:54
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:59
+#: main.cpp:55
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
