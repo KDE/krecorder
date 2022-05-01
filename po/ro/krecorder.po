@@ -1,130 +1,129 @@
-# Translation of krecorder to Norwegian Nynorsk
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+# Sergiu Bivol <sergiu@cip.md>, 2022.
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-04-29 00:46+0000\n"
-"PO-Revision-Date: 2021-04-09 23:52+0200\n"
-"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
-"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
-"Language: nn\n"
+"PO-Revision-Date: 2022-04-30 11:32+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.3\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Sergiu Bivol"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "sergiu@cip.md"
 
 #: contents/ui/DefaultPage.qml:26
 #, kde-format
 msgid "Click on a recording to play it, or record a new one"
-msgstr "Trykk på eit opptak for å spela det av, eller spel inn eit nytt"
+msgstr "Apăsați pe o înregistrare pentru a o reda, sau înregistrați una nouă"
 
 #: contents/ui/main.qml:19
 #, kde-format
 msgid "Recorder"
-msgstr "Opptakar"
+msgstr "Înregistrator"
 
 #: contents/ui/Record.qml:21
 #, kde-format
 msgid "Record Audio"
-msgstr "Ta opp lyd"
+msgstr "Înregistrează sunet"
 
 #: contents/ui/Record.qml:52
 #, kde-format
 msgid "<b>New Recording</b>"
-msgstr "<b>Nytt opptak</b>"
+msgstr "<b>Înregistrare nouă</b>"
 
 #: contents/ui/RecordingComponent.qml:70
 #, kde-format
 msgid "Record"
-msgstr "Ta opp"
+msgstr "Înregistrează"
 
 #: contents/ui/RecordingComponent.qml:70
 #, kde-format
 msgid "Pause"
-msgstr "Pause"
+msgstr "Întrerupe"
 
 #: contents/ui/RecordingComponent.qml:80
 #, kde-format
 msgid "Stop"
-msgstr "Stopp"
+msgstr "Oprește"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
 #: contents/ui/Settings.qml:27
 #, kde-format
 msgid "Settings"
-msgstr "Innstillingar"
+msgstr "Configurări"
 
 #: contents/ui/RecordingComponent.qml:116
 #, kde-format
 msgid "Save recording"
-msgstr "Lagra opptak"
+msgstr "Salvează înregistrarea"
 
 #: contents/ui/RecordingComponent.qml:120
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "Aruncă"
 
 #: contents/ui/RecordingComponent.qml:128
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "Salvează"
 
 #: contents/ui/RecordingComponent.qml:145
 #, kde-format
 msgid "Name:"
-msgstr "Namn:"
+msgstr "Denumire:"
 
 #: contents/ui/RecordingComponent.qml:146
 #, kde-format
 msgid "Name (optional)"
-msgstr "Namn (valfritt)"
+msgstr "Denumire (opțional)"
 
 #: contents/ui/RecordingListDelegate.qml:67
 #: contents/ui/RecordingListPage.qml:28
 #, kde-format
 msgid "Edit"
-msgstr "Rediger"
+msgstr "Modifică"
 
 #: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Delete"
-msgstr "Slett"
+msgstr "Șterge"
 
 #: contents/ui/RecordingListPage.qml:18
 #, kde-format
 msgid "Recordings"
-msgstr "Opptak"
+msgstr "Înregistrări"
 
 #: contents/ui/RecordingListPage.qml:99
 #, kde-format
 msgid "No recordings"
-msgstr "Ingen opptak"
+msgstr "Nicio înregistrare"
 
 #: contents/ui/RecordingListPage.qml:99
 #, kde-format
 msgid "No recordings yet, record your first!"
-msgstr "Finst ingen opptak – gjer eit opptak først!"
+msgstr "Nicio înregistrare, creați-o pe prima!"
 
 #: contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Delete %1"
-msgstr ""
+msgstr "Șterge %1"
 
 #: contents/ui/RecordingListPage.qml:179
 #, kde-format
@@ -132,43 +131,45 @@ msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
+"Sigur doriți să ștergeți înregistrarea %1?<br/>Aceasta se va <b>pierde "
+"irecuperabil</b> pentru totdeauna!"
 
 #: contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "Avbryt"
+msgstr "Renunță"
 
 #: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr "Slett"
+msgstr "Șterge"
 
 #: contents/ui/RecordingListPage.qml:206
 #, kde-format
 msgid "Editing %1"
-msgstr ""
+msgstr "Se modifică %1"
 
 #: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:48
 #, kde-format
 msgid "Audio Input:"
-msgstr ""
+msgstr "Intrare audio:"
 
 #: contents/ui/RecordingListPage.qml:227
 #, kde-format
 msgid "Location:"
-msgstr "Plassering:"
+msgstr "Amplasare:"
 
 #: contents/ui/Settings.qml:66
 #, kde-format
 msgid "<b>Settings</b>"
-msgstr "<b>Innstillingar</b>"
+msgstr "<b>Configurări</b>"
 
 #: contents/ui/SettingsComponent.qml:21
 #, kde-format
 msgid "Format:"
-msgstr ""
+msgstr "Format:"
 
 #: contents/ui/SettingsComponent.qml:22
 #, kde-format
@@ -188,7 +189,7 @@ msgstr "FLAC"
 #: contents/ui/SettingsComponent.qml:22
 #, kde-format
 msgid "MP3"
-msgstr " MP3"
+msgstr "MP3"
 
 #: contents/ui/SettingsComponent.qml:22
 #, kde-format
@@ -198,44 +199,44 @@ msgstr "WAV"
 #: contents/ui/SettingsComponent.qml:30
 #, kde-format
 msgid "Audio Quality:"
-msgstr ""
+msgstr "Calitate audio:"
 
 #: contents/ui/SettingsComponent.qml:41
 #, kde-format
 msgid "Hide Advanced Settings"
-msgstr "Gøym avanserte val"
+msgstr "Ascunde configurările avansate"
 
 #: contents/ui/SettingsComponent.qml:41
 #, kde-format
 msgid "Show Advanced Settings"
-msgstr "Vis avanserte val"
+msgstr "Arată configurările avansate"
 
 #: contents/ui/SettingsComponent.qml:57
 #, kde-format
 msgid "Audio Codec:"
-msgstr ""
+msgstr "Codec audio:"
 
 #: contents/ui/SettingsComponent.qml:65
 #, kde-format
 msgid "Container Format:"
-msgstr ""
+msgstr "Format container:"
 
 #: contents/ui/SettingsComponent.qml:73
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Despre"
 
 #: main.cpp:52
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 Comunitatea KDE"
 
 #: main.cpp:54
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:55
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
