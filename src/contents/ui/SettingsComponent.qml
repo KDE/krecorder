@@ -16,6 +16,7 @@ Kirigami.FormLayout {
     property bool showAdvanced: false
     
     signal closeRequested()
+    signal heightChangeRequested()
     
     Controls.ComboBox {
         Kirigami.FormData.label: i18n("Format:")
@@ -39,7 +40,10 @@ Kirigami.FormLayout {
     
     Controls.Button {
         text: showAdvanced ? i18n("Hide Advanced Settings") : i18n("Show Advanced Settings")
-        onClicked: showAdvanced = !showAdvanced
+        onClicked: {
+            showAdvanced = !showAdvanced;
+            heightChangeRequested();
+        }
     }
     
     // advanced settings

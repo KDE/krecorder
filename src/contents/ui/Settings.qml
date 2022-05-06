@@ -30,6 +30,11 @@ Loader {
             
             SettingsComponent {
                 onCloseRequested: dialog.close();
+                onHeightChangeRequested: {
+                    // HACK: workaround issue where dialog doesn't resize when the advanced options are opened
+                    dialog.close();
+                    dialog.open();
+                }
             }
         }
     }
