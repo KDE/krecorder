@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-29 00:46+0000\n"
+"POT-Creation-Date: 2022-05-07 00:47+0000\n"
 "PO-Revision-Date: 2022-03-13 11:10+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -150,7 +150,7 @@ msgstr "Usuń"
 msgid "Editing %1"
 msgstr "Edytowanie %1"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:48
+#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
 #, kde-format
 msgid "Audio Input:"
 msgstr "Wejście dźwięku:"
@@ -160,67 +160,67 @@ msgstr "Wejście dźwięku:"
 msgid "Location:"
 msgstr "Położenie:"
 
-#: contents/ui/Settings.qml:66
+#: contents/ui/Settings.qml:71
 #, kde-format
 msgid "<b>Settings</b>"
 msgstr "<b>Ustawienia</b>"
 
-#: contents/ui/SettingsComponent.qml:21
+#: contents/ui/SettingsComponent.qml:22
 #, kde-format
 msgid "Format:"
 msgstr "Format:"
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/SettingsComponent.qml:23
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/SettingsComponent.qml:23
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/SettingsComponent.qml:23
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/SettingsComponent.qml:23
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/SettingsComponent.qml:23
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:30
+#: contents/ui/SettingsComponent.qml:31
 #, kde-format
 msgid "Audio Quality:"
 msgstr "Jakość dźwięku:"
 
-#: contents/ui/SettingsComponent.qml:41
+#: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "Hide Advanced Settings"
 msgstr "Ukryj ustawienia rozszerzone"
 
-#: contents/ui/SettingsComponent.qml:41
+#: contents/ui/SettingsComponent.qml:42
 #, kde-format
 msgid "Show Advanced Settings"
 msgstr "Pokaż ustawienia rozszerzone"
 
-#: contents/ui/SettingsComponent.qml:57
+#: contents/ui/SettingsComponent.qml:61
 #, kde-format
 msgid "Audio Codec:"
 msgstr "Kodek dźwięku:"
 
-#: contents/ui/SettingsComponent.qml:65
+#: contents/ui/SettingsComponent.qml:69
 #, kde-format
 msgid "Container Format:"
 msgstr "Format kontenera:"
 
-#: contents/ui/SettingsComponent.qml:73
+#: contents/ui/SettingsComponent.qml:77
 #, kde-format
 msgid "About"
 msgstr "O programie"
