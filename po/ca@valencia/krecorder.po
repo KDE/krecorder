@@ -105,7 +105,7 @@ msgstr "Edita"
 #: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Delete"
-msgstr "Suprimeix"
+msgstr "Suprimix"
 
 #: contents/ui/RecordingListPage.qml:18
 #, kde-format
@@ -125,7 +125,7 @@ msgstr "Encara no hi ha cap gravació. Comenceu el primer!"
 #: contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Delete %1"
-msgstr "Suprimeix %1"
+msgstr "Suprimix %1"
 
 #: contents/ui/RecordingListPage.qml:179
 #, kde-format
@@ -139,13 +139,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Cancela"
 
 #: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr "Suprimeix"
+msgstr "Suprimix"
 
 #: contents/ui/RecordingListPage.qml:206
 #, kde-format
