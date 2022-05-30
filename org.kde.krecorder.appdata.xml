@@ -21,6 +21,7 @@
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="id">Recorder</name>
   <name xml:lang="it">Registratore</name>
+  <name xml:lang="ka">ჩამწერი</name>
   <name xml:lang="ko">녹음기</name>
   <name xml:lang="nl">Recorder</name>
   <name xml:lang="nn">Recorder</name>
@@ -47,6 +48,7 @@
   <summary xml:lang="fi">Äänitallennin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="it">Registratore audio</summary>
+  <summary xml:lang="ka">ხმის ჩამწერი</summary>
   <summary xml:lang="ko">오디오 녹음기</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pl">Nagrywanie dźwięku</summary>
@@ -81,6 +83,7 @@
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
+  <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
@@ -109,6 +112,7 @@
     <p xml:lang="fr">Recorder est une application simple, multi-plate-forme d'enregistreur audio.</p>
     <p xml:lang="id">Recorder adalah sebuah aplikasi perekaman audio lintas platform yang sederhana.</p>
     <p xml:lang="it">Registratore è un'applicazione di registrazione audio semplice e multi-piattaforma.</p>
+    <p xml:lang="ka">ჩამწერი მარტივი, კროსპლატფორმული ხმის ჩამწერი აპლიკაციაა.</p>
     <p xml:lang="ko">녹음기는 간단한 크로스 플랫폼 오디오 녹음기 프로그램입니다.</p>
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="nn">Recorder eit eit enkelt program for lydopptak.</p>
