@@ -1,0 +1,240 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+#
+# Emir SARI <emir_sari@icloud.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"PO-Revision-Date: 2022-07-01 21:03+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 22.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Emir SARI"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "emir_sari@icloud.com"
+
+#: contents/ui/DefaultPage.qml:26
+#, kde-format
+msgid "Click on a recording to play it, or record a new one"
+msgstr "Bir kaydı çalmak için tıklayın veya yeni bir tane kaydedin"
+
+#: contents/ui/main.qml:19
+#, kde-format
+msgid "Recorder"
+msgstr "Kaydedici"
+
+#: contents/ui/Record.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Ses Kaydet"
+
+#: contents/ui/Record.qml:52
+#, kde-format
+msgid "<b>New Recording</b>"
+msgstr "<b>Yeni Kayıt</b>"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Record"
+msgstr "Kaydet"
+
+#: contents/ui/RecordingComponent.qml:70
+#, kde-format
+msgid "Pause"
+msgstr "Duraklat"
+
+#: contents/ui/RecordingComponent.qml:80
+#, kde-format
+msgid "Stop"
+msgstr "Durdur"
+
+#: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
+#: contents/ui/Settings.qml:27
+#, kde-format
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: contents/ui/RecordingComponent.qml:116
+#, kde-format
+msgid "Save recording"
+msgstr "Kaydı yaz"
+
+#: contents/ui/RecordingComponent.qml:120
+#, kde-format
+msgid "Discard"
+msgstr "At"
+
+#: contents/ui/RecordingComponent.qml:128
+#, kde-format
+msgid "Save"
+msgstr "Kaydet"
+
+#: contents/ui/RecordingComponent.qml:145
+#, kde-format
+msgid "Name:"
+msgstr "Ad:"
+
+#: contents/ui/RecordingComponent.qml:146
+#, kde-format
+msgid "Name (optional)"
+msgstr "Ad (isteğe bağlı)"
+
+#: contents/ui/RecordingListDelegate.qml:67
+#: contents/ui/RecordingListPage.qml:28
+#, kde-format
+msgid "Edit"
+msgstr "Düzenle"
+
+#: contents/ui/RecordingListDelegate.qml:81
+#, kde-format
+msgid "Delete"
+msgstr "Sil"
+
+#: contents/ui/RecordingListPage.qml:18
+#, kde-format
+msgid "Recordings"
+msgstr "Kayıtlar"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings"
+msgstr "Kayıt yok"
+
+#: contents/ui/RecordingListPage.qml:99
+#, kde-format
+msgid "No recordings yet, record your first!"
+msgstr "Henüz bir kayıt yok, öncelikle bir tane kaydedin!"
+
+#: contents/ui/RecordingListPage.qml:178
+#, kde-format
+msgid "Delete %1"
+msgstr "Sil: %1"
+
+#: contents/ui/RecordingListPage.qml:179
+#, kde-format
+msgid ""
+"Are you sure you want to delete the recording %1?<br/>It will be "
+"<b>permanently lost</b> forever!"
+msgstr ""
+"%1 kaydını silmek istediğnize emin misiniz?<br><b>Tamamen</b> kaybolacaktır!"
+
+#: contents/ui/RecordingListPage.qml:183
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "İptal"
+
+#: contents/ui/RecordingListPage.qml:190
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Sil"
+
+#: contents/ui/RecordingListPage.qml:206
+#, kde-format
+msgid "Editing %1"
+msgstr "%1 düzenleniyor"
+
+#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#, kde-format
+msgid "Audio Input:"
+msgstr "Ses Girişi:"
+
+#: contents/ui/RecordingListPage.qml:227
+#, kde-format
+msgid "Location:"
+msgstr "Konum:"
+
+#: contents/ui/Settings.qml:71
+#, kde-format
+msgid "<b>Settings</b>"
+msgstr "<b>Ayarlar</b>"
+
+#: contents/ui/SettingsComponent.qml:22
+#, kde-format
+msgid "Format:"
+msgstr "Biçim:"
+
+#: contents/ui/SettingsComponent.qml:23
+#, kde-format
+msgid "Ogg Vorbis"
+msgstr "Ogg Vorbis"
+
+#: contents/ui/SettingsComponent.qml:23
+#, kde-format
+msgid "Ogg Opus"
+msgstr "Ogg Opus"
+
+#: contents/ui/SettingsComponent.qml:23
+#, kde-format
+msgid "FLAC"
+msgstr "FLAC"
+
+#: contents/ui/SettingsComponent.qml:23
+#, kde-format
+msgid "MP3"
+msgstr "MP3"
+
+#: contents/ui/SettingsComponent.qml:23
+#, kde-format
+msgid "WAV"
+msgstr "WAV"
+
+#: contents/ui/SettingsComponent.qml:31
+#, kde-format
+msgid "Audio Quality:"
+msgstr "Ses Kalitesi:"
+
+#: contents/ui/SettingsComponent.qml:42
+#, kde-format
+msgid "Hide Advanced Settings"
+msgstr "Gelişmiş Ayarları Gizle"
+
+#: contents/ui/SettingsComponent.qml:42
+#, kde-format
+msgid "Show Advanced Settings"
+msgstr "Gelişmiş Ayarları Göster"
+
+#: contents/ui/SettingsComponent.qml:61
+#, kde-format
+msgid "Audio Codec:"
+msgstr "Ses Kod Çözücü:"
+
+#: contents/ui/SettingsComponent.qml:69
+#, kde-format
+msgid "Container Format:"
+msgstr "Kapsayıcı Biçim:"
+
+#: contents/ui/SettingsComponent.qml:77
+#, kde-format
+msgid "About"
+msgstr "Hakkında"
+
+#: main.cpp:52
+#, kde-format
+msgid "© 2020-2022 KDE Community"
+msgstr "© 2020-2022 KDE Topluluğu"
+
+#: main.cpp:54
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:55
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
