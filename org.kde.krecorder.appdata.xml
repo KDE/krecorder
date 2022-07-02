@@ -34,6 +34,7 @@
   <name xml:lang="sk">Záznamník</name>
   <name xml:lang="sl">Recorder</name>
   <name xml:lang="sv">Inspelare</name>
+  <name xml:lang="tr">Ses Kaydedici</name>
   <name xml:lang="uk">Записувач</name>
   <name xml:lang="x-test">xxRecorderxx</name>
   <name xml:lang="zh-CN">录音机</name>
@@ -59,6 +60,7 @@
   <summary xml:lang="sk">Zvukový záznamník</summary>
   <summary xml:lang="sl">Snemalnik zvoka</summary>
   <summary xml:lang="sv">Ljudinspelare</summary>
+  <summary xml:lang="tr">Ses kaydedici</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
   <summary xml:lang="x-test">xxAudio recorderxx</summary>
   <summary xml:lang="zh-CN">录音工具</summary>
@@ -96,6 +98,7 @@
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
+  <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
@@ -125,6 +128,7 @@
     <p xml:lang="sk">Záznamník je jednoduchá cross platformová aplikácia na nahrávanie zvuku.</p>
     <p xml:lang="sl">Recorder je enostavna aplikacija za različne naprave za snemanje zvoka.</p>
     <p xml:lang="sv">Recorder är ett enkelt ljudinspelningsprogram för flera plattformar.</p>
+    <p xml:lang="tr">Ses Kaydedici; yalın, çok platformlu bir ses kayıt uygulamasıdır.</p>
     <p xml:lang="uk">«Записувач» є простою програмою для запису звукових даних, яка може працювати на багатьох програмних платформах.</p>
     <p xml:lang="x-test">xxRecorder is a simple, cross-platform audio recording application.xx</p>
     <p xml:lang="zh-CN">Recorder 是一款简单、跨平台的录音应用。</p>
