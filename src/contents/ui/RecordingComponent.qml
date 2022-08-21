@@ -98,10 +98,7 @@ Item {
                 display: Controls.AbstractButton.IconOnly
                 enabled: isStopped
                 
-                onClicked: {
-                    openSheet();
-                    settingsDialog.open();
-                }
+                onClicked: applicationWindow().openSettings();
             }
             Item { Layout.fillWidth: true }
         }

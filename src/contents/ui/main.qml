@@ -6,12 +6,16 @@
  */
 
 import QtQuick 2.12
-import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.2 as Controls
-import QtMultimedia 5.12
-import KRecorder 1.0
 import QtQuick.Layouts 1.2
+
 import QtQml 2.14
+import QtMultimedia 5.12
+
+import org.kde.kirigami 2.12 as Kirigami
+
+import KRecorder 1.0
+import "settings"
 
 Kirigami.ApplicationWindow {
     id: appwindow
@@ -26,6 +30,10 @@ Kirigami.ApplicationWindow {
     
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar;
     pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
+    
+    pageStack.initialPage: RecordingListPage {}
+    pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
+    Component.onCompleted: switchToRecording(null)
     
     // page switch animation
     NumberAnimation {
@@ -43,15 +51,43 @@ Kirigami.ApplicationWindow {
         easing.type: Easing.OutQuint
     }
     
+    // pop pages when not in use
+    Connections {
+        target: applicationWindow().pageStack
+        function onCurrentIndexChanged() {
+            // wait for animation to finish before popping pages
+            closePageTimer.restart();
+        }
+    }
+    
+    Timer {
+        id: closePageTimer
+        interval: 300
+        onTriggered: {
+            // only close pages automatically when in narrow screen mode
+            if (!applicationWindow().isWidescreen) {
+                let currentIndex = applicationWindow().pageStack.currentIndex;
+                while (applicationWindow().pageStack.depth > (currentIndex + 1) && currentIndex >= 0) {
+                    applicationWindow().pageStack.pop();
+                }
+            }
+        }
+    }
+    
     Loader {
         id: playerPageLoader
     }
     
-    Settings {
-        id: settingsDialog
-    }
-    
     onIsWidescreenChanged: switchToRecording(currentRecording);
+    
+    function openSettings() {
+        if (isWidescreen) {
+            settingsDialogLoader.active = true;
+            settingsDialogLoader.item.open();
+        } else {
+            pageStack.push("qrc:/settings/SettingsPage.qml");
+        }
+    }
     
     function switchToRecording(recording) {
         currentRecording = recording;
@@ -78,8 +114,11 @@ Kirigami.ApplicationWindow {
         yAnim.restart();
         anim.restart();
     }
-
-    pageStack.initialPage: RecordingListPage {}
-    Component.onCompleted: switchToRecording(null)
+    
+    Loader {
+        id: settingsDialogLoader
+        active: false
+        sourceComponent: SettingsDialog {}
+    }
 }
 

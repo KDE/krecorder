@@ -33,9 +33,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             iconName: "settings-configure"
             text: i18n("Settings")
-            onTriggered: {
-                settingsDialog.open();
-            }
+            onTriggered: applicationWindow().openSettings();
         }
     ]
     

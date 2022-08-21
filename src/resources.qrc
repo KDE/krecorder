@@ -10,13 +10,14 @@
         <file alias="RecordingListPage.qml">contents/ui/RecordingListPage.qml</file>
         <file alias="Record.qml">contents/ui/Record.qml</file>
         <file alias="RecordingComponent.qml">contents/ui/RecordingComponent.qml</file>
-        <file alias="Settings.qml">contents/ui/Settings.qml</file>
-        <file alias="SettingsComponent.qml">contents/ui/SettingsComponent.qml</file>
         <file alias="PlayerPage.qml">contents/ui/PlayerPage.qml</file>
         <file alias="DefaultPage.qml">contents/ui/DefaultPage.qml</file>
         <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
         <file alias="RecordingListDelegate.qml">contents/ui/RecordingListDelegate.qml</file>
         <file alias="FloatingActionButton.qml">contents/ui/FloatingActionButton.qml</file>
         <file alias="ListDelegate.qml">contents/ui/ListDelegate.qml</file>
+        <file alias="settings/SettingsComponent.qml">contents/ui/settings/SettingsComponent.qml</file>
+        <file alias="settings/SettingsDialog.qml">contents/ui/settings/SettingsDialog.qml</file>
+        <file alias="settings/SettingsPage.qml">contents/ui/settings/SettingsPage.qml</file>
     </qresource>
 </RCC>
