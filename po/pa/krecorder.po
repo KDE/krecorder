@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"POT-Creation-Date: 2022-08-22 00:48+0000\n"
 "PO-Revision-Date: 2021-01-20 21:46-0800\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Click on a recording to play it, or record a new one"
 msgstr ""
 
-#: contents/ui/main.qml:19
+#: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "ਰਿਕਾਰਡਰ"
@@ -64,35 +64,36 @@ msgid "Stop"
 msgstr "ਰੋਕੋ"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/Settings.qml:27
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "ਸੈਟਿੰਗਾਂ"
 
-#: contents/ui/RecordingComponent.qml:116
+#: contents/ui/RecordingComponent.qml:113
 #, kde-format
 msgid "Save recording"
 msgstr "ਰਿਕਾਰਡਿੰਗ ਸੰਭਾਲੋ"
 
-#: contents/ui/RecordingComponent.qml:120
+#: contents/ui/RecordingComponent.qml:117
 #, kde-format
 msgid "Discard"
 msgstr ""
 
-#: contents/ui/RecordingComponent.qml:128
+#: contents/ui/RecordingComponent.qml:125
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "ਸੰਭਾਲੋ"
 
-#: contents/ui/RecordingComponent.qml:145
+#: contents/ui/RecordingComponent.qml:142
 #, fuzzy, kde-format
 #| msgid "Name"
 msgid "Name:"
 msgstr "ਨਾਂ"
 
-#: contents/ui/RecordingComponent.qml:146
+#: contents/ui/RecordingComponent.qml:143
 #, kde-format
 msgid "Name (optional)"
 msgstr "ਨਾਂ (ਚੋਣਵਾਂ)"
@@ -115,129 +116,146 @@ msgstr "ਹਟਾਓ"
 msgid "Recordings"
 msgstr "ਰਿਕਾਰਡਿੰਗਾਂ"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, fuzzy, kde-format
 #| msgid "Recordings"
 msgid "No recordings"
 msgstr "ਰਿਕਾਰਡਿੰਗਾਂ"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "ਹਾਲੇ ਕੋਈ ਰਿਕਾਰਡਿੰਗ ਨਹੀਂ ਹੈ, ਆਪਣੀ ਪਹਿਲੀ ਰਿਕਾਰਡ ਕਰੋ!"
 
-#: contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:176
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Delete"
 msgid "Delete %1"
 msgstr "ਹਟਾਓ"
 
-#: contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
 
-#: contents/ui/RecordingListPage.qml:190
+#: contents/ui/RecordingListPage.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "ਹਟਾਓ"
 
-#: contents/ui/RecordingListPage.qml:206
+#: contents/ui/RecordingListPage.qml:204
 #, fuzzy, kde-format
 #| msgid "Edit"
 msgid "Editing %1"
 msgstr "ਸੋਧੋ"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#: contents/ui/RecordingListPage.qml:219
 #, fuzzy, kde-format
 #| msgid "Audio Input"
 msgid "Audio Input:"
 msgstr "ਆਡੀਓ ਇਨਪੁਟ"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:225
 #, fuzzy, kde-format
 #| msgid "Location"
 msgid "Location:"
 msgstr "ਟਿਕਾਣਾ"
 
-#: contents/ui/Settings.qml:71
-#, fuzzy, kde-format
-#| msgid "Settings"
-msgid "<b>Settings</b>"
-msgstr "ਸੈਟਿੰਗਾਂ"
+#: contents/ui/settings/SettingsComponent.qml:40
+#, kde-format
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/settings/SettingsComponent.qml:45
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:63
 #, fuzzy, kde-format
 #| msgid "Format"
-msgid "Format:"
+msgid "Audio Format"
 msgstr "ਫਾਰਮੈਟ"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:64
+#, kde-format
+msgid "Custom"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:31
+#: contents/ui/settings/SettingsComponent.qml:102
+#: contents/ui/settings/SettingsComponent.qml:124
 #, fuzzy, kde-format
 #| msgid "Audio Quality"
-msgid "Audio Quality:"
+msgid "Audio Quality"
 msgstr "ਆਡੀਓ ਕੁਆਲਟੀ"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
-msgid "Hide Advanced Settings"
-msgstr "ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ ਲੁਕਾਓ"
+msgid "%1"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
-msgid "Show Advanced Settings"
-msgstr "ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ ਵੇਖਾਓ"
+msgid "Advanced"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:61
+#: contents/ui/settings/SettingsComponent.qml:161
+#, fuzzy, kde-format
+#| msgid "Audio Input"
+msgid "Audio Input"
+msgstr "ਆਡੀਓ ਇਨਪੁਟ"
+
+#: contents/ui/settings/SettingsComponent.qml:200
 #, fuzzy, kde-format
 #| msgid "Audio Codec"
-msgid "Audio Codec:"
+msgid "Audio Codec"
 msgstr "ਆਡੀਓ Codec"
 
-#: contents/ui/SettingsComponent.qml:69
+#: contents/ui/settings/SettingsComponent.qml:239
 #, fuzzy, kde-format
 #| msgid "Container Format"
-msgid "Container Format:"
+msgid "Container Format"
 msgstr "ਕਨਟੇਨਰ ਫਾਰਮੈਟ"
 
-#: contents/ui/SettingsComponent.qml:77
+#: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
-msgid "About"
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
 msgstr ""
 
 #: main.cpp:52
@@ -254,6 +272,17 @@ msgstr ""
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Settings"
+#~ msgid "<b>Settings</b>"
+#~ msgstr "ਸੈਟਿੰਗਾਂ"
+
+#~ msgid "Hide Advanced Settings"
+#~ msgstr "ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ ਲੁਕਾਓ"
+
+#~ msgid "Show Advanced Settings"
+#~ msgstr "ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ ਵੇਖਾਓ"
 
 #~ msgid "Delete recording"
 #~ msgstr "ਰਿਕਾਰਡਿੰਗ ਹਟਾਓ"

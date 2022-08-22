@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"POT-Creation-Date: 2022-08-22 00:48+0000\n"
 "PO-Revision-Date: 2022-02-18 08:54+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -35,7 +35,7 @@ msgstr "yurchor@ukr.net"
 msgid "Click on a recording to play it, or record a new one"
 msgstr "Натисніть на запису, щоб відтворити його, або запишіть нові дані"
 
-#: contents/ui/main.qml:19
+#: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Записувач"
@@ -66,32 +66,33 @@ msgid "Stop"
 msgstr "Зупинити"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/Settings.qml:27
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: contents/ui/RecordingComponent.qml:116
+#: contents/ui/RecordingComponent.qml:113
 #, kde-format
 msgid "Save recording"
 msgstr "Збереження запису"
 
-#: contents/ui/RecordingComponent.qml:120
+#: contents/ui/RecordingComponent.qml:117
 #, kde-format
 msgid "Discard"
 msgstr "Відкинути"
 
-#: contents/ui/RecordingComponent.qml:128
+#: contents/ui/RecordingComponent.qml:125
 #, kde-format
 msgid "Save"
 msgstr "Зберегти"
 
-#: contents/ui/RecordingComponent.qml:145
+#: contents/ui/RecordingComponent.qml:142
 #, kde-format
 msgid "Name:"
 msgstr "Назва:"
 
-#: contents/ui/RecordingComponent.qml:146
+#: contents/ui/RecordingComponent.qml:143
 #, kde-format
 msgid "Name (optional)"
 msgstr "Назва (необов’язково):"
@@ -112,22 +113,22 @@ msgstr "Вилучити"
 msgid "Recordings"
 msgstr "Записи"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings"
 msgstr "Немає записів"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "Записів ще немає. Зробіть перший запис!"
 
-#: contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:176
 #, kde-format
 msgid "Delete %1"
 msgstr "Вилучити %1"
 
-#: contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -135,97 +136,119 @@ msgid ""
 msgstr ""
 "Ви справді хочете вилучити запис %1?<br/>Запис буде <b>назавжди втрачено</b>!"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: contents/ui/RecordingListPage.qml:190
+#: contents/ui/RecordingListPage.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/ui/RecordingListPage.qml:206
+#: contents/ui/RecordingListPage.qml:204
 #, kde-format
 msgid "Editing %1"
 msgstr "Редагування %1"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Audio Input:"
 msgstr "Звуковий вхід:"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:225
 #, kde-format
 msgid "Location:"
 msgstr "Місце:"
 
-#: contents/ui/Settings.qml:71
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
-msgid "<b>Settings</b>"
-msgstr "<b>Параметри</b>"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
-msgid "Format:"
+msgid "About"
+msgstr "Про програму"
+
+#: contents/ui/settings/SettingsComponent.qml:63
+#, fuzzy, kde-format
+#| msgid "Format:"
+msgid "Audio Format"
 msgstr "Формат:"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:64
+#, kde-format
+msgid "Custom"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:31
-#, kde-format
-msgid "Audio Quality:"
+#: contents/ui/settings/SettingsComponent.qml:102
+#: contents/ui/settings/SettingsComponent.qml:124
+#, fuzzy, kde-format
+#| msgid "Audio Quality:"
+msgid "Audio Quality"
 msgstr "Якість звуку:"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
-msgid "Hide Advanced Settings"
-msgstr "Приховати додаткові параметри"
+msgid "%1"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
-msgid "Show Advanced Settings"
-msgstr "Показати додаткові параметри"
+msgid "Advanced"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:61
-#, kde-format
-msgid "Audio Codec:"
+#: contents/ui/settings/SettingsComponent.qml:161
+#, fuzzy, kde-format
+#| msgid "Audio Input:"
+msgid "Audio Input"
+msgstr "Звуковий вхід:"
+
+#: contents/ui/settings/SettingsComponent.qml:200
+#, fuzzy, kde-format
+#| msgid "Audio Codec:"
+msgid "Audio Codec"
 msgstr "Аудіокодек:"
 
-#: contents/ui/SettingsComponent.qml:69
-#, kde-format
-msgid "Container Format:"
+#: contents/ui/settings/SettingsComponent.qml:239
+#, fuzzy, kde-format
+#| msgid "Container Format:"
+msgid "Container Format"
 msgstr "Формат контейнера:"
 
-#: contents/ui/SettingsComponent.qml:77
+#: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
-msgid "About"
-msgstr "Про програму"
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
 
 #: main.cpp:52
 #, kde-format
@@ -241,6 +264,15 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "<b>Settings</b>"
+#~ msgstr "<b>Параметри</b>"
+
+#~ msgid "Hide Advanced Settings"
+#~ msgstr "Приховати додаткові параметри"
+
+#~ msgid "Show Advanced Settings"
+#~ msgstr "Показати додаткові параметри"
 
 #~ msgid "Delete recording"
 #~ msgstr "Вилучити запис"

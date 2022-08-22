@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"POT-Creation-Date: 2022-08-22 00:48+0000\n"
 "PO-Revision-Date: 2021-11-20 21:36+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Click on a recording to play it, or record a new one"
 msgstr "Kliknite na nahrávku na jej prehratie alebo nahrajte novú"
 
-#: contents/ui/main.qml:19
+#: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Záznamník"
@@ -61,34 +61,35 @@ msgid "Stop"
 msgstr "Zastaviť"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/Settings.qml:27
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: contents/ui/RecordingComponent.qml:116
+#: contents/ui/RecordingComponent.qml:113
 #, kde-format
 msgid "Save recording"
 msgstr "Uložiť nahrávku"
 
-#: contents/ui/RecordingComponent.qml:120
+#: contents/ui/RecordingComponent.qml:117
 #, kde-format
 msgid "Discard"
 msgstr ""
 
-#: contents/ui/RecordingComponent.qml:128
+#: contents/ui/RecordingComponent.qml:125
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "Uložiť"
 
-#: contents/ui/RecordingComponent.qml:145
+#: contents/ui/RecordingComponent.qml:142
 #, kde-format
 msgid "Name:"
 msgstr "Názov:"
 
-#: contents/ui/RecordingComponent.qml:146
+#: contents/ui/RecordingComponent.qml:143
 #, kde-format
 msgid "Name (optional)"
 msgstr "Názov (voliteľné)"
@@ -109,23 +110,23 @@ msgstr "Vymazať"
 msgid "Recordings"
 msgstr "Nahrávky"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings"
 msgstr "Žiadne nahrávky"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "Ziadne nahrávky, nahrajte si prvú!"
 
-#: contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:176
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Delete %1"
 msgstr "Vymazať"
 
-#: contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:177
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to delete the recording %1? It will be permanently "
@@ -135,102 +136,120 @@ msgid ""
 "<b>permanently lost</b> forever!"
 msgstr "Naozaj chcete vymazať nahrávku %1? Bude naždy stratená!"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: contents/ui/RecordingListPage.qml:190
+#: contents/ui/RecordingListPage.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Vymazať"
 
-#: contents/ui/RecordingListPage.qml:206
+#: contents/ui/RecordingListPage.qml:204
 #, fuzzy, kde-format
 #| msgid "Editing"
 msgid "Editing %1"
 msgstr "Editovanie"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#: contents/ui/RecordingListPage.qml:219
 #, fuzzy, kde-format
 #| msgid "Audio Input"
 msgid "Audio Input:"
 msgstr "Zvukový vstup"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:225
 #, kde-format
 msgid "Location:"
 msgstr "Umiestnenie:"
 
-#: contents/ui/Settings.qml:71
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
-msgid "<b>Settings</b>"
-msgstr "<b>Nastavenia</b>"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/settings/SettingsComponent.qml:45
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:63
 #, fuzzy, kde-format
 #| msgid "Format"
-msgid "Format:"
+msgid "Audio Format"
 msgstr "Formát"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:64
+#, kde-format
+msgid "Custom"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:31
+#: contents/ui/settings/SettingsComponent.qml:102
+#: contents/ui/settings/SettingsComponent.qml:124
 #, fuzzy, kde-format
 #| msgid "Audio Quality"
-msgid "Audio Quality:"
+msgid "Audio Quality"
 msgstr "Kvalita zvuku"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
-msgid "Hide Advanced Settings"
-msgstr "Skryť pokročilé nastavenia"
+msgid "%1"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
-msgid "Show Advanced Settings"
-msgstr "Zobraziť pokročilé nastavenia"
+msgid "Advanced"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:61
+#: contents/ui/settings/SettingsComponent.qml:161
+#, fuzzy, kde-format
+#| msgid "Audio Input"
+msgid "Audio Input"
+msgstr "Zvukový vstup"
+
+#: contents/ui/settings/SettingsComponent.qml:200
 #, fuzzy, kde-format
 #| msgid "Audio Codec"
-msgid "Audio Codec:"
+msgid "Audio Codec"
 msgstr "Kodek pre zvuk"
 
-#: contents/ui/SettingsComponent.qml:69
+#: contents/ui/settings/SettingsComponent.qml:239
 #, fuzzy, kde-format
 #| msgid "Container Format"
-msgid "Container Format:"
+msgid "Container Format"
 msgstr "Formát kontajnera"
 
-#: contents/ui/SettingsComponent.qml:77
+#: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
-msgid "About"
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
 msgstr ""
 
 #: main.cpp:52
@@ -247,6 +266,15 @@ msgstr ""
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
+
+#~ msgid "<b>Settings</b>"
+#~ msgstr "<b>Nastavenia</b>"
+
+#~ msgid "Hide Advanced Settings"
+#~ msgstr "Skryť pokročilé nastavenia"
+
+#~ msgid "Show Advanced Settings"
+#~ msgstr "Zobraziť pokročilé nastavenia"
 
 #~ msgid "Delete recording"
 #~ msgstr "Vymazať nahrávku"

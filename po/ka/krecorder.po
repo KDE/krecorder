@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"POT-Creation-Date: 2022-08-22 00:48+0000\n"
 "PO-Revision-Date: 2022-05-26 07:18+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -33,7 +33,7 @@ msgstr "Temuri.doghonadze@gmail.com"
 msgid "Click on a recording to play it, or record a new one"
 msgstr "დააწკაპუნეთ ჩაწერაზე მის დასაკრავად ან ახლის ჩასაწერად"
 
-#: contents/ui/main.qml:19
+#: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "ჩამწერი"
@@ -64,32 +64,33 @@ msgid "Stop"
 msgstr "შეჩერება"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/Settings.qml:27
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "მორგება"
 
-#: contents/ui/RecordingComponent.qml:116
+#: contents/ui/RecordingComponent.qml:113
 #, kde-format
 msgid "Save recording"
 msgstr "ჩანაწერის შენახვა"
 
-#: contents/ui/RecordingComponent.qml:120
+#: contents/ui/RecordingComponent.qml:117
 #, kde-format
 msgid "Discard"
 msgstr "გაუქმება"
 
-#: contents/ui/RecordingComponent.qml:128
+#: contents/ui/RecordingComponent.qml:125
 #, kde-format
 msgid "Save"
 msgstr "შენახვა"
 
-#: contents/ui/RecordingComponent.qml:145
+#: contents/ui/RecordingComponent.qml:142
 #, kde-format
 msgid "Name:"
 msgstr "სახელი:"
 
-#: contents/ui/RecordingComponent.qml:146
+#: contents/ui/RecordingComponent.qml:143
 #, kde-format
 msgid "Name (optional)"
 msgstr "სახელი (არასავალდებულო)"
@@ -110,22 +111,22 @@ msgstr "წაშლა"
 msgid "Recordings"
 msgstr "ჩანაწერები"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings"
 msgstr "ჩანაწერების გარეშე"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "ჩანაწერები ჯერ არ არსებობთ. შექმენით პირველი!"
 
-#: contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:176
 #, kde-format
 msgid "Delete %1"
 msgstr "%1-ის წაშლა"
 
-#: contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -134,97 +135,119 @@ msgstr ""
 "დარწმუნებული ბრძანდებით, რომ გნებავთ წაშალოთ ჩანაწერი %1? <br/>ის "
 "<b>სამუდამოდ წაიშლება</b>!"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: contents/ui/RecordingListPage.qml:190
+#: contents/ui/RecordingListPage.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "წაშლა"
 
-#: contents/ui/RecordingListPage.qml:206
+#: contents/ui/RecordingListPage.qml:204
 #, kde-format
 msgid "Editing %1"
 msgstr "%1-ის ჩასწორება"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Audio Input:"
 msgstr "აუდიოს შეტანა:"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:225
 #, kde-format
 msgid "Location:"
 msgstr "მდებარეობა:"
 
-#: contents/ui/Settings.qml:71
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
-msgid "<b>Settings</b>"
-msgstr "<b>მორგება</b>"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
-msgid "Format:"
+msgid "About"
+msgstr "შესახებ"
+
+#: contents/ui/settings/SettingsComponent.qml:63
+#, fuzzy, kde-format
+#| msgid "Format:"
+msgid "Audio Format"
 msgstr "ფორმატი:"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:64
+#, kde-format
+msgid "Custom"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:31
-#, kde-format
-msgid "Audio Quality:"
+#: contents/ui/settings/SettingsComponent.qml:102
+#: contents/ui/settings/SettingsComponent.qml:124
+#, fuzzy, kde-format
+#| msgid "Audio Quality:"
+msgid "Audio Quality"
 msgstr "აუდიოს ხარისხი:"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
-msgid "Hide Advanced Settings"
-msgstr "დამატებითი პარამეტრების დამალვა"
+msgid "%1"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
-msgid "Show Advanced Settings"
-msgstr "დამატებითი პარამეტრების ცვენება"
+msgid "Advanced"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:61
-#, kde-format
-msgid "Audio Codec:"
+#: contents/ui/settings/SettingsComponent.qml:161
+#, fuzzy, kde-format
+#| msgid "Audio Input:"
+msgid "Audio Input"
+msgstr "აუდიოს შეტანა:"
+
+#: contents/ui/settings/SettingsComponent.qml:200
+#, fuzzy, kde-format
+#| msgid "Audio Codec:"
+msgid "Audio Codec"
 msgstr "აუდიო კოდეკი:"
 
-#: contents/ui/SettingsComponent.qml:69
-#, kde-format
-msgid "Container Format:"
+#: contents/ui/settings/SettingsComponent.qml:239
+#, fuzzy, kde-format
+#| msgid "Container Format:"
+msgid "Container Format"
 msgstr "კონტეინერის ფორმატი:"
 
-#: contents/ui/SettingsComponent.qml:77
+#: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
-msgid "About"
-msgstr "შესახებ"
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
 
 #: main.cpp:52
 #, kde-format
@@ -240,3 +263,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "<b>Settings</b>"
+#~ msgstr "<b>მორგება</b>"
+
+#~ msgid "Hide Advanced Settings"
+#~ msgstr "დამატებითი პარამეტრების დამალვა"
+
+#~ msgid "Show Advanced Settings"
+#~ msgstr "დამატებითი პარამეტრების ცვენება"

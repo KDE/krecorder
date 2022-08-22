@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-07 00:47+0000\n"
+"POT-Creation-Date: 2022-08-22 00:48+0000\n"
 "PO-Revision-Date: 2022-02-20 21:33+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -32,7 +32,7 @@ msgstr "kde@peremen.name"
 msgid "Click on a recording to play it, or record a new one"
 msgstr "녹음 항목을 클릭하면 재생하거나 새로 녹음할 수 있습니다"
 
-#: contents/ui/main.qml:19
+#: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "녹음기"
@@ -63,32 +63,33 @@ msgid "Stop"
 msgstr "정지"
 
 #: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/Settings.qml:27
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: contents/ui/RecordingComponent.qml:116
+#: contents/ui/RecordingComponent.qml:113
 #, kde-format
 msgid "Save recording"
 msgstr "녹음 저장"
 
-#: contents/ui/RecordingComponent.qml:120
+#: contents/ui/RecordingComponent.qml:117
 #, kde-format
 msgid "Discard"
 msgstr "무시"
 
-#: contents/ui/RecordingComponent.qml:128
+#: contents/ui/RecordingComponent.qml:125
 #, kde-format
 msgid "Save"
 msgstr "저장"
 
-#: contents/ui/RecordingComponent.qml:145
+#: contents/ui/RecordingComponent.qml:142
 #, kde-format
 msgid "Name:"
 msgstr "이름:"
 
-#: contents/ui/RecordingComponent.qml:146
+#: contents/ui/RecordingComponent.qml:143
 #, kde-format
 msgid "Name (optional)"
 msgstr "이름(선택 사항)"
@@ -109,119 +110,141 @@ msgstr "삭제"
 msgid "Recordings"
 msgstr "녹음 기록"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings"
 msgstr "녹음 없음"
 
-#: contents/ui/RecordingListPage.qml:99
+#: contents/ui/RecordingListPage.qml:97
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "녹음 기록이 없습니다. 첫 음성을 녹음하세요!"
 
-#: contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:176
 #, kde-format
 msgid "Delete %1"
 msgstr "%1 삭제"
 
-#: contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "녹음 %1을(를) 삭제하시겠습니까?<br/>복원할 수 <b>없습니다!</b>"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "취소"
 
-#: contents/ui/RecordingListPage.qml:190
+#: contents/ui/RecordingListPage.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "삭제"
 
-#: contents/ui/RecordingListPage.qml:206
+#: contents/ui/RecordingListPage.qml:204
 #, kde-format
 msgid "Editing %1"
 msgstr "%1 편집"
 
-#: contents/ui/RecordingListPage.qml:221 contents/ui/SettingsComponent.qml:52
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Audio Input:"
 msgstr "오디오 입력:"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:225
 #, kde-format
 msgid "Location:"
 msgstr "위치:"
 
-#: contents/ui/Settings.qml:71
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
-msgid "<b>Settings</b>"
-msgstr "<b>설정</b>"
+msgid "General"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:22
+#: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
-msgid "Format:"
+msgid "About"
+msgstr "정보"
+
+#: contents/ui/settings/SettingsComponent.qml:63
+#, fuzzy, kde-format
+#| msgid "Format:"
+msgid "Audio Format"
 msgstr "형식:"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:64
+#, kde-format
+msgid "Custom"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/SettingsComponent.qml:23
+#: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV"
 msgstr "WAV"
 
-#: contents/ui/SettingsComponent.qml:31
-#, kde-format
-msgid "Audio Quality:"
+#: contents/ui/settings/SettingsComponent.qml:102
+#: contents/ui/settings/SettingsComponent.qml:124
+#, fuzzy, kde-format
+#| msgid "Audio Quality:"
+msgid "Audio Quality"
 msgstr "오디오 음질:"
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
-msgid "Hide Advanced Settings"
-msgstr "고급 설정 숨기기"
+msgid "%1"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:42
+#: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
-msgid "Show Advanced Settings"
-msgstr "고급 설정 표시"
+msgid "Advanced"
+msgstr ""
 
-#: contents/ui/SettingsComponent.qml:61
-#, kde-format
-msgid "Audio Codec:"
+#: contents/ui/settings/SettingsComponent.qml:161
+#, fuzzy, kde-format
+#| msgid "Audio Input:"
+msgid "Audio Input"
+msgstr "오디오 입력:"
+
+#: contents/ui/settings/SettingsComponent.qml:200
+#, fuzzy, kde-format
+#| msgid "Audio Codec:"
+msgid "Audio Codec"
 msgstr "오디오 코덱:"
 
-#: contents/ui/SettingsComponent.qml:69
-#, kde-format
-msgid "Container Format:"
+#: contents/ui/settings/SettingsComponent.qml:239
+#, fuzzy, kde-format
+#| msgid "Container Format:"
+msgid "Container Format"
 msgstr "컨테이너 형식:"
 
-#: contents/ui/SettingsComponent.qml:77
+#: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
-msgid "About"
-msgstr "정보"
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
 
 #: main.cpp:52
 #, kde-format
@@ -237,6 +260,15 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "<b>Settings</b>"
+#~ msgstr "<b>설정</b>"
+
+#~ msgid "Hide Advanced Settings"
+#~ msgstr "고급 설정 숨기기"
+
+#~ msgid "Show Advanced Settings"
+#~ msgstr "고급 설정 표시"
 
 #~ msgid "Delete recording"
 #~ msgstr "녹음 삭제"
