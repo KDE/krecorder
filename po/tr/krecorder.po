@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-22 00:48+0000\n"
-"PO-Revision-Date: 2022-07-01 21:03+0300\n"
+"PO-Revision-Date: 2022-08-22 22:29+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.04.2\n"
+"X-Generator: Lokalize 22.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -163,7 +163,7 @@ msgstr "Konum:"
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -171,15 +171,14 @@ msgid "About"
 msgstr "Hakkında"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Biçim:"
+msgstr "Ses Biçimi"
 
 #: contents/ui/settings/SettingsComponent.qml:64
 #, kde-format
 msgid "Custom"
-msgstr ""
+msgstr "Özel"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
@@ -208,44 +207,40 @@ msgstr "WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:102
 #: contents/ui/settings/SettingsComponent.qml:124
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Ses Kalitesi:"
+msgstr "Ses Kalitesi"
 
 #: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Gelişmiş"
 
 #: contents/ui/settings/SettingsComponent.qml:161
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Ses Girişi:"
+msgstr "Ses Girişi"
 
 #: contents/ui/settings/SettingsComponent.qml:200
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Ses Kod Çözücü:"
+msgstr "Ses Kod Çözücüsü"
 
 #: contents/ui/settings/SettingsComponent.qml:239
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Kapsayıcı Biçim:"
+msgstr "Kapsayıcı Biçimi"
 
 #: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
+msgstr "Bazı kod çözücü ve kapsayıcı biçimleri uyumlu olmayabilir."
 
 #: main.cpp:52
 #, kde-format

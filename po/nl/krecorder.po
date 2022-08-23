@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-22 00:48+0000\n"
-"PO-Revision-Date: 2022-02-18 10:28+0100\n"
+"PO-Revision-Date: 2022-08-22 14:20+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 22.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -164,7 +164,7 @@ msgstr "Locatie:"
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -172,15 +172,14 @@ msgid "About"
 msgstr "Info over"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Formaat:"
+msgstr "Audioformaat"
 
 #: contents/ui/settings/SettingsComponent.qml:64
 #, kde-format
 msgid "Custom"
-msgstr ""
+msgstr "Aangepast"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
@@ -209,44 +208,42 @@ msgstr "WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:102
 #: contents/ui/settings/SettingsComponent.qml:124
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Geluidskwaliteit:"
+msgstr "Geluidskwaliteit"
 
 #: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Geavanceerd"
 
 #: contents/ui/settings/SettingsComponent.qml:161
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Audio-invoer:"
+msgstr "Audio-invoer"
 
 #: contents/ui/settings/SettingsComponent.qml:200
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
 msgstr "Audio-codec"
 
 #: contents/ui/settings/SettingsComponent.qml:239
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Containerformaat:"
+msgstr "Containerformaat"
 
 #: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Sommige combinaties van codecs en containerformaten kunnen niet compatibel "
+"zijn."
 
 #: main.cpp:52
 #, kde-format
