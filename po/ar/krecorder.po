@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-22 00:48+0000\n"
-"PO-Revision-Date: 2022-02-19 19:17+0400\n"
+"PO-Revision-Date: 2022-08-28 22:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
 "Language: ar\n"
@@ -163,7 +163,7 @@ msgstr "المكان:"
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "عامّ"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -171,15 +171,14 @@ msgid "About"
 msgstr "عن"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "النّسق:"
+msgstr "نسق الصوت"
 
 #: contents/ui/settings/SettingsComponent.qml:64
 #, kde-format
 msgid "Custom"
-msgstr ""
+msgstr "مخصّص"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
@@ -208,44 +207,40 @@ msgstr "WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:102
 #: contents/ui/settings/SettingsComponent.qml:124
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "جودة الصّوت:"
+msgstr "جودة الصّوت"
 
 #: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "متقدّم"
 
 #: contents/ui/settings/SettingsComponent.qml:161
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "مدخل الصوت:"
+msgstr "مدخل الصوت"
 
 #: contents/ui/settings/SettingsComponent.qml:200
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "مرماز الصّوت:"
+msgstr "مرماز الصّوت"
 
 #: contents/ui/settings/SettingsComponent.qml:239
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "نسق الحاوية:"
+msgstr "نسق الحاوية"
 
 #: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
+msgstr "قد لا تكون بعض مجموعات برامج الترميز وتنسيقات الحاويات متوافقة."
 
 #: main.cpp:52
 #, kde-format
