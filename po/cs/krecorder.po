@@ -163,7 +163,7 @@ msgstr "Umístění:"
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -171,15 +171,14 @@ msgid "About"
 msgstr "O aplikaci"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Formát:"
+msgstr "Zvukový formát"
 
 #: contents/ui/settings/SettingsComponent.qml:64
 #, kde-format
 msgid "Custom"
-msgstr ""
+msgstr "Vlastní"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
@@ -208,38 +207,34 @@ msgstr "WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:102
 #: contents/ui/settings/SettingsComponent.qml:124
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Kvalita zvuku:"
+msgstr "Kvalita zvuku"
 
 #: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: contents/ui/settings/SettingsComponent.qml:156
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Pokročilé"
 
 #: contents/ui/settings/SettingsComponent.qml:161
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Zvukový vstup:"
+msgstr "Zvukový vstup"
 
 #: contents/ui/settings/SettingsComponent.qml:200
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Audio kodek:"
+msgstr "Kodek zvuku"
 
 #: contents/ui/settings/SettingsComponent.qml:239
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Formát kontejneru:"
+msgstr "Formát kontejneru"
 
 #: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
@@ -261,12 +256,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "<b>Settings</b>"
-#~ msgstr "<b>Nastavení</b>"
-
-#~ msgid "Hide Advanced Settings"
-#~ msgstr "Skrýt pokročilá nastavení"
-
-#~ msgid "Show Advanced Settings"
-#~ msgstr "Zobrazit pokročilá nastavení"
