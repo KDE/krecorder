@@ -33,7 +33,7 @@ target_link_libraries(krecorder
 
 target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})
 
-install(TARGETS krecorder ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS krecorder ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 if(ANDROID)
     kirigami_package_breeze_icons(ICONS
