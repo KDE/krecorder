@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-22 00:48+0000\n"
-"PO-Revision-Date: 2022-08-20 14:18\n"
+"PO-Revision-Date: 2022-09-20 01:57\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -171,10 +171,9 @@ msgid "About"
 msgstr "关于"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "格式："
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:64
 #, kde-format
@@ -208,10 +207,9 @@ msgstr "WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:102
 #: contents/ui/settings/SettingsComponent.qml:124
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "音频品质："
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:103
 #, kde-format
@@ -224,22 +222,19 @@ msgid "Advanced"
 msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:161
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "音频输入："
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:200
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "音频编码："
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:239
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "容器格式："
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:277
 #, kde-format
@@ -261,12 +256,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "<b>Settings</b>"
-#~ msgstr "<b>设置</b>"
-
-#~ msgid "Hide Advanced Settings"
-#~ msgstr "隐藏高级设置"
-
-#~ msgid "Show Advanced Settings"
-#~ msgstr "显示高级设置"
