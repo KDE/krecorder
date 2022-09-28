@@ -23,6 +23,7 @@ A convergent audio recording application for Plasma.
 * kconfig
 * ki18n
 * kirigami2 (runtime only)
+* kirigami-addons (runtime only)
 
 ## Installing
 ```
