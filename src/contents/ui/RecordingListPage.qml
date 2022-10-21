@@ -139,7 +139,7 @@ Kirigami.ScrollablePage {
             property int index
 
             Controls.MenuItem {
-                text: qsTr("Edit")
+                text: i18n("Edit")
                 icon.name: "edit-entry"
                 onTriggered: {
                     openDialogTimer.run = () => root.editRecordingDialog(contextMenu.recording);
@@ -148,7 +148,7 @@ Kirigami.ScrollablePage {
             }
 
             Controls.MenuItem {
-                text: qsTr("Delete")
+                text: i18n("Delete")
                 icon.name: "delete"
                 onTriggered: {
                     openDialogTimer.run = () => root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
