@@ -7,6 +7,7 @@
 
 #include <QApplication>
 #include <QGuiApplication>
+#include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QAudioRecorder>
@@ -94,6 +95,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
+
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("krecorder")));
 
     return app.exec();
 }
