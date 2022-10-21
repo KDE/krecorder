@@ -74,13 +74,18 @@ void RecordingModel::save()
 
 int RecordingModel::rowCount(const QModelIndex &parent) const
 {
-    Q_UNUSED(parent);
+    if (parent.isValid()) {
+        return 0;
+    }
     return m_recordings.size();
 }
 
 QVariant RecordingModel::data(const QModelIndex &index, int role) const
 {
-    if (!index.isValid() || index.row() >= m_recordings.count()) {
+    if (!checkIndex(index)) {
+        return QVariant();
+    }
+    if (role != RecordingRole) {
         return QVariant();
     }
 

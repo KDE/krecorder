@@ -25,7 +25,7 @@ public:
     static RecordingModel* instance();
     
     enum {
-        RecordingRole,
+        RecordingRole = Qt::UserRole,
     };
     
     void load();
