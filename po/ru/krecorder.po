@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-22 00:48+0000\n"
+"POT-Creation-Date: 2022-10-22 00:47+0000\n"
 "PO-Revision-Date: 2021-12-28 17:35+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -96,12 +96,13 @@ msgid "Name (optional)"
 msgstr "Название (необязательно)"
 
 #: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:28
+#: contents/ui/RecordingListPage.qml:28 contents/ui/RecordingListPage.qml:142
 #, kde-format
 msgid "Edit"
 msgstr "Изменить"
 
 #: contents/ui/RecordingListDelegate.qml:81
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Удалить"

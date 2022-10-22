@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-22 00:48+0000\n"
+"POT-Creation-Date: 2022-10-22 00:47+0000\n"
 "PO-Revision-Date: 2022-02-20 21:33+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -95,12 +95,13 @@ msgid "Name (optional)"
 msgstr "이름(선택 사항)"
 
 #: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:28
+#: contents/ui/RecordingListPage.qml:28 contents/ui/RecordingListPage.qml:142
 #, kde-format
 msgid "Edit"
 msgstr "편집"
 
 #: contents/ui/RecordingListDelegate.qml:81
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "삭제"
