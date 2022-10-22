@@ -102,16 +102,22 @@ Kirigami.ScrollablePage {
             visible: parent.count === 0
         }
         
-        // record component and button
+        // record page
         RecordPage {
             id: recordPage
         }
         
+        // record button
         FloatingActionButton {
             anchors.fill: parent
             iconName: "audio-input-microphone-symbolic"
             onClicked: {
                 pageStack.layers.push(recordPage);
+                
+                // if not in a recording session, start recording
+                if (recordPage.isStopped) {
+                    AudioRecorder.record();
+                }
             }
         }
         
