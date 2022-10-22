@@ -29,6 +29,7 @@ target_link_libraries(krecorder
     KF5::ConfigCore
     KF5::ConfigGui
     KF5::CoreAddons
+    KF5::WindowSystem
 )
 
 target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})

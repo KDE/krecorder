@@ -1,4 +1,5 @@
 /*
+ * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
  * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -11,23 +12,14 @@ import QtQuick.Layouts 1.2
 import KRecorder 1.0
 
 Kirigami.Page {
-    title: ""
+    visible: false
+    title: i18n("Record Audio")
     
-    property int yTranslate: 0
-    property int mainOpacity: 0
-
     background: Rectangle {
         color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
     }
     
-    Kirigami.PlaceholderMessage {
-        opacity: mainOpacity
-        transform: Translate { y: yTranslate }
-        
-        anchors.centerIn: parent
-        width: parent.width - (Kirigami.Units.largeSpacing * 4)
-        icon.name: "microphone-sensitivity-medium"
-        text: i18n("Click on a recording to play it, or record a new one")
+    RecordingComponent {
+        anchors.fill: parent
     }
 }
- 

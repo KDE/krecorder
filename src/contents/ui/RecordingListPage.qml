@@ -22,6 +22,10 @@ Kirigami.ScrollablePage {
     
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
     
+    background: Rectangle {
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
+    }
+    
     actions.contextualActions: [
         Kirigami.Action {
             iconName: "edit-entry"
@@ -99,19 +103,15 @@ Kirigami.ScrollablePage {
         }
         
         // record component and button
-        Record {
-            id: recordComponent
+        RecordPage {
+            id: recordPage
         }
         
         FloatingActionButton {
             anchors.fill: parent
             iconName: "audio-input-microphone-symbolic"
             onClicked: {
-                if (!applicationWindow().isWidescreen) {
-                    recordComponent.item.open();
-                } else {
-                    pageStack.layers.push(recordComponent.item);
-                }
+                pageStack.layers.push(recordPage);
             }
         }
         

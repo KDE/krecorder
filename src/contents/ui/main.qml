@@ -33,7 +33,13 @@ Kirigami.ApplicationWindow {
     
     pageStack.initialPage: RecordingListPage {}
     pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
-    Component.onCompleted: switchToRecording(null)
+    
+    color: "transparent"
+    
+    Component.onCompleted: {
+        switchToRecording(null);
+        SettingsModel.setBlur(pageStack, true);
+    }
     
     // page switch animation
     NumberAnimation {

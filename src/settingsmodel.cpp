@@ -6,6 +6,10 @@
 
 #include "settingsmodel.h"
 
+#include <KWindowEffects>
+
+#include <QQuickWindow>
+
 SettingsModel* SettingsModel::instance()
 {
     static SettingsModel *s_settingsModel = new SettingsModel(qApp);
@@ -90,4 +94,19 @@ void SettingsModel::setAudioQuality(int audioQuality)
     settings->setValue(QStringLiteral("General/audioQuality"), audioQuality);
     
     Q_EMIT audioQualityChanged();
+}
+
+void SettingsModel::setBlur(QQuickItem *item, bool blur)
+{
+    auto setWindows = [item, blur]() {
+        auto reg = QRect(QPoint(0, 0), item->window()->size());
+        KWindowEffects::enableBackgroundContrast(item->window(), blur, 1, 1, 1, reg);
+        KWindowEffects::enableBlurBehind(item->window(), blur, reg);
+    };
+
+    disconnect(item->window(), &QQuickWindow::heightChanged, this, nullptr);
+    disconnect(item->window(), &QQuickWindow::widthChanged, this, nullptr);
+    connect(item->window(), &QQuickWindow::heightChanged, this, setWindows);
+    connect(item->window(), &QQuickWindow::widthChanged, this, setWindows);
+    setWindows();
 }

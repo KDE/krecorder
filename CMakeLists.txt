@@ -57,6 +57,7 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     I18n 
     Config 
     CoreAddons
+    WindowSystem
 )
 
 add_subdirectory(src)

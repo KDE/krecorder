@@ -40,7 +40,7 @@ Item {
             anchors.fill: parent
             onPressedChanged: {
                 if (pressed) {
-                    parent.color = Qt.darker(Kirigami.Theme.highlightColor, 1.1)
+                    parent.color = Qt.darker(Kirigami.Theme.highlightColor, 1.3)
                 } else {
                     parent.color = Kirigami.Theme.highlightColor
                 }

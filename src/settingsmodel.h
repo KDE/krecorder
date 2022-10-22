@@ -10,6 +10,7 @@
 #include <QString>
 #include <QMultimedia>
 #include <QCoreApplication>
+#include <QQuickItem>
 
 #include <audiorecorder.h>
 
@@ -53,6 +54,8 @@ public:
     
     int audioQuality() const;
     void setAudioQuality(int audioQuality);
+    
+    Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
 
 private:
     explicit SettingsModel(QObject *parent = nullptr);
