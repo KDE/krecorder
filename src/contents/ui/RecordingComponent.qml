@@ -98,7 +98,14 @@ Item {
                 display: Controls.AbstractButton.IconOnly
                 enabled: isStopped
                 
-                onClicked: applicationWindow().openSettings();
+                onClicked: {
+                    applicationWindow().openSettings();
+                    
+                    if (!applicationWindow().isWidescreen) {
+                        // pop this page off to see the settings (the recording is still going on)
+                        applicationWindow().pageStack.layers.pop();
+                    }
+                }
             }
             Item { Layout.fillWidth: true }
         }
