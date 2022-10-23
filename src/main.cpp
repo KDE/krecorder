@@ -59,10 +59,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCommandLineParser parser;
     parser.addVersionOption();
     parser.process(app);
-    
-    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
-        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
-    }
 
     // pre-initialize settings model to apply settings to the AudioRecorder instance
     SettingsModel::instance();
