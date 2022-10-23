@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-22 00:47+0000\n"
+"POT-Creation-Date: 2022-10-23 00:45+0000\n"
 "PO-Revision-Date: 2021-06-28 14:23+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:26
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Click on a recording to play it, or record a new one"
 msgstr "Κάνετε κλικ σε μια εγγραφή για αναπαραγωγή, ή καταγράψτε μια νέα"
@@ -37,73 +37,14 @@ msgstr "Κάνετε κλικ σε μια εγγραφή για αναπαραγ
 msgid "Recorder"
 msgstr "Recorder"
 
-#: contents/ui/Record.qml:21
-#, kde-format
-msgid "Record Audio"
-msgstr "Ηχογράφηση"
-
-#: contents/ui/Record.qml:52
-#, kde-format
-msgid "<b>New Recording</b>"
-msgstr "<b>Νέα ηχογράφηση</b>"
-
-#: contents/ui/RecordingComponent.qml:70
-#, kde-format
-msgid "Record"
-msgstr "Καταγραφή"
-
-#: contents/ui/RecordingComponent.qml:70
-#, kde-format
-msgid "Pause"
-msgstr "Παύση"
-
-#: contents/ui/RecordingComponent.qml:80
-#, kde-format
-msgid "Stop"
-msgstr "Τερματισμός"
-
-#: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
-#, kde-format
-msgid "Settings"
-msgstr "Ρυθμίσεις"
-
-#: contents/ui/RecordingComponent.qml:113
-#, kde-format
-msgid "Save recording"
-msgstr "Αποθήκευση καταγραφής"
-
-#: contents/ui/RecordingComponent.qml:117
-#, kde-format
-msgid "Discard"
-msgstr ""
-
-#: contents/ui/RecordingComponent.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Save"
-msgid "Save"
-msgstr "Αποθήκευση"
-
-#: contents/ui/RecordingComponent.qml:142
-#, kde-format
-msgid "Name:"
-msgstr "Όνομα:"
-
-#: contents/ui/RecordingComponent.qml:143
-#, kde-format
-msgid "Name (optional)"
-msgstr "Όνομα (προαιρετικό)"
-
 #: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:28 contents/ui/RecordingListPage.qml:142
+#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
 #, kde-format
 msgid "Edit"
 msgstr "Επεξεργασία"
 
 #: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
 #, kde-format
 msgid "Delete"
 msgstr "Διαγραφή"
@@ -113,23 +54,30 @@ msgstr "Διαγραφή"
 msgid "Recordings"
 msgstr "Καταγραφές"
 
-#: contents/ui/RecordingListPage.qml:97
+#: contents/ui/RecordingListPage.qml:39
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
+#, kde-format
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: contents/ui/RecordingListPage.qml:101
 #, kde-format
 msgid "No recordings"
 msgstr "Καμία καταγραφή"
 
-#: contents/ui/RecordingListPage.qml:97
+#: contents/ui/RecordingListPage.qml:101
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "Δεν υπάρχει ακόμη καταγραφή, κάνετε την πρώτη σας καταγραφή τώρα!"
 
-#: contents/ui/RecordingListPage.qml:176
+#: contents/ui/RecordingListPage.qml:182
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Delete %1"
 msgstr "Διαγραφή"
 
-#: contents/ui/RecordingListPage.qml:177
+#: contents/ui/RecordingListPage.qml:183
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to delete the recording %1? It will be permanently "
@@ -139,34 +87,81 @@ msgid ""
 "<b>permanently lost</b> forever!"
 msgstr "Θέλετε πράγματι να διαγράψετε την ηχογράφηση %1? Θα χαθεί για πάντα!"
 
-#: contents/ui/RecordingListPage.qml:181
+#: contents/ui/RecordingListPage.qml:187
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: contents/ui/RecordingListPage.qml:188
+#: contents/ui/RecordingListPage.qml:194
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: contents/ui/RecordingListPage.qml:204
+#: contents/ui/RecordingListPage.qml:210
 #, fuzzy, kde-format
 #| msgid "Editing"
 msgid "Editing %1"
 msgstr "Επεξεργασία"
 
-#: contents/ui/RecordingListPage.qml:219
+#: contents/ui/RecordingListPage.qml:225
 #, fuzzy, kde-format
 #| msgid "Audio Input"
 msgid "Audio Input:"
 msgstr "Είσοδος ήχου"
 
-#: contents/ui/RecordingListPage.qml:225
+#: contents/ui/RecordingListPage.qml:231
 #, kde-format
 msgid "Location:"
 msgstr "Θέση:"
+
+#: contents/ui/RecordPage.qml:18
+#, kde-format
+msgid "Record Audio"
+msgstr "Ηχογράφηση"
+
+#: contents/ui/RecordPage.qml:84
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:84
+#, kde-format
+msgid "Pause"
+msgstr "Παύση"
+
+#: contents/ui/RecordPage.qml:109
+#, kde-format
+msgid "Stop"
+msgstr "Τερματισμός"
+
+#: contents/ui/RecordPage.qml:157
+#, kde-format
+msgid "Save recording"
+msgstr "Αποθήκευση καταγραφής"
+
+#: contents/ui/RecordPage.qml:161
+#, kde-format
+msgid "Discard"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:169
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Save"
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: contents/ui/RecordPage.qml:186
+#, kde-format
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: contents/ui/RecordPage.qml:187
+#, kde-format
+msgid "Name (optional)"
+msgstr "Όνομα (προαιρετικό)"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -255,20 +250,26 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
 
-#: main.cpp:52
+#: main.cpp:53
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr ""
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
 
-#: main.cpp:55
+#: main.cpp:56
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
+
+#~ msgid "<b>New Recording</b>"
+#~ msgstr "<b>Νέα ηχογράφηση</b>"
+
+#~ msgid "Record"
+#~ msgstr "Καταγραφή"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Ρυθμίσεις</b>"

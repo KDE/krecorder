@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-22 00:47+0000\n"
+"POT-Creation-Date: 2022-10-23 00:45+0000\n"
 "PO-Revision-Date: 2022-10-19 16:07-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "elchevive@opensuse.org"
 
-#: contents/ui/DefaultPage.qml:26
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Click on a recording to play it, or record a new one"
 msgstr "Clique em uma gravação para reproduzi-la ou grave uma nova"
@@ -37,71 +37,14 @@ msgstr "Clique em uma gravação para reproduzi-la ou grave uma nova"
 msgid "Recorder"
 msgstr "Gravador"
 
-#: contents/ui/Record.qml:21
-#, kde-format
-msgid "Record Audio"
-msgstr "Gravar áudio"
-
-#: contents/ui/Record.qml:52
-#, kde-format
-msgid "<b>New Recording</b>"
-msgstr "<b>Nova gravação</b>"
-
-#: contents/ui/RecordingComponent.qml:70
-#, kde-format
-msgid "Record"
-msgstr "Gravar"
-
-#: contents/ui/RecordingComponent.qml:70
-#, kde-format
-msgid "Pause"
-msgstr "Pausar"
-
-#: contents/ui/RecordingComponent.qml:80
-#, kde-format
-msgid "Stop"
-msgstr "Parar"
-
-#: contents/ui/RecordingComponent.qml:96 contents/ui/RecordingListPage.qml:35
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
-#, kde-format
-msgid "Settings"
-msgstr "Configurações"
-
-#: contents/ui/RecordingComponent.qml:113
-#, kde-format
-msgid "Save recording"
-msgstr "Salvar gravação"
-
-#: contents/ui/RecordingComponent.qml:117
-#, kde-format
-msgid "Discard"
-msgstr "Descartar"
-
-#: contents/ui/RecordingComponent.qml:125
-#, kde-format
-msgid "Save"
-msgstr "Salvar"
-
-#: contents/ui/RecordingComponent.qml:142
-#, kde-format
-msgid "Name:"
-msgstr "Nome:"
-
-#: contents/ui/RecordingComponent.qml:143
-#, kde-format
-msgid "Name (optional)"
-msgstr "Nome (opcional)"
-
 #: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:28 contents/ui/RecordingListPage.qml:142
+#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
 
 #: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
 #, kde-format
 msgid "Delete"
 msgstr "Excluir"
@@ -111,22 +54,29 @@ msgstr "Excluir"
 msgid "Recordings"
 msgstr "Gravações"
 
-#: contents/ui/RecordingListPage.qml:97
+#: contents/ui/RecordingListPage.qml:39
+#: contents/ui/settings/SettingsDialog.qml:13
+#: contents/ui/settings/SettingsPage.qml:13
+#, kde-format
+msgid "Settings"
+msgstr "Configurações"
+
+#: contents/ui/RecordingListPage.qml:101
 #, kde-format
 msgid "No recordings"
 msgstr "Nenhuma gravação"
 
-#: contents/ui/RecordingListPage.qml:97
+#: contents/ui/RecordingListPage.qml:101
 #, kde-format
 msgid "No recordings yet, record your first!"
 msgstr "Nenhuma gravação ainda, grave sua primeira!"
 
-#: contents/ui/RecordingListPage.qml:176
+#: contents/ui/RecordingListPage.qml:182
 #, kde-format
 msgid "Delete %1"
 msgstr "Excluir %1"
 
-#: contents/ui/RecordingListPage.qml:177
+#: contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -135,32 +85,77 @@ msgstr ""
 "Tem certeza de que deseja excluir a gravação %1?<br/>Ela será "
 "<b>permanentemente perdida</b> para sempre!"
 
-#: contents/ui/RecordingListPage.qml:181
+#: contents/ui/RecordingListPage.qml:187
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: contents/ui/RecordingListPage.qml:188
+#: contents/ui/RecordingListPage.qml:194
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Excluir"
 
-#: contents/ui/RecordingListPage.qml:204
+#: contents/ui/RecordingListPage.qml:210
 #, kde-format
 msgid "Editing %1"
 msgstr "Editando %1"
 
-#: contents/ui/RecordingListPage.qml:219
+#: contents/ui/RecordingListPage.qml:225
 #, kde-format
 msgid "Audio Input:"
 msgstr "Entrada de áudio:"
 
-#: contents/ui/RecordingListPage.qml:225
+#: contents/ui/RecordingListPage.qml:231
 #, kde-format
 msgid "Location:"
 msgstr "Localização:"
+
+#: contents/ui/RecordPage.qml:18
+#, kde-format
+msgid "Record Audio"
+msgstr "Gravar áudio"
+
+#: contents/ui/RecordPage.qml:84
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:84
+#, kde-format
+msgid "Pause"
+msgstr "Pausar"
+
+#: contents/ui/RecordPage.qml:109
+#, kde-format
+msgid "Stop"
+msgstr "Parar"
+
+#: contents/ui/RecordPage.qml:157
+#, kde-format
+msgid "Save recording"
+msgstr "Salvar gravação"
+
+#: contents/ui/RecordPage.qml:161
+#, kde-format
+msgid "Discard"
+msgstr "Descartar"
+
+#: contents/ui/RecordPage.qml:169
+#, kde-format
+msgid "Save"
+msgstr "Salvar"
+
+#: contents/ui/RecordPage.qml:186
+#, kde-format
+msgid "Name:"
+msgstr "Nome:"
+
+#: contents/ui/RecordPage.qml:187
+#, kde-format
+msgid "Name (optional)"
+msgstr "Nome (opcional)"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -246,20 +241,26 @@ msgstr ""
 "Algumas combinações de codecs e formatos de contêiner podem não ser "
 "compatíveis."
 
-#: main.cpp:52
+#: main.cpp:53
 #, kde-format
 msgid "© 2020-2022 KDE Community"
 msgstr "© 2020-2022 Comunidade KDE"
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:55
+#: main.cpp:56
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "<b>New Recording</b>"
+#~ msgstr "<b>Nova gravação</b>"
+
+#~ msgid "Record"
+#~ msgstr "Gravar"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Configurações</b>"
