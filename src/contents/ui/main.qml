@@ -38,7 +38,10 @@ Kirigami.ApplicationWindow {
     
     Component.onCompleted: {
         switchToRecording(null);
-        SettingsModel.setBlur(pageStack, true);
+        
+        if (!Kirigami.Settings.isMobile) {
+            SettingsModel.setBlur(pageStack, true);
+        }
     }
     
     // page switch animation
