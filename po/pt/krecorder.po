@@ -116,7 +116,7 @@ msgstr "Gravar o Áudio"
 #: contents/ui/RecordPage.qml:84
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: contents/ui/RecordPage.qml:84
 #, kde-format

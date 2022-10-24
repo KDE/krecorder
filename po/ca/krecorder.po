@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-23 00:45+0000\n"
-"PO-Revision-Date: 2022-08-22 10:40+0200\n"
+"PO-Revision-Date: 2022-10-23 10:05+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -124,7 +124,7 @@ msgstr "Enregistra l'àudio"
 #: contents/ui/RecordPage.qml:84
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 #: contents/ui/RecordPage.qml:84
 #, kde-format
@@ -259,9 +259,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "<b>New Recording</b>"
-#~ msgstr "<b>Enregistrament nou</b>"
-
-#~ msgid "Record"
-#~ msgstr "Enregistra"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-23 00:45+0000\n"
-"PO-Revision-Date: 2022-08-22 08:54+0300\n"
+"PO-Revision-Date: 2022-10-23 09:23+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -122,7 +122,7 @@ msgstr "Записати звук"
 #: contents/ui/RecordPage.qml:84
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Продовжити"
 
 #: contents/ui/RecordPage.qml:84
 #, kde-format
