@@ -14,7 +14,7 @@ A convergent audio recording application for Plasma.
 
 ## Links
 * Project page: https://invent.kde.org/plasma-mobile/krecorder
-* Issues: https://invent.kde.org/plasma-mobile/krecorder/-/issues
+* Issues: https://bugs.kde.org/describecomponents.cgi?product=krecorder
 * Development channel: https://matrix.to/#/#plasmamobile:matrix.org
 
 ## Dependencies
