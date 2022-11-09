@@ -75,20 +75,30 @@ ColumnLayout {
                     showCloseButton: false
                     title: i18n("Audio Quality")
                     
-                    RowLayout {
-                        Controls.Slider {
-                            id: sliderValue
+                    ColumnLayout {
+                        MobileForm.FormSectionText {
+                            Layout.leftMargin: 0
+                            Layout.rightMargin: 0
                             Layout.fillWidth: true
-                            from: 0
-                            to: 4
-                            value: SettingsModel.audioQuality
-                            stepSize: 1
-                            snapMode: Controls.Slider.SnapAlways
-                            
-                            onMoved: SettingsModel.audioQuality = value
+                            horizontalAlignment: Text.AlignHCenter
+                            text: i18n("Higher audio quality also increases file size.")
                         }
-                        Controls.Label {
-                            text: audioQualityDelegate.currentValue
+                        RowLayout {
+                            Layout.bottomMargin: Kirigami.Units.largeSpacing
+                            Controls.Slider {
+                                id: sliderValue
+                                Layout.fillWidth: true
+                                from: 0
+                                to: 4
+                                value: SettingsModel.audioQuality
+                                stepSize: 1
+                                snapMode: Controls.Slider.SnapAlways
+                                
+                                onMoved: SettingsModel.audioQuality = value
+                            }
+                            Controls.Label {
+                                text: audioQualityDelegate.currentValue
+                            }
                         }
                     }
                 }
