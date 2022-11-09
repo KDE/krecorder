@@ -8,32 +8,25 @@ import QtQuick.Layouts 1.1
 import org.kde.kirigami 2.19 as Kirigami
 import KRecorder 1.0
 
-Kirigami.Dialog {
+Kirigami.ApplicationWindow {
     id: root
     title: i18n("Settings")
-    standardButtons: Kirigami.Dialog.NoButton
+    flags: Qt.Dialog
     
-    preferredWidth: Kirigami.Units.gridUnit * 35
+    height: Kirigami.Units.gridUnit * 24
+    width: Kirigami.Units.gridUnit * 35
     
     Kirigami.Theme.inherit: false
     Kirigami.Theme.colorSet: Kirigami.Theme.Window
     
-    Controls.Control {
-        id: control
-        leftPadding: 0
-        rightPadding: 0
-        topPadding: Kirigami.Units.gridUnit
-        bottomPadding: Kirigami.Units.gridUnit
-        
-        background: Rectangle {
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Window
-            color: Kirigami.Theme.backgroundColor
-        }
-        
-        contentItem: SettingsComponent {
-            dialog: root
-            width: control.width
+    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar;
+    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
+    
+    pageStack.initialPage: Kirigami.ScrollablePage {
+        globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
+        SettingsComponent {
+            // dialog: root
+            // width: control.width
             onCloseRequested: dialog.close()
         }
     }
