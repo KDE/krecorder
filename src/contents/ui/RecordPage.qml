@@ -88,6 +88,11 @@ Kirigami.Page {
                 icon.name: (!isStopped && isPaused) ? "media-playback-start" : "media-playback-pause"
                 display: Controls.AbstractButton.IconOnly
                 
+                Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
+                Controls.ToolTip.timeout: 5000
+                Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
+                Controls.ToolTip.text: text
+                
                 onClicked: {
                     if (isPaused) {
                         AudioRecorder.record();
@@ -109,7 +114,13 @@ Kirigami.Page {
                     anchors.fill: parent
                     
                     hoverEnabled: true
-                    text: i18n("Stop")
+                    text: i18n("Stop Recording")
+                    
+                    Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
+                    Controls.ToolTip.timeout: 5000
+                    Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
+                    Controls.ToolTip.text: text
+                    
                     onClicked: {
                         // pop record page off
                         applicationWindow().pageStack.layers.pop();
@@ -139,6 +150,11 @@ Kirigami.Page {
                 text: i18n("Delete")
                 icon.name: "delete"
                 display: Controls.AbstractButton.IconOnly
+                
+                Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
+                Controls.ToolTip.timeout: 5000
+                Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
+                Controls.ToolTip.text: text
                 
                 onClicked: {
                     // pop record page off
