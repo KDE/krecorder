@@ -36,7 +36,14 @@ Kirigami.Page {
         anchors.centerIn: parent
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         icon.name: "microphone-sensitivity-medium"
-        text: i18n("Click on a recording to play it, or record a new one")
+        text: RecordingModel.count > 0 ? i18n("Play a recording, or record a new one") : i18n("")
+        type: Kirigami.PlaceholderMessage.Type.Informational
+        
+        helpfulAction: Kirigami.Action {
+            icon.name: "audio-input-microphone-symbolic"
+            text: i18n("Record a new recording")
+            onTriggered: applicationWindow().openRecordScreen()
+        }
     }
 }
  

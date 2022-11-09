@@ -36,6 +36,11 @@ RecordingModel::~RecordingModel()
     save();
 }
 
+int RecordingModel::count() const
+{
+    return m_recordings.size();
+}
+
 void RecordingModel::load()
 {
     QJsonDocument doc = QJsonDocument::fromJson(m_settings->value(QStringLiteral("recordings")).toString().toUtf8());
@@ -57,6 +62,7 @@ void RecordingModel::load()
     save();
     
     endResetModel();
+    Q_EMIT countChanged();
 }
 
 void RecordingModel::save()
@@ -138,6 +144,7 @@ void RecordingModel::insertRecording(QString filePath, QString fileName, QDateTi
     save();
     
     endInsertRows();
+    Q_EMIT countChanged();
 }
 
 void RecordingModel::deleteRecording(const int index)
@@ -150,6 +157,7 @@ void RecordingModel::deleteRecording(const int index)
     m_recordings.removeAt(index);
     save();
 
-    endRemoveRows();    
+    endRemoveRows();
+    Q_EMIT countChanged();
 }
 

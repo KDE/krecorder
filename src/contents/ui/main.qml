@@ -99,6 +99,15 @@ Kirigami.ApplicationWindow {
         }
     }
     
+    function openRecordScreen() {
+        pageStack.layers.push(recordPage);
+        
+        // if not in a recording session, start recording
+        if (recordPage.isStopped) {
+            AudioRecorder.record();
+        }
+    }
+    
     function switchToRecording(recording) {
         currentRecording = recording;
         while (pageStack.depth > 1) pageStack.pop();
@@ -123,6 +132,12 @@ Kirigami.ApplicationWindow {
         anim.properties = "mainOpacity";
         yAnim.restart();
         anim.restart();
+    }
+    
+    // record page
+    RecordPage {
+        id: recordPage
+        visible: false
     }
     
     Loader {

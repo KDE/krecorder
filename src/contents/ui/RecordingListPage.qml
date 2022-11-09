@@ -28,15 +28,6 @@ Kirigami.ScrollablePage {
         color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, Kirigami.Settings.isMobile ? 1 : 0.9)
     }
     
-    function openRecordScreen() {
-        pageStack.layers.push(recordPage);
-        
-        // if not in a recording session, start recording
-        if (recordPage.isStopped) {
-            AudioRecorder.record();
-        }
-    }
-    
     actions.contextualActions: [
         Kirigami.Action {
             iconName: "edit-entry"
@@ -55,7 +46,7 @@ Kirigami.ScrollablePage {
             visible: applicationWindow().isWidescreen
             icon.name: "audio-input-microphone-symbolic"
             text: i18n("Record")
-            onTriggered: root.openRecordScreen()
+            onTriggered: applicationWindow().openRecordScreen()
         }
     ]
     
@@ -115,21 +106,16 @@ Kirigami.ScrollablePage {
             anchors.right: parent.right
             anchors.margins: Kirigami.Units.largeSpacing
             
-            icon.name: "audio-input-microphone-symbolic"
-            text: applicationWindow().isWidescreen ? i18n("No recordings") : i18n("No recordings yet, record your first!")
+            icon.name: applicationWindow().isWidescreen ? "format-list-unordered" : "audio-input-microphone-symbolic"
+            text: i18n("No recordings")
             visible: parent.count === 0
-        }
-        
-        // record page
-        RecordPage {
-            id: recordPage
         }
         
         // record button
         FloatingActionButton {
             visible: !applicationWindow().isWidescreen
             icon.name: "audio-input-microphone-symbolic"
-            onClicked: root.openRecordScreen()
+            onClicked: applicationWindow().openRecordScreen()
         }
         
         delegate: RecordingListDelegate {

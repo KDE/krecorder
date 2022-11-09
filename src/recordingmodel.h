@@ -20,6 +20,7 @@
 class RecordingModel : public QAbstractListModel
 {
     Q_OBJECT
+    Q_PROPERTY(int count READ count NOTIFY countChanged)
 
 public:
     static RecordingModel* instance();
@@ -31,6 +32,7 @@ public:
     void load();
     void save();
     
+    int count() const;
     int rowCount(const QModelIndex &parent) const override;
     QVariant data(const QModelIndex &index, int role) const override;
     QHash<int, QByteArray> roleNames() const override;
@@ -42,6 +44,9 @@ public:
     Q_INVOKABLE void insertRecording(QString filePath, QString fileName, QDateTime recordDate, int recordingLength);
     Q_INVOKABLE void deleteRecording(const int index);
 
+Q_SIGNALS:
+    void countChanged();
+    
 private:
     explicit RecordingModel(QObject *parent = nullptr);
     ~RecordingModel();
