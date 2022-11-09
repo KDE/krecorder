@@ -13,6 +13,7 @@ Control {
     
     signal clicked()
     signal rightClicked()
+    signal longPressed()
     
     leftPadding: Kirigami.Units.largeSpacing
     topPadding: Kirigami.Units.largeSpacing
@@ -26,6 +27,7 @@ Control {
         TapHandler {
             id: tapHandler
             onTapped: root.clicked()
+            onLongPressed: root.longPressed()
         }
         TapHandler {
             acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus

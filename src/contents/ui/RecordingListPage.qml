@@ -22,6 +22,10 @@ Kirigami.ScrollablePage {
     property Recording currentRecordingToEdit
     property bool editMode
     
+    onEditModeChanged: {
+        editAction.checked = editMode;
+    }
+    
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
     
     background: Rectangle {
@@ -30,6 +34,7 @@ Kirigami.ScrollablePage {
     
     actions.contextualActions: [
         Kirigami.Action {
+            id: editAction
             iconName: "edit-entry"
             text: i18n("Edit")
             onTriggered: root.editMode = !root.editMode
@@ -124,6 +129,7 @@ Kirigami.ScrollablePage {
             editMode: root.editMode
             showSeparator: index != listView.count - 1
             
+            onLongPressed: root.editMode = !root.editMode
             onEditRequested: root.editRecordingDialog(recording)
             onDeleteRequested: root.removeRecordingDialog(recording, index)
             onContextMenuRequested: {
