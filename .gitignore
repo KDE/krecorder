@@ -14,3 +14,5 @@ build
 /cmake-build*
 
 *.kdev4
+.kdev4/krecorder.kdev4
+krecorder.kdev4

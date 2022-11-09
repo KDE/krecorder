@@ -92,6 +92,7 @@ Kirigami.ApplicationWindow {
     function openSettings() {
         if (isWidescreen) {
             settingsDialogLoader.active = true;
+            settingsDialogLoader.item.close();
             settingsDialogLoader.item.show();
         } else {
             pageStack.push("qrc:/settings/SettingsPage.qml");
@@ -127,7 +128,7 @@ Kirigami.ApplicationWindow {
     Loader {
         id: settingsDialogLoader
         active: false
-        sourceComponent: SettingsDialog {}
+        sourceComponent: SettingsWindow {}
     }
 }
 

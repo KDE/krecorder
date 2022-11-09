@@ -16,7 +16,7 @@
         <file alias="components/FloatingActionButton.qml">contents/ui/components/FloatingActionButton.qml</file>
         <file alias="components/ListDelegate.qml">contents/ui/components/ListDelegate.qml</file>
         <file alias="settings/SettingsComponent.qml">contents/ui/settings/SettingsComponent.qml</file>
-        <file alias="settings/SettingsDialog.qml">contents/ui/settings/SettingsDialog.qml</file>
+        <file alias="settings/SettingsWindow.qml">contents/ui/settings/SettingsWindow.qml</file>
         <file alias="settings/SettingsPage.qml">contents/ui/settings/SettingsPage.qml</file>
     </qresource>
 </RCC>
