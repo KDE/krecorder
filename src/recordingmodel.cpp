@@ -13,8 +13,10 @@
 #include <QDebug>
 #include <QJsonDocument>
 #include <QJsonArray>
+#include <QDir>
 
 #include "utils.h"
+#include "audiorecorder.h"
 
 const QString DEF_RECORD_PREFIX = QStringLiteral("clip");
 
@@ -111,10 +113,23 @@ QList<Recording *> &RecordingModel::recordings()
 
 QString RecordingModel::nextDefaultRecordingName()
 {
-    QSet<QString> s;
+    // used names set
+    QSet<QString> usedNames;
 
     for (const auto &rec : qAsConst(m_recordings)) {
-        s.insert(rec->fileName());
+        usedNames.insert(rec->fileName());
+    }
+    
+    // add files in storage location
+    QDir storageLocation{AudioRecorder::instance()->storageFolder()};
+    for (QFileInfo &info : storageLocation.entryInfoList()) {
+        auto name = info.fileName();
+        auto list = name.split(QStringLiteral("."));
+        
+        // insert without file extension
+        if (list.size() > 0) {
+            usedNames.insert(list[0]);
+        }
     }
 
     // determine valid clip name (ex. clip_0001, clip_0002, etc.)
@@ -122,7 +137,7 @@ QString RecordingModel::nextDefaultRecordingName()
     int num = 1;
     QString build = QStringLiteral("0001");
         
-    while (s.contains(DEF_RECORD_PREFIX + QStringLiteral("_") + build)) {
+    while (usedNames.contains(DEF_RECORD_PREFIX + QStringLiteral("_") + build)) {
         num++;
         build = QString::number(num);
         while (build.length() < 4) {
