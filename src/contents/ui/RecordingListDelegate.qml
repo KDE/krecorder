@@ -66,7 +66,7 @@ ListDelegate {
         Controls.ToolButton {
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
             icon.name: "entry-edit"
-            text: i18n("Edit")
+            text: i18n("Rename")
             onClicked: root.editRequested()
             visible: root.editMode
             display: Controls.AbstractButton.IconOnly

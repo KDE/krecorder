@@ -204,7 +204,7 @@ Kirigami.ScrollablePage {
         Kirigami.Dialog {
             id: editNameDialog
             
-            title: i18n("Editing %1", editDialogName.text)
+            title: i18n("Rename %1", editDialogName.text)
             standardButtons: Kirigami.Dialog.Cancel | Kirigami.Dialog.Apply
             
             padding: Kirigami.Units.largeSpacing
@@ -219,7 +219,7 @@ Kirigami.ScrollablePage {
             Kirigami.FormLayout {
                 Controls.TextField {
                     id: editDialogName
-                    Kirigami.FormData.label: i18n("Audio Input:")
+                    Kirigami.FormData.label: i18n("Name:")
                     Layout.fillWidth: true
                 }
                 
