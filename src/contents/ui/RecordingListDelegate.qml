@@ -13,6 +13,8 @@ import org.kde.kirigami 2.19 as Kirigami
 
 import KRecorder 1.0
 
+import "components"
+
 ListDelegate {
     id: root
     

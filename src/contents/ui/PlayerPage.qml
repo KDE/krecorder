@@ -10,7 +10,10 @@ import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
 import KRecorder 1.0
 
+import "components"
+
 Kirigami.Page {
+    id: root
     
     property Recording recording
     

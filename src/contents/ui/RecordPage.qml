@@ -13,7 +13,10 @@ import org.kde.kirigami 2.19 as Kirigami
 
 import KRecorder 1.0
 
+import "components"
+
 Kirigami.Page {
+    id: root
     visible: false
     title: i18n("Record Audio")
     

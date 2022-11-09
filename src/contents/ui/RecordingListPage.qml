@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Jonah Brüchert <jbb@kaidan.im>
- * SPDX-FileCopyrightText: 2020-2021 Devin Lin <espidev@gmail.com>
+ * SPDX-FileCopyrightText: 2020-2022 Devin Lin <espidev@gmail.com>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -12,6 +12,8 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.19 as Kirigami
 
 import KRecorder 1.0
+
+import "components"
 
 Kirigami.ScrollablePage {
     id: root
@@ -109,8 +111,7 @@ Kirigami.ScrollablePage {
         
         // record button
         FloatingActionButton {
-            anchors.fill: parent
-            iconName: "audio-input-microphone-symbolic"
+            icon.name: "audio-input-microphone-symbolic"
             onClicked: {
                 pageStack.layers.push(recordPage);
                 
