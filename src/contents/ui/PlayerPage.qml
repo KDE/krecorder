@@ -5,7 +5,7 @@
  */
 
 import QtQuick 2.12
-import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
 import KRecorder 1.0
@@ -46,8 +46,9 @@ Kirigami.Page {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
             text: AudioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(AudioPlayer.position)
-            font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
-            font.weight: Font.Light
+            opacity: 0.7
+            font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 3)
+            font.weight: Font.DemiBold
         }           
         
         Visualization {

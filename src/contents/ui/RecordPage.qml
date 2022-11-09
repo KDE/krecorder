@@ -50,8 +50,9 @@ Kirigami.Page {
             Layout.alignment: Qt.AlignHCenter
             Layout.bottomMargin: Kirigami.Units.largeSpacing
             text: isStopped ? "00:00:00" : Utils.formatTime(AudioRecorder.duration)
-            font.pointSize: Kirigami.Theme.defaultFont.pointSize * 3
-            font.weight: Font.Light
+            opacity: 0.7
+            font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 3)
+            font.weight: Font.DemiBold
         }
         
         Item { Layout.fillHeight: true }
