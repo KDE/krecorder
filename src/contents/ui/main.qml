@@ -25,7 +25,7 @@ Kirigami.ApplicationWindow {
     width: Kirigami.Settings.isMobile ? 400 : 800
     height: Kirigami.Settings.isMobile ? 550 : 500
     
-    property bool isWidescreen: appwindow.wideScreen && appwindow.width >= appwindow.height // prevent being widescreen at first launch
+    property bool isWidescreen: (appwindow.width >= 700) && appwindow.wideScreen // prevent being widescreen at first launch
     property Recording currentRecording: null
     
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar;
