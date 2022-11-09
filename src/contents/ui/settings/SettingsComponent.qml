@@ -12,9 +12,22 @@ import KRecorder 1.0
 
 ColumnLayout {
     id: root
+    property var dialog: null // dialog component if this is within a dialog
+    
     spacing: 0
     
     signal closeRequested()
+    
+    // HACK: dialog switching requires some time between closing and opening
+    Timer {
+        id: dialogTimer
+        interval: 1
+        property var dialog
+        onTriggered: {
+            root.dialog.close();
+            dialog.open();
+        }
+    }
     
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
@@ -36,6 +49,10 @@ ColumnLayout {
                     } else {
                         applicationWindow().pageStack.push("qrc:/AboutPage.qml");
                     }
+                    
+                    if (root.dialog) {
+                        root.dialog.close();
+                    }
                 }
             }
             
@@ -46,6 +63,22 @@ ColumnLayout {
                 text: i18n("Audio Format")
                 currentValue: model[SettingsModel.simpleAudioFormat] ? model[SettingsModel.simpleAudioFormat] : i18n("Custom") 
                 model: [i18n("Ogg Vorbis"), i18n("Ogg Opus"), i18n("FLAC"), i18n("MP3"), i18n("WAV")]
+                
+                onClicked: {
+                    if (root.dialog) {
+                        dialogTimer.dialog = audioFormatDropdown.dialog;
+                        dialogTimer.restart();
+                    }
+                }
+                
+                Connections {
+                    target: audioFormatDropdown.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
+                        }
+                    }
+                }
                 
                 dialogDelegate: Controls.RadioDelegate {
                     implicitWidth: Kirigami.Units.gridUnit * 16
@@ -69,7 +102,22 @@ ColumnLayout {
                 text: i18n("Audio Quality")
                 currentValue: i18n("%1", sliderValue.value)
                 
-                onClicked: dialog.open();
+                onClicked: {
+                    dialog.open();
+                    if (root.dialog) {
+                        dialogTimer.dialog = audioQualityDelegate.dialog;
+                        dialogTimer.restart();
+                    }
+                }
+                
+                Connections {
+                    target: audioQualityDelegate.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
+                        }
+                    }
+                }
                 
                 dialog: Kirigami.PromptDialog {
                     showCloseButton: false
@@ -124,6 +172,22 @@ ColumnLayout {
                 currentValue: AudioRecorder.audioInput
                 model: AudioRecorder.audioInputs
                 
+                onClicked: {
+                    if (root.dialog) {
+                        dialogTimer.dialog = audioInputDropdown.dialog;
+                        dialogTimer.restart();
+                    }
+                }
+                
+                Connections {
+                    target: audioInputDropdown.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
+                        }
+                    }
+                }
+                
                 dialogDelegate: Controls.RadioDelegate {
                     implicitWidth: Kirigami.Units.gridUnit * 16
                     topPadding: Kirigami.Units.smallSpacing * 2
@@ -147,6 +211,22 @@ ColumnLayout {
                 currentValue: SettingsModel.audioCodec
                 model: AudioRecorder.supportedAudioCodecs
                 
+                onClicked: {
+                    if (root.dialog) {
+                        dialogTimer.dialog = audioCodecDropdown.dialog;
+                        dialogTimer.restart();
+                    }
+                }
+                
+                Connections {
+                    target: audioCodecDropdown.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
+                        }
+                    }
+                }
+                
                 dialogDelegate: Controls.RadioDelegate {
                     implicitWidth: Kirigami.Units.gridUnit * 16
                     topPadding: Kirigami.Units.smallSpacing * 2
@@ -169,6 +249,22 @@ ColumnLayout {
                 text: i18n("Container Format")
                 currentValue: SettingsModel.containerFormat
                 model: AudioRecorder.supportedContainers
+                
+                onClicked: {
+                    if (root.dialog) {
+                        dialogTimer.dialog = containerFormatDropdown.dialog;
+                        dialogTimer.restart();
+                    }
+                }
+                
+                Connections {
+                    target: containerFormatDropdown.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
+                        }
+                    }
+                }
                 
                 dialogDelegate: Controls.RadioDelegate {
                     implicitWidth: Kirigami.Units.gridUnit * 16

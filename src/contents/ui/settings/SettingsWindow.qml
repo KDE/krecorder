@@ -8,6 +8,7 @@ import QtQuick.Layouts 1.1
 import org.kde.kirigami 2.19 as Kirigami
 import KRecorder 1.0
 
+// A settings window is used on desktop when the app is widescreen.
 Kirigami.ApplicationWindow {
     id: root
     title: i18n("Settings")
