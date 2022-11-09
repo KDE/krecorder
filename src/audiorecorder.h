@@ -31,6 +31,7 @@ class AudioRecorder : public QAudioRecorder
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
     Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
+    Q_PROPERTY(QString storageFolder READ storageFolder CONSTANT)
     
 private:
     explicit AudioRecorder(QObject *parent = nullptr);
@@ -54,6 +55,8 @@ public:
 
     int audioQuality();
     void setAudioQuality(int quality);
+    
+    QString storageFolder() const;
     
     Q_INVOKABLE void reset();
     

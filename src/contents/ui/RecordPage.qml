@@ -199,11 +199,19 @@ Kirigami.Page {
         ]
         
         Kirigami.FormLayout {
-            implicitWidth: Kirigami.Units.gridUnit * 16
+            implicitWidth: Kirigami.Units.gridUnit * 20
+            
             Controls.TextField {
                 id: recordingName
                 Kirigami.FormData.label: i18n("Name:")
                 placeholderText: i18n("Name (optional)")
+            }
+            
+            Controls.Label {
+                Kirigami.FormData.label: i18n("Storage Folder:")
+                Layout.fillWidth: true
+                wrapMode: Text.Wrap
+                text: AudioRecorder.storageFolder
             }
         }
     }

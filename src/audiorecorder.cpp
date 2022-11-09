@@ -53,6 +53,11 @@ void AudioRecorder::setAudioQuality(int quality)
     Q_EMIT audioQualityChanged();
 }
 
+QString AudioRecorder::storageFolder() const
+{
+    return QStandardPaths::writableLocation(QStandardPaths::MusicLocation);
+}
+
 void AudioRecorder::reset()
 {
     resetRequest = true;
@@ -89,7 +94,7 @@ void AudioRecorder::renameCurrentRecording()
         // determine new file name
         QStringList spl = actualLocation().fileName().split(QStringLiteral("."));
         QString suffix = spl.size() > 0 ? QStringLiteral(".") + spl[spl.size()-1] : QString();
-        QString path = QStandardPaths::writableLocation(QStandardPaths::MusicLocation) + QStringLiteral("/") + recordingName;
+        QString path = storageFolder() + QStringLiteral("/") + recordingName;
         QString updatedPath = path + suffix;
         
         // ignore if the file destination is the same as the one currently being written to
