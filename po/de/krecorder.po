@@ -3,11 +3,13 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2020, 2021.
 # Frederik Schwarzer <schwarzer@kde.org>, 2022.
 #
+#: contents/ui/DefaultPage.qml:39
+#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-28 00:48+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-02-26 03:19+0100\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -28,58 +30,71 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-i18n-de@kde.org"
 
-#: contents/ui/DefaultPage.qml:30
+#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:14
 #, kde-format
-msgid "Click on a recording to play it, or record a new one"
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
+#| msgid "Click on a recording to play it, or record a new one"
+msgid "Play a recording, or record a new one"
 msgstr ""
 "Klicken Sie zum Abspielen auf eine Aufnahme oder starten Sie einen neue "
 "Aufnahme"
+
+#: contents/ui/DefaultPage.qml:44
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Record a new recording"
+msgstr "Aufnahme speichern"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Recorder"
 
-#: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
+#: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
-msgid "Edit"
-msgstr "Bearbeiten"
+msgid "Rename"
+msgstr ""
 
-#: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
+#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Löschen"
 
-#: contents/ui/RecordingListPage.qml:18
+#: contents/ui/RecordingListPage.qml:20
 #, kde-format
 msgid "Recordings"
 msgstr "Aufnahmen"
 
-#: contents/ui/RecordingListPage.qml:39
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
 #, kde-format
-msgid "Settings"
-msgstr "Einstellungen"
+msgid "Edit"
+msgstr "Bearbeiten"
 
-#: contents/ui/RecordingListPage.qml:101
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Aufnahme"
+
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Keine Aufnahmen"
 
-#: contents/ui/RecordingListPage.qml:101
-#, kde-format
-msgid "No recordings yet, record your first!"
-msgstr "Bisher noch keine Aufnahmen, starten Sie Ihre erste Aufnahme."
-
-#: contents/ui/RecordingListPage.qml:182
+#: contents/ui/RecordingListPage.qml:185
 #, kde-format
 msgid "Delete %1"
 msgstr "%1 löschen"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:186
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -88,77 +103,78 @@ msgstr ""
 "Möchten Sie die Aufnahme %1 wirklich löschen?<br/>Sie kann <b>nicht</b> "
 "wiederhergestellt werden."
 
-#: contents/ui/RecordingListPage.qml:187
+#: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: contents/ui/RecordingListPage.qml:194
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Löschen"
 
-#: contents/ui/RecordingListPage.qml:210
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
-msgid "Editing %1"
-msgstr "%1 wird bearbeitet"
-
-#: contents/ui/RecordingListPage.qml:225
-#, kde-format
-msgid "Audio Input:"
-msgstr "Audioeingabe:"
-
-#: contents/ui/RecordingListPage.qml:231
-#, kde-format
-msgid "Location:"
-msgstr "Ort:"
-
-#: contents/ui/RecordPage.qml:18
-#, kde-format
-msgid "Record Audio"
-msgstr "Audio-Aufnahme"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Continue"
+msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Pause"
-msgstr "Pause"
-
-#: contents/ui/RecordPage.qml:109
-#, kde-format
-msgid "Stop"
-msgstr "Anhalten"
-
-#: contents/ui/RecordPage.qml:157
-#, kde-format
-msgid "Save recording"
-msgstr "Aufnahme speichern"
-
-#: contents/ui/RecordPage.qml:161
-#, kde-format
-msgid "Discard"
-msgstr "Verwerfen"
-
-#: contents/ui/RecordPage.qml:169
-#, kde-format
-msgid "Save"
-msgstr "Speichern"
-
-#: contents/ui/RecordPage.qml:186
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
 msgid "Name:"
 msgstr "Name:"
 
-#: contents/ui/RecordPage.qml:187
+#: contents/ui/RecordingListPage.qml:234
+#, kde-format
+msgid "Location:"
+msgstr "Ort:"
+
+#: contents/ui/RecordPage.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Audio-Aufnahme"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Pause"
+msgstr "Pause"
+
+#: contents/ui/RecordPage.qml:118
+#, fuzzy, kde-format
+#| msgid "Recordings"
+msgid "Stop Recording"
+msgstr "Aufnahmen"
+
+#: contents/ui/RecordPage.qml:177
+#, kde-format
+msgid "Save recording"
+msgstr "Aufnahme speichern"
+
+#: contents/ui/RecordPage.qml:181
+#, kde-format
+msgid "Discard"
+msgstr "Verwerfen"
+
+#: contents/ui/RecordPage.qml:189
+#, kde-format
+msgid "Save"
+msgstr "Speichern"
+
+#: contents/ui/RecordPage.qml:208
 #, kde-format
 msgid "Name (optional)"
 msgstr "Name (optional)"
+
+#: contents/ui/RecordPage.qml:212
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -218,30 +234,35 @@ msgstr "Audio-Qualität:"
 msgid "%1"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:156
+#: contents/ui/settings/SettingsComponent.qml:132
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:161
+#: contents/ui/settings/SettingsComponent.qml:171
 #, fuzzy, kde-format
 #| msgid "Audio Input:"
 msgid "Audio Input"
 msgstr "Audioeingabe:"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:210
 #, fuzzy, kde-format
 #| msgid "Audio Codec:"
 msgid "Audio Codec"
 msgstr "Audio-Codec:"
 
-#: contents/ui/settings/SettingsComponent.qml:239
+#: contents/ui/settings/SettingsComponent.qml:249
 #, fuzzy, kde-format
 #| msgid "Container Format:"
 msgid "Container Format"
 msgstr "Container-Format:"
 
-#: contents/ui/settings/SettingsComponent.qml:277
+#: contents/ui/settings/SettingsComponent.qml:287
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -262,11 +283,20 @@ msgstr "Devin Lin"
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
+#~ msgid "No recordings yet, record your first!"
+#~ msgstr "Bisher noch keine Aufnahmen, starten Sie Ihre erste Aufnahme."
+
+#~ msgid "Editing %1"
+#~ msgstr "%1 wird bearbeitet"
+
+#~ msgid "Audio Input:"
+#~ msgstr "Audioeingabe:"
+
+#~ msgid "Stop"
+#~ msgstr "Anhalten"
+
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Neue Aufnahme</b>"
-
-#~ msgid "Record"
-#~ msgstr "Aufnahme"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Einstellungen</b>"

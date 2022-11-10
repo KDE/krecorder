@@ -4,11 +4,13 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022.
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-28 00:48+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-10-23 09:23+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -30,56 +32,69 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: contents/ui/DefaultPage.qml:30
+#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:14
 #, kde-format
-msgid "Click on a recording to play it, or record a new one"
+msgid "Settings"
+msgstr "Параметри"
+
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
+#| msgid "Click on a recording to play it, or record a new one"
+msgid "Play a recording, or record a new one"
 msgstr "Натисніть на запису, щоб відтворити його, або запишіть нові дані"
+
+#: contents/ui/DefaultPage.qml:44
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Record a new recording"
+msgstr "Збереження запису"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Записувач"
 
-#: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
+#: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
-msgid "Edit"
-msgstr "Змінити"
+msgid "Rename"
+msgstr ""
 
-#: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
+#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/ui/RecordingListPage.qml:18
+#: contents/ui/RecordingListPage.qml:20
 #, kde-format
 msgid "Recordings"
 msgstr "Записи"
 
-#: contents/ui/RecordingListPage.qml:39
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
 #, kde-format
-msgid "Settings"
-msgstr "Параметри"
+msgid "Edit"
+msgstr "Змінити"
 
-#: contents/ui/RecordingListPage.qml:101
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Записати"
+
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Немає записів"
 
-#: contents/ui/RecordingListPage.qml:101
-#, kde-format
-msgid "No recordings yet, record your first!"
-msgstr "Записів ще немає. Зробіть перший запис!"
-
-#: contents/ui/RecordingListPage.qml:182
+#: contents/ui/RecordingListPage.qml:185
 #, kde-format
 msgid "Delete %1"
 msgstr "Вилучити %1"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:186
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -87,77 +102,78 @@ msgid ""
 msgstr ""
 "Ви справді хочете вилучити запис %1?<br/>Запис буде <b>назавжди втрачено</b>!"
 
-#: contents/ui/RecordingListPage.qml:187
+#: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: contents/ui/RecordingListPage.qml:194
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/ui/RecordingListPage.qml:210
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
-msgid "Editing %1"
-msgstr "Редагування %1"
+msgid "Rename %1"
+msgstr ""
 
-#: contents/ui/RecordingListPage.qml:225
-#, kde-format
-msgid "Audio Input:"
-msgstr "Звуковий вхід:"
-
-#: contents/ui/RecordingListPage.qml:231
-#, kde-format
-msgid "Location:"
-msgstr "Місце:"
-
-#: contents/ui/RecordPage.qml:18
-#, kde-format
-msgid "Record Audio"
-msgstr "Записати звук"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Continue"
-msgstr "Продовжити"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Pause"
-msgstr "Пауза"
-
-#: contents/ui/RecordPage.qml:109
-#, kde-format
-msgid "Stop"
-msgstr "Зупинити"
-
-#: contents/ui/RecordPage.qml:157
-#, kde-format
-msgid "Save recording"
-msgstr "Збереження запису"
-
-#: contents/ui/RecordPage.qml:161
-#, kde-format
-msgid "Discard"
-msgstr "Відкинути"
-
-#: contents/ui/RecordPage.qml:169
-#, kde-format
-msgid "Save"
-msgstr "Зберегти"
-
-#: contents/ui/RecordPage.qml:186
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
 msgid "Name:"
 msgstr "Назва:"
 
-#: contents/ui/RecordPage.qml:187
+#: contents/ui/RecordingListPage.qml:234
+#, kde-format
+msgid "Location:"
+msgstr "Місце:"
+
+#: contents/ui/RecordPage.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Записати звук"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Continue"
+msgstr "Продовжити"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Pause"
+msgstr "Пауза"
+
+#: contents/ui/RecordPage.qml:118
+#, fuzzy, kde-format
+#| msgid "Recordings"
+msgid "Stop Recording"
+msgstr "Записи"
+
+#: contents/ui/RecordPage.qml:177
+#, kde-format
+msgid "Save recording"
+msgstr "Збереження запису"
+
+#: contents/ui/RecordPage.qml:181
+#, kde-format
+msgid "Discard"
+msgstr "Відкинути"
+
+#: contents/ui/RecordPage.qml:189
+#, kde-format
+msgid "Save"
+msgstr "Зберегти"
+
+#: contents/ui/RecordPage.qml:208
 #, kde-format
 msgid "Name (optional)"
 msgstr "Назва (необов’язково):"
+
+#: contents/ui/RecordPage.qml:212
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -215,27 +231,32 @@ msgstr "Якість звуку"
 msgid "%1"
 msgstr "%1"
 
-#: contents/ui/settings/SettingsComponent.qml:156
+#: contents/ui/settings/SettingsComponent.qml:132
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Advanced"
 msgstr "Додатково"
 
-#: contents/ui/settings/SettingsComponent.qml:161
+#: contents/ui/settings/SettingsComponent.qml:171
 #, kde-format
 msgid "Audio Input"
 msgstr "Звуковий вхід"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:210
 #, kde-format
 msgid "Audio Codec"
 msgstr "Аудіокодек"
 
-#: contents/ui/settings/SettingsComponent.qml:239
+#: contents/ui/settings/SettingsComponent.qml:249
 #, kde-format
 msgid "Container Format"
 msgstr "Формат контейнера"
 
-#: contents/ui/settings/SettingsComponent.qml:277
+#: contents/ui/settings/SettingsComponent.qml:287
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -256,11 +277,20 @@ msgstr "Devin Lin"
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
+#~ msgid "No recordings yet, record your first!"
+#~ msgstr "Записів ще немає. Зробіть перший запис!"
+
+#~ msgid "Editing %1"
+#~ msgstr "Редагування %1"
+
+#~ msgid "Audio Input:"
+#~ msgstr "Звуковий вхід:"
+
+#~ msgid "Stop"
+#~ msgstr "Зупинити"
+
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Новий запис</b>"
-
-#~ msgid "Record"
-#~ msgstr "Записати"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Параметри</b>"

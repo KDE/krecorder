@@ -2,11 +2,13 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2021, 2022.
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-28 00:48+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-10-24 07:56+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -28,56 +30,69 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: contents/ui/DefaultPage.qml:30
+#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:14
 #, kde-format
-msgid "Click on a recording to play it, or record a new one"
+msgid "Settings"
+msgstr "Nastavitve"
+
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
+#| msgid "Click on a recording to play it, or record a new one"
+msgid "Play a recording, or record a new one"
 msgstr "Kliknite na posnetek, da ga predvajate, ali posnemite novega"
+
+#: contents/ui/DefaultPage.qml:44
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Record a new recording"
+msgstr "Shrani posnetek"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Recorder"
 
-#: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
+#: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
-msgid "Edit"
-msgstr "Uredi"
+msgid "Rename"
+msgstr ""
 
-#: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
+#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Zbriši"
 
-#: contents/ui/RecordingListPage.qml:18
+#: contents/ui/RecordingListPage.qml:20
 #, kde-format
 msgid "Recordings"
 msgstr "Posnetki"
 
-#: contents/ui/RecordingListPage.qml:39
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
 #, kde-format
-msgid "Settings"
-msgstr "Nastavitve"
+msgid "Edit"
+msgstr "Uredi"
 
-#: contents/ui/RecordingListPage.qml:101
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Posnetek"
+
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Ni posnetkov"
 
-#: contents/ui/RecordingListPage.qml:101
-#, kde-format
-msgid "No recordings yet, record your first!"
-msgstr "Ni nobenih posnetkov, posnemite vašega prvega!"
-
-#: contents/ui/RecordingListPage.qml:182
+#: contents/ui/RecordingListPage.qml:185
 #, kde-format
 msgid "Delete %1"
 msgstr "Zbriši %1"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:186
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -86,77 +101,78 @@ msgstr ""
 "Ali ste prepričani, da želite zbrisati posnetek %1?<br/>Bo za <b>vedno "
 "izgubljen!</b>"
 
-#: contents/ui/RecordingListPage.qml:187
+#: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: contents/ui/RecordingListPage.qml:194
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Zbriši"
 
-#: contents/ui/RecordingListPage.qml:210
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
-msgid "Editing %1"
-msgstr "Urejam %1"
+msgid "Rename %1"
+msgstr ""
 
-#: contents/ui/RecordingListPage.qml:225
-#, kde-format
-msgid "Audio Input:"
-msgstr "Vhod v avdio:"
-
-#: contents/ui/RecordingListPage.qml:231
-#, kde-format
-msgid "Location:"
-msgstr "Kraj:"
-
-#: contents/ui/RecordPage.qml:18
-#, kde-format
-msgid "Record Audio"
-msgstr "Posnemi zvok"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Continue"
-msgstr "Nadaljuj"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Pause"
-msgstr "Premor"
-
-#: contents/ui/RecordPage.qml:109
-#, kde-format
-msgid "Stop"
-msgstr "Ustavi"
-
-#: contents/ui/RecordPage.qml:157
-#, kde-format
-msgid "Save recording"
-msgstr "Shrani posnetek"
-
-#: contents/ui/RecordPage.qml:161
-#, kde-format
-msgid "Discard"
-msgstr "Zavrzi"
-
-#: contents/ui/RecordPage.qml:169
-#, kde-format
-msgid "Save"
-msgstr "Shrani"
-
-#: contents/ui/RecordPage.qml:186
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
 msgid "Name:"
 msgstr "Ime:"
 
-#: contents/ui/RecordPage.qml:187
+#: contents/ui/RecordingListPage.qml:234
+#, kde-format
+msgid "Location:"
+msgstr "Kraj:"
+
+#: contents/ui/RecordPage.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Posnemi zvok"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Continue"
+msgstr "Nadaljuj"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Pause"
+msgstr "Premor"
+
+#: contents/ui/RecordPage.qml:118
+#, fuzzy, kde-format
+#| msgid "Recordings"
+msgid "Stop Recording"
+msgstr "Posnetki"
+
+#: contents/ui/RecordPage.qml:177
+#, kde-format
+msgid "Save recording"
+msgstr "Shrani posnetek"
+
+#: contents/ui/RecordPage.qml:181
+#, kde-format
+msgid "Discard"
+msgstr "Zavrzi"
+
+#: contents/ui/RecordPage.qml:189
+#, kde-format
+msgid "Save"
+msgstr "Shrani"
+
+#: contents/ui/RecordPage.qml:208
 #, kde-format
 msgid "Name (optional)"
 msgstr "Ime (neobvezno)"
+
+#: contents/ui/RecordPage.qml:212
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -214,27 +230,32 @@ msgstr "Kakovost zvoka"
 msgid "%1"
 msgstr "%1"
 
-#: contents/ui/settings/SettingsComponent.qml:156
+#: contents/ui/settings/SettingsComponent.qml:132
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Advanced"
 msgstr "Napredno"
 
-#: contents/ui/settings/SettingsComponent.qml:161
+#: contents/ui/settings/SettingsComponent.qml:171
 #, kde-format
 msgid "Audio Input"
 msgstr "Vhod v avdio"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:210
 #, kde-format
 msgid "Audio Codec"
 msgstr "Avdio Codec"
 
-#: contents/ui/settings/SettingsComponent.qml:239
+#: contents/ui/settings/SettingsComponent.qml:249
 #, kde-format
 msgid "Container Format"
 msgstr "Oblika vsebnika"
 
-#: contents/ui/settings/SettingsComponent.qml:277
+#: contents/ui/settings/SettingsComponent.qml:287
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -255,11 +276,20 @@ msgstr "Devin Lin"
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
+#~ msgid "No recordings yet, record your first!"
+#~ msgstr "Ni nobenih posnetkov, posnemite vašega prvega!"
+
+#~ msgid "Editing %1"
+#~ msgstr "Urejam %1"
+
+#~ msgid "Audio Input:"
+#~ msgstr "Vhod v avdio:"
+
+#~ msgid "Stop"
+#~ msgstr "Ustavi"
+
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Novo snemanje</b>"
-
-#~ msgid "Record"
-#~ msgstr "Posnetek"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Nastavitve</b>"

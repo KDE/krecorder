@@ -2,11 +2,13 @@
 # This file is distributed under the same license as the krecorder package.
 # Vit Pelcak <vit@pelcak.org>, 2020, 2021, 2022.
 #
+#: contents/ui/DefaultPage.qml:39
+#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-28 00:48+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-02-28 10:50+0100\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -27,56 +29,69 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org"
 
-#: contents/ui/DefaultPage.qml:30
+#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:14
 #, kde-format
-msgid "Click on a recording to play it, or record a new one"
+msgid "Settings"
+msgstr "Nastavení"
+
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
+#| msgid "Click on a recording to play it, or record a new one"
+msgid "Play a recording, or record a new one"
 msgstr "Klikněte na nahrávku pro její přehrání, nebo nahrajte novou"
+
+#: contents/ui/DefaultPage.qml:44
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Record a new recording"
+msgstr "Uložit nahrávání"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Nahrávací zařízení"
 
-#: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
+#: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
-msgid "Edit"
-msgstr "Upravit"
+msgid "Rename"
+msgstr ""
 
-#: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
+#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Smazat"
 
-#: contents/ui/RecordingListPage.qml:18
+#: contents/ui/RecordingListPage.qml:20
 #, kde-format
 msgid "Recordings"
 msgstr "Nahrávky"
 
-#: contents/ui/RecordingListPage.qml:39
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
 #, kde-format
-msgid "Settings"
-msgstr "Nastavení"
+msgid "Edit"
+msgstr "Upravit"
 
-#: contents/ui/RecordingListPage.qml:101
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Nahrávat"
+
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Žádné nahrávky"
 
-#: contents/ui/RecordingListPage.qml:101
-#, kde-format
-msgid "No recordings yet, record your first!"
-msgstr "Zatím žádná nahrávání. Nahrajte svoje první."
-
-#: contents/ui/RecordingListPage.qml:182
+#: contents/ui/RecordingListPage.qml:185
 #, kde-format
 msgid "Delete %1"
 msgstr "Smazat %1"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:186
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -84,77 +99,78 @@ msgid ""
 msgstr ""
 "Opravdu si přejete smazat nahrávku %1?<br/>Bude <b>navždy ztracena</b>."
 
-#: contents/ui/RecordingListPage.qml:187
+#: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: contents/ui/RecordingListPage.qml:194
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Smazat"
 
-#: contents/ui/RecordingListPage.qml:210
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
-msgid "Editing %1"
-msgstr "Úprava %1"
-
-#: contents/ui/RecordingListPage.qml:225
-#, kde-format
-msgid "Audio Input:"
-msgstr "Zvukový vstup:"
-
-#: contents/ui/RecordingListPage.qml:231
-#, kde-format
-msgid "Location:"
-msgstr "Umístění:"
-
-#: contents/ui/RecordPage.qml:18
-#, kde-format
-msgid "Record Audio"
-msgstr "Nahrávat zvuk"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Continue"
+msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Pause"
-msgstr "Pozastavit"
-
-#: contents/ui/RecordPage.qml:109
-#, kde-format
-msgid "Stop"
-msgstr "Zastavit"
-
-#: contents/ui/RecordPage.qml:157
-#, kde-format
-msgid "Save recording"
-msgstr "Uložit nahrávání"
-
-#: contents/ui/RecordPage.qml:161
-#, kde-format
-msgid "Discard"
-msgstr "Zahodit"
-
-#: contents/ui/RecordPage.qml:169
-#, kde-format
-msgid "Save"
-msgstr "Uložit"
-
-#: contents/ui/RecordPage.qml:186
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
 msgid "Name:"
 msgstr "Název:"
 
-#: contents/ui/RecordPage.qml:187
+#: contents/ui/RecordingListPage.qml:234
+#, kde-format
+msgid "Location:"
+msgstr "Umístění:"
+
+#: contents/ui/RecordPage.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Nahrávat zvuk"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: contents/ui/RecordPage.qml:118
+#, fuzzy, kde-format
+#| msgid "Recordings"
+msgid "Stop Recording"
+msgstr "Nahrávky"
+
+#: contents/ui/RecordPage.qml:177
+#, kde-format
+msgid "Save recording"
+msgstr "Uložit nahrávání"
+
+#: contents/ui/RecordPage.qml:181
+#, kde-format
+msgid "Discard"
+msgstr "Zahodit"
+
+#: contents/ui/RecordPage.qml:189
+#, kde-format
+msgid "Save"
+msgstr "Uložit"
+
+#: contents/ui/RecordPage.qml:208
 #, kde-format
 msgid "Name (optional)"
 msgstr "Jméno (volitelné)"
+
+#: contents/ui/RecordPage.qml:212
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -212,27 +228,32 @@ msgstr "Kvalita zvuku"
 msgid "%1"
 msgstr "%1"
 
-#: contents/ui/settings/SettingsComponent.qml:156
+#: contents/ui/settings/SettingsComponent.qml:132
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Advanced"
 msgstr "Pokročilé"
 
-#: contents/ui/settings/SettingsComponent.qml:161
+#: contents/ui/settings/SettingsComponent.qml:171
 #, kde-format
 msgid "Audio Input"
 msgstr "Zvukový vstup"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:210
 #, kde-format
 msgid "Audio Codec"
 msgstr "Kodek zvuku"
 
-#: contents/ui/settings/SettingsComponent.qml:239
+#: contents/ui/settings/SettingsComponent.qml:249
 #, kde-format
 msgid "Container Format"
 msgstr "Formát kontejneru"
 
-#: contents/ui/settings/SettingsComponent.qml:277
+#: contents/ui/settings/SettingsComponent.qml:287
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -253,8 +274,17 @@ msgstr "Devin Lin"
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
+#~ msgid "No recordings yet, record your first!"
+#~ msgstr "Zatím žádná nahrávání. Nahrajte svoje první."
+
+#~ msgid "Editing %1"
+#~ msgstr "Úprava %1"
+
+#~ msgid "Audio Input:"
+#~ msgstr "Zvukový vstup:"
+
+#~ msgid "Stop"
+#~ msgstr "Zastavit"
+
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Nová nahrávka</b>"
-
-#~ msgid "Record"
-#~ msgstr "Nahrávat"

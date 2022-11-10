@@ -2,11 +2,13 @@
 # This file is distributed under the same license as the krecorder package.
 # Tommi Nieminen <translator@legisign.org>, 2020, 2021, 2022.
 #
+#: contents/ui/DefaultPage.qml:39
+#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-28 00:48+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-03-18 23:19+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -27,56 +29,69 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: contents/ui/DefaultPage.qml:30
+#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:14
 #, kde-format
-msgid "Click on a recording to play it, or record a new one"
+msgid "Settings"
+msgstr "Asetukset"
+
+#: contents/ui/DefaultPage.qml:39
+#, fuzzy, kde-format
+#| msgid "Click on a recording to play it, or record a new one"
+msgid "Play a recording, or record a new one"
 msgstr "Soita äänite napsauttamalla sitä tai äänitä uusi"
+
+#: contents/ui/DefaultPage.qml:44
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Record a new recording"
+msgstr "Tallenna äänite"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
 msgstr "Äänitin"
 
-#: contents/ui/RecordingListDelegate.qml:67
-#: contents/ui/RecordingListPage.qml:32 contents/ui/RecordingListPage.qml:148
+#: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
-msgid "Edit"
-msgstr "Muokkaa"
+msgid "Rename"
+msgstr ""
 
-#: contents/ui/RecordingListDelegate.qml:81
-#: contents/ui/RecordingListPage.qml:157 contents/ui/RecordPage.qml:136
+#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Delete"
 msgstr "Poista"
 
-#: contents/ui/RecordingListPage.qml:18
+#: contents/ui/RecordingListPage.qml:20
 #, kde-format
 msgid "Recordings"
 msgstr "Äänitteet"
 
-#: contents/ui/RecordingListPage.qml:39
-#: contents/ui/settings/SettingsDialog.qml:13
-#: contents/ui/settings/SettingsPage.qml:13
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
 #, kde-format
-msgid "Settings"
-msgstr "Asetukset"
+msgid "Edit"
+msgstr "Muokkaa"
 
-#: contents/ui/RecordingListPage.qml:101
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Äänitä"
+
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Ei äänitteitä"
 
-#: contents/ui/RecordingListPage.qml:101
-#, kde-format
-msgid "No recordings yet, record your first!"
-msgstr "Ei äänitteitä: äänitä ensin!"
-
-#: contents/ui/RecordingListPage.qml:182
+#: contents/ui/RecordingListPage.qml:185
 #, kde-format
 msgid "Delete %1"
 msgstr "Poista %1"
 
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:186
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -84,77 +99,78 @@ msgid ""
 msgstr ""
 "Haluatko varmasti poistaa äänitteen %1?<br/>Se poistuu <b>lopullisesti</b>!"
 
-#: contents/ui/RecordingListPage.qml:187
+#: contents/ui/RecordingListPage.qml:190
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Peru"
 
-#: contents/ui/RecordingListPage.qml:194
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Poista"
 
-#: contents/ui/RecordingListPage.qml:210
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
-msgid "Editing %1"
-msgstr "Muokataan: %1"
-
-#: contents/ui/RecordingListPage.qml:225
-#, kde-format
-msgid "Audio Input:"
-msgstr "Äänisisääntulo:"
-
-#: contents/ui/RecordingListPage.qml:231
-#, kde-format
-msgid "Location:"
-msgstr "Sijainti:"
-
-#: contents/ui/RecordPage.qml:18
-#, kde-format
-msgid "Record Audio"
-msgstr "Äänitä"
-
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Continue"
+msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:84
-#, kde-format
-msgid "Pause"
-msgstr "Tauko"
-
-#: contents/ui/RecordPage.qml:109
-#, kde-format
-msgid "Stop"
-msgstr "Pysäytä"
-
-#: contents/ui/RecordPage.qml:157
-#, kde-format
-msgid "Save recording"
-msgstr "Tallenna äänite"
-
-#: contents/ui/RecordPage.qml:161
-#, kde-format
-msgid "Discard"
-msgstr "Hylkää"
-
-#: contents/ui/RecordPage.qml:169
-#, kde-format
-msgid "Save"
-msgstr "Tallenna"
-
-#: contents/ui/RecordPage.qml:186
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
 msgid "Name:"
 msgstr "Nimi:"
 
-#: contents/ui/RecordPage.qml:187
+#: contents/ui/RecordingListPage.qml:234
+#, kde-format
+msgid "Location:"
+msgstr "Sijainti:"
+
+#: contents/ui/RecordPage.qml:21
+#, kde-format
+msgid "Record Audio"
+msgstr "Äänitä"
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:88
+#, kde-format
+msgid "Pause"
+msgstr "Tauko"
+
+#: contents/ui/RecordPage.qml:118
+#, fuzzy, kde-format
+#| msgid "Recordings"
+msgid "Stop Recording"
+msgstr "Äänitteet"
+
+#: contents/ui/RecordPage.qml:177
+#, kde-format
+msgid "Save recording"
+msgstr "Tallenna äänite"
+
+#: contents/ui/RecordPage.qml:181
+#, kde-format
+msgid "Discard"
+msgstr "Hylkää"
+
+#: contents/ui/RecordPage.qml:189
+#, kde-format
+msgid "Save"
+msgstr "Tallenna"
+
+#: contents/ui/RecordPage.qml:208
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nimi (valinnainen)"
+
+#: contents/ui/RecordPage.qml:212
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -214,30 +230,35 @@ msgstr "Äänenlaatu:"
 msgid "%1"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:156
+#: contents/ui/settings/SettingsComponent.qml:132
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:161
+#: contents/ui/settings/SettingsComponent.qml:171
 #, fuzzy, kde-format
 #| msgid "Audio Input:"
 msgid "Audio Input"
 msgstr "Äänisisääntulo:"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:210
 #, fuzzy, kde-format
 #| msgid "Audio Codec:"
 msgid "Audio Codec"
 msgstr "Äänikoodekki:"
 
-#: contents/ui/settings/SettingsComponent.qml:239
+#: contents/ui/settings/SettingsComponent.qml:249
 #, fuzzy, kde-format
 #| msgid "Container Format:"
 msgid "Container Format"
 msgstr "Säilön muoto:"
 
-#: contents/ui/settings/SettingsComponent.qml:277
+#: contents/ui/settings/SettingsComponent.qml:287
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -258,11 +279,20 @@ msgstr "Devin Lin"
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
+#~ msgid "No recordings yet, record your first!"
+#~ msgstr "Ei äänitteitä: äänitä ensin!"
+
+#~ msgid "Editing %1"
+#~ msgstr "Muokataan: %1"
+
+#~ msgid "Audio Input:"
+#~ msgstr "Äänisisääntulo:"
+
+#~ msgid "Stop"
+#~ msgstr "Pysäytä"
+
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Uusi äänite</b>"
-
-#~ msgid "Record"
-#~ msgstr "Äänitä"
 
 #~ msgid "<b>Settings</b>"
 #~ msgstr "<b>Asetukset</b>"
