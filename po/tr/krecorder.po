@@ -2,14 +2,12 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Emir SARI <emir_sari@icloud.com>, 2022.
-#: contents/ui/DefaultPage.qml:39
-#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-10-23 11:14+0300\n"
+"POT-Creation-Date: 2022-11-11 00:48+0000\n"
+"PO-Revision-Date: 2022-11-10 06:42+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -17,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -33,22 +31,20 @@ msgstr "emir_sari@icloud.com"
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
-#: contents/ui/settings/SettingsWindow.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Bir kaydı çalmak için tıklayın veya yeni bir tane kaydedin"
+msgstr "Bir kaydı çalın veya yeni bir tane kaydedin"
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Kaydı yaz"
+msgstr "Yeni bir kayıt yap"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -58,7 +54,7 @@ msgstr "Kaydedici"
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Yeniden Adlandır"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
@@ -114,7 +110,7 @@ msgstr "Sil"
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Yeniden Adlandır: %1"
 
 #: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
@@ -142,10 +138,9 @@ msgid "Pause"
 msgstr "Duraklat"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Kayıtlar"
+msgstr "Kaydı Durdur"
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -170,7 +165,7 @@ msgstr "Ad (isteğe bağlı)"
 #: contents/ui/RecordPage.qml:212
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Depolama Klasörü:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -231,7 +226,7 @@ msgstr "%1"
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Daha yüksek ses kalitesi, dosya boyutunu artırır."
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format

@@ -4,14 +4,12 @@
 #
 # Automatically generated, 2020.
 # Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2022.
-#: contents/ui/DefaultPage.qml:39
-#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-10-23 20:55+0200\n"
+"POT-Creation-Date: 2022-11-11 00:48+0000\n"
+"PO-Revision-Date: 2022-11-10 03:37+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -35,22 +33,20 @@ msgstr "ecuadra@eloihr.net"
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
-#: contents/ui/settings/SettingsWindow.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Preferencias"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Pulse sobre una grabación para reproducirla o grabe una nueva"
+msgstr "Reproducir una grabación o grabar una nueva"
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Guardar grabación"
+msgstr "Hacer una nueva grabación"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -60,7 +56,7 @@ msgstr "Grabadora"
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Cambiar nombre"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
@@ -117,7 +113,7 @@ msgstr "Borrar"
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Cambiar nombre de %1"
 
 #: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
@@ -145,10 +141,9 @@ msgid "Pause"
 msgstr "Pausa"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Grabaciones"
+msgstr "Detener grabación"
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -173,7 +168,7 @@ msgstr "Nombre (opcional)"
 #: contents/ui/RecordPage.qml:212
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Carpeta de almacenamiento:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -234,7 +229,7 @@ msgstr "%1"
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Una alta calidad de sonido también aumenta el tamaño de archivo."
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format

@@ -2,14 +2,12 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2022.
-#: contents/ui/DefaultPage.qml:39
-#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-10-23 18:21+0200\n"
+"POT-Creation-Date: 2022-11-11 00:48+0000\n"
+"PO-Revision-Date: 2022-11-10 18:49-0400\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -17,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -33,22 +31,20 @@ msgstr "freekdekruijf@kde.nl"
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
-#: contents/ui/settings/SettingsWindow.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Instellingen"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Klik op een opname om het af te spelen of neem een nieuwe op"
+msgstr "Een opname afspelen of een nieuwe opnemen"
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Opname opslaan"
+msgstr "Een nieuwe opname opnemen"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -58,7 +54,7 @@ msgstr "Recorder"
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Hernoemen"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
@@ -115,7 +111,7 @@ msgstr "Verwijderen"
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "%1 hernoemen"
 
 #: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
@@ -143,10 +139,9 @@ msgid "Pause"
 msgstr "Pauzeren"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Opnamen"
+msgstr "Opnemen stoppen"
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -171,7 +166,7 @@ msgstr "Naam (optioneel)"
 #: contents/ui/RecordPage.qml:212
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Opslagmap:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -232,7 +227,7 @@ msgstr "%1"
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Hogere geluidskwaliteit verhoogt de bestandsgrootte"
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format

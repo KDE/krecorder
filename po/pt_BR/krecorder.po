@@ -2,13 +2,11 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2021, 2022.
-#: contents/ui/DefaultPage.qml:39
-#, kde-format
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-10 00:48+0000\n"
+"POT-Creation-Date: 2022-11-11 00:48+0000\n"
 "PO-Revision-Date: 2022-10-19 16:07-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -33,7 +31,7 @@ msgstr "elchevive@opensuse.org"
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
-#: contents/ui/settings/SettingsWindow.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
 msgstr "Configurações"
