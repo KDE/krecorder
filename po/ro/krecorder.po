@@ -2,7 +2,6 @@
 # This file is distributed under the same license as the krecorder package.
 # Sergiu Bivol <sergiu@cip.md>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"

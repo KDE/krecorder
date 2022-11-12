@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-11 00:48+0000\n"
-"PO-Revision-Date: 2022-10-30 21:04+0100\n"
+"PO-Revision-Date: 2022-11-11 06:42+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -38,16 +38,14 @@ msgid "Settings"
 msgstr "მორგება"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "დააწკაპუნეთ ჩაწერაზე მის დასაკრავად ან ახლის ჩასაწერად"
+msgstr "დაუკარით ჩანაწერი ან ახალი ჩაიწერეთ"
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "ჩანაწერის შენახვა"
+msgstr "ახალი ჩანაწერის ჩაწერა"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -57,7 +55,7 @@ msgstr "ჩამწერი"
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "გადარქმევა"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
@@ -114,7 +112,7 @@ msgstr "წაშლა"
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "%1-ის გადარქმევა"
 
 #: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
@@ -142,10 +140,9 @@ msgid "Pause"
 msgstr "შეჩერება"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "ჩანაწერები"
+msgstr "ჩაწერის გაჩერება"
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -170,7 +167,7 @@ msgstr "სახელი (არასავალდებულო)"
 #: contents/ui/RecordPage.qml:212
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "საცავის საქაღალდე:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -231,7 +228,7 @@ msgstr "%1"
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "აუდიოს უფრო მაღალი ხარისხი ფაილის ზომასაც ზრდის."
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
