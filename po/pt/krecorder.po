@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-11 00:48+0000\n"
-"PO-Revision-Date: 2022-08-25 17:43+0100\n"
+"PO-Revision-Date: 2022-11-12 18:37+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -33,16 +33,14 @@ msgid "Settings"
 msgstr "Configuração"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Carregue numa gravação para a reproduzir ou grave uma nova"
+msgstr "Reproduzir um gravação ou criar uma nova"
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Gravar a gravação"
+msgstr "Criar uma nova gravação"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -52,7 +50,7 @@ msgstr "Gravador"
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Mudar o Nome"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
@@ -109,7 +107,7 @@ msgstr "Apagar"
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Mudar o nome a %1"
 
 #: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
 #, kde-format
@@ -137,10 +135,9 @@ msgid "Pause"
 msgstr "Pausa"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Gravações"
+msgstr "Parar a Gravação"
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -165,7 +162,7 @@ msgstr "Nome (opcional)"
 #: contents/ui/RecordPage.qml:212
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Pasta de Armazenamento:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -226,7 +223,7 @@ msgstr "%1"
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Uma maior qualidade do áudio também aumenta o tamanho do ficheiro."
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
@@ -270,18 +267,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "No recordings yet, record your first!"
-#~ msgstr "Ainda sem gravações; grave a sua primeira!"
-
-#~ msgid "Editing %1"
-#~ msgstr "A editar o %1"
-
-#~ msgid "Audio Input:"
-#~ msgstr "Entrada de Áudio:"
-
-#~ msgid "Stop"
-#~ msgstr "Parar"
-
-#~ msgid "<b>New Recording</b>"
-#~ msgstr "<b>Nova Gravação</b>"
