@@ -66,6 +66,21 @@ void SettingsModel::setAudioCodec(const QString &audioCodec)
     Q_EMIT simpleAudioFormatChanged();
 }
 
+QString SettingsModel::audioInput() const
+{
+    return settings->value(QStringLiteral("General/audioInput"),
+            AudioRecorder::instance()->defaultAudioInput()).toString();
+}
+
+void SettingsModel::setAudioInput(const QString &audioInput)
+{
+    AudioRecorder::instance()->setAudioInput(audioInput);
+    settings->setValue(QStringLiteral("General/audioInput"), audioInput);
+
+    Q_EMIT audioInputChanged();
+    Q_EMIT simpleAudioFormatChanged();
+}
+
 QString SettingsModel::containerFormat() const
 {
     return settings->value(QStringLiteral("General/containerFormat"), QStringLiteral("audio/ogg")).toString();

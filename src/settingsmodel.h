@@ -19,6 +19,7 @@ class SettingsModel : public QObject
     Q_OBJECT
     Q_PROPERTY(int simpleAudioFormat READ simpleAudioFormat WRITE setSimpleAudioFormat NOTIFY simpleAudioFormatChanged)
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
+    Q_PROPERTY(QString audioInput READ audioInput WRITE setAudioInput NOTIFY audioInputChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat NOTIFY containerFormatChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
 
@@ -45,16 +46,19 @@ public:
 
     int simpleAudioFormat() const;
     void setSimpleAudioFormat(int audioFormat);
-    
+
     QString audioCodec() const;
     void setAudioCodec(const QString &audioCodec);
-    
+
+    QString audioInput() const;
+    void setAudioInput(const QString &audioInput);
+
     QString containerFormat() const;
     void setContainerFormat(const QString &audioContainerFormat);
-    
+
     int audioQuality() const;
     void setAudioQuality(int audioQuality);
-    
+
     Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
 
 private:
@@ -68,4 +72,5 @@ Q_SIGNALS:
     void audioCodecChanged();
     void containerFormatChanged();
     void audioQualityChanged();
+    void audioInputChanged();
 };

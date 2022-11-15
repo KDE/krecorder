@@ -13,11 +13,11 @@ import KRecorder 1.0
 ColumnLayout {
     id: root
     property var dialog: null // dialog component if this is within a dialog
-    
+
     spacing: 0
-    
+
     signal closeRequested()
-    
+
     // HACK: dialog switching requires some time between closing and opening
     Timer {
         id: dialogTimer
@@ -28,18 +28,18 @@ ColumnLayout {
             dialog.open();
         }
     }
-    
+
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
         Layout.fillWidth: true
-        
+
         contentItem: ColumnLayout {
             spacing: 0
 
             MobileForm.FormCardHeader {
                 title: i18n("General")
             }
-            
+
             MobileForm.FormButtonDelegate {
                 id: aboutDelegate
                 text: i18n("About")
@@ -49,28 +49,27 @@ ColumnLayout {
                     } else {
                         applicationWindow().pageStack.push("qrc:/AboutPage.qml");
                     }
-                    
+
                     if (root.dialog) {
                         root.dialog.close();
                     }
                 }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: aboutDelegate; below: audioFormatDropdown }
-            
+
             MobileForm.FormComboBoxDelegate {
                 id: audioFormatDropdown
                 text: i18n("Audio Format")
-                currentValue: model[SettingsModel.simpleAudioFormat] ? model[SettingsModel.simpleAudioFormat] : i18n("Custom") 
+                Component.onCompleted: currentIndex = model[SettingsModel.simpleAudioFormat] ? SettingsModel.simpleAudioFormat : 0
                 model: [i18n("Ogg Vorbis"), i18n("Ogg Opus"), i18n("FLAC"), i18n("MP3"), i18n("WAV")]
-                
-                onClicked: {
-                    if (root.dialog) {
-                        dialogTimer.dialog = audioFormatDropdown.dialog;
-                        dialogTimer.restart();
-                    }
+                onCurrentValueChanged: SettingsModel.simpleAudioFormat = currentIndex;
+
+                onClicked: if (root.dialog) {
+                    dialogTimer.dialog = audioFormatDropdown.dialog;
+                    dialogTimer.restart();
                 }
-                
+
                 Connections {
                     target: audioFormatDropdown.dialog
                     function onClosed() {
@@ -79,106 +78,74 @@ ColumnLayout {
                         }
                     }
                 }
-                
-                dialogDelegate: Controls.RadioDelegate {
-                    implicitWidth: Kirigami.Units.gridUnit * 16
-                    topPadding: Kirigami.Units.smallSpacing * 2
-                    bottomPadding: Kirigami.Units.smallSpacing * 2
-                    
-                    text: modelData
-                    checked: audioFormatDropdown.currentValue == modelData
-                    onCheckedChanged: {
-                        if (checked) {
-                            SettingsModel.simpleAudioFormat = model.index;
-                        }
-                    }
-                }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: audioFormatDropdown; below: audioQualityDelegate }
-            
-            MobileForm.FormComboBoxDelegate {
+
+            MobileForm.AbstractFormDelegate {
                 id: audioQualityDelegate
-                text: i18n("Audio Quality")
-                currentValue: i18n("%1", sliderValue.value)
-                
-                onClicked: {
-                    dialog.open();
-                    if (root.dialog) {
-                        dialogTimer.dialog = audioQualityDelegate.dialog;
-                        dialogTimer.restart();
+                Layout.fillWidth: true
+
+                background: Item {}
+
+                contentItem: ColumnLayout {
+                    Controls.Label {
+                        text: i18n("Audio Quality")
                     }
-                }
-                
-                Connections {
-                    target: audioQualityDelegate.dialog
-                    function onClosed() {
-                        if (root.dialog) {
-                            root.dialog.open();
+
+                    RowLayout {
+                        spacing: Kirigami.Units.gridUnit
+                        Kirigami.Icon {
+                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                            source: "list-remove"
                         }
-                    }
-                }
-                
-                dialog: Kirigami.PromptDialog {
-                    showCloseButton: false
-                    title: i18n("Audio Quality")
-                    
-                    ColumnLayout {
-                        MobileForm.FormSectionText {
-                            Layout.leftMargin: 0
-                            Layout.rightMargin: 0
+
+                        Controls.Slider {
+                            id: sliderValue
                             Layout.fillWidth: true
-                            horizontalAlignment: Text.AlignHCenter
-                            text: i18n("Higher audio quality also increases file size.")
+                            from: 0
+                            to: 4
+                            value: SettingsModel.audioQuality
+                            stepSize: 1
+                            snapMode: Controls.Slider.SnapAlways
+                            onMoved: SettingsModel.audioQuality = value
                         }
-                        RowLayout {
-                            Layout.bottomMargin: Kirigami.Units.largeSpacing
-                            Controls.Slider {
-                                id: sliderValue
-                                Layout.fillWidth: true
-                                from: 0
-                                to: 4
-                                value: SettingsModel.audioQuality
-                                stepSize: 1
-                                snapMode: Controls.Slider.SnapAlways
-                                
-                                onMoved: SettingsModel.audioQuality = value
-                            }
-                            Controls.Label {
-                                text: audioQualityDelegate.currentValue
-                            }
+
+                        Kirigami.Icon {
+                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                            source: "list-add"
                         }
                     }
                 }
             }
         }
     }
-    
+
     MobileForm.FormCard {
         Layout.alignment: Qt.AlignTop
         Layout.fillWidth: true
         Layout.topMargin: Kirigami.Units.largeSpacing
-        
+
         contentItem: ColumnLayout {
             spacing: 0
 
             MobileForm.FormCardHeader {
                 title: i18n("Advanced")
             }
-            
+
             MobileForm.FormComboBoxDelegate {
                 id: audioInputDropdown
                 text: i18n("Audio Input")
-                currentValue: AudioRecorder.audioInput
+                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.audioInput)
                 model: AudioRecorder.audioInputs
-                
-                onClicked: {
-                    if (root.dialog) {
-                        dialogTimer.dialog = audioInputDropdown.dialog;
-                        dialogTimer.restart();
-                    }
+
+                onClicked: if (root.dialog) {
+                    dialogTimer.dialog = audioInputDropdown.dialog;
+                    dialogTimer.restart();
                 }
-                
+
                 Connections {
                     target: audioInputDropdown.dialog
                     function onClosed() {
@@ -187,37 +154,21 @@ ColumnLayout {
                         }
                     }
                 }
-                
-                dialogDelegate: Controls.RadioDelegate {
-                    implicitWidth: Kirigami.Units.gridUnit * 16
-                    topPadding: Kirigami.Units.smallSpacing * 2
-                    bottomPadding: Kirigami.Units.smallSpacing * 2
-                    
-                    text: modelData
-                    checked: audioInputDropdown.currentValue == modelData
-                    onCheckedChanged: {
-                        if (checked) {
-                            AudioRecorder.audioInput = modelData;
-                        }
-                    }
-                }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: audioInputDropdown; below: audioCodecDropdown }
-            
+
             MobileForm.FormComboBoxDelegate {
                 id: audioCodecDropdown
                 text: i18n("Audio Codec")
-                currentValue: SettingsModel.audioCodec
+                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.audioCodec)
                 model: AudioRecorder.supportedAudioCodecs
-                
-                onClicked: {
-                    if (root.dialog) {
-                        dialogTimer.dialog = audioCodecDropdown.dialog;
-                        dialogTimer.restart();
-                    }
+
+                onClicked: if (root.dialog) {
+                    dialogTimer.dialog = audioCodecDropdown.dialog;
+                    dialogTimer.restart();
                 }
-                
+
                 Connections {
                     target: audioCodecDropdown.dialog
                     function onClosed() {
@@ -226,37 +177,22 @@ ColumnLayout {
                         }
                     }
                 }
-                
-                dialogDelegate: Controls.RadioDelegate {
-                    implicitWidth: Kirigami.Units.gridUnit * 16
-                    topPadding: Kirigami.Units.smallSpacing * 2
-                    bottomPadding: Kirigami.Units.smallSpacing * 2
-                    
-                    text: modelData
-                    checked: audioCodecDropdown.currentValue == modelData
-                    onCheckedChanged: {
-                        if (checked) {
-                            SettingsModel.audioCodec = modelData;
-                        }
-                    }
-                }
             }
-            
+
             MobileForm.FormDelegateSeparator { above: audioCodecDropdown; below: containerFormatDropdown }
-            
+
             MobileForm.FormComboBoxDelegate {
                 id: containerFormatDropdown
                 text: i18n("Container Format")
-                currentValue: SettingsModel.containerFormat
+                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.containerFormat)
                 model: AudioRecorder.supportedContainers
-                
-                onClicked: {
-                    if (root.dialog) {
-                        dialogTimer.dialog = containerFormatDropdown.dialog;
-                        dialogTimer.restart();
-                    }
+                onCurrentValueChanged: SettingsModel.containerFormat = currentValue;
+
+                onClicked: if (root.dialog) {
+                    dialogTimer.dialog = containerFormatDropdown.dialog;
+                    dialogTimer.restart();
                 }
-                
+
                 Connections {
                     target: containerFormatDropdown.dialog
                     function onClosed() {
@@ -265,24 +201,10 @@ ColumnLayout {
                         }
                     }
                 }
-                
-                dialogDelegate: Controls.RadioDelegate {
-                    implicitWidth: Kirigami.Units.gridUnit * 16
-                    topPadding: Kirigami.Units.smallSpacing * 2
-                    bottomPadding: Kirigami.Units.smallSpacing * 2
-                    
-                    text: modelData
-                    checked: containerFormatDropdown.currentValue == modelData
-                    onCheckedChanged: {
-                        if (checked) {
-                            SettingsModel.containerFormat = modelData;
-                        }
-                    }
-                }
             }
         }
     }
-    
+
     MobileForm.FormSectionText {
         text: i18n("Some combinations of codecs and container formats may not be compatible.")
     }
