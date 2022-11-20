@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-11 00:48+0000\n"
-"PO-Revision-Date: 2022-11-06 01:07\n"
+"PO-Revision-Date: 2022-11-19 14:49\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -38,16 +38,14 @@ msgid "Settings"
 msgstr "设置"
 
 #: contents/ui/DefaultPage.qml:39
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "点击一段录音即可播放，或点击录制新录音"
+msgstr ""
 
 #: contents/ui/DefaultPage.qml:44
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "保存录音"
+msgstr ""
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -76,10 +74,9 @@ msgid "Edit"
 msgstr "编辑"
 
 #: contents/ui/RecordingListPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Record"
-msgstr "录音机"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:115
 #, kde-format
@@ -141,10 +138,9 @@ msgid "Pause"
 msgstr "暂停"
 
 #: contents/ui/RecordPage.qml:118
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "录音"
+msgstr ""
 
 #: contents/ui/RecordPage.qml:177
 #, kde-format
@@ -272,15 +268,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "No recordings yet, record your first!"
-#~ msgstr "还没有录音，请先进行录音！"
-
-#~ msgid "Editing %1"
-#~ msgstr "正在编辑 %1"
-
-#~ msgid "Audio Input:"
-#~ msgstr "音频输入："
-
-#~ msgid "Stop"
-#~ msgstr "停止"
