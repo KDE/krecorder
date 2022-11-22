@@ -19,7 +19,6 @@ class SettingsModel : public QObject
     Q_OBJECT
     Q_PROPERTY(int simpleAudioFormat READ simpleAudioFormat WRITE setSimpleAudioFormat NOTIFY simpleAudioFormatChanged)
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
-    Q_PROPERTY(QString audioInput READ audioInput WRITE setAudioInput NOTIFY audioInputChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat NOTIFY containerFormatChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
 
@@ -72,5 +71,4 @@ Q_SIGNALS:
     void audioCodecChanged();
     void containerFormatChanged();
     void audioQualityChanged();
-    void audioInputChanged();
 };

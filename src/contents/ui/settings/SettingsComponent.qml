@@ -61,11 +61,16 @@ ColumnLayout {
             MobileForm.FormComboBoxDelegate {
                 id: audioFormatDropdown
                 text: i18n("Audio Format")
-                Component.onCompleted: currentIndex = model[SettingsModel.simpleAudioFormat] ? SettingsModel.simpleAudioFormat : 0
-                model: [i18n("Ogg Vorbis"), i18n("Ogg Opus"), i18n("FLAC"), i18n("MP3"), i18n("WAV")]
+                // the order here must match the one in settingsmodel
+                model: [i18nc("Ogg Vorbis file format", "Ogg Vorbis"), i18nc("Ogg Opus file format", "Ogg Opus"), i18nc("FLAC file format", "FLAC"), i18nc("MP3 file format", "MP3"), i18n("WAV file format", "WAV"), i18nc("File format not listed", "Other")] 
                 onCurrentValueChanged: SettingsModel.simpleAudioFormat = currentIndex;
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
+                
+                Binding on currentIndex {
+                    value: SettingsModel.simpleAudioFormat
+                }
 
-                onClicked: if (root.dialog) {
+                onClicked: if (root.dialog && audioFormatDropdown.displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
                     dialogTimer.dialog = audioFormatDropdown.dialog;
                     dialogTimer.restart();
                 }
@@ -80,42 +85,30 @@ ColumnLayout {
                 }
             }
 
-            MobileForm.FormDelegateSeparator { above: audioFormatDropdown; below: audioQualityDelegate }
+            MobileForm.FormDelegateSeparator { above: audioFormatDropdown; below: audioQualityDropdown }
 
-            MobileForm.AbstractFormDelegate {
-                id: audioQualityDelegate
-                Layout.fillWidth: true
+            MobileForm.FormComboBoxDelegate {
+                id: audioQualityDropdown
+                text: i18n("Audio Quality")
+                model: [i18n("Lowest"), i18n("Low"), i18n("Medium"), i18n("High"), i18n("Highest")]
+                description: i18n("Higher audio quality also increases file size.")
+                onCurrentValueChanged: SettingsModel.audioQuality = currentIndex;
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
+                
+                Binding on currentIndex {
+                    value: SettingsModel.audioQuality
+                }
+                
+                onClicked: if (root.dialog && audioQualityDropdown.displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
+                    dialogTimer.dialog = audioQualityDropdown.dialog;
+                    dialogTimer.restart();
+                }
 
-                background: Item {}
-
-                contentItem: ColumnLayout {
-                    Controls.Label {
-                        text: i18n("Audio Quality")
-                    }
-
-                    RowLayout {
-                        spacing: Kirigami.Units.gridUnit
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "list-remove"
-                        }
-
-                        Controls.Slider {
-                            id: sliderValue
-                            Layout.fillWidth: true
-                            from: 0
-                            to: 4
-                            value: SettingsModel.audioQuality
-                            stepSize: 1
-                            snapMode: Controls.Slider.SnapAlways
-                            onMoved: SettingsModel.audioQuality = value
-                        }
-
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "list-add"
+                Connections {
+                    target: audioQualityDropdown.dialog
+                    function onClosed() {
+                        if (root.dialog) {
+                            root.dialog.open();
                         }
                     }
                 }
@@ -138,10 +131,20 @@ ColumnLayout {
             MobileForm.FormComboBoxDelegate {
                 id: audioInputDropdown
                 text: i18n("Audio Input")
-                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.audioInput)
                 model: AudioRecorder.audioInputs
+                onCurrentValueChanged: AudioRecorder.audioInput = currentValue;
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
+                
+                Binding on currentIndex {
+                    value: audioInputDropdown.indexOfValue(AudioRecorder.audioInput)
+                }
+                
+                Component.onCompleted: {
+                    // HACK: the values don't load until after the component completes
+                    currentIndex = audioInputDropdown.indexOfValue(AudioRecorder.audioInput)
+                }
 
-                onClicked: if (root.dialog) {
+                onClicked: if (root.dialog && audioInputDropdown.displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
                     dialogTimer.dialog = audioInputDropdown.dialog;
                     dialogTimer.restart();
                 }
@@ -161,10 +164,20 @@ ColumnLayout {
             MobileForm.FormComboBoxDelegate {
                 id: audioCodecDropdown
                 text: i18n("Audio Codec")
-                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.audioCodec)
                 model: AudioRecorder.supportedAudioCodecs
+                onCurrentValueChanged: AudioRecorder.audioCodec = currentValue;
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
+                
+                Binding on currentIndex {
+                    value: audioCodecDropdown.indexOfValue(SettingsModel.audioCodec)
+                }
+                
+                Component.onCompleted: {
+                    // HACK: the values don't load until after the component completes
+                    currentIndex = audioCodecDropdown.indexOfValue(SettingsModel.audioCodec)
+                }
 
-                onClicked: if (root.dialog) {
+                onClicked: if (root.dialog && audioCodecDropdown.displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
                     dialogTimer.dialog = audioCodecDropdown.dialog;
                     dialogTimer.restart();
                 }
@@ -184,11 +197,20 @@ ColumnLayout {
             MobileForm.FormComboBoxDelegate {
                 id: containerFormatDropdown
                 text: i18n("Container Format")
-                Component.onCompleted: currentIndex = indexOfValue(SettingsModel.containerFormat)
                 model: AudioRecorder.supportedContainers
                 onCurrentValueChanged: SettingsModel.containerFormat = currentValue;
+                displayMode: MobileForm.FormComboBoxDelegate.Dialog
 
-                onClicked: if (root.dialog) {
+                Binding on currentIndex {
+                    value: containerFormatDropdown.indexOfValue(SettingsModel.containerFormat)
+                }
+                
+                Component.onCompleted: {
+                    // HACK: the values don't load until after the component completes
+                    currentIndex = containerFormatDropdown.indexOfValue(SettingsModel.containerFormat)
+                }
+                
+                onClicked: if (root.dialog && containerFormatDropdown.displayMode === MobileForm.FormComboBoxDelegate.Dialog) {
                     dialogTimer.dialog = containerFormatDropdown.dialog;
                     dialogTimer.restart();
                 }

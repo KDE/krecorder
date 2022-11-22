@@ -13,7 +13,7 @@ Kirigami.ApplicationWindow {
     title: i18n("Settings")
     flags: Qt.Dialog | Qt.WindowStaysOnTopHint
     
-    height: Kirigami.Units.gridUnit * 24
+    height: Kirigami.Units.gridUnit * 25
     width: Kirigami.Units.gridUnit * 35
     
     Kirigami.Theme.inherit: false

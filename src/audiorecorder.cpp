@@ -6,6 +6,7 @@
  */
 
 #include "audiorecorder.h"
+#include "settingsmodel.h"
 
 AudioRecorder* AudioRecorder::instance()
 {
@@ -22,6 +23,13 @@ AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
 
     // once the file is done writing, save recording to model
     connect(this, &QAudioRecorder::stateChanged, this, &AudioRecorder::handleStateChange);
+    
+    // load settings
+    setAudioCodec(SettingsModel::instance()->audioCodec());
+    setContainerFormat(SettingsModel::instance()->containerFormat());
+    QAudioEncoderSettings s = audioSettings();
+    s.setQuality(static_cast<QMultimedia::EncodingQuality>(SettingsModel::instance()->audioQuality()));
+    setAudioSettings(s);
 }
 
 AudioProber* AudioRecorder::prober()
