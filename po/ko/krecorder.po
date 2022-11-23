@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-11 00:48+0000\n"
+"POT-Creation-Date: 2022-11-23 00:50+0000\n"
 "PO-Revision-Date: 2022-02-20 21:33+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -185,77 +185,105 @@ msgstr "정보"
 msgid "Audio Format"
 msgstr "형식:"
 
-#: contents/ui/settings/SettingsComponent.qml:64
-#, kde-format
-msgid "Custom"
-msgstr ""
-
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ogg Vorbis"
+msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ogg Opus"
+msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "FLAC"
+msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "MP3"
+msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
-msgid "WAV"
-msgstr "WAV"
+msgid "WAV file format"
+msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:102
-#: contents/ui/settings/SettingsComponent.qml:124
+#: contents/ui/settings/SettingsComponent.qml:65
+#, kde-format
+msgctxt "File format not listed"
+msgid "Other"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:92
 #, fuzzy, kde-format
 #| msgid "Audio Quality:"
 msgid "Audio Quality"
 msgstr "오디오 음질:"
 
-#: contents/ui/settings/SettingsComponent.qml:103
+#: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
-msgid "%1"
+msgid "Lowest"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:132
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Low"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Medium"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "High"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Highest"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:166
+#: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:171
+#: contents/ui/settings/SettingsComponent.qml:133
 #, fuzzy, kde-format
 #| msgid "Audio Input:"
 msgid "Audio Input"
 msgstr "오디오 입력:"
 
-#: contents/ui/settings/SettingsComponent.qml:210
+#: contents/ui/settings/SettingsComponent.qml:166
 #, fuzzy, kde-format
 #| msgid "Audio Codec:"
 msgid "Audio Codec"
 msgstr "오디오 코덱:"
 
-#: contents/ui/settings/SettingsComponent.qml:249
+#: contents/ui/settings/SettingsComponent.qml:199
 #, fuzzy, kde-format
 #| msgid "Container Format:"
 msgid "Container Format"
 msgstr "컨테이너 형식:"
 
-#: contents/ui/settings/SettingsComponent.qml:287
+#: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -275,6 +303,9 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "WAV"
+#~ msgstr "WAV"
 
 #~ msgid "No recordings yet, record your first!"
 #~ msgstr "녹음 기록이 없습니다. 첫 음성을 녹음하세요!"

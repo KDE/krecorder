@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-11 00:48+0000\n"
+"POT-Creation-Date: 2022-11-23 00:50+0000\n"
 "PO-Revision-Date: 2022-11-10 08:34+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -186,73 +186,101 @@ msgstr "Quant a"
 msgid "Audio Format"
 msgstr "Format de l'àudio"
 
-#: contents/ui/settings/SettingsComponent.qml:64
-#, kde-format
-msgid "Custom"
-msgstr "Personalitzat"
-
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ogg Vorbis"
+msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ogg Opus"
+msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "FLAC"
+msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "MP3"
+msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
-msgid "WAV"
-msgstr "WAV"
+msgid "WAV file format"
+msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:102
-#: contents/ui/settings/SettingsComponent.qml:124
+#: contents/ui/settings/SettingsComponent.qml:65
+#, kde-format
+msgctxt "File format not listed"
+msgid "Other"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
 msgid "Audio Quality"
 msgstr "Qualitat de l'àudio"
 
-#: contents/ui/settings/SettingsComponent.qml:103
+#: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
-msgid "%1"
-msgstr "%1"
+msgid "Lowest"
+msgstr ""
 
-#: contents/ui/settings/SettingsComponent.qml:132
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Low"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Medium"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "High"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:93
+#, kde-format
+msgid "Highest"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Una qualitat de l'àudio més alta també incrementa la mida del fitxer."
 
-#: contents/ui/settings/SettingsComponent.qml:166
+#: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
 msgstr "Avançat"
 
-#: contents/ui/settings/SettingsComponent.qml:171
+#: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Input"
 msgstr "Entrada de l'àudio"
 
-#: contents/ui/settings/SettingsComponent.qml:210
+#: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Audio Codec"
 msgstr "Còdec d'àudio"
 
-#: contents/ui/settings/SettingsComponent.qml:249
+#: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Container Format"
 msgstr "Format del contenidor"
 
-#: contents/ui/settings/SettingsComponent.qml:287
+#: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -274,3 +302,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Custom"
+#~ msgstr "Personalitzat"
+
+#~ msgid "WAV"
+#~ msgstr "WAV"
+
+#~ msgid "%1"
+#~ msgstr "%1"
