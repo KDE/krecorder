@@ -70,22 +70,38 @@ Kirigami.Page {
             to: AudioPlayer.duration
             value: AudioPlayer.position
             
+            Behavior on value {
+                NumberAnimation {
+                    duration: 100
+                    easing.type: Easing.InOutQuad
+                }
+            }
+            
             onMoved: AudioPlayer.setPosition(value)
         }
+        
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
-            spacing: Kirigami.Units.largeSpacing
-            Controls.ToolButton {
+            spacing: Math.round(Kirigami.Units.gridUnit * 1.5)
+
+            // placeholder element for spacing, doesn't do anything
+            Item {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
+            }
+            
+            RoundFlatButton {
+                text: AudioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
                 icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
                 onClicked: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
             }
-            Controls.ToolButton {
+            
+            ToolTipToolButton {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-                visible: AudioPlayer.state !== AudioPlayer.StoppedState
+                enabled: AudioPlayer.state !== AudioPlayer.StoppedState
                 icon.name: "media-playback-stop"
+                text: i18n("Stop")
                 onClicked: AudioPlayer.stop();
             }
         }

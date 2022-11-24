@@ -81,18 +81,11 @@ Kirigami.Page {
             
             Item { Layout.fillWidth: true }
             
-            Controls.ToolButton {
+            ToolTipToolButton {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-                
                 text: (!isStopped && isPaused) ? i18n("Continue") : i18n("Pause")
                 icon.name: (!isStopped && isPaused) ? "media-playback-start" : "media-playback-pause"
-                display: Controls.AbstractButton.IconOnly
-                
-                Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
-                Controls.ToolTip.timeout: 5000
-                Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
-                Controls.ToolTip.text: text
                 
                 onClicked: {
                     if (isPaused) {
@@ -103,59 +96,28 @@ Kirigami.Page {
                 }
             }
             
-            Rectangle {
-                id: button
-                implicitWidth: Kirigami.Units.gridUnit * 3
-                implicitHeight: Kirigami.Units.gridUnit * 3
-                radius: width / 2
-                color: stopButton.pressed ? Qt.darker("red", 1.3) : (stopButton.hovered ? Qt.darker("red", 1.1) : "red")
+            RoundFlatButton {
+                id: stopButton
+                text: i18n("Stop Recording")
                 
-                Controls.AbstractButton {
-                    id: stopButton
-                    anchors.fill: parent
-                    
-                    hoverEnabled: true
-                    text: i18n("Stop Recording")
-                    
-                    Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
-                    Controls.ToolTip.timeout: 5000
-                    Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
-                    Controls.ToolTip.text: text
-                    
-                    onClicked: {
-                        // pop record page off
-                        applicationWindow().pageStack.layers.pop();
-                        
-                        // save recording
-                        recordingName.text = RecordingModel.nextDefaultRecordingName();
-                        saveDialog.open();
-                        AudioRecorder.pause();
-                    }
-                }
+                icon.name: "media-playback-stop"
                 
-                Kirigami.Icon {
-                    anchors.centerIn: parent
-                    isMask: true
-                    source: "media-playback-stop"
-                    Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
-                    Kirigami.Theme.inherit: false
-                    implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                    implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                onClicked: {
+                    // pop record page off
+                    applicationWindow().pageStack.layers.pop();
+                    
+                    // save recording
+                    recordingName.text = RecordingModel.nextDefaultRecordingName();
+                    saveDialog.open();
+                    AudioRecorder.pause();
                 }
             }
-            
-            Controls.ToolButton {
+
+            ToolTipToolButton {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-                
                 text: i18n("Delete")
                 icon.name: "delete"
-                display: Controls.AbstractButton.IconOnly
-                
-                Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
-                Controls.ToolTip.timeout: 5000
-                Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
-                Controls.ToolTip.text: text
                 
                 onClicked: {
                     // pop record page off
