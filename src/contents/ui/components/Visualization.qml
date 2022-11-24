@@ -25,8 +25,14 @@ Item {
     // 1000 works for most audio formats, but some audio formats have higher average volumes
     property int maxVolumeData: 1000
     
-    Component.onCompleted: visualization.prober.maxVolumes = (showBarsFromMiddle ? list.width : width) / reservedBarWidth;
-    onWidthChanged: visualization.prober.maxVolumes = (showBarsFromMiddle ? list.width : width) / reservedBarWidth;
+    Component.onCompleted: {
+        visualization.prober.maxVolumes = (showBarsFromMiddle ? width / 2 : width) / reservedBarWidth;
+        console.log("max bars " + visualization.prober.maxVolumes);
+    }
+    onWidthChanged: {
+        visualization.prober.maxVolumes = (showBarsFromMiddle ? width / 2 : width) / reservedBarWidth;
+        console.log("max bars " + visualization.prober.maxVolumes);
+    }
     
     Connections {
         target: visualization.prober
