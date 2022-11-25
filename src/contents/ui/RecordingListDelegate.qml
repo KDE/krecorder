@@ -43,9 +43,11 @@ ListDelegate {
             
             Controls.Label {
                 Layout.topMargin: Kirigami.Units.smallSpacing
+                Layout.fillWidth: true
                 font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 1.1)
                 font.weight: Font.Medium
                 text: model.fileName
+                wrapMode: Text.Wrap
                 color: (applicationWindow().isWidescreen && applicationWindow().currentRecording && applicationWindow().currentRecording.filePath === model.filePath) ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor 
             }
             
@@ -55,8 +57,11 @@ ListDelegate {
                     color: Kirigami.Theme.disabledTextColor
                     text: model.recordDate
                 }
+                
                 Item { Layout.fillWidth: true }
+                
                 Controls.Label {
+                    visible: !root.editMode // don't show right aligned text when actions are shown
                     color: Kirigami.Theme.disabledTextColor
                     text: model.recordingLength
                 }

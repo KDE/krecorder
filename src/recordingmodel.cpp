@@ -135,7 +135,7 @@ QString RecordingModel::nextDefaultRecordingName()
     // determine valid clip name (ex. clip_0001, clip_0002, etc.)
     
     int num = 1;
-    QString build = QStringLiteral("0001");
+    QString build = QStringLiteral("001");
         
     while (usedNames.contains(DEF_RECORD_PREFIX + QStringLiteral("_") + build)) {
         num++;
