@@ -219,13 +219,6 @@ Kirigami.ScrollablePage {
             
             customFooterActions: [
                 Kirigami.Action {
-                    text: i18nc("@action:button", "Cancel")
-                    iconName: "dialog-cancel"
-                    onTriggered: {
-                        deleteDialog.close();
-                    }
-                },
-                Kirigami.Action {
                     text: i18nc("@action:button", "Delete")
                     iconName: "delete"
                     onTriggered: {
@@ -233,6 +226,13 @@ Kirigami.ScrollablePage {
                             applicationWindow().switchToRecording(null);
                         }
                         RecordingModel.deleteRecording(deleteDialog.toDeleteIndex);
+                        deleteDialog.close();
+                    }
+                },
+                Kirigami.Action {
+                    text: i18nc("@action:button", "Cancel")
+                    iconName: "dialog-cancel"
+                    onTriggered: {
                         deleteDialog.close();
                     }
                 }
