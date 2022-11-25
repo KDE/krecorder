@@ -15,6 +15,7 @@ class Recording : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QString filePath READ filePath WRITE setFilePath NOTIFY propertyChanged)
+    Q_PROPERTY(QString fileExtension READ fileExtension NOTIFY propertyChanged)
     Q_PROPERTY(QString fileName READ fileName WRITE setFileName NOTIFY propertyChanged)
     Q_PROPERTY(QString recordDate READ recordDatePretty NOTIFY propertyChanged)
     Q_PROPERTY(QString recordingLength READ recordingLengthPretty NOTIFY propertyChanged)
@@ -27,6 +28,7 @@ public:
     
     QString filePath() const;
     QString fileName() const;
+    QString fileExtension() const;
     
     QDateTime recordDate() const;
     QString recordDatePretty() const;
@@ -39,6 +41,8 @@ public:
 
     void setRecordDate(const QDateTime &date);
     void setRecordingLength(int recordingLength);
+    
+    Q_INVOKABLE void createCopyOfFile(const QString &path);
 
 private:
     QString m_filePath, m_fileName;

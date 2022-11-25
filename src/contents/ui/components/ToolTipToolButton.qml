@@ -9,9 +9,6 @@ import org.kde.kirigami 2.20 as Kirigami
 import QtQuick.Controls 2.15 as Controls
 
 Controls.ToolButton {
-    implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
-    implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-    
     display: Controls.AbstractButton.IconOnly
     
     Controls.ToolTip.delay: Kirigami.Units.toolTipDelay

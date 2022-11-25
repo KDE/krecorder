@@ -18,19 +18,20 @@ import "components"
 ListDelegate {
     id: root
     
-    property Recording model
+    property Recording recording
     property bool editMode: false
     
     signal contextMenuRequested()
     signal editRequested()
     signal deleteRequested()
+    signal exportRequested()
     
     leftPadding: Kirigami.Units.largeSpacing * 2
     rightPadding: Kirigami.Units.largeSpacing * 2
     topPadding: Kirigami.Units.largeSpacing
     bottomPadding: Kirigami.Units.largeSpacing
     
-    onClicked: applicationWindow().switchToRecording(model)
+    onClicked: applicationWindow().switchToRecording(recording)
     onRightClicked: root.contextMenuRequested()
     
     contentItem: RowLayout {
@@ -46,16 +47,16 @@ ListDelegate {
                 Layout.fillWidth: true
                 font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 1.1)
                 font.weight: Font.Medium
-                text: model.fileName
+                text: recording.fileName
                 wrapMode: Text.Wrap
-                color: (applicationWindow().isWidescreen && applicationWindow().currentRecording && applicationWindow().currentRecording.filePath === model.filePath) ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor 
+                color: (applicationWindow().isWidescreen && applicationWindow().currentRecording && applicationWindow().currentRecording.filePath === recording.filePath) ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor 
             }
             
             RowLayout {
                 Layout.bottomMargin: Kirigami.Units.smallSpacing
                 Controls.Label {
                     color: Kirigami.Theme.disabledTextColor
-                    text: model.recordDate
+                    text: recording.recordDate
                 }
                 
                 Item { Layout.fillWidth: true }
@@ -63,37 +64,33 @@ ListDelegate {
                 Controls.Label {
                     visible: !root.editMode // don't show right aligned text when actions are shown
                     color: Kirigami.Theme.disabledTextColor
-                    text: model.recordingLength
+                    text: recording.recordingLength
                 }
             }
         }
         
-        Controls.ToolButton {
+        ToolTipToolButton {
+            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+            icon.name: "document-save"
+            text: i18n("Export to location")
+            onClicked: root.exportRequested()
+            visible: root.editMode
+        }
+        
+        ToolTipToolButton {
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
             icon.name: "entry-edit"
             text: i18n("Rename")
             onClicked: root.editRequested()
             visible: root.editMode
-            display: Controls.AbstractButton.IconOnly
-            
-            Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
-            Controls.ToolTip.timeout: 5000
-            Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
-            Controls.ToolTip.text: text
         }
         
-        Controls.ToolButton {
+        ToolTipToolButton {
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
             icon.name: "delete"
             text: i18n("Delete")
             onClicked: root.deleteRequested()
             visible: root.editMode
-            display: Controls.AbstractButton.IconOnly
-            
-            Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
-            Controls.ToolTip.timeout: 5000
-            Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
-            Controls.ToolTip.text: text
         }
     }
 }

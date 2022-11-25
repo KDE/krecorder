@@ -52,6 +52,15 @@ QString Recording::fileName() const
     return m_fileName;
 }
 
+QString Recording::fileExtension() const
+{
+    auto split = m_filePath.split(QStringLiteral("."));
+    if (split.length() > 0) {
+        return split[split.length() - 1];
+    }
+    return QString{};
+}
+
 QDateTime Recording::recordDate() const
 {
     return m_recordDate;
@@ -106,4 +115,9 @@ void Recording::setRecordingLength(int recordingLength)
 {
     m_recordingLength = recordingLength;
     Q_EMIT propertyChanged();
+}
+
+void Recording::createCopyOfFile(const QString &path)
+{
+    QFile::copy(m_filePath, path);
 }

@@ -8,6 +8,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
+import QtQuick.Dialogs 1.3
 
 import org.kde.kirigami 2.19 as Kirigami
 
@@ -124,18 +125,43 @@ Kirigami.ScrollablePage {
         }
         
         delegate: RecordingListDelegate {
-            model: recording
+            recording: model.recording
             width: listView.width
             editMode: root.editMode
             showSeparator: index != listView.count - 1
             
             onLongPressed: root.editMode = !root.editMode
-            onEditRequested: root.editRecordingDialog(recording)
-            onDeleteRequested: root.removeRecordingDialog(recording, index)
+            onEditRequested: root.editRecordingDialog(model.recording)
+            onDeleteRequested: root.removeRecordingDialog(model.recording, index)
             onContextMenuRequested: {
-                contextMenu.recording = recording;
+                contextMenu.recording = model.recording;
                 contextMenu.index = index;
                 contextMenu.popup(this)
+            }
+            onExportRequested: saveFileDialog.openForRecording(model.recording)
+        }
+        
+        FileDialog {
+            id: saveFileDialog
+            selectExisting: false
+            selectFolder: false
+            selectMultiple: false
+            folder: shortcuts.music
+                
+            property Recording recording
+            
+            function openForRecording(recording) {
+                title = i18n("Select a location to save recording %1", recording.fileName);
+                defaultSuffix = recording.fileExtension;
+                nameFilters = [`${recording.fileExtension} files (*.${recording.fileExtension})`];
+                saveFileDialog.recording = recording;
+                open();
+            }
+            
+            onAccepted: {
+                let prefixLessUrl = decodeURIComponent(fileUrl.toString().substring("file://".length));
+                recording.createCopyOfFile(prefixLessUrl);
+                applicationWindow().showPassiveNotification(i18n("Saved recording to %1", prefixLessUrl), "short");
             }
         }
         
@@ -146,6 +172,12 @@ Kirigami.ScrollablePage {
             
             property Recording recording
             property int index
+    
+            Controls.MenuItem {
+                text: i18n("Export to location")
+                icon.name: "document-save"
+                onTriggered: saveFileDialog.openForRecording(contextMenu.recording)
+            }
 
             Controls.MenuItem {
                 text: i18n("Edit")

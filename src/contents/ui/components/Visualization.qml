@@ -27,11 +27,9 @@ Item {
     
     Component.onCompleted: {
         visualization.prober.maxVolumes = (showBarsFromMiddle ? width / 2 : width) / reservedBarWidth;
-        console.log("max bars " + visualization.prober.maxVolumes);
     }
     onWidthChanged: {
         visualization.prober.maxVolumes = (showBarsFromMiddle ? width / 2 : width) / reservedBarWidth;
-        console.log("max bars " + visualization.prober.maxVolumes);
     }
     
     Connections {
