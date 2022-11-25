@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:50+0000\n"
+"POT-Creation-Date: 2022-11-25 00:49+0000\n"
 "PO-Revision-Date: 2022-11-11 18:05+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -41,7 +41,7 @@ msgstr "Impostazioni"
 msgid "Play a recording, or record a new one"
 msgstr "Riproduci una registrazione, o registrane una nuova"
 
-#: contents/ui/DefaultPage.qml:44
+#: contents/ui/DefaultPage.qml:39
 #, kde-format
 msgid "Record a new recording"
 msgstr "Registra un'altra registrazione"
@@ -51,13 +51,40 @@ msgstr "Registra un'altra registrazione"
 msgid "Recorder"
 msgstr "Registratore"
 
+#: contents/ui/PlayerPage.qml:20
+#, fuzzy, kde-format
+#| msgid "Play"
+msgid "Player"
+msgstr "Riproduci"
+
+#: contents/ui/PlayerPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Recorder"
+msgid "Recorded on %1"
+msgstr "Registratore"
+
+#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#, kde-format
+msgid "Pause"
+msgstr "Pausa"
+
+#: contents/ui/PlayerPage.qml:86
+#, kde-format
+msgid "Play"
+msgstr "Riproduci"
+
+#: contents/ui/PlayerPage.qml:96
+#, kde-format
+msgid "Stop"
+msgstr "Ferma"
+
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
 msgstr "Rinomina"
 
 #: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Elimina"
@@ -113,7 +140,7 @@ msgstr "Elimina"
 msgid "Rename %1"
 msgstr "Rinomina %1"
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Nome:"
@@ -128,42 +155,37 @@ msgstr "Posizione:"
 msgid "Record Audio"
 msgstr "Registra audio"
 
-#: contents/ui/RecordPage.qml:88
+#: contents/ui/RecordPage.qml:87
 #, kde-format
 msgid "Continue"
 msgstr "Continua"
 
-#: contents/ui/RecordPage.qml:88
-#, kde-format
-msgid "Pause"
-msgstr "Pausa"
-
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:101
 #, kde-format
 msgid "Stop Recording"
 msgstr "Ferma la registrazione"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save recording"
 msgstr "Salva registrazione"
 
-#: contents/ui/RecordPage.qml:181
+#: contents/ui/RecordPage.qml:143
 #, kde-format
 msgid "Discard"
 msgstr "Scarta"
 
-#: contents/ui/RecordPage.qml:189
+#: contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Save"
 msgstr "Salva"
 
-#: contents/ui/RecordPage.qml:208
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nome (facoltativo)"
 
-#: contents/ui/RecordPage.qml:212
+#: contents/ui/RecordPage.qml:174
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Cartella di memorizzazione:"
@@ -318,9 +340,6 @@ msgstr "Jonah Brüchert"
 #~ msgid "Audio Input:"
 #~ msgstr "Ingresso audio:"
 
-#~ msgid "Stop"
-#~ msgstr "Ferma"
-
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Nuova registrazione</b>"
 
@@ -339,6 +358,3 @@ msgstr "Jonah Brüchert"
 #~ msgctxt "@action:button"
 #~ msgid "Done"
 #~ msgstr "Fatto"
-
-#~ msgid "Play"
-#~ msgstr "Riproduci"

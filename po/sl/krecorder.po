@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:50+0000\n"
-"PO-Revision-Date: 2022-11-10 12:32+0100\n"
+"POT-Creation-Date: 2022-11-25 00:49+0000\n"
+"PO-Revision-Date: 2022-11-24 07:35+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.2\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
@@ -42,7 +42,7 @@ msgstr "Nastavitve"
 msgid "Play a recording, or record a new one"
 msgstr "Predvajaj posnetek ali posnemi novega"
 
-#: contents/ui/DefaultPage.qml:44
+#: contents/ui/DefaultPage.qml:39
 #, kde-format
 msgid "Record a new recording"
 msgstr "Shrani novi posnetek"
@@ -52,13 +52,40 @@ msgstr "Shrani novi posnetek"
 msgid "Recorder"
 msgstr "Recorder"
 
+#: contents/ui/PlayerPage.qml:20
+#, fuzzy, kde-format
+#| msgid "Play"
+msgid "Player"
+msgstr "Predvajaj"
+
+#: contents/ui/PlayerPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Recorder"
+msgid "Recorded on %1"
+msgstr "Recorder"
+
+#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#, kde-format
+msgid "Pause"
+msgstr "Premor"
+
+#: contents/ui/PlayerPage.qml:86
+#, kde-format
+msgid "Play"
+msgstr "Predvajaj"
+
+#: contents/ui/PlayerPage.qml:96
+#, kde-format
+msgid "Stop"
+msgstr "Ustavi"
+
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
 msgstr "Preimenuj"
 
 #: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Zbriši"
@@ -114,7 +141,7 @@ msgstr "Zbriši"
 msgid "Rename %1"
 msgstr "Preimenuj %1"
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Ime:"
@@ -129,42 +156,37 @@ msgstr "Kraj:"
 msgid "Record Audio"
 msgstr "Posnemi zvok"
 
-#: contents/ui/RecordPage.qml:88
+#: contents/ui/RecordPage.qml:87
 #, kde-format
 msgid "Continue"
 msgstr "Nadaljuj"
 
-#: contents/ui/RecordPage.qml:88
-#, kde-format
-msgid "Pause"
-msgstr "Premor"
-
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:101
 #, kde-format
 msgid "Stop Recording"
 msgstr "Ustavi snemanje"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save recording"
 msgstr "Shrani posnetek"
 
-#: contents/ui/RecordPage.qml:181
+#: contents/ui/RecordPage.qml:143
 #, kde-format
 msgid "Discard"
 msgstr "Zavrzi"
 
-#: contents/ui/RecordPage.qml:189
+#: contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Save"
 msgstr "Shrani"
 
-#: contents/ui/RecordPage.qml:208
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Name (optional)"
 msgstr "Ime (neobvezno)"
 
-#: contents/ui/RecordPage.qml:212
+#: contents/ui/RecordPage.qml:174
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Mapa shranjevanja:"
@@ -185,29 +207,25 @@ msgid "Audio Format"
 msgstr "Oblika zvoka"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
@@ -215,13 +233,13 @@ msgstr "MP3"
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "format datoteke WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Ostalo"
 
 #: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
@@ -231,27 +249,27 @@ msgstr "Kakovost zvoka"
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Najnižja"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Nizka"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Srednja"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Visoka"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Najvišja"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
@@ -317,9 +335,6 @@ msgstr "Jonah Brüchert"
 #~ msgid "Audio Input:"
 #~ msgstr "Vhod v avdio:"
 
-#~ msgid "Stop"
-#~ msgstr "Ustavi"
-
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Novo snemanje</b>"
 
@@ -338,6 +353,3 @@ msgstr "Jonah Brüchert"
 #~ msgctxt "@action:button"
 #~ msgid "Done"
 #~ msgstr "Opravljeno"
-
-#~ msgid "Play"
-#~ msgstr "Predvajaj"

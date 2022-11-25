@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:50+0000\n"
+"POT-Creation-Date: 2022-11-25 00:49+0000\n"
 "PO-Revision-Date: 2021-12-28 17:35+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -43,7 +43,7 @@ msgstr "Параметры"
 msgid "Play a recording, or record a new one"
 msgstr "Щёлкните по записи для её воспроизведения или создайте новую запись"
 
-#: contents/ui/DefaultPage.qml:44
+#: contents/ui/DefaultPage.qml:39
 #, fuzzy, kde-format
 #| msgid "Save recording"
 msgid "Record a new recording"
@@ -54,13 +54,39 @@ msgstr "Сохранение записи"
 msgid "Recorder"
 msgstr "Recorder"
 
+#: contents/ui/PlayerPage.qml:20
+#, kde-format
+msgid "Player"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Recorder"
+msgid "Recorded on %1"
+msgstr "Recorder"
+
+#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#, kde-format
+msgid "Pause"
+msgstr "Приостановить"
+
+#: contents/ui/PlayerPage.qml:86
+#, kde-format
+msgid "Play"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:96
+#, kde-format
+msgid "Stop"
+msgstr "Остановить"
+
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Удалить"
@@ -116,7 +142,7 @@ msgstr "Удалить"
 msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Название:"
@@ -131,43 +157,38 @@ msgstr "Расположение:"
 msgid "Record Audio"
 msgstr "Запись звука"
 
-#: contents/ui/RecordPage.qml:88
+#: contents/ui/RecordPage.qml:87
 #, kde-format
 msgid "Continue"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:88
-#, kde-format
-msgid "Pause"
-msgstr "Приостановить"
-
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:101
 #, fuzzy, kde-format
 #| msgid "Recordings"
 msgid "Stop Recording"
 msgstr "Записи"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save recording"
 msgstr "Сохранение записи"
 
-#: contents/ui/RecordPage.qml:181
+#: contents/ui/RecordPage.qml:143
 #, kde-format
 msgid "Discard"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:189
+#: contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Save"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:208
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Name (optional)"
 msgstr "Название (необязательно)"
 
-#: contents/ui/RecordPage.qml:212
+#: contents/ui/RecordPage.qml:174
 #, kde-format
 msgid "Storage Folder:"
 msgstr ""
@@ -319,9 +340,6 @@ msgstr "Jonah Brüchert"
 
 #~ msgid "Audio Input:"
 #~ msgstr "Звуковой вход:"
-
-#~ msgid "Stop"
-#~ msgstr "Остановить"
 
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Новая запись</b>"

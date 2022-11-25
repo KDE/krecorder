@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:50+0000\n"
+"POT-Creation-Date: 2022-11-25 00:49+0000\n"
 "PO-Revision-Date: 2022-11-10 18:49-0400\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -41,7 +41,7 @@ msgstr "Instellingen"
 msgid "Play a recording, or record a new one"
 msgstr "Een opname afspelen of een nieuwe opnemen"
 
-#: contents/ui/DefaultPage.qml:44
+#: contents/ui/DefaultPage.qml:39
 #, kde-format
 msgid "Record a new recording"
 msgstr "Een nieuwe opname opnemen"
@@ -51,13 +51,40 @@ msgstr "Een nieuwe opname opnemen"
 msgid "Recorder"
 msgstr "Recorder"
 
+#: contents/ui/PlayerPage.qml:20
+#, fuzzy, kde-format
+#| msgid "Play"
+msgid "Player"
+msgstr "Afspelen"
+
+#: contents/ui/PlayerPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Recorder"
+msgid "Recorded on %1"
+msgstr "Recorder"
+
+#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#, kde-format
+msgid "Pause"
+msgstr "Pauzeren"
+
+#: contents/ui/PlayerPage.qml:86
+#, kde-format
+msgid "Play"
+msgstr "Afspelen"
+
+#: contents/ui/PlayerPage.qml:96
+#, kde-format
+msgid "Stop"
+msgstr "Stoppen"
+
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
 msgstr "Hernoemen"
 
 #: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Verwijderen"
@@ -113,7 +140,7 @@ msgstr "Verwijderen"
 msgid "Rename %1"
 msgstr "%1 hernoemen"
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Naam:"
@@ -128,42 +155,37 @@ msgstr "Locatie:"
 msgid "Record Audio"
 msgstr "Geluid opnemen"
 
-#: contents/ui/RecordPage.qml:88
+#: contents/ui/RecordPage.qml:87
 #, kde-format
 msgid "Continue"
 msgstr "Doorgaan"
 
-#: contents/ui/RecordPage.qml:88
-#, kde-format
-msgid "Pause"
-msgstr "Pauzeren"
-
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:101
 #, kde-format
 msgid "Stop Recording"
 msgstr "Opnemen stoppen"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save recording"
 msgstr "Opname opslaan"
 
-#: contents/ui/RecordPage.qml:181
+#: contents/ui/RecordPage.qml:143
 #, kde-format
 msgid "Discard"
 msgstr "Verwerpen"
 
-#: contents/ui/RecordPage.qml:189
+#: contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Save"
 msgstr "Opslaan"
 
-#: contents/ui/RecordPage.qml:208
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Name (optional)"
 msgstr "Naam (optioneel)"
 
-#: contents/ui/RecordPage.qml:212
+#: contents/ui/RecordPage.qml:174
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Opslagmap:"
@@ -318,9 +340,6 @@ msgstr "Jonah Brüchert"
 #~ msgid "Audio Input:"
 #~ msgstr "Audio-invoer:"
 
-#~ msgid "Stop"
-#~ msgstr "Stoppen"
-
 #~ msgid "<b>New Recording</b>"
 #~ msgstr "<b>Nieuwe opname</b>"
 
@@ -339,6 +358,3 @@ msgstr "Jonah Brüchert"
 #~ msgctxt "@action:button"
 #~ msgid "Done"
 #~ msgstr "Gereed"
-
-#~ msgid "Play"
-#~ msgstr "Afspelen"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:50+0000\n"
+"POT-Creation-Date: 2022-11-25 00:49+0000\n"
 "PO-Revision-Date: 2021-01-20 21:46-0800\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -41,7 +41,7 @@ msgstr "ਸੈਟਿੰਗਾਂ"
 msgid "Play a recording, or record a new one"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:44
+#: contents/ui/DefaultPage.qml:39
 #, fuzzy, kde-format
 #| msgid "Save recording"
 msgid "Record a new recording"
@@ -52,13 +52,40 @@ msgstr "ਰਿਕਾਰਡਿੰਗ ਸੰਭਾਲੋ"
 msgid "Recorder"
 msgstr "ਰਿਕਾਰਡਰ"
 
+#: contents/ui/PlayerPage.qml:20
+#, fuzzy, kde-format
+#| msgid "Play"
+msgid "Player"
+msgstr "ਚਲਾਓ"
+
+#: contents/ui/PlayerPage.qml:60
+#, fuzzy, kde-format
+#| msgid "Recorder"
+msgid "Recorded on %1"
+msgstr "ਰਿਕਾਰਡਰ"
+
+#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#, kde-format
+msgid "Pause"
+msgstr "ਵਿਰਾਮ"
+
+#: contents/ui/PlayerPage.qml:86
+#, kde-format
+msgid "Play"
+msgstr "ਚਲਾਓ"
+
+#: contents/ui/PlayerPage.qml:96
+#, kde-format
+msgid "Stop"
+msgstr "ਰੋਕੋ"
+
 #: contents/ui/RecordingListDelegate.qml:69
 #, kde-format
 msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:151
+#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Delete"
@@ -117,7 +144,7 @@ msgstr "ਹਟਾਓ"
 msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:207
+#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
 #, fuzzy, kde-format
 #| msgid "Name"
 msgid "Name:"
@@ -134,45 +161,40 @@ msgstr "ਟਿਕਾਣਾ"
 msgid "Record Audio"
 msgstr "ਆਡੀਓ ਰਿਕਾਰਡ ਕਰੋ"
 
-#: contents/ui/RecordPage.qml:88
+#: contents/ui/RecordPage.qml:87
 #, kde-format
 msgid "Continue"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:88
-#, kde-format
-msgid "Pause"
-msgstr "ਵਿਰਾਮ"
-
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:101
 #, fuzzy, kde-format
 #| msgid "Recordings"
 msgid "Stop Recording"
 msgstr "ਰਿਕਾਰਡਿੰਗਾਂ"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save recording"
 msgstr "ਰਿਕਾਰਡਿੰਗ ਸੰਭਾਲੋ"
 
-#: contents/ui/RecordPage.qml:181
+#: contents/ui/RecordPage.qml:143
 #, kde-format
 msgid "Discard"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:189
+#: contents/ui/RecordPage.qml:151
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "ਸੰਭਾਲੋ"
 
-#: contents/ui/RecordPage.qml:208
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Name (optional)"
 msgstr "ਨਾਂ (ਚੋਣਵਾਂ)"
 
-#: contents/ui/RecordPage.qml:212
+#: contents/ui/RecordPage.qml:174
 #, kde-format
 msgid "Storage Folder:"
 msgstr ""
@@ -328,9 +350,6 @@ msgstr ""
 #~ msgid "Audio Input:"
 #~ msgstr "ਆਡੀਓ ਇਨਪੁਟ"
 
-#~ msgid "Stop"
-#~ msgstr "ਰੋਕੋ"
-
 #, fuzzy
 #~| msgid "Record Audio"
 #~ msgid "<b>New Recording</b>"
@@ -353,6 +372,3 @@ msgstr ""
 #~ msgctxt "@action:button"
 #~ msgid "Done"
 #~ msgstr "ਮੁਕੰਮਲ"
-
-#~ msgid "Play"
-#~ msgstr "ਚਲਾਓ"
