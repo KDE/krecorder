@@ -20,7 +20,7 @@ Control {
     bottomPadding: Kirigami.Units.largeSpacing
     rightPadding: Kirigami.Units.largeSpacing
     
-    hoverEnabled: true
+    hoverEnabled: !Kirigami.Settings.tabletMode
     background: Rectangle {
         color: Qt.rgba(Kirigami.Theme.textColor.r, Kirigami.Theme.textColor.g, Kirigami.Theme.textColor.b, tapHandler.pressed ? 0.2 : root.hovered ? 0.1 : 0)
         
