@@ -105,7 +105,7 @@ Kirigami.Page {
         RowLayout {
             id: sliderBar
             Layout.alignment: Qt.AlignHCenter
-            spacing: Kirigami.Units.smallSpacing
+            spacing: Kirigami.Units.largeSpacing
             
             Controls.Label {
                 id: elapsedLabel
