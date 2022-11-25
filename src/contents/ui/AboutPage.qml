@@ -6,10 +6,11 @@
 
 import QtQuick 2.15
 import org.kde.kirigami 2.11 as Kirigami
+import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 
 import KRecorder 1.0
 
-Kirigami.AboutPage {
+MobileForm.AboutPage {
     id: aboutPage
     aboutData: AboutType.aboutData
 }
