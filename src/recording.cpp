@@ -69,10 +69,9 @@ int Recording::recordingLength() const
 
 QString Recording::recordingLengthPretty() const
 {
-    const int hours = m_recordingLength / 60 / 60;
-    const int min = m_recordingLength / 60 - hours * 60;
-    const int sec = m_recordingLength - min * 60 - hours * 60 * 60;
-    return QStringLiteral("%1:%2:%3").arg(hours, 2, 10, QLatin1Char('0')).arg(min, 2, 10, QLatin1Char('0')).arg(sec, 2, 10, QLatin1Char('0'));
+    const int min = m_recordingLength / 60;
+    const int sec = m_recordingLength - min * 60;
+    return QStringLiteral("%1:%2").arg(min).arg(sec, 2, 10, QLatin1Char('0'));
 }
 
 void Recording::setFilePath(const QString &filePath)

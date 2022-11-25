@@ -17,4 +17,5 @@ public:
 
     Q_INVOKABLE static QString formatDateTime(const QString &time);
     Q_INVOKABLE static QString formatTime(int time);
+    Q_INVOKABLE static QString formatDuration(int duration);
 };

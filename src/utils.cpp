@@ -24,3 +24,12 @@ QString Utils::formatTime(int time)
 {
     return QTime::fromMSecsSinceStartOfDay(time).toString();
 }
+
+QString Utils::formatDuration(int duration)
+{
+    // assume duration is in milliseconds
+    duration /= 1000;
+    const int min = duration / 60;
+    const int sec = duration - min * 60;
+    return QStringLiteral("%1:%2").arg(min).arg(sec, 2, 10, QLatin1Char('0'));
+}

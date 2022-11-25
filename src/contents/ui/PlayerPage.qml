@@ -17,7 +17,7 @@ Kirigami.Page {
     
     property Recording recording
     
-    title: recording.fileName
+    title: i18n("Player")
     
     onBackRequested: AudioPlayer.stop()
     
@@ -42,48 +42,38 @@ Kirigami.Page {
         transform: Translate { y: yTranslate }
         anchors.fill: parent
         
-        Controls.Label {
-            id: timeText
-            Layout.alignment: Qt.AlignHCenter
-            text: AudioPlayer.state === AudioPlayer.StoppedState ? "00:00:00" : Utils.formatTime(AudioPlayer.position)
-            opacity: 0.7
-            font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 3)
-            font.weight: Font.DemiBold
-        }           
-        
-        Visualization {
+        ColumnLayout {
+            Layout.alignment: Qt.AlignTop
+            spacing: Kirigami.Units.largeSpacing
             Layout.fillWidth: true
             
-            prober: AudioPlayer.prober
-            showBarsFromMiddle: false
-            showLine: false
-            height: Kirigami.Units.gridUnit * 15
-            maxBarHeight: Kirigami.Units.gridUnit * 5 * 2
-            animationIndex: AudioPlayer.prober.animationIndex
-        
-            volumes: AudioPlayer.prober.volumesList
-        }
-        
-        Controls.Slider {
-            Layout.alignment: Qt.AlignHCenter
-            from: 0
-            to: AudioPlayer.duration
-            value: AudioPlayer.position
-            
-            Behavior on value {
-                NumberAnimation {
-                    duration: 100
-                    easing.type: Easing.InOutQuad
-                }
+            Controls.Label {
+                Layout.fillWidth: true
+                text: recording.fileName
+                font.weight: Font.DemiBold
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.Wrap
             }
             
-            onMoved: AudioPlayer.setPosition(value)
+            Controls.Label {
+                Layout.fillWidth: true
+                text: i18n("Recorded on %1", recording.recordDate)
+                opacity: 0.7
+                font.weight: Font.DemiBold
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.Wrap
+            }           
         }
         
         RowLayout {
-            Layout.alignment: Qt.AlignHCenter
+            Layout.fillHeight: true
+            Layout.fillWidth: true
             spacing: Math.round(Kirigami.Units.gridUnit * 1.5)
 
+            Item {
+                Layout.fillWidth: true
+            }
+            
             // placeholder element for spacing, doesn't do anything
             Item {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
@@ -91,6 +81,8 @@ Kirigami.Page {
             }
             
             RoundFlatButton {
+                implicitWidth: Kirigami.Units.gridUnit * 5
+                implicitHeight: Kirigami.Units.gridUnit * 5
                 text: AudioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
                 icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
                 onClicked: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
@@ -99,10 +91,51 @@ Kirigami.Page {
             ToolTipToolButton {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-                enabled: AudioPlayer.state !== AudioPlayer.StoppedState
+                opacity: AudioPlayer.state !== AudioPlayer.StoppedState ? 1 : 0
                 icon.name: "media-playback-stop"
                 text: i18n("Stop")
                 onClicked: AudioPlayer.stop();
+            }
+            
+            Item {
+                Layout.fillWidth: true
+            }
+        }
+        
+        RowLayout {
+            id: sliderBar
+            Layout.alignment: Qt.AlignHCenter
+            spacing: Kirigami.Units.smallSpacing
+            
+            Controls.Label {
+                id: elapsedLabel
+                Layout.alignment: Qt.AlignVCenter
+                text: AudioPlayer.state === AudioPlayer.StoppedState ? "0:00" : Utils.formatDuration(AudioPlayer.position)
+                color: Kirigami.Theme.disabledTextColor
+            }
+            
+            Controls.Slider {
+                Layout.alignment: Qt.AlignVCenter
+                implicitWidth: Math.min(root.width - Kirigami.Units.largeSpacing * 2 - elapsedLabel.width - durationLabel.width, root.width * 0.6)
+                from: 0
+                to: AudioPlayer.duration
+                value: AudioPlayer.position
+                
+                Behavior on value {
+                    NumberAnimation {
+                        duration: 100
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+                
+                onMoved: AudioPlayer.setPosition(value)
+            }
+            
+            Controls.Label {
+                id: durationLabel
+                Layout.alignment: Qt.AlignVCenter
+                text: recording.recordingLength
+                color: Kirigami.Theme.disabledTextColor
             }
         }
     }
