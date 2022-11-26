@@ -74,7 +74,7 @@ Kirigami.ScrollablePage {
         model: RecordingModel
         
         // show animation
-        property int yTranslate: 0
+        property real yTranslate: 0
         transform: Translate { y: listView.yTranslate }
         NumberAnimation on opacity {
             from: 0

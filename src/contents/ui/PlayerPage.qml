@@ -21,7 +21,7 @@ Kirigami.Page {
     
     onBackRequested: AudioPlayer.stop()
     
-    property int yTranslate: 0
+    property real yTranslate: 0
     property int mainOpacity: 0
     
     actions.contextualActions: [
