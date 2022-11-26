@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-25 00:49+0000\n"
-"PO-Revision-Date: 2022-11-23 07:18+0200\n"
+"POT-Creation-Date: 2022-11-26 00:48+0000\n"
+"PO-Revision-Date: 2022-11-25 09:33+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/RecordingListPage.qml:48
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -55,16 +55,14 @@ msgid "Recorder"
 msgstr "Записувач"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
-msgstr "Відтворити"
+msgstr "Програвач"
 
 #: contents/ui/PlayerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Записувач"
+msgstr "Записано на %1"
 
 #: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
 #, kde-format
@@ -81,43 +79,60 @@ msgstr "Відтворити"
 msgid "Stop"
 msgstr "Зупинити"
 
-#: contents/ui/RecordingListDelegate.qml:69
+#: contents/ui/RecordingListDelegate.qml:75
+#: contents/ui/RecordingListPage.qml:177
+#, kde-format
+msgid "Export to location"
+msgstr ""
+
+#: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
 msgstr "Перейменувати"
 
-#: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
+#: contents/ui/RecordingListDelegate.qml:91
+#: contents/ui/RecordingListPage.qml:192 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/ui/RecordingListPage.qml:20
+#: contents/ui/RecordingListPage.qml:21
 #, kde-format
 msgid "Recordings"
 msgstr "Записи"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:40 contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgid "Edit"
 msgstr "Змінити"
 
-#: contents/ui/RecordingListPage.qml:53
+#: contents/ui/RecordingListPage.qml:54
 #, kde-format
 msgid "Record"
 msgstr "Записати"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:116
 #, kde-format
 msgid "No recordings"
 msgstr "Немає записів"
 
-#: contents/ui/RecordingListPage.qml:185
+#: contents/ui/RecordingListPage.qml:154
+#, kde-format
+msgid "Select a location to save recording %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Saved recording to %1"
+msgstr "Збереження запису"
+
+#: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgid "Delete %1"
 msgstr "Вилучити %1"
 
-#: contents/ui/RecordingListPage.qml:186
+#: contents/ui/RecordingListPage.qml:218
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -125,29 +140,29 @@ msgid ""
 msgstr ""
 "Ви справді хочете вилучити запис %1?<br/>Запис буде <b>назавжди втрачено</b>!"
 
-#: contents/ui/RecordingListPage.qml:190
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: contents/ui/RecordingListPage.qml:197
+#: contents/ui/RecordingListPage.qml:222
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:233
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: contents/ui/RecordingListPage.qml:245
 #, kde-format
 msgid "Rename %1"
 msgstr "Перейменувати %1"
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
+#: contents/ui/RecordingListPage.qml:260 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Назва:"
 
-#: contents/ui/RecordingListPage.qml:234
+#: contents/ui/RecordingListPage.qml:266
 #, kde-format
 msgid "Location:"
 msgstr "Місце:"

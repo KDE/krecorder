@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-25 00:49+0000\n"
-"PO-Revision-Date: 2022-11-24 02:23+0100\n"
+"POT-Creation-Date: 2022-11-26 00:48+0000\n"
+"PO-Revision-Date: 2022-11-26 00:22+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -30,7 +30,7 @@ msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/RecordingListPage.qml:48
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -54,16 +54,14 @@ msgid "Recorder"
 msgstr "Grabadora"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
-msgstr "Reproducir"
+msgstr "Reproductor"
 
 #: contents/ui/PlayerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Grabadora"
+msgstr "Grabado el %1"
 
 #: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
 #, kde-format
@@ -80,43 +78,60 @@ msgstr "Reproducir"
 msgid "Stop"
 msgstr "Detener"
 
-#: contents/ui/RecordingListDelegate.qml:69
+#: contents/ui/RecordingListDelegate.qml:75
+#: contents/ui/RecordingListPage.qml:177
+#, kde-format
+msgid "Export to location"
+msgstr ""
+
+#: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
 msgstr "Cambiar nombre"
 
-#: contents/ui/RecordingListDelegate.qml:83
-#: contents/ui/RecordingListPage.qml:160 contents/ui/RecordPage.qml:119
+#: contents/ui/RecordingListDelegate.qml:91
+#: contents/ui/RecordingListPage.qml:192 contents/ui/RecordPage.qml:119
 #, kde-format
 msgid "Delete"
 msgstr "Borrar"
 
-#: contents/ui/RecordingListPage.qml:20
+#: contents/ui/RecordingListPage.qml:21
 #, kde-format
 msgid "Recordings"
 msgstr "Grabaciones"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:40 contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
 
-#: contents/ui/RecordingListPage.qml:53
+#: contents/ui/RecordingListPage.qml:54
 #, kde-format
 msgid "Record"
 msgstr "Grabar"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:116
 #, kde-format
 msgid "No recordings"
 msgstr "No hay grabaciones"
 
-#: contents/ui/RecordingListPage.qml:185
+#: contents/ui/RecordingListPage.qml:154
+#, kde-format
+msgid "Select a location to save recording %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Saved recording to %1"
+msgstr "Guardar grabación"
+
+#: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgid "Delete %1"
 msgstr "Borrar %1"
 
-#: contents/ui/RecordingListPage.qml:186
+#: contents/ui/RecordingListPage.qml:218
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -125,29 +140,29 @@ msgstr ""
 "¿Seguro que quiere borrar la grabación %1?<br/>Se lo hace, se <b>perderá "
 "permanentemente</b>."
 
-#: contents/ui/RecordingListPage.qml:190
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: contents/ui/RecordingListPage.qml:197
+#: contents/ui/RecordingListPage.qml:222
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Borrar"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:233
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: contents/ui/RecordingListPage.qml:245
 #, kde-format
 msgid "Rename %1"
 msgstr "Cambiar nombre de %1"
 
-#: contents/ui/RecordingListPage.qml:228 contents/ui/RecordPage.qml:169
+#: contents/ui/RecordingListPage.qml:260 contents/ui/RecordPage.qml:169
 #, kde-format
 msgid "Name:"
 msgstr "Nombre:"
 
-#: contents/ui/RecordingListPage.qml:234
+#: contents/ui/RecordingListPage.qml:266
 #, kde-format
 msgid "Location:"
 msgstr "Ubicación:"
