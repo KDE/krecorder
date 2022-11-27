@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-25 19:19+0300\n"
+"PO-Revision-Date: 2022-11-26 18:51+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -80,7 +80,7 @@ msgstr "Durdur"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Konuma dışa aktar"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -116,13 +116,12 @@ msgstr "Kayıt yok"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "%1 kaydını kaydetmek için bir yer seç"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Kaydı yaz"
+msgstr "Kayıt, %1 konumuna kaydedildi"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format

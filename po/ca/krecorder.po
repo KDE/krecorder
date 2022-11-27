@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-25 13:44+0100\n"
+"PO-Revision-Date: 2022-11-26 13:26+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -83,7 +83,7 @@ msgstr "Atura"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Exporta a una ubicació"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -119,13 +119,12 @@ msgstr "Sense enregistraments"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Seleccioneu una ubicació a on desar l'enregistrament %1"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Desa l'enregistrament"
+msgstr "Enregistrament desat a %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format

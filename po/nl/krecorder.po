@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-25 14:55+0100\n"
+"PO-Revision-Date: 2022-11-26 17:41+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -80,7 +80,7 @@ msgstr "Stoppen"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Naar locatie exporteren"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -116,13 +116,12 @@ msgstr "Geen opnamen"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Een locatie selecteren om opname %1 op te slaan"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Opname opslaan"
+msgstr "Opname opgeslagen naar %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format

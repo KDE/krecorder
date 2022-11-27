@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-24 09:37+0400\n"
+"PO-Revision-Date: 2022-11-26 11:19+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -55,13 +55,12 @@ msgstr "المسجل"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "مشغل الوسائط"
 
 #: contents/ui/PlayerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "المسجل"
+msgstr "يسجل في %1"
 
 #: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
 #, kde-format
@@ -71,7 +70,7 @@ msgstr "ألبث"
 #: contents/ui/PlayerPage.qml:86
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "شغّل"
 
 #: contents/ui/PlayerPage.qml:96
 #, kde-format
@@ -82,7 +81,7 @@ msgstr "أوقف"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "صدّره إلى موقع"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -118,13 +117,12 @@ msgstr "لا يوجد تسجيلات"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "اختر موقع لتحفظ التسجيل %1"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "احفظ التسجيل"
+msgstr "احفظ التسجيل إلى %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format

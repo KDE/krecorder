@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-23 12:27+0100\n"
+"PO-Revision-Date: 2022-11-26 13:26+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -57,13 +57,12 @@ msgstr "Enregistrador"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Reproductor"
 
 #: contents/ui/PlayerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Enregistrador"
+msgstr "Enregistrat el %1"
 
 #: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
 #, kde-format
@@ -73,18 +72,18 @@ msgstr "Pausa"
 #: contents/ui/PlayerPage.qml:86
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Reproduïx"
 
 #: contents/ui/PlayerPage.qml:96
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Para"
 
 #: contents/ui/RecordingListDelegate.qml:75
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Exporta a una ubicació"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -120,13 +119,12 @@ msgstr "Sense enregistraments"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Seleccioneu una ubicació a on s'ha de guardar la gravació %1"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Guarda la gravació"
+msgstr "Gravació guardat a %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format

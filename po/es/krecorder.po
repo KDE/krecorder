@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-26 00:22+0100\n"
+"PO-Revision-Date: 2022-11-26 13:21+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -82,7 +82,7 @@ msgstr "Detener"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Exportar a ubicación"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -118,13 +118,12 @@ msgstr "No hay grabaciones"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Seleccione una ubicación para guardar la grabación %1"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Guardar grabación"
+msgstr "Grabación guardada en %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format
