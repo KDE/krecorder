@@ -59,6 +59,7 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     WindowSystem
 )
+find_package(KF5KirigamiAddons 0.6 REQUIRED)
 
 add_subdirectory(src)
 
