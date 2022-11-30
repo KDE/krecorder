@@ -10,3 +10,4 @@ Dependencies:
     'frameworks/kirigami': '@stable'
     'frameworks/kcoreaddons': '@stable'
     'frameworks/kwindowsystem': '@stable'
+    'libraries/kirigami-addons': '@latest'
