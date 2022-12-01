@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-11 18:05+0100\n"
+"PO-Revision-Date: 2022-11-27 08:12+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -52,16 +52,14 @@ msgid "Recorder"
 msgstr "Registratore"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
-msgstr "Riproduci"
+msgstr "Lettore"
 
 #: contents/ui/PlayerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Registratore"
+msgstr "Registrata su %1"
 
 #: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
 #, kde-format
@@ -82,7 +80,7 @@ msgstr "Ferma"
 #: contents/ui/RecordingListPage.qml:177
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Esporta alla posizione"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -118,13 +116,12 @@ msgstr "Nessuna registrazione"
 #: contents/ui/RecordingListPage.qml:154
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Seleziona una posizione per salvare la registrazione %1"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Salva registrazione"
+msgstr "Registrazione salvata in %1"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format
@@ -223,29 +220,25 @@ msgid "Audio Format"
 msgstr "Formato audio"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
@@ -253,13 +246,13 @@ msgstr "MP3"
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "Formato di file WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Altro"
 
 #: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
@@ -269,27 +262,27 @@ msgstr "Qualità audio"
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Minima"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Bassa"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Media"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Massima"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
