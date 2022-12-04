@@ -33,10 +33,6 @@ Kirigami.Page {
         }
     ]
     
-    background: Rectangle {
-        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, Kirigami.Settings.isMobile ? 1 : 0.9)
-    }
-    
     ColumnLayout {
         opacity: mainOpacity
         transform: Translate { y: yTranslate }

@@ -34,14 +34,13 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: RecordingListPage {}
     pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
     
-    color: "transparent"
-    
     Component.onCompleted: {
         switchToRecording(null);
         
-        if (!Kirigami.Settings.isMobile) {
-            SettingsModel.setBlur(pageStack, true);
-        }
+        // TODO if we want to blur behind window
+        // if (!Kirigami.Settings.isMobile) {
+        //     SettingsModel.setBlur(pageStack, true);
+        // }
     }
     
     // page switch animation

@@ -29,10 +29,6 @@ Kirigami.ScrollablePage {
     
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
     
-    background: Rectangle {
-        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, Kirigami.Settings.isMobile ? 1 : 0.9)
-    }
-    
     actions.contextualActions: [
         Kirigami.Action {
             id: editAction
