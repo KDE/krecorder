@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-26 00:48+0000\n"
+"POT-Creation-Date: 2022-12-05 00:49+0000\n"
 "PO-Revision-Date: 2021-11-20 21:36+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -26,7 +26,7 @@ msgid "Your emails"
 msgstr ""
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:48
+#: contents/ui/RecordingListPage.qml:44
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -34,13 +34,13 @@ msgstr ""
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: contents/ui/DefaultPage.qml:39
+#: contents/ui/DefaultPage.qml:35
 #, fuzzy, kde-format
 #| msgid "Click on a recording to play it, or record a new one"
 msgid "Play a recording, or record a new one"
 msgstr "Kliknite na nahrávku na jej prehratie alebo nahrajte novú"
 
-#: contents/ui/DefaultPage.qml:39
+#: contents/ui/DefaultPage.qml:35
 #, fuzzy, kde-format
 #| msgid "Save recording"
 msgid "Record a new recording"
@@ -57,29 +57,29 @@ msgstr "Záznamník"
 msgid "Player"
 msgstr "Prehrať"
 
-#: contents/ui/PlayerPage.qml:60
+#: contents/ui/PlayerPage.qml:56
 #, fuzzy, kde-format
 #| msgid "Recorder"
 msgid "Recorded on %1"
 msgstr "Záznamník"
 
-#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Pause"
 msgstr "Pozastaviť"
 
-#: contents/ui/PlayerPage.qml:86
+#: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
 msgstr "Prehrať"
 
-#: contents/ui/PlayerPage.qml:96
+#: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
 msgstr "Zastaviť"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:177
+#: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
 msgstr ""
@@ -90,7 +90,7 @@ msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:192 contents/ui/RecordPage.qml:119
+#: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
 #, kde-format
 msgid "Delete"
 msgstr "Vymazať"
@@ -100,39 +100,39 @@ msgstr "Vymazať"
 msgid "Recordings"
 msgstr "Nahrávky"
 
-#: contents/ui/RecordingListPage.qml:40 contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
 #, kde-format
 msgid "Edit"
 msgstr "Upraviť"
 
-#: contents/ui/RecordingListPage.qml:54
+#: contents/ui/RecordingListPage.qml:50
 #, kde-format
 msgid "Record"
 msgstr "Nahrať"
 
-#: contents/ui/RecordingListPage.qml:116
+#: contents/ui/RecordingListPage.qml:112
 #, kde-format
 msgid "No recordings"
 msgstr "Žiadne nahrávky"
 
-#: contents/ui/RecordingListPage.qml:154
+#: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:164
+#: contents/ui/RecordingListPage.qml:160
 #, fuzzy, kde-format
 #| msgid "Save recording"
 msgid "Saved recording to %1"
 msgstr "Uložiť nahrávku"
 
-#: contents/ui/RecordingListPage.qml:217
+#: contents/ui/RecordingListPage.qml:213
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "Delete %1"
 msgstr "Vymazať"
 
-#: contents/ui/RecordingListPage.qml:218
+#: contents/ui/RecordingListPage.qml:214
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to delete the recording %1? It will be permanently "
@@ -142,29 +142,29 @@ msgid ""
 "<b>permanently lost</b> forever!"
 msgstr "Naozaj chcete vymazať nahrávku %1? Bude naždy stratená!"
 
-#: contents/ui/RecordingListPage.qml:222
+#: contents/ui/RecordingListPage.qml:218
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Vymazať"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:229
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: contents/ui/RecordingListPage.qml:245
+#: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:260 contents/ui/RecordPage.qml:169
+#: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
 msgid "Name:"
 msgstr "Názov:"
 
-#: contents/ui/RecordingListPage.qml:266
+#: contents/ui/RecordingListPage.qml:262
 #, kde-format
 msgid "Location:"
 msgstr "Umiestnenie:"
@@ -174,40 +174,40 @@ msgstr "Umiestnenie:"
 msgid "Record Audio"
 msgstr "Nahrať zvuk"
 
-#: contents/ui/RecordPage.qml:87
+#: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:101
+#: contents/ui/RecordPage.qml:97
 #, fuzzy, kde-format
 #| msgid "Recordings"
 msgid "Stop Recording"
 msgstr "Nahrávky"
 
-#: contents/ui/RecordPage.qml:139
+#: contents/ui/RecordPage.qml:135
 #, kde-format
 msgid "Save recording"
 msgstr "Uložiť nahrávku"
 
-#: contents/ui/RecordPage.qml:143
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Discard"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:151
+#: contents/ui/RecordPage.qml:147
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "Uložiť"
 
-#: contents/ui/RecordPage.qml:170
+#: contents/ui/RecordPage.qml:166
 #, kde-format
 msgid "Name (optional)"
 msgstr "Názov (voliteľné)"
 
-#: contents/ui/RecordPage.qml:174
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-26 00:48+0000\n"
+"POT-Creation-Date: 2022-12-05 00:49+0000\n"
 "PO-Revision-Date: 2022-11-26 13:21+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -30,7 +30,7 @@ msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:48
+#: contents/ui/RecordingListPage.qml:44
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -38,12 +38,12 @@ msgstr "ecuadra@eloihr.net"
 msgid "Settings"
 msgstr "Preferencias"
 
-#: contents/ui/DefaultPage.qml:39
+#: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Reproducir una grabación o grabar una nueva"
 
-#: contents/ui/DefaultPage.qml:39
+#: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Record a new recording"
 msgstr "Hacer una nueva grabación"
@@ -58,28 +58,28 @@ msgstr "Grabadora"
 msgid "Player"
 msgstr "Reproductor"
 
-#: contents/ui/PlayerPage.qml:60
+#: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
 msgstr "Grabado el %1"
 
-#: contents/ui/PlayerPage.qml:86 contents/ui/RecordPage.qml:87
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Pause"
 msgstr "Pausa"
 
-#: contents/ui/PlayerPage.qml:86
+#: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
 msgstr "Reproducir"
 
-#: contents/ui/PlayerPage.qml:96
+#: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
 msgstr "Detener"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:177
+#: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
 msgstr "Exportar a ubicación"
@@ -90,7 +90,7 @@ msgid "Rename"
 msgstr "Cambiar nombre"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:192 contents/ui/RecordPage.qml:119
+#: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
 #, kde-format
 msgid "Delete"
 msgstr "Borrar"
@@ -100,37 +100,37 @@ msgstr "Borrar"
 msgid "Recordings"
 msgstr "Grabaciones"
 
-#: contents/ui/RecordingListPage.qml:40 contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
 
-#: contents/ui/RecordingListPage.qml:54
+#: contents/ui/RecordingListPage.qml:50
 #, kde-format
 msgid "Record"
 msgstr "Grabar"
 
-#: contents/ui/RecordingListPage.qml:116
+#: contents/ui/RecordingListPage.qml:112
 #, kde-format
 msgid "No recordings"
 msgstr "No hay grabaciones"
 
-#: contents/ui/RecordingListPage.qml:154
+#: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Seleccione una ubicación para guardar la grabación %1"
 
-#: contents/ui/RecordingListPage.qml:164
+#: contents/ui/RecordingListPage.qml:160
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Grabación guardada en %1"
 
-#: contents/ui/RecordingListPage.qml:217
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Delete %1"
 msgstr "Borrar %1"
 
-#: contents/ui/RecordingListPage.qml:218
+#: contents/ui/RecordingListPage.qml:214
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -139,29 +139,29 @@ msgstr ""
 "¿Seguro que quiere borrar la grabación %1?<br/>Se lo hace, se <b>perderá "
 "permanentemente</b>."
 
-#: contents/ui/RecordingListPage.qml:222
+#: contents/ui/RecordingListPage.qml:218
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Borrar"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:229
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: contents/ui/RecordingListPage.qml:245
+#: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
 msgstr "Cambiar nombre de %1"
 
-#: contents/ui/RecordingListPage.qml:260 contents/ui/RecordPage.qml:169
+#: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
 msgid "Name:"
 msgstr "Nombre:"
 
-#: contents/ui/RecordingListPage.qml:266
+#: contents/ui/RecordingListPage.qml:262
 #, kde-format
 msgid "Location:"
 msgstr "Ubicación:"
@@ -171,37 +171,37 @@ msgstr "Ubicación:"
 msgid "Record Audio"
 msgstr "Grabar sonido"
 
-#: contents/ui/RecordPage.qml:87
+#: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
 msgstr "Continuar"
 
-#: contents/ui/RecordPage.qml:101
+#: contents/ui/RecordPage.qml:97
 #, kde-format
 msgid "Stop Recording"
 msgstr "Detener grabación"
 
-#: contents/ui/RecordPage.qml:139
+#: contents/ui/RecordPage.qml:135
 #, kde-format
 msgid "Save recording"
 msgstr "Guardar grabación"
 
-#: contents/ui/RecordPage.qml:143
+#: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Discard"
 msgstr "Descartar"
 
-#: contents/ui/RecordPage.qml:151
+#: contents/ui/RecordPage.qml:147
 #, kde-format
 msgid "Save"
 msgstr "Guardar"
 
-#: contents/ui/RecordPage.qml:170
+#: contents/ui/RecordPage.qml:166
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nombre (opcional)"
 
-#: contents/ui/RecordPage.qml:174
+#: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Carpeta de almacenamiento:"
