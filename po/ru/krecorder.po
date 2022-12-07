@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Olesya Gerasimenko <translation-team@basealt.ru>, 2021.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-05 00:49+0000\n"
-"PO-Revision-Date: 2021-12-28 17:35+0300\n"
-"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
-"Language-Team: Basealt Translation Team\n"
+"PO-Revision-Date: 2022-12-06 16:33+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Олеся Герасименко"
+msgstr "Олеся Герасименко, Павел Чернышов"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "translation-team@basealt.ru"
+msgstr "translation-team@basealt.ru, farline99@yandex.ru"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:44
@@ -38,32 +39,29 @@ msgid "Settings"
 msgstr "Параметры"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Щёлкните по записи для её воспроизведения или создайте новую запись"
+msgstr "Прослушайте запись или создайте новую"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Сохранение записи"
+msgstr "Создайте новую запись"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
-msgstr "Recorder"
+msgstr "Диктофон"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Воспроизведение"
 
 #: contents/ui/PlayerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Recorder"
+msgstr "Запись от %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
@@ -73,7 +71,7 @@ msgstr "Приостановить"
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Воспроизвести"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
@@ -84,12 +82,12 @@ msgstr "Остановить"
 #: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Экспортировать в папку"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Переименовать"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
@@ -115,18 +113,17 @@ msgstr "Записать"
 #: contents/ui/RecordingListPage.qml:112
 #, kde-format
 msgid "No recordings"
-msgstr "Записей нет"
+msgstr "Нет ни одной записи"
 
 #: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Выбор папки для сохранения записи %1"
 
 #: contents/ui/RecordingListPage.qml:160
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Сохранение записи"
+msgstr "Запись сохранена в %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -140,7 +137,7 @@ msgid ""
 "<b>permanently lost</b> forever!"
 msgstr ""
 "Удалить запись %1?<br/>Она будет удалена<b>без возможности восстановления</"
-"b>!"
+"b>."
 
 #: contents/ui/RecordingListPage.qml:218
 #, kde-format
@@ -157,7 +154,7 @@ msgstr "Отмена"
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Переименование %1"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
@@ -177,28 +174,27 @@ msgstr "Запись звука"
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Продолжить"
 
 #: contents/ui/RecordPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Записи"
+msgstr "Остановить запись"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
 msgid "Save recording"
-msgstr "Сохранение записи"
+msgstr "Сохранить запись"
 
 #: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "Отклонить"
 
 #: contents/ui/RecordPage.qml:147
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "Сохранить"
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format
@@ -208,12 +204,12 @@ msgstr "Название (необязательно)"
 #: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Папка для хранения:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Общие"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -221,35 +217,30 @@ msgid "About"
 msgstr "О программе"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Формат:"
+msgstr "Формат звукового файла"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
@@ -257,84 +248,80 @@ msgstr "MP3"
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "Файл WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Другой"
 
 #: contents/ui/settings/SettingsComponent.qml:92
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
 msgstr "Качество звука:"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Худшее"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Низкое"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Среднее"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Высокое"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Лучшее"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Более высокое качество звука также увеличивает и размер файла."
 
 #: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Расширенные"
 
 #: contents/ui/settings/SettingsComponent.qml:133
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Звуковой вход:"
+msgstr "Звуковой вход"
 
 #: contents/ui/settings/SettingsComponent.qml:166
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Звуковой кодек:"
+msgstr "Аудиокодек"
 
 #: contents/ui/settings/SettingsComponent.qml:199
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Формат контейнера:"
+msgstr "Формат контейнера"
 
 #: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Некоторые комбинации кодеков и форматов контейнеров могут быть несовместимы."
 
 #: main.cpp:53
-#, fuzzy, kde-format
-#| msgid "© 2020-2021 KDE Community"
+#, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr "© Сообщество KDE, 2020-2021"
+msgstr "© Сообщество KDE, 2020-2022"
 
 #: main.cpp:54
 #, kde-format

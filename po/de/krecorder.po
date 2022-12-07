@@ -74,7 +74,8 @@ msgid "Pause"
 msgstr "Pause"
 
 #: contents/ui/PlayerPage.qml:82
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Play"
 msgid "Play"
 msgstr "Wiedergabe"
 
