@@ -31,6 +31,7 @@ public:
         WAV, // codec: audio/x-raw, container: audio/x-wav
         OTHER // not listed here
     };
+    Q_ENUM(SimpleAudioFormat)
 
     const QMap<SimpleAudioFormat, std::pair<QString, QString>> formatMap = {
         {SimpleAudioFormat::VORBIS, {QStringLiteral("audio/x-vorbis"), QStringLiteral("audio/ogg")}},
