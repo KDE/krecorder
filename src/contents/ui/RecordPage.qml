@@ -136,14 +136,6 @@ Kirigami.Page {
         
         customFooterActions: [
             Kirigami.Action {
-                text: i18n("Discard")
-                iconName: "delete"
-                onTriggered: {
-                    AudioRecorder.reset()
-                    saveDialog.close();
-                }
-            },
-            Kirigami.Action {
                 text: i18n("Save")
                 iconName: "document-save"
                 onTriggered: {
@@ -152,6 +144,14 @@ Kirigami.Page {
                     pageStack.layers.pop();
                     recordingName.text = "";
                             
+                    saveDialog.close();
+                }
+            },
+            Kirigami.Action {
+                text: i18n("Discard")
+                iconName: "delete"
+                onTriggered: {
+                    AudioRecorder.reset()
                     saveDialog.close();
                 }
             }
