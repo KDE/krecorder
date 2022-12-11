@@ -35,7 +35,8 @@ Kirigami.ApplicationWindow {
     
     pageStack.initialPage: RecordingListPage {}
     pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
-    
+    pageStack.popHiddenPages: true
+
     Component.onCompleted: {
         switchToRecording(null);
         
@@ -59,29 +60,6 @@ Kirigami.ApplicationWindow {
         to: 0
         duration: Kirigami.Units.longDuration * 3
         easing.type: Easing.OutQuint
-    }
-    
-    // pop pages when not in use
-    Connections {
-        target: applicationWindow().pageStack
-        function onCurrentIndexChanged() {
-            // wait for animation to finish before popping pages
-            closePageTimer.restart();
-        }
-    }
-    
-    Timer {
-        id: closePageTimer
-        interval: 300
-        onTriggered: {
-            // only close pages automatically when in narrow screen mode
-            if (!applicationWindow().isWidescreen) {
-                let currentIndex = applicationWindow().pageStack.currentIndex;
-                while (applicationWindow().pageStack.depth > (currentIndex + 1) && currentIndex >= 0) {
-                    applicationWindow().pageStack.pop();
-                }
-            }
-        }
     }
     
     Loader {
