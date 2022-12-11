@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-11 00:49+0000\n"
 "PO-Revision-Date: 2022-02-28 10:50+0100\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -190,13 +190,13 @@ msgstr "Uložit nahrávání"
 
 #: contents/ui/RecordPage.qml:139
 #, kde-format
-msgid "Discard"
-msgstr "Zahodit"
-
-#: contents/ui/RecordPage.qml:147
-#, kde-format
 msgid "Save"
 msgstr "Uložit"
+
+#: contents/ui/RecordPage.qml:151
+#, kde-format
+msgid "Discard"
+msgstr "Zahodit"
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format

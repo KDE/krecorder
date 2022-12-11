@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-11 00:49+0000\n"
 "PO-Revision-Date: 2021-01-20 21:46-0800\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -195,16 +195,16 @@ msgid "Save recording"
 msgstr "ਰਿਕਾਰਡਿੰਗ ਸੰਭਾਲੋ"
 
 #: contents/ui/RecordPage.qml:139
-#, kde-format
-msgid "Discard"
-msgstr ""
-
-#: contents/ui/RecordPage.qml:147
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "ਸੰਭਾਲੋ"
+
+#: contents/ui/RecordPage.qml:151
+#, kde-format
+msgid "Discard"
+msgstr ""
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format

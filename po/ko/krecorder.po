@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-11 00:49+0000\n"
 "PO-Revision-Date: 2022-02-20 21:33+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -190,13 +190,13 @@ msgstr "녹음 저장"
 
 #: contents/ui/RecordPage.qml:139
 #, kde-format
-msgid "Discard"
-msgstr "무시"
-
-#: contents/ui/RecordPage.qml:147
-#, kde-format
 msgid "Save"
 msgstr "저장"
+
+#: contents/ui/RecordPage.qml:151
+#, kde-format
+msgid "Discard"
+msgstr "무시"
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format

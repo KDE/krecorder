@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-05 00:49+0000\n"
+"POT-Creation-Date: 2022-12-11 00:49+0000\n"
 "PO-Revision-Date: 2021-06-28 14:23+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -193,16 +193,16 @@ msgid "Save recording"
 msgstr "Αποθήκευση καταγραφής"
 
 #: contents/ui/RecordPage.qml:139
-#, kde-format
-msgid "Discard"
-msgstr ""
-
-#: contents/ui/RecordPage.qml:147
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Save"
 msgid "Save"
 msgstr "Αποθήκευση"
+
+#: contents/ui/RecordPage.qml:151
+#, kde-format
+msgid "Discard"
+msgstr ""
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format
