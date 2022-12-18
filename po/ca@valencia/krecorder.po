@@ -42,12 +42,12 @@ msgstr "Configuració"
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Reproduïx un gravació, o n'grava un de nou"
+msgstr "Reproduïx una gravació, o en grava una de nova"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Record a new recording"
-msgstr "Grava un gravació nou"
+msgstr "Grava una gravació nova"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -124,7 +124,7 @@ msgstr "Seleccioneu una ubicació a on s'ha de guardar la gravació %1"
 #: contents/ui/RecordingListPage.qml:160
 #, kde-format
 msgid "Saved recording to %1"
-msgstr "Gravació guardat a %1"
+msgstr "Gravació guardada a %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
