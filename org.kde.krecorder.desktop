@@ -9,7 +9,7 @@
 Name=Recorder
 Name[ar]=المسجل
 Name[ca]=Enregistrador
-Name[ca@valencia]=Enregistrador
+Name[ca@valencia]=Gravador
 Name[cs]=Nahrávací zařízení
 Name[de]=Recorder
 Name[el]=Recorder
@@ -38,7 +38,7 @@ Name[zh_CN]=录音机
 Comment=Audio Recorder
 Comment[ar]=مسجل صوتي
 Comment[ca]=Enregistrador d'àudio
-Comment[ca@valencia]=Enregistrador d'àudio
+Comment[ca@valencia]=Gravador d'àudio
 Comment[cs]=Nahrávací zařízení zvuku
 Comment[de]=Audioaufnahme
 Comment[el]=Πρόγραμμα ηχογράφησης
