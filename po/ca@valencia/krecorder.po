@@ -52,7 +52,7 @@ msgstr "Grava una gravació nova"
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
-msgstr "Enregistrador"
+msgstr "Gravador"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
@@ -99,7 +99,7 @@ msgstr "Suprimix"
 #: contents/ui/RecordingListPage.qml:21
 #, kde-format
 msgid "Recordings"
-msgstr "Enregistraments"
+msgstr "Gravacions"
 
 #: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
 #, kde-format
@@ -114,7 +114,7 @@ msgstr "Grava"
 #: contents/ui/RecordingListPage.qml:112
 #, kde-format
 msgid "No recordings"
-msgstr "Sense enregistraments"
+msgstr "Sense gravacions"
 
 #: contents/ui/RecordingListPage.qml:150
 #, kde-format
