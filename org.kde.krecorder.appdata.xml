@@ -11,7 +11,7 @@
   <name>Recorder</name>
   <name xml:lang="ar">المسجل</name>
   <name xml:lang="ca">Enregistrador</name>
-  <name xml:lang="ca-valencia">Enregistrador</name>
+  <name xml:lang="ca-valencia">Gravador</name>
   <name xml:lang="cs">Nahrávací nástroj</name>
   <name xml:lang="de">Recorder</name>
   <name xml:lang="el">Recorder</name>
@@ -41,7 +41,7 @@
   <summary>Audio recorder</summary>
   <summary xml:lang="ar">مسجل صوتي</summary>
   <summary xml:lang="ca">Enregistrador d'àudio</summary>
-  <summary xml:lang="ca-valencia">Enregistrador d'àudio</summary>
+  <summary xml:lang="ca-valencia">Gravador d'àudio</summary>
   <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
   <summary xml:lang="de">Audioaufnahme</summary>
   <summary xml:lang="en-GB">Audio recorder</summary>
@@ -107,7 +107,7 @@
     <p>Recorder is a simple, cross-platform audio recording application.</p>
     <p xml:lang="ar">المسجل هو تطبيق تسجيل صوتي بسيط متعدد المنصات.</p>
     <p xml:lang="ca">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
-    <p xml:lang="ca-valencia">L'Enregistrador és una aplicació individual multiplataforma de gravació d'àudio.</p>
+    <p xml:lang="ca-valencia">El gravador és una aplicació individual multiplataforma de gravació d'àudio.</p>
     <p xml:lang="de">Recorder ist eine einfache Anwendung für Audioaufnahmen auf allen Plattformen.</p>
     <p xml:lang="el">Το Recorder είναι μια απλή, για πολλές πλατφόρμες εφαρμογή καταγραφής ήχου.</p>
     <p xml:lang="en-GB">Recorder is a simple, cross-platform audio recording application.</p>
