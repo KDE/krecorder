@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
 "PO-Revision-Date: 2022-02-28 10:50+0100\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -37,16 +37,14 @@ msgid "Settings"
 msgstr "Nastavení"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Klikněte na nahrávku pro její přehrání, nebo nahrajte novou"
+msgstr ""
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Uložit nahrávání"
+msgstr ""
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -56,13 +54,12 @@ msgstr "Nahrávací zařízení"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Hráč"
 
 #: contents/ui/PlayerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Nahrávací zařízení"
+msgstr ""
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
@@ -72,7 +69,7 @@ msgstr "Pozastavit"
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Přehrát"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
@@ -88,7 +85,7 @@ msgstr ""
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Přejmenovat"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
@@ -122,10 +119,9 @@ msgid "Select a location to save recording %1"
 msgstr ""
 
 #: contents/ui/RecordingListPage.qml:160
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Uložit nahrávání"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -155,7 +151,7 @@ msgstr "Zrušit"
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Přejmenovat %1"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
@@ -175,13 +171,12 @@ msgstr "Nahrávat zvuk"
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovat"
 
 #: contents/ui/RecordPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Nahrávky"
+msgstr "Zastavit nahrávání"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
@@ -224,32 +219,28 @@ msgid "Audio Format"
 msgstr "Zvukový formát"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
-msgstr "Ogg Vorbis"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
-msgstr "Ogg Opus"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
-msgstr "FLAC"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
-msgstr "MP3"
+msgstr ""
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
@@ -270,27 +261,27 @@ msgstr "Kvalita zvuku"
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Nejnižší"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Nízká"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Střední"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Vysoká"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Nejvyšší"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
@@ -337,24 +328,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "Custom"
-#~ msgstr "Vlastní"
-
-#~ msgid "WAV"
-#~ msgstr "WAV"
-
-#~ msgid "%1"
-#~ msgstr "%1"
-
-#~ msgid "No recordings yet, record your first!"
-#~ msgstr "Zatím žádná nahrávání. Nahrajte svoje první."
-
-#~ msgid "Editing %1"
-#~ msgstr "Úprava %1"
-
-#~ msgid "Audio Input:"
-#~ msgstr "Zvukový vstup:"
-
-#~ msgid "<b>New Recording</b>"
-#~ msgstr "<b>Nová nahrávka</b>"
