@@ -10,6 +10,9 @@ project(krecorder)
 set(PROJECT_VERSION "22.11")
 
 set(QT_MIN_VERSION "5.15.0")
+if (ANDROID)
+    set(QT_MIN_VERSION "5.15.8")
+endif()
 set(KF_MIN_VERSION "5.89.0")
 
 set(CMAKE_CXX_STANDARD 17)
