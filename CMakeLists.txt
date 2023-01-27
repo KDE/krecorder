@@ -6,8 +6,8 @@
 #
 cmake_minimum_required(VERSION 3.16)
 
-project(krecorder)
-set(PROJECT_VERSION "22.11")
+set(PROJECT_VERSION "23.01")
+project(krecorder VERSION ${PROJECT_VERSION})
 
 set(QT_MIN_VERSION "5.15.0")
 if (ANDROID)
