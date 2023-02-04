@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# Vit Pelcak <vit@pelcak.org>, 2020, 2021, 2022.
+# Vit Pelcak <vit@pelcak.org>, 2020, 2021, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2022-02-28 10:50+0100\n"
+"PO-Revision-Date: 2023-02-02 14:39+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -121,7 +121,7 @@ msgstr ""
 #: contents/ui/RecordingListPage.qml:160
 #, kde-format
 msgid "Saved recording to %1"
-msgstr ""
+msgstr "Nahrávka uložena do %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -201,7 +201,7 @@ msgstr "Jméno (volitelné)"
 #: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Složka úložiště:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -222,36 +222,36 @@ msgstr "Zvukový formát"
 #, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
-msgstr ""
+msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
-msgstr ""
+msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
-msgstr ""
+msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
-msgstr ""
+msgstr "MP3"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "Formát souboru WAV"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Jiné"
 
 #: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
