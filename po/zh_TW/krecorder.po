@@ -2,31 +2,33 @@
 # krecorder 套件的正體中文翻譯.
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# Automatically generated, 2022.
 #
+# Automatically generated, 2022.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2022-05-07 00:47+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-02-19 09:55+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "mail@kisaragi-hiu.com"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:44
@@ -35,296 +37,296 @@ msgstr ""
 #: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr ""
+msgstr "播放錄音或錄製新的"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Record a new recording"
-msgstr ""
+msgstr "建立新錄音"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
-msgstr ""
+msgstr "錄音"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "播放器"
 
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr ""
+msgstr "在 %1 上錄音"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "暫停"
 
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "播放"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 #: contents/ui/RecordingListDelegate.qml:75
 #: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "匯出到位置"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "重新命名"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: contents/ui/RecordingListPage.qml:21
 #, kde-format
 msgid "Recordings"
-msgstr ""
+msgstr "錄音檔"
 
 #: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "編輯"
 
 #: contents/ui/RecordingListPage.qml:50
 #, kde-format
 msgid "Record"
-msgstr ""
+msgstr "錄製"
 
 #: contents/ui/RecordingListPage.qml:112
 #, kde-format
 msgid "No recordings"
-msgstr ""
+msgstr "無錄音檔"
 
 #: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "選擇要儲存錄音檔 %1 的位置"
 
 #: contents/ui/RecordingListPage.qml:160
 #, kde-format
 msgid "Saved recording to %1"
-msgstr ""
+msgstr "已將錄音檔儲存至 %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid "Delete %1"
-msgstr ""
+msgstr "刪除 %1"
 
 #: contents/ui/RecordingListPage.qml:214
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
-msgstr ""
+msgstr "您確定要刪除錄音檔 %1 嗎？<br/>它將會<b>永久遺失</b>！"
 
 #: contents/ui/RecordingListPage.qml:218
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: contents/ui/RecordingListPage.qml:229
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "重新命名 %1"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: contents/ui/RecordingListPage.qml:262
 #, kde-format
 msgid "Location:"
-msgstr ""
+msgstr "位置："
 
 #: contents/ui/RecordPage.qml:21
 #, kde-format
 msgid "Record Audio"
-msgstr ""
+msgstr "錄製音效"
 
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "繼續"
 
 #: contents/ui/RecordPage.qml:97
 #, kde-format
 msgid "Stop Recording"
-msgstr ""
+msgstr "停止錄音"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
 msgid "Save recording"
-msgstr ""
+msgstr "儲存錄音檔"
 
 #: contents/ui/RecordPage.qml:139
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "儲存"
 
 #: contents/ui/RecordPage.qml:151
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "丟棄"
 
 #: contents/ui/RecordPage.qml:166
 #, kde-format
 msgid "Name (optional)"
-msgstr ""
+msgstr "名稱（可選）"
 
 #: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "儲存資料夾："
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: contents/ui/settings/SettingsComponent.qml:63
 #, kde-format
 msgid "Audio Format"
-msgstr ""
+msgstr "音效格式"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
-msgstr ""
+msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
-msgstr ""
+msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
-msgstr ""
+msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
-msgstr ""
+msgstr "MP3"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "WAV 檔案格式"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "其他"
 
 #: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
 msgid "Audio Quality"
-msgstr ""
+msgstr "音效品質"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "最低"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "最高"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "音效品質越高檔案就會越大。"
 
 #: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "進階"
 
 #: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Input"
-msgstr ""
+msgstr "音訊輸入"
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Audio Codec"
-msgstr ""
+msgstr "音訊編碼"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Container Format"
-msgstr ""
+msgstr "容器格式"
 
 #: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
+msgstr "有些編碼跟有些容器格式可能互不相容。"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2020-2022 KDE Community"
-msgstr ""
+msgstr "© 2020-2022 KDE 社群"
 
 #: main.cpp:54
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:55
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
