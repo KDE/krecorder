@@ -83,7 +83,7 @@ msgstr "Para"
 #: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
-msgstr "Exporta a una ubicació"
+msgstr "Exporta cap a una ubicació"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
