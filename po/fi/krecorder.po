@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# Tommi Nieminen <translator@legisign.org>, 2020, 2021, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2020, 2021, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2022-03-18 23:19+0200\n"
+"PO-Revision-Date: 2023-03-05 19:20+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37,16 +37,14 @@ msgid "Settings"
 msgstr "Asetukset"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Soita äänite napsauttamalla sitä tai äänitä uusi"
+msgstr "Toista äänite tai äänitä uusi"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Tallenna äänite"
+msgstr "Äänitä uusi äänite"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -54,16 +52,14 @@ msgid "Recorder"
 msgstr "Äänitin"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
-msgstr "Toista"
+msgstr "Pelaaja"
 
 #: contents/ui/PlayerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Äänitin"
+msgstr "Äänitetty %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
@@ -84,12 +80,12 @@ msgstr "Pysäytä"
 #: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Vie sijaintiin"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Muuta nimeä"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
@@ -120,13 +116,12 @@ msgstr "Ei äänitteitä"
 #: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Valitse sijainti, johon äänite %1 tallennetaan"
 
 #: contents/ui/RecordingListPage.qml:160
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Tallenna äänite"
+msgstr "Äänite tallennettiin kansioon %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -156,7 +151,7 @@ msgstr "Peru"
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Muuta kohteen %1 nimeä"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
@@ -176,13 +171,12 @@ msgstr "Äänitä"
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Jatka"
 
 #: contents/ui/RecordPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Äänitteet"
+msgstr "Lopeta äänitys"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
@@ -207,12 +201,12 @@ msgstr "Nimi (valinnainen)"
 #: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Tallennuskansio:"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Perusasetukset"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -220,35 +214,30 @@ msgid "About"
 msgstr "Tietoa"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Muoto:"
+msgstr "Äänimuoto"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
@@ -256,78 +245,75 @@ msgstr "MP3"
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "WAV-tiedostomuoto"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Muu"
 
 #: contents/ui/settings/SettingsComponent.qml:92
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Äänenlaatu:"
+msgstr "Äänenlaatu"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Heikoin"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Heikko"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Keskitaso"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Hyvä"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Paras"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Paras äänenlaatu kasvattaa myös tiedoston kokoa."
 
 #: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Lisäasetukset"
 
 #: contents/ui/settings/SettingsComponent.qml:133
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Äänisisääntulo:"
+msgstr "Äänisisääntulo"
 
 #: contents/ui/settings/SettingsComponent.qml:166
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Äänikoodekki:"
+msgstr "Äänikoodekki"
 
 #: contents/ui/settings/SettingsComponent.qml:199
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Säilön muoto:"
+msgstr "Säilömuoto"
 
 #: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Jotkin koodekkien ja säilömuotojen yhdistelmät eivät ehkä ole yhteensopivia."
 
 #: main.cpp:53
 #, kde-format
