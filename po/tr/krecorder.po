@@ -134,7 +134,8 @@ msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
-"%1 kaydını silmek istediğinize emin misiniz?<br><b>Tümüyle</b> kaybolacaktır!"
+"%1 kaydını silmek istediğinize emin misiniz?<br/><b>Tümüyle</b> "
+"kaybolacaktır!"
 
 #: contents/ui/RecordingListPage.qml:218
 #, kde-format
@@ -328,33 +329,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "Custom"
-#~ msgstr "Özel"
-
-#~ msgid "WAV"
-#~ msgstr "WAV"
-
-#~ msgid "%1"
-#~ msgstr "%1"
-
-#~ msgid "No recordings yet, record your first!"
-#~ msgstr "Henüz bir kayıt yok, öncelikle bir tane kaydedin!"
-
-#~ msgid "Editing %1"
-#~ msgstr "%1 düzenleniyor"
-
-#~ msgid "Audio Input:"
-#~ msgstr "Ses Girişi:"
-
-#~ msgid "<b>New Recording</b>"
-#~ msgstr "<b>Yeni Kayıt</b>"
-
-#~ msgid "<b>Settings</b>"
-#~ msgstr "<b>Ayarlar</b>"
-
-#~ msgid "Hide Advanced Settings"
-#~ msgstr "Gelişmiş Ayarları Gizle"
-
-#~ msgid "Show Advanced Settings"
-#~ msgstr "Gelişmiş Ayarları Göster"
