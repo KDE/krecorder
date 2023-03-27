@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2023-03-11 04:53\n"
+"PO-Revision-Date: 2023-03-26 02:19\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -40,12 +40,12 @@ msgstr "设置"
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr ""
+msgstr "播放录音，或录制新录音"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Record a new recording"
-msgstr ""
+msgstr "录制一段新的录音"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -55,12 +55,12 @@ msgstr "录音机"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "播放器"
 
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr ""
+msgstr "录制时间：%1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
@@ -70,23 +70,23 @@ msgstr "暂停"
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "播放"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 #: contents/ui/RecordingListDelegate.qml:75
 #: contents/ui/RecordingListPage.qml:173
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "导出到位置"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "重命名"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
@@ -107,7 +107,7 @@ msgstr "编辑"
 #: contents/ui/RecordingListPage.qml:50
 #, kde-format
 msgid "Record"
-msgstr ""
+msgstr "录音"
 
 #: contents/ui/RecordingListPage.qml:112
 #, kde-format
@@ -117,12 +117,12 @@ msgstr "无录音"
 #: contents/ui/RecordingListPage.qml:150
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "选择保存录音 %1 的位置"
 
 #: contents/ui/RecordingListPage.qml:160
 #, kde-format
 msgid "Saved recording to %1"
-msgstr ""
+msgstr "录音已保存到 %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -151,7 +151,7 @@ msgstr "取消"
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "重命名 %1"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
@@ -171,12 +171,12 @@ msgstr "录制音频"
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "继续"
 
 #: contents/ui/RecordPage.qml:97
 #, kde-format
 msgid "Stop Recording"
-msgstr ""
+msgstr "停止录音"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
@@ -201,12 +201,12 @@ msgstr "名称 (可选)"
 #: contents/ui/RecordPage.qml:170
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "存储文件夹："
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -216,103 +216,103 @@ msgstr "关于"
 #: contents/ui/settings/SettingsComponent.qml:63
 #, kde-format
 msgid "Audio Format"
-msgstr ""
+msgstr "音频格式"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
-msgstr ""
+msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
-msgstr ""
+msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
-msgstr ""
+msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
-msgstr ""
+msgstr "MP3"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "WAV 文件格式"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "其他"
 
 #: contents/ui/settings/SettingsComponent.qml:92
 #, kde-format
 msgid "Audio Quality"
-msgstr ""
+msgstr "音频质量"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "最低"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "中等"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "最高"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "高音频质量会增加文件大小。"
 
 #: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "高级"
 
 #: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Input"
-msgstr ""
+msgstr "音频输入"
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
 msgid "Audio Codec"
-msgstr ""
+msgstr "音频编码"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Container Format"
-msgstr ""
+msgstr "容器格式"
 
 #: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
+msgstr "某些编码和容器格式的组合可能不兼容。"
 
 #: main.cpp:53
 #, kde-format
