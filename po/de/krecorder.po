@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the krecorder package.
 # Burkhard Lück <lueck@hube-lueck.de>, 2020, 2021.
-# Frederik Schwarzer <schwarzer@kde.org>, 2022.
+# Frederik Schwarzer <schwarzer@kde.org>, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2022-02-26 03:19+0100\n"
+"PO-Revision-Date: 2023-04-26 20:41+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.0\n"
+"X-Generator: Lokalize 22.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,10 +46,9 @@ msgstr ""
 "Aufnahme"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Aufnahme speichern"
+msgstr "Neue Aufnahme aufnehmen"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -63,10 +62,9 @@ msgid "Player"
 msgstr "Wiedergabe"
 
 #: contents/ui/PlayerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Recorder"
+msgstr "Aufgenommen am %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
 #, kde-format
@@ -74,8 +72,7 @@ msgid "Pause"
 msgstr "Pause"
 
 #: contents/ui/PlayerPage.qml:82
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Play"
 msgstr "Wiedergabe"
 
@@ -93,7 +90,7 @@ msgstr ""
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Umbenennen"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
@@ -161,7 +158,7 @@ msgstr "Abbrechen"
 #: contents/ui/RecordingListPage.qml:241
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "%1 umbenennen"
 
 #: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
 #, kde-format
@@ -181,13 +178,12 @@ msgstr "Audio-Aufnahme"
 #: contents/ui/RecordPage.qml:83
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Fortsetzen"
 
 #: contents/ui/RecordPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Recordings"
+#, kde-format
 msgid "Stop Recording"
-msgstr "Aufnahmen"
+msgstr "Aufnahme beenden"
 
 #: contents/ui/RecordPage.qml:135
 #, kde-format
@@ -217,7 +213,7 @@ msgstr ""
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: contents/ui/settings/SettingsComponent.qml:45
 #, kde-format
@@ -225,35 +221,30 @@ msgid "About"
 msgstr "Über"
 
 #: contents/ui/settings/SettingsComponent.qml:63
-#, fuzzy, kde-format
-#| msgid "Format:"
+#, kde-format
 msgid "Audio Format"
-msgstr "Format:"
+msgstr "Audio-Format"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Vorbis"
+#, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
-msgstr "Ogg-Vorbis"
+msgstr "Ogg Vorbis"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "Ogg Opus"
+#, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "FLAC"
+#, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
 #: contents/ui/settings/SettingsComponent.qml:65
-#, fuzzy, kde-format
-#| msgid "MP3"
+#, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
@@ -261,44 +252,43 @@ msgstr "MP3"
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgid "WAV file format"
-msgstr ""
+msgstr "WAV-Dateiformat"
 
 #: contents/ui/settings/SettingsComponent.qml:65
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
-msgstr ""
+msgstr "Weitere"
 
 #: contents/ui/settings/SettingsComponent.qml:92
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Audio-Qualität:"
+msgstr "Audio-Qualität"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Niedrigste"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Niedrig"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Mittel"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Hoch"
 
 #: contents/ui/settings/SettingsComponent.qml:93
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Höchste"
 
 #: contents/ui/settings/SettingsComponent.qml:94
 #, kde-format
@@ -308,25 +298,22 @@ msgstr ""
 #: contents/ui/settings/SettingsComponent.qml:128
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Erweitert"
 
 #: contents/ui/settings/SettingsComponent.qml:133
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Audioeingabe:"
+msgstr "Audioeingabe"
 
 #: contents/ui/settings/SettingsComponent.qml:166
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Audio-Codec:"
+msgstr "Audio-Codec"
 
 #: contents/ui/settings/SettingsComponent.qml:199
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Container-Format:"
+msgstr "Container-Format"
 
 #: contents/ui/settings/SettingsComponent.qml:231
 #, kde-format
