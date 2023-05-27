@@ -63,7 +63,6 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS 
     Kirigami2 
     I18n 
-    Config 
     CoreAddons
     WindowSystem
 )
