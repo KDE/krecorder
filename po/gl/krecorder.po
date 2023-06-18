@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-11 00:49+0000\n"
-"PO-Revision-Date: 2023-06-11 09:21+0200\n"
+"PO-Revision-Date: 2023-06-17 14:00+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -134,7 +134,7 @@ msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
-"Seguro que quere liminar a gravación «%1»?<br/><b>Perderase para sempre</b>!"
+"Seguro que quere eliminar a gravación «%1»?<br/><b>Perderase para sempre</b>!"
 
 #: contents/ui/RecordingListPage.qml:218
 #, kde-format
@@ -296,7 +296,7 @@ msgstr "Avanzado"
 #: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Input"
-msgstr "Entrada de audio"
+msgstr "Entrada de son"
 
 #: contents/ui/settings/SettingsComponent.qml:166
 #, kde-format
