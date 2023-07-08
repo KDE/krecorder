@@ -16,7 +16,7 @@ project(krecorder VERSION ${RELEASE_SERVICE_VERSION})
 
 set(QT_MIN_VERSION "5.15.0")
 if (ANDROID)
-    set(QT_MIN_VERSION "5.15.8")
+    set(QT_MIN_VERSION "5.15.10")
 endif()
 set(KF_MIN_VERSION "5.89.0")
 
