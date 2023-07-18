@@ -16,7 +16,6 @@
   <name xml:lang="de">Recorder</name>
   <name xml:lang="el">Recorder</name>
   <name xml:lang="en-GB">Recorder</name>
-  <name xml:lang="eo">Recorder</name>
   <name xml:lang="es">Recorder</name>
   <name xml:lang="fi">Tallennin</name>
   <name xml:lang="fr">Enregistreur</name>
@@ -48,7 +47,6 @@
   <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
   <summary xml:lang="de">Audioaufnahme</summary>
   <summary xml:lang="en-GB">Audio recorder</summary>
-  <summary xml:lang="eo">Aŭdio-Registrilo</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
   <summary xml:lang="fi">Äänitallennin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
@@ -87,7 +85,6 @@
   <developer_name xml:lang="de">KDE-Gemeinschaft</developer_name>
   <developer_name xml:lang="el">Η Κοινότητα του KDE</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
-  <developer_name xml:lang="eo">KDE-Komunumo</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
@@ -120,7 +117,6 @@
     <p xml:lang="de">Recorder ist eine einfache Anwendung für Audioaufnahmen auf allen Plattformen.</p>
     <p xml:lang="el">Το Recorder είναι μια απλή, για πολλές πλατφόρμες εφαρμογή καταγραφής ήχου.</p>
     <p xml:lang="en-GB">Recorder is a simple, cross-platform audio recording application.</p>
-    <p xml:lang="eo">Recorder estas simpla, transplatforma aŭdio-registra aplikaĵo.</p>
     <p xml:lang="es">Recorder es una sencilla aplicación de grabación de sonido multiplataforma.</p>
     <p xml:lang="fi">Recorder on yksinkertainen monialustainen äänentallennussovellus.</p>
     <p xml:lang="fr">Recorder est une application simple, multi-plate-forme d'enregistreur audio.</p>
