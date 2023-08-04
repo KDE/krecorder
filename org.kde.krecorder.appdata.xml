@@ -18,6 +18,7 @@
   <name xml:lang="en-GB">Recorder</name>
   <name xml:lang="eo">Recorder</name>
   <name xml:lang="es">Recorder</name>
+  <name xml:lang="eu">Grabatzailea</name>
   <name xml:lang="fi">Tallennin</name>
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="gl">Gravadora</name>
@@ -50,6 +51,7 @@
   <summary xml:lang="en-GB">Audio recorder</summary>
   <summary xml:lang="eo">Aŭdio-Registrilo</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
+  <summary xml:lang="eu">Audio grabatzailea</summary>
   <summary xml:lang="fi">Äänitallennin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="gl">Gravadora de son</summary>
@@ -89,6 +91,7 @@
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="eo">KDE-Komunumo</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
+  <developer_name xml:lang="eu">KDE komunitatea</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
@@ -122,6 +125,7 @@
     <p xml:lang="en-GB">Recorder is a simple, cross-platform audio recording application.</p>
     <p xml:lang="eo">Recorder estas simpla, transplatforma aŭdio-registra aplikaĵo.</p>
     <p xml:lang="es">Recorder es una sencilla aplicación de grabación de sonido multiplataforma.</p>
+    <p xml:lang="eu">KRecorder audioa grabatzeko plataforma anitzeko aplikazio erraz bat da.</p>
     <p xml:lang="fi">Recorder on yksinkertainen monialustainen äänentallennussovellus.</p>
     <p xml:lang="fr">Recorder est une application simple, multi-plate-forme d'enregistreur audio.</p>
     <p xml:lang="gl">Gravadora é unha aplicación de gravación de son simple e multiplataforma.</p>
