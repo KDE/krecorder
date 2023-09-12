@@ -70,7 +70,7 @@ find_package(KF5Kirigami2 ${KF_MIN_VERSION})
 set_package_properties(KF5Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
-find_package(KF5KirigamiAddons 0.6 REQUIRED)
+find_package(KF5KirigamiAddons 0.11 REQUIRED)
 
 add_subdirectory(src)
 
