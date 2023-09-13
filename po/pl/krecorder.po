@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-11 00:49+0000\n"
+"POT-Creation-Date: 2023-09-13 00:49+0000\n"
 "PO-Revision-Date: 2022-11-28 18:28+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -204,112 +204,112 @@ msgstr "Nazwa (dobrowolnie)"
 msgid "Storage Folder:"
 msgstr "Katalog przechowywania:"
 
-#: contents/ui/settings/SettingsComponent.qml:40
+#: contents/ui/settings/SettingsComponent.qml:33
 #, kde-format
 msgid "General"
 msgstr "Ogólne"
 
-#: contents/ui/settings/SettingsComponent.qml:45
+#: contents/ui/settings/SettingsComponent.qml:39
 #, kde-format
 msgid "About"
 msgstr "O programie"
 
-#: contents/ui/settings/SettingsComponent.qml:63
+#: contents/ui/settings/SettingsComponent.qml:57
 #, kde-format
 msgid "Audio Format"
 msgstr "Format dźwięku"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgctxt "Ogg Vorbis file format"
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgctxt "Ogg Opus file format"
 msgid "Ogg Opus"
 msgstr "Ogg Opus"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgctxt "FLAC file format"
 msgid "FLAC"
 msgstr "FLAC"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgctxt "MP3 file format"
 msgid "MP3"
 msgstr "MP3"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgid "WAV file format"
 msgstr "Format pliku WAV"
 
-#: contents/ui/settings/SettingsComponent.qml:65
+#: contents/ui/settings/SettingsComponent.qml:59
 #, kde-format
 msgctxt "File format not listed"
 msgid "Other"
 msgstr "Inne"
 
-#: contents/ui/settings/SettingsComponent.qml:92
+#: contents/ui/settings/SettingsComponent.qml:86
 #, kde-format
 msgid "Audio Quality"
 msgstr "Jakość dźwięku"
 
-#: contents/ui/settings/SettingsComponent.qml:93
+#: contents/ui/settings/SettingsComponent.qml:87
 #, kde-format
 msgid "Lowest"
 msgstr "Najniższa"
 
-#: contents/ui/settings/SettingsComponent.qml:93
+#: contents/ui/settings/SettingsComponent.qml:87
 #, kde-format
 msgid "Low"
 msgstr "Niska"
 
-#: contents/ui/settings/SettingsComponent.qml:93
+#: contents/ui/settings/SettingsComponent.qml:87
 #, kde-format
 msgid "Medium"
 msgstr "Średnia"
 
-#: contents/ui/settings/SettingsComponent.qml:93
+#: contents/ui/settings/SettingsComponent.qml:87
 #, kde-format
 msgid "High"
 msgstr "Wysoka"
 
-#: contents/ui/settings/SettingsComponent.qml:93
+#: contents/ui/settings/SettingsComponent.qml:87
 #, kde-format
 msgid "Highest"
 msgstr "Najwyższa"
 
-#: contents/ui/settings/SettingsComponent.qml:94
+#: contents/ui/settings/SettingsComponent.qml:88
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Wyższa jakość dźwięku zwiększa także rozmiar pliku."
 
-#: contents/ui/settings/SettingsComponent.qml:128
+#: contents/ui/settings/SettingsComponent.qml:113
 #, kde-format
 msgid "Advanced"
 msgstr "Rozszerzone"
 
-#: contents/ui/settings/SettingsComponent.qml:133
+#: contents/ui/settings/SettingsComponent.qml:119
 #, kde-format
 msgid "Audio Input"
 msgstr "Wejście dźwięku"
 
-#: contents/ui/settings/SettingsComponent.qml:166
+#: contents/ui/settings/SettingsComponent.qml:152
 #, kde-format
 msgid "Audio Codec"
 msgstr "Kodek dźwięku"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:185
 #, kde-format
 msgid "Container Format"
 msgstr "Format kontenera"
 
-#: contents/ui/settings/SettingsComponent.qml:231
+#: contents/ui/settings/SettingsComponent.qml:216
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
