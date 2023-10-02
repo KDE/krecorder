@@ -10,6 +10,7 @@
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QUrl>
+#include <QAudioRecorder>
 #include <QCommandLineParser>
 #include <QQuickStyle>
 #include <QtQml>
@@ -19,16 +20,12 @@
 #include <KLocalizedString>
 
 #include "about.h"
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#include "recordingmodel.h"
+#include "utils.h"
 #include "audioplayer.h"
 #include "audiorecorder.h"
 #include "audioprober.h"
-#include "recordingmodel.h"
 #include "settingsmodel.h"
-#else
-#include "recording.h"
-#endif
-#include "utils.h"
 #include "version.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
@@ -62,17 +59,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     parser.addVersionOption();
     parser.process(app);
 
-    qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
-    qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-        return new Utils;
-    });
-
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // pre-initialize settings model to apply settings to the AudioRecorder instance
     SettingsModel::instance();
 
+    qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
-
+    qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+        return new Utils;
+    });
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "AudioPlayer", [] (QQmlEngine *, QJSEngine *) -> QObject* {
        return AudioPlayer::instance();
     });
@@ -85,7 +79,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
        return SettingsModel::instance();
     });
-#endif
 
     qmlRegisterSingletonInstance("KRecorder", 1, 0, "AboutType", &AboutType::instance());
     

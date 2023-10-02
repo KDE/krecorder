@@ -8,14 +8,11 @@
 
 #include <QObject>
 #include <QString>
+#include <QMultimedia>
 #include <QCoreApplication>
 #include <QQuickItem>
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <QMultimedia>
-
 #include <audiorecorder.h>
-#endif
 
 class SettingsModel : public QObject
 {

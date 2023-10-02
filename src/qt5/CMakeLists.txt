@@ -3,13 +3,18 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 set(krecorder_SRCS
-    main.cpp
     about.cpp
+    audiorecorder.cpp
+    audioplayer.cpp
+    audioprober.cpp
+    main.cpp
     recording.cpp
+    recordingmodel.cpp
+    settingsmodel.cpp
     utils.cpp
 )
 
-qt6_add_resources(RESOURCES resources.qrc)
+qtquick_compiler_add_resources(RESOURCES resources.qrc)
 
 add_executable(krecorder ${krecorder_SRCS} ${RESOURCES})
 target_link_libraries(krecorder 

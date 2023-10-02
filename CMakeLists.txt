@@ -14,11 +14,15 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 
 project(krecorder VERSION ${RELEASE_SERVICE_VERSION})
 
+# QT_MAJOR_VERSION is defined automatically by QtVersionOption (since ECM 5.82)
+# which is included by KDEInstallDirs;
+# This variables are updated below if Qt6 is found by ECM
 set(QT_MIN_VERSION "5.15.0")
 if (ANDROID)
     set(QT_MIN_VERSION "5.15.10")
 endif()
 set(KF_MIN_VERSION "5.89.0")
+set(KF_MAJOR_VERSION "5")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -43,13 +47,19 @@ include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    set(QT_MIN_VERSION "6.4")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+endif()
+
 # setup version
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KRECORDER
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS 
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS
     Core 
     Gui 
     Widgets 
@@ -57,22 +67,31 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS
     QuickControls2 
     Multimedia 
     Svg
-    QuickCompiler
 )
 
-find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
+if (QT_MAJOR_VERSION STREQUAL "5")
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS
+        QuickCompiler
+    )
+endif()
+
+find_package(KF${KF_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     CoreAddons
     WindowSystem
 )
 
-find_package(KF5Kirigami2 ${KF_MIN_VERSION})
-set_package_properties(KF5Kirigami2 PROPERTIES
+find_package(KF${KF_MAJOR_VERSION}Kirigami2 ${KF_MIN_VERSION})
+set_package_properties(KF${KF_MAJOR_VERSION}Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
-find_package(KF5KirigamiAddons 0.11 REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}KirigamiAddons 0.11 REQUIRED)
 
-add_subdirectory(src)
+if (QT_MAJOR_VERSION STREQUAL "6")
+    add_subdirectory(src)
+else()
+    add_subdirectory(src/qt5)
+endif()
 
 ki18n_install(po)
 

@@ -13,17 +13,12 @@ AudioProber::AudioProber(QObject *parent)
 
 AudioProber::AudioProber(QObject *parent, QAudioRecorder *source) 
     : QAudioProbe{ parent }
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     , m_recorderSource{ source }
-#endif
 {
     connect(this, &AudioProber::audioBufferProbed, this, &AudioProber::process);
-
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    
     // connect to recorder
     connect(m_recorderSource, &QAudioRecorder::stateChanged, this, &AudioProber::handleRecorderState);
-#else
-#endif
     
     // loop to add volume bars 
     volumeBarTimer = new QTimer(this);

@@ -6,13 +6,13 @@
  */
 
 import QtQuick 2.12
-import QtQuick.Controls as Controls
-import QtQuick.Layouts
-import QtQuick.Dialogs
+import QtQuick.Controls 2.15 as Controls
+import QtQuick.Layouts 1.2
+import QtQuick.Dialogs 1.3
 
-import org.kde.kirigami as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
 
-import KRecorder
+import KRecorder 1.0
 
 import "components"
 
@@ -29,10 +29,10 @@ Kirigami.ScrollablePage {
     
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
     
-    actions: [
+    actions.contextualActions: [
         Kirigami.Action {
             id: editAction
-            icon.name: "edit-entry"
+            iconName: "edit-entry"
             text: i18n("Edit")
             onTriggered: root.editMode = !root.editMode
             checkable: true
@@ -40,7 +40,7 @@ Kirigami.ScrollablePage {
         },
         Kirigami.Action {
             visible: !applicationWindow().isWidescreen
-            icon.name: "settings-configure"
+            iconName: "settings-configure"
             text: i18n("Settings")
             onTriggered: applicationWindow().openSettings();
         },
@@ -139,8 +139,10 @@ Kirigami.ScrollablePage {
         
         FileDialog {
             id: saveFileDialog
-            fileMode: FileDialog.SaveFile
-            currentFolder: shortcuts.music
+            selectExisting: false
+            selectFolder: false
+            selectMultiple: false
+            folder: shortcuts.music
                 
             property Recording recording
             
@@ -214,7 +216,7 @@ Kirigami.ScrollablePage {
             customFooterActions: [
                 Kirigami.Action {
                     text: i18nc("@action:button", "Delete")
-                    icon.name: "delete"
+                    iconName: "delete"
                     onTriggered: {
                         if (applicationWindow().currentRecording && deleteDialog.toDelete.filePath == applicationWindow().currentRecording.filePath) {
                             applicationWindow().switchToRecording(null);
@@ -225,7 +227,7 @@ Kirigami.ScrollablePage {
                 },
                 Kirigami.Action {
                     text: i18nc("@action:button", "Cancel")
-                    icon.name: "dialog-cancel"
+                    iconName: "dialog-cancel"
                     onTriggered: {
                         deleteDialog.close();
                     }
