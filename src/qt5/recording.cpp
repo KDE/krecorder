@@ -13,7 +13,7 @@
 #include <QDebug>
 #include <QJsonDocument>
 #include <QJsonArray>
-#include <QRegularExpression>
+
 #include "utils.h"
 
 Recording::Recording(QObject *parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
@@ -98,8 +98,7 @@ void Recording::setFileName(const QString &fileName)
 {
     QString oldPath = m_filePath;
 
-    m_filePath.replace(QRegularExpression(m_fileName + QStringLiteral("(?!.*") + m_fileName + QStringLiteral(")")), fileName);
-
+    m_filePath.replace(QRegExp(m_fileName + QStringLiteral("(?!.*") + m_fileName + QStringLiteral(")")), fileName);
     QFile(oldPath).rename(m_filePath);
 
     m_fileName = fileName;

@@ -137,7 +137,7 @@ Kirigami.Page {
         customFooterActions: [
             Kirigami.Action {
                 text: i18n("Save")
-                icon.name: "document-save"
+                iconName: "document-save"
                 onTriggered: {
                     AudioRecorder.setRecordingName(recordingName.text);
                     AudioRecorder.stop();
@@ -149,7 +149,7 @@ Kirigami.Page {
             },
             Kirigami.Action {
                 text: i18n("Discard")
-                icon.name: "delete"
+                iconName: "delete"
                 onTriggered: {
                     AudioRecorder.reset()
                     saveDialog.close();

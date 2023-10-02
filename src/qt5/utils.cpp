@@ -17,7 +17,7 @@ Utils::Utils(QObject *parent)
 
 QString Utils::formatDateTime(const QString &datetime)
 {
-    return QDateTime::fromString(datetime, Qt::TextDate).toString(QLocale().dateTimeFormat(QLocale::ShortFormat));
+    return QDateTime::fromString(datetime, Qt::TextDate).toString(Qt::DefaultLocaleShortDate);
 }
 
 QString Utils::formatTime(int time)

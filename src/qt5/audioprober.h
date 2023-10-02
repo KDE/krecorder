@@ -11,11 +11,7 @@
 #include <QObject>
 #include <QTimer>
 #include <QVariant>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <QAudioRecorder>
-#else
-#include <QMediaCaptureSession>
-#endif
 #include <QMediaPlayer>
 #include <QDebug>
 
@@ -55,11 +51,7 @@ private:
     QVariantList m_volumesList;
 
     QTimer *volumeBarTimer;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QAudioRecorder *m_recorderSource;
-#else
-    QMediaCaptureSession *m_mediaCaptureSession;
-#endif
     QMediaPlayer *m_playerSource;
     
 Q_SIGNALS:
