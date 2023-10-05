@@ -16,7 +16,6 @@
 #include <QDir>
 
 #include "utils.h"
-#include "audiorecorder.h"
 
 const QString DEF_RECORD_PREFIX = QStringLiteral("clip");
 
@@ -121,7 +120,7 @@ QString RecordingModel::nextDefaultRecordingName()
     }
     
     // add files in storage location
-    QDir storageLocation{AudioRecorder::instance()->storageFolder()};
+    QDir storageLocation{QStandardPaths::writableLocation(QStandardPaths::MusicLocation)};
     for (QFileInfo &info : storageLocation.entryInfoList()) {
         auto name = info.fileName();
         auto list = name.split(QStringLiteral("."));

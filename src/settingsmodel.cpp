@@ -6,10 +6,6 @@
 
 #include "settingsmodel.h"
 
-#include <KWindowEffects>
-
-#include <QQuickWindow>
-
 SettingsModel* SettingsModel::instance()
 {
     static SettingsModel *s_settingsModel = new SettingsModel(qApp);
@@ -59,11 +55,6 @@ QString SettingsModel::audioCodec() const
 
 void SettingsModel::setAudioCodec(const QString &audioCodec)
 {
-    if (AudioRecorder::instance()->audioCodec() == audioCodec && this->audioCodec() == audioCodec) {
-        return;
-    }
-    
-    AudioRecorder::instance()->setAudioCodec(audioCodec);
     settings->setValue(QStringLiteral("General/audioCodec"), audioCodec);
 
     Q_EMIT audioCodecChanged();
@@ -78,11 +69,6 @@ QString SettingsModel::containerFormat() const
 
 void SettingsModel::setContainerFormat(const QString &audioContainerFormat)
 {
-    if (AudioRecorder::instance()->containerFormat() == audioContainerFormat && containerFormat() != audioContainerFormat) {
-        return;
-    }
-    
-    AudioRecorder::instance()->setContainerFormat(audioContainerFormat);
     settings->setValue(QStringLiteral("General/containerFormat"), audioContainerFormat);
     
     Q_EMIT containerFormatChanged();
@@ -100,26 +86,7 @@ void SettingsModel::setAudioQuality(int audioQuality)
         return;
     }
     
-    QAudioEncoderSettings s = AudioRecorder::instance()->audioSettings();
-    s.setQuality(static_cast<QMultimedia::EncodingQuality>(audioQuality));
-    AudioRecorder::instance()->setAudioSettings(s);
-    
     settings->setValue(QStringLiteral("General/audioQuality"), audioQuality);
     
     Q_EMIT audioQualityChanged();
-}
-
-void SettingsModel::setBlur(QQuickItem *item, bool blur)
-{
-    auto setWindows = [item, blur]() {
-        auto reg = QRect(QPoint(0, 0), item->window()->size());
-        KWindowEffects::enableBackgroundContrast(item->window(), blur, 1, 1, 1, reg);
-        KWindowEffects::enableBlurBehind(item->window(), blur, reg);
-    };
-
-    disconnect(item->window(), &QQuickWindow::heightChanged, this, nullptr);
-    disconnect(item->window(), &QQuickWindow::widthChanged, this, nullptr);
-    connect(item->window(), &QQuickWindow::heightChanged, this, setWindows);
-    connect(item->window(), &QQuickWindow::widthChanged, this, setWindows);
-    setWindows();
 }
