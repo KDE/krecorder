@@ -5,16 +5,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.2 as Controls
-import QtQuick.Layouts 1.2
+import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
 
-import QtQml 2.14
-import QtMultimedia 5.12
+import QtQml
+import QtMultimedia
 
-import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import KRecorder 1.0
+import KRecorder
 import "settings"
 
 Kirigami.ApplicationWindow {
@@ -39,11 +39,6 @@ Kirigami.ApplicationWindow {
 
     Component.onCompleted: {
         switchToRecording(null);
-        
-        // TODO if we want to blur behind window
-        // if (!Kirigami.Settings.isMobile) {
-        //     SettingsModel.setBlur(pageStack, true);
-        // }
     }
     
     // page switch animation

@@ -7,19 +7,16 @@
 
 #pragma once
 
-#include <QAudioProbe>
+#include <QAudioDecoder>
+#include <QMediaPlayer>
+#include <QMediaRecorder>
 #include <QObject>
 #include <QTimer>
 #include <QVariant>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <QAudioRecorder>
-#else
-#include <QMediaCaptureSession>
-#endif
-#include <QMediaPlayer>
+
 #include <QDebug>
 
-class AudioProber : public QAudioProbe
+class AudioProber : public QAudioDecoder
 {
     Q_OBJECT
     Q_PROPERTY(QVariantList volumesList READ volumesList NOTIFY volumesListChanged)
@@ -28,10 +25,10 @@ class AudioProber : public QAudioProbe
 
 public:
     AudioProber(QObject *parent = nullptr);
-    AudioProber(QObject *parent, QAudioRecorder *source);
+    AudioProber(QObject *parent, QMediaRecorder *source);
     AudioProber(QObject *parent, QMediaPlayer *source);
 
-    void process(QAudioBuffer buffer);
+    void process();
     void processVolumeBar();
 
     QVariantList volumesList() const;
@@ -44,8 +41,8 @@ public:
     void clearVolumesList();
 
 private:
-    void handleRecorderState(QAudioRecorder::State state);
-    void handlePlayerState(QMediaPlayer::State state);
+    void handleRecorderState(QMediaRecorder::RecorderState state);
+    void handlePlayerState(QMediaPlayer::PlaybackState state);
     
     int m_audioSum = 0;  //
     int m_audioLen = 0; // used for calculating the value of one volume bar from many
@@ -55,11 +52,7 @@ private:
     QVariantList m_volumesList;
 
     QTimer *volumeBarTimer;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QAudioRecorder *m_recorderSource;
-#else
-    QMediaCaptureSession *m_mediaCaptureSession;
-#endif
+    QMediaRecorder *m_recorderSource;
     QMediaPlayer *m_playerSource;
     
 Q_SIGNALS:

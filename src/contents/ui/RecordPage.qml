@@ -5,13 +5,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.2 as Controls
-import QtQuick.Layouts 1.2
+import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import KRecorder 1.0
+import KRecorder
 
 import "components"
 
@@ -19,10 +19,10 @@ Kirigami.Page {
     id: root
     visible: false
     title: i18n("Record Audio")
-    
-    property bool isStopped: AudioRecorder.state === AudioRecorder.StoppedState
-    property bool isPaused: AudioRecorder.state === AudioRecorder.PausedState
-    
+
+    property bool isStopped: AudioRecorder.recorderState === AudioRecorder.StoppedState
+    property bool isPaused: AudioRecorder.recorderState === AudioRecorder.PausedState
+
     onVisibleChanged: {
         // if page has been opened, and not in a recording session, start recording
         if (visible && (!isStopped && !isPaused)) {
@@ -32,8 +32,8 @@ Kirigami.Page {
     
     Connections {
         target: AudioRecorder
-        function onError(error) {
-            console.warn("Error on the recorder", error)
+        function onErrorChanged() {
+            console.warn("Error on the recorder", AudioRecorder.errorString)
         }
     }
     

@@ -12,18 +12,15 @@ AudioPlayer *AudioPlayer::instance()
     return s_audioPlayer;
 }
 
-AudioPlayer::AudioPlayer(QObject *parent) 
+AudioPlayer::AudioPlayer(QObject *parent)
     : QMediaPlayer(parent)
-    , m_audioProbe{ new AudioProber(parent, this) }
 {
-    m_audioProbe->setSource(this);
-    
-    QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
-    
-    connect(this, &AudioPlayer::stateChanged, this, &AudioPlayer::handleStateChange);
+    m_audioOutput = new QAudioOutput(this);
+    setAudioOutput(m_audioOutput);
+    connect(this, &AudioPlayer::playbackStateChanged, this, &AudioPlayer::handleStateChange);
 }
 
-void AudioPlayer::handleStateChange(QMediaPlayer::State state)
+void AudioPlayer::handleStateChange(PlaybackState state)
 {
     if (state == QMediaPlayer::StoppedState) {
         wasStopped = true;
@@ -32,12 +29,12 @@ void AudioPlayer::handleStateChange(QMediaPlayer::State state)
     }
 }
 
-AudioProber *AudioPlayer::prober()
-{
-    return m_audioProbe;
-}
-
 void AudioPlayer::setMediaPath(QString path)
 {
-    setMedia(QUrl::fromLocalFile(path));
+    setSource(QUrl::fromLocalFile(path));
+}
+
+void AudioPlayer::setVolume(float volume)
+{
+    m_audioOutput->setVolume(volume);
 }

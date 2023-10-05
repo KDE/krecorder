@@ -2,12 +2,12 @@
 // SPDX-FileCopyrightText: 2020-2022 Devin Lin <espidev@gmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-import QtQuick 2.0
-import QtQuick.Layouts 1.12
-import QtQuick.Controls 2.2 as Controls
-import org.kde.kirigami 2.12 as Kirigami
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as Controls
+import org.kde.kirigami as Kirigami
 
-import KRecorder 1.0
+import KRecorder
 
 Item {
     id: visualization

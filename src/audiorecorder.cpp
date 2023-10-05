@@ -6,59 +6,50 @@
  */
 
 #include "audiorecorder.h"
-#include "settingsmodel.h"
 
-AudioRecorder* AudioRecorder::instance()
+#include <QAudioDevice>
+#include <QCoreApplication>
+#include <QFileInfo>
+#include <QMediaDevices>
+#include <QMediaFormat>
+#include <QStandardPaths>
+#include <QQmlEngine>
+
+#include "recordingmodel.h"
+
+#include <QDebug>
+
+AudioRecorder *AudioRecorder::instance()
 {
     static AudioRecorder *s_audioRecorder = new AudioRecorder(qApp);
     return s_audioRecorder;
 }
 
-AudioRecorder::AudioRecorder(QObject *parent) : QAudioRecorder(parent)
-{
-    m_audioProbe = new AudioProber(parent, this);
-    m_audioProbe->setSource(this);
-    
-    QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
-
-    // once the file is done writing, save recording to model
-    connect(this, &QAudioRecorder::stateChanged, this, &AudioRecorder::handleStateChange);
-    
-    // load settings
-    setAudioCodec(SettingsModel::instance()->audioCodec());
-    setContainerFormat(SettingsModel::instance()->containerFormat());
-    QAudioEncoderSettings s = audioSettings();
-    s.setQuality(static_cast<QMultimedia::EncodingQuality>(SettingsModel::instance()->audioQuality()));
-    setAudioSettings(s);
-}
-
-AudioProber* AudioRecorder::prober()
+AudioProber *AudioRecorder::prober()
 {
     return m_audioProbe;
 }
-    
-QString AudioRecorder::audioCodec() 
-{
-    return m_encoderSettings.codec();
-}
 
-void AudioRecorder::setAudioCodec(const QString &codec)
+AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
 {
-    m_encoderSettings.setCodec(codec);
-    setAudioSettings(m_encoderSettings);
-    Q_EMIT audioCodecChanged();
-}
+    setQuality(QMediaRecorder::HighQuality);
+    setEncodingMode(QMediaRecorder::ConstantQualityEncoding);
+    // setAudioBitRate(0);
+    // setAudioChannelCount(-1);
+    // setMediaFormat(QMediaFormat(QMediaFormat::UnspecifiedFormat));
 
-int AudioRecorder::audioQuality() 
-{
-    return m_encoderSettings.quality();
-}
+    m_audioProbe = new AudioProber(parent, this);
+    m_audioProbe->setSource(actualLocation());
 
-void AudioRecorder::setAudioQuality(int quality)
-{
-    m_encoderSettings.setQuality(QMultimedia::EncodingQuality(quality));
-    setAudioSettings(m_encoderSettings);
-    Q_EMIT audioQualityChanged();
+    m_mediaCaptureSession = new QMediaCaptureSession(this);
+    m_audioInput = new QAudioInput(QMediaDevices::defaultAudioInput(), this);
+    m_mediaCaptureSession->setAudioInput(m_audioInput);
+    m_mediaCaptureSession->setRecorder(this);
+
+    QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
+
+    // once the file is done writing, save recording to model
+    connect(this, &QMediaRecorder::recorderStateChanged, this, &AudioRecorder::handleStateChange);
 }
 
 QString AudioRecorder::storageFolder() const
@@ -72,9 +63,9 @@ void AudioRecorder::reset()
     stop();
 }
 
-void AudioRecorder::handleStateChange(QAudioRecorder::State state)
+void AudioRecorder::handleStateChange(RecorderState state)
 {
-    if (state == QAudioRecorder::StoppedState) {
+    if (state == QMediaRecorder::StoppedState) {
         if (resetRequest) {
             // reset
             resetRequest = false;
@@ -89,7 +80,7 @@ void AudioRecorder::handleStateChange(QAudioRecorder::State state)
             saveRecording();
         }
         
-    } else if (state == QAudioRecorder::PausedState) {
+    } else if (state == QMediaRecorder::PausedState) {
         cachedDuration = duration();
     }
 }

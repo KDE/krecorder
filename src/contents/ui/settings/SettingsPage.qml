@@ -1,12 +1,12 @@
 // SPDX-FileCopyrightText: 2022 Devin Lin <espidev@gmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-import QtQuick 2.0
-import QtQuick.Controls 2.2 as Controls
-import QtQuick.Layouts 1.1
+import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.19 as Kirigami
-import KRecorder 1.0
+import org.kde.kirigami as Kirigami
+import KRecorder
 
 // A settings page is used when the app is narrow.
 Kirigami.ScrollablePage {

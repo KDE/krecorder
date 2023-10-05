@@ -2,7 +2,7 @@
 # Copyright 2021 Devin Lin <espidev@gmail.com>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-build 
+build*
 .flatpak-builder
 
 # LSP & IDE
@@ -11,7 +11,9 @@ build
 .clangd
 .cache
 .idea
+.vscode/
 /cmake-build*
+*.user
 
 *.kdev4
 .kdev4/krecorder.kdev4

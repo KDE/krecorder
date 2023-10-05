@@ -6,32 +6,28 @@
 
 #pragma once
 
+#include <QAudioOutput>
 #include <QMediaPlayer>
-#include <QAudioProbe>
 #include <QQmlEngine>
 #include <QUrl>
 #include <QCoreApplication>
 
-#include <audioprober.h>
-
 class AudioPlayer : public QMediaPlayer
 {
     Q_OBJECT
-    Q_PROPERTY(AudioProber *prober READ prober CONSTANT)
 
 public:
     static AudioPlayer *instance();
 
-    void handleStateChange(QMediaPlayer::State state);
-
-    AudioProber *prober();
+    void handleStateChange(QMediaPlayer::PlaybackState state);
 
     Q_INVOKABLE void setMediaPath(QString path);
+    Q_INVOKABLE void setVolume(float volume);
 
 private:
     explicit AudioPlayer(QObject *parent = nullptr);
 
-    AudioProber *m_audioProbe;
+    QAudioOutput *m_audioOutput;
     
     bool wasStopped = false;
 };

@@ -19,22 +19,17 @@
 #include <KLocalizedString>
 
 #include "about.h"
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include "audioplayer.h"
-#include "audiorecorder.h"
 #include "audioprober.h"
+#include "audiorecorder.h"
+#include "recording.h"
 #include "recordingmodel.h"
 #include "settingsmodel.h"
-#else
-#include "recording.h"
-#endif
 #include "utils.h"
 #include "version.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    
     // set default style
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
@@ -63,29 +58,29 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     parser.process(app);
 
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
+    qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
     qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return new Utils;
     });
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // pre-initialize settings model to apply settings to the AudioRecorder instance
     SettingsModel::instance();
 
-    qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
+    qmlRegisterSingletonType<AudioPlayer>("KRecorder", 1, 0, "AudioPlayer", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+        return AudioPlayer::instance();
+    });
 
-    qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "AudioPlayer", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return AudioPlayer::instance();
+    qmlRegisterSingletonType<AudioRecorder>("KRecorder", 1, 0, "AudioRecorder", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+        return AudioRecorder::instance();
     });
-    qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "AudioRecorder", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return AudioRecorder::instance();
-    });
+
     qmlRegisterSingletonType<RecordingModel>("KRecorder", 1, 0, "RecordingModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
         return RecordingModel::instance();
     });
+
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
-       return SettingsModel::instance();
+        return SettingsModel::instance();
     });
-#endif
 
     qmlRegisterSingletonInstance("KRecorder", 1, 0, "AboutType", &AboutType::instance());
     

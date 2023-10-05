@@ -5,7 +5,12 @@
 set(krecorder_SRCS
     main.cpp
     about.cpp
+    audioplayer.cpp
+    audioprober.cpp
+    audiorecorder.cpp
     recording.cpp
+    recordingmodel.cpp
+    settingsmodel.cpp
     utils.cpp
 )
 

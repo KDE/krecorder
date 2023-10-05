@@ -9,13 +9,8 @@
 #include <QObject>
 #include <QString>
 #include <QCoreApplication>
+#include <QSettings>
 #include <QQuickItem>
-
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <QMultimedia>
-
-#include <audiorecorder.h>
-#endif
 
 class SettingsModel : public QObject
 {
@@ -61,8 +56,6 @@ public:
 
     int audioQuality() const;
     void setAudioQuality(int audioQuality);
-
-    Q_INVOKABLE void setBlur(QQuickItem *item, bool blur);
 
 private:
     explicit SettingsModel(QObject *parent = nullptr);

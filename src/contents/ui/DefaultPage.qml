@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.12
-import org.kde.kirigami 2.12 as Kirigami
-import QtQuick.Controls 2.2 as Controls
-import QtQuick.Layouts 1.2
-import KRecorder 1.0
+import QtQuick
+import org.kde.kirigami as Kirigami
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
+import KRecorder
 
 Kirigami.Page {
     title: ""
@@ -16,10 +16,10 @@ Kirigami.Page {
     property int yTranslate: 0
     property int mainOpacity: 0
 
-    actions.contextualActions: [
+    actions: [
         Kirigami.Action {
             visible: applicationWindow().isWidescreen
-            iconName: "settings-configure"
+            icon.name: "settings-configure"
             text: i18n("Settings")
             onTriggered: applicationWindow().openSettings();
         }

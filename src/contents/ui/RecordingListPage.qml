@@ -5,7 +5,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.12
+import QtCore
+import QtQuick
 import QtQuick.Controls as Controls
 import QtQuick.Layouts
 import QtQuick.Dialogs
@@ -140,7 +141,7 @@ Kirigami.ScrollablePage {
         FileDialog {
             id: saveFileDialog
             fileMode: FileDialog.SaveFile
-            currentFolder: shortcuts.music
+            currentFolder: StandardPaths.writableLocation(StandardPaths.MusicLocation)
                 
             property Recording recording
             
