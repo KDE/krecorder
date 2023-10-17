@@ -5,3 +5,7 @@ Source: https://invent.kde.org/plasma-mobile/krecorder
 Files: android/res/drawable/icon.png
 Copyright: 2020 Jonah Brüchert <jbb@kaidan.im>
 License: CC-BY-4.0
+
+Files: snapcraft.yaml
+Copyright: none
+License: CC0-1.0
