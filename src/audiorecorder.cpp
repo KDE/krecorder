@@ -15,7 +15,12 @@
 #include <QStandardPaths>
 #include <QQmlEngine>
 
+#if QT_CONFIG(permissions)
+#include <QPermissions>
+#endif
+
 #include "recordingmodel.h"
+#include "settingsmodel.h"
 
 #include <QDebug>
 
@@ -30,13 +35,64 @@ AudioProber *AudioRecorder::prober()
     return m_audioProbe;
 }
 
+QString AudioRecorder::audioCodec()
+{
+    return QVariant::fromValue(m_mediaFormat->audioCodec()).toString();
+}
+
+void AudioRecorder::setAudioCodec(const QString &codec)
+{
+    auto audioCodec = QVariant(codec).value<QMediaFormat::AudioCodec>();
+    qDebug() << Q_FUNC_INFO << audioCodec;
+    m_mediaFormat->setAudioCodec(audioCodec);
+    setMediaFormat(*m_mediaFormat);
+    Q_EMIT audioCodecChanged();
+}
+
+int AudioRecorder::audioQuality()
+{
+    return quality();
+}
+
+void AudioRecorder::setAudioQuality(int quality)
+{
+    setQuality(QVariant(quality).value<QMediaRecorder::Quality>());
+    Q_EMIT audioQualityChanged();
+}
+
 AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
 {
+#if QT_CONFIG(permissions)
+    QMicrophonePermission microphonePermission;
+    switch (qApp->checkPermission(microphonePermission)) {
+    case Qt::PermissionStatus::Undetermined:
+        qApp->requestPermission(microphonePermission, this, &AudioRecorder::instance);
+        return;
+    case Qt::PermissionStatus::Denied:
+        qWarning("Microphone permission is not granted!");
+        return;
+    case Qt::PermissionStatus::Granted:
+        break;
+    }
+#endif
+    for (auto device : QMediaDevices::audioInputs()) {
+        auto name = device.description();
+        m_audioInputs.append(name);
+    }
+
+    // FIXME: update related properties
+    for (auto container : m_mediaFormat->supportedFileFormats(QMediaFormat::Encode)) {
+        if (container < QMediaFormat::Mpeg4Audio) // Skip video formats
+            continue;
+        m_supportedContainers.append(QMediaFormat::fileFormatDescription(container));
+    }
+
+
+    m_mediaFormat = new QMediaFormat();
+    setMediaFormat(*m_mediaFormat);
+
     setQuality(QMediaRecorder::HighQuality);
     setEncodingMode(QMediaRecorder::ConstantQualityEncoding);
-    // setAudioBitRate(0);
-    // setAudioChannelCount(-1);
-    // setMediaFormat(QMediaFormat(QMediaFormat::UnspecifiedFormat));
 
     m_audioProbe = new AudioProber(parent, this);
     m_audioProbe->setSource(actualLocation());
@@ -50,6 +106,12 @@ AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
 
     // once the file is done writing, save recording to model
     connect(this, &QMediaRecorder::recorderStateChanged, this, &AudioRecorder::handleStateChange);
+
+    setAudioCodec(SettingsModel::instance()->audioCodec());
+    setContainerFormat(SettingsModel::instance()->containerFormat());
+    setAudioQuality(SettingsModel::instance()->audioQuality());
+    // setAudioBitRate(0);
+    // setAudioChannelCount(-1);
 }
 
 QString AudioRecorder::storageFolder() const
@@ -128,4 +190,35 @@ void AudioRecorder::saveRecording()
     QString fileName = spl.at(spl.size()-1).split(QStringLiteral("."))[0];
     
     RecordingModel::instance()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
+}
+
+QString AudioRecorder::containerFormat() const
+{
+    return m_containerFormat;
+}
+
+void AudioRecorder::setContainerFormat(const QString &newContainerFormat)
+{
+    if (m_containerFormat == newContainerFormat) {
+        return;
+    }
+    m_containerFormat = newContainerFormat;
+
+    m_mediaFormat->setFileFormat(QVariant(m_containerFormat).value<QMediaFormat::FileFormat>());
+    setMediaFormat(*m_mediaFormat);
+}
+
+QStringList AudioRecorder::audioInputs() const
+{
+    return m_audioInputs;
+}
+
+QStringList AudioRecorder::supportedAudioCodecs() const
+{
+    return m_supportedAudioCodecs;
+}
+
+QStringList AudioRecorder::supportedContainers() const
+{
+    return m_supportedContainers;
 }
