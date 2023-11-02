@@ -49,64 +49,6 @@ ColumnLayout {
                 }
             }
         }
-
-        FormCard.FormDelegateSeparator { above: aboutDelegate; below: audioFormatDropdown }
-
-        FormCard.FormComboBoxDelegate {
-            id: audioFormatDropdown
-            text: i18n("Audio Format")
-            // the order here must match the one in settingsmodel
-            model: [i18nc("Ogg Vorbis file format", "Ogg Vorbis"), i18nc("Ogg Opus file format", "Ogg Opus"), i18nc("FLAC file format", "FLAC"), i18nc("MP3 file format", "MP3"), i18n("WAV file format", "WAV"), i18nc("File format not listed", "Other")] 
-            onCurrentValueChanged: SettingsModel.simpleAudioFormat = currentIndex;
-            displayMode: FormCard.FormComboBoxDelegate.Dialog
-            
-            Binding on currentIndex {
-                value: SettingsModel.simpleAudioFormat
-            }
-
-            onClicked: if (root.dialog && audioFormatDropdown.displayMode === FormCard.FormComboBoxDelegate.Dialog) {
-                dialogTimer.dialog = audioFormatDropdown.dialog;
-                dialogTimer.restart();
-            }
-
-            Connections {
-                target: audioFormatDropdown.dialog
-                function onClosed() {
-                    if (root.dialog) {
-                        root.dialog.open();
-                    }
-                }
-            }
-        }
-
-        FormCard.FormDelegateSeparator { above: audioFormatDropdown; below: audioQualityDropdown }
-
-        FormCard.FormComboBoxDelegate {
-            id: audioQualityDropdown
-            text: i18n("Audio Quality")
-            model: [i18n("Lowest"), i18n("Low"), i18n("Medium"), i18n("High"), i18n("Highest")]
-            description: i18n("Higher audio quality also increases file size.")
-            onCurrentValueChanged: SettingsModel.audioQuality = currentIndex;
-            displayMode: FormCard.FormComboBoxDelegate.Dialog
-            
-            Binding on currentIndex {
-                value: SettingsModel.audioQuality
-            }
-            
-            onClicked: if (root.dialog && audioQualityDropdown.displayMode === FormCard.FormComboBoxDelegate.Dialog) {
-                dialogTimer.dialog = audioQualityDropdown.dialog;
-                dialogTimer.restart();
-            }
-
-            Connections {
-                target: audioQualityDropdown.dialog
-                function onClosed() {
-                    if (root.dialog) {
-                        root.dialog.open();
-                    }
-                }
-            }
-        }
     }
 
     FormCard.FormHeader {
@@ -145,8 +87,6 @@ ColumnLayout {
             }
         }
 
-        FormCard.FormDelegateSeparator { above: audioInputDropdown; below: audioCodecDropdown }
-
         FormCard.FormComboBoxDelegate {
             id: audioCodecDropdown
             text: i18n("Audio Codec")
@@ -178,8 +118,6 @@ ColumnLayout {
             }
         }
 
-        FormCard.FormDelegateSeparator { above: audioCodecDropdown; below: containerFormatDropdown }
-
         FormCard.FormComboBoxDelegate {
             id: containerFormatDropdown
             text: i18n("Container Format")
@@ -203,6 +141,33 @@ ColumnLayout {
 
             Connections {
                 target: containerFormatDropdown.dialog
+                function onClosed() {
+                    if (root.dialog) {
+                        root.dialog.open();
+                    }
+                }
+            }
+        }
+
+        FormCard.FormComboBoxDelegate {
+            id: audioQualityDropdown
+            text: i18n("Audio Quality")
+            model: [i18n("Lowest"), i18n("Low"), i18n("Medium"), i18n("High"), i18n("Highest")]
+            description: i18n("Higher audio quality also increases file size.")
+            onCurrentValueChanged: SettingsModel.audioQuality = currentIndex;
+            displayMode: FormCard.FormComboBoxDelegate.Dialog
+
+            Binding on currentIndex {
+                value: SettingsModel.audioQuality
+            }
+
+            onClicked: if (root.dialog && audioQualityDropdown.displayMode === FormCard.FormComboBoxDelegate.Dialog) {
+                dialogTimer.dialog = audioQualityDropdown.dialog;
+                dialogTimer.restart();
+            }
+
+            Connections {
+                target: audioQualityDropdown.dialog
                 function onClosed() {
                     if (root.dialog) {
                         root.dialog.open();
