@@ -29,6 +29,7 @@ class AudioRecorder : public QMediaRecorder
 private:
     explicit AudioRecorder(QObject *parent = nullptr);
     void handleStateChange(QMediaRecorder::RecorderState state);
+    void updateFormats(QMediaFormat::FileFormat fileFormat = QMediaFormat::FileFormat::UnspecifiedFormat, QMediaFormat::AudioCodec audioCodec = QMediaFormat::AudioCodec::Unspecified);
 
     QMediaFormat *m_mediaFormat;
     QMediaCaptureSession *m_mediaCaptureSession;
@@ -36,10 +37,10 @@ private:
 
     AudioProber *m_audioProbe;
 
-    QString recordingName = {}; // rename recording after recording finishes
-    QString savedPath = {}; // updated after the audio file is renamed
-    int cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
-    bool resetRequest = false;
+    QString m_recordingName = {}; // rename recording after recording finishes
+    QString m_savedPath = {}; // updated after the audio file is renamed
+    int m_cachedDuration = 0; // cache duration (since it is set to zero when the recorder is in StoppedState)
+    bool m_resetRequest = false;
 
     QString m_containerFormat;
 
@@ -48,6 +49,8 @@ private:
     QStringList m_supportedAudioCodecs;
 
     QStringList m_supportedContainers;
+
+    bool m_updatingFormats = false;
 
 public:
     static AudioRecorder* instance();

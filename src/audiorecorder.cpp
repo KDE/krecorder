@@ -15,6 +15,8 @@
 #include <QStandardPaths>
 #include <QQmlEngine>
 
+#include <KLocalizedString>
+
 #if QT_CONFIG(permissions)
 #include <QPermissions>
 #endif
@@ -75,21 +77,16 @@ AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
         break;
     }
 #endif
+
+    m_audioInputs.append(i18n("Default audio input"));
     for (auto device : QMediaDevices::audioInputs()) {
         auto name = device.description();
         m_audioInputs.append(name);
     }
 
-    // FIXME: update related properties
-    for (auto container : m_mediaFormat->supportedFileFormats(QMediaFormat::Encode)) {
-        if (container < QMediaFormat::Mpeg4Audio) // Skip video formats
-            continue;
-        m_supportedContainers.append(QMediaFormat::fileFormatDescription(container));
-    }
-
-
     m_mediaFormat = new QMediaFormat();
-    setMediaFormat(*m_mediaFormat);
+
+    updateFormats();
 
     setQuality(QMediaRecorder::HighQuality);
     setEncodingMode(QMediaRecorder::ConstantQualityEncoding);
@@ -121,19 +118,19 @@ QString AudioRecorder::storageFolder() const
 
 void AudioRecorder::reset()
 {
-    resetRequest = true;
+    m_resetRequest = true;
     stop();
 }
 
 void AudioRecorder::handleStateChange(RecorderState state)
 {
     if (state == QMediaRecorder::StoppedState) {
-        if (resetRequest) {
+        if (m_resetRequest) {
             // reset
-            resetRequest = false;
+            m_resetRequest = false;
             QFile(actualLocation().toString()).remove();
             qDebug() << "Discarded recording " << actualLocation().toString();
-            recordingName = QString();
+            m_recordingName = QString();
             
         } else {
             // rename file to desired file name
@@ -143,19 +140,43 @@ void AudioRecorder::handleStateChange(RecorderState state)
         }
         
     } else if (state == QMediaRecorder::PausedState) {
-        cachedDuration = duration();
+        m_cachedDuration = duration();
     }
 }
 
+void AudioRecorder::updateFormats(QMediaFormat::FileFormat fileFormat, QMediaFormat::AudioCodec audioCodec) {
+    if (m_updatingFormats)
+        return;
+    m_updatingFormats = true;
+
+    m_mediaFormat->setFileFormat(fileFormat);
+    m_mediaFormat->setAudioCodec(audioCodec);
+
+    m_supportedContainers.append(i18n("Default file format"));
+    for (auto container : m_mediaFormat->supportedFileFormats(QMediaFormat::Encode)) {
+        if (container < QMediaFormat::Mpeg4Audio) // Skip video formats
+            continue;
+        m_supportedContainers.append(QMediaFormat::fileFormatDescription(container));
+    }
+
+    setMediaFormat(*m_mediaFormat);
+
+    m_supportedAudioCodecs.append(i18n("Default audio codec"));
+    for (auto codec : m_mediaFormat->supportedAudioCodecs(QMediaFormat::Encode)) {
+        m_supportedAudioCodecs.append(QMediaFormat::audioCodecDescription(codec));
+    }
+
+    m_updatingFormats = false;
+}
 
 void AudioRecorder::renameCurrentRecording()
 {
-    if (!recordingName.isEmpty()) {
+    if (!m_recordingName.isEmpty()) {
         
         // determine new file name
         QStringList spl = actualLocation().fileName().split(QStringLiteral("."));
         QString suffix = spl.size() > 0 ? QStringLiteral(".") + spl[spl.size()-1] : QString();
-        QString path = storageFolder() + QStringLiteral("/") + recordingName;
+        QString path = storageFolder() + QStringLiteral("/") + m_recordingName;
         QString updatedPath = path + suffix;
         
         // ignore if the file destination is the same as the one currently being written to
@@ -171,25 +192,25 @@ void AudioRecorder::renameCurrentRecording()
             
             QFile(actualLocation().path()).rename(updatedPath);
         }
-     
-        savedPath = updatedPath;
-        recordingName = QString();
+
+        m_savedPath = updatedPath;
+        m_recordingName = QString();
     } else {
-        savedPath = actualLocation().path();
+        m_savedPath = actualLocation().path();
     }
 }
 
 void AudioRecorder::setRecordingName(const QString &rName) {
-    recordingName = rName;
+    m_recordingName = rName;
 }
 
 void AudioRecorder::saveRecording() 
 {
     // get file name from path
-    QStringList spl = savedPath.split(QStringLiteral("/"));
+    QStringList spl = m_savedPath.split(QStringLiteral("/"));
     QString fileName = spl.at(spl.size()-1).split(QStringLiteral("."))[0];
     
-    RecordingModel::instance()->insertRecording(savedPath, fileName, QDateTime::currentDateTime(), cachedDuration / 1000);
+    RecordingModel::instance()->insertRecording(m_savedPath, fileName, QDateTime::currentDateTime(), m_cachedDuration / 1000);
 }
 
 QString AudioRecorder::containerFormat() const
