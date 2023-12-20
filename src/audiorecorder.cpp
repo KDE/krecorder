@@ -91,13 +91,13 @@ AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
     setQuality(QMediaRecorder::HighQuality);
     setEncodingMode(QMediaRecorder::ConstantQualityEncoding);
 
-    m_audioProbe = new AudioProber(parent, this);
-    m_audioProbe->setSource(actualLocation());
-
     m_mediaCaptureSession = new QMediaCaptureSession(this);
     m_audioInput = new QAudioInput(QMediaDevices::defaultAudioInput(), this);
     m_mediaCaptureSession->setAudioInput(m_audioInput);
     m_mediaCaptureSession->setRecorder(this);
+
+    m_audioProbe = new AudioProber(parent, this);
+    //m_audioProbe->setSource(actualLocation());
 
     QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
 

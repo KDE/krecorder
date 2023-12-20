@@ -5,6 +5,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#include <QAudioFormat>
+#include <QAudioInput>
+#include <QMediaCaptureSession>
+
 #include "audioprober.h"
 
 AudioProber::AudioProber(QObject *parent)
@@ -15,7 +19,18 @@ AudioProber::AudioProber(QObject *parent, QMediaRecorder *source)
     : QAudioDecoder{ parent }
     , m_recorderSource{ source }
 {
-    connect(this, &AudioProber::bufferReady, this, &AudioProber::process);
+    QAudioFormat format;
+    // Set up the desired format, for example:
+    format.setSampleRate(8000);
+    format.setChannelCount(1);
+    format.setSampleFormat(QAudioFormat::UInt8);
+
+    QAudioDevice device = source->captureSession()->audioInput()->device();
+    if (!device.isFormatSupported(format)) {
+        qWarning() << "Default format not supported, trying to use the nearest.";
+    }
+
+    m_audioSource = new QAudioSource(device, format, this);
 
     // connect to recorder
     connect(m_recorderSource, &QMediaRecorder::recorderStateChanged, this, &AudioProber::handleRecorderState);
@@ -43,10 +58,13 @@ AudioProber::AudioProber(QObject *parent, QMediaPlayer *source)
 
 void AudioProber::handleRecorderState(QMediaRecorder::RecorderState state) {
     if (state == QMediaRecorder::RecordingState) {
+        start();
         volumeBarTimer->start();
     } else if (state == QMediaRecorder::PausedState) {
+        stop();
         volumeBarTimer->stop();
     } else if (state == QMediaRecorder::StoppedState) {
+        stop();
         volumeBarTimer->stop();
         // clear volumes list
         clearVolumesList();
@@ -63,6 +81,17 @@ void AudioProber::handlePlayerState(QMediaPlayer::PlaybackState state) {
         // clear volumes list
         clearVolumesList();
     }
+}
+
+void AudioProber::start()
+{
+    qDebug() << "pang";
+    QIODevice *iodevice = m_audioSource->start();
+    qDebug() << iodevice;
+    setSourceDevice(iodevice);
+    qDebug() << sourceDevice();
+    QAudioDecoder::start();
+    connect(this, &QAudioDecoder::bufferReady, this, &AudioProber::process);
 }
 
 void AudioProber::processVolumeBar() 
@@ -93,6 +122,7 @@ void AudioProber::processVolumeBar()
 
 void AudioProber::process()
 {
+    qDebug() << "ping";
     int sum = 0;
     auto buffer = read();
     for (int i = 0; i < buffer.sampleCount(); i++) {
