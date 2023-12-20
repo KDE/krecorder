@@ -8,6 +8,7 @@
 #pragma once
 
 #include <QAudioDecoder>
+#include <QAudioSource>
 #include <QMediaPlayer>
 #include <QMediaRecorder>
 #include <QObject>
@@ -40,6 +41,8 @@ public:
 
     void clearVolumesList();
 
+    void start();
+
 private:
     void handleRecorderState(QMediaRecorder::RecorderState state);
     void handlePlayerState(QMediaPlayer::PlaybackState state);
@@ -54,6 +57,8 @@ private:
     QTimer *volumeBarTimer;
     QMediaRecorder *m_recorderSource;
     QMediaPlayer *m_playerSource;
+    QAudioSource *m_audioSource;
+    QIODevice *m_audioIODevice;
     
 Q_SIGNALS:
     void volumesListAdded(int volume);
