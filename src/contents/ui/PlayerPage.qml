@@ -79,15 +79,15 @@ Kirigami.Page {
             RoundFlatButton {
                 implicitWidth: Kirigami.Units.gridUnit * 5
                 implicitHeight: Kirigami.Units.gridUnit * 5
-                text: AudioPlayer.state === AudioPlayer.PlayingState ? i18n("Pause") : i18n("Play")
-                icon.name: AudioPlayer.state === AudioPlayer.PlayingState ? "media-playback-pause" : "media-playback-start"
-                onClicked: AudioPlayer.state === AudioPlayer.PlayingState ? AudioPlayer.pause() : AudioPlayer.play()
+                text: (AudioPlayer.playbackState === AudioPlayer.PlayingState) ? i18n("Pause") : i18n("Play")
+                icon.name: (AudioPlayer.playbackState === AudioPlayer.PlayingState) ? "media-playback-pause" : "media-playback-start"
+                onClicked: (AudioPlayer.playbackState === AudioPlayer.PlayingState) ? AudioPlayer.pause() : AudioPlayer.play()
             }
             
             ToolTipToolButton {
                 implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
-                opacity: AudioPlayer.state !== AudioPlayer.StoppedState ? 1 : 0
+                opacity: (AudioPlayer.playbackState !== AudioPlayer.StoppedState) ? 1 : 0
                 icon.name: "media-playback-stop"
                 text: i18n("Stop")
                 onClicked: AudioPlayer.stop();
@@ -106,7 +106,7 @@ Kirigami.Page {
             Controls.Label {
                 id: elapsedLabel
                 Layout.alignment: Qt.AlignVCenter
-                text: AudioPlayer.state === AudioPlayer.StoppedState ? "0:00" : Utils.formatDuration(AudioPlayer.position)
+                text: (AudioPlayer.playbackState === AudioPlayer.StoppedState) ? "0:00" : Utils.formatDuration(AudioPlayer.position)
                 color: Kirigami.Theme.disabledTextColor
             }
             

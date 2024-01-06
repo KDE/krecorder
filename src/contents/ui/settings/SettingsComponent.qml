@@ -4,6 +4,7 @@
 import QtQuick
 import QtQuick.Controls as Controls
 import QtQuick.Layouts
+import QtMultimedia
 
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
@@ -59,17 +60,47 @@ ColumnLayout {
         FormCard.FormComboBoxDelegate {
             id: audioInputDropdown
             text: i18n("Audio Input")
-            model: AudioRecorder.audioInputs
-            onCurrentValueChanged: AudioRecorder.audioInput = currentValue;
             displayMode: FormCard.FormComboBoxDelegate.Dialog
-            
-            Binding on currentIndex {
-                value: audioInputDropdown.indexOfValue(AudioRecorder.audioInput)
+
+            textRole: 'name'
+            valueRole: 'device'
+            onCurrentValueChanged: AudioRecorder.setAudioInput(currentValue);
+
+            model: ListModel {
+                id: inputModel
+            }
+
+            function refreshAudioInputs() {
+                currentIndex = 0;
+                for (let i = 0; i < mediaDevices.audioInputs.length; i++) {
+                    let device = mediaDevices.audioInputs[i];
+                    inputModel.append({"name": device.description, "device": device});
+                    if (device.id == AudioRecorder.audioInput) {
+                        currentIndex = i;
+                    }
+                }
             }
             
             Component.onCompleted: {
-                // HACK: the values don't load until after the component completes
-                currentIndex = audioInputDropdown.indexOfValue(AudioRecorder.audioInput)
+                refreshAudioInputs();
+            }
+
+            Connections {
+                target: AudioRecorder
+                function onAudioInputChanged() {
+                    audioInputDropdown.refreshAudioInputs();
+                }
+            }
+
+            Connections {
+                target: mediaDevices
+                function onAudioInputsChanged() {
+                    audioInputDropdown.refreshAudioInputs();
+                }
+            }
+
+            MediaDevices {
+                id: mediaDevices
             }
 
             onClicked: if (root.dialog && audioInputDropdown.displayMode === FormCard.FormComboBoxDelegate.Dialog) {
@@ -86,6 +117,8 @@ ColumnLayout {
                 }
             }
         }
+
+        FormCard.FormDelegateSeparator { above: audioInputDropdown; below: audioCodecDropdown }
 
         FormCard.FormComboBoxDelegate {
             id: audioCodecDropdown
@@ -117,6 +150,8 @@ ColumnLayout {
                 }
             }
         }
+        
+        FormCard.FormDelegateSeparator { above: audioCodecDropdown; below: containerFormatDropdown }
 
         FormCard.FormComboBoxDelegate {
             id: containerFormatDropdown
@@ -148,6 +183,8 @@ ColumnLayout {
                 }
             }
         }
+
+        FormCard.FormDelegateSeparator { above: containerFormatDropdown; below: audioQualityDropdown }
 
         FormCard.FormComboBoxDelegate {
             id: audioQualityDropdown

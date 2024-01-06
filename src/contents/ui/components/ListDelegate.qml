@@ -30,7 +30,6 @@ Control {
             onLongPressed: root.longPressed()
         }
         TapHandler {
-            acceptedDevices: PointerDevice.Mouse | PointerDevice.Stylus
             acceptedButtons: Qt.RightButton
             onTapped: root.rightClicked()
         }

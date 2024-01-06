@@ -17,7 +17,7 @@
 class AudioRecorder : public QMediaRecorder
 {
     Q_OBJECT
-    Q_PROPERTY(QStringList audioInputs READ audioInputs CONSTANT)
+    Q_PROPERTY(QString audioInput READ audioInput NOTIFY audioInputChanged)
     Q_PROPERTY(QStringList supportedAudioCodecs READ supportedAudioCodecs CONSTANT)
     Q_PROPERTY(QStringList supportedContainers READ supportedContainers CONSTANT)
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
@@ -30,6 +30,7 @@ private:
     explicit AudioRecorder(QObject *parent = nullptr);
     void handleStateChange(QMediaRecorder::RecorderState state);
     void updateFormats(QMediaFormat::FileFormat fileFormat = QMediaFormat::FileFormat::UnspecifiedFormat, QMediaFormat::AudioCodec audioCodec = QMediaFormat::AudioCodec::Unspecified);
+    void updateAudioInputs();
 
     QMediaFormat *m_mediaFormat;
     QMediaCaptureSession *m_mediaCaptureSession;
@@ -44,10 +45,7 @@ private:
 
     QString m_containerFormat;
 
-    QStringList m_audioInputs;
-
     QStringList m_supportedAudioCodecs;
-
     QStringList m_supportedContainers;
 
     bool m_updatingFormats = false;
@@ -56,6 +54,9 @@ public:
     static AudioRecorder* instance();
 
     AudioProber* prober();
+
+    QString audioInput();
+    Q_INVOKABLE void setAudioInput(QAudioDevice device);
 
     QString audioCodec();
     void setAudioCodec(const QString &codec);
@@ -75,13 +76,11 @@ public:
     QString containerFormat() const;
     void setContainerFormat(const QString &newContainerFormat);
 
-    QStringList audioInputs() const;
-
     QStringList supportedAudioCodecs() const;
-
     QStringList supportedContainers() const;
 
 Q_SIGNALS:
+    void audioInputChanged();
     void audioCodecChanged();
     void audioQualityChanged();
 };
