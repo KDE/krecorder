@@ -50,21 +50,23 @@ ColumnLayout {
                 }
             }
         }
-    }
 
-    FormCard.FormHeader {
-        title: i18n("Advanced")
-    }
+        FormCard.FormDelegateSeparator { above: aboutDelegate; below: audioInputDropdown }
 
-    FormCard.FormCard {
         FormCard.FormComboBoxDelegate {
             id: audioInputDropdown
             text: i18n("Audio Input")
             displayMode: FormCard.FormComboBoxDelegate.Dialog
 
             textRole: 'name'
-            valueRole: 'device'
-            onCurrentValueChanged: AudioRecorder.setAudioInput(currentValue);
+            valueRole: 'deviceId'
+            onCurrentValueChanged: {
+                for (let device of mediaDevices.audioInputs) {
+                    if (device.id === currentValue) {
+                        AudioRecorder.setAudioInput(device);
+                    }
+                }
+            }
 
             model: ListModel {
                 id: inputModel
@@ -74,7 +76,7 @@ ColumnLayout {
                 currentIndex = 0;
                 for (let i = 0; i < mediaDevices.audioInputs.length; i++) {
                     let device = mediaDevices.audioInputs[i];
-                    inputModel.append({"name": device.description, "device": device});
+                    inputModel.append({"name": device.description, "deviceId": device.id});
                     if (device.id == AudioRecorder.audioInput) {
                         currentIndex = i;
                     }
@@ -117,8 +119,13 @@ ColumnLayout {
                 }
             }
         }
+    }
 
-        FormCard.FormDelegateSeparator { above: audioInputDropdown; below: audioCodecDropdown }
+    FormCard.FormHeader {
+        title: i18n("Advanced")
+    }
+
+    FormCard.FormCard {
 
         FormCard.FormComboBoxDelegate {
             id: audioCodecDropdown
