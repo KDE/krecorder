@@ -47,7 +47,7 @@ Kirigami.ScrollablePage {
         },
         Kirigami.Action {
             visible: applicationWindow().isWidescreen
-            icon.name: "audio-input-microphone-symbolic"
+            icon.name: "microphone-sensitivity-high"
             text: i18n("Record")
             onTriggered: applicationWindow().openRecordScreen()
         }
@@ -109,7 +109,7 @@ Kirigami.ScrollablePage {
             anchors.right: parent.right
             anchors.margins: Kirigami.Units.largeSpacing
             
-            icon.name: applicationWindow().isWidescreen ? "format-list-unordered" : "audio-input-microphone-symbolic"
+            icon.name: applicationWindow().isWidescreen ? "format-list-unordered" : "microphone-sensitivity-high"
             text: i18n("No recordings")
             visible: parent.count === 0
         }
@@ -117,7 +117,7 @@ Kirigami.ScrollablePage {
         // record button
         FloatingActionButton {
             visible: !applicationWindow().isWidescreen
-            icon.name: "audio-input-microphone-symbolic"
+            icon.name: 'microphone-sensitivity-high'
             onClicked: applicationWindow().openRecordScreen()
         }
         
