@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:41+0000\n"
+"POT-Creation-Date: 2024-01-09 01:34+0000\n"
 "PO-Revision-Date: 2022-11-27 08:12+0100\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -27,8 +27,20 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "feus73@gmail.com"
 
+#: audiorecorder.cpp:170
+#, fuzzy, kde-format
+#| msgid "WAV file format"
+msgid "Default file format"
+msgstr "Formato di file WAV"
+
+#: audiorecorder.cpp:179
+#, fuzzy, kde-format
+#| msgid "Audio Codec"
+msgid "Default audio codec"
+msgstr "Codec audio"
+
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:44
+#: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -61,7 +73,7 @@ msgstr "Lettore"
 msgid "Recorded on %1"
 msgstr "Registrata su %1"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Pause"
 msgstr "Pausa"
@@ -77,7 +89,7 @@ msgid "Stop"
 msgstr "Ferma"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:173
+#: contents/ui/RecordingListPage.qml:172
 #, kde-format
 msgid "Export to location"
 msgstr "Esporta alla posizione"
@@ -88,47 +100,47 @@ msgid "Rename"
 msgstr "Rinomina"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
+#: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
 #, kde-format
 msgid "Delete"
 msgstr "Elimina"
 
-#: contents/ui/RecordingListPage.qml:21
+#: contents/ui/RecordingListPage.qml:22
 #, kde-format
 msgid "Recordings"
 msgstr "Registrazioni"
 
-#: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Edit"
 msgstr "Modifica"
 
-#: contents/ui/RecordingListPage.qml:50
+#: contents/ui/RecordingListPage.qml:51
 #, kde-format
 msgid "Record"
 msgstr "Registra"
 
-#: contents/ui/RecordingListPage.qml:112
+#: contents/ui/RecordingListPage.qml:113
 #, kde-format
 msgid "No recordings"
 msgstr "Nessuna registrazione"
 
-#: contents/ui/RecordingListPage.qml:150
+#: contents/ui/RecordingListPage.qml:149
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Seleziona una posizione per salvare la registrazione %1"
 
-#: contents/ui/RecordingListPage.qml:160
+#: contents/ui/RecordingListPage.qml:159
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Registrazione salvata in %1"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:212
 #, kde-format
 msgid "Delete %1"
 msgstr "Elimina %1"
 
-#: contents/ui/RecordingListPage.qml:214
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -137,29 +149,29 @@ msgstr ""
 "Sei sicuro di voler eliminare la registrazione %1?<br/>Verrà <b>persa per "
 "sempre</b>."
 
-#: contents/ui/RecordingListPage.qml:218
+#: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Elimina"
 
-#: contents/ui/RecordingListPage.qml:229
+#: contents/ui/RecordingListPage.qml:228
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Annulla"
 
-#: contents/ui/RecordingListPage.qml:241
+#: contents/ui/RecordingListPage.qml:240
 #, kde-format
 msgid "Rename %1"
 msgstr "Rinomina %1"
 
-#: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
+#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
 #, kde-format
 msgid "Name:"
 msgstr "Nome:"
 
-#: contents/ui/RecordingListPage.qml:262
+#: contents/ui/RecordingListPage.qml:261
 #, kde-format
 msgid "Location:"
 msgstr "Posizione:"
@@ -169,147 +181,108 @@ msgstr "Posizione:"
 msgid "Record Audio"
 msgstr "Registra audio"
 
-#: contents/ui/RecordPage.qml:83
+#: contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Continue"
 msgstr "Continua"
 
-#: contents/ui/RecordPage.qml:97
-#, kde-format
-msgid "Stop Recording"
-msgstr "Ferma la registrazione"
+#: contents/ui/RecordPage.qml:176
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Save Recording"
+msgstr "Salva registrazione"
 
-#: contents/ui/RecordPage.qml:135
+#: contents/ui/RecordPage.qml:214
 #, kde-format
 msgid "Save recording"
 msgstr "Salva registrazione"
 
-#: contents/ui/RecordPage.qml:139
+#: contents/ui/RecordPage.qml:218
 #, kde-format
 msgid "Save"
 msgstr "Salva"
 
-#: contents/ui/RecordPage.qml:151
+#: contents/ui/RecordPage.qml:230
 #, kde-format
 msgid "Discard"
 msgstr "Scarta"
 
-#: contents/ui/RecordPage.qml:166
+#: contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nome (facoltativo)"
 
-#: contents/ui/RecordPage.qml:170
+#: contents/ui/RecordPage.qml:249
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Cartella di memorizzazione:"
 
-#: contents/ui/settings/SettingsComponent.qml:33
+#: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
 msgstr "Generale"
 
-#: contents/ui/settings/SettingsComponent.qml:39
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
 msgstr "Informazioni su"
 
-#: contents/ui/settings/SettingsComponent.qml:57
-#, kde-format
-msgid "Audio Format"
-msgstr "Formato audio"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "Ogg Vorbis file format"
-msgid "Ogg Vorbis"
-msgstr "Ogg Vorbis"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "Ogg Opus file format"
-msgid "Ogg Opus"
-msgstr "Ogg Opus"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "FLAC file format"
-msgid "FLAC"
-msgstr "FLAC"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "MP3 file format"
-msgid "MP3"
-msgstr "MP3"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgid "WAV file format"
-msgstr "Formato di file WAV"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "File format not listed"
-msgid "Other"
-msgstr "Altro"
-
-#: contents/ui/settings/SettingsComponent.qml:86
-#, kde-format
-msgid "Audio Quality"
-msgstr "Qualità audio"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Lowest"
-msgstr "Minima"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Low"
-msgstr "Bassa"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Medium"
-msgstr "Media"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "High"
-msgstr "Alta"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Highest"
-msgstr "Massima"
-
-#: contents/ui/settings/SettingsComponent.qml:88
-#, kde-format
-msgid "Higher audio quality also increases file size."
-msgstr "Una qualità alta aumenta anche la dimensione del file."
-
-#: contents/ui/settings/SettingsComponent.qml:113
-#, kde-format
-msgid "Advanced"
-msgstr "Avanzate"
-
-#: contents/ui/settings/SettingsComponent.qml:119
+#: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
 msgstr "Ingresso audio"
 
-#: contents/ui/settings/SettingsComponent.qml:152
+#: contents/ui/settings/SettingsComponent.qml:125
+#, kde-format
+msgid "Advanced"
+msgstr "Avanzate"
+
+#: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Audio Codec"
 msgstr "Codec audio"
 
-#: contents/ui/settings/SettingsComponent.qml:185
+#: contents/ui/settings/SettingsComponent.qml:165
 #, kde-format
 msgid "Container Format"
 msgstr "Formato contenitore"
 
-#: contents/ui/settings/SettingsComponent.qml:216
+#: contents/ui/settings/SettingsComponent.qml:198
+#, kde-format
+msgid "Audio Quality"
+msgstr "Qualità audio"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Lowest"
+msgstr "Minima"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Low"
+msgstr "Bassa"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Medium"
+msgstr "Media"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "High"
+msgstr "Alta"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Highest"
+msgstr "Massima"
+
+#: contents/ui/settings/SettingsComponent.qml:200
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr "Una qualità alta aumenta anche la dimensione del file."
+
+#: contents/ui/settings/SettingsComponent.qml:225
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -317,20 +290,47 @@ msgstr ""
 "Alcune combinazioni fra codec e formati contenitori potrebbero non essere "
 "compatibili."
 
-#: main.cpp:53
-#, kde-format
-msgid "© 2020-2022 KDE Community"
+#: main.cpp:51
+#, fuzzy, kde-format
+#| msgid "© 2020-2022 KDE Community"
+msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2022 Comunità KDE"
 
-#: main.cpp:54
+#: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:55
+#: main.cpp:53
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Stop Recording"
+#~ msgstr "Ferma la registrazione"
+
+#~ msgid "Audio Format"
+#~ msgstr "Formato audio"
+
+#~ msgctxt "Ogg Vorbis file format"
+#~ msgid "Ogg Vorbis"
+#~ msgstr "Ogg Vorbis"
+
+#~ msgctxt "Ogg Opus file format"
+#~ msgid "Ogg Opus"
+#~ msgstr "Ogg Opus"
+
+#~ msgctxt "FLAC file format"
+#~ msgid "FLAC"
+#~ msgstr "FLAC"
+
+#~ msgctxt "MP3 file format"
+#~ msgid "MP3"
+#~ msgstr "MP3"
+
+#~ msgctxt "File format not listed"
+#~ msgid "Other"
+#~ msgstr "Altro"
 
 #~ msgid "Custom"
 #~ msgstr "Personalizzato"

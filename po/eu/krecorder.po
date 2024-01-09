@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:41+0000\n"
+"POT-Creation-Date: 2024-01-09 01:34+0000\n"
 "PO-Revision-Date: 2023-08-03 14:47+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -30,8 +30,20 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
 
+#: audiorecorder.cpp:170
+#, fuzzy, kde-format
+#| msgid "WAV file format"
+msgid "Default file format"
+msgstr "WAV fitxategi formatua"
+
+#: audiorecorder.cpp:179
+#, fuzzy, kde-format
+#| msgid "Audio Codec"
+msgid "Default audio codec"
+msgstr "Audio-kodeka"
+
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:44
+#: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -64,7 +76,7 @@ msgstr "Jotzailea"
 msgid "Recorded on %1"
 msgstr "%1(e)an grabatua"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:83
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Pause"
 msgstr "Etenaldia"
@@ -80,7 +92,7 @@ msgid "Stop"
 msgstr "Gelditu"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:173
+#: contents/ui/RecordingListPage.qml:172
 #, kde-format
 msgid "Export to location"
 msgstr "Esportatu kokalekua"
@@ -91,47 +103,47 @@ msgid "Rename"
 msgstr "Berrizendatu"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:188 contents/ui/RecordPage.qml:115
+#: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
 #, kde-format
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: contents/ui/RecordingListPage.qml:21
+#: contents/ui/RecordingListPage.qml:22
 #, kde-format
 msgid "Recordings"
 msgstr "Grabazioak"
 
-#: contents/ui/RecordingListPage.qml:36 contents/ui/RecordingListPage.qml:179
+#: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Edit"
 msgstr "Editatu"
 
-#: contents/ui/RecordingListPage.qml:50
+#: contents/ui/RecordingListPage.qml:51
 #, kde-format
 msgid "Record"
 msgstr "Grabatu"
 
-#: contents/ui/RecordingListPage.qml:112
+#: contents/ui/RecordingListPage.qml:113
 #, kde-format
 msgid "No recordings"
 msgstr "Ez dago grabaziorik"
 
-#: contents/ui/RecordingListPage.qml:150
+#: contents/ui/RecordingListPage.qml:149
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Hautatu grabazioa gordetzeko kokaleku bat, %1"
 
-#: contents/ui/RecordingListPage.qml:160
+#: contents/ui/RecordingListPage.qml:159
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Grabazioa hor grabatu da, %1"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:212
 #, kde-format
 msgid "Delete %1"
 msgstr "Ezabatu %1"
 
-#: contents/ui/RecordingListPage.qml:214
+#: contents/ui/RecordingListPage.qml:213
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -139,29 +151,29 @@ msgid ""
 msgstr ""
 "Ziur zaude, %1 grabazioa ezabatu nahi duzula?<br/><b>Betirako galduko</b> da!"
 
-#: contents/ui/RecordingListPage.qml:218
+#: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: contents/ui/RecordingListPage.qml:229
+#: contents/ui/RecordingListPage.qml:228
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: contents/ui/RecordingListPage.qml:241
+#: contents/ui/RecordingListPage.qml:240
 #, kde-format
 msgid "Rename %1"
 msgstr "Berrizendatu %1"
 
-#: contents/ui/RecordingListPage.qml:256 contents/ui/RecordPage.qml:165
+#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
 #, kde-format
 msgid "Name:"
 msgstr "Izena:"
 
-#: contents/ui/RecordingListPage.qml:262
+#: contents/ui/RecordingListPage.qml:261
 #, kde-format
 msgid "Location:"
 msgstr "Kokalekua:"
@@ -171,163 +183,151 @@ msgstr "Kokalekua:"
 msgid "Record Audio"
 msgstr "Grabatu audioa"
 
-#: contents/ui/RecordPage.qml:83
+#: contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Continue"
 msgstr "Jarraitu"
 
-#: contents/ui/RecordPage.qml:97
-#, kde-format
-msgid "Stop Recording"
-msgstr "Utzi grabatzeari"
+#: contents/ui/RecordPage.qml:176
+#, fuzzy, kde-format
+#| msgid "Save recording"
+msgid "Save Recording"
+msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:135
+#: contents/ui/RecordPage.qml:214
 #, kde-format
 msgid "Save recording"
 msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:139
+#: contents/ui/RecordPage.qml:218
 #, kde-format
 msgid "Save"
 msgstr "Gorde"
 
-#: contents/ui/RecordPage.qml:151
+#: contents/ui/RecordPage.qml:230
 #, kde-format
 msgid "Discard"
 msgstr "Baztertu"
 
-#: contents/ui/RecordPage.qml:166
+#: contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name (optional)"
 msgstr "Izena (hautazkoa)"
 
-#: contents/ui/RecordPage.qml:170
+#: contents/ui/RecordPage.qml:249
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Biltegiratzeko karpeta:"
 
-#: contents/ui/settings/SettingsComponent.qml:33
+#: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
 msgstr "Orokorra"
 
-#: contents/ui/settings/SettingsComponent.qml:39
+#: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
 
-#: contents/ui/settings/SettingsComponent.qml:57
-#, kde-format
-msgid "Audio Format"
-msgstr "Audio formatua"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "Ogg Vorbis file format"
-msgid "Ogg Vorbis"
-msgstr "Ogg Vorbis"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "Ogg Opus file format"
-msgid "Ogg Opus"
-msgstr "Ogg Opus"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "FLAC file format"
-msgid "FLAC"
-msgstr "FLAC"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "MP3 file format"
-msgid "MP3"
-msgstr "MP3"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgid "WAV file format"
-msgstr "WAV fitxategi formatua"
-
-#: contents/ui/settings/SettingsComponent.qml:59
-#, kde-format
-msgctxt "File format not listed"
-msgid "Other"
-msgstr "Bestelakoa"
-
-#: contents/ui/settings/SettingsComponent.qml:86
-#, kde-format
-msgid "Audio Quality"
-msgstr "Audio-kalitatea"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Lowest"
-msgstr "Apalena"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Low"
-msgstr "Apala"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Medium"
-msgstr "Ertaina"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "High"
-msgstr "Handia"
-
-#: contents/ui/settings/SettingsComponent.qml:87
-#, kde-format
-msgid "Highest"
-msgstr "Handiena"
-
-#: contents/ui/settings/SettingsComponent.qml:88
-#, kde-format
-msgid "Higher audio quality also increases file size."
-msgstr "Audio-kalitate handiagoarekin fitxategi-neurria handitzen da."
-
-#: contents/ui/settings/SettingsComponent.qml:113
-#, kde-format
-msgid "Advanced"
-msgstr "Aurreratua"
-
-#: contents/ui/settings/SettingsComponent.qml:119
+#: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
 msgstr "Audio-sarrera"
 
-#: contents/ui/settings/SettingsComponent.qml:152
+#: contents/ui/settings/SettingsComponent.qml:125
+#, kde-format
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Audio Codec"
 msgstr "Audio-kodeka"
 
-#: contents/ui/settings/SettingsComponent.qml:185
+#: contents/ui/settings/SettingsComponent.qml:165
 #, kde-format
 msgid "Container Format"
 msgstr "Edukitzaile formatua"
 
-#: contents/ui/settings/SettingsComponent.qml:216
+#: contents/ui/settings/SettingsComponent.qml:198
+#, kde-format
+msgid "Audio Quality"
+msgstr "Audio-kalitatea"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Lowest"
+msgstr "Apalena"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Low"
+msgstr "Apala"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Medium"
+msgstr "Ertaina"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "High"
+msgstr "Handia"
+
+#: contents/ui/settings/SettingsComponent.qml:199
+#, kde-format
+msgid "Highest"
+msgstr "Handiena"
+
+#: contents/ui/settings/SettingsComponent.qml:200
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr "Audio-kalitate handiagoarekin fitxategi-neurria handitzen da."
+
+#: contents/ui/settings/SettingsComponent.qml:225
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr "Baliteke kodek eta edukitzaile formatu batzuk bateragarriak ez izatea."
 
-#: main.cpp:53
-#, kde-format
-msgid "© 2020-2022 KDE Community"
+#: main.cpp:51
+#, fuzzy, kde-format
+#| msgid "© 2020-2022 KDE Community"
+msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2022 KDE komunitatea"
 
-#: main.cpp:54
+#: main.cpp:52
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:55
+#: main.cpp:53
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Stop Recording"
+#~ msgstr "Utzi grabatzeari"
+
+#~ msgid "Audio Format"
+#~ msgstr "Audio formatua"
+
+#~ msgctxt "Ogg Vorbis file format"
+#~ msgid "Ogg Vorbis"
+#~ msgstr "Ogg Vorbis"
+
+#~ msgctxt "Ogg Opus file format"
+#~ msgid "Ogg Opus"
+#~ msgstr "Ogg Opus"
+
+#~ msgctxt "FLAC file format"
+#~ msgid "FLAC"
+#~ msgstr "FLAC"
+
+#~ msgctxt "MP3 file format"
+#~ msgid "MP3"
+#~ msgstr "MP3"
+
+#~ msgctxt "File format not listed"
+#~ msgid "Other"
+#~ msgstr "Bestelakoa"
