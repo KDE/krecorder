@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-09 01:34+0000\n"
-"PO-Revision-Date: 2022-11-26 17:41+0100\n"
+"PO-Revision-Date: 2024-01-09 11:07+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2021 t/m 2022"
+msgstr "Freek de Kruijf - 2021 t/m 2024"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -28,16 +28,14 @@ msgid "Your emails"
 msgstr "freekdekruijf@kde.nl"
 
 #: audiorecorder.cpp:170
-#, fuzzy, kde-format
-#| msgid "WAV file format"
+#, kde-format
 msgid "Default file format"
-msgstr "WAV-bestandsformaat"
+msgstr "Standaard bestandsformaat"
 
 #: audiorecorder.cpp:179
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Default audio codec"
-msgstr "Audio-codec"
+msgstr "Standaard audio-codec"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -187,8 +185,7 @@ msgid "Continue"
 msgstr "Doorgaan"
 
 #: contents/ui/RecordPage.qml:176
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
 msgstr "Opname opslaan"
 
@@ -291,10 +288,9 @@ msgstr ""
 "zijn."
 
 #: main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2020-2022 KDE Community"
+#, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr "© 2020-2022 De KDE gemeenschap"
+msgstr "© 2020-2024 KDE-gemeenschap"
 
 #: main.cpp:52
 #, kde-format

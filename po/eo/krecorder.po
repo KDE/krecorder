@@ -1,41 +1,42 @@
-# Copyright (C) 2024 This file is copyright:
+# translation of krecorder.pot to Esperanto
+# Copyright (C) 2023 Free Software Foundation, Inc.
 # This file is distributed under the same license as the krecorder package.
-# SPDX-FileCopyrightText: 2024 Adrián Chaves (Gallaecio)
+# Oliver Kellogg <okellogg.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-09 01:34+0000\n"
-"PO-Revision-Date: 2024-01-09 11:57+0100\n"
-"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
-"Language: gl\n"
+"PO-Revision-Date: 2024-01-09 19:31+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Adrian Chaves (Gallaecio)"
+msgstr "Oliver Kellogg"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "adrian@chaves.io"
+msgstr "okellogg@users.sourceforge.net"
 
 #: audiorecorder.cpp:170
 #, kde-format
 msgid "Default file format"
-msgstr "Formato de ficheiro predeterminado"
+msgstr "Defaŭlta dosierformato"
 
 #: audiorecorder.cpp:179
 #, kde-format
 msgid "Default audio codec"
-msgstr "Códec de son predeterminado"
+msgstr "Defaŭlta sonkodeko"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -44,99 +45,99 @@ msgstr "Códec de son predeterminado"
 #: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Agordoj"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Reproduza unha gravación ou grave unha nova."
+msgstr "Ludi registraĵon aŭ registri novan"
 
 #: contents/ui/DefaultPage.qml:35
 #, kde-format
 msgid "Record a new recording"
-msgstr "Facer unha nova gravación"
+msgstr "Surbendigi novan registraĵon"
 
 #: contents/ui/main.qml:23
 #, kde-format
 msgid "Recorder"
-msgstr "Gravadora"
+msgstr "Registrilo"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr "Reprodutor"
+msgstr "Ludanto"
 
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr "Gravado o %1"
+msgstr "Registrita sur %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Pause"
-msgstr "Pausar"
+msgstr "Paŭzi"
 
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr "Reproducir"
+msgstr "Ludi"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
-msgstr "Deter"
+msgstr "Halti"
 
 #: contents/ui/RecordingListDelegate.qml:75
 #: contents/ui/RecordingListPage.qml:172
 #, kde-format
 msgid "Export to location"
-msgstr "Exportar a unha localización"
+msgstr "Eksporti al loko"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr "Renomear"
+msgstr "Alinomi"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
 #, kde-format
 msgid "Delete"
-msgstr "Eliminar"
+msgstr "Forigi"
 
 #: contents/ui/RecordingListPage.qml:22
 #, kde-format
 msgid "Recordings"
-msgstr "Gravacións"
+msgstr "Registraĵoj"
 
 #: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Edit"
-msgstr "Editar"
+msgstr "Redakti"
 
 #: contents/ui/RecordingListPage.qml:51
 #, kde-format
 msgid "Record"
-msgstr "Gravar"
+msgstr "Registri"
 
 #: contents/ui/RecordingListPage.qml:113
 #, kde-format
 msgid "No recordings"
-msgstr "Non hai gravacións."
+msgstr "Neniuj registraĵoj"
 
 #: contents/ui/RecordingListPage.qml:149
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr "Seleccione unha localización na que gardar a gravación «%1»."
+msgstr "Elektu lokon por konservi registraĵon %1"
 
 #: contents/ui/RecordingListPage.qml:159
 #, kde-format
 msgid "Saved recording to %1"
-msgstr "A gravación gardouse en «%1»."
+msgstr "Konservis registraĵon al %1"
 
 #: contents/ui/RecordingListPage.qml:212
 #, kde-format
 msgid "Delete %1"
-msgstr "Eliminar %1"
+msgstr "Forigi %1"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -144,124 +145,125 @@ msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
-"Seguro que quere eliminar a gravación «%1»?<br/><b>Perderase para sempre</b>!"
+"Ĉu vi certas, ke vi volas forigi la registraĵon %1?<br/>Ĝi estos "
+"<b>konstante perdita</b> eterne!"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr "Eliminar"
+msgstr "Forigi"
 
 #: contents/ui/RecordingListPage.qml:228
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Nuligi"
 
 #: contents/ui/RecordingListPage.qml:240
 #, kde-format
 msgid "Rename %1"
-msgstr "Renomear %1"
+msgstr "Alinomi %1"
 
 #: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
 #, kde-format
 msgid "Name:"
-msgstr "Nome:"
+msgstr "Nomo:"
 
 #: contents/ui/RecordingListPage.qml:261
 #, kde-format
 msgid "Location:"
-msgstr "Localización:"
+msgstr "Loko:"
 
 #: contents/ui/RecordPage.qml:21
 #, kde-format
 msgid "Record Audio"
-msgstr "Gravar son"
+msgstr "Registra Aŭdaĵon"
 
 #: contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Continue"
-msgstr "Continuar"
+msgstr "Daŭrigi"
 
 #: contents/ui/RecordPage.qml:176
 #, kde-format
 msgid "Save Recording"
-msgstr "Gardar a gravación"
+msgstr "Konservi Registraĵon"
 
 #: contents/ui/RecordPage.qml:214
 #, kde-format
 msgid "Save recording"
-msgstr "Gardar a gravación"
+msgstr "Konservi registraĵon"
 
 #: contents/ui/RecordPage.qml:218
 #, kde-format
 msgid "Save"
-msgstr "Gardar"
+msgstr "Konservi"
 
 #: contents/ui/RecordPage.qml:230
 #, kde-format
 msgid "Discard"
-msgstr "Descartar"
+msgstr "Forĵeti"
 
 #: contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name (optional)"
-msgstr "Nome (opcional)"
+msgstr "Nomo (laŭvola)"
 
 #: contents/ui/RecordPage.qml:249
 #, kde-format
 msgid "Storage Folder:"
-msgstr "Cartafol de almacenamento:"
+msgstr "Konserveja Dosierujo:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
-msgstr "Xeral"
+msgstr "Ĝenerala"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
-msgstr "Sobre"
+msgstr "Pri"
 
 #: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
-msgstr "Entrada de son"
+msgstr "Aŭd-Enigo"
 
 #: contents/ui/settings/SettingsComponent.qml:125
 #, kde-format
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Altnivela"
 
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Audio Codec"
-msgstr "Códec de son"
+msgstr "Sonkodeko"
 
 #: contents/ui/settings/SettingsComponent.qml:165
 #, kde-format
 msgid "Container Format"
-msgstr "Formato contedor"
+msgstr "Entenila Formato"
 
 #: contents/ui/settings/SettingsComponent.qml:198
 #, kde-format
 msgid "Audio Quality"
-msgstr "Calidade do son"
+msgstr "Sonkvalito"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Lowest"
-msgstr "A máis baixa"
+msgstr "Plej Malalta"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Low"
-msgstr "Baixa"
+msgstr "Malalta"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Medium"
-msgstr "Media"
+msgstr "Ujo"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
@@ -271,25 +273,23 @@ msgstr "Alta"
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Highest"
-msgstr "A máis alta"
+msgstr "Plej Alta"
 
 #: contents/ui/settings/SettingsComponent.qml:200
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr "A maior calidade de son, maior tamaño de ficheiro."
+msgstr "Pli alta sonkvalito ankaŭ pliigas dosiergrandecon."
 
 #: contents/ui/settings/SettingsComponent.qml:225
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
-"Algunhas combinacións de códecs e formatos contedores poden non ser "
-"compatíbeis."
+msgstr "Iuj kombinoj de kodekoj kaj enteniloj povus esti malkongruaj."
 
 #: main.cpp:51
 #, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr "© 2020-2024 Comunidade KDE"
+msgstr "© 2020-2024 KDE Community"
 
 #: main.cpp:52
 #, kde-format
@@ -300,29 +300,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "Stop Recording"
-#~ msgstr "Deter a gravación"
-
-#~ msgid "Audio Format"
-#~ msgstr "Formato de son"
-
-#~ msgctxt "Ogg Vorbis file format"
-#~ msgid "Ogg Vorbis"
-#~ msgstr "Ogg Vorbis"
-
-#~ msgctxt "Ogg Opus file format"
-#~ msgid "Ogg Opus"
-#~ msgstr "Ogg Opus"
-
-#~ msgctxt "FLAC file format"
-#~ msgid "FLAC"
-#~ msgstr "FLAC"
-
-#~ msgctxt "MP3 file format"
-#~ msgid "MP3"
-#~ msgstr "MP3"
-
-#~ msgctxt "File format not listed"
-#~ msgid "Other"
-#~ msgstr "Outro"
