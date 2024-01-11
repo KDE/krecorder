@@ -66,7 +66,6 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     CoreAddons
-    WindowSystem
 )
 
 find_package(KF6Kirigami2 ${KF_MIN_VERSION})
