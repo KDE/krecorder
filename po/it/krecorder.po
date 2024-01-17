@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# Paolo Zamponi <feus73@gmail.com>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024 Paolo Zamponi <feus73@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-09 01:34+0000\n"
-"PO-Revision-Date: 2022-11-27 08:12+0100\n"
+"PO-Revision-Date: 2024-01-13 07:41+0100\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -28,16 +28,14 @@ msgid "Your emails"
 msgstr "feus73@gmail.com"
 
 #: audiorecorder.cpp:170
-#, fuzzy, kde-format
-#| msgid "WAV file format"
+#, kde-format
 msgid "Default file format"
-msgstr "Formato di file WAV"
+msgstr "Formato di file predefinito"
 
 #: audiorecorder.cpp:179
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Default audio codec"
-msgstr "Codec audio"
+msgstr "Codec audio predefinito"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -187,8 +185,7 @@ msgid "Continue"
 msgstr "Continua"
 
 #: contents/ui/RecordPage.qml:176
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
 msgstr "Salva registrazione"
 
@@ -291,10 +288,9 @@ msgstr ""
 "compatibili."
 
 #: main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2020-2022 KDE Community"
+#, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr "© 2020-2022 Comunità KDE"
+msgstr "© 2020-2024 della Comunità KDE"
 
 #: main.cpp:52
 #, kde-format
