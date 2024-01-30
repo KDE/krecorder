@@ -46,6 +46,7 @@ include(KDEGitCommitHooks)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
+include(ECMAddAndroidApk)
 
 # setup version
 ecm_setup_version(${PROJECT_VERSION}

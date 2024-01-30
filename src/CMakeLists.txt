@@ -40,4 +40,6 @@ if(ANDROID)
         media-playback-stop media-record audio-input-microphone-symbolic
         entry-edit delete settings-configure
     )
+
+    ecm_add_android_apk(krecorder ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 endif()
