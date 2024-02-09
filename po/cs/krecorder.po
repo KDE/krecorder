@@ -28,16 +28,14 @@ msgid "Your emails"
 msgstr "vit@pelcak.org"
 
 #: audiorecorder.cpp:170
-#, fuzzy, kde-format
-#| msgid "WAV file format"
+#, kde-format
 msgid "Default file format"
-msgstr "Formát souboru WAV"
+msgstr ""
 
 #: audiorecorder.cpp:179
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Default audio codec"
-msgstr "Kodek zvuku"
+msgstr ""
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -186,10 +184,9 @@ msgid "Continue"
 msgstr "Pokračovat"
 
 #: contents/ui/RecordPage.qml:176
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
-msgstr "Uložit nahrávání"
+msgstr ""
 
 #: contents/ui/RecordPage.qml:214
 #, kde-format
@@ -288,10 +285,9 @@ msgid ""
 msgstr ""
 
 #: main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2020-2022 KDE Community"
+#, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr "© 2020-2022 Komunita KDE"
+msgstr ""
 
 #: main.cpp:52
 #, kde-format
@@ -302,29 +298,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "Stop Recording"
-#~ msgstr "Zastavit nahrávání"
-
-#~ msgid "Audio Format"
-#~ msgstr "Zvukový formát"
-
-#~ msgctxt "Ogg Vorbis file format"
-#~ msgid "Ogg Vorbis"
-#~ msgstr "Ogg Vorbis"
-
-#~ msgctxt "Ogg Opus file format"
-#~ msgid "Ogg Opus"
-#~ msgstr "Ogg Opus"
-
-#~ msgctxt "FLAC file format"
-#~ msgid "FLAC"
-#~ msgstr "FLAC"
-
-#~ msgctxt "MP3 file format"
-#~ msgid "MP3"
-#~ msgstr "MP3"
-
-#~ msgctxt "File format not listed"
-#~ msgid "Other"
-#~ msgstr "Jiné"
