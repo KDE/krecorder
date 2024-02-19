@@ -60,10 +60,10 @@ AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
     m_mediaCaptureSession->setAudioInput(m_audioInput);
     m_mediaCaptureSession->setRecorder(this);
 
-    m_audioProbe = new AudioProber(parent, this);
+    // m_audioProbe = new AudioProber(parent, this);
     //m_audioProbe->setSource(actualLocation());
 
-    QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
+    // QQmlEngine::setObjectOwnership(m_audioProbe, QQmlEngine::CppOwnership);
 
     // once the file is done writing, save recording to model
     connect(this, &QMediaRecorder::recorderStateChanged, this, &AudioRecorder::handleStateChange);
@@ -75,10 +75,10 @@ AudioRecorder::AudioRecorder(QObject *parent) : QMediaRecorder(parent)
     // setAudioChannelCount(-1);
 }
 
-AudioProber *AudioRecorder::prober()
-{
-    return m_audioProbe;
-}
+// AudioProber *AudioRecorder::prober()
+// {
+//     return m_audioProbe;
+// }
 
 QString AudioRecorder::audioInput()
 {

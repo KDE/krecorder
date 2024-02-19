@@ -23,8 +23,8 @@ class AudioRecorder : public QMediaRecorder
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
-    Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
     Q_PROPERTY(QString storageFolder READ storageFolder CONSTANT)
+    // Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
     
 private:
     explicit AudioRecorder(QObject *parent = nullptr);
@@ -36,7 +36,7 @@ private:
     QMediaCaptureSession *m_mediaCaptureSession;
     QAudioInput *m_audioInput;
 
-    AudioProber *m_audioProbe;
+    // AudioProber *m_audioProbe;
 
     QString m_recordingName = {}; // rename recording after recording finishes
     QString m_savedPath = {}; // updated after the audio file is renamed
@@ -53,7 +53,7 @@ private:
 public:
     static AudioRecorder* instance();
 
-    AudioProber* prober();
+    // AudioProber* prober();
 
     QString audioInput();
     Q_INVOKABLE void setAudioInput(QAudioDevice device);
