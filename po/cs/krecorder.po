@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-09 01:34+0000\n"
+"POT-Creation-Date: 2024-03-22 02:23+0000\n"
 "PO-Revision-Date: 2023-02-02 14:39+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -163,7 +163,7 @@ msgstr "Zrušit"
 msgid "Rename %1"
 msgstr "Přejmenovat %1"
 
-#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
+#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name:"
 msgstr "Název:"
@@ -188,27 +188,27 @@ msgstr "Pokračovat"
 msgid "Save Recording"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:214
+#: contents/ui/RecordPage.qml:215
 #, kde-format
 msgid "Save recording"
 msgstr "Uložit nahrávání"
 
-#: contents/ui/RecordPage.qml:218
+#: contents/ui/RecordPage.qml:219
 #, kde-format
 msgid "Save"
 msgstr "Uložit"
 
-#: contents/ui/RecordPage.qml:230
+#: contents/ui/RecordPage.qml:231
 #, kde-format
 msgid "Discard"
 msgstr "Zahodit"
 
-#: contents/ui/RecordPage.qml:245
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Name (optional)"
 msgstr "Jméno (volitelné)"
 
-#: contents/ui/RecordPage.qml:249
+#: contents/ui/RecordPage.qml:250
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Složka úložiště:"

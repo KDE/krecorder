@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-09 01:34+0000\n"
+"POT-Creation-Date: 2024-03-22 02:23+0000\n"
 "PO-Revision-Date: 2024-01-09 21:18+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -166,7 +166,7 @@ msgstr "Скасувати"
 msgid "Rename %1"
 msgstr "Перейменувати %1"
 
-#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
+#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name:"
 msgstr "Назва:"
@@ -191,27 +191,27 @@ msgstr "Продовжити"
 msgid "Save Recording"
 msgstr "Збереження запису"
 
-#: contents/ui/RecordPage.qml:214
+#: contents/ui/RecordPage.qml:215
 #, kde-format
 msgid "Save recording"
 msgstr "Збереження запису"
 
-#: contents/ui/RecordPage.qml:218
+#: contents/ui/RecordPage.qml:219
 #, kde-format
 msgid "Save"
 msgstr "Зберегти"
 
-#: contents/ui/RecordPage.qml:230
+#: contents/ui/RecordPage.qml:231
 #, kde-format
 msgid "Discard"
 msgstr "Відкинути"
 
-#: contents/ui/RecordPage.qml:245
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Name (optional)"
 msgstr "Назва (необов’язково):"
 
-#: contents/ui/RecordPage.qml:249
+#: contents/ui/RecordPage.qml:250
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Тека зберігання даних:"
