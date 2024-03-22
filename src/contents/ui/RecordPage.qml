@@ -207,6 +207,7 @@ Kirigami.Page {
     
     Kirigami.Dialog {
         id: saveDialog
+        closePolicy: Kirigami.Dialog.NoAutoClose
         standardButtons: Kirigami.Dialog.NoButton
         padding: Kirigami.Units.largeSpacing
         bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
