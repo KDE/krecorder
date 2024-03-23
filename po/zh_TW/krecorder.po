@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-09 01:34+0000\n"
+"POT-Creation-Date: 2024-03-23 00:39+0000\n"
 "PO-Revision-Date: 2024-01-14 20:52+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -165,7 +165,7 @@ msgstr "取消"
 msgid "Rename %1"
 msgstr "重新命名 %1"
 
-#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:244
+#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name:"
 msgstr "名稱："
@@ -190,27 +190,27 @@ msgstr "繼續"
 msgid "Save Recording"
 msgstr "儲存錄音檔"
 
-#: contents/ui/RecordPage.qml:214
+#: contents/ui/RecordPage.qml:215
 #, kde-format
 msgid "Save recording"
 msgstr "儲存錄音檔"
 
-#: contents/ui/RecordPage.qml:218
+#: contents/ui/RecordPage.qml:219
 #, kde-format
 msgid "Save"
 msgstr "儲存"
 
-#: contents/ui/RecordPage.qml:230
+#: contents/ui/RecordPage.qml:231
 #, kde-format
 msgid "Discard"
 msgstr "丟棄"
 
-#: contents/ui/RecordPage.qml:245
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Name (optional)"
 msgstr "名稱（可選）"
 
-#: contents/ui/RecordPage.qml:249
+#: contents/ui/RecordPage.qml:250
 #, kde-format
 msgid "Storage Folder:"
 msgstr "儲存資料夾："
