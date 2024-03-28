@@ -8,6 +8,7 @@
 [Desktop Entry]
 Name=Recorder
 Name[ar]=المسجل
+Name[ast]=Grabadora
 Name[ca]=Enregistrador
 Name[ca@valencia]=Gravador
 Name[cs]=Nahrávací zařízení
@@ -44,6 +45,7 @@ Name[zh_CN]=录音机
 Name[zh_TW]=錄音
 Comment=Audio Recorder
 Comment[ar]=مسجل صوتي
+Comment[ast]=Grabadora d'audiu
 Comment[ca]=Enregistrador d'àudio
 Comment[ca@valencia]=Gravador d'àudio
 Comment[cs]=Nahrávací zařízení zvuku
