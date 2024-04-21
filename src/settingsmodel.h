@@ -6,11 +6,11 @@
 
 #pragma once
 
-#include <QObject>
-#include <QString>
 #include <QCoreApplication>
-#include <QSettings>
+#include <QObject>
 #include <QQuickItem>
+#include <QSettings>
+#include <QString>
 
 class SettingsModel : public QObject
 {
@@ -37,10 +37,10 @@ public:
         {SimpleAudioFormat::FLAC, {QStringLiteral("audio/x-flac"), QStringLiteral("audio/ogg")}},
         {SimpleAudioFormat::MP3, {QStringLiteral("audio/mpeg, mpegversion=(int)4"), QStringLiteral("audio/mpeg, mpegversion=(int)1")}},
         {SimpleAudioFormat::WAV, {QStringLiteral("audio/x-raw"), QStringLiteral("audio/x-wav")}},
-        {SimpleAudioFormat::OTHER, {QString(), QString()}}
+        {SimpleAudioFormat::OTHER, {QString(), QString()}},
     };
 
-    static SettingsModel* instance();
+    static SettingsModel *instance();
 
     int simpleAudioFormat() const;
     void setSimpleAudioFormat(int audioFormat);

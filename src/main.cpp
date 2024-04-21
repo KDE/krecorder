@@ -6,12 +6,12 @@
  */
 
 #include <QApplication>
+#include <QCommandLineParser>
 #include <QGuiApplication>
 #include <QIcon>
 #include <QQmlApplicationEngine>
-#include <QUrl>
-#include <QCommandLineParser>
 #include <QQuickStyle>
+#include <QUrl>
 #include <QtQml>
 
 #include <KAboutData>
@@ -40,9 +40,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     }
 
     QApplication app(argc, argv);
-    
+
     KLocalizedString::setApplicationDomain("krecorder");
-    
+
     KAboutData aboutData(QStringLiteral("krecorder"),
                          QStringLiteral("Recorder"),
                          QStringLiteral(KRECORDER_VERSION_STRING),
@@ -52,38 +52,38 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Devin Lin"), QString(), QStringLiteral("devin@kde.org"));
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"));
     KAboutData::setApplicationData(aboutData);
-    
+
     QCommandLineParser parser;
     parser.addVersionOption();
     parser.process(app);
 
     qmlRegisterType<Recording>("KRecorder", 1, 0, "Recording");
     qmlRegisterType<AudioProber>("KRecorder", 1, 0, "AudioProber");
-    qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+    qmlRegisterSingletonType<Utils>("KRecorder", 1, 0, "Utils", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return new Utils;
     });
 
     // pre-initialize settings model to apply settings to the AudioRecorder instance
     SettingsModel::instance();
 
-    qmlRegisterSingletonType<AudioPlayer>("KRecorder", 1, 0, "AudioPlayer", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+    qmlRegisterSingletonType<AudioPlayer>("KRecorder", 1, 0, "AudioPlayer", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return AudioPlayer::instance();
     });
 
-    qmlRegisterSingletonType<AudioRecorder>("KRecorder", 1, 0, "AudioRecorder", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+    qmlRegisterSingletonType<AudioRecorder>("KRecorder", 1, 0, "AudioRecorder", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return AudioRecorder::instance();
     });
 
-    qmlRegisterSingletonType<RecordingModel>("KRecorder", 1, 0, "RecordingModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+    qmlRegisterSingletonType<RecordingModel>("KRecorder", 1, 0, "RecordingModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return RecordingModel::instance();
     });
 
-    qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [] (QQmlEngine *, QJSEngine *) -> QObject* {
+    qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return SettingsModel::instance();
     });
 
     qmlRegisterSingletonInstance("KRecorder", 1, 0, "AboutType", &AboutType::instance());
-    
+
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));

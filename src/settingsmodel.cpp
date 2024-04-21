@@ -6,14 +6,14 @@
 
 #include "settingsmodel.h"
 
-SettingsModel* SettingsModel::instance()
+SettingsModel *SettingsModel::instance()
 {
     static SettingsModel *s_settingsModel = new SettingsModel(qApp);
     return s_settingsModel;
 }
 
-SettingsModel::SettingsModel(QObject *parent) : 
-    QObject(parent)
+SettingsModel::SettingsModel(QObject *parent)
+    : QObject(parent)
 {
     settings = new QSettings();
 }
@@ -42,7 +42,7 @@ void SettingsModel::setSimpleAudioFormat(int audioFormat)
     if (simpleAudioFormat() == audioFormat) {
         return;
     }
-    
+
     SimpleAudioFormat format = static_cast<SimpleAudioFormat>(audioFormat);
     setAudioCodec(formatMap[format].first);
     setContainerFormat(formatMap[format].second);
@@ -70,7 +70,7 @@ QString SettingsModel::containerFormat() const
 void SettingsModel::setContainerFormat(const QString &audioContainerFormat)
 {
     settings->setValue(QStringLiteral("General/containerFormat"), audioContainerFormat);
-    
+
     Q_EMIT containerFormatChanged();
     Q_EMIT simpleAudioFormatChanged();
 }
@@ -85,8 +85,8 @@ void SettingsModel::setAudioQuality(int audioQuality)
     if (this->audioQuality() == audioQuality) {
         return;
     }
-    
+
     settings->setValue(QStringLiteral("General/audioQuality"), audioQuality);
-    
+
     Q_EMIT audioQualityChanged();
 }

@@ -46,8 +46,8 @@ public:
 private:
     void handleRecorderState(QMediaRecorder::RecorderState state);
     void handlePlayerState(QMediaPlayer::PlaybackState state);
-    
-    int m_audioSum = 0;  //
+
+    int m_audioSum = 0; //
     int m_audioLen = 0; // used for calculating the value of one volume bar from many
     int m_animationIndex = 0; // which index rectangle is being expanded
     int m_maxVolumes = 100; // based on width of screen
@@ -59,7 +59,7 @@ private:
     QMediaPlayer *m_playerSource;
     QAudioSource *m_audioSource;
     QIODevice *m_audioIODevice;
-    
+
 Q_SIGNALS:
     void volumesListAdded(int volume);
     void volumesListChanged();

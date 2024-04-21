@@ -12,12 +12,13 @@
 #include "audioprober.h"
 
 AudioProber::AudioProber(QObject *parent)
-    : QAudioDecoder{ parent }
-{}
+    : QAudioDecoder{parent}
+{
+}
 
 AudioProber::AudioProber(QObject *parent, QMediaRecorder *source)
-    : QAudioDecoder{ parent }
-    , m_recorderSource{ source }
+    : QAudioDecoder{parent}
+    , m_recorderSource{source}
 {
     QAudioFormat format;
     // Set up the desired format, for example:
@@ -34,29 +35,30 @@ AudioProber::AudioProber(QObject *parent, QMediaRecorder *source)
 
     // connect to recorder
     connect(m_recorderSource, &QMediaRecorder::recorderStateChanged, this, &AudioProber::handleRecorderState);
-    
-    // loop to add volume bars 
+
+    // loop to add volume bars
     volumeBarTimer = new QTimer(this);
     connect(volumeBarTimer, &QTimer::timeout, this, &AudioProber::processVolumeBar);
     volumeBarTimer->setInterval(150);
 }
 
-AudioProber::AudioProber(QObject *parent, QMediaPlayer *source) 
-    : QAudioDecoder{ parent }
-    , m_playerSource{ source }
+AudioProber::AudioProber(QObject *parent, QMediaPlayer *source)
+    : QAudioDecoder{parent}
+    , m_playerSource{source}
 {
     connect(this, &AudioProber::bufferReady, this, &AudioProber::process);
-    
+
     // connect to player
     connect(m_playerSource, &QMediaPlayer::playbackStateChanged, this, &AudioProber::handlePlayerState);
-    
-    // loop to add volume bars 
+
+    // loop to add volume bars
     volumeBarTimer = new QTimer(this);
     connect(volumeBarTimer, &QTimer::timeout, this, &AudioProber::processVolumeBar);
     volumeBarTimer->setInterval(150);
 }
 
-void AudioProber::handleRecorderState(QMediaRecorder::RecorderState state) {
+void AudioProber::handleRecorderState(QMediaRecorder::RecorderState state)
+{
     if (state == QMediaRecorder::RecordingState) {
         start();
         volumeBarTimer->start();
@@ -71,7 +73,8 @@ void AudioProber::handleRecorderState(QMediaRecorder::RecorderState state) {
     }
 }
 
-void AudioProber::handlePlayerState(QMediaPlayer::PlaybackState state) {
+void AudioProber::handlePlayerState(QMediaPlayer::PlaybackState state)
+{
     if (state == QMediaPlayer::PlayingState) {
         volumeBarTimer->start();
     } else if (state == QMediaPlayer::PausedState) {
@@ -94,7 +97,7 @@ void AudioProber::start()
     connect(this, &QAudioDecoder::bufferReady, this, &AudioProber::process);
 }
 
-void AudioProber::processVolumeBar() 
+void AudioProber::processVolumeBar()
 {
     if (isDecoding()) {
         // m_audioLen might be 0
@@ -102,7 +105,7 @@ void AudioProber::processVolumeBar()
 
         m_volumesList.append(val);
         Q_EMIT volumesListAdded(val);
-        
+
         if (m_volumesList.count() > m_maxVolumes) {
             m_volumesList.removeFirst();
         }
@@ -131,7 +134,7 @@ void AudioProber::process()
     }
 
     sum /= read().sampleCount();
-    
+
     m_audioSum += sum;
     m_audioLen++;
 }

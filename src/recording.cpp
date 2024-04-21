@@ -7,30 +7,32 @@
 
 #include "recording.h"
 
-#include <QFile>
-#include <QStandardPaths>
-#include <QJsonObject>
-#include <QDebug>
-#include <QJsonDocument>
-#include <QJsonArray>
-#include <QRegularExpression>
 #include "utils.h"
+#include <QDebug>
+#include <QFile>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QRegularExpression>
+#include <QStandardPaths>
 
 Recording::Recording(QObject *parent, const QString &filePath, const QString &fileName, QDateTime recordDate, int recordingLength)
-    : QObject{ parent }
-    , m_filePath{ filePath }
-    , m_fileName{ fileName }
-    , m_recordDate{ recordDate }
-    , m_recordingLength{ recordingLength }
-{}
+    : QObject{parent}
+    , m_filePath{filePath}
+    , m_fileName{fileName}
+    , m_recordDate{recordDate}
+    , m_recordingLength{recordingLength}
+{
+}
 
 Recording::Recording(QObject *parent, const QJsonObject &obj)
-    : QObject{ parent }
-    , m_filePath{ obj[QStringLiteral("filePath")].toString() }
-    , m_fileName{ obj[QStringLiteral("fileName")].toString() }
-    , m_recordDate{ QDateTime::fromString(obj[QStringLiteral("recordDate")].toString(), Qt::DateFormat::ISODate) }
-    , m_recordingLength{ obj[QStringLiteral("recordingLength")].toInt() }
-{}
+    : QObject{parent}
+    , m_filePath{obj[QStringLiteral("filePath")].toString()}
+    , m_fileName{obj[QStringLiteral("fileName")].toString()}
+    , m_recordDate{QDateTime::fromString(obj[QStringLiteral("recordDate")].toString(), Qt::DateFormat::ISODate)}
+    , m_recordingLength{obj[QStringLiteral("recordingLength")].toInt()}
+{
+}
 
 QJsonObject Recording::toJson() const
 {
@@ -89,7 +91,7 @@ void Recording::setFilePath(const QString &filePath)
     m_filePath = filePath;
 
     QStringList spl = filePath.split(QStringLiteral("/"));
-    m_fileName = spl[spl.size()-1].split(QStringLiteral("."))[0];
+    m_fileName = spl[spl.size() - 1].split(QStringLiteral("."))[0];
 
     Q_EMIT propertyChanged();
 }

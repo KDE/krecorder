@@ -25,11 +25,12 @@ class AudioRecorder : public QMediaRecorder
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
     Q_PROPERTY(QString storageFolder READ storageFolder CONSTANT)
     // Q_PROPERTY(AudioProber* prober READ prober CONSTANT)
-    
+
 private:
     explicit AudioRecorder(QObject *parent = nullptr);
     void handleStateChange(QMediaRecorder::RecorderState state);
-    void updateFormats(QMediaFormat::FileFormat fileFormat = QMediaFormat::FileFormat::UnspecifiedFormat, QMediaFormat::AudioCodec audioCodec = QMediaFormat::AudioCodec::Unspecified);
+    void updateFormats(QMediaFormat::FileFormat fileFormat = QMediaFormat::FileFormat::UnspecifiedFormat,
+                       QMediaFormat::AudioCodec audioCodec = QMediaFormat::AudioCodec::Unspecified);
     void updateAudioInputs();
 
     QMediaFormat *m_mediaFormat;
@@ -51,7 +52,7 @@ private:
     bool m_updatingFormats = false;
 
 public:
-    static AudioRecorder* instance();
+    static AudioRecorder *instance();
 
     // AudioProber* prober();
 
@@ -63,11 +64,11 @@ public:
 
     int audioQuality();
     void setAudioQuality(int quality);
-    
+
     QString storageFolder() const;
-    
+
     Q_INVOKABLE void reset();
-    
+
     Q_INVOKABLE void saveRecording();
 
     void renameCurrentRecording();

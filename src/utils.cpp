@@ -7,10 +7,10 @@
 #include "utils.h"
 
 #include <QDateTime>
-#include <QRandomGenerator>
 #include <QLocale>
+#include <QRandomGenerator>
 
-Utils::Utils(QObject *parent) 
+Utils::Utils(QObject *parent)
     : QObject(parent)
 {
 }

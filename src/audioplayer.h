@@ -7,10 +7,10 @@
 #pragma once
 
 #include <QAudioOutput>
+#include <QCoreApplication>
 #include <QMediaPlayer>
 #include <QQmlEngine>
 #include <QUrl>
-#include <QCoreApplication>
 
 class AudioPlayer : public QMediaPlayer
 {
@@ -28,6 +28,6 @@ private:
     explicit AudioPlayer(QObject *parent = nullptr);
 
     QAudioOutput *m_audioOutput;
-    
+
     bool wasStopped = false;
 };
