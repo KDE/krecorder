@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-23 00:39+0000\n"
+"POT-Creation-Date: 2024-04-22 00:40+0000\n"
 "PO-Revision-Date: 2024-01-27 19:02+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -29,12 +29,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translation-team@basealt.ru, farline99@yandex.ru"
 
-#: audiorecorder.cpp:170
+#: audiorecorder.cpp:172
 #, kde-format
 msgid "Default file format"
 msgstr "Формат файла по умолчанию"
 
-#: audiorecorder.cpp:179
+#: audiorecorder.cpp:181
 #, kde-format
 msgid "Default audio codec"
 msgstr "Модуль кодирования звука по умолчанию"
