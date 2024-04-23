@@ -22,12 +22,14 @@
   <name xml:lang="fi">Tallennin</name>
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="gl">Gravadora</name>
+  <name xml:lang="he">מקליט</name>
   <name xml:lang="hu">Rögzítő</name>
   <name xml:lang="ia">Recorder (Registrator)</name>
   <name xml:lang="id">Recorder</name>
   <name xml:lang="it">Registratore</name>
   <name xml:lang="ka">ჩამწერი</name>
   <name xml:lang="ko">녹음기</name>
+  <name xml:lang="lv">Recorder</name>
   <name xml:lang="nl">Recorder</name>
   <name xml:lang="nn">Recorder</name>
   <name xml:lang="pa">ਰਿਕਾਰਡਰ</name>
@@ -46,6 +48,7 @@
   <name xml:lang="zh-TW">錄音</name>
   <summary>Audio recorder</summary>
   <summary xml:lang="ar">مسجل صوتي</summary>
+  <summary xml:lang="ast">Grabadora d'audiu</summary>
   <summary xml:lang="ca">Enregistrador d'àudio</summary>
   <summary xml:lang="ca-valencia">Gravador d'àudio</summary>
   <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
@@ -57,12 +60,14 @@
   <summary xml:lang="fi">Äänitallennin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="gl">Gravadora de son</summary>
+  <summary xml:lang="he">מקליט שמע</summary>
   <summary xml:lang="hu">Hangrögzítő</summary>
   <summary xml:lang="ia">Registrator Audio</summary>
   <summary xml:lang="id">Perekam audio</summary>
   <summary xml:lang="it">Registratore audio</summary>
   <summary xml:lang="ka">ხმის ჩამწერი</summary>
   <summary xml:lang="ko">오디오 녹음기</summary>
+  <summary xml:lang="lv">Skaņas ierakstītājs</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pl">Nagrywanie dźwięku</summary>
   <summary xml:lang="pt">Gravador de áudio</summary>
@@ -99,12 +104,14 @@
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
+  <developer_name xml:lang="he">קהילת KDE</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="ia">Communitate de KDE</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
+  <developer_name xml:lang="lv">KDE kopiena</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
@@ -135,12 +142,14 @@
     <p xml:lang="fi">Recorder on yksinkertainen monialustainen äänentallennussovellus.</p>
     <p xml:lang="fr">Recorder est une application simple, multi-plate-forme d'enregistreur audio.</p>
     <p xml:lang="gl">Gravadora é unha aplicación de gravación de son simple e multiplataforma.</p>
+    <p xml:lang="he">המקליט הוא יישום הקלטת שמע פשוט למגוון פלטפורמות.</p>
     <p xml:lang="hu">A Rögzítő egy egyszerű, keresztplatformos hangrögzítő alkalmazás.</p>
     <p xml:lang="ia">Recorder es un simple application inter-platform de registrar audio. </p>
     <p xml:lang="id">Recorder adalah sebuah aplikasi perekaman audio lintas platform yang sederhana.</p>
     <p xml:lang="it">Registratore è un'applicazione di registrazione audio semplice e multi-piattaforma.</p>
     <p xml:lang="ka">ჩამწერი მარტივი, კროსპლატფორმული ხმის ჩამწერი აპლიკაციაა.</p>
     <p xml:lang="ko">녹음기는 간단한 크로스 플랫폼 오디오 녹음기 앱입니다.</p>
+    <p xml:lang="lv">Ierakstītājs ir vienkārša skaņas ierakstīšanas programma, kas darbojas daudzās operētājsistēmās.</p>
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="nn">Recorder eit eit enkelt program for lydopptak.</p>
     <p xml:lang="pa">ਰਿਕਾਰਡਰ ਸਰਲ, ਕਈ ਪਲੇਟਫਾਰਮਾਂ ਲਈ ਆਡੀਓ ਰਿਕਾਰਡਿੰਗ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</p>
