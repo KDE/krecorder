@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-23 00:39+0000\n"
-"PO-Revision-Date: 2024-01-14 20:52+0900\n"
+"PO-Revision-Date: 2024-05-09 06:43+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.01.90\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -203,7 +203,7 @@ msgstr "儲存"
 #: contents/ui/RecordPage.qml:231
 #, kde-format
 msgid "Discard"
-msgstr "丟棄"
+msgstr "捨棄"
 
 #: contents/ui/RecordPage.qml:246
 #, kde-format
