@@ -87,4 +87,5 @@ Icon=org.kde.krecorder
 Type=Application
 Terminal=false
 Categories=AudioVideo;Audio;Qt;KDE;
+Keywords=krecorder;
 X-KDE-FormFactor=desktop;tablet;handset;
