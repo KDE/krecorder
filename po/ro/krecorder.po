@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# Sergiu Bivol <sergiu@cip.md>, 2022.
+# Sergiu Bivol <sergiu@cip.md>, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-23 00:39+0000\n"
-"PO-Revision-Date: 2022-04-30 11:32+0100\n"
+"PO-Revision-Date: 2024-02-25 13:55+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -31,13 +31,12 @@ msgstr "sergiu@cip.md"
 #: audiorecorder.cpp:170
 #, kde-format
 msgid "Default file format"
-msgstr ""
+msgstr "Format implicit de fișier"
 
 #: audiorecorder.cpp:179
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Default audio codec"
-msgstr "Codec audio:"
+msgstr "Codec audio implicit"
 
 #: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -49,16 +48,14 @@ msgid "Settings"
 msgstr "Configurări"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Apăsați pe o înregistrare pentru a o reda, sau înregistrați una nouă"
+msgstr "Redă o înregistrare, sau înregistrează una nouă"
 
 #: contents/ui/DefaultPage.qml:35
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
-msgstr "Salvează înregistrarea"
+msgstr "Creează o înregistrare nouă"
 
 #: contents/ui/main.qml:23
 #, kde-format
@@ -68,13 +65,12 @@ msgstr "Înregistrator"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Lector"
 
 #: contents/ui/PlayerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Înregistrator"
+msgstr "Înregistrat pe %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
@@ -84,7 +80,7 @@ msgstr "Întrerupe"
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Redă"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
@@ -95,12 +91,12 @@ msgstr "Oprește"
 #: contents/ui/RecordingListPage.qml:172
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Exportă la amplasare"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Redenumește"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
@@ -131,13 +127,12 @@ msgstr "Nicio înregistrare"
 #: contents/ui/RecordingListPage.qml:149
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Alegeți o amplasare de salvat înregistrarea %1"
 
 #: contents/ui/RecordingListPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Salvează înregistrarea"
+msgstr "Salvat înregistrare în %1"
 
 #: contents/ui/RecordingListPage.qml:212
 #, kde-format
@@ -168,7 +163,7 @@ msgstr "Renunță"
 #: contents/ui/RecordingListPage.qml:240
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Redenumește %1"
 
 #: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
 #, kde-format
@@ -188,11 +183,10 @@ msgstr "Înregistrează sunet"
 #: contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continuă"
 
 #: contents/ui/RecordPage.qml:176
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
 msgstr "Salvează înregistrarea"
 
@@ -219,12 +213,12 @@ msgstr "Denumire (opțional)"
 #: contents/ui/RecordPage.qml:250
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Dosar de stocare:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Generale"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
@@ -232,75 +226,72 @@ msgid "About"
 msgstr "Despre"
 
 #: contents/ui/settings/SettingsComponent.qml:58
-#, fuzzy, kde-format
-#| msgid "Audio Input:"
+#, kde-format
 msgid "Audio Input"
-msgstr "Intrare audio:"
+msgstr "Intrare audio"
 
 #: contents/ui/settings/SettingsComponent.qml:125
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Avansate"
 
 #: contents/ui/settings/SettingsComponent.qml:132
-#, fuzzy, kde-format
-#| msgid "Audio Codec:"
+#, kde-format
 msgid "Audio Codec"
-msgstr "Codec audio:"
+msgstr "Codec audio"
 
 #: contents/ui/settings/SettingsComponent.qml:165
-#, fuzzy, kde-format
-#| msgid "Container Format:"
+#, kde-format
 msgid "Container Format"
-msgstr "Format container:"
+msgstr "Format container"
 
 #: contents/ui/settings/SettingsComponent.qml:198
-#, fuzzy, kde-format
-#| msgid "Audio Quality:"
+#, kde-format
 msgid "Audio Quality"
-msgstr "Calitate audio:"
+msgstr "Calitate sunet"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Cea mai înaltă"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Joasă"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Medie"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Înaltă"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Cea mai înaltă"
 
 #: contents/ui/settings/SettingsComponent.qml:200
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "O calitate mai înaltă a sunetului crește și dimensiunea fișierului."
 
 #: contents/ui/settings/SettingsComponent.qml:225
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Unele combinații de codecuri și formate ale containerului pot să nu fie "
+"compatibile."
 
 #: main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2020-2022 KDE Community"
+#, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr "© 2020-2022 Comunitatea KDE"
+msgstr "© 2020-2024 Comunitatea KDE"
 
 #: main.cpp:52
 #, kde-format
