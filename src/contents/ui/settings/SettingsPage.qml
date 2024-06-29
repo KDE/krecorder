@@ -12,11 +12,11 @@ import KRecorder
 Kirigami.ScrollablePage {
     id: page
     title: i18n("Settings")
-    
+
     topPadding: Kirigami.Units.gridUnit
     bottomPadding: 0
     leftPadding: 0
     rightPadding: 0
-    
+
     SettingsComponent {}
 }

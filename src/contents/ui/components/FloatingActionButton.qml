@@ -10,26 +10,26 @@ import org.kde.kirigami as Kirigami
 
 /**
  * @brief Floating button that can be used on pages to trigger actions.
- * 
+ *
  * It is automatically anchored to be horizontally centered in the parent component, and towards the bottom.
- * 
+ *
  * These anchors can be overridden.
- * 
+ *
  * Example usage:
  * @code{.qml}
  * import QtQuick 2.15
  * import QtQuick.Layouts 1.15
  * import org.kde.kirigami 2.21 as Kirigami
- * 
+ *
  * Kirigami.ScrollablePage {
  *     title: i18n("Page with ListView")
- * 
+ *
  *     ListView {
  *         model: 50
  *         delegate: Kirigami.BasicListItem {
  *             text: modelData
  *         }
- * 
+ *
  *         Kirigami.FloatingActionButton {
  *             icon.name: "list-add"
  *             onClicked: {
@@ -46,23 +46,23 @@ T.RoundButton {
     height: implicitHeight
     implicitWidth: Kirigami.Units.gridUnit * 3
     implicitHeight: Kirigami.Units.gridUnit * 3
-    
+
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.bottom: parent.bottom
     anchors.bottomMargin: Kirigami.Units.largeSpacing
-    
+
     background: Kirigami.ShadowedRectangle {
         anchors.fill: parent
         radius: root.radius
         color: root.pressed ? Qt.darker(Kirigami.Theme.highlightColor, 1.2) : Kirigami.Theme.highlightColor
         renderType: Kirigami.ShadowedRectangle.HighQuality
-        
+
         property color shadowColor: Qt.darker(Kirigami.Theme.backgroundColor, 1.5)
         shadow.color: Qt.rgba(shadowColor.r, shadowColor.g, shadowColor.b, 0.5)
         shadow.size: 7
         shadow.yOffset: 2
     }
-    
+
     contentItem: Item {
         Kirigami.Icon {
             anchors.centerIn: parent

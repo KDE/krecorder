@@ -15,19 +15,19 @@ Controls.AbstractButton {
     hoverEnabled: true
     implicitWidth: Kirigami.Units.gridUnit * 3
     implicitHeight: Kirigami.Units.gridUnit * 3
-    
+
     property color backgroundColor: Kirigami.Theme.highlightColor
-    
+
     Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
     Controls.ToolTip.timeout: 5000
     Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered
     Controls.ToolTip.text: text
-    
+
     background: Rectangle {
         radius: width / 2
         color: root.pressed ? Qt.darker(root.backgroundColor, 1.3) : ((!Kirigami.Settings.tabletMode && root.hovered) ? Qt.darker(root.backgroundColor, 1.1) : root.backgroundColor)
     }
-    
+
     Kirigami.Icon {
         anchors.centerIn: parent
         isMask: true

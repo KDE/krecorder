@@ -82,7 +82,7 @@ ColumnLayout {
                     }
                 }
             }
-            
+
             Component.onCompleted: {
                 refreshAudioInputs();
             }
@@ -133,11 +133,11 @@ ColumnLayout {
             model: AudioRecorder.supportedAudioCodecs
             onCurrentValueChanged: AudioRecorder.audioCodec = currentValue;
             displayMode: FormCard.FormComboBoxDelegate.Dialog
-            
+
             Binding on currentIndex {
                 value: audioCodecDropdown.indexOfValue(SettingsModel.audioCodec)
             }
-            
+
             Component.onCompleted: {
                 // HACK: the values don't load until after the component completes
                 currentIndex = audioCodecDropdown.indexOfValue(SettingsModel.audioCodec)
@@ -157,7 +157,7 @@ ColumnLayout {
                 }
             }
         }
-        
+
         FormCard.FormDelegateSeparator { above: audioCodecDropdown; below: containerFormatDropdown }
 
         FormCard.FormComboBoxDelegate {
@@ -170,12 +170,12 @@ ColumnLayout {
             Binding on currentIndex {
                 value: containerFormatDropdown.indexOfValue(SettingsModel.containerFormat)
             }
-            
+
             Component.onCompleted: {
                 // HACK: the values don't load until after the component completes
                 currentIndex = containerFormatDropdown.indexOfValue(SettingsModel.containerFormat)
             }
-            
+
             onClicked: if (root.dialog && containerFormatDropdown.displayMode === FormCard.FormComboBoxDelegate.Dialog) {
                 dialogTimer.dialog = containerFormatDropdown.dialog;
                 dialogTimer.restart();

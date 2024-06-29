@@ -10,7 +10,7 @@ import QtQuick.Controls as Controls
 
 Controls.ToolButton {
     display: Controls.AbstractButton.IconOnly
-    
+
     Controls.ToolTip.delay: Kirigami.Units.toolTipDelay
     Controls.ToolTip.timeout: 5000
     Controls.ToolTip.visible: Kirigami.Settings.tabletMode ? pressed : hovered

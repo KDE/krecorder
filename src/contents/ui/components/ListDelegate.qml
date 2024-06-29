@@ -10,20 +10,20 @@ import org.kde.kirigami as Kirigami
 Control {
     id: root
     property bool showSeparator: false
-    
+
     signal clicked()
     signal rightClicked()
     signal longPressed()
-    
+
     leftPadding: Kirigami.Units.largeSpacing
     topPadding: Kirigami.Units.largeSpacing
     bottomPadding: Kirigami.Units.largeSpacing
     rightPadding: Kirigami.Units.largeSpacing
-    
+
     hoverEnabled: !Kirigami.Settings.tabletMode
     background: Rectangle {
         color: Qt.rgba(Kirigami.Theme.textColor.r, Kirigami.Theme.textColor.g, Kirigami.Theme.textColor.b, tapHandler.pressed ? 0.2 : root.hovered ? 0.1 : 0)
-        
+
         TapHandler {
             id: tapHandler
             onTapped: root.clicked()
@@ -33,7 +33,7 @@ Control {
             acceptedButtons: Qt.RightButton
             onTapped: root.rightClicked()
         }
-        
+
         Kirigami.Separator {
             anchors.bottom: parent.bottom
             anchors.left: parent.left

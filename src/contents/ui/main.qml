@@ -24,15 +24,15 @@ Kirigami.ApplicationWindow {
 
     width: Kirigami.Settings.isMobile ? 400 : 800
     height: Kirigami.Settings.isMobile ? 550 : 500
-    
+
     readonly property real wideScreenThreshold: Kirigami.Units.gridUnit * 40
     readonly property bool isWidescreen: (appwindow.width >= wideScreenThreshold) && appwindow.wideScreen // prevent being widescreen at first launch
-    
+
     property Recording currentRecording: null
-    
+
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.ToolBar;
     pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton;
-    
+
     pageStack.initialPage: RecordingListPage {}
     pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
     pageStack.popHiddenPages: true
@@ -40,7 +40,7 @@ Kirigami.ApplicationWindow {
     Component.onCompleted: {
         switchToRecording(null);
     }
-    
+
     // page switch animation
     NumberAnimation {
         id: anim
@@ -56,17 +56,17 @@ Kirigami.ApplicationWindow {
         duration: Kirigami.Units.longDuration * 3
         easing.type: Easing.OutQuint
     }
-    
+
     Loader {
         id: playerPageLoader
     }
-    
+
     onIsWidescreenChanged: switchToRecording(currentRecording);
-    
+
     function openSettings() {
         if (isWidescreen) {
             settingsDialogLoader.active = true;
-            
+
             if (Kirigami.Settings.isMobile) {
                 // SettingsDialog
                 settingsDialogLoader.item.open();
@@ -79,16 +79,16 @@ Kirigami.ApplicationWindow {
             pageStack.push("qrc:/settings/SettingsPage.qml");
         }
     }
-    
+
     function openRecordScreen() {
         pageStack.layers.push(recordPage);
-        
+
         // if not in a recording session, start recording
         if (recordPage.isStopped) {
             AudioRecorder.record();
         }
     }
-    
+
     function switchToRecording(recording) {
         currentRecording = recording;
         while (pageStack.depth > 1) pageStack.pop();
@@ -105,7 +105,7 @@ Kirigami.ApplicationWindow {
             playerPageLoader.setSource("qrc:/PlayerPage.qml", {recording: recording});
             pageStack.push(playerPageLoader.item);
         }
-        
+
         // page switch animation
         yAnim.target = playerPageLoader.item;
         yAnim.properties = "yTranslate";
@@ -114,13 +114,13 @@ Kirigami.ApplicationWindow {
         yAnim.restart();
         anim.restart();
     }
-    
+
     // record page
     RecordPage {
         id: recordPage
         visible: false
     }
-    
+
     Loader {
         id: settingsDialogLoader
         active: false

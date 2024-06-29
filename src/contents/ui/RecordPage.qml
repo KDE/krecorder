@@ -29,18 +29,18 @@ Kirigami.Page {
             AudioRecorder.record();
         }
     }
-    
+
     Connections {
         target: AudioRecorder
         function onErrorChanged() {
             console.warn("Error on the recorder", AudioRecorder.errorString)
         }
     }
-    
+
     ColumnLayout {
         id: column
         anchors.fill: parent
-        
+
         Controls.Label {
             id: timeText
             Layout.alignment: Qt.AlignHCenter
@@ -50,23 +50,23 @@ Kirigami.Page {
             font.pointSize: Math.round(Kirigami.Theme.defaultFont.pointSize * 3)
             font.weight: Font.DemiBold
         }
-        
+
         Item { Layout.fillHeight: true }
-        
+
         // TODO visualization disabled until we port the model to Qt6
         // Visualization {
         //     Layout.fillWidth: true
-            
+
         //     prober: AudioRecorder.prober
         //     showBarsFromMiddle: true
         //     showLine: true
         //     height: Kirigami.Units.gridUnit * 10
         //     maxBarHeight: Kirigami.Units.gridUnit * 5 * 2
         //     animationIndex: AudioRecorder.prober.animationIndex
-            
+
         //     volumes: AudioRecorder.prober.volumesList
         // }
-        
+
         // placeholder visualization for now
         Item {
             id: visualization
@@ -115,7 +115,7 @@ Kirigami.Page {
                 height: Kirigami.Units.gridUnit * 7
                 width: height
                 text: (!isStopped && isPaused) ? i18n("Continue") : i18n("Pause")
-                
+
                 onClicked: {
                     if (isPaused) {
                         AudioRecorder.record();
@@ -145,23 +145,23 @@ Kirigami.Page {
         }
 
         Item { Layout.fillHeight: true }
-        
+
         RowLayout {
             spacing: Math.round(Kirigami.Units.gridUnit * 1.5)
-            
+
             Layout.fillWidth: true
             Layout.bottomMargin: Kirigami.Units.gridUnit
             Layout.topMargin: Kirigami.Units.largeSpacing
-            
+
             Item { Layout.fillWidth: true }
-            
+
             // moved pause button until we port the visualization to Qt6
             // ToolTipToolButton {
             //     implicitWidth: Math.round(Kirigami.Units.gridUnit * 2.5)
             //     implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
             //     text: (!isStopped && isPaused) ? i18n("Continue") : i18n("Pause")
             //     icon.name: (!isStopped && isPaused) ? "media-playback-start" : "media-playback-pause"
-                
+
             //     onClicked: {
             //         if (isPaused) {
             //             AudioRecorder.record();
@@ -170,17 +170,17 @@ Kirigami.Page {
             //         }
             //     }
             // }
-            
+
             RoundFlatButton {
                 id: stopButton
                 text: i18n("Save Recording")
-                
+
                 icon.name: "checkmark"
-                
+
                 onClicked: {
                     // pop record page off
                     applicationWindow().pageStack.layers.pop();
-                    
+
                     // save recording
                     recordingName.text = RecordingModel.nextDefaultRecordingName();
                     saveDialog.open();
@@ -193,27 +193,27 @@ Kirigami.Page {
                 implicitHeight: Math.round(Kirigami.Units.gridUnit * 2.5)
                 text: i18n("Delete")
                 icon.name: "delete"
-                
+
                 onClicked: {
                     // pop record page off
                     applicationWindow().pageStack.layers.pop();
                     AudioRecorder.reset();
                 }
             }
-            
+
             Item { Layout.fillWidth: true }
         }
     }
-    
+
     Kirigami.Dialog {
         id: saveDialog
         closePolicy: Kirigami.Dialog.NoAutoClose
         standardButtons: Kirigami.Dialog.NoButton
         padding: Kirigami.Units.largeSpacing
         bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
-        
+
         title: i18n("Save recording")
-        
+
         customFooterActions: [
             Kirigami.Action {
                 text: i18n("Save")
@@ -223,7 +223,7 @@ Kirigami.Page {
                     AudioRecorder.stop();
                     pageStack.layers.pop();
                     recordingName.text = "";
-                            
+
                     saveDialog.close();
                 }
             },
@@ -236,16 +236,16 @@ Kirigami.Page {
                 }
             }
         ]
-        
+
         Kirigami.FormLayout {
             implicitWidth: Kirigami.Units.gridUnit * 20
-            
+
             Controls.TextField {
                 id: recordingName
                 Kirigami.FormData.label: i18n("Name:")
                 placeholderText: i18n("Name (optional)")
             }
-            
+
             Controls.Label {
                 Kirigami.FormData.label: i18n("Storage Folder:")
                 Layout.fillWidth: true

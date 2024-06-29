@@ -12,7 +12,7 @@ import KRecorder
 
 Kirigami.Page {
     title: ""
-    
+
     property int yTranslate: 0
     property int mainOpacity: 0
 
@@ -24,11 +24,11 @@ Kirigami.Page {
             onTriggered: applicationWindow().openSettings();
         }
     ]
-    
+
     Kirigami.PlaceholderMessage {
         opacity: mainOpacity
         transform: Translate { y: yTranslate }
-        
+
         anchors.centerIn: parent
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         icon.name: "microphone-sensitivity-medium"
@@ -36,4 +36,4 @@ Kirigami.Page {
         type: Kirigami.PlaceholderMessage.Type.Informational
     }
 }
- 
+

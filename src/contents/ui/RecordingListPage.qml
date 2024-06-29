@@ -23,13 +23,13 @@ Kirigami.ScrollablePage {
 
     property Recording currentRecordingToEdit
     property bool editMode
-    
+
     onEditModeChanged: {
         editAction.checked = editMode;
     }
-    
+
     implicitWidth: applicationWindow().isWidescreen ? Kirigami.Units.gridUnit * 8 : applicationWindow().width
-    
+
     actions: [
         Kirigami.Action {
             id: editAction
@@ -52,24 +52,24 @@ Kirigami.ScrollablePage {
             onTriggered: applicationWindow().openRecordScreen()
         }
     ]
-    
+
     function editRecordingDialog(recording) {
         editDialogName.text = recording.fileName;
         editDialogLocation.text = recording.filePath;
         currentRecordingToEdit = recording;
         editNameDialog.open();
     }
-    
+
     function removeRecordingDialog(recording, index) {
         deleteDialog.toDelete = recording;
         deleteDialog.toDeleteIndex = index;
         deleteDialog.open();
     }
-    
+
     ListView {
         id: listView
         model: RecordingModel
-        
+
         // show animation
         property real yTranslate: 0
         transform: Translate { y: listView.yTranslate }
@@ -89,7 +89,7 @@ Kirigami.ScrollablePage {
             target: listView
             running: true
         }
-        
+
         // prevent default highlight
         currentIndex: -1
 
@@ -102,31 +102,31 @@ Kirigami.ScrollablePage {
         displaced: Transition {
             NumberAnimation { properties: "x,y"; duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad}
         }
-        
+
         Kirigami.PlaceholderMessage {
             anchors.centerIn: parent
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.margins: Kirigami.Units.largeSpacing
-            
+
             icon.name: applicationWindow().isWidescreen ? "format-list-unordered" : "microphone-sensitivity-high"
             text: i18n("No recordings")
             visible: parent.count === 0
         }
-        
+
         // record button
         FloatingActionButton {
             visible: !applicationWindow().isWidescreen
             icon.name: 'microphone-sensitivity-high'
             onClicked: applicationWindow().openRecordScreen()
         }
-        
+
         delegate: RecordingListDelegate {
             recording: model.recording
             width: listView.width
             editMode: root.editMode
             showSeparator: index != listView.count - 1
-            
+
             onLongPressed: root.editMode = !root.editMode
             onEditRequested: root.editRecordingDialog(model.recording)
             onDeleteRequested: root.removeRecordingDialog(model.recording, index)
@@ -137,14 +137,14 @@ Kirigami.ScrollablePage {
             }
             onExportRequested: saveFileDialog.openForRecording(model.recording)
         }
-        
+
         FileDialog {
             id: saveFileDialog
             fileMode: FileDialog.SaveFile
             currentFolder: StandardPaths.writableLocation(StandardPaths.MusicLocation)
-                
+
             property Recording recording
-            
+
             function openForRecording(recording) {
                 title = i18n("Select a location to save recording %1", recording.fileName);
                 defaultSuffix = recording.fileExtension;
@@ -152,22 +152,22 @@ Kirigami.ScrollablePage {
                 saveFileDialog.recording = recording;
                 open();
             }
-            
+
             onAccepted: {
                 let prefixLessUrl = decodeURIComponent(fileUrl.toString().substring("file://".length));
                 recording.createCopyOfFile(prefixLessUrl);
                 applicationWindow().showPassiveNotification(i18n("Saved recording to %1", prefixLessUrl), "short");
             }
         }
-        
+
         Controls.Menu {
             id: contextMenu
             modal: true
             Controls.Overlay.modal: MouseArea {}
-            
+
             property Recording recording
             property int index
-    
+
             Controls.MenuItem {
                 text: i18n("Export to location")
                 icon.name: "document-save"
@@ -192,7 +192,7 @@ Kirigami.ScrollablePage {
                 }
             }
         }
-        
+
         // HACK: for some reason the dialog might close immediately if triggered from the context menu
         // open the dialog a little later to workaround this
         Timer {
@@ -201,17 +201,17 @@ Kirigami.ScrollablePage {
             property var run: () => {}
             onTriggered: run()
         }
-        
+
         Kirigami.PromptDialog {
             id: deleteDialog
             standardButtons: Kirigami.Dialog.NoButton
-            
+
             property Recording toDelete: null
             property int toDeleteIndex: 0
-            
+
             title: i18n("Delete %1", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
             subtitle: i18n("Are you sure you want to delete the recording %1?<br/>It will be <b>permanently lost</b> forever!", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
-            
+
             customFooterActions: [
                 Kirigami.Action {
                     text: i18nc("@action:button", "Delete")
@@ -233,31 +233,31 @@ Kirigami.ScrollablePage {
                 }
             ]
         }
-        
+
         Kirigami.Dialog {
             id: editNameDialog
-            
+
             title: i18n("Rename %1", editDialogName.text)
             standardButtons: Kirigami.Dialog.Cancel | Kirigami.Dialog.Apply
-            
+
             padding: Kirigami.Units.largeSpacing
             bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
             preferredWidth: Kirigami.Units.gridUnit * 20
-            
+
             onApplied: {
                  currentRecordingToEdit.fileName = editDialogName.text;
                  editNameDialog.close();
             }
-            
+
             Kirigami.FormLayout {
                 Controls.TextField {
                     id: editDialogName
                     Kirigami.FormData.label: i18n("Name:")
                     Layout.fillWidth: true
                 }
-                
+
                 Controls.Label {
-                    id: editDialogLocation 
+                    id: editDialogLocation
                     Kirigami.FormData.label: i18n("Location:")
                     Layout.fillWidth: true
                     wrapMode: Text.Wrap
