@@ -185,8 +185,10 @@
       <caption>Overview of recordings</caption>
       <caption xml:lang="ca">Resum d'enregistraments</caption>
       <caption xml:lang="cs">Přehled všech nahrávek</caption>
+      <caption xml:lang="en-GB">Overview of recordings</caption>
       <caption xml:lang="eo">Superrigardo de la registraĵoj</caption>
       <caption xml:lang="es">Resumen de grabaciones</caption>
+      <caption xml:lang="fr">Aperçu des enregistrements</caption>
       <caption xml:lang="he">סקירת ההקלטות</caption>
       <caption xml:lang="ia">Vista de insimul de registrationes</caption>
       <caption xml:lang="ka">ჩანაწერების გადახედვა</caption>
@@ -195,14 +197,17 @@
       <caption xml:lang="tr">Kayıtların genel görünümü</caption>
       <caption xml:lang="uk">Огляд записів</caption>
       <caption xml:lang="x-test">xxOverview of recordingsxx</caption>
+      <caption xml:lang="zh-CN">录音概览</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-1.png</image>
     </screenshot>
     <screenshot type="default">
       <caption>Recording with KRecorder</caption>
       <caption xml:lang="ca">Enregistrament amb el KRecorder</caption>
       <caption xml:lang="cs">Nahrávání pomocí KRecorder</caption>
+      <caption xml:lang="en-GB">Recording with KRecorder</caption>
       <caption xml:lang="eo">Registrante kun KRecorder</caption>
       <caption xml:lang="es">Grabando con KRecorder</caption>
+      <caption xml:lang="fr">Enregistrement avec KRecorder</caption>
       <caption xml:lang="he">הקלטה עם KRecorder</caption>
       <caption xml:lang="ia">Registrar con KRecorder</caption>
       <caption xml:lang="ka">ჩაწერა KRecorder-ით</caption>
@@ -211,14 +216,17 @@
       <caption xml:lang="tr">K Kayıtçı ile kayıt</caption>
       <caption xml:lang="uk">Записування за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxRecording with KRecorderxx</caption>
+      <caption xml:lang="zh-CN">使用 KRecorder 录音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-2.png</image>
     </screenshot>
     <screenshot>
       <caption>Listen to recordings with KRecorder</caption>
       <caption xml:lang="ca">Escolta d'enregistraments amb el KRecorder</caption>
       <caption xml:lang="cs">Poslouchejte nahrávky v aplikaci KRecorder</caption>
+      <caption xml:lang="en-GB">Listen to recordings with KRecorder</caption>
       <caption xml:lang="eo">Aŭskultante registraĵojn per KRecorder</caption>
       <caption xml:lang="es">Escuchar grabaciones con KRecorder</caption>
+      <caption xml:lang="fr">Écouter des enregistrements avec KRecorder</caption>
       <caption xml:lang="he">האזנה להקלאות עם KRecorder</caption>
       <caption xml:lang="ia">Ascolta registrationes con KRecorder</caption>
       <caption xml:lang="ka">ჩანაწერების მოსმენა KRecorder-ით</caption>
@@ -227,14 +235,17 @@
       <caption xml:lang="tr">Kayıtları K Kayıtçı ile dinleyin</caption>
       <caption xml:lang="uk">Прослуховування записів за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxListen to recordings with KRecorderxx</caption>
+      <caption xml:lang="zh-CN">使用 KRecorder 聆听录音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-3.png</image>
     </screenshot>
     <screenshot>
       <caption>Settings of KRecorder</caption>
       <caption xml:lang="ca">Configuració del KRecorder</caption>
       <caption xml:lang="cs">Nastavení KRecorder</caption>
+      <caption xml:lang="en-GB">Settings of KRecorder</caption>
       <caption xml:lang="eo">Agordoj de KRecorder</caption>
       <caption xml:lang="es">Preferencias de KRecorder</caption>
+      <caption xml:lang="fr">Configuration de KRecorder</caption>
       <caption xml:lang="he">הגדרות KRecorder</caption>
       <caption xml:lang="ia">Preferentias de KRecorder</caption>
       <caption xml:lang="ka">KRecorder-ის მორგება</caption>
@@ -243,6 +254,7 @@
       <caption xml:lang="tr">K Kayıtçı ayarları</caption>
       <caption xml:lang="uk">Параметри роботи KRecorder</caption>
       <caption xml:lang="x-test">xxSettings of KRecorderxx</caption>
+      <caption xml:lang="zh-CN">KRecorder 的设置</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-4.png</image>
     </screenshot>
   </screenshots>
