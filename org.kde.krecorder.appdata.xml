@@ -195,6 +195,7 @@
       <caption xml:lang="ka">ჩანაწერების გადახედვა</caption>
       <caption xml:lang="nl">Overzicht van opnamen</caption>
       <caption xml:lang="sl">Pregled posnetkov</caption>
+      <caption xml:lang="sv">Översikt över inspelningar</caption>
       <caption xml:lang="tr">Kayıtların genel görünümü</caption>
       <caption xml:lang="uk">Огляд записів</caption>
       <caption xml:lang="x-test">xxOverview of recordingsxx</caption>
@@ -215,6 +216,7 @@
       <caption xml:lang="ka">ჩაწერა KRecorder-ით</caption>
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
       <caption xml:lang="sl">Snemanje s KRecorderjem</caption>
+      <caption xml:lang="sv">Spelar in med Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ile kayıt</caption>
       <caption xml:lang="uk">Записування за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxRecording with KRecorderxx</caption>
@@ -235,6 +237,7 @@
       <caption xml:lang="ka">ჩანაწერების მოსმენა KRecorder-ით</caption>
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
       <caption xml:lang="sl">Poslušanje posnetkov s KRekorderjem</caption>
+      <caption xml:lang="sv">Lyssnar på inspelningar med Inspelare</caption>
       <caption xml:lang="tr">Kayıtları K Kayıtçı ile dinleyin</caption>
       <caption xml:lang="uk">Прослуховування записів за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxListen to recordings with KRecorderxx</caption>
@@ -255,6 +258,7 @@
       <caption xml:lang="ka">KRecorder-ის მორგება</caption>
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
       <caption xml:lang="sl">Nastavitve KRecorderja</caption>
+      <caption xml:lang="sv">Inställning av Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ayarları</caption>
       <caption xml:lang="uk">Параметри роботи KRecorder</caption>
       <caption xml:lang="x-test">xxSettings of KRecorderxx</caption>
