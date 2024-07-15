@@ -201,6 +201,7 @@
       <caption xml:lang="uk">Огляд записів</caption>
       <caption xml:lang="x-test">xxOverview of recordingsxx</caption>
       <caption xml:lang="zh-CN">录音概览</caption>
+      <caption xml:lang="zh-TW">錄音的概覽</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-1.png</image>
     </screenshot>
     <screenshot type="default">
@@ -223,6 +224,7 @@
       <caption xml:lang="uk">Записування за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxRecording with KRecorderxx</caption>
       <caption xml:lang="zh-CN">使用 KRecorder 录音</caption>
+      <caption xml:lang="zh-TW">利用 KRecorder 進行錄音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-2.png</image>
     </screenshot>
     <screenshot>
@@ -245,6 +247,7 @@
       <caption xml:lang="uk">Прослуховування записів за допомогою KRecorder</caption>
       <caption xml:lang="x-test">xxListen to recordings with KRecorderxx</caption>
       <caption xml:lang="zh-CN">使用 KRecorder 聆听录音</caption>
+      <caption xml:lang="zh-TW">利用 KRecorder 聆聽錄音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-3.png</image>
     </screenshot>
     <screenshot>
@@ -267,6 +270,7 @@
       <caption xml:lang="uk">Параметри роботи KRecorder</caption>
       <caption xml:lang="x-test">xxSettings of KRecorderxx</caption>
       <caption xml:lang="zh-CN">KRecorder 的设置</caption>
+      <caption xml:lang="zh-TW">KRecorder 的設定</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-4.png</image>
     </screenshot>
   </screenshots>
