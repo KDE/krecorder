@@ -193,6 +193,7 @@
       <caption xml:lang="fr">Aperçu des enregistrements</caption>
       <caption xml:lang="he">סקירת ההקלטות</caption>
       <caption xml:lang="ia">Vista de insimul de registrationes</caption>
+      <caption xml:lang="it">Panoramica sulle registrazioni</caption>
       <caption xml:lang="ka">ჩანაწერების გადახედვა</caption>
       <caption xml:lang="nl">Overzicht van opnamen</caption>
       <caption xml:lang="pl">Przegląd nagrań</caption>
@@ -217,6 +218,7 @@
       <caption xml:lang="fr">Enregistrement avec KRecorder</caption>
       <caption xml:lang="he">הקלטה עם KRecorder</caption>
       <caption xml:lang="ia">Registrar con KRecorder</caption>
+      <caption xml:lang="it">Registrazione con KRecorder</caption>
       <caption xml:lang="ka">ჩაწერა KRecorder-ით</caption>
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
       <caption xml:lang="pl">Nagrywanie w KRecorderze</caption>
@@ -241,6 +243,7 @@
       <caption xml:lang="fr">Écouter des enregistrements avec KRecorder</caption>
       <caption xml:lang="he">האזנה להקלאות עם KRecorder</caption>
       <caption xml:lang="ia">Ascolta registrationes con KRecorder</caption>
+      <caption xml:lang="it">Ascoltare le registrazioni con KRecorder</caption>
       <caption xml:lang="ka">ჩანაწერების მოსმენა KRecorder-ით</caption>
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
       <caption xml:lang="pl">Posłuchaj nagrań z KRecorder</caption>
@@ -265,6 +268,7 @@
       <caption xml:lang="fr">Configuration de KRecorder</caption>
       <caption xml:lang="he">הגדרות KRecorder</caption>
       <caption xml:lang="ia">Preferentias de KRecorder</caption>
+      <caption xml:lang="it">Impostazioni di KRecorder</caption>
       <caption xml:lang="ka">KRecorder-ის მორგება</caption>
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
       <caption xml:lang="pl">Ustawienia KRecordera</caption>
