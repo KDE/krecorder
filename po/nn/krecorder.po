@@ -36,7 +36,6 @@ msgstr ""
 
 #: audiorecorder.cpp:181
 #, fuzzy, kde-format
-#| msgid "Audio Codec"
 msgid "Default audio codec"
 msgstr "Lyd-kodek"
 
@@ -187,7 +186,6 @@ msgstr ""
 
 #: contents/ui/RecordPage.qml:176
 #, fuzzy, kde-format
-#| msgid "Save recording"
 msgid "Save Recording"
 msgstr "Lagra opptak"
 
