@@ -12,6 +12,7 @@ import KRecorder
 
 Kirigami.Page {
     title: ""
+    visible: applicationWindow().isWidescreen
 
     property int yTranslate: 0
     property int mainOpacity: 0
