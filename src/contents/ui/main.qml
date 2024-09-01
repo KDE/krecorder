@@ -13,6 +13,7 @@ import QtQml
 import QtMultimedia
 
 import org.kde.kirigami as Kirigami
+import org.kde.config as KConfig
 
 import KRecorder
 import "settings"
@@ -36,6 +37,10 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: RecordingListPage {}
     pageStack.columnView.columnResizeMode: isWidescreen ? Kirigami.ColumnView.FixedColumns : Kirigami.ColumnView.SingleColumn
     pageStack.popHiddenPages: true
+
+    KConfig.WindowStateSaver {
+        configGroupName: "Window"
+    }
 
     Component.onCompleted: {
         switchToRecording(null);
