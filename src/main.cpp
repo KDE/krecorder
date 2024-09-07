@@ -18,7 +18,6 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
-#include "about.h"
 #include "audioplayer.h"
 #include "audioprober.h"
 #include "audiorecorder.h"
@@ -81,8 +80,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonType<SettingsModel>("KRecorder", 1, 0, "SettingsModel", [](QQmlEngine *, QJSEngine *) -> QObject * {
         return SettingsModel::instance();
     });
-
-    qmlRegisterSingletonInstance("KRecorder", 1, 0, "AboutType", &AboutType::instance());
 
     QQmlApplicationEngine engine;
 

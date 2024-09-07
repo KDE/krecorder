@@ -10,7 +10,6 @@
         <file alias="RecordPage.qml">contents/ui/RecordPage.qml</file>
         <file alias="PlayerPage.qml">contents/ui/PlayerPage.qml</file>
         <file alias="DefaultPage.qml">contents/ui/DefaultPage.qml</file>
-        <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
         <file alias="RecordingListDelegate.qml">contents/ui/RecordingListDelegate.qml</file>
         <file alias="components/Visualization.qml">contents/ui/components/Visualization.qml</file>
         <file alias="components/FloatingActionButton.qml">contents/ui/components/FloatingActionButton.qml</file>

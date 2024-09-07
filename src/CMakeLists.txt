@@ -4,7 +4,6 @@
 
 set(krecorder_SRCS
     main.cpp
-    about.cpp
     audioplayer.cpp
     audioprober.cpp
     audiorecorder.cpp

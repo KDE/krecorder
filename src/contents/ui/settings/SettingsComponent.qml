@@ -40,9 +40,9 @@ ColumnLayout {
             text: i18n("About")
             onClicked: {
                 if (applicationWindow().isWidescreen) {
-                    applicationWindow().pageStack.layers.push("qrc:/AboutPage.qml");
+                    applicationWindow().pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"));
                 } else {
-                    applicationWindow().pageStack.push("qrc:/AboutPage.qml");
+                    applicationWindow().pageStack.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"));
                 }
 
                 if (root.dialog) {
