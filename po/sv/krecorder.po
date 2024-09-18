@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:40+0000\n"
+"POT-Creation-Date: 2024-09-18 00:42+0000\n"
 "PO-Revision-Date: 2024-06-19 22:25+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -37,7 +37,7 @@ msgstr "Standardfilformat"
 msgid "Default audio codec"
 msgstr "Standardljudkodare"
 
-#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -46,17 +46,17 @@ msgstr "Standardljudkodare"
 msgid "Settings"
 msgstr "Inställningar"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Spela upp en inspelning, eller spela in en ny"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
 msgstr "Spela in en ny inspelning"
 
-#: contents/ui/main.qml:23
+#: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "Inspelare"
@@ -286,17 +286,17 @@ msgid ""
 msgstr ""
 "Vissa kombinationer av kodare och behållarformat kanske inte är kompatibla."
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2024 KDE-gemenskapen"
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"

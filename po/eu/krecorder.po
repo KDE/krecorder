@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:40+0000\n"
+"POT-Creation-Date: 2024-09-18 00:42+0000\n"
 "PO-Revision-Date: 2024-01-10 05:40+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -40,7 +40,7 @@ msgstr "Fitxategi-formatu lehenetsia"
 msgid "Default audio codec"
 msgstr "Audio-kodek lehenetsia"
 
-#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -49,17 +49,17 @@ msgstr "Audio-kodek lehenetsia"
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Grabazio bat jo, edo berri bat grabatu"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
 msgstr "Grabatu grabazio berri bat"
 
-#: contents/ui/main.qml:23
+#: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "Grabatzailea"
@@ -287,17 +287,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr "Baliteke kodek eta edukitzaile formatu batzuk bateragarriak ez izatea."
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2024 KDE komunitatea"
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"

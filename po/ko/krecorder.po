@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:40+0000\n"
+"POT-Creation-Date: 2024-09-18 00:42+0000\n"
 "PO-Revision-Date: 2024-02-10 00:00+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -37,7 +37,7 @@ msgstr "기본 파일 형식"
 msgid "Default audio codec"
 msgstr "기본 오디오 코덱"
 
-#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -46,17 +46,17 @@ msgstr "기본 오디오 코덱"
 msgid "Settings"
 msgstr "설정"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "녹음을 재생하거나 새로 녹음"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
 msgstr "새 녹음 시작"
 
-#: contents/ui/main.qml:23
+#: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "녹음기"
@@ -283,17 +283,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr "일부 컨테이너 형식과 코덱은 호환되지 않을 수도 있습니다."
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2024 KDE Community"
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"

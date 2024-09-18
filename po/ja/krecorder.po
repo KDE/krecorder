@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:40+0000\n"
+"POT-Creation-Date: 2024-09-18 00:42+0000\n"
 "PO-Revision-Date: 2020-08-24 23:45-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Default audio codec"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -43,17 +43,17 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
 msgstr ""
 
-#: contents/ui/main.qml:23
+#: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr ""
@@ -280,17 +280,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr ""
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""

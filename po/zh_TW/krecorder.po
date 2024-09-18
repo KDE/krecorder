@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:40+0000\n"
+"POT-Creation-Date: 2024-09-18 00:42+0000\n"
 "PO-Revision-Date: 2024-05-09 06:43+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -40,7 +40,7 @@ msgstr "預設檔案格式"
 msgid "Default audio codec"
 msgstr "預設音訊編碼"
 
-#: contents/ui/DefaultPage.qml:23 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -49,17 +49,17 @@ msgstr "預設音訊編碼"
 msgid "Settings"
 msgstr "設定"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "播放錄音或錄製新的"
 
-#: contents/ui/DefaultPage.qml:35
+#: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
 msgstr "建立新錄音"
 
-#: contents/ui/main.qml:23
+#: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "錄音"
@@ -286,17 +286,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr "有些編碼跟有些容器格式可能互不相容。"
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2024 KDE 社群"
 
-#: main.cpp:52
+#: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
 msgstr "Devin Lin"
 
-#: main.cpp:53
+#: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
