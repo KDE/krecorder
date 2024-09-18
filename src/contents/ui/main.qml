@@ -39,7 +39,7 @@ Kirigami.ApplicationWindow {
     pageStack.popHiddenPages: true
 
     KConfig.WindowStateSaver {
-        configGroupName: "Window"
+        configGroupName: "MainWindow"
     }
 
     Component.onCompleted: {

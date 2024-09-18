@@ -18,7 +18,7 @@ project(krecorder VERSION ${RELEASE_SERVICE_VERSION})
 # which is included by KDEInstallDirs;
 # This variables are updated below if Qt6 is found by ECM
 set(QT_MIN_VERSION "6.5.0")
-set(KF_MIN_VERSION "5.240.0")
+set(KF_MIN_VERSION "6.5.0")
 set(KF_MAJOR_VERSION "6")
 
 set(CMAKE_CXX_STANDARD 17)
