@@ -184,6 +184,7 @@
   <screenshots>
     <screenshot>
       <caption>Overview of recordings</caption>
+      <caption xml:lang="ar">نظرة عامة للتسجيلات</caption>
       <caption xml:lang="ca">Resum d'enregistraments</caption>
       <caption xml:lang="ca-valencia">Resum de gravacions</caption>
       <caption xml:lang="cs">Přehled všech nahrávek</caption>
@@ -213,6 +214,7 @@
     </screenshot>
     <screenshot type="default">
       <caption>Recording with KRecorder</caption>
+      <caption xml:lang="ar">يسجل بواسطة المسجل</caption>
       <caption xml:lang="ca">Enregistrament amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Gravació amb el KRecorder</caption>
       <caption xml:lang="cs">Nahrávání pomocí KRecorder</caption>
@@ -242,6 +244,7 @@
     </screenshot>
     <screenshot>
       <caption>Listen to recordings with KRecorder</caption>
+      <caption xml:lang="ar">يشغل التسجيلات</caption>
       <caption xml:lang="ca">Escolta d'enregistraments amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Escolta de gravacions amb el KRecorder</caption>
       <caption xml:lang="cs">Poslouchejte nahrávky v aplikaci KRecorder</caption>
@@ -271,6 +274,7 @@
     </screenshot>
     <screenshot>
       <caption>Settings of KRecorder</caption>
+      <caption xml:lang="ar">إعدادات المسجل</caption>
       <caption xml:lang="ca">Configuració del KRecorder</caption>
       <caption xml:lang="ca-valencia">Configureu el KRecorder</caption>
       <caption xml:lang="cs">Nastavení KRecorder</caption>
