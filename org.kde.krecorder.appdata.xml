@@ -150,7 +150,7 @@
     <p xml:lang="it">Registratore è un'applicazione di registrazione audio semplice e multi-piattaforma.</p>
     <p xml:lang="ka">ჩამწერი მარტივი, კროსპლატფორმული ხმის ჩამწერი აპლიკაციაა.</p>
     <p xml:lang="ko">녹음기는 간단한 크로스 플랫폼 오디오 녹음기 앱입니다.</p>
-    <p xml:lang="lv">Ierakstītājs ir vienkārša skaņas ierakstīšanas programma, kas darbojas daudzās operētājsistēmās.</p>
+    <p xml:lang="lv">„Recorder“ jeb ierakstītājs ir vienkārša skaņas ierakstīšanas programma, kas darbojas daudzās operētājsistēmās.</p>
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="nn">Recorder eit eit enkelt program for lydopptak.</p>
     <p xml:lang="pa">ਰਿਕਾਰਡਰ ਸਰਲ, ਕਈ ਪਲੇਟਫਾਰਮਾਂ ਲਈ ਆਡੀਓ ਰਿਕਾਰਡਿੰਗ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</p>
@@ -200,6 +200,7 @@
       <caption xml:lang="it">Panoramica sulle registrazioni</caption>
       <caption xml:lang="ka">ჩანაწერების გადახედვა</caption>
       <caption xml:lang="ko">녹음 요약 보기</caption>
+      <caption xml:lang="lv">Ierakstu pārskats</caption>
       <caption xml:lang="nl">Overzicht van opnamen</caption>
       <caption xml:lang="pl">Przegląd nagrań</caption>
       <caption xml:lang="pt-BR">Visão geral das gravações</caption>
@@ -230,6 +231,7 @@
       <caption xml:lang="it">Registrazione con KRecorder</caption>
       <caption xml:lang="ka">ჩაწერა KRecorder-ით</caption>
       <caption xml:lang="ko">KRecorder를 사용한 녹음</caption>
+      <caption xml:lang="lv">Ierakstīšana ar „KRecorder“</caption>
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
       <caption xml:lang="pl">Nagrywanie w KRecorderze</caption>
       <caption xml:lang="pt-BR">Gravando com o KRecorder</caption>
@@ -260,6 +262,7 @@
       <caption xml:lang="it">Ascoltare le registrazioni con KRecorder</caption>
       <caption xml:lang="ka">ჩანაწერების მოსმენა KRecorder-ით</caption>
       <caption xml:lang="ko">KRecorder를 사용한 녹음 듣기</caption>
+      <caption xml:lang="lv">Ierakstu klausīšanās ar „KRecorder“</caption>
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
       <caption xml:lang="pl">Posłuchaj nagrań z KRecorder</caption>
       <caption xml:lang="pt-BR">Ouvindo as gravações com o KRecorder</caption>
@@ -290,6 +293,7 @@
       <caption xml:lang="it">Impostazioni di KRecorder</caption>
       <caption xml:lang="ka">KRecorder-ის მორგება</caption>
       <caption xml:lang="ko">KRecorder 설정</caption>
+      <caption xml:lang="lv">„KRecorder“ iestatījumi</caption>
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
       <caption xml:lang="pl">Ustawienia KRecordera</caption>
       <caption xml:lang="pt-BR">Configurações do KRecorder</caption>
