@@ -1,4 +1,4 @@
-# Sanskrit translations for krecorder package.
+# Hindi translations for krecorder package.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
 # Kali <EMAIL@ADDRESS>, 2024.
@@ -8,34 +8,33 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-18 00:42+0000\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
+"PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
-"Language: sa\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "भवतः नामानि"
+msgstr "तुम्हारे नाम"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "भवतः ईमेलपत्राणि"
+msgstr "आपके ईमेल"
 
 #: audiorecorder.cpp:172
 #, kde-format
 msgid "Default file format"
-msgstr "पूर्वनिर्धारितं सञ्चिकास्वरूपम्"
+msgstr "डिफ़ॉल्ट फ़ाइल प्रारूप"
 
 #: audiorecorder.cpp:181
 #, kde-format
 msgid "Default audio codec"
-msgstr "पूर्वनिर्धारित श्रव्य कोडेक"
+msgstr "डिफ़ॉल्ट ऑडियो कोडेक"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:45
@@ -44,32 +43,32 @@ msgstr "पूर्वनिर्धारित श्रव्य कोड�
 #: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
-msgstr "सेटिंग्स्"
+msgstr "सेटिंग्स"
 
 #: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "एकं रिकार्डिङ्ग् वादयन्तु, अथवा नूतनं रिकार्ड् कुर्वन्तु"
+msgstr "कोई रिकॉर्डिंग चलाएं, या नई रिकॉर्डिंग करें"
 
 #: contents/ui/DefaultPage.qml:36
 #, kde-format
 msgid "Record a new recording"
-msgstr "नूतनं रिकार्डिङ्ग् रिकार्ड् कुर्वन्तु"
+msgstr "नई रिकॉर्डिंग रिकॉर्ड करें"
 
 #: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
-msgstr "अभिलेखकः"
+msgstr "रिकॉर्डर"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr "खिलाडी"
+msgstr "खिलाड़ी"
 
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr "%1 इत्यत्र अभिलेखितम्"
+msgstr "%1 पर रिकॉर्ड किया गया"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
@@ -79,39 +78,39 @@ msgstr "विराम"
 #: contents/ui/PlayerPage.qml:82
 #, kde-format
 msgid "Play"
-msgstr "क्रीडतु"
+msgstr "खेल"
 
 #: contents/ui/PlayerPage.qml:92
 #, kde-format
 msgid "Stop"
-msgstr "विरमतु"
+msgstr "रुकना"
 
 #: contents/ui/RecordingListDelegate.qml:75
 #: contents/ui/RecordingListPage.qml:172
 #, kde-format
 msgid "Export to location"
-msgstr "स्थानं प्रति निर्यातं कुर्वन्तु"
+msgstr "स्थान पर निर्यात करें"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
 msgid "Rename"
-msgstr "पुनर्नाम"
+msgstr "नाम बदलें"
 
 #: contents/ui/RecordingListDelegate.qml:91
 #: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
 #, kde-format
 msgid "Delete"
-msgstr "लुप्"
+msgstr "मिटाना"
 
 #: contents/ui/RecordingListPage.qml:22
 #, kde-format
 msgid "Recordings"
-msgstr "रिकार्डिङ्ग्स्"
+msgstr "रिकॉर्डिंग"
 
 #: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
 #, kde-format
 msgid "Edit"
-msgstr "सम्पादन"
+msgstr "संपादन करना"
 
 #: contents/ui/RecordingListPage.qml:51
 #, kde-format
@@ -121,22 +120,22 @@ msgstr "अभिलेख"
 #: contents/ui/RecordingListPage.qml:113
 #, kde-format
 msgid "No recordings"
-msgstr "न रिकार्डिङ्ग्स्"
+msgstr "कोई रिकॉर्डिंग नहीं"
 
 #: contents/ui/RecordingListPage.qml:149
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr "रिकार्डिङ्ग् %1 रक्षितुं स्थानं चिनोतु"
+msgstr "रिकॉर्डिंग %1 को सहेजने के लिए स्थान चुनें"
 
 #: contents/ui/RecordingListPage.qml:159
 #, kde-format
 msgid "Saved recording to %1"
-msgstr "%1 इत्यत्र रिकार्डिङ्ग् रक्षितम्"
+msgstr "%1 में रिकॉर्डिंग सहेजी गई"
 
 #: contents/ui/RecordingListPage.qml:212
 #, kde-format
 msgid "Delete %1"
-msgstr "%1 विलोपयन्तु"
+msgstr "%1 मिटाएँ"
 
 #: contents/ui/RecordingListPage.qml:213
 #, kde-format
@@ -144,75 +143,74 @@ msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
-"किं भवान् निश्चिन्तः अस्ति यत् भवान् %1 इति अभिलेखनं विलोपयितुम् इच्छति?<br/> "
-"<b>स्थायिरूपेण सदा नष्टं</b> भविष्यति!"
+"क्या आप वाकई रिकॉर्डिंग %1 को हटाना चाहते हैं?<br/> यह हमेशा के लिए <b>खो</b> जायेगा!"
 
 #: contents/ui/RecordingListPage.qml:217
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
-msgstr "लुप्"
+msgstr "मिटाना"
 
 #: contents/ui/RecordingListPage.qml:228
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "निरसयतु"
+msgstr "रद्द करना"
 
 #: contents/ui/RecordingListPage.qml:240
 #, kde-format
 msgid "Rename %1"
-msgstr "%1 इत्यस्य नाम परिवर्तनं कुर्वन्तु"
+msgstr "नाम बदलें%1"
 
 #: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
 #, kde-format
 msgid "Name:"
-msgstr "नामः:"
+msgstr "नाम:"
 
 #: contents/ui/RecordingListPage.qml:261
 #, kde-format
 msgid "Location:"
-msgstr "स्थानीय:"
+msgstr "जगह:"
 
 #: contents/ui/RecordPage.qml:21
 #, kde-format
 msgid "Record Audio"
-msgstr "श्रव्यं अभिलेखयन्तु"
+msgstr "ऑडियो रिकॉर्ड करें"
 
 #: contents/ui/RecordPage.qml:117
 #, kde-format
 msgid "Continue"
-msgstr "अनुवर्तते"
+msgstr "जारी रखना"
 
 #: contents/ui/RecordPage.qml:176
 #, kde-format
 msgid "Save Recording"
-msgstr "रिकार्डिङ्ग् रक्षतु"
+msgstr "रिकॉर्डिंग सहेजें"
 
 #: contents/ui/RecordPage.qml:215
 #, kde-format
 msgid "Save recording"
-msgstr "रिकार्डिङ्ग् रक्षतु"
+msgstr "रिकॉर्डिंग सहेजें"
 
 #: contents/ui/RecordPage.qml:219
 #, kde-format
 msgid "Save"
-msgstr "रक्ष्"
+msgstr "बचाना"
 
 #: contents/ui/RecordPage.qml:231
 #, kde-format
 msgid "Discard"
-msgstr "तनूकृ"
+msgstr "खारिज करना"
 
 #: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Name (optional)"
-msgstr "नाम (वैकल्पिक) ९."
+msgstr "नाम: (वैकल्पिक)"
 
 #: contents/ui/RecordPage.qml:250
 #, kde-format
 msgid "Storage Folder:"
-msgstr "भण्डारणपुटम् : १."
+msgstr "संग्रहण फ़ोल्डर:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
@@ -222,42 +220,42 @@ msgstr "सामान्य"
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
-msgstr "विषये"
+msgstr "के बारे में"
 
 #: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
-msgstr "ऑडियो इनपुट"
+msgstr "श्रव्य इनपुट"
 
 #: contents/ui/settings/SettingsComponent.qml:125
 #, kde-format
 msgid "Advanced"
-msgstr "उन्नतं"
+msgstr "विकसित"
 
 #: contents/ui/settings/SettingsComponent.qml:132
 #, kde-format
 msgid "Audio Codec"
-msgstr "श्रव्य कोडेक"
+msgstr "ऑडियो कोडेक"
 
 #: contents/ui/settings/SettingsComponent.qml:165
 #, kde-format
 msgid "Container Format"
-msgstr "पात्र प्रारूप"
+msgstr "कंटेनर प्रारूप"
 
 #: contents/ui/settings/SettingsComponent.qml:198
 #, kde-format
 msgid "Audio Quality"
-msgstr "श्रव्यगुणवत्ता"
+msgstr "ऑडियो गुणवत्ता"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Lowest"
-msgstr "न्यूनतमम्"
+msgstr "निम्नतम"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Low"
-msgstr "न्यूनम्‌"
+msgstr "कम"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
@@ -267,23 +265,23 @@ msgstr "मध्यम"
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "High"
-msgstr "उच्चैः"
+msgstr "उच्च"
 
 #: contents/ui/settings/SettingsComponent.qml:199
 #, kde-format
 msgid "Highest"
-msgstr "सर्वोच्चम्"
+msgstr "उच्चतम"
 
 #: contents/ui/settings/SettingsComponent.qml:200
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr "उच्चतर श्रव्यगुणवत्ता अपि सञ्चिकायाः आकारं वर्धयति ।"
+msgstr "उच्च ऑडियो गुणवत्ता से फ़ाइल का आकार भी बढ़ जाता है।"
 
 #: contents/ui/settings/SettingsComponent.qml:225
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr "कोडेक्स् तथा कन्टेनर् प्रारूपयोः केचन संयोजनाः सङ्गताः न भवेयुः ।"
+msgstr "कोडेक्स और कंटेनर प्रारूपों के कुछ संयोजन संगत नहीं हो सकते हैं।"
 
 #: main.cpp:50
 #, kde-format
@@ -293,9 +291,9 @@ msgstr "© 2020-2024 केडीई समुदाय"
 #: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
-msgstr "डेविन् लिन्"
+msgstr "डेविन लिन"
 
 #: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr "जोनाह ब्रुचेर्ट"
+msgstr "जोना ब्रुचर्ट"
