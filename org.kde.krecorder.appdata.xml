@@ -23,6 +23,7 @@
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="gl">Gravadora</name>
   <name xml:lang="he">מקליט</name>
+  <name xml:lang="hi">रिकॉर्डर</name>
   <name xml:lang="hu">Rögzítő</name>
   <name xml:lang="ia">Recorder (Registrator)</name>
   <name xml:lang="id">Recorder</name>
@@ -63,6 +64,7 @@
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="gl">Gravadora de son</summary>
   <summary xml:lang="he">מקליט שמע</summary>
+  <summary xml:lang="hi">ऑडियो रिकॉर्डर</summary>
   <summary xml:lang="hu">Hangrögzítő</summary>
   <summary xml:lang="ia">Registrator Audio</summary>
   <summary xml:lang="id">Perekam audio</summary>
@@ -111,6 +113,7 @@
     <p xml:lang="fr">Recorder est une application simple, multi-plate-forme d'enregistreur audio.</p>
     <p xml:lang="gl">Gravadora é unha aplicación de gravación de son simple e multiplataforma.</p>
     <p xml:lang="he">המקליט הוא יישום הקלטת שמע פשוט למגוון פלטפורמות.</p>
+    <p xml:lang="hi">रिकॉर्डर एक सरल, क्रॉस-प्लेटफॉर्म ऑडियो रिकॉर्डिंग अनुप्रयोग है।</p>
     <p xml:lang="hu">A Rögzítő egy egyszerű, keresztplatformos hangrögzítő alkalmazás.</p>
     <p xml:lang="ia">Recorder es un simple application inter-platform de registrar audio. </p>
     <p xml:lang="id">Recorder adalah sebuah aplikasi perekaman audio lintas platform yang sederhana.</p>
@@ -164,6 +167,7 @@
       <caption xml:lang="fr">Aperçu des enregistrements</caption>
       <caption xml:lang="gl">Vista xeral das gravacións.</caption>
       <caption xml:lang="he">סקירת ההקלטות</caption>
+      <caption xml:lang="hi">रिकॉर्डिंग का अवलोकन</caption>
       <caption xml:lang="hu">Felvételek áttekintése</caption>
       <caption xml:lang="ia">Vista de insimul de registrationes</caption>
       <caption xml:lang="it">Panoramica sulle registrazioni</caption>
@@ -198,6 +202,7 @@
       <caption xml:lang="fr">Enregistrement avec KRecorder</caption>
       <caption xml:lang="gl">Gravación con KRecorder.</caption>
       <caption xml:lang="he">הקלטה עם KRecorder</caption>
+      <caption xml:lang="hi">KRecorder के साथ रिकॉर्डिंग</caption>
       <caption xml:lang="hu">Rögzítés a KRecorderrel</caption>
       <caption xml:lang="ia">Registrar con KRecorder</caption>
       <caption xml:lang="it">Registrazione con KRecorder</caption>
@@ -232,6 +237,7 @@
       <caption xml:lang="fr">Écouter des enregistrements avec KRecorder</caption>
       <caption xml:lang="gl">Escoita de gravacións con KRecorder.</caption>
       <caption xml:lang="he">האזנה להקלאות עם KRecorder</caption>
+      <caption xml:lang="hi">KRecorder के साथ रिकॉर्डिंग सुनें</caption>
       <caption xml:lang="hu">Felvételek hallgatása a KRecorderrel</caption>
       <caption xml:lang="ia">Ascolta registrationes con KRecorder</caption>
       <caption xml:lang="it">Ascoltare le registrazioni con KRecorder</caption>
@@ -266,6 +272,7 @@
       <caption xml:lang="fr">Configuration de KRecorder</caption>
       <caption xml:lang="gl">Configuración de KRecorder.</caption>
       <caption xml:lang="he">הגדרות KRecorder</caption>
+      <caption xml:lang="hi">KRecorder की सेटिंग्स</caption>
       <caption xml:lang="hu">A KRecorder beállításai</caption>
       <caption xml:lang="ia">Preferentias de KRecorder</caption>
       <caption xml:lang="it">Impostazioni di KRecorder</caption>
