@@ -75,7 +75,7 @@ void RecordingModel::save()
         return QJsonValue(recording->toJson());
     });
 
-    m_settings->setValue(QStringLiteral("recordings"), QString::fromStdString(QJsonDocument(arr).toJson(QJsonDocument::Compact).toStdString()));
+    m_settings->setValue(QStringLiteral("recordings"), QString::fromUtf8((QJsonDocument(arr).toJson(QJsonDocument::Compact))));
     m_settings->sync();
 }
 
