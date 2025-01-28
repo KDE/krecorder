@@ -27,6 +27,7 @@ target_link_libraries(krecorder
     Qt${QT_MAJOR_VERSION}::Svg
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::CoreAddons
+    KF${KF_MAJOR_VERSION}::ConfigCore
 )
 
 target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})

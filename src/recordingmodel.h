@@ -51,6 +51,5 @@ private:
     explicit RecordingModel(QObject *parent = nullptr);
     ~RecordingModel();
 
-    QSettings *m_settings;
     QList<Recording *> m_recordings;
 };

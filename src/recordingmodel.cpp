@@ -15,7 +15,10 @@
 #include <QJsonObject>
 #include <QStandardPaths>
 
-#include "utils.h"
+#include <KConfigGroup>
+#include <KSharedConfig>
+
+using namespace Qt::StringLiterals;
 
 const QString DEF_RECORD_PREFIX = QStringLiteral("clip");
 
@@ -27,7 +30,6 @@ RecordingModel *RecordingModel::instance()
 
 RecordingModel::RecordingModel(QObject *parent)
     : QAbstractListModel{parent}
-    , m_settings{new QSettings(parent)}
 {
     load();
 }
@@ -44,7 +46,15 @@ int RecordingModel::count() const
 
 void RecordingModel::load()
 {
-    QJsonDocument doc = QJsonDocument::fromJson(m_settings->value(QStringLiteral("recordings")).toString().toUtf8());
+    QSettings oldSettings;
+    auto config = KSharedConfig::openStateConfig();
+
+    if (oldSettings.contains("recordings")) {
+        config->group(u"Recordings"_s).writeEntry("recordings", oldSettings.value("recordings"));
+        oldSettings.remove("recordings");
+    }
+
+    QJsonDocument doc = QJsonDocument::fromJson(config->group(u"Recordings"_s).readEntry("recordings").toUtf8());
 
     beginResetModel();
 
@@ -75,8 +85,8 @@ void RecordingModel::save()
         return QJsonValue(recording->toJson());
     });
 
-    m_settings->setValue(QStringLiteral("recordings"), QString::fromUtf8((QJsonDocument(arr).toJson(QJsonDocument::Compact))));
-    m_settings->sync();
+    auto config = KSharedConfig::openStateConfig();
+    config->group(u"Recordings"_s).writeEntry("recordings", QString::fromUtf8(QJsonDocument(arr).toJson(QJsonDocument::Compact)));
 }
 
 int RecordingModel::rowCount(const QModelIndex &parent) const
