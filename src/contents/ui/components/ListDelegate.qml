@@ -31,7 +31,10 @@ Control {
         }
         TapHandler {
             acceptedButtons: Qt.RightButton
-            onTapped: root.rightClicked()
+            enabled: !Kirigami.Settings.isMobile // Disabled on mobile due to QT bug causing this to trigger on touch.
+            onTapped: {
+                root.rightClicked()
+            }
         }
 
         Kirigami.Separator {
