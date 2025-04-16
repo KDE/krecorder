@@ -18,7 +18,7 @@ project(krecorder VERSION ${RELEASE_SERVICE_VERSION})
 # which is included by KDEInstallDirs;
 # This variables are updated below if Qt6 is found by ECM
 set(QT_MIN_VERSION "6.5.0")
-set(KF_MIN_VERSION "6.5.0")
+set(KF_MIN_VERSION "6.12.0")
 set(KF_MAJOR_VERSION "6")
 
 set(CMAKE_CXX_STANDARD 17)
@@ -76,10 +76,6 @@ find_package(KF6KirigamiAddons 0.11 REQUIRED)
 add_subdirectory(src)
 
 ki18n_install(po)
-
-if (ANDROID)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
-endif()
 
 install(PROGRAMS org.kde.krecorder.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.krecorder.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
