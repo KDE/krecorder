@@ -82,7 +82,7 @@ Kirigami.Page {
                 radius: height / 2
                 opacity: 0.5
                 transformOrigin: Item.Center
-                scale: stopAnim.min
+                scale: recordingAnim.min
 
                 NumberAnimation on scale {
                     id: recordingAnim
