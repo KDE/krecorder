@@ -135,7 +135,7 @@ Kirigami.ScrollablePage {
             onContextMenuRequested: {
                 contextMenu.recording = model.recording;
                 contextMenu.index = index;
-                contextMenu.popup(this)
+                contextMenu.popup()
             }
             onExportRequested: saveFileDialog.openForRecording(model.recording)
         }
@@ -162,21 +162,30 @@ Kirigami.ScrollablePage {
             }
         }
 
-        Controls.Menu {
+        Components.ConvergentContextMenu {
             id: contextMenu
-            modal: true
-            Controls.Overlay.modal: MouseArea {}
 
             property Recording recording
             property int index
 
-            Controls.MenuItem {
+            parent: root.Controls.Overlay.overlay
+
+            headerContentItem: RowLayout {
+                spacing: Kirigami.Units.smallSpacing
+
+                Kirigami.Heading {
+                    level: 2
+                    text: contextMenu.recording?.fileName ?? ''
+                }
+            }
+
+            Controls.Action {
                 text: i18n("Export to location")
                 icon.name: "document-save"
                 onTriggered: saveFileDialog.openForRecording(contextMenu.recording)
             }
 
-            Controls.MenuItem {
+            Controls.Action {
                 text: i18n("Edit")
                 icon.name: "edit-entry"
                 onTriggered: {
@@ -185,7 +194,7 @@ Kirigami.ScrollablePage {
                 }
             }
 
-            Controls.MenuItem {
+            Controls.Action {
                 text: i18n("Delete")
                 icon.name: "delete"
                 onTriggered: {
