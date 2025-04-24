@@ -12,6 +12,8 @@ import QtQuick.Layouts
 import QtQuick.Dialogs
 
 import org.kde.kirigami as Kirigami
+import org.kde.kirigamiaddons.formcard as FormCard
+import org.kde.kirigamiaddons.components as Components
 
 import KRecorder
 
@@ -55,7 +57,7 @@ Kirigami.ScrollablePage {
 
     function editRecordingDialog(recording) {
         editDialogName.text = recording.fileName;
-        editDialogLocation.text = recording.filePath;
+        editDialogLocation.description = recording.filePath;
         currentRecordingToEdit = recording;
         editNameDialog.open();
     }
@@ -202,66 +204,61 @@ Kirigami.ScrollablePage {
             onTriggered: run()
         }
 
-        Kirigami.PromptDialog {
+        Components.MessageDialog {
             id: deleteDialog
-            standardButtons: Kirigami.Dialog.NoButton
 
             property Recording toDelete: null
             property int toDeleteIndex: 0
 
-            title: i18n("Delete %1", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
-            subtitle: i18n("Are you sure you want to delete the recording %1?<br/>It will be <b>permanently lost</b> forever!", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
+            standardButtons: Controls.Dialog.Cancel | Controls.Dialog.Ok
+            dialogType: Components.MessageDialog.Warning
 
-            customFooterActions: [
-                Kirigami.Action {
-                    text: i18nc("@action:button", "Delete")
-                    icon.name: "delete"
-                    onTriggered: {
-                        if (applicationWindow().currentRecording && deleteDialog.toDelete.filePath == applicationWindow().currentRecording.filePath) {
-                            applicationWindow().switchToRecording(null);
-                        }
-                        RecordingModel.deleteRecording(deleteDialog.toDeleteIndex);
-                        deleteDialog.close();
-                    }
-                },
-                Kirigami.Action {
-                    text: i18nc("@action:button", "Cancel")
-                    icon.name: "dialog-cancel"
-                    onTriggered: {
-                        deleteDialog.close();
-                    }
+            Component.onCompleted: {
+                const deleteButton = standardButton(Controls.Dialog.Ok);
+                deleteButton.text = i18nc("@action:button", "Delete");
+                deleteButton.icon.name = "delete-symbolic";
+            }
+
+            title: i18n("Delete %1", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
+
+            onAccepted: {
+                if (applicationWindow().currentRecording && deleteDialog.toDelete.filePath == applicationWindow().currentRecording.filePath) {
+                    applicationWindow().switchToRecording(null);
                 }
-            ]
+                RecordingModel.deleteRecording(deleteDialog.toDeleteIndex);
+                deleteDialog.close();
+            }
+
+            onRejected: deleteDialog.close()
+
+            Controls.Label {
+                text: i18n("Are you sure you want to delete the recording %1?<br/>It will be <b>permanently lost</b> forever!", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
+                wrapMode: Text.Wrap
+                Layout.fillWidth: true
+            }
         }
 
-        Kirigami.Dialog {
+        FormCard.FormCardDialog {
             id: editNameDialog
 
             title: i18n("Rename %1", editDialogName.text)
-            standardButtons: Kirigami.Dialog.Cancel | Kirigami.Dialog.Apply
-
-            padding: Kirigami.Units.largeSpacing
-            bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
-            preferredWidth: Kirigami.Units.gridUnit * 20
+            standardButtons: Controls.Dialog.Cancel | Controls.Dialog.Apply
 
             onApplied: {
                  currentRecordingToEdit.fileName = editDialogName.text;
                  editNameDialog.close();
             }
 
-            Kirigami.FormLayout {
-                Controls.TextField {
-                    id: editDialogName
-                    Kirigami.FormData.label: i18n("Name:")
-                    Layout.fillWidth: true
-                }
+            onRejected: editNameDialog.close();
 
-                Controls.Label {
-                    id: editDialogLocation
-                    Kirigami.FormData.label: i18n("Location:")
-                    Layout.fillWidth: true
-                    wrapMode: Text.Wrap
-                }
+            FormCard.FormTextFieldDelegate {
+                id: editDialogName
+                label: i18n("Name:")
+            }
+
+            FormCard.FormTextDelegate {
+                id: editDialogLocation
+                text: i18n("Location:")
             }
         }
     }
