@@ -10,6 +10,7 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
+import org.kde.kirigamiaddons.formcard as FormCard
 
 import KRecorder
 
@@ -205,53 +206,37 @@ Kirigami.Page {
         }
     }
 
-    Kirigami.Dialog {
+    FormCard.FormCardDialog {
         id: saveDialog
+
         closePolicy: Kirigami.Dialog.NoAutoClose
-        standardButtons: Kirigami.Dialog.NoButton
-        padding: Kirigami.Units.largeSpacing
-        bottomPadding: Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing
+        standardButtons: Controls.Dialog.Discard | Controls.Dialog.Save
 
         title: i18n("Save recording")
 
-        customFooterActions: [
-            Kirigami.Action {
-                text: i18n("Save")
-                icon.name: "document-save"
-                onTriggered: {
-                    AudioRecorder.setRecordingName(recordingName.text);
-                    AudioRecorder.stop();
-                    pageStack.layers.pop();
-                    recordingName.text = "";
+        onAccepted: {
+            AudioRecorder.setRecordingName(recordingName.text);
+            AudioRecorder.stop();
+            pageStack.layers.pop();
+            recordingName.text = "";
 
-                    saveDialog.close();
-                }
-            },
-            Kirigami.Action {
-                text: i18n("Discard")
-                icon.name: "delete"
-                onTriggered: {
-                    AudioRecorder.reset()
-                    saveDialog.close();
-                }
-            }
-        ]
+            saveDialog.close();
+        }
 
-        Kirigami.FormLayout {
-            implicitWidth: Kirigami.Units.gridUnit * 20
+        onDiscarded: {
+            AudioRecorder.reset()
+            saveDialog.close();
+        }
 
-            Controls.TextField {
-                id: recordingName
-                Kirigami.FormData.label: i18n("Name:")
-                placeholderText: i18n("Name (optional)")
-            }
+        FormCard.FormTextFieldDelegate {
+            id: recordingName
+            label: i18n("Name:")
+            placeholderText: i18n("Name (optional)")
+        }
 
-            Controls.Label {
-                Kirigami.FormData.label: i18n("Storage Folder:")
-                Layout.fillWidth: true
-                wrapMode: Text.Wrap
-                text: AudioRecorder.storageFolder
-            }
+        FormCard.FormTextDelegate {
+            text: i18n("Storage Folder:")
+            description: AudioRecorder.storageFolder
         }
     }
 }
