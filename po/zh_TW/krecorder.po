@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-18 00:42+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2024-05-09 06:43+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -41,7 +41,7 @@ msgid "Default audio codec"
 msgstr "預設音訊編碼"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:45
+#: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -74,7 +74,7 @@ msgstr "播放器"
 msgid "Recorded on %1"
 msgstr "在 %1 上錄音"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
 #, kde-format
 msgid "Pause"
 msgstr "暫停"
@@ -90,7 +90,7 @@ msgid "Stop"
 msgstr "停止"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:172
+#: contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgid "Export to location"
 msgstr "匯出到位置"
@@ -101,91 +101,85 @@ msgid "Rename"
 msgstr "重新命名"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
 #, kde-format
 msgid "Delete"
 msgstr "刪除"
 
-#: contents/ui/RecordingListPage.qml:22
+#: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "錄音檔"
 
-#: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
 #, kde-format
 msgid "Edit"
 msgstr "編輯"
 
-#: contents/ui/RecordingListPage.qml:51
+#: contents/ui/RecordingListPage.qml:53
 #, kde-format
 msgid "Record"
 msgstr "錄製"
 
-#: contents/ui/RecordingListPage.qml:113
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "無錄音檔"
 
-#: contents/ui/RecordingListPage.qml:149
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "選擇要儲存錄音檔 %1 的位置"
 
-#: contents/ui/RecordingListPage.qml:159
+#: contents/ui/RecordingListPage.qml:161
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "已將錄音檔儲存至 %1"
 
-#: contents/ui/RecordingListPage.qml:212
+#: contents/ui/RecordingListPage.qml:227
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "刪除"
+
+#: contents/ui/RecordingListPage.qml:231
 #, kde-format
 msgid "Delete %1"
 msgstr "刪除 %1"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:244
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "您確定要刪除錄音檔 %1 嗎？<br/>它將會<b>永久遺失</b>！"
 
-#: contents/ui/RecordingListPage.qml:217
-#, kde-format
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "刪除"
-
-#: contents/ui/RecordingListPage.qml:228
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "取消"
-
-#: contents/ui/RecordingListPage.qml:240
+#: contents/ui/RecordingListPage.qml:253
 #, kde-format
 msgid "Rename %1"
 msgstr "重新命名 %1"
 
-#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
 #, kde-format
 msgid "Name:"
 msgstr "名稱："
 
-#: contents/ui/RecordingListPage.qml:261
+#: contents/ui/RecordingListPage.qml:270
 #, kde-format
 msgid "Location:"
 msgstr "位置："
 
-#: contents/ui/RecordPage.qml:21
+#: contents/ui/RecordPage.qml:22
 #, kde-format
 msgid "Record Audio"
 msgstr "錄製音效"
 
-#: contents/ui/RecordPage.qml:117
+#: contents/ui/RecordPage.qml:118
 #, kde-format
 msgid "Continue"
 msgstr "繼續"
 
-#: contents/ui/RecordPage.qml:176
+#: contents/ui/RecordPage.qml:177
 #, kde-format
 msgid "Save Recording"
 msgstr "儲存錄音檔"
@@ -195,22 +189,12 @@ msgstr "儲存錄音檔"
 msgid "Save recording"
 msgstr "儲存錄音檔"
 
-#: contents/ui/RecordPage.qml:219
-#, kde-format
-msgid "Save"
-msgstr "儲存"
-
-#: contents/ui/RecordPage.qml:231
-#, kde-format
-msgid "Discard"
-msgstr "捨棄"
-
-#: contents/ui/RecordPage.qml:246
+#: contents/ui/RecordPage.qml:234
 #, kde-format
 msgid "Name (optional)"
 msgstr "名稱（可選）"
 
-#: contents/ui/RecordPage.qml:250
+#: contents/ui/RecordPage.qml:238
 #, kde-format
 msgid "Storage Folder:"
 msgstr "儲存資料夾："
@@ -300,6 +284,16 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Save"
+#~ msgstr "儲存"
+
+#~ msgid "Discard"
+#~ msgstr "捨棄"
 
 #~ msgid "Stop Recording"
 #~ msgstr "停止錄音"

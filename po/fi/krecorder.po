@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-18 00:42+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2024-02-02 12:56+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -37,7 +37,7 @@ msgid "Default audio codec"
 msgstr "Oletusäänikoodekki"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
-#: contents/ui/RecordingListPage.qml:45
+#: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
 #: contents/ui/settings/SettingsWindow.qml:13
@@ -70,7 +70,7 @@ msgstr "Pelaaja"
 msgid "Recorded on %1"
 msgstr "Äänitetty %1"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
 #, kde-format
 msgid "Pause"
 msgstr "Tauko"
@@ -86,7 +86,7 @@ msgid "Stop"
 msgstr "Pysäytä"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:172
+#: contents/ui/RecordingListPage.qml:183
 #, kde-format
 msgid "Export to location"
 msgstr "Vie sijaintiin"
@@ -97,47 +97,53 @@ msgid "Rename"
 msgstr "Muuta nimeä"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:187 contents/ui/RecordPage.qml:194
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
 #, kde-format
 msgid "Delete"
 msgstr "Poista"
 
-#: contents/ui/RecordingListPage.qml:22
+#: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "Äänitteet"
 
-#: contents/ui/RecordingListPage.qml:37 contents/ui/RecordingListPage.qml:178
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
 #, kde-format
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: contents/ui/RecordingListPage.qml:51
+#: contents/ui/RecordingListPage.qml:53
 #, kde-format
 msgid "Record"
 msgstr "Äänitä"
 
-#: contents/ui/RecordingListPage.qml:113
+#: contents/ui/RecordingListPage.qml:115
 #, kde-format
 msgid "No recordings"
 msgstr "Ei äänitteitä"
 
-#: contents/ui/RecordingListPage.qml:149
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Valitse sijainti, johon äänite %1 tallennetaan"
 
-#: contents/ui/RecordingListPage.qml:159
+#: contents/ui/RecordingListPage.qml:161
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Äänite tallennettiin kansioon %1"
 
-#: contents/ui/RecordingListPage.qml:212
+#: contents/ui/RecordingListPage.qml:227
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Poista"
+
+#: contents/ui/RecordingListPage.qml:231
 #, kde-format
 msgid "Delete %1"
 msgstr "Poista %1"
 
-#: contents/ui/RecordingListPage.qml:213
+#: contents/ui/RecordingListPage.qml:244
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -145,44 +151,32 @@ msgid ""
 msgstr ""
 "Haluatko varmasti poistaa äänitteen %1?<br/>Se poistuu <b>lopullisesti</b>!"
 
-#: contents/ui/RecordingListPage.qml:217
-#, kde-format
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Poista"
-
-#: contents/ui/RecordingListPage.qml:228
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Peru"
-
-#: contents/ui/RecordingListPage.qml:240
+#: contents/ui/RecordingListPage.qml:253
 #, kde-format
 msgid "Rename %1"
 msgstr "Muuta kohteen %1 nimeä"
 
-#: contents/ui/RecordingListPage.qml:255 contents/ui/RecordPage.qml:245
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
 #, kde-format
 msgid "Name:"
 msgstr "Nimi:"
 
-#: contents/ui/RecordingListPage.qml:261
+#: contents/ui/RecordingListPage.qml:270
 #, kde-format
 msgid "Location:"
 msgstr "Sijainti:"
 
-#: contents/ui/RecordPage.qml:21
+#: contents/ui/RecordPage.qml:22
 #, kde-format
 msgid "Record Audio"
 msgstr "Äänitä"
 
-#: contents/ui/RecordPage.qml:117
+#: contents/ui/RecordPage.qml:118
 #, kde-format
 msgid "Continue"
 msgstr "Jatka"
 
-#: contents/ui/RecordPage.qml:176
+#: contents/ui/RecordPage.qml:177
 #, kde-format
 msgid "Save Recording"
 msgstr "Tallenna äänite"
@@ -192,22 +186,12 @@ msgstr "Tallenna äänite"
 msgid "Save recording"
 msgstr "Tallenna äänite"
 
-#: contents/ui/RecordPage.qml:219
-#, kde-format
-msgid "Save"
-msgstr "Tallenna"
-
-#: contents/ui/RecordPage.qml:231
-#, kde-format
-msgid "Discard"
-msgstr "Hylkää"
-
-#: contents/ui/RecordPage.qml:246
+#: contents/ui/RecordPage.qml:234
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nimi (valinnainen)"
 
-#: contents/ui/RecordPage.qml:250
+#: contents/ui/RecordPage.qml:238
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Tallennuskansio:"
@@ -298,6 +282,16 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Peru"
+
+#~ msgid "Save"
+#~ msgstr "Tallenna"
+
+#~ msgid "Discard"
+#~ msgstr "Hylkää"
 
 #~ msgid "Stop Recording"
 #~ msgstr "Lopeta äänitys"
