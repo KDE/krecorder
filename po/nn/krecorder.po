@@ -283,7 +283,3 @@ msgstr ""
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
