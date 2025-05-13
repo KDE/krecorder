@@ -282,13 +282,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
-
-#~ msgid "Save"
-#~ msgstr "Uložit"
-
-#~ msgid "Discard"
-#~ msgstr "Zahodit"
