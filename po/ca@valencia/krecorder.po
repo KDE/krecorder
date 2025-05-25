@@ -72,7 +72,7 @@ msgstr "Reproductor"
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr "Enregistrat el %1"
+msgstr "Gravat el %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:117
 #, kde-format
