@@ -72,7 +72,7 @@ msgstr "Reproductor"
 #: contents/ui/PlayerPage.qml:56
 #, kde-format
 msgid "Recorded on %1"
-msgstr "Enregistrat el %1"
+msgstr "Gravat el %1"
 
 #: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
 #, kde-format
@@ -287,13 +287,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgid "Save"
-#~ msgstr "Guarda"
-
-#~ msgid "Discard"
-#~ msgstr "Descarta"
