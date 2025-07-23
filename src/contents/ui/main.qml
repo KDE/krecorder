@@ -99,6 +99,8 @@ Kirigami.ApplicationWindow {
         while (pageStack.depth > 1) pageStack.pop();
 
         if (recording == null) {
+            AudioPlayer.setMediaPath(null);
+
             if (isWidescreen) {
                 playerPageLoader.setSource("qrc:/DefaultPage.qml");
                 pageStack.push(playerPageLoader.item);
