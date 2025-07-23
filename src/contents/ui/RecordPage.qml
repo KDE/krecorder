@@ -181,6 +181,7 @@ Kirigami.Page {
                 onClicked: {
                     // pop record page off
                     applicationWindow().pageStack.layers.pop();
+                    applicationWindow().switchToRecording(null);
 
                     // save recording
                     recordingName.text = RecordingModel.nextDefaultRecordingName();
@@ -198,6 +199,7 @@ Kirigami.Page {
                 onClicked: {
                     // pop record page off
                     applicationWindow().pageStack.layers.pop();
+                    applicationWindow().switchToRecording(null);
                     AudioRecorder.reset();
                 }
             }
