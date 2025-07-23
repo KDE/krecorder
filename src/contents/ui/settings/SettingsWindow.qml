@@ -11,7 +11,8 @@ import org.kde.kirigami as Kirigami
 Kirigami.ApplicationWindow {
     id: root
     title: i18n("Settings")
-    flags: Qt.WindowStaysOnTopHint
+    modality: Qt.ApplicationModal
+    flags: Qt.Dialog
 
     height: Kirigami.Units.gridUnit * 25
     width: Kirigami.Units.gridUnit * 35
