@@ -131,7 +131,9 @@ ColumnLayout {
             id: audioCodecDropdown
             text: i18n("Audio Codec")
             model: AudioRecorder.supportedAudioCodecs
-            onCurrentValueChanged: AudioRecorder.audioCodec = currentValue;
+            textRole: "description"
+            valueRole: "name"
+            onCurrentValueChanged: SettingsModel.audioCodec = currentValue;
             displayMode: FormCard.FormComboBoxDelegate.Dialog
 
             Binding on currentIndex {
@@ -164,6 +166,8 @@ ColumnLayout {
             id: containerFormatDropdown
             text: i18n("Container Format")
             model: AudioRecorder.supportedContainers
+            textRole: "description"
+            valueRole: "name"
             onCurrentValueChanged: SettingsModel.containerFormat = currentValue;
             displayMode: FormCard.FormComboBoxDelegate.Dialog
 

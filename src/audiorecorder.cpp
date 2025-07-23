@@ -74,6 +74,9 @@ AudioRecorder::AudioRecorder(QObject *parent)
     setAudioQuality(SettingsModel::instance()->audioQuality());
     // setAudioBitRate(0);
     // setAudioChannelCount(-1);
+    connect(SettingsModel::instance(), &SettingsModel::containerFormatChanged, this, &AudioRecorder::slotContainerFormatChanged);
+    connect(SettingsModel::instance(), &SettingsModel::audioCodecChanged, this, &AudioRecorder::slotAudioCodecChanged);
+    connect(SettingsModel::instance(), &SettingsModel::audioQualityChanged, this, &AudioRecorder::slotAudioQualityChanged);
 }
 
 // AudioProber *AudioRecorder::prober()
@@ -109,7 +112,17 @@ QString AudioRecorder::audioCodec()
 
 void AudioRecorder::setAudioCodec(const QString &codec)
 {
-    auto audioCodec = QVariant(codec).value<QMediaFormat::AudioCodec>();
+    const QMetaEnum metaEnum = QMetaEnum::fromType<QMediaFormat::AudioCodec>();
+    const int value = metaEnum.keyToValue(codec.toUtf8().constData());
+
+    QMediaFormat::AudioCodec audioCodec;
+
+    if (value != -1) {
+        audioCodec = static_cast<QMediaFormat::AudioCodec>(value);
+    } else {
+        audioCodec = QMediaFormat::AudioCodec::Opus;
+    }
+
     qDebug() << Q_FUNC_INFO << audioCodec;
     m_mediaFormat->setAudioCodec(audioCodec);
     setMediaFormat(*m_mediaFormat);
@@ -169,18 +182,30 @@ void AudioRecorder::updateFormats(QMediaFormat::FileFormat fileFormat, QMediaFor
     m_mediaFormat->setFileFormat(fileFormat);
     m_mediaFormat->setAudioCodec(audioCodec);
 
-    m_supportedContainers.append(i18n("Default file format"));
+    QVariantMap defaultContainer;
+    defaultContainer[QStringLiteral("name")] = QString();
+    defaultContainer[QStringLiteral("description")] = i18n("Default file format");
+    m_supportedContainers.append(defaultContainer);
+
     for (auto container : m_mediaFormat->supportedFileFormats(QMediaFormat::Encode)) {
-        if (container < QMediaFormat::Mpeg4Audio) // Skip video formats
-            continue;
-        m_supportedContainers.append(QMediaFormat::fileFormatDescription(container));
+        QVariantMap item;
+        item[QStringLiteral("name")] = QMediaFormat::fileFormatName(container);
+        item[QStringLiteral("description")] = QMediaFormat::fileFormatDescription(container);
+        m_supportedContainers.append(item);
     }
 
     setMediaFormat(*m_mediaFormat);
 
-    m_supportedAudioCodecs.append(i18n("Default audio codec"));
+    QVariantMap defaultAudioCodec;
+    defaultAudioCodec[QStringLiteral("name")] = QString();
+    defaultAudioCodec[QStringLiteral("description")] = i18n("Default audio codec");
+    m_supportedAudioCodecs.append(defaultAudioCodec);
+
     for (auto codec : m_mediaFormat->supportedAudioCodecs(QMediaFormat::Encode)) {
-        m_supportedAudioCodecs.append(QMediaFormat::audioCodecDescription(codec));
+        QVariantMap item;
+        item[QStringLiteral("name")] = QMediaFormat::audioCodecName(codec);
+        item[QStringLiteral("description")] = QMediaFormat::audioCodecDescription(codec);
+        m_supportedAudioCodecs.append(item);
     }
 
     m_updatingFormats = false;
@@ -237,21 +262,44 @@ QString AudioRecorder::containerFormat() const
 
 void AudioRecorder::setContainerFormat(const QString &newContainerFormat)
 {
-    if (m_containerFormat == newContainerFormat) {
-        return;
-    }
     m_containerFormat = newContainerFormat;
 
-    m_mediaFormat->setFileFormat(QVariant(m_containerFormat).value<QMediaFormat::FileFormat>());
+    const QMetaEnum metaEnum = QMetaEnum::fromType<QMediaFormat::FileFormat>();
+    const int value = metaEnum.keyToValue(m_containerFormat.toUtf8().constData());
+
+    QMediaFormat::FileFormat fileFormat;
+
+    if (value != -1) {
+        fileFormat = static_cast<QMediaFormat::FileFormat>(value);
+    } else {
+        fileFormat = QMediaFormat::FileFormat::Ogg;
+    }
+
+    m_mediaFormat->setFileFormat(fileFormat);
     setMediaFormat(*m_mediaFormat);
 }
 
-QStringList AudioRecorder::supportedAudioCodecs() const
+QVariantList AudioRecorder::supportedAudioCodecs() const
 {
     return m_supportedAudioCodecs;
 }
 
-QStringList AudioRecorder::supportedContainers() const
+QVariantList AudioRecorder::supportedContainers() const
 {
     return m_supportedContainers;
+}
+
+void AudioRecorder::slotContainerFormatChanged()
+{
+    setContainerFormat(SettingsModel::instance()->containerFormat());
+}
+
+void AudioRecorder::slotAudioCodecChanged()
+{
+    setAudioCodec(SettingsModel::instance()->audioCodec());
+}
+
+void AudioRecorder::slotAudioQualityChanged()
+{
+    setAudioQuality(SettingsModel::instance()->audioQuality());
 }

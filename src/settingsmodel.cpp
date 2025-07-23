@@ -50,7 +50,7 @@ void SettingsModel::setSimpleAudioFormat(int audioFormat)
 
 QString SettingsModel::audioCodec() const
 {
-    return settings->value(QStringLiteral("General/audioCodec"), QStringLiteral("audio/x-opus")).toString();
+    return settings->value(QStringLiteral("General/audioCodec")).toString();
 }
 
 void SettingsModel::setAudioCodec(const QString &audioCodec)
@@ -63,8 +63,8 @@ void SettingsModel::setAudioCodec(const QString &audioCodec)
 
 QString SettingsModel::containerFormat() const
 {
-    qDebug() << "format " << settings->value(QStringLiteral("General/containerFormat"), QStringLiteral("audio/ogg")).toString();
-    return settings->value(QStringLiteral("General/containerFormat"), QStringLiteral("audio/ogg")).toString();
+    qDebug() << "format " << settings->value(QStringLiteral("General/containerFormat")).toString();
+    return settings->value(QStringLiteral("General/containerFormat")).toString();
 }
 
 void SettingsModel::setContainerFormat(const QString &audioContainerFormat)
