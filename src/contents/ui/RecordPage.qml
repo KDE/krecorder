@@ -21,6 +21,12 @@ Kirigami.Page {
     visible: false
     title: i18n("Record Audio")
 
+    onBackRequested: {
+        applicationWindow().pageStack.layers.pop();
+        applicationWindow().switchToRecording(null);
+        AudioRecorder.reset();
+    }
+
     property bool isStopped: AudioRecorder.recorderState === AudioRecorder.StoppedState
     property bool isPaused: AudioRecorder.recorderState === AudioRecorder.PausedState
 
