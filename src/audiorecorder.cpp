@@ -218,6 +218,24 @@ void AudioRecorder::renameCurrentRecording()
         QStringList spl = actualLocation().fileName().split(QStringLiteral("."));
         QString suffix = spl.size() > 0 ? QStringLiteral(".") + spl[spl.size() - 1] : QString();
         QString path = storageFolder() + QStringLiteral("/") + m_recordingName;
+
+        // correct file extension for audio-only files
+        if (suffix == QStringLiteral(".ogv")) {
+            switch (mediaFormat().audioCodec()) {
+            case QMediaFormat::AudioCodec::Vorbis:
+                suffix = QStringLiteral(".ogg");
+                break;
+            case QMediaFormat::AudioCodec::Opus:
+                suffix = QStringLiteral(".opus");
+                break;
+            default:
+                suffix = QStringLiteral(".oga");
+                break;
+            }
+        } else if (suffix == QStringLiteral(".mkv")) {
+            suffix = QStringLiteral(".mka");
+        }
+
         QString updatedPath = path + suffix;
 
         // ignore if the file destination is the same as the one currently being written to
