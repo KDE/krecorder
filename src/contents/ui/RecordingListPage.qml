@@ -72,26 +72,6 @@ Kirigami.ScrollablePage {
         id: listView
         model: RecordingModel
 
-        // show animation
-        property real yTranslate: 0
-        transform: Translate { y: listView.yTranslate }
-        NumberAnimation on opacity {
-            from: 0
-            to: 1
-            duration: Kirigami.Units.longDuration * 2
-            easing.type: Easing.InOutQuad
-            running: true
-        }
-        NumberAnimation {
-            from: Kirigami.Units.gridUnit * 3
-            to: 0
-            duration: Kirigami.Units.longDuration * 3
-            easing.type: Easing.OutQuint
-            property: "yTranslate"
-            target: listView
-            running: true
-        }
-
         // prevent default highlight
         currentIndex: -1
 

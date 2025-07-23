@@ -14,9 +14,6 @@ Kirigami.Page {
     title: ""
     visible: applicationWindow().isWidescreen
 
-    property int yTranslate: 0
-    property int mainOpacity: 0
-
     actions: [
         Kirigami.Action {
             visible: applicationWindow().isWidescreen
@@ -27,9 +24,6 @@ Kirigami.Page {
     ]
 
     Kirigami.PlaceholderMessage {
-        opacity: mainOpacity
-        transform: Translate { y: yTranslate }
-
         anchors.centerIn: parent
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         icon.name: "microphone-sensitivity-medium"

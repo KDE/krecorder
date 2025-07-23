@@ -46,22 +46,6 @@ Kirigami.ApplicationWindow {
         switchToRecording(null);
     }
 
-    // page switch animation
-    NumberAnimation {
-        id: anim
-        from: 0
-        to: 1
-        duration: Kirigami.Units.longDuration * 2
-        easing.type: Easing.InOutQuad
-    }
-    NumberAnimation {
-        id: yAnim
-        from: Kirigami.Units.gridUnit * 3
-        to: 0
-        duration: Kirigami.Units.longDuration * 3
-        easing.type: Easing.OutQuint
-    }
-
     Loader {
         id: playerPageLoader
     }
@@ -112,14 +96,6 @@ Kirigami.ApplicationWindow {
             playerPageLoader.setSource("qrc:/PlayerPage.qml", {recording: recording});
             pageStack.push(playerPageLoader.item);
         }
-
-        // page switch animation
-        yAnim.target = playerPageLoader.item;
-        yAnim.properties = "yTranslate";
-        anim.target = playerPageLoader.item;
-        anim.properties = "mainOpacity";
-        yAnim.restart();
-        anim.restart();
     }
 
     // record page

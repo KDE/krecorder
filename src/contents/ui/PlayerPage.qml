@@ -21,9 +21,6 @@ Kirigami.Page {
 
     onBackRequested: AudioPlayer.stop()
 
-    property real yTranslate: 0
-    property int mainOpacity: 0
-
     actions: [
         Kirigami.Action {
             visible: applicationWindow().isWidescreen
@@ -34,8 +31,6 @@ Kirigami.Page {
     ]
 
     ColumnLayout {
-        opacity: mainOpacity
-        transform: Translate { y: yTranslate }
         anchors.fill: parent
 
         ColumnLayout {
