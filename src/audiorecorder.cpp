@@ -157,7 +157,7 @@ void AudioRecorder::handleStateChange(RecorderState state)
         if (m_resetRequest) {
             // reset
             m_resetRequest = false;
-            QFile(actualLocation().toString()).remove();
+            QFile(actualLocation().toLocalFile()).remove();
             qDebug() << "Discarded recording " << actualLocation().toString();
             m_recordingName = QString();
 
