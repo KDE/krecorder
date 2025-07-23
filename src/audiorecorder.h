@@ -18,8 +18,8 @@ class AudioRecorder : public QMediaRecorder
 {
     Q_OBJECT
     Q_PROPERTY(QString audioInput READ audioInput NOTIFY audioInputChanged)
-    Q_PROPERTY(QStringList supportedAudioCodecs READ supportedAudioCodecs CONSTANT)
-    Q_PROPERTY(QStringList supportedContainers READ supportedContainers CONSTANT)
+    Q_PROPERTY(QVariantList supportedAudioCodecs READ supportedAudioCodecs CONSTANT)
+    Q_PROPERTY(QVariantList supportedContainers READ supportedContainers CONSTANT)
     Q_PROPERTY(QString audioCodec READ audioCodec WRITE setAudioCodec NOTIFY audioCodecChanged)
     Q_PROPERTY(int audioQuality READ audioQuality WRITE setAudioQuality NOTIFY audioQualityChanged)
     Q_PROPERTY(QString containerFormat READ containerFormat WRITE setContainerFormat)
@@ -46,10 +46,13 @@ private:
 
     QString m_containerFormat;
 
-    QStringList m_supportedAudioCodecs;
-    QStringList m_supportedContainers;
+    QVariantList m_supportedAudioCodecs;
+    QVariantList m_supportedContainers;
 
     bool m_updatingFormats = false;
+    void slotContainerFormatChanged();
+    void slotAudioCodecChanged();
+    void slotAudioQualityChanged();
 
 public:
     static AudioRecorder *instance();
@@ -77,8 +80,8 @@ public:
     QString containerFormat() const;
     void setContainerFormat(const QString &newContainerFormat);
 
-    QStringList supportedAudioCodecs() const;
-    QStringList supportedContainers() const;
+    QVariantList supportedAudioCodecs() const;
+    QVariantList supportedContainers() const;
 
 Q_SIGNALS:
     void audioInputChanged();
