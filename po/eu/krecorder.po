@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-07-24 02:42+0000\n"
 "PO-Revision-Date: 2024-01-10 05:40+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -29,16 +29,6 @@ msgstr "Iñigo Salvador Azurmendi"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
-
-#: audiorecorder.cpp:172
-#, kde-format
-msgid "Default file format"
-msgstr "Fitxategi-formatu lehenetsia"
-
-#: audiorecorder.cpp:181
-#, kde-format
-msgid "Default audio codec"
-msgstr "Audio-kodek lehenetsia"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:47
@@ -101,7 +91,7 @@ msgid "Rename"
 msgstr "Berrizendatu"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
 #, kde-format
 msgid "Delete"
 msgstr "Ezabatu"
@@ -160,7 +150,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr "Berrizendatu %1"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
 #, kde-format
 msgid "Name:"
 msgstr "Izena:"
@@ -185,17 +175,17 @@ msgstr "Jarraitu"
 msgid "Save Recording"
 msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:215
+#: contents/ui/RecordPage.qml:217
 #, kde-format
 msgid "Save recording"
 msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:234
+#: contents/ui/RecordPage.qml:236
 #, kde-format
 msgid "Name (optional)"
 msgstr "Izena (hautazkoa)"
 
-#: contents/ui/RecordPage.qml:238
+#: contents/ui/RecordPage.qml:240
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Biltegiratzeko karpeta:"
@@ -225,47 +215,47 @@ msgstr "Aurreratua"
 msgid "Audio Codec"
 msgstr "Audio-kodeka"
 
-#: contents/ui/settings/SettingsComponent.qml:165
+#: contents/ui/settings/SettingsComponent.qml:167
 #, kde-format
 msgid "Container Format"
 msgstr "Edukitzaile formatua"
 
-#: contents/ui/settings/SettingsComponent.qml:198
+#: contents/ui/settings/SettingsComponent.qml:202
 #, kde-format
 msgid "Audio Quality"
 msgstr "Audio-kalitatea"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Lowest"
 msgstr "Apalena"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Low"
 msgstr "Apala"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Medium"
 msgstr "Ertaina"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "High"
 msgstr "Handia"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Highest"
 msgstr "Handiena"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Audio-kalitate handiagoarekin fitxategi-neurria handitzen da."
 
-#: contents/ui/settings/SettingsComponent.qml:225
+#: contents/ui/settings/SettingsComponent.qml:229
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -285,6 +275,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Default file format"
+#~ msgstr "Fitxategi-formatu lehenetsia"
+
+#~ msgid "Default audio codec"
+#~ msgstr "Audio-kodek lehenetsia"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

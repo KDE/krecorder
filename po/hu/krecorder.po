@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-07-24 02:42+0000\n"
 "PO-Revision-Date: 2024-03-12 12:24+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -26,16 +26,6 @@ msgstr "Meskó Balázs"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mesko.balazs@fsf.hu"
-
-#: audiorecorder.cpp:172
-#, kde-format
-msgid "Default file format"
-msgstr "Alapértelmezett fájlformátum"
-
-#: audiorecorder.cpp:181
-#, kde-format
-msgid "Default audio codec"
-msgstr "Alapértelmezett hangkodek"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:47
@@ -98,7 +88,7 @@ msgid "Rename"
 msgstr "Átnevezés"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
 #, kde-format
 msgid "Delete"
 msgstr "Törlés"
@@ -156,7 +146,7 @@ msgstr "Biztos, hogy törli a felvételt: %1?<br/><b>Végleg elvész</b>."
 msgid "Rename %1"
 msgstr "A(z) %1 átnevezése"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
 #, kde-format
 msgid "Name:"
 msgstr "Név:"
@@ -181,17 +171,17 @@ msgstr "Folytatás"
 msgid "Save Recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:215
+#: contents/ui/RecordPage.qml:217
 #, kde-format
 msgid "Save recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:234
+#: contents/ui/RecordPage.qml:236
 #, kde-format
 msgid "Name (optional)"
 msgstr "Név (nem kötelező)"
 
-#: contents/ui/RecordPage.qml:238
+#: contents/ui/RecordPage.qml:240
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Tárolómappa:"
@@ -221,47 +211,47 @@ msgstr "Speciális"
 msgid "Audio Codec"
 msgstr "Hangkodek"
 
-#: contents/ui/settings/SettingsComponent.qml:165
+#: contents/ui/settings/SettingsComponent.qml:167
 #, kde-format
 msgid "Container Format"
 msgstr "Tárolóformátum"
 
-#: contents/ui/settings/SettingsComponent.qml:198
+#: contents/ui/settings/SettingsComponent.qml:202
 #, kde-format
 msgid "Audio Quality"
 msgstr "Hangminőség"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Lowest"
 msgstr "Legalacsonyabb"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Low"
 msgstr "Alacsony"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Medium"
 msgstr "Közepes"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "High"
 msgstr "Magas"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Highest"
 msgstr "Legmagasabb"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "A magasabb hangminőség növeli a fájl méretét is."
 
-#: contents/ui/settings/SettingsComponent.qml:225
+#: contents/ui/settings/SettingsComponent.qml:229
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -283,6 +273,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Default file format"
+#~ msgstr "Alapértelmezett fájlformátum"
+
+#~ msgid "Default audio codec"
+#~ msgstr "Alapértelmezett hangkodek"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-07-24 02:42+0000\n"
 "PO-Revision-Date: 2024-02-19 18:57+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -27,16 +27,6 @@ msgstr "Toms Trasūns"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "toms.trasuns@posteo.net"
-
-#: audiorecorder.cpp:172
-#, kde-format
-msgid "Default file format"
-msgstr "Noklusējuma datnes formāts"
-
-#: audiorecorder.cpp:181
-#, kde-format
-msgid "Default audio codec"
-msgstr "Noklusējuma skaņas kodētājs"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:47
@@ -99,7 +89,7 @@ msgid "Rename"
 msgstr "Pārdēvēt"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
 #, kde-format
 msgid "Delete"
 msgstr "Dzēst"
@@ -159,7 +149,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr "Pārdēvēt %1"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
 #, kde-format
 msgid "Name:"
 msgstr "Nosaukums:"
@@ -184,17 +174,17 @@ msgstr "Turpināt"
 msgid "Save Recording"
 msgstr "Saglabāt ierakstu"
 
-#: contents/ui/RecordPage.qml:215
+#: contents/ui/RecordPage.qml:217
 #, kde-format
 msgid "Save recording"
 msgstr "Saglabāt ierakstu"
 
-#: contents/ui/RecordPage.qml:234
+#: contents/ui/RecordPage.qml:236
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nosaukums (neobligāts)"
 
-#: contents/ui/RecordPage.qml:238
+#: contents/ui/RecordPage.qml:240
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Krātuves mape:"
@@ -224,47 +214,47 @@ msgstr "Papildu"
 msgid "Audio Codec"
 msgstr "Audio kodētājs"
 
-#: contents/ui/settings/SettingsComponent.qml:165
+#: contents/ui/settings/SettingsComponent.qml:167
 #, kde-format
 msgid "Container Format"
 msgstr "Konteinera formāts"
 
-#: contents/ui/settings/SettingsComponent.qml:198
+#: contents/ui/settings/SettingsComponent.qml:202
 #, kde-format
 msgid "Audio Quality"
 msgstr "Skaņas kvalitāte"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Lowest"
 msgstr "Zemākā"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Low"
 msgstr "Zema"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Medium"
 msgstr "Vidēja"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "High"
 msgstr "Augsta"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Highest"
 msgstr "Augstākā"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Augstāka kvalitāte palielina datņu izmēru."
 
-#: contents/ui/settings/SettingsComponent.qml:225
+#: contents/ui/settings/SettingsComponent.qml:229
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -285,6 +275,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Default file format"
+#~ msgstr "Noklusējuma datnes formāts"
+
+#~ msgid "Default audio codec"
+#~ msgstr "Noklusējuma skaņas kodētājs"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

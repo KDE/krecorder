@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-07-24 02:42+0000\n"
 "PO-Revision-Date: 2022-11-28 15:12+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -22,18 +22,6 @@ msgstr "José Nuno Pires"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "zepires@gmail.com"
-
-#: audiorecorder.cpp:172
-#, fuzzy, kde-format
-#| msgid "WAV file format"
-msgid "Default file format"
-msgstr "Formato do ficheiro WAV"
-
-#: audiorecorder.cpp:181
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
-msgid "Default audio codec"
-msgstr "Formato do Áudio"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:47
@@ -96,7 +84,7 @@ msgid "Rename"
 msgstr "Mudar o Nome"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
 #, kde-format
 msgid "Delete"
 msgstr "Apagar"
@@ -156,7 +144,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr "Mudar o nome a %1"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
 #, kde-format
 msgid "Name:"
 msgstr "Nome:"
@@ -182,17 +170,17 @@ msgstr "Continuar"
 msgid "Save Recording"
 msgstr "Gravar a gravação"
 
-#: contents/ui/RecordPage.qml:215
+#: contents/ui/RecordPage.qml:217
 #, kde-format
 msgid "Save recording"
 msgstr "Gravar a gravação"
 
-#: contents/ui/RecordPage.qml:234
+#: contents/ui/RecordPage.qml:236
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nome (opcional)"
 
-#: contents/ui/RecordPage.qml:238
+#: contents/ui/RecordPage.qml:240
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Pasta de Armazenamento:"
@@ -222,47 +210,47 @@ msgstr "Avançado"
 msgid "Audio Codec"
 msgstr "Formato do Áudio"
 
-#: contents/ui/settings/SettingsComponent.qml:165
+#: contents/ui/settings/SettingsComponent.qml:167
 #, kde-format
 msgid "Container Format"
 msgstr "Formato do Contentor"
 
-#: contents/ui/settings/SettingsComponent.qml:198
+#: contents/ui/settings/SettingsComponent.qml:202
 #, kde-format
 msgid "Audio Quality"
 msgstr "Qualidade do Áudio"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Lowest"
 msgstr "Mais Baixa"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Low"
 msgstr "Baixa"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Medium"
 msgstr "Média"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "High"
 msgstr "Alta"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Highest"
 msgstr "Mais Alta"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Uma maior qualidade do áudio também aumenta o tamanho do ficheiro."
 
-#: contents/ui/settings/SettingsComponent.qml:225
+#: contents/ui/settings/SettingsComponent.qml:229
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -285,6 +273,16 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#, fuzzy
+#~| msgid "WAV file format"
+#~ msgid "Default file format"
+#~ msgstr "Formato do ficheiro WAV"
+
+#, fuzzy
+#~| msgid "Audio Codec"
+#~ msgid "Default audio codec"
+#~ msgstr "Formato do Áudio"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

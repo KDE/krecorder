@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-07-24 02:42+0000\n"
 "PO-Revision-Date: 2024-02-10 00:00+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -26,16 +26,6 @@ msgstr "박신조"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
-
-#: audiorecorder.cpp:172
-#, kde-format
-msgid "Default file format"
-msgstr "기본 파일 형식"
-
-#: audiorecorder.cpp:181
-#, kde-format
-msgid "Default audio codec"
-msgstr "기본 오디오 코덱"
 
 #: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
 #: contents/ui/RecordingListPage.qml:47
@@ -98,7 +88,7 @@ msgid "Rename"
 msgstr "이름 바꾸기"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:195
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
 #, kde-format
 msgid "Delete"
 msgstr "삭제"
@@ -156,7 +146,7 @@ msgstr "녹음 %1을(를) 삭제하시겠습니까?<br/>복원할 수 <b>없습�
 msgid "Rename %1"
 msgstr "%1 이름 바꾸기"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:233
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
 #, kde-format
 msgid "Name:"
 msgstr "이름:"
@@ -181,17 +171,17 @@ msgstr "계속"
 msgid "Save Recording"
 msgstr "녹음 저장"
 
-#: contents/ui/RecordPage.qml:215
+#: contents/ui/RecordPage.qml:217
 #, kde-format
 msgid "Save recording"
 msgstr "녹음 저장"
 
-#: contents/ui/RecordPage.qml:234
+#: contents/ui/RecordPage.qml:236
 #, kde-format
 msgid "Name (optional)"
 msgstr "이름(선택 사항)"
 
-#: contents/ui/RecordPage.qml:238
+#: contents/ui/RecordPage.qml:240
 #, kde-format
 msgid "Storage Folder:"
 msgstr "저장 폴더:"
@@ -221,47 +211,47 @@ msgstr "고급"
 msgid "Audio Codec"
 msgstr "오디오 코덱"
 
-#: contents/ui/settings/SettingsComponent.qml:165
+#: contents/ui/settings/SettingsComponent.qml:167
 #, kde-format
 msgid "Container Format"
 msgstr "컨테이너 형식"
 
-#: contents/ui/settings/SettingsComponent.qml:198
+#: contents/ui/settings/SettingsComponent.qml:202
 #, kde-format
 msgid "Audio Quality"
 msgstr "오디오 음질"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Lowest"
 msgstr "가장 낮음"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Low"
 msgstr "낮음"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Medium"
 msgstr "중간"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "High"
 msgstr "높음"
 
-#: contents/ui/settings/SettingsComponent.qml:199
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Highest"
 msgstr "가장 높음"
 
-#: contents/ui/settings/SettingsComponent.qml:200
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "음질이 높아질수록 파일 크기도 커집니다."
 
-#: contents/ui/settings/SettingsComponent.qml:225
+#: contents/ui/settings/SettingsComponent.qml:229
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
@@ -281,6 +271,12 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgid "Default file format"
+#~ msgstr "기본 파일 형식"
+
+#~ msgid "Default audio codec"
+#~ msgstr "기본 오디오 코덱"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"
