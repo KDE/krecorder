@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 00:46+0000\n"
+"POT-Creation-Date: 2025-07-25 00:46+0000\n"
 "PO-Revision-Date: 2021-04-09 23:52+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Default audio codec"
 msgstr "Lyd-kodek"
 
-#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -48,12 +48,12 @@ msgstr "Lyd-kodek"
 msgid "Settings"
 msgstr "Innstillingar"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr ""
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
 msgstr ""
@@ -68,28 +68,28 @@ msgstr "Opptakar"
 msgid "Player"
 msgstr ""
 
-#: contents/ui/PlayerPage.qml:56
+#: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
 msgstr ""
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "Pause"
 
-#: contents/ui/PlayerPage.qml:82
+#: contents/ui/PlayerPage.qml:77
 #, kde-format
 msgid "Play"
 msgstr "Spel"
 
-#: contents/ui/PlayerPage.qml:92
+#: contents/ui/PlayerPage.qml:87
 #, kde-format
 msgid "Stop"
 msgstr "Stopp"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:163
 #, kde-format
 msgid "Export to location"
 msgstr ""
@@ -100,7 +100,7 @@ msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Slett"
@@ -110,7 +110,7 @@ msgstr "Slett"
 msgid "Recordings"
 msgstr "Opptak"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
 #, kde-format
 msgid "Edit"
 msgstr "Rediger"
@@ -120,50 +120,50 @@ msgstr "Rediger"
 msgid "Record"
 msgstr "Ta opp"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:95
 #, kde-format
 msgid "No recordings"
 msgstr "Ingen opptak"
 
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:131
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:161
+#: contents/ui/RecordingListPage.qml:141
 #, kde-format
 msgid "Saved recording to %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:207
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Slett"
 
-#: contents/ui/RecordingListPage.qml:231
+#: contents/ui/RecordingListPage.qml:211
 #, kde-format
 msgid "Delete %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:244
+#: contents/ui/RecordingListPage.qml:224
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:253
+#: contents/ui/RecordingListPage.qml:233
 #, kde-format
 msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Namn:"
 
-#: contents/ui/RecordingListPage.qml:270
+#: contents/ui/RecordingListPage.qml:250
 #, kde-format
 msgid "Location:"
 msgstr "Plassering:"
@@ -173,27 +173,27 @@ msgstr "Plassering:"
 msgid "Record Audio"
 msgstr "Ta opp lyd"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, fuzzy, kde-format
 msgid "Save Recording"
 msgstr "Lagra opptak"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "Lagra opptak"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "Namn (valfritt)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr ""

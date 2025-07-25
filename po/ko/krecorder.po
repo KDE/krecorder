@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 00:46+0000\n"
+"POT-Creation-Date: 2025-07-25 00:46+0000\n"
 "PO-Revision-Date: 2024-02-10 00:00+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -37,7 +37,7 @@ msgstr "기본 파일 형식"
 msgid "Default audio codec"
 msgstr "기본 오디오 코덱"
 
-#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -46,12 +46,12 @@ msgstr "기본 오디오 코덱"
 msgid "Settings"
 msgstr "설정"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "녹음을 재생하거나 새로 녹음"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
 msgstr "새 녹음 시작"
@@ -66,28 +66,28 @@ msgstr "녹음기"
 msgid "Player"
 msgstr "재생기"
 
-#: contents/ui/PlayerPage.qml:56
+#: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
 msgstr "%1에 녹음함"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "일시 정지"
 
-#: contents/ui/PlayerPage.qml:82
+#: contents/ui/PlayerPage.qml:77
 #, kde-format
 msgid "Play"
 msgstr "재생"
 
-#: contents/ui/PlayerPage.qml:92
+#: contents/ui/PlayerPage.qml:87
 #, kde-format
 msgid "Stop"
 msgstr "정지"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:163
 #, kde-format
 msgid "Export to location"
 msgstr "위치로 내보내기"
@@ -98,7 +98,7 @@ msgid "Rename"
 msgstr "이름 바꾸기"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "삭제"
@@ -108,7 +108,7 @@ msgstr "삭제"
 msgid "Recordings"
 msgstr "녹음 기록"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
 #, kde-format
 msgid "Edit"
 msgstr "편집"
@@ -118,50 +118,50 @@ msgstr "편집"
 msgid "Record"
 msgstr "녹음"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:95
 #, kde-format
 msgid "No recordings"
 msgstr "녹음 없음"
 
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:131
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "%1 녹음을 저장할 위치 선택"
 
-#: contents/ui/RecordingListPage.qml:161
+#: contents/ui/RecordingListPage.qml:141
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "%1에 녹음 저장됨"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:207
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "삭제"
 
-#: contents/ui/RecordingListPage.qml:231
+#: contents/ui/RecordingListPage.qml:211
 #, kde-format
 msgid "Delete %1"
 msgstr "%1 삭제"
 
-#: contents/ui/RecordingListPage.qml:244
+#: contents/ui/RecordingListPage.qml:224
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "녹음 %1을(를) 삭제하시겠습니까?<br/>복원할 수 <b>없습니다!</b>"
 
-#: contents/ui/RecordingListPage.qml:253
+#: contents/ui/RecordingListPage.qml:233
 #, kde-format
 msgid "Rename %1"
 msgstr "%1 이름 바꾸기"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "이름:"
 
-#: contents/ui/RecordingListPage.qml:270
+#: contents/ui/RecordingListPage.qml:250
 #, kde-format
 msgid "Location:"
 msgstr "위치:"
@@ -171,27 +171,27 @@ msgstr "위치:"
 msgid "Record Audio"
 msgstr "오디오 녹음"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "계속"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "녹음 저장"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "녹음 저장"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "이름(선택 사항)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "저장 폴더:"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 00:46+0000\n"
+"POT-Creation-Date: 2025-07-25 00:46+0000\n"
 "PO-Revision-Date: 2024-01-10 05:40+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -40,7 +40,7 @@ msgstr "Fitxategi-formatu lehenetsia"
 msgid "Default audio codec"
 msgstr "Audio-kodek lehenetsia"
 
-#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -49,12 +49,12 @@ msgstr "Audio-kodek lehenetsia"
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Grabazio bat jo, edo berri bat grabatu"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
 msgstr "Grabatu grabazio berri bat"
@@ -69,28 +69,28 @@ msgstr "Grabatzailea"
 msgid "Player"
 msgstr "Jotzailea"
 
-#: contents/ui/PlayerPage.qml:56
+#: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
 msgstr "%1(e)an grabatua"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "Etenaldia"
 
-#: contents/ui/PlayerPage.qml:82
+#: contents/ui/PlayerPage.qml:77
 #, kde-format
 msgid "Play"
 msgstr "Jo"
 
-#: contents/ui/PlayerPage.qml:92
+#: contents/ui/PlayerPage.qml:87
 #, kde-format
 msgid "Stop"
 msgstr "Gelditu"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:163
 #, kde-format
 msgid "Export to location"
 msgstr "Esportatu kokalekua"
@@ -101,7 +101,7 @@ msgid "Rename"
 msgstr "Berrizendatu"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Ezabatu"
@@ -111,7 +111,7 @@ msgstr "Ezabatu"
 msgid "Recordings"
 msgstr "Grabazioak"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
 #, kde-format
 msgid "Edit"
 msgstr "Editatu"
@@ -121,33 +121,33 @@ msgstr "Editatu"
 msgid "Record"
 msgstr "Grabatu"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:95
 #, kde-format
 msgid "No recordings"
 msgstr "Ez dago grabaziorik"
 
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:131
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Hautatu grabazioa gordetzeko kokaleku bat, %1"
 
-#: contents/ui/RecordingListPage.qml:161
+#: contents/ui/RecordingListPage.qml:141
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Grabazioa hor grabatu da, %1"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:207
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: contents/ui/RecordingListPage.qml:231
+#: contents/ui/RecordingListPage.qml:211
 #, kde-format
 msgid "Delete %1"
 msgstr "Ezabatu %1"
 
-#: contents/ui/RecordingListPage.qml:244
+#: contents/ui/RecordingListPage.qml:224
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -155,17 +155,17 @@ msgid ""
 msgstr ""
 "Ziur zaude, %1 grabazioa ezabatu nahi duzula?<br/><b>Betirako galduko</b> da!"
 
-#: contents/ui/RecordingListPage.qml:253
+#: contents/ui/RecordingListPage.qml:233
 #, kde-format
 msgid "Rename %1"
 msgstr "Berrizendatu %1"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Izena:"
 
-#: contents/ui/RecordingListPage.qml:270
+#: contents/ui/RecordingListPage.qml:250
 #, kde-format
 msgid "Location:"
 msgstr "Kokalekua:"
@@ -175,27 +175,27 @@ msgstr "Kokalekua:"
 msgid "Record Audio"
 msgstr "Grabatu audioa"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "Jarraitu"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "Gorde grabazioa"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "Izena (hautazkoa)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Biltegiratzeko karpeta:"

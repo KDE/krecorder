@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 00:46+0000\n"
+"POT-Creation-Date: 2025-07-25 00:46+0000\n"
 "PO-Revision-Date: 2024-03-12 12:24+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -37,7 +37,7 @@ msgstr "Alapértelmezett fájlformátum"
 msgid "Default audio codec"
 msgstr "Alapértelmezett hangkodek"
 
-#: contents/ui/DefaultPage.qml:24 contents/ui/PlayerPage.qml:31
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
 #: contents/ui/settings/SettingsDialog.qml:14
 #: contents/ui/settings/SettingsPage.qml:14
@@ -46,12 +46,12 @@ msgstr "Alapértelmezett hangkodek"
 msgid "Settings"
 msgstr "Beállítások"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Felvétel lejátszása vagy új felvétel rögzítése"
 
-#: contents/ui/DefaultPage.qml:36
+#: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
 msgstr "Új felvétel rögzítése"
@@ -66,28 +66,28 @@ msgstr "Rögzítő"
 msgid "Player"
 msgstr "Lejátszás"
 
-#: contents/ui/PlayerPage.qml:56
+#: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
 msgstr "Felvéve: %1"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "Szünet"
 
-#: contents/ui/PlayerPage.qml:82
+#: contents/ui/PlayerPage.qml:77
 #, kde-format
 msgid "Play"
 msgstr "Lejátszás"
 
-#: contents/ui/PlayerPage.qml:92
+#: contents/ui/PlayerPage.qml:87
 #, kde-format
 msgid "Stop"
 msgstr "Leállítás"
 
 #: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:183
+#: contents/ui/RecordingListPage.qml:163
 #, kde-format
 msgid "Export to location"
 msgstr "Exportálás helyre"
@@ -98,7 +98,7 @@ msgid "Rename"
 msgstr "Átnevezés"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Törlés"
@@ -108,7 +108,7 @@ msgstr "Törlés"
 msgid "Recordings"
 msgstr "Felvételek"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:189
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
 #, kde-format
 msgid "Edit"
 msgstr "Szerkesztés"
@@ -118,50 +118,50 @@ msgstr "Szerkesztés"
 msgid "Record"
 msgstr "Felvétel"
 
-#: contents/ui/RecordingListPage.qml:115
+#: contents/ui/RecordingListPage.qml:95
 #, kde-format
 msgid "No recordings"
 msgstr "Nincsenek felvételek"
 
-#: contents/ui/RecordingListPage.qml:151
+#: contents/ui/RecordingListPage.qml:131
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Válassza ki a(z) %1 felvétel mentési helyét"
 
-#: contents/ui/RecordingListPage.qml:161
+#: contents/ui/RecordingListPage.qml:141
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "A felvétel mentve ide: %1"
 
-#: contents/ui/RecordingListPage.qml:227
+#: contents/ui/RecordingListPage.qml:207
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Törlés"
 
-#: contents/ui/RecordingListPage.qml:231
+#: contents/ui/RecordingListPage.qml:211
 #, kde-format
 msgid "Delete %1"
 msgstr "A(z) %1 törlése"
 
-#: contents/ui/RecordingListPage.qml:244
+#: contents/ui/RecordingListPage.qml:224
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "Biztos, hogy törli a felvételt: %1?<br/><b>Végleg elvész</b>."
 
-#: contents/ui/RecordingListPage.qml:253
+#: contents/ui/RecordingListPage.qml:233
 #, kde-format
 msgid "Rename %1"
 msgstr "A(z) %1 átnevezése"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Név:"
 
-#: contents/ui/RecordingListPage.qml:270
+#: contents/ui/RecordingListPage.qml:250
 #, kde-format
 msgid "Location:"
 msgstr "Hely:"
@@ -171,27 +171,27 @@ msgstr "Hely:"
 msgid "Record Audio"
 msgstr "Hangrögzítés"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "Folytatás"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "Név (nem kötelező)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Tárolómappa:"
