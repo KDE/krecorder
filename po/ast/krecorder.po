@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 02:42+0000\n"
+"POT-Creation-Date: 2025-07-25 02:41+0000\n"
 "PO-Revision-Date: 2024-03-27 23:01+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Recorded on %1"
 msgstr ""
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr ""
@@ -88,7 +88,7 @@ msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr ""
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr ""
@@ -161,27 +161,27 @@ msgstr ""
 msgid "Record Audio"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr ""
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr ""

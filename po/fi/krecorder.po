@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 02:42+0000\n"
+"POT-Creation-Date: 2025-07-25 02:41+0000\n"
 "PO-Revision-Date: 2024-02-02 12:56+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -60,7 +60,7 @@ msgstr "Pelaaja"
 msgid "Recorded on %1"
 msgstr "Äänitetty %1"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "Tauko"
@@ -87,7 +87,7 @@ msgid "Rename"
 msgstr "Muuta nimeä"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Poista"
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr "Muuta kohteen %1 nimeä"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Nimi:"
@@ -161,27 +161,27 @@ msgstr "Sijainti:"
 msgid "Record Audio"
 msgstr "Äänitä"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "Jatka"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "Tallenna äänite"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "Tallenna äänite"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "Nimi (valinnainen)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Tallennuskansio:"

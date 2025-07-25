@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 02:42+0000\n"
+"POT-Creation-Date: 2025-07-25 02:41+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -63,7 +63,7 @@ msgstr "खिलाडी"
 msgid "Recorded on %1"
 msgstr "%1 इत्यत्र अभिलेखितम्"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "विराम"
@@ -90,7 +90,7 @@ msgid "Rename"
 msgstr "पुनर्नाम"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "लुप्"
@@ -150,7 +150,7 @@ msgstr ""
 msgid "Rename %1"
 msgstr "%1 इत्यस्य नाम परिवर्तनं कुर्वन्तु"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "नामः:"
@@ -165,27 +165,27 @@ msgstr "स्थानीय:"
 msgid "Record Audio"
 msgstr "श्रव्यं अभिलेखयन्तु"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "अनुवर्तते"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "रिकार्डिङ्ग् रक्षतु"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "रिकार्डिङ्ग् रक्षतु"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "नाम (वैकल्पिक)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "भण्डारणपुटम् :"

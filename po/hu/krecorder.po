@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-24 02:42+0000\n"
+"POT-Creation-Date: 2025-07-25 02:41+0000\n"
 "PO-Revision-Date: 2024-03-12 12:24+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -61,7 +61,7 @@ msgstr "Lejátszás"
 msgid "Recorded on %1"
 msgstr "Felvéve: %1"
 
-#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:118
+#: contents/ui/PlayerPage.qml:82 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
 msgstr "Szünet"
@@ -88,7 +88,7 @@ msgid "Rename"
 msgstr "Átnevezés"
 
 #: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:196
+#: contents/ui/RecordingListPage.qml:198 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Törlés"
@@ -146,7 +146,7 @@ msgstr "Biztos, hogy törli a felvételt: %1?<br/><b>Végleg elvész</b>."
 msgid "Rename %1"
 msgstr "A(z) %1 átnevezése"
 
-#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:235
+#: contents/ui/RecordingListPage.qml:265 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Név:"
@@ -161,27 +161,27 @@ msgstr "Hely:"
 msgid "Record Audio"
 msgstr "Hangrögzítés"
 
-#: contents/ui/RecordPage.qml:118
+#: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
 msgstr "Folytatás"
 
-#: contents/ui/RecordPage.qml:177
+#: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:217
+#: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
 msgstr "Felvétel mentése"
 
-#: contents/ui/RecordPage.qml:236
+#: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
 msgstr "Név (nem kötelező)"
 
-#: contents/ui/RecordPage.qml:240
+#: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
 msgstr "Tárolómappa:"
