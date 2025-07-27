@@ -273,7 +273,3 @@ msgstr ""
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Default audio codec"
-#~ msgstr "Lyd-kodek"
