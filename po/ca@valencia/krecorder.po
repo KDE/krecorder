@@ -119,7 +119,7 @@ msgstr "Sense gravacions"
 #: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr "Seleccioneu una ubicació a on s'ha de guardar la gravació %1"
+msgstr "Trieu una ubicació a on s'ha de guardar la gravació %1"
 
 #: contents/ui/RecordingListPage.qml:161
 #, kde-format
@@ -277,9 +277,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgid "Default file format"
-#~ msgstr "Format predeterminat de fitxer"
-
-#~ msgid "Default audio codec"
-#~ msgstr "Còdec predeterminat d'àudio"
