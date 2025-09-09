@@ -145,7 +145,7 @@ Kirigami.Page {
                 Controls.Label {
                     visible: isStopped || isPaused
                     Layout.alignment: Qt.AlignCenter
-                    text: i18n('Paused')
+                    text: i18n("Paused")
                     font.bold: true
                 }
             }
