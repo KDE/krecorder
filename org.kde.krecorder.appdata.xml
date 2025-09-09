@@ -45,7 +45,6 @@
   <name xml:lang="sv">Inspelare</name>
   <name xml:lang="tr">Kayıtçı</name>
   <name xml:lang="uk">Записувач</name>
-  <name xml:lang="x-test">xxRecorderxx</name>
   <name xml:lang="zh-CN">录音机</name>
   <name xml:lang="zh-TW">錄音</name>
   <summary>Audio recorder</summary>
@@ -84,7 +83,6 @@
   <summary xml:lang="sv">Ljudinspelare</summary>
   <summary xml:lang="tr">Ses Kaydedicisi</summary>
   <summary xml:lang="uk">Записувач звукових даних</summary>
-  <summary xml:lang="x-test">xxAudio recorderxx</summary>
   <summary xml:lang="zh-CN">录音工具</summary>
   <summary xml:lang="zh-TW">錄音工具</summary>
   <recommends>
@@ -135,7 +133,6 @@
     <p xml:lang="sv">Recorder är ett enkelt ljudinspelningsprogram för flera plattformar.</p>
     <p xml:lang="tr">Kayıtçı; yalın, çok platformlu bir ses kayıt uygulamasıdır.</p>
     <p xml:lang="uk">«Записувач» є простою програмою для запису звукових даних, яка може працювати на багатьох програмних платформах.</p>
-    <p xml:lang="x-test">xxRecorder is a simple, cross-platform audio recording application.xx</p>
     <p xml:lang="zh-CN">Recorder 是一款简单、跨平台的录音应用。</p>
     <p xml:lang="zh-TW">錄音是一個簡潔、跨平台的錄音應用程式。</p>
   </description>
@@ -183,7 +180,6 @@
       <caption xml:lang="sv">Översikt över inspelningar</caption>
       <caption xml:lang="tr">Kayıtların genel görünümü</caption>
       <caption xml:lang="uk">Огляд записів</caption>
-      <caption xml:lang="x-test">xxOverview of recordingsxx</caption>
       <caption xml:lang="zh-CN">录音概览</caption>
       <caption xml:lang="zh-TW">錄音的概覽</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-1.png</image>
@@ -218,7 +214,6 @@
       <caption xml:lang="sv">Spelar in med Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ile kayıt</caption>
       <caption xml:lang="uk">Записування за допомогою KRecorder</caption>
-      <caption xml:lang="x-test">xxRecording with KRecorderxx</caption>
       <caption xml:lang="zh-CN">使用 KRecorder 录音</caption>
       <caption xml:lang="zh-TW">利用 KRecorder 進行錄音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-2.png</image>
@@ -253,7 +248,6 @@
       <caption xml:lang="sv">Lyssnar på inspelningar med Inspelare</caption>
       <caption xml:lang="tr">Kayıtları K Kayıtçı ile dinleyin</caption>
       <caption xml:lang="uk">Прослуховування записів за допомогою KRecorder</caption>
-      <caption xml:lang="x-test">xxListen to recordings with KRecorderxx</caption>
       <caption xml:lang="zh-CN">使用 KRecorder 聆听录音</caption>
       <caption xml:lang="zh-TW">利用 KRecorder 聆聽錄音</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-3.png</image>
@@ -288,7 +282,6 @@
       <caption xml:lang="sv">Inställning av Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ayarları</caption>
       <caption xml:lang="uk">Параметри роботи KRecorder</caption>
-      <caption xml:lang="x-test">xxSettings of KRecorderxx</caption>
       <caption xml:lang="zh-CN">KRecorder 的设置</caption>
       <caption xml:lang="zh-TW">KRecorder 的設定</caption>
       <image>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/krecorder-4.png</image>
