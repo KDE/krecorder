@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-25 00:46+0000\n"
+"POT-Creation-Date: 2025-09-11 00:45+0000\n"
 "PO-Revision-Date: 2024-02-19 18:57+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -178,6 +178,12 @@ msgstr "Ierakstīt skaņu"
 #, kde-format
 msgid "Continue"
 msgstr "Turpināt"
+
+#: contents/ui/RecordPage.qml:148
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgid "Paused"
+msgstr "Pauzēt"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format

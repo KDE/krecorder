@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-25 00:46+0000\n"
+"POT-Creation-Date: 2025-09-11 00:45+0000\n"
 "PO-Revision-Date: 2024-03-12 12:24+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -175,6 +175,12 @@ msgstr "Hangrögzítés"
 #, kde-format
 msgid "Continue"
 msgstr "Folytatás"
+
+#: contents/ui/RecordPage.qml:148
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgid "Paused"
+msgstr "Szünet"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-25 00:46+0000\n"
+"POT-Creation-Date: 2025-09-11 00:45+0000\n"
 "PO-Revision-Date: 2024-01-09 21:18+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -179,6 +179,12 @@ msgstr "Записати звук"
 #, kde-format
 msgid "Continue"
 msgstr "Продовжити"
+
+#: contents/ui/RecordPage.qml:148
+#, fuzzy, kde-format
+#| msgid "Pause"
+msgid "Paused"
+msgstr "Пауза"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-25 00:46+0000\n"
+"POT-Creation-Date: 2025-09-11 00:45+0000\n"
 "PO-Revision-Date: 2020-08-24 23:45-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -171,6 +171,11 @@ msgstr ""
 #: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:148
+#, kde-format
+msgid "Paused"
 msgstr ""
 
 #: contents/ui/RecordPage.qml:183
