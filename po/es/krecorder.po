@@ -1,15 +1,15 @@
 # Spanish translations for krecorder.po package.
-# Copyright (C) 2020 This file is copyright:
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-#
 # Automatically generated, 2020.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+#
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-11 00:45+0000\n"
-"PO-Revision-Date: 2024-01-11 01:56+0100\n"
+"PO-Revision-Date: 2025-09-11 12:12+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -181,10 +181,9 @@ msgid "Continue"
 msgstr "Continuar"
 
 #: contents/ui/RecordPage.qml:148
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgid "Paused"
-msgstr "Pausa"
+msgstr "En pausa"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format
@@ -293,76 +292,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "Save"
-#~ msgstr "Guardar"
-
-#~ msgid "Discard"
-#~ msgstr "Descartar"
-
-#~ msgid "Stop Recording"
-#~ msgstr "Detener grabación"
-
-#~ msgid "Audio Format"
-#~ msgstr "Formato de sonido"
-
-#~ msgctxt "Ogg Vorbis file format"
-#~ msgid "Ogg Vorbis"
-#~ msgstr "Ogg Vorbis"
-
-#~ msgctxt "Ogg Opus file format"
-#~ msgid "Ogg Opus"
-#~ msgstr "Ogg Opus"
-
-#~ msgctxt "FLAC file format"
-#~ msgid "FLAC"
-#~ msgstr "FLAC"
-
-#~ msgctxt "MP3 file format"
-#~ msgid "MP3"
-#~ msgstr "MP3"
-
-#~ msgctxt "File format not listed"
-#~ msgid "Other"
-#~ msgstr "Otro"
-
-#~ msgid "Custom"
-#~ msgstr "Personalizado"
-
-#~ msgid "WAV"
-#~ msgstr "WAV"
-
-#~ msgid "%1"
-#~ msgstr "%1"
-
-#~ msgid "No recordings yet, record your first!"
-#~ msgstr "Aún no hay grabaciones. ¡Grabe la primera!"
-
-#~ msgid "Editing %1"
-#~ msgstr "Editando %1"
-
-#~ msgid "Audio Input:"
-#~ msgstr "Entrada de sonido:"
-
-#~ msgid "<b>New Recording</b>"
-#~ msgstr "<b>Nueva grabación</b>"
-
-#~ msgid "<b>Settings</b>"
-#~ msgstr "<b>Preferencias</b>"
-
-#~ msgid "Hide Advanced Settings"
-#~ msgstr "Ocultar preferencias avanzadas"
-
-#~ msgid "Show Advanced Settings"
-#~ msgstr "Mostrar preferencias avanzadas"
-
-#~ msgid "Delete recording"
-#~ msgstr "Borrar grabación"
-
-#~ msgctxt "@action:button"
-#~ msgid "Done"
-#~ msgstr "Terminado"
