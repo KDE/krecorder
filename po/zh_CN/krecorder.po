@@ -177,10 +177,9 @@ msgid "Continue"
 msgstr "继续"
 
 #: contents/ui/RecordPage.qml:148
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgid "Paused"
-msgstr "暂停"
+msgstr "已暂停"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format
