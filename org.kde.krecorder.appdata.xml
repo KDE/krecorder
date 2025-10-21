@@ -174,6 +174,7 @@
       <caption xml:lang="nl">Overzicht van opnamen</caption>
       <caption xml:lang="pl">Przegląd nagrań</caption>
       <caption xml:lang="pt-BR">Visão geral das gravações</caption>
+      <caption xml:lang="ro">Prezentare generală a înregistrărilor</caption>
       <caption xml:lang="ru">Просмотр записей</caption>
       <caption xml:lang="sa">रिकार्डिङ्ग्स् इत्यस्य अवलोकनम्</caption>
       <caption xml:lang="sl">Pregled posnetkov</caption>
@@ -208,6 +209,7 @@
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
       <caption xml:lang="pl">Nagrywanie w KRecorderze</caption>
       <caption xml:lang="pt-BR">Gravando com o KRecorder</caption>
+      <caption xml:lang="ro">Înregistrarea cu KRecorder</caption>
       <caption xml:lang="ru">Запись с помощью KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यनेन सह रिकार्डिङ्ग् करणम्</caption>
       <caption xml:lang="sl">Snemanje s KRecorderjem</caption>
@@ -242,6 +244,7 @@
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
       <caption xml:lang="pl">Posłuchaj nagrań z KRecorder</caption>
       <caption xml:lang="pt-BR">Ouvindo as gravações com o KRecorder</caption>
+      <caption xml:lang="ro">Ascultați înregistrările cu KRecorder</caption>
       <caption xml:lang="ru">Прослушивание записей с помощью KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यनेन सह रिकार्डिङ्ग् शृणुत</caption>
       <caption xml:lang="sl">Poslušanje posnetkov s KRekorderjem</caption>
@@ -276,6 +279,7 @@
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
       <caption xml:lang="pl">Ustawienia KRecordera</caption>
       <caption xml:lang="pt-BR">Configurações do KRecorder</caption>
+      <caption xml:lang="ro">Configurările KRecorder</caption>
       <caption xml:lang="ru">Параметры настройки KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यस्य सेटिंग्स्</caption>
       <caption xml:lang="sl">Nastavitve KRecorderja</caption>
