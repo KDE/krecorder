@@ -2,7 +2,7 @@
     "id": "org.kde.krecorder",
     "branch": "master",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "krecorder",
     "tags": ["nightly"],
@@ -17,12 +17,6 @@
         "--filesystem=home"
     ],
     "modules": [
-        {
-            "name": "kirigamiaddons",
-            "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/kirigami-addons.git", "branch": "master" } ]
-        },
         {
             "name": "krecorder",
             "buildsystem": "cmake-ninja",
