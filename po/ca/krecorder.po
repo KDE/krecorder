@@ -293,39 +293,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgid "Save"
-#~ msgstr "Desa"
-
-#~ msgid "Discard"
-#~ msgstr "Descarta"
-
-#~ msgid "Stop Recording"
-#~ msgstr "Atura l'enregistrament"
-
-#~ msgid "Audio Format"
-#~ msgstr "Format de l'àudio"
-
-#~ msgctxt "Ogg Vorbis file format"
-#~ msgid "Ogg Vorbis"
-#~ msgstr "Ogg Vorbis"
-
-#~ msgctxt "Ogg Opus file format"
-#~ msgid "Ogg Opus"
-#~ msgstr "Ogg Opus"
-
-#~ msgctxt "FLAC file format"
-#~ msgid "FLAC"
-#~ msgstr "FLAC"
-
-#~ msgctxt "MP3 file format"
-#~ msgid "MP3"
-#~ msgstr "MP3"
-
-#~ msgctxt "File format not listed"
-#~ msgid "Other"
-#~ msgstr "Altres"
