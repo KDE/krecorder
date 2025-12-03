@@ -74,6 +74,7 @@ ColumnLayout {
 
             function refreshAudioInputs() {
                 currentIndex = 0;
+                inputModel.clear();
                 for (let i = 0; i < mediaDevices.audioInputs.length; i++) {
                     let device = mediaDevices.audioInputs[i];
                     inputModel.append({"name": device.description, "deviceId": device.id});
