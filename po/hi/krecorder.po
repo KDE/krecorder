@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-04 00:47+0000\n"
 "PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -218,57 +218,57 @@ msgstr "के बारे में"
 msgid "Audio Input"
 msgstr "श्रव्य इनपुट"
 
-#: contents/ui/settings/SettingsComponent.qml:125
+#: contents/ui/settings/SettingsComponent.qml:126
 #, kde-format
 msgid "Advanced"
 msgstr "विकसित"
 
-#: contents/ui/settings/SettingsComponent.qml:132
+#: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Codec"
 msgstr "ऑडियो कोडेक"
 
-#: contents/ui/settings/SettingsComponent.qml:167
+#: contents/ui/settings/SettingsComponent.qml:168
 #, kde-format
 msgid "Container Format"
 msgstr "कंटेनर प्रारूप"
 
-#: contents/ui/settings/SettingsComponent.qml:202
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
 msgstr "ऑडियो गुणवत्ता"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Lowest"
 msgstr "निम्नतम"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Low"
 msgstr "कम"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Medium"
 msgstr "मध्यम"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "High"
 msgstr "उच्च"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Highest"
 msgstr "उच्चतम"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "उच्च ऑडियो गुणवत्ता से फ़ाइल का आकार भी बढ़ जाता है।"
 
-#: contents/ui/settings/SettingsComponent.qml:229
+#: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."

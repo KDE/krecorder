@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-04 00:47+0000\n"
 "PO-Revision-Date: 2024-01-27 19:02+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -221,57 +221,57 @@ msgstr "О программе"
 msgid "Audio Input"
 msgstr "Звуковой вход"
 
-#: contents/ui/settings/SettingsComponent.qml:125
+#: contents/ui/settings/SettingsComponent.qml:126
 #, kde-format
 msgid "Advanced"
 msgstr "Расширенные"
 
-#: contents/ui/settings/SettingsComponent.qml:132
+#: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Codec"
 msgstr "Аудиокодек"
 
-#: contents/ui/settings/SettingsComponent.qml:167
+#: contents/ui/settings/SettingsComponent.qml:168
 #, kde-format
 msgid "Container Format"
 msgstr "Формат контейнера"
 
-#: contents/ui/settings/SettingsComponent.qml:202
+#: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
 msgstr "Качество звука:"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Lowest"
 msgstr "Худшее"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Low"
 msgstr "Низкое"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Medium"
 msgstr "Среднее"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "High"
 msgstr "Высокое"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Highest"
 msgstr "Лучшее"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Более высокое качество звука также увеличивает и размер файла."
 
-#: contents/ui/settings/SettingsComponent.qml:229
+#: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
