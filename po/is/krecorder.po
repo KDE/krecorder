@@ -1,0 +1,291 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+#
+# SPDX-FileCopyrightText: 2025 Sveinn í Felli <sv1@fellsnet.is>
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-12-04 02:41+0000\n"
+"PO-Revision-Date: 2025-12-06 12:55+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sveinn í Felli"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sv1@fellsnet.is"
+
+#: audiorecorder.cpp:187
+#, kde-format
+msgid "Default file format"
+msgstr "Sjálfgefið skráasnið"
+
+#: audiorecorder.cpp:201
+#, kde-format
+msgid "Default audio codec"
+msgstr "Sjálfgefin hljóðkóðun"
+
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
+#, kde-format
+msgid "Settings"
+msgstr "Stillingar"
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Play a recording, or record a new one"
+msgstr "Spilaðu upptöku eða taktu upp nýja"
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Record a new recording"
+msgstr "Taka upp nýja hljóðupptöku"
+
+#: contents/ui/main.qml:24
+#, kde-format
+msgid "Recorder"
+msgstr "Upptökutæki"
+
+#: contents/ui/PlayerPage.qml:20
+#, kde-format
+msgid "Player"
+msgstr "Spilari"
+
+#: contents/ui/PlayerPage.qml:51
+#, kde-format
+msgid "Recorded on %1"
+msgstr "Tekið upp þann %1"
+
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Pause"
+msgstr "Í bið"
+
+#: contents/ui/PlayerPage.qml:77
+#, kde-format
+msgid "Play"
+msgstr "Spila"
+
+#: contents/ui/PlayerPage.qml:87
+#, kde-format
+msgid "Stop"
+msgstr "Stöðva"
+
+#: contents/ui/RecordingListDelegate.qml:75
+#: contents/ui/RecordingListPage.qml:163
+#, kde-format
+msgid "Export to location"
+msgstr "Flytja út á staðsetningu"
+
+#: contents/ui/RecordingListDelegate.qml:83
+#, kde-format
+msgid "Rename"
+msgstr "Endurnefna"
+
+#: contents/ui/RecordingListDelegate.qml:91
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Eyða"
+
+#: contents/ui/RecordingListPage.qml:24
+#, kde-format
+msgid "Recordings"
+msgstr "Upptökur"
+
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#, kde-format
+msgid "Edit"
+msgstr "Breyta"
+
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Taka upp"
+
+#: contents/ui/RecordingListPage.qml:95
+#, kde-format
+msgid "No recordings"
+msgstr "Engar upptökur"
+
+#: contents/ui/RecordingListPage.qml:131
+#, kde-format
+msgid "Select a location to save recording %1"
+msgstr "Veldu staðsetningu til að vista upptökuna %1"
+
+#: contents/ui/RecordingListPage.qml:141
+#, kde-format
+msgid "Saved recording to %1"
+msgstr "Upptaka var vistuð í %1"
+
+#: contents/ui/RecordingListPage.qml:207
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Eyða"
+
+#: contents/ui/RecordingListPage.qml:211
+#, kde-format
+msgid "Delete %1"
+msgstr "Eyða %1"
+
+#: contents/ui/RecordingListPage.qml:224
+#, kde-format
+msgid ""
+"Are you sure you want to delete the recording %1?<br/>It will be "
+"<b>permanently lost</b> forever!"
+msgstr ""
+"Ertu viss um að þú viljir eyða upptökunni %1?<br/>Hún mun þá <b>tapast "
+"endanlega</b> að eilífu!"
+
+#: contents/ui/RecordingListPage.qml:233
+#, kde-format
+msgid "Rename %1"
+msgstr "Endurnefna %1"
+
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#, kde-format
+msgid "Name:"
+msgstr "Heiti:"
+
+#: contents/ui/RecordingListPage.qml:250
+#, kde-format
+msgid "Location:"
+msgstr "Staðsetning:"
+
+#: contents/ui/RecordPage.qml:22
+#, kde-format
+msgid "Record Audio"
+msgstr "Taka upp hljóð"
+
+#: contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Continue"
+msgstr "Halda áfram"
+
+#: contents/ui/RecordPage.qml:148
+#, kde-format
+msgid "Paused"
+msgstr "Í bið"
+
+#: contents/ui/RecordPage.qml:183
+#, kde-format
+msgid "Save Recording"
+msgstr "Vista upptöku"
+
+#: contents/ui/RecordPage.qml:223
+#, kde-format
+msgid "Save recording"
+msgstr "Vista upptöku"
+
+#: contents/ui/RecordPage.qml:242
+#, kde-format
+msgid "Name (optional)"
+msgstr "Nafn (valfrjálst)"
+
+#: contents/ui/RecordPage.qml:246
+#, kde-format
+msgid "Storage Folder:"
+msgstr "Geymslumappa"
+
+#: contents/ui/settings/SettingsComponent.qml:34
+#, kde-format
+msgid "General"
+msgstr "Almennt"
+
+#: contents/ui/settings/SettingsComponent.qml:40
+#, kde-format
+msgid "About"
+msgstr "Um hugbúnaðinn"
+
+#: contents/ui/settings/SettingsComponent.qml:58
+#, kde-format
+msgid "Audio Input"
+msgstr "Hljóðinntak"
+
+#: contents/ui/settings/SettingsComponent.qml:126
+#, kde-format
+msgid "Advanced"
+msgstr "Nánar"
+
+#: contents/ui/settings/SettingsComponent.qml:133
+#, kde-format
+msgid "Audio Codec"
+msgstr "Hljóðkóðunarlykill"
+
+#: contents/ui/settings/SettingsComponent.qml:168
+#, kde-format
+msgid "Container Format"
+msgstr "Snið margmiðlunargáms"
+
+#: contents/ui/settings/SettingsComponent.qml:203
+#, kde-format
+msgid "Audio Quality"
+msgstr "Hljóðgæði"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Lowest"
+msgstr "Minnstu"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Low"
+msgstr "Lítil"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Medium"
+msgstr "Miðlungs"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "High"
+msgstr "Mikil"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Highest"
+msgstr "Mestu"
+
+#: contents/ui/settings/SettingsComponent.qml:205
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr "Meiri hljóðgæði auka líka stærð skráa."
+
+#: contents/ui/settings/SettingsComponent.qml:230
+#, kde-format
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
+"Sumar samsetningar kóðunarlykla og sniða gagnagáma gætu verið ósamhæfanleg."
+
+#: main.cpp:50
+#, kde-format
+msgid "© 2020-2024 KDE Community"
+msgstr "© 2020-2024 KDE-samfélagið"
+
+#: main.cpp:51
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:52
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
