@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the krecorder package.
 # SPDX-FileCopyrightText: 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n.daphipz@fastmail.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 02:41+0000\n"
-"PO-Revision-Date: 2023-04-26 20:41+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2025-12-21 12:21+0100\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.07.70\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -28,16 +29,14 @@ msgid "Your emails"
 msgstr "kde-i18n-de@kde.org"
 
 #: audiorecorder.cpp:187
-#, fuzzy, kde-format
-#| msgid "WAV file format"
+#, kde-format
 msgid "Default file format"
-msgstr "WAV-Dateiformat"
+msgstr "Standard-Dateiformat"
 
 #: audiorecorder.cpp:201
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Default audio codec"
-msgstr "Audio-Codec"
+msgstr "Standard-Audio-Codec"
 
 #: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
@@ -49,12 +48,9 @@ msgid "Settings"
 msgstr "Einstellungen"
 
 #: contents/ui/DefaultPage.qml:30
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
-msgstr ""
-"Klicken Sie zum Abspielen auf eine Aufnahme oder starten Sie einen neue "
-"Aufnahme"
+msgstr "Eine Aufnahme abspielen oder eine neue starten"
 
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
@@ -67,8 +63,7 @@ msgid "Recorder"
 msgstr "Recorder"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
 msgstr "Wiedergabe"
 
@@ -96,7 +91,7 @@ msgstr "Anhalten"
 #: contents/ui/RecordingListPage.qml:163
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Nach Ort exportieren"
 
 #: contents/ui/RecordingListDelegate.qml:83
 #, kde-format
@@ -122,7 +117,7 @@ msgstr "Bearbeiten"
 #: contents/ui/RecordingListPage.qml:53
 #, kde-format
 msgid "Record"
-msgstr "Aufnahme"
+msgstr "Aufnehmen"
 
 #: contents/ui/RecordingListPage.qml:95
 #, kde-format
@@ -132,13 +127,12 @@ msgstr "Keine Aufnahmen"
 #: contents/ui/RecordingListPage.qml:131
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Wählen Sie einen Speicherort für die Aufnhame %1 aus"
 
 #: contents/ui/RecordingListPage.qml:141
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Aufnahme speichern"
+msgstr "Aufnahme unter %1 gespeichert"
 
 #: contents/ui/RecordingListPage.qml:207
 #, kde-format
@@ -178,7 +172,7 @@ msgstr "Ort:"
 #: contents/ui/RecordPage.qml:22
 #, kde-format
 msgid "Record Audio"
-msgstr "Audio-Aufnahme"
+msgstr "Audio aufnehmen"
 
 #: contents/ui/RecordPage.qml:124
 #, kde-format
@@ -186,14 +180,12 @@ msgid "Continue"
 msgstr "Fortsetzen"
 
 #: contents/ui/RecordPage.qml:148
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgid "Paused"
-msgstr "Pause"
+msgstr "Pausiert"
 
 #: contents/ui/RecordPage.qml:183
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
 msgstr "Aufnahme speichern"
 
@@ -210,7 +202,7 @@ msgstr "Name (optional)"
 #: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Speicherordner:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
@@ -245,7 +237,7 @@ msgstr "Container-Format"
 #: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
-msgstr "Audio-Qualität"
+msgstr "Audioqualität"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
@@ -275,13 +267,15 @@ msgstr "Höchste"
 #: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Eine höhere Audioqualität erhöht auch die Dateigröße."
 
 #: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Einige Kombinationen von Codecs und Container-Formaten könnten inkompatibel "
+"miteinander sein."
 
 #: main.cpp:50
 #, kde-format
