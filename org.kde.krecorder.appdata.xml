@@ -159,6 +159,7 @@
       <caption xml:lang="ca">Resum d'enregistraments</caption>
       <caption xml:lang="ca-valencia">Resum de gravacions</caption>
       <caption xml:lang="cs">Přehled všech nahrávek</caption>
+      <caption xml:lang="de">Übersicht der Aufnahmen</caption>
       <caption xml:lang="en-GB">Overview of recordings</caption>
       <caption xml:lang="eo">Superrigardo de la registraĵoj</caption>
       <caption xml:lang="es">Resumen de grabaciones</caption>
@@ -195,6 +196,7 @@
       <caption xml:lang="ca">Enregistrament amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Gravació amb el KRecorder</caption>
       <caption xml:lang="cs">Nahrávání pomocí KRecorder</caption>
+      <caption xml:lang="de">Mit KRecorder aufnhehmen</caption>
       <caption xml:lang="en-GB">Recording with KRecorder</caption>
       <caption xml:lang="eo">Registrante kun KRecorder</caption>
       <caption xml:lang="es">Grabando con KRecorder</caption>
@@ -231,6 +233,7 @@
       <caption xml:lang="ca">Escolta d'enregistraments amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Escolta de gravacions amb el KRecorder</caption>
       <caption xml:lang="cs">Poslouchejte nahrávky v aplikaci KRecorder</caption>
+      <caption xml:lang="de">Mit KRecoder Aufnahmen anhören</caption>
       <caption xml:lang="en-GB">Listen to recordings with KRecorder</caption>
       <caption xml:lang="eo">Aŭskultante registraĵojn per KRecorder</caption>
       <caption xml:lang="es">Escuchar grabaciones con KRecorder</caption>
@@ -267,6 +270,7 @@
       <caption xml:lang="ca">Configuració del KRecorder</caption>
       <caption xml:lang="ca-valencia">Configureu el KRecorder</caption>
       <caption xml:lang="cs">Nastavení KRecorder</caption>
+      <caption xml:lang="de">Einstellungen von KRecorder</caption>
       <caption xml:lang="en-GB">Settings of KRecorder</caption>
       <caption xml:lang="eo">Agordoj de KRecorder</caption>
       <caption xml:lang="es">Preferencias de KRecorder</caption>
