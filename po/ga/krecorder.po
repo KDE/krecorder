@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-12-04 00:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: audiorecorder.cpp:187
+#, kde-format
+msgid "Default file format"
+msgstr ""
+
+#: audiorecorder.cpp:201
+#, kde-format
+msgid "Default audio codec"
+msgstr ""
+
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
+#, kde-format
+msgid "Settings"
+msgstr ""
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Play a recording, or record a new one"
+msgstr ""
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Record a new recording"
+msgstr ""
+
+#: contents/ui/main.qml:24
+#, kde-format
+msgid "Recorder"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:20
+#, kde-format
+msgid "Player"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:51
+#, kde-format
+msgid "Recorded on %1"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Pause"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:77
+#, kde-format
+msgid "Play"
+msgstr ""
+
+#: contents/ui/PlayerPage.qml:87
+#, kde-format
+msgid "Stop"
+msgstr ""
+
+#: contents/ui/RecordingListDelegate.qml:75
+#: contents/ui/RecordingListPage.qml:163
+#, kde-format
+msgid "Export to location"
+msgstr ""
+
+#: contents/ui/RecordingListDelegate.qml:83
+#, kde-format
+msgid "Rename"
+msgstr ""
+
+#: contents/ui/RecordingListDelegate.qml:91
+#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:24
+#, kde-format
+msgid "Recordings"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:95
+#, kde-format
+msgid "No recordings"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:131
+#, kde-format
+msgid "Select a location to save recording %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:141
+#, kde-format
+msgid "Saved recording to %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:207
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:211
+#, kde-format
+msgid "Delete %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:224
+#, kde-format
+msgid ""
+"Are you sure you want to delete the recording %1?<br/>It will be "
+"<b>permanently lost</b> forever!"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:233
+#, kde-format
+msgid "Rename %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#, kde-format
+msgid "Name:"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:250
+#, kde-format
+msgid "Location:"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:22
+#, kde-format
+msgid "Record Audio"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:148
+#, kde-format
+msgid "Paused"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:183
+#, kde-format
+msgid "Save Recording"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:223
+#, kde-format
+msgid "Save recording"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:242
+#, kde-format
+msgid "Name (optional)"
+msgstr ""
+
+#: contents/ui/RecordPage.qml:246
+#, kde-format
+msgid "Storage Folder:"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:34
+#, kde-format
+msgid "General"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:40
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:58
+#, kde-format
+msgid "Audio Input"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:126
+#, kde-format
+msgid "Advanced"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:133
+#, kde-format
+msgid "Audio Codec"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:168
+#, kde-format
+msgid "Container Format"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:203
+#, kde-format
+msgid "Audio Quality"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Lowest"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Low"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Medium"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "High"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Highest"
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:205
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr ""
+
+#: contents/ui/settings/SettingsComponent.qml:230
+#, kde-format
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
+
+#: main.cpp:50
+#, kde-format
+msgid "© 2020-2024 KDE Community"
+msgstr ""
+
+#: main.cpp:51
+#, kde-format
+msgid "Devin Lin"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr ""
