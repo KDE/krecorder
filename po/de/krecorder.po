@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the krecorder package.
 # SPDX-FileCopyrightText: 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
-# SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2025, 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 00:47+0000\n"
-"PO-Revision-Date: 2025-12-21 12:21+0100\n"
+"PO-Revision-Date: 2026-02-05 16:10+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -50,18 +50,19 @@ msgstr "Einstellungen"
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr "Eine Aufnahme abspielen oder eine neue starten"
+msgstr "Eine Aufnahme wiedergeben oder eine neue starten"
 
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
-msgstr "Neue Aufnahme aufnehmen"
+msgstr "Neue Aufnahme erstellen"
 
 #: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "Recorder"
 
+# Titel einer "Seite" der Anwendung mit Köpfen zur Steuerung der Wiedergabe
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
@@ -152,7 +153,7 @@ msgid ""
 "<b>permanently lost</b> forever!"
 msgstr ""
 "Möchten Sie die Aufnahme %1 wirklich löschen?<br/>Sie kann <b>nicht</b> "
-"wiederhergestellt werden."
+"wiederhergestellt werden!"
 
 #: contents/ui/RecordingListPage.qml:233
 #, kde-format
