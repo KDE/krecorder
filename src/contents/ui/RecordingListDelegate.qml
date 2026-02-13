@@ -21,7 +21,6 @@ ListDelegate {
     property Recording recording
     property bool editMode: false
 
-    signal contextMenuRequested()
     signal editRequested()
     signal deleteRequested()
     signal exportRequested()
@@ -32,7 +31,6 @@ ListDelegate {
     bottomPadding: Kirigami.Units.largeSpacing
 
     onClicked: applicationWindow().switchToRecording(recording)
-    onRightClicked: root.contextMenuRequested()
 
     contentItem: RowLayout {
         spacing: 0

@@ -109,15 +109,14 @@ Kirigami.ScrollablePage {
             editMode: root.editMode
             showSeparator: index != listView.count - 1
 
+            property int index: model.index
+
             onLongPressed: root.editMode = !root.editMode
             onEditRequested: root.editRecordingDialog(model.recording)
             onDeleteRequested: root.removeRecordingDialog(model.recording, index)
-            onContextMenuRequested: {
-                contextMenu.recording = model.recording;
-                contextMenu.index = index;
-                contextMenu.popup()
-            }
             onExportRequested: saveFileDialog.openForRecording(model.recording)
+
+            Controls.ContextMenu.menu: contextMenu
         }
 
         FileDialog {
@@ -142,30 +141,18 @@ Kirigami.ScrollablePage {
             }
         }
 
-        Components.ConvergentContextMenu {
+        Controls.Menu {
             id: contextMenu
 
-            property Recording recording
-            property int index
+            property Recording recording: parent?.recording ?? null
+            property int index: parent?.index ?? 0
 
-            parent: root.Controls.Overlay.overlay
-
-            headerContentItem: RowLayout {
-                spacing: Kirigami.Units.smallSpacing
-
-                Kirigami.Heading {
-                    level: 2
-                    text: contextMenu.recording?.fileName ?? ''
-                }
-            }
-
-            Controls.Action {
+            Controls.MenuItem {
                 text: i18n("Export to location")
                 icon.name: "document-save"
                 onTriggered: saveFileDialog.openForRecording(contextMenu.recording)
             }
-
-            Controls.Action {
+            Controls.MenuItem {
                 text: i18n("Edit")
                 icon.name: "edit-entry"
                 onTriggered: {
@@ -173,8 +160,7 @@ Kirigami.ScrollablePage {
                     openDialogTimer.restart();
                 }
             }
-
-            Controls.Action {
+            Controls.MenuItem {
                 text: i18n("Delete")
                 icon.name: "delete"
                 onTriggered: {

@@ -17,7 +17,7 @@ project(krecorder VERSION ${RELEASE_SERVICE_VERSION})
 # QT_MAJOR_VERSION is defined automatically by QtVersionOption (since ECM 5.82)
 # which is included by KDEInstallDirs;
 # This variables are updated below if Qt6 is found by ECM
-set(QT_MIN_VERSION "6.5.0")
+set(QT_MIN_VERSION "6.9.0")
 set(KF_MIN_VERSION "6.12.0")
 set(KF_MAJOR_VERSION "6")
 
@@ -52,12 +52,12 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS
-    Core 
-    Gui 
-    Widgets 
-    Qml 
-    QuickControls2 
-    Multimedia 
+    Core
+    Gui
+    Widgets
+    Qml
+    QuickControls2
+    Multimedia
     Svg
 )
 
