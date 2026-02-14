@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:47+0000\n"
+"POT-Creation-Date: 2026-02-14 00:47+0000\n"
 "PO-Revision-Date: 2025-11-08 09:20+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
@@ -88,19 +88,19 @@ msgstr "Odtwórz"
 msgid "Stop"
 msgstr "Stop"
 
-#: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:163
+#: contents/ui/RecordingListDelegate.qml:73
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Wyeksportuj do miejsca"
 
-#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
 msgstr "Zmień nazwę"
 
-#: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListDelegate.qml:89
+#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Usuń"
@@ -110,7 +110,7 @@ msgstr "Usuń"
 msgid "Recordings"
 msgstr "Nagrania"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgid "Edit"
 msgstr "Edytuj"
@@ -125,45 +125,45 @@ msgstr "Nagraj"
 msgid "No recordings"
 msgstr "Brak nagrań"
 
-#: contents/ui/RecordingListPage.qml:131
+#: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Wskaż miejsce do zapisania nagrania %1"
 
-#: contents/ui/RecordingListPage.qml:141
+#: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Zapisano nagranie do %1"
 
-#: contents/ui/RecordingListPage.qml:207
+#: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Usuń"
 
-#: contents/ui/RecordingListPage.qml:211
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Delete %1"
 msgstr "Usuń %1"
 
-#: contents/ui/RecordingListPage.qml:224
+#: contents/ui/RecordingListPage.qml:210
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "Czy na pewno usunąć nagranie %1?<br/>Zostanie <b>trwale</b> utracone!"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
 msgstr "Zmień nazwę %1"
 
-#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Nazwa:"
 
-#: contents/ui/RecordingListPage.qml:250
+#: contents/ui/RecordingListPage.qml:236
 #, kde-format
 msgid "Location:"
 msgstr "Położenie:"

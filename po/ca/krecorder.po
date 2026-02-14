@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:47+0000\n"
+"POT-Creation-Date: 2026-02-14 00:47+0000\n"
 "PO-Revision-Date: 2025-09-11 09:59+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -89,19 +89,19 @@ msgstr "Reprodueix"
 msgid "Stop"
 msgstr "Atura"
 
-#: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:163
+#: contents/ui/RecordingListDelegate.qml:73
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Exporta a una ubicació"
 
-#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
 msgstr "Reanomena"
 
-#: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListDelegate.qml:89
+#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "Suprimeix"
@@ -111,7 +111,7 @@ msgstr "Suprimeix"
 msgid "Recordings"
 msgstr "Enregistraments"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgid "Edit"
 msgstr "Edita"
@@ -126,28 +126,28 @@ msgstr "Enregistra"
 msgid "No recordings"
 msgstr "Sense enregistraments"
 
-#: contents/ui/RecordingListPage.qml:131
+#: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "Seleccioneu una ubicació a on desar l'enregistrament %1"
 
-#: contents/ui/RecordingListPage.qml:141
+#: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Enregistrament desat a %1"
 
-#: contents/ui/RecordingListPage.qml:207
+#: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "Suprimeix"
 
-#: contents/ui/RecordingListPage.qml:211
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Delete %1"
 msgstr "Suprimeix %1"
 
-#: contents/ui/RecordingListPage.qml:224
+#: contents/ui/RecordingListPage.qml:210
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -156,17 +156,17 @@ msgstr ""
 "Segur que voleu suprimir l'enregistrament %1? <br/>Es <b>perdrà</b> per "
 "sempre!"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
 msgstr "Reanomena %1"
 
-#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "Nom:"
 
-#: contents/ui/RecordingListPage.qml:250
+#: contents/ui/RecordingListPage.qml:236
 #, kde-format
 msgid "Location:"
 msgstr "Ubicació:"

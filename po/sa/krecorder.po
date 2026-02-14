@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:47+0000\n"
+"POT-Creation-Date: 2026-02-14 00:47+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -88,19 +88,19 @@ msgstr "क्रीडतु"
 msgid "Stop"
 msgstr "विरमतु"
 
-#: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:163
+#: contents/ui/RecordingListDelegate.qml:73
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "स्थानं प्रति निर्यातं कुर्वन्तु"
 
-#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
 msgstr "पुनर्नाम"
 
-#: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListDelegate.qml:89
+#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "लुप्"
@@ -110,7 +110,7 @@ msgstr "लुप्"
 msgid "Recordings"
 msgstr "रिकार्डिङ्ग्स्"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgid "Edit"
 msgstr "सम्पादन"
@@ -125,28 +125,28 @@ msgstr "अभिलेख"
 msgid "No recordings"
 msgstr "न रिकार्डिङ्ग्स्"
 
-#: contents/ui/RecordingListPage.qml:131
+#: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "रिकार्डिङ्ग् %1 रक्षितुं स्थानं चिनोतु"
 
-#: contents/ui/RecordingListPage.qml:141
+#: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "%1 इत्यत्र रिकार्डिङ्ग् रक्षितम्"
 
-#: contents/ui/RecordingListPage.qml:207
+#: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "लुप्"
 
-#: contents/ui/RecordingListPage.qml:211
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Delete %1"
 msgstr "%1 विलोपयन्तु"
 
-#: contents/ui/RecordingListPage.qml:224
+#: contents/ui/RecordingListPage.qml:210
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
@@ -155,17 +155,17 @@ msgstr ""
 "किं भवान् निश्चिन्तः अस्ति यत् भवान् %1 इति अभिलेखनं विलोपयितुम् इच्छति?<br/> "
 "<b>स्थायिरूपेण सदा नष्टं</b> भविष्यति!"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
 msgstr "%1 इत्यस्य नाम परिवर्तनं कुर्वन्तु"
 
-#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "नामः:"
 
-#: contents/ui/RecordingListPage.qml:250
+#: contents/ui/RecordingListPage.qml:236
 #, kde-format
 msgid "Location:"
 msgstr "स्थानीय:"

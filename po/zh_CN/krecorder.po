@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:47+0000\n"
+"POT-Creation-Date: 2026-02-14 00:47+0000\n"
 "PO-Revision-Date: 2024-04-23 19:24\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -86,19 +86,19 @@ msgstr "播放"
 msgid "Stop"
 msgstr "停止"
 
-#: contents/ui/RecordingListDelegate.qml:75
-#: contents/ui/RecordingListPage.qml:163
+#: contents/ui/RecordingListDelegate.qml:73
+#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "导出到位置"
 
-#: contents/ui/RecordingListDelegate.qml:83
+#: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
 msgstr "重命名"
 
-#: contents/ui/RecordingListDelegate.qml:91
-#: contents/ui/RecordingListPage.qml:178 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListDelegate.qml:89
+#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
 msgstr "删除"
@@ -108,7 +108,7 @@ msgstr "删除"
 msgid "Recordings"
 msgstr "录音"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:169
+#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgid "Edit"
 msgstr "编辑"
@@ -123,45 +123,45 @@ msgstr "录音"
 msgid "No recordings"
 msgstr "无录音"
 
-#: contents/ui/RecordingListPage.qml:131
+#: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
 msgstr "选择保存录音 %1 的位置"
 
-#: contents/ui/RecordingListPage.qml:141
+#: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "录音已保存到 %1"
 
-#: contents/ui/RecordingListPage.qml:207
+#: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "删除"
 
-#: contents/ui/RecordingListPage.qml:211
+#: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Delete %1"
 msgstr "删除 %1"
 
-#: contents/ui/RecordingListPage.qml:224
+#: contents/ui/RecordingListPage.qml:210
 #, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
 msgstr "您确定要删除录音 %1 吗？<br/>您将<b>永远失去</b>这段录音！"
 
-#: contents/ui/RecordingListPage.qml:233
+#: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
 msgstr "重命名 %1"
 
-#: contents/ui/RecordingListPage.qml:245 contents/ui/RecordPage.qml:241
+#: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
 msgstr "名称："
 
-#: contents/ui/RecordingListPage.qml:250
+#: contents/ui/RecordingListPage.qml:236
 #, kde-format
 msgid "Location:"
 msgstr "位置："
