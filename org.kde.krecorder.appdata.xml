@@ -345,6 +345,12 @@
       <description>
         <ul>
           <li>User interface improvements and bug-fixes</li>
+          <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors</li>
+          <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
+          <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות</li>
+          <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება</li>
+          <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros</li>
+          <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak</li>
         </ul>
       </description>
     </release>
@@ -353,6 +359,12 @@
       <description>
         <ul>
           <li>User interface improvements and bug-fixes.</li>
+          <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
+          <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
+          <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
+          <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
+          <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
         </ul>
       </description>
     </release>
@@ -361,14 +373,32 @@
       <description>
         <ul>
           <li>User interface improvements and bug-fixes.</li>
+          <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
+          <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
+          <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
+          <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
+          <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
         </ul>
       </description>
     </release>
     <release version="21.12" date="2021-12-07">
       <description>
         <p>Changes:</p>
+        <p xml:lang="ca">Canvis:</p>
+        <p xml:lang="es">Cambios:</p>
+        <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="sl">Spremembe:</p>
         <ul>
           <li>Fix audio record permissions on android</li>
+          <li xml:lang="ca">Corregeix els permisos d'enregistrament d'àudio a l'Android</li>
+          <li xml:lang="es">Se han corregido los permisos de grabación en Android</li>
+          <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
+          <li xml:lang="ka">გასწორდა ხმის ჩაწერის უფლებები Android-ზე</li>
+          <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
+          <li xml:lang="sl">Popravi dovoljenja za snemanje zvoka v sistemu Android</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
@@ -379,8 +409,19 @@
     <release version="21.07" date="2021-07-20">
       <description>
         <p>Changes:</p>
+        <p xml:lang="ca">Canvis:</p>
+        <p xml:lang="es">Cambios:</p>
+        <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="sl">Spremembe:</p>
         <ul>
           <li>Specify fallback theme to look consistent on non-Plasma environments</li>
+          <li xml:lang="ca">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguin Plasma</li>
+          <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
+          <li xml:lang="ka">გადართვის თემის მითითება ინტერფეისის მუდმივობისთვის არა-Plasma-ის გარემოებში</li>
+          <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
+          <li xml:lang="sl">Določite nadomestno temo, ki bo videti dosledno v okoljih, ki niso Plasma</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/07/20/plasma-mobile-gear-21-07/</url>
@@ -388,10 +429,33 @@
     <release version="21.06" date="2021-06-10">
       <description>
         <p>Changes:</p>
+        <p xml:lang="ca">Canvis:</p>
+        <p xml:lang="es">Cambios:</p>
+        <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="sl">Spremembe:</p>
         <ul>
           <li>Use consistent bar heights for recording and playback views</li>
+          <li xml:lang="ca">Usa altures de barres coherents a les vistes d'enregistrament i reproducció</li>
+          <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción</li>
+          <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
+          <li xml:lang="ka">მუდმივი პანელის სიმაღლეების გამოყენება ჩაწერისა და დაკვრის ხედებისთვის</li>
+          <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
+          <li xml:lang="sl">Uporabi konsistentne višine stolpcev za poglede snemanja in predvajanja</li>
           <li>Fixed no audio causing bars to not be created at all</li>
+          <li xml:lang="ca">Corregeix que no hi hagi àudio fent que les barres no es creïn en absolut</li>
+          <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
+          <li xml:lang="ka">გასწორდა შეცდომა, რომ ხმის გარეშე პანელები საერთოდ არ იქმნებოდა</li>
+          <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
+          <li xml:lang="sl">Odpravljena napaka, zaradi katere se stolpci zvoka sploh niso ustvarjali</li>
           <li>Enable qml debugging when compiled in debug mode</li>
+          <li xml:lang="ca">Activa la depuració del QML quan es compila amb el mode de depuració</li>
+          <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración</li>
+          <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
+          <li xml:lang="ka">ჩაირთო QML-ის გამართვა გამართვის რეჟიმში აგებისას</li>
+          <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
+          <li xml:lang="sl">Omogoči odpravljanje napak v qml pri prevajanju v načinu odpravljanja napak</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
