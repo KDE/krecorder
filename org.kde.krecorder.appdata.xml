@@ -351,7 +351,9 @@
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება</li>
+          <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros</li>
+          <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад</li>
@@ -370,7 +372,9 @@
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
+          <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
@@ -389,7 +393,9 @@
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
+          <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
@@ -406,7 +412,9 @@
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -419,7 +427,9 @@
           <li xml:lang="es">Se han corregido los permisos de grabación en Android</li>
           <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
           <li xml:lang="ka">გასწორდა ხმის ჩაწერის უფლებები Android-ზე</li>
+          <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
+          <li xml:lang="ro">Repară permisiunile de înregistrare a sunetului pe Android</li>
           <li xml:lang="ru">Исправлены права на запись звука в Android;</li>
           <li xml:lang="sl">Popravi dovoljenja za snemanje zvoka v sistemu Android</li>
           <li xml:lang="uk">Виправлено права доступу до записів звуку у android</li>
@@ -440,7 +450,9 @@
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -452,7 +464,9 @@
           <li xml:lang="ca-valencia">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguen Plasma</li>
           <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
           <li xml:lang="ka">გადართვის თემის მითითება ინტერფეისის მუდმივობისთვის არა-Plasma-ის გარემოებში</li>
+          <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
+          <li xml:lang="ro">Specificați tematica de rezervă pentru un aspect consistent în alte medii decât Plasma</li>
           <li xml:lang="ru">В рабочих средах, отличных от Plasma, используется резервное оформление</li>
           <li xml:lang="sl">Določite nadomestno temo, ki bo videti dosledno v okoljih, ki niso Plasma</li>
           <li xml:lang="uk">Визначено резервну тему для сумісного вигляду у середовищах поза Плазмою</li>
@@ -470,7 +484,9 @@
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
+        <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -483,7 +499,9 @@
           <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción</li>
           <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
           <li xml:lang="ka">მუდმივი პანელის სიმაღლეების გამოყენება ჩაწერისა და დაკვრის ხედებისთვის</li>
+          <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
+          <li xml:lang="ro">Folosește înălțimi consistente ale barelor pentru vizualizările de înregistrare și redare</li>
           <li xml:lang="ru">используется одинаковая высота полос для представлений записи и воспроизведения;</li>
           <li xml:lang="sl">Uporabi konsistentne višine stolpcev za poglede snemanja in predvajanja</li>
           <li xml:lang="uk">Використано сумісні висоти панелей для панелей запису і відтворення</li>
@@ -494,7 +512,9 @@
           <li xml:lang="ca-valencia">Corregix que no hi haja àudio fent que les barres no es creen en absolut</li>
           <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
           <li xml:lang="ka">გასწორდა შეცდომა, რომ ხმის გარეშე პანელები საერთოდ არ იქმნებოდა</li>
+          <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
+          <li xml:lang="ro">Reparat defectul că barele nu erau create deloc în lipsa sunetului</li>
           <li xml:lang="ru">Исправлена проблема, при которой отсутствие звука приводило к полному отсутствию полос;</li>
           <li xml:lang="sl">Odpravljena napaka, zaradi katere se stolpci zvoka sploh niso ustvarjali</li>
           <li xml:lang="uk">Виправлено помилку, пов'язану із тим, що без звукових даних програма взагалі не створювала панелей рівнів</li>
@@ -506,7 +526,9 @@
           <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración</li>
           <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
           <li xml:lang="ka">ჩაირთო QML-ის გამართვა გამართვის რეჟიმში აგებისას</li>
+          <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
+          <li xml:lang="ro">Activează depanarea QML la compilarea în regim de depanare</li>
           <li xml:lang="ru">Добавлена возможность отладки QML в режиме отладки</li>
           <li xml:lang="sl">Omogoči odpravljanje napak v qml pri prevajanju v načinu odpravljanja napak</li>
           <li xml:lang="uk">Уможливлено діагностику qml, якщо програму зібрано у діагностичному режимі</li>
