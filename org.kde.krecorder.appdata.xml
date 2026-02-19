@@ -424,7 +424,7 @@
           <li xml:lang="ar">أُصلحت أذونات التسجيل الصوتي على أندرويد</li>
           <li xml:lang="ca">Corregeix els permisos d'enregistrament d'àudio a l'Android</li>
           <li xml:lang="ca-valencia">Corregix els permisos de gravació d'àudio a Android</li>
-          <li xml:lang="es">Se han corregido los permisos de grabación en Android</li>
+          <li xml:lang="es">Se han corregido los permisos de grabación en Android.</li>
           <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
           <li xml:lang="ka">გასწორდა ხმის ჩაწერის უფლებები Android-ზე</li>
           <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
@@ -462,6 +462,7 @@
           <li xml:lang="ar">حُددت سمة احتياطية لتبدو متسقة في بيئات غير بلازما</li>
           <li xml:lang="ca">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguin Plasma</li>
           <li xml:lang="ca-valencia">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguen Plasma</li>
+          <li xml:lang="es">Especificar el tema de respaldo para que se vea consistente en entornos que no sean Plasma.</li>
           <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
           <li xml:lang="ka">გადართვის თემის მითითება ინტერფეისის მუდმივობისთვის არა-Plasma-ის გარემოებში</li>
           <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
@@ -496,7 +497,7 @@
           <li xml:lang="ar">استُخدمت ارتفاعات أشرطة متسقة لعروض التسجيل والتشغيل</li>
           <li xml:lang="ca">Usa altures de barres coherents a les vistes d'enregistrament i reproducció</li>
           <li xml:lang="ca-valencia">Utilitza altures de barres coherents a les vistes de gravació i reproducció</li>
-          <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción</li>
+          <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción.</li>
           <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
           <li xml:lang="ka">მუდმივი პანელის სიმაღლეების გამოყენება ჩაწერისა და დაკვრის ხედებისთვის</li>
           <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
@@ -510,6 +511,7 @@
           <li xml:lang="ar">أُصلحت مشكلة انعدام الصوت التي تسببت في عدم إنشاء الأشرطة نهائيًا</li>
           <li xml:lang="ca">Corregeix que no hi hagi àudio fent que les barres no es creïn en absolut</li>
           <li xml:lang="ca-valencia">Corregix que no hi haja àudio fent que les barres no es creen en absolut</li>
+          <li xml:lang="es">Se ha solucionado el problema de ausencia de sonido que provocaba que no se crearan barras.</li>
           <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
           <li xml:lang="ka">გასწორდა შეცდომა, რომ ხმის გარეშე პანელები საერთოდ არ იქმნებოდა</li>
           <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
@@ -523,7 +525,7 @@
           <li xml:lang="ar">مُكن تنقيح qml عند التصريف في وضع التنقيح</li>
           <li xml:lang="ca">Activa la depuració del QML quan es compila amb el mode de depuració</li>
           <li xml:lang="ca-valencia">Activa la depuració de QML quan es compila amb el mode de depuració</li>
-          <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración</li>
+          <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración.</li>
           <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
           <li xml:lang="ka">ჩაირთო QML-ის გამართვა გამართვის რეჟიმში აგებისას</li>
           <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
