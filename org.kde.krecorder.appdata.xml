@@ -357,6 +357,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות</li>
+          <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
@@ -376,6 +377,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
+          <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
@@ -395,6 +397,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
+          <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
@@ -412,6 +415,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ru">Изменения:</p>
@@ -425,6 +429,7 @@
           <li xml:lang="ca-valencia">Corregix els permisos de gravació d'àudio a Android</li>
           <li xml:lang="es">Se han corregido los permisos de grabación en Android.</li>
           <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
+          <li xml:lang="ia">Corrige permissiones de registrar audio sur android</li>
           <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
           <li xml:lang="ru">Исправлены права на запись звука в Android;</li>
@@ -446,6 +451,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ru">Изменения:</p>
@@ -459,6 +465,7 @@
           <li xml:lang="ca-valencia">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguen Plasma</li>
           <li xml:lang="es">Especificar el tema de respaldo para que se vea consistente en entornos que no sean Plasma.</li>
           <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
+          <li xml:lang="ia">Specifica thema de reserva per semblar consistente in ambientes non-Plasma</li>
           <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
           <li xml:lang="ru">В рабочих средах, отличных от Plasma, используется резервное оформление</li>
@@ -477,6 +484,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="he">שינויים:</p>
+        <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ru">Изменения:</p>
@@ -490,6 +498,7 @@
           <li xml:lang="ca-valencia">Utilitza altures de barres coherents a les vistes de gravació i reproducció</li>
           <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción.</li>
           <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
+          <li xml:lang="ia">Usa altessa de barras consistente per vistas de registrar e reproducer</li>
           <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
           <li xml:lang="ru">используется одинаковая высота полос для представлений записи и воспроизведения;</li>
@@ -502,6 +511,7 @@
           <li xml:lang="ca-valencia">Corregix que no hi haja àudio fent que les barres no es creen en absolut</li>
           <li xml:lang="es">Se ha solucionado el problema de ausencia de sonido que provocaba que no se crearan barras.</li>
           <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
+          <li xml:lang="ia">Corrigite nulle audio causante que le barras non es create del toto</li>
           <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
           <li xml:lang="ru">Исправлена проблема, при которой отсутствие звука приводило к полному отсутствию полос;</li>
@@ -514,6 +524,7 @@
           <li xml:lang="ca-valencia">Activa la depuració de QML quan es compila amb el mode de depuració</li>
           <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración.</li>
           <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
+          <li xml:lang="ia">Habilita cribrar de qml quando  compilate in modo de cribrar</li>
           <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
           <li xml:lang="ru">Добавлена возможность отладки QML в режиме отладки</li>
