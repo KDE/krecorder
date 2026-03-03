@@ -352,6 +352,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
+          <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות</li>
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas</li>
@@ -365,6 +366,7 @@
           <li xml:lang="tr">User interface improvements and bug-fixes</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复</li>
+          <li xml:lang="zh-TW">使用者介面改善與錯誤修正</li>
         </ul>
       </description>
     </release>
@@ -378,6 +380,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
+          <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
@@ -391,6 +394,7 @@
           <li xml:lang="tr">User interface improvements and bug-fixes.</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复。</li>
+          <li xml:lang="zh-TW">使用者介面改善與錯誤修正。</li>
         </ul>
       </description>
     </release>
@@ -404,6 +408,7 @@
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
+          <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
@@ -417,6 +422,7 @@
           <li xml:lang="tr">User interface improvements and bug-fixes.</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复。</li>
+          <li xml:lang="zh-TW">使用者介面改善與錯誤修正。</li>
         </ul>
       </description>
     </release>
@@ -428,6 +434,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
+        <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ia">Modificationes:</p>
@@ -441,6 +448,7 @@
         <p xml:lang="tr">Changes:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
+        <p xml:lang="zh-TW">變更：</p>
         <ul>
           <li>Fix audio record permissions on android</li>
           <li xml:lang="ar">أُصلحت أذونات التسجيل الصوتي على أندرويد</li>
@@ -448,6 +456,7 @@
           <li xml:lang="ca-valencia">Corregix els permisos de gravació d'àudio a Android</li>
           <li xml:lang="cs">Opraveno oprávnění pro nahrávání zvuku v systému Android</li>
           <li xml:lang="es">Se han corregido los permisos de grabación en Android.</li>
+          <li xml:lang="eu">Androiden audioa grabatzeko baimenak zuzendu</li>
           <li xml:lang="fr">Correction des droits pour l'enregistrement audio sous Android</li>
           <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
           <li xml:lang="ia">Corrige permissiones de registrar audio sur android</li>
@@ -461,6 +470,7 @@
           <li xml:lang="tr">Fix audio record permissions on android</li>
           <li xml:lang="uk">Виправлено права доступу до записів звуку у android</li>
           <li xml:lang="zh-CN">修复安卓系统上的音频录制权限</li>
+          <li xml:lang="zh-TW">修正 Android 上的音訊錄製權限</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
@@ -476,6 +486,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
+        <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ia">Modificationes:</p>
@@ -489,6 +500,7 @@
         <p xml:lang="tr">Changes:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
+        <p xml:lang="zh-TW">變更：</p>
         <ul>
           <li>Specify fallback theme to look consistent on non-Plasma environments</li>
           <li xml:lang="ar">حُددت سمة احتياطية لتبدو متسقة في بيئات غير بلازما</li>
@@ -496,6 +508,7 @@
           <li xml:lang="ca-valencia">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguen Plasma</li>
           <li xml:lang="cs">Definován náhradní motiv, aby vypadal konzistentně v prostředí mimo KDE Plasma.</li>
           <li xml:lang="es">Especificar el tema de respaldo para que se vea consistente en entornos que no sean Plasma.</li>
+          <li xml:lang="eu">Plasma ez diren inguruneetan itxura koherentea mantentzeko erreserbako gaia zehaztu</li>
           <li xml:lang="fr">Définir un thème de secours pour conserver une apparence cohérente avec les environnements  différents de Plasma</li>
           <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
           <li xml:lang="ia">Specifica thema de reserva per semblar consistente in ambientes non-Plasma</li>
@@ -521,6 +534,7 @@
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
+        <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="ia">Modificationes:</p>
@@ -534,6 +548,7 @@
         <p xml:lang="tr">Changes:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
+        <p xml:lang="zh-TW">變更：</p>
         <ul>
           <li>Use consistent bar heights for recording and playback views</li>
           <li xml:lang="ar">استُخدمت ارتفاعات أشرطة متسقة لعروض التسجيل والتشغيل</li>
@@ -541,6 +556,7 @@
           <li xml:lang="ca-valencia">Utilitza altures de barres coherents a les vistes de gravació i reproducció</li>
           <li xml:lang="cs">Použita jednotná výška lišty pro zobrazení nahrávání a přehrávání.</li>
           <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción.</li>
+          <li xml:lang="eu">Grabazio eta atzera-jotze ikuspegietan barra-altuera koherenteak erabili</li>
           <li xml:lang="fr">Utilisez des hauteurs de barre cohérentes pour les vues d'enregistrement et de lecture</li>
           <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
           <li xml:lang="ia">Usa altessa de barras consistente per vistas de registrar e reproducer</li>
@@ -560,6 +576,7 @@
           <li xml:lang="ca-valencia">Corregix que no hi haja àudio fent que les barres no es creen en absolut</li>
           <li xml:lang="cs">Opravena chyba, kvůli které se nevytvářely žádné lišty, protože nebyl žádný zvuk.</li>
           <li xml:lang="es">Se ha solucionado el problema de ausencia de sonido que provocaba que no se crearan barras.</li>
+          <li xml:lang="eu">Audiorik ez egotea barrak ez sortzea konponduta.</li>
           <li xml:lang="fr">Correction d'un problème où l'absence de son empêchait la création des barres</li>
           <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
           <li xml:lang="ia">Corrigite nulle audio causante que le barras non es create del toto</li>
@@ -579,6 +596,7 @@
           <li xml:lang="ca-valencia">Activa la depuració de QML quan es compila amb el mode de depuració</li>
           <li xml:lang="cs">Povoleno ladění qml při kompilaci v režimu ladění</li>
           <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración.</li>
+          <li xml:lang="eu">Arazte moduan konpilatzean qml araztea gaitu</li>
           <li xml:lang="fr">Activer le débogage de QML lorsque compilé en mode débogage</li>
           <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
           <li xml:lang="ia">Habilita cribrar de qml quando  compilate in modo de cribrar</li>
@@ -592,6 +610,7 @@
           <li xml:lang="tr">Enable qml debugging when compiled in debug mode</li>
           <li xml:lang="uk">Уможливлено діагностику qml, якщо програму зібрано у діагностичному режимі</li>
           <li xml:lang="zh-CN">在调试模式下编译时启用 QML 调试</li>
+          <li xml:lang="zh-TW">以除錯模式編譯時也啟用 QML 除錯</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
