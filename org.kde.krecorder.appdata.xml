@@ -522,6 +522,7 @@
           <li xml:lang="tr">Plasma dışı ortamlarda tutarlı görünmek için yedek tema belirtildi.</li>
           <li xml:lang="uk">Визначено резервну тему для сумісного вигляду у середовищах поза Плазмою</li>
           <li xml:lang="zh-CN">指定备用主题以在非 Plasma 环境中保持一致性</li>
+          <li xml:lang="zh-TW">指定備用主題以在 Plasma 外的環境也有一致的外觀</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/07/20/plasma-mobile-gear-21-07/</url>
@@ -570,6 +571,7 @@
           <li xml:lang="tr">Kayıt ve oynatma görünümleri için tutarlı çubuk yükseklikleri kullanıldı.</li>
           <li xml:lang="uk">Використано сумісні висоти панелей для панелей запису і відтворення</li>
           <li xml:lang="zh-CN">在录制和播放视图中使用一致的音量条高度</li>
+          <li xml:lang="zh-TW">修正錄音與播放畫面中工具列高度不同的問題</li>
           <li>Fixed no audio causing bars to not be created at all</li>
           <li xml:lang="ar">أُصلحت مشكلة انعدام الصوت التي تسببت في عدم إنشاء الأشرطة نهائيًا</li>
           <li xml:lang="ca">Corregeix que no hi hagi àudio fent que les barres no es creïn en absolut</li>
@@ -590,6 +592,7 @@
           <li xml:lang="tr">Ses olmamasının çubukların hiç oluşturulmamasına neden olması düzeltildi.</li>
           <li xml:lang="uk">Виправлено помилку, пов'язану із тим, що без звукових даних програма взагалі не створювала панелей рівнів</li>
           <li xml:lang="zh-CN">修复没有声音时会导致音量条不被创建的问题</li>
+          <li xml:lang="zh-TW">修正無音訊時工具列完全不會被建立的問題</li>
           <li>Enable qml debugging when compiled in debug mode</li>
           <li xml:lang="ar">مُكن تنقيح qml عند التصريف في وضع التنقيح</li>
           <li xml:lang="ca">Activa la depuració del QML quan es compila amb el mode de depuració</li>
