@@ -85,8 +85,8 @@ ListDelegate {
 
         ToolTipToolButton {
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-            icon.name: "delete"
-            text: i18n("Delete")
+            icon.name: "user-trash"
+            text: i18n("Move to trash")
             onClicked: root.deleteRequested()
             visible: root.editMode
         }

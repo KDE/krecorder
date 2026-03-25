@@ -28,6 +28,7 @@ target_link_libraries(krecorder
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::CoreAddons
     KF${KF_MAJOR_VERSION}::ConfigCore
+    KF${KF_MAJOR_VERSION}::KIOCore
 )
 
 target_include_directories(krecorder PRIVATE ${CMAKE_BINARY_DIR})

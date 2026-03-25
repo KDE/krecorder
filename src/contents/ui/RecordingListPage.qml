@@ -161,8 +161,8 @@ Kirigami.ScrollablePage {
                 }
             }
             Controls.MenuItem {
-                text: i18n("Delete")
-                icon.name: "delete"
+                text: i18n("Move to trash")
+                icon.name: "user-trash"
                 onTriggered: {
                     openDialogTimer.run = () => root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
                     openDialogTimer.restart();
@@ -190,11 +190,11 @@ Kirigami.ScrollablePage {
 
             Component.onCompleted: {
                 const deleteButton = standardButton(Controls.Dialog.Ok);
-                deleteButton.text = i18nc("@action:button", "Delete");
-                deleteButton.icon.name = "delete-symbolic";
+                deleteButton.text = i18nc("@action:button", "Move");
+                deleteButton.icon.name = "user-trash";
             }
 
-            title: i18n("Delete %1", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
+            title: i18n("Move %1 to trash", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
 
             onAccepted: {
                 if (applicationWindow().currentRecording && deleteDialog.toDelete.filePath == applicationWindow().currentRecording.filePath) {
@@ -207,7 +207,7 @@ Kirigami.ScrollablePage {
             onRejected: deleteDialog.close()
 
             Controls.Label {
-                text: i18n("Are you sure you want to delete the recording %1?<br/>It will be <b>permanently lost</b> forever!", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
+                text: i18n("Are you sure you want to move the recording %1 to trash?<br/>It can be restored later.", deleteDialog.toDelete ? deleteDialog.toDelete.fileName : "")
                 wrapMode: Text.Wrap
                 Layout.fillWidth: true
             }

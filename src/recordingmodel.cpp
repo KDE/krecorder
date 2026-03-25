@@ -18,6 +18,8 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
+#include <KIO/CopyJob>
+
 using namespace Qt::StringLiterals;
 
 const QString DEF_RECORD_PREFIX = QStringLiteral("clip");
@@ -174,12 +176,27 @@ void RecordingModel::deleteRecording(const int index)
 {
     qDebug() << "Removing recording " << m_recordings[index]->filePath();
 
-    beginRemoveRows(QModelIndex(), index, index);
+    auto job = KIO::trash(QUrl::fromLocalFile(m_recordings[index]->filePath()), KIO::HideProgressInfo);
+    job->start();
 
-    QFile::remove(m_recordings[index]->filePath());
-    m_recordings.removeAt(index);
-    save();
+    m_deleteRecordingJobs[job] = index;
 
-    endRemoveRows();
-    Q_EMIT countChanged();
+    connect(job, &KJob::result, this, &RecordingModel::deleteRecordingResult);
+}
+
+void RecordingModel::deleteRecordingResult(KJob *job)
+{
+    if (m_deleteRecordingJobs.contains(job)) {
+        if (!job->error()) {
+            const auto index = m_deleteRecordingJobs[job];
+            beginRemoveRows(QModelIndex(), index, index);
+            m_recordings.removeAt(index);
+            endRemoveRows();
+            save();
+            Q_EMIT countChanged();
+        } else {
+            qDebug() << job->errorString();
+        }
+        m_deleteRecordingJobs.remove(job);
+    }
 }

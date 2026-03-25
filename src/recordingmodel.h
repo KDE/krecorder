@@ -15,6 +15,8 @@
 #include <QObject>
 #include <QSettings>
 
+#include <KJob>
+
 #include "recording.h"
 
 class RecordingModel : public QAbstractListModel
@@ -47,9 +49,13 @@ public:
 Q_SIGNALS:
     void countChanged();
 
+private Q_SLOTS:
+    void deleteRecordingResult(KJob *job);
+
 private:
     explicit RecordingModel(QObject *parent = nullptr);
     ~RecordingModel();
 
     QList<Recording *> m_recordings;
+    QHash<KJob *, int> m_deleteRecordingJobs;
 };
