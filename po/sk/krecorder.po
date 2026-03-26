@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-14 00:47+0000\n"
+"POT-Creation-Date: 2026-03-26 00:48+0000\n"
 "PO-Revision-Date: 2021-11-20 21:36+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -101,10 +101,10 @@ msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListPage.qml:164
 #, kde-format
-msgid "Delete"
-msgstr "Vymazať"
+msgid "Move to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -140,14 +140,13 @@ msgstr "Uložiť nahrávku"
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
-msgid "Delete"
-msgstr "Vymazať"
+msgid "Move"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:197
-#, fuzzy, kde-format
-#| msgid "Delete"
-msgid "Delete %1"
-msgstr "Vymazať"
+#, kde-format
+msgid "Move %1 to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
 #, fuzzy, kde-format
@@ -155,8 +154,8 @@ msgstr "Vymazať"
 #| "Are you sure you want to delete the recording %1? It will be permanently "
 #| "lost forever!"
 msgid ""
-"Are you sure you want to delete the recording %1?<br/>It will be "
-"<b>permanently lost</b> forever!"
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
 msgstr "Naozaj chcete vymazať nahrávku %1? Bude naždy stratená!"
 
 #: contents/ui/RecordingListPage.qml:219
@@ -195,6 +194,11 @@ msgstr "Pozastaviť"
 #| msgid "Save recording"
 msgid "Save Recording"
 msgstr "Uložiť nahrávku"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Vymazať"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
@@ -300,6 +304,15 @@ msgstr ""
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "Vymazať"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete %1"
+#~ msgstr "Vymazať"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

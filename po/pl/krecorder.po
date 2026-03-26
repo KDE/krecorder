@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-14 00:47+0000\n"
+"POT-Creation-Date: 2026-03-26 00:48+0000\n"
 "PO-Revision-Date: 2025-11-08 09:20+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
@@ -100,10 +100,10 @@ msgid "Rename"
 msgstr "Zmień nazwę"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListPage.qml:164
 #, kde-format
-msgid "Delete"
-msgstr "Usuń"
+msgid "Move to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -138,19 +138,22 @@ msgstr "Zapisano nagranie do %1"
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
-msgid "Delete"
-msgstr "Usuń"
+msgid "Move"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
-msgid "Delete %1"
-msgstr "Usuń %1"
+msgid "Move %1 to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to delete the recording %1?<br/>It will be "
+#| "<b>permanently lost</b> forever!"
 msgid ""
-"Are you sure you want to delete the recording %1?<br/>It will be "
-"<b>permanently lost</b> forever!"
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
 msgstr "Czy na pewno usunąć nagranie %1?<br/>Zostanie <b>trwale</b> utracone!"
 
 #: contents/ui/RecordingListPage.qml:219
@@ -187,6 +190,11 @@ msgstr "Wstrzymano"
 #, kde-format
 msgid "Save Recording"
 msgstr "Zapisz nagranie"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Usuń"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
@@ -288,6 +296,13 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "Usuń"
+
+#~ msgid "Delete %1"
+#~ msgstr "Usuń %1"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

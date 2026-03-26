@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-14 00:47+0000\n"
+"POT-Creation-Date: 2026-03-26 00:48+0000\n"
 "PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -98,10 +98,10 @@ msgid "Rename"
 msgstr "नाम बदलें"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListPage.qml:164
 #, kde-format
-msgid "Delete"
-msgstr "मिटाना"
+msgid "Move to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -136,19 +136,22 @@ msgstr "%1 में रिकॉर्डिंग सहेजी गई"
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
-msgid "Delete"
-msgstr "मिटाना"
+msgid "Move"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
-msgid "Delete %1"
-msgstr "%1 मिटाएँ"
+msgid "Move %1 to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to delete the recording %1?<br/>It will be "
+#| "<b>permanently lost</b> forever!"
 msgid ""
-"Are you sure you want to delete the recording %1?<br/>It will be "
-"<b>permanently lost</b> forever!"
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
 msgstr ""
 "क्या आप वाकई रिकॉर्डिंग %1 को हटाना चाहते हैं?<br/> यह हमेशा के लिए <b>खो</b> जायेगा!"
 
@@ -187,6 +190,11 @@ msgstr "विराम"
 #, kde-format
 msgid "Save Recording"
 msgstr "रिकॉर्डिंग सहेजें"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "मिटाना"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
@@ -288,6 +296,13 @@ msgstr "डेविन लिन"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "जोना ब्रुचर्ट"
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "मिटाना"
+
+#~ msgid "Delete %1"
+#~ msgstr "%1 मिटाएँ"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

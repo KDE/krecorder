@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-14 00:47+0000\n"
+"POT-Creation-Date: 2026-03-26 00:48+0000\n"
 "PO-Revision-Date: 2025-09-11 21:25+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -98,10 +98,10 @@ msgid "Rename"
 msgstr "Byt namn"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListPage.qml:164
 #, kde-format
-msgid "Delete"
-msgstr "Ta bort"
+msgid "Move to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -136,19 +136,22 @@ msgstr "Sparade inspelning i %1"
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
-msgid "Delete"
-msgstr "Ta bort"
+msgid "Move"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
-msgid "Delete %1"
-msgstr "Ta bort %1"
+msgid "Move %1 to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to delete the recording %1?<br/>It will be "
+#| "<b>permanently lost</b> forever!"
 msgid ""
-"Are you sure you want to delete the recording %1?<br/>It will be "
-"<b>permanently lost</b> forever!"
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
 msgstr ""
 "Är du säker på att du vill ta bort inspelningen %1?<br/>Den går förlorad "
 "<b>permanent</b> för alltid."
@@ -187,6 +190,11 @@ msgstr "Paus"
 #, kde-format
 msgid "Save Recording"
 msgstr "Spara inspelning"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Ta bort"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
@@ -289,6 +297,13 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "Ta bort"
+
+#~ msgid "Delete %1"
+#~ msgstr "Ta bort %1"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

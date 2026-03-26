@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-14 00:47+0000\n"
+"POT-Creation-Date: 2026-03-26 00:48+0000\n"
 "PO-Revision-Date: 2026-02-15 00:59+0100\n"
 "Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
 "Language-Team: \n"
@@ -99,10 +99,10 @@ msgid "Rename"
 msgstr "Přejmenovat"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
+#: contents/ui/RecordingListPage.qml:164
 #, kde-format
-msgid "Delete"
-msgstr "Smazat"
+msgid "Move to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -137,19 +137,22 @@ msgstr "Nahrávka uložena do %1"
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
-msgid "Delete"
-msgstr "Smazat"
+msgid "Move"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
-msgid "Delete %1"
-msgstr "Smazat %1"
+msgid "Move %1 to trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to delete the recording %1?<br/>It will be "
+#| "<b>permanently lost</b> forever!"
 msgid ""
-"Are you sure you want to delete the recording %1?<br/>It will be "
-"<b>permanently lost</b> forever!"
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
 msgstr ""
 "Opravdu si přejete smazat nahrávku %1?<br/>Bude <b>navždy ztracena</b>."
 
@@ -187,6 +190,11 @@ msgstr "Pozastaveno"
 #, kde-format
 msgid "Save Recording"
 msgstr "Uložit nahrávání"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Smazat"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
@@ -288,3 +296,10 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "Smazat"
+
+#~ msgid "Delete %1"
+#~ msgstr "Smazat %1"
