@@ -148,12 +148,12 @@ Kirigami.ScrollablePage {
             property int index: parent?.index ?? 0
 
             Controls.MenuItem {
-                text: i18n("Export to location")
+                text: i18nc("@action:inmenu", "Export to Location")
                 icon.name: "document-save"
                 onTriggered: saveFileDialog.openForRecording(contextMenu.recording)
             }
             Controls.MenuItem {
-                text: i18n("Edit")
+                text: i18nc("@action:inmenu", "Edit")
                 icon.name: "edit-entry"
                 onTriggered: {
                     openDialogTimer.run = () => root.editRecordingDialog(contextMenu.recording);
@@ -161,7 +161,7 @@ Kirigami.ScrollablePage {
                 }
             }
             Controls.MenuItem {
-                text: i18n("Move to trash")
+                text: i18nc("@action:inmenu", "Move to Trash")
                 icon.name: "user-trash"
                 onTriggered: {
                     openDialogTimer.run = () => root.removeRecordingDialog(contextMenu.recording, contextMenu.index);
