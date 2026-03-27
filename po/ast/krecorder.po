@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
 "PO-Revision-Date: 2024-03-27 23:01+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -87,7 +87,6 @@ msgid "Stop"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr ""
@@ -98,7 +97,6 @@ msgid "Rename"
 msgstr ""
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
 msgstr ""
@@ -108,7 +106,7 @@ msgstr ""
 msgid "Recordings"
 msgstr ""
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr ""
@@ -131,6 +129,24 @@ msgstr ""
 #: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:151
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:156
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr ""
+
+#: contents/ui/RecordingListPage.qml:164
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
 msgstr ""
 
 #: contents/ui/RecordingListPage.qml:193

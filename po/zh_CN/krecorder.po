@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
 "PO-Revision-Date: 2024-04-23 19:24\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -87,7 +87,6 @@ msgid "Stop"
 msgstr "停止"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "导出到位置"
@@ -98,7 +97,6 @@ msgid "Rename"
 msgstr "重命名"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
 msgstr ""
@@ -108,7 +106,7 @@ msgstr ""
 msgid "Recordings"
 msgstr "录音"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "编辑"
@@ -133,6 +131,26 @@ msgstr "选择保存录音 %1 的位置"
 msgid "Saved recording to %1"
 msgstr "录音已保存到 %1"
 
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "导出到位置"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "编辑"
+
+#: contents/ui/RecordingListPage.qml:164
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr ""
+
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
@@ -145,14 +163,11 @@ msgid "Move %1 to trash"
 msgstr ""
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
-msgstr "您确定要删除录音 %1 吗？<br/>您将<b>永远失去</b>这段录音！"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
@@ -294,10 +309,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Delete"
-#~ msgstr "删除"
-
-#~ msgid "Delete %1"
-#~ msgstr "删除 %1"

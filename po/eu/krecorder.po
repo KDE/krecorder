@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
 "PO-Revision-Date: 2025-09-11 19:29+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -90,7 +90,6 @@ msgid "Stop"
 msgstr "Gelditu"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Esportatu kokalekua"
@@ -101,7 +100,6 @@ msgid "Rename"
 msgstr "Berrizendatu"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
 msgstr ""
@@ -111,7 +109,7 @@ msgstr ""
 msgid "Recordings"
 msgstr "Grabazioak"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "Editatu"
@@ -135,6 +133,26 @@ msgstr "Hautatu grabazioa gordetzeko kokaleku bat, %1"
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "Grabazioa hor grabatu da, %1"
+
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Esportatu kokalekua"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Editatu"
+
+#: contents/ui/RecordingListPage.qml:164
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format

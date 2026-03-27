@@ -1,15 +1,15 @@
 # Spanish translations for krecorder.po package.
-# Copyright (C) 2020-2025 This file is copyright:
+# Copyright (C) 2020-2026 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
 # Automatically generated, 2020.
 #
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024, 2025, 2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
-"PO-Revision-Date: 2025-09-11 12:12+0100\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"PO-Revision-Date: 2026-03-26 11:50+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -89,7 +89,6 @@ msgid "Stop"
 msgstr "Detener"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Exportar a ubicación"
@@ -100,17 +99,16 @@ msgid "Rename"
 msgstr "Cambiar nombre"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Mover a la papelera"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "Grabaciones"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
@@ -135,28 +133,46 @@ msgstr "Seleccione una ubicación para guardar la grabación %1"
 msgid "Saved recording to %1"
 msgstr "Grabación guardada en %1"
 
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Exportar a ubicación"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Editar"
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Move to trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Mover a la papelera"
+
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Mover %1 a la papelera"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
-"¿Seguro que quiere borrar la grabación %1?<br/>Se lo hace, se <b>perderá "
-"permanentemente</b>."
+"¿Seguro que quiere mover la grabación %1 a la papelera?<br/>Se podrá "
+"restaurar posteriormente."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
@@ -300,10 +316,3 @@ msgstr "Devin Lin"
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
-
-#~ msgctxt "@action:button"
-#~ msgid "Delete"
-#~ msgstr "Borrar"
-
-#~ msgid "Delete %1"
-#~ msgstr "Borrar %1"

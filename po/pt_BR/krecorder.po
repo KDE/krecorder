@@ -3,20 +3,21 @@
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2021, 2022, 2023, 2024.
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
+# SPDX-FileCopyrightText: 2026 Marcus Gama <marcus.gama@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
-"PO-Revision-Date: 2025-09-11 00:46-0300\n"
-"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"PO-Revision-Date: 2026-03-26 07:49-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -88,7 +89,6 @@ msgid "Stop"
 msgstr "Parar"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Exportar para localização"
@@ -99,17 +99,16 @@ msgid "Rename"
 msgstr "Renomear"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Mover para a Lixeira"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "Gravações"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
@@ -134,28 +133,46 @@ msgstr "Selecione uma localização para salvar a gravação %1"
 msgid "Saved recording to %1"
 msgstr "Gravação salva em %1"
 
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Exportar para localização"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Editar"
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Move to trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Mover para a Lixeira"
+
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Mover %1 para a Lixeira"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
-"Tem certeza de que deseja excluir a gravação %1?<br/>Ela será "
-"<b>permanentemente perdida</b> para sempre!"
+"Tem certeza de que deseja mover a gravação %1 para a lixeira?<br/>Ela poderá "
+"ser restaurada posteriormente."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format

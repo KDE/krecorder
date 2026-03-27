@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022, 2024, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
-"PO-Revision-Date: 2025-09-11 09:00+0300\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"PO-Revision-Date: 2026-03-26 12:59+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -90,7 +90,6 @@ msgid "Stop"
 msgstr "Зупинити"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Експортувати до місця"
@@ -101,17 +100,16 @@ msgid "Rename"
 msgstr "Перейменувати"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Пересунути до смітника"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "Записи"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "Змінити"
@@ -136,27 +134,46 @@ msgstr "Виберіть місце для збереження запису %1"
 msgid "Saved recording to %1"
 msgstr "Запис збережено до %1"
 
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Експортувати до місця"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Змінити"
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Move to trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Пересунути до смітника"
+
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Пересунути"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Пересунути %1 до смітника"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
-"Ви справді хочете вилучити запис %1?<br/>Запис буде <b>назавжди втрачено</b>!"
+"Ви справді хочете пересунути %1 до смітника?<br/>Запис можна буде пізніше "
+"відновити."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format

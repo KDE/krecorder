@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -89,7 +89,6 @@ msgid "Stop"
 msgstr "विरमतु"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "स्थानं प्रति निर्यातं कुर्वन्तु"
@@ -100,7 +99,6 @@ msgid "Rename"
 msgstr "पुनर्नाम"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
 msgstr ""
@@ -110,7 +108,7 @@ msgstr ""
 msgid "Recordings"
 msgstr "रिकार्डिङ्ग्स्"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "सम्पादन"
@@ -134,6 +132,26 @@ msgstr "रिकार्डिङ्ग् %1 रक्षितुं स्�
 #, kde-format
 msgid "Saved recording to %1"
 msgstr "%1 इत्यत्र रिकार्डिङ्ग् रक्षितम्"
+
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "स्थानं प्रति निर्यातं कुर्वन्तु"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "सम्पादन"
+
+#: contents/ui/RecordingListPage.qml:164
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-26 00:48+0000\n"
-"PO-Revision-Date: 2025-09-11 07:00+0200\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"PO-Revision-Date: 2026-03-26 06:31+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -88,7 +88,6 @@ msgid "Stop"
 msgstr "Ustavi"
 
 #: contents/ui/RecordingListDelegate.qml:73
-#: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
 msgstr "Izvozi na mesto"
@@ -99,17 +98,16 @@ msgid "Rename"
 msgstr "Preimenuj"
 
 #: contents/ui/RecordingListDelegate.qml:89
-#: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Premakni v smeti"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
 msgstr "Posnetki"
 
-#: contents/ui/RecordingListPage.qml:39 contents/ui/RecordingListPage.qml:156
+#: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
 msgstr "Uredi"
@@ -134,28 +132,46 @@ msgstr "Izberi mesto za shranjevanje posnetka %1"
 msgid "Saved recording to %1"
 msgstr "Shranjen posnetek na %1"
 
+#: contents/ui/RecordingListPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Export to location"
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Izvozi na mesto"
+
+#: contents/ui/RecordingListPage.qml:156
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Uredi"
+
+#: contents/ui/RecordingListPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Move to trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Premakni v smeti"
+
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Premakni"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Premakni %1 v smeti"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
-"Ali ste prepričani, da želite zbrisati posnetek %1?<br/>Bo za <b>vedno "
-"izgubljen</b>!"
+"Ali ste prepričani, da želite premakniti posnetek %1 v smeti?<br/>Pozneje ga "
+"je mogoče obnoviti."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
