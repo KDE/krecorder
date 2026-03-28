@@ -99,7 +99,7 @@ msgstr "重命名"
 #: contents/ui/RecordingListDelegate.qml:89
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "移动到回收站"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -132,18 +132,16 @@ msgid "Saved recording to %1"
 msgstr "录音已保存到 %1"
 
 #: contents/ui/RecordingListPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Export to location"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
-msgstr "导出到位置"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
-msgstr "编辑"
+msgstr ""
 
 #: contents/ui/RecordingListPage.qml:164
 #, kde-format
@@ -155,12 +153,12 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "移动"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "移动 %1 到回收站"
 
 #: contents/ui/RecordingListPage.qml:210
 #, kde-format
@@ -168,6 +166,7 @@ msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
+"您确定要将录音文件 %1 移动到回收站吗？<br/>您可以在之后还原它到之前位置。"
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format

@@ -140,15 +140,13 @@ msgid "Export to Location"
 msgstr "Exportovat do umístění"
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
 msgstr "Upravit"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Move to trash"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
 msgstr "Přesunout do koše"
