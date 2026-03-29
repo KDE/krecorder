@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the krecorder package.
-# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2025-09-15 12:55+0400\n"
+"PO-Revision-Date: 2026-03-28 18:07+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -100,7 +100,7 @@ msgstr "أعد التسمية"
 #: contents/ui/RecordingListDelegate.qml:89
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "انقل إلى المهملات"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -133,15 +133,13 @@ msgid "Saved recording to %1"
 msgstr "احفظ التسجيل إلى %1"
 
 #: contents/ui/RecordingListPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Export to location"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
 msgstr "صدّره إلى موقع"
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
 msgstr "حرّر"
@@ -150,28 +148,27 @@ msgstr "حرّر"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
-msgstr ""
+msgstr "انقل إلى المهملات"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "انقل"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "انقل %1 إلى المهملات"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
-msgstr "أمتأكد من أنك تريد حذف  %1؟<br/>ستحذف  <b>بشكل نهائي</b>!"
+msgstr ""
+"هل أنت متأكد من أنك تريد نقل التسجيل %1 إلى سلة المهملات؟<br/>يمكن استعادته "
+"لاحقًا."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2026-03-26 09:33+0200\n"
+"PO-Revision-Date: 2026-03-28 09:28+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -133,22 +133,19 @@ msgid "Saved recording to %1"
 msgstr "ההקלטה נשמרה אל %1"
 
 #: contents/ui/RecordingListPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Export to location"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
 msgstr "ייצוא למקום"
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
 msgstr "עריכה"
 
 #: contents/ui/RecordingListPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Move to trash"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
 msgstr "העברה לאשפה"
