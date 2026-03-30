@@ -135,19 +135,19 @@ msgstr "录音已保存到 %1"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
-msgstr ""
+msgstr "导出到位置"
 
 #: contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
-msgstr ""
+msgstr "移动到回收站"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
