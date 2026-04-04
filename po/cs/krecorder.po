@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2026-02-15 00:59+0100\n"
+"PO-Revision-Date: 2026-04-03 16:56+0200\n"
 "Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -16,17 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vít Pelčák"
+msgstr "Vít Pelčák,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "vit@pelcak.org"
+msgstr "vit@pelcak.org,libor.filipek@gmail.com"
 
 #: audiorecorder.cpp:187
 #, kde-format
@@ -133,8 +133,7 @@ msgid "Saved recording to %1"
 msgstr "Nahrávka uložena do %1"
 
 #: contents/ui/RecordingListPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Export to location"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
 msgstr "Exportovat do umístění"
@@ -163,15 +162,12 @@ msgid "Move %1 to trash"
 msgstr "Přesunout %1 do koše"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
-"Opravdu si přejete smazat nahrávku %1?<br/>Bude <b>navždy ztracena</b>."
+"Opravdu chcete přesunout nahrávku %1 do koše?<br/>Později ji lze obnovit."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
