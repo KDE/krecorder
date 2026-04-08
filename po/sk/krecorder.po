@@ -12,27 +12,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Your names"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "Your emails"
 
 #: audiorecorder.cpp:187
 #, kde-format
 msgid "Default file format"
-msgstr ""
+msgstr "Predvolený formát súboru"
 
 #: audiorecorder.cpp:201
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Default audio codec"
 msgstr "Kodek pre zvuk"
 
@@ -46,14 +45,12 @@ msgid "Settings"
 msgstr "Nastavenia"
 
 #: contents/ui/DefaultPage.qml:30
-#, fuzzy, kde-format
-#| msgid "Click on a recording to play it, or record a new one"
+#, kde-format
 msgid "Play a recording, or record a new one"
 msgstr "Kliknite na nahrávku na jej prehratie alebo nahrajte novú"
 
 #: contents/ui/DefaultPage.qml:30
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Record a new recording"
 msgstr "Uložiť nahrávku"
 
@@ -63,16 +60,14 @@ msgid "Recorder"
 msgstr "Záznamník"
 
 #: contents/ui/PlayerPage.qml:20
-#, fuzzy, kde-format
-#| msgid "Play"
+#, kde-format
 msgid "Player"
 msgstr "Prehrať"
 
 #: contents/ui/PlayerPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Recorder"
+#, kde-format
 msgid "Recorded on %1"
-msgstr "Záznamník"
+msgstr "Recorded on %1"
 
 #: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
@@ -93,12 +88,12 @@ msgstr "Zastaviť"
 #: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Exportovať do umiestnenia"
 
 #: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Premenovať"
 
 #: contents/ui/RecordingListDelegate.qml:89
 #: contents/ui/RecordingListPage.qml:164 contents/ui/RecordPage.qml:202
@@ -129,13 +124,12 @@ msgstr "Žiadne nahrávky"
 #: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Vyberte umiestnenie na uloženie nahrávky %1"
 
 #: contents/ui/RecordingListPage.qml:140
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Saved recording to %1"
-msgstr "Uložiť nahrávku"
+msgstr "Saved recording to %1"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
@@ -144,16 +138,12 @@ msgid "Delete"
 msgstr "Vymazať"
 
 #: contents/ui/RecordingListPage.qml:197
-#, fuzzy, kde-format
-#| msgid "Delete"
+#, kde-format
 msgid "Delete %1"
-msgstr "Vymazať"
+msgstr "Delete %1"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1? It will be permanently "
-#| "lost forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to delete the recording %1?<br/>It will be "
 "<b>permanently lost</b> forever!"
@@ -162,7 +152,7 @@ msgstr "Naozaj chcete vymazať nahrávku %1? Bude naždy stratená!"
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Premenovať %1"
 
 #: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
@@ -182,17 +172,15 @@ msgstr "Nahrať zvuk"
 #: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovať"
 
 #: contents/ui/RecordPage.qml:148
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgid "Paused"
 msgstr "Pozastaviť"
 
 #: contents/ui/RecordPage.qml:183
-#, fuzzy, kde-format
-#| msgid "Save recording"
+#, kde-format
 msgid "Save Recording"
 msgstr "Uložiť nahrávku"
 
@@ -209,138 +197,127 @@ msgstr "Názov (voliteľné)"
 #: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Priečinok úložiska:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Všeobecné"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "O programe"
 
 #: contents/ui/settings/SettingsComponent.qml:58
-#, fuzzy, kde-format
-#| msgid "Audio Input"
+#, kde-format
 msgid "Audio Input"
 msgstr "Zvukový vstup"
 
 #: contents/ui/settings/SettingsComponent.qml:126
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Rozšírené"
 
 #: contents/ui/settings/SettingsComponent.qml:133
-#, fuzzy, kde-format
-#| msgid "Audio Codec"
+#, kde-format
 msgid "Audio Codec"
 msgstr "Kodek pre zvuk"
 
 #: contents/ui/settings/SettingsComponent.qml:168
-#, fuzzy, kde-format
-#| msgid "Container Format"
+#, kde-format
 msgid "Container Format"
 msgstr "Formát kontajnera"
 
 #: contents/ui/settings/SettingsComponent.qml:203
-#, fuzzy, kde-format
-#| msgid "Audio Quality"
+#, kde-format
 msgid "Audio Quality"
 msgstr "Kvalita zvuku"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Najnižšia"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Minimum"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Stredné"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Maximum"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Najvyššia"
 
 #: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Vyššia kvalita zvuku tiež zvyšuje veľkosť súboru."
 
 #: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Niektoré kombinácie kodekov a formátov kontajnerov nemusia byť kompatibilné."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr ""
+msgstr "© 2020-2024 Komunita KDE"
 
 #: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"
 #~ msgstr "Zrušiť"
 
 #, fuzzy
-#~| msgctxt "@action:button"
-#~| msgid "Save"
 #~ msgid "Save"
 #~ msgstr "Uložiť"
 
 #, fuzzy
-#~| msgid "Recordings"
 #~ msgid "Stop Recording"
 #~ msgstr "Nahrávky"
 
 #, fuzzy
-#~| msgid "Format"
 #~ msgid "Audio Format"
 #~ msgstr "Formát"
 
 #, fuzzy
-#~| msgid "Ogg Vorbis"
 #~ msgctxt "Ogg Vorbis file format"
 #~ msgid "Ogg Vorbis"
 #~ msgstr "Ogg Vorbis"
 
 #, fuzzy
-#~| msgid "Ogg Opus"
 #~ msgctxt "Ogg Opus file format"
 #~ msgid "Ogg Opus"
 #~ msgstr "Ogg Opus"
 
 #, fuzzy
-#~| msgid "FLAC"
 #~ msgctxt "FLAC file format"
 #~ msgid "FLAC"
 #~ msgstr "FLAC"
 
 #, fuzzy
-#~| msgid "MP3"
 #~ msgctxt "MP3 file format"
 #~ msgid "MP3"
 #~ msgstr "MP3"
@@ -352,12 +329,10 @@ msgstr ""
 #~ msgstr "Ziadne nahrávky, nahrajte si prvú!"
 
 #, fuzzy
-#~| msgid "Editing"
 #~ msgid "Editing %1"
 #~ msgstr "Editovanie"
 
 #, fuzzy
-#~| msgid "Audio Input"
 #~ msgid "Audio Input:"
 #~ msgstr "Zvukový vstup"
 
