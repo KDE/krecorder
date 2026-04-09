@@ -179,6 +179,7 @@
       <caption xml:lang="ro">Prezentare generală a înregistrărilor</caption>
       <caption xml:lang="ru">Просмотр записей</caption>
       <caption xml:lang="sa">रिकार्डिङ्ग्स् इत्यस्य अवलोकनम्</caption>
+      <caption xml:lang="sk">Prehľad nahrávok</caption>
       <caption xml:lang="sl">Pregled posnetkov</caption>
       <caption xml:lang="sv">Översikt över inspelningar</caption>
       <caption xml:lang="tr">Kayıtların genel görünümü</caption>
@@ -215,6 +216,7 @@
       <caption xml:lang="ro">Înregistrarea cu KRecorder</caption>
       <caption xml:lang="ru">Запись с помощью KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यनेन सह रिकार्डिङ्ग् करणम्</caption>
+      <caption xml:lang="sk">Nahrávanie pomocou KRecorder</caption>
       <caption xml:lang="sl">Snemanje s KRecorderjem</caption>
       <caption xml:lang="sv">Spelar in med Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ile kayıt</caption>
@@ -251,6 +253,7 @@
       <caption xml:lang="ro">Ascultați înregistrările cu KRecorder</caption>
       <caption xml:lang="ru">Прослушивание записей с помощью KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यनेन सह रिकार्डिङ्ग् शृणुत</caption>
+      <caption xml:lang="sk">Počúvanie nahrávok pomocou KRecorder</caption>
       <caption xml:lang="sl">Poslušanje posnetkov s KRekorderjem</caption>
       <caption xml:lang="sv">Lyssnar på inspelningar med Inspelare</caption>
       <caption xml:lang="tr">Kayıtları K Kayıtçı ile dinleyin</caption>
@@ -287,6 +290,7 @@
       <caption xml:lang="ro">Configurările KRecorder</caption>
       <caption xml:lang="ru">Параметры настройки KRecorder</caption>
       <caption xml:lang="sa">KRecorder इत्यस्य सेटिंग्स्</caption>
+      <caption xml:lang="sk">Nastavenia aplikácie KRecorder</caption>
       <caption xml:lang="sl">Nastavitve KRecorderja</caption>
       <caption xml:lang="sv">Inställning av Inspelare</caption>
       <caption xml:lang="tr">K Kayıtçı ayarları</caption>
@@ -363,6 +367,7 @@
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
+          <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад</li>
@@ -391,6 +396,7 @@
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
+          <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb.</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
@@ -419,6 +425,7 @@
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
+          <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb.</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
@@ -445,6 +452,7 @@
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
+        <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -467,6 +475,7 @@
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
           <li xml:lang="ro">Repară permisiunile de înregistrare a sunetului pe Android</li>
           <li xml:lang="ru">Исправлены права на запись звука в Android;</li>
+          <li xml:lang="sk">Oprava oprávnení na nahrávanie zvuku v systéme Android</li>
           <li xml:lang="sl">Popravi dovoljenja za snemanje zvoka v sistemu Android</li>
           <li xml:lang="tr">Android üzerindeki ses kayıt izinleri düzeltildi.</li>
           <li xml:lang="uk">Виправлено права доступу до записів звуку у android</li>
@@ -497,6 +506,7 @@
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
+        <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -519,6 +529,7 @@
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
           <li xml:lang="ro">Specificați tematica de rezervă pentru un aspect consistent în alte medii decât Plasma</li>
           <li xml:lang="ru">В рабочих средах, отличных от Plasma, используется резервное оформление</li>
+          <li xml:lang="sk">Určenie záložnej témy pre konzistentný vzhľad v prostrediach bez Plasma</li>
           <li xml:lang="sl">Določite nadomestno temo, ki bo videti dosledno v okoljih, ki niso Plasma</li>
           <li xml:lang="tr">Plasma dışı ortamlarda tutarlı görünmek için yedek tema belirtildi.</li>
           <li xml:lang="uk">Визначено резервну тему для сумісного вигляду у середовищах поза Плазмою</li>
@@ -546,6 +557,7 @@
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
+        <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -568,6 +580,7 @@
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
           <li xml:lang="ro">Folosește înălțimi consistente ale barelor pentru vizualizările de înregistrare și redare</li>
           <li xml:lang="ru">используется одинаковая высота полос для представлений записи и воспроизведения;</li>
+          <li xml:lang="sk">Použitie konzistentnej výšky stĺpcov pre zobrazenie nahrávania a prehrávania</li>
           <li xml:lang="sl">Uporabi konsistentne višine stolpcev za poglede snemanja in predvajanja</li>
           <li xml:lang="tr">Kayıt ve oynatma görünümleri için tutarlı çubuk yükseklikleri kullanıldı.</li>
           <li xml:lang="uk">Використано сумісні висоти панелей для панелей запису і відтворення</li>
@@ -589,6 +602,7 @@
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
           <li xml:lang="ro">Reparat defectul că barele nu erau create deloc în lipsa sunetului</li>
           <li xml:lang="ru">Исправлена проблема, при которой отсутствие звука приводило к полному отсутствию полос;</li>
+          <li xml:lang="sk">Opravené nevytvorenie stĺpcov pri absencii zvuku</li>
           <li xml:lang="sl">Odpravljena napaka, zaradi katere se stolpci zvoka sploh niso ustvarjali</li>
           <li xml:lang="tr">Ses olmamasının çubukların hiç oluşturulmamasına neden olması düzeltildi.</li>
           <li xml:lang="uk">Виправлено помилку, пов'язану із тим, що без звукових даних програма взагалі не створювала панелей рівнів</li>
@@ -610,6 +624,7 @@
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
           <li xml:lang="ro">Activează depanarea QML la compilarea în regim de depanare</li>
           <li xml:lang="ru">Добавлена возможность отладки QML в режиме отладки</li>
+          <li xml:lang="sk">Povolenie ladenia QML pri kompilácii v režime ladenia</li>
           <li xml:lang="sl">Omogoči odpravljanje napak v qml pri prevajanju v načinu odpravljanja napak</li>
           <li xml:lang="tr">Hata ayıklama kipinde derlendiğinde QML hata ayıklaması etkinleştirildi.</li>
           <li xml:lang="uk">Уможливлено діагностику qml, якщо програму зібрано у діагностичному режимі</li>
