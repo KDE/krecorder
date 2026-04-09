@@ -4,13 +4,13 @@
 # This file is distributed under the same license as the krecorder package.
 #
 # Automatically generated, 2022.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023-2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2025-09-22 03:31+0900\n"
+"PO-Revision-Date: 2026-04-08 22:41+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 26.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -102,7 +102,7 @@ msgstr "重新命名"
 #: contents/ui/RecordingListDelegate.qml:89
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "移到垃圾桶"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -135,15 +135,13 @@ msgid "Saved recording to %1"
 msgstr "已將錄音檔儲存至 %1"
 
 #: contents/ui/RecordingListPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Export to location"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
 msgstr "匯出到位置"
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
 msgstr "編輯"
@@ -152,28 +150,25 @@ msgstr "編輯"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
-msgstr ""
+msgstr "移到垃圾桶"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "將 %1 移到垃圾桶"
 
 #: contents/ui/RecordingListPage.qml:210
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to delete the recording %1?<br/>It will be "
-#| "<b>permanently lost</b> forever!"
+#, kde-format
 msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
-msgstr "您確定要刪除錄音檔 %1 嗎？<br/>它將會<b>永久遺失</b>！"
+msgstr "您確定要將錄音檔 %1 移動到垃圾桶嗎？<br/>它之後仍然可以還原。"
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
