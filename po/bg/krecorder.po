@@ -1,0 +1,312 @@
+# Copyright (C) 2026 This file is copyright:
+# This file is distributed under the same license as the krecorder package.
+#
+# SPDX-FileCopyrightText: 2026 Mincho Kondarev <mkondarev@yahoo.de>
+msgid ""
+msgstr ""
+"Project-Id-Version: krecorder\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"PO-Revision-Date: 2026-05-29 16:30+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.04.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Минчо Кондарев"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mkondarev@yahoo.de"
+
+#: audiorecorder.cpp:187
+#, kde-format
+msgid "Default file format"
+msgstr "Файлов формат по подразбиране"
+
+#: audiorecorder.cpp:201
+#, kde-format
+msgid "Default audio codec"
+msgstr "Аудио кодек по подразбиране"
+
+#: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
+#: contents/ui/RecordingListPage.qml:47
+#: contents/ui/settings/SettingsDialog.qml:14
+#: contents/ui/settings/SettingsPage.qml:14
+#: contents/ui/settings/SettingsWindow.qml:13
+#, kde-format
+msgid "Settings"
+msgstr "Настройки"
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Play a recording, or record a new one"
+msgstr "Изпълняване на записване или запис на ново"
+
+#: contents/ui/DefaultPage.qml:30
+#, kde-format
+msgid "Record a new recording"
+msgstr "Записване на нов запис"
+
+#: contents/ui/main.qml:24
+#, kde-format
+msgid "Recorder"
+msgstr "Записващо устройство"
+
+#: contents/ui/PlayerPage.qml:20
+#, kde-format
+msgid "Player"
+msgstr "Програма за възпроизвеждане"
+
+#: contents/ui/PlayerPage.qml:51
+#, kde-format
+msgid "Recorded on %1"
+msgstr "Записано на %1"
+
+#: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Pause"
+msgstr "Пауза"
+
+#: contents/ui/PlayerPage.qml:77
+#, kde-format
+msgid "Play"
+msgstr "Изпълнение"
+
+#: contents/ui/PlayerPage.qml:87
+#, kde-format
+msgid "Stop"
+msgstr "Спиране"
+
+#: contents/ui/RecordingListDelegate.qml:73
+#, kde-format
+msgid "Export to location"
+msgstr "Експортиране в местоположение"
+
+#: contents/ui/RecordingListDelegate.qml:81
+#, kde-format
+msgid "Rename"
+msgstr "Преименуване"
+
+#: contents/ui/RecordingListDelegate.qml:89
+#, kde-format
+msgid "Move to trash"
+msgstr "Преместване в кошчето"
+
+#: contents/ui/RecordingListPage.qml:24
+#, kde-format
+msgid "Recordings"
+msgstr "Записвания"
+
+#: contents/ui/RecordingListPage.qml:39
+#, kde-format
+msgid "Edit"
+msgstr "Редактиране"
+
+#: contents/ui/RecordingListPage.qml:53
+#, kde-format
+msgid "Record"
+msgstr "Запис"
+
+#: contents/ui/RecordingListPage.qml:95
+#, kde-format
+msgid "No recordings"
+msgstr "Няма записи"
+
+#: contents/ui/RecordingListPage.qml:130
+#, kde-format
+msgid "Select a location to save recording %1"
+msgstr "Изберете място за запазване на записа %1"
+
+#: contents/ui/RecordingListPage.qml:140
+#, kde-format
+msgid "Saved recording to %1"
+msgstr "Записът е запазен в %1"
+
+#: contents/ui/RecordingListPage.qml:151
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Export to Location"
+msgstr "Експортиране в местоположение"
+
+#: contents/ui/RecordingListPage.qml:156
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Редактиране"
+
+#: contents/ui/RecordingListPage.qml:164
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Преместване в кошчето"
+
+#: contents/ui/RecordingListPage.qml:193
+#, kde-format
+msgctxt "@action:button"
+msgid "Move"
+msgstr "Преместване"
+
+#: contents/ui/RecordingListPage.qml:197
+#, kde-format
+msgid "Move %1 to trash"
+msgstr "Преместване на %1 в кошчето"
+
+#: contents/ui/RecordingListPage.qml:210
+#, kde-format
+msgid ""
+"Are you sure you want to move the recording %1 to trash?<br/>It can be "
+"restored later."
+msgstr ""
+"Сигурни ли сте, че искате да преместите записа %1 в кошчето?<br/>Той може да "
+"бъде възстановен по-късно."
+
+#: contents/ui/RecordingListPage.qml:219
+#, kde-format
+msgid "Rename %1"
+msgstr "Преименуване на %1"
+
+#: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
+#, kde-format
+msgid "Name:"
+msgstr "Име:"
+
+#: contents/ui/RecordingListPage.qml:236
+#, kde-format
+msgid "Location:"
+msgstr "Местоположение:"
+
+#: contents/ui/RecordPage.qml:22
+#, kde-format
+msgid "Record Audio"
+msgstr "Запис на звук"
+
+#: contents/ui/RecordPage.qml:124
+#, kde-format
+msgid "Continue"
+msgstr "Продължаване"
+
+#: contents/ui/RecordPage.qml:148
+#, kde-format
+msgid "Paused"
+msgstr "На пауза"
+
+#: contents/ui/RecordPage.qml:183
+#, kde-format
+msgid "Save Recording"
+msgstr "Запазване на записа"
+
+#: contents/ui/RecordPage.qml:202
+#, kde-format
+msgid "Delete"
+msgstr "Изтриване"
+
+#: contents/ui/RecordPage.qml:223
+#, kde-format
+msgid "Save recording"
+msgstr "Запазване на записа"
+
+#: contents/ui/RecordPage.qml:242
+#, kde-format
+msgid "Name (optional)"
+msgstr "Име (незадължително):"
+
+#: contents/ui/RecordPage.qml:246
+#, kde-format
+msgid "Storage Folder:"
+msgstr "Папка за съхранение:"
+
+#: contents/ui/settings/SettingsComponent.qml:34
+#, kde-format
+msgid "General"
+msgstr "Общи"
+
+#: contents/ui/settings/SettingsComponent.qml:40
+#, kde-format
+msgid "About"
+msgstr "Относно"
+
+#: contents/ui/settings/SettingsComponent.qml:58
+#, kde-format
+msgid "Audio Input"
+msgstr "Аудио вход"
+
+#: contents/ui/settings/SettingsComponent.qml:126
+#, kde-format
+msgid "Advanced"
+msgstr "Разширени"
+
+#: contents/ui/settings/SettingsComponent.qml:133
+#, kde-format
+msgid "Audio Codec"
+msgstr "Аудио кодек"
+
+#: contents/ui/settings/SettingsComponent.qml:168
+#, kde-format
+msgid "Container Format"
+msgstr "Формат на контейнера"
+
+#: contents/ui/settings/SettingsComponent.qml:203
+#, kde-format
+msgid "Audio Quality"
+msgstr "Качество на звука"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Lowest"
+msgstr "Най-ниско"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Low"
+msgstr "Ниско"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Medium"
+msgstr "Средно"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "High"
+msgstr "Високо"
+
+#: contents/ui/settings/SettingsComponent.qml:204
+#, kde-format
+msgid "Highest"
+msgstr "Най-високо"
+
+#: contents/ui/settings/SettingsComponent.qml:205
+#, kde-format
+msgid "Higher audio quality also increases file size."
+msgstr "По-високото качество на звука също увеличава размера на файла."
+
+#: contents/ui/settings/SettingsComponent.qml:230
+#, kde-format
+msgid ""
+"Some combinations of codecs and container formats may not be compatible."
+msgstr ""
+"Някои комбинации от кодеци и формати на контейнери може да не са съвместими."
+
+#: main.cpp:50
+#, kde-format
+msgid "© 2020-2024 KDE Community"
+msgstr "© 2020–2024, Общност на KDE"
+
+#: main.cpp:51
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:52
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
