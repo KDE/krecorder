@@ -10,6 +10,7 @@
   <content_rating type="oars-1.1"/>
   <name>Recorder</name>
   <name xml:lang="ar">المسجل</name>
+  <name xml:lang="bg">Recorder</name>
   <name xml:lang="ca">Enregistrador</name>
   <name xml:lang="ca-valencia">Gravador</name>
   <name xml:lang="cs">Nahrávací nástroj</name>
@@ -50,6 +51,7 @@
   <summary>Audio recorder</summary>
   <summary xml:lang="ar">مسجل صوتي</summary>
   <summary xml:lang="ast">Grabadora d'audiu</summary>
+  <summary xml:lang="bg">Запис на аудио</summary>
   <summary xml:lang="ca">Enregistrador d'àudio</summary>
   <summary xml:lang="ca-valencia">Gravador d'àudio</summary>
   <summary xml:lang="cs">Nahrávací nástroj zvuku</summary>
@@ -99,6 +101,7 @@
   <description>
     <p>Recorder is a simple, cross-platform audio recording application.</p>
     <p xml:lang="ar">المسجل هو تطبيق تسجيل صوتي بسيط متعدد المنصات.</p>
+    <p xml:lang="bg">Recorder е лесно за използване кросплатформено приложение за аудио запис.</p>
     <p xml:lang="ca">L'Enregistrador és una aplicació individual multiplataforma d'enregistrament d'àudio.</p>
     <p xml:lang="ca-valencia">El gravador és una aplicació individual multiplataforma de gravació d'àudio.</p>
     <p xml:lang="cs">Recorder je jednoduchá aplikace pro nahrávání zvuku, která funguje na různých platformách.</p>
@@ -154,6 +157,7 @@
     <screenshot>
       <caption>Overview of recordings</caption>
       <caption xml:lang="ar">نظرة عامة للتسجيلات</caption>
+      <caption xml:lang="bg">Преглед на записите</caption>
       <caption xml:lang="ca">Resum d'enregistraments</caption>
       <caption xml:lang="ca-valencia">Resum de gravacions</caption>
       <caption xml:lang="cs">Přehled všech nahrávek</caption>
@@ -191,6 +195,7 @@
     <screenshot type="default">
       <caption>Recording with KRecorder</caption>
       <caption xml:lang="ar">يسجل بواسطة المسجل</caption>
+      <caption xml:lang="bg">Записване с KRecorder</caption>
       <caption xml:lang="ca">Enregistrament amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Gravació amb el KRecorder</caption>
       <caption xml:lang="cs">Nahrávání pomocí KRecorder</caption>
@@ -228,6 +233,7 @@
     <screenshot>
       <caption>Listen to recordings with KRecorder</caption>
       <caption xml:lang="ar">يشغل التسجيلات</caption>
+      <caption xml:lang="bg">Слушане на записи с KRecorder</caption>
       <caption xml:lang="ca">Escolta d'enregistraments amb el KRecorder</caption>
       <caption xml:lang="ca-valencia">Escolta de gravacions amb el KRecorder</caption>
       <caption xml:lang="cs">Poslouchejte nahrávky v aplikaci KRecorder</caption>
@@ -265,6 +271,7 @@
     <screenshot>
       <caption>Settings of KRecorder</caption>
       <caption xml:lang="ar">إعدادات المسجل</caption>
+      <caption xml:lang="bg">Настройки на KRecorder</caption>
       <caption xml:lang="ca">Configuració del KRecorder</caption>
       <caption xml:lang="ca-valencia">Configureu el KRecorder</caption>
       <caption xml:lang="cs">Nastavení KRecorder</caption>
@@ -354,6 +361,7 @@
         <ul>
           <li>User interface improvements and bug-fixes</li>
           <li xml:lang="ar">تحسينات واجهة المستخدم وإصلاحات العلل</li>
+          <li xml:lang="bg">Подобрения в потребителския интерфейс и корекции на грешки</li>
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb</li>
@@ -383,6 +391,7 @@
         <ul>
           <li>User interface improvements and bug-fixes.</li>
           <li xml:lang="ar">تحسينات واجهة المستخدم وإصلاحات العلل.</li>
+          <li xml:lang="bg">Подобрения в потребителския интерфейс и корекции на грешки.</li>
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
@@ -412,6 +421,7 @@
         <ul>
           <li>User interface improvements and bug-fixes.</li>
           <li xml:lang="ar">تحسينات واجهة المستخدم وإصلاحات العلل.</li>
+          <li xml:lang="bg">Подобрения в потребителския интерфейс и корекции на грешки.</li>
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
@@ -439,6 +449,7 @@
       <description>
         <p>Changes:</p>
         <p xml:lang="ar">التغييرات:</p>
+        <p xml:lang="bg">Промени:</p>
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
@@ -462,6 +473,7 @@
         <ul>
           <li>Fix audio record permissions on android</li>
           <li xml:lang="ar">أُصلحت أذونات التسجيل الصوتي على أندرويد</li>
+          <li xml:lang="bg">Коригиране на разрешенията за аудио запис в Android</li>
           <li xml:lang="ca">Corregeix els permisos d'enregistrament d'àudio a l'Android</li>
           <li xml:lang="ca-valencia">Corregix els permisos de gravació d'àudio a Android</li>
           <li xml:lang="cs">Opraveno oprávnění pro nahrávání zvuku v systému Android</li>
@@ -493,6 +505,7 @@
       <description>
         <p>Changes:</p>
         <p xml:lang="ar">التغييرات:</p>
+        <p xml:lang="bg">Промени:</p>
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
@@ -516,6 +529,7 @@
         <ul>
           <li>Specify fallback theme to look consistent on non-Plasma environments</li>
           <li xml:lang="ar">حُددت سمة احتياطية لتبدو متسقة في بيئات غير بلازما</li>
+          <li xml:lang="bg">Указване на резервна тема за по-добра визуална съгласуваност в среди извън Plasma</li>
           <li xml:lang="ca">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguin Plasma</li>
           <li xml:lang="ca-valencia">Especifica el tema alternatiu de reserva per a mostrar-se coherent en entorns que no siguen Plasma</li>
           <li xml:lang="cs">Definován náhradní motiv, aby vypadal konzistentně v prostředí mimo KDE Plasma.</li>
@@ -544,6 +558,7 @@
       <description>
         <p>Changes:</p>
         <p xml:lang="ar">التغييرات:</p>
+        <p xml:lang="bg">Промени:</p>
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
@@ -567,6 +582,7 @@
         <ul>
           <li>Use consistent bar heights for recording and playback views</li>
           <li xml:lang="ar">استُخدمت ارتفاعات أشرطة متسقة لعروض التسجيل والتشغيل</li>
+          <li xml:lang="bg">Използване на еднаква височина на лентите в изгледите за запис и възпроизвеждане</li>
           <li xml:lang="ca">Usa altures de barres coherents a les vistes d'enregistrament i reproducció</li>
           <li xml:lang="ca-valencia">Utilitza altures de barres coherents a les vistes de gravació i reproducció</li>
           <li xml:lang="cs">Použita jednotná výška lišty pro zobrazení nahrávání a přehrávání.</li>
@@ -589,6 +605,7 @@
           <li xml:lang="zh-TW">修正錄音與播放畫面中工具列高度不同的問題</li>
           <li>Fixed no audio causing bars to not be created at all</li>
           <li xml:lang="ar">أُصلحت مشكلة انعدام الصوت التي تسببت في عدم إنشاء الأشرطة نهائيًا</li>
+          <li xml:lang="bg">Поправен проблем, при който липсата на аудио предотвратяваше визуализацията на лентите</li>
           <li xml:lang="ca">Corregeix que no hi hagi àudio fent que les barres no es creïn en absolut</li>
           <li xml:lang="ca-valencia">Corregix que no hi haja àudio fent que les barres no es creen en absolut</li>
           <li xml:lang="cs">Opravena chyba, kvůli které se nevytvářely žádné lišty, protože nebyl žádný zvuk.</li>
@@ -611,6 +628,7 @@
           <li xml:lang="zh-TW">修正無音訊時工具列完全不會被建立的問題</li>
           <li>Enable qml debugging when compiled in debug mode</li>
           <li xml:lang="ar">مُكن تنقيح qml عند التصريف في وضع التنقيح</li>
+          <li xml:lang="bg">Активиране на QML дебъгване при компилиране в режим на дебъг</li>
           <li xml:lang="ca">Activa la depuració del QML quan es compila amb el mode de depuració</li>
           <li xml:lang="ca-valencia">Activa la depuració de QML quan es compila amb el mode de depuració</li>
           <li xml:lang="cs">Povoleno ladění qml při kompilaci v režimu ladění</li>
