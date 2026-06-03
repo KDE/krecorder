@@ -45,6 +45,7 @@
   <name xml:lang="sl">Recorder</name>
   <name xml:lang="sv">Inspelare</name>
   <name xml:lang="tr">Kayıtçı</name>
+  <name xml:lang="ug">خاتىرىلىگۈچ</name>
   <name xml:lang="uk">Записувач</name>
   <name xml:lang="zh-CN">录音机</name>
   <name xml:lang="zh-TW">錄音</name>
@@ -468,6 +469,7 @@
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
+        <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
         <p xml:lang="zh-TW">變更：</p>
@@ -524,6 +526,7 @@
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
+        <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
         <p xml:lang="zh-TW">變更：</p>
@@ -577,6 +580,7 @@
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
         <p xml:lang="tr">Değişiklikler:</p>
+        <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
         <p xml:lang="zh-CN">更改：</p>
         <p xml:lang="zh-TW">變更：</p>
