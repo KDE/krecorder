@@ -382,6 +382,7 @@
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak</li>
+          <li xml:lang="sv">Förbättringar av användargränssnitt och felrättningar</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复</li>
@@ -413,6 +414,7 @@
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb.</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
+          <li xml:lang="sv">Förbättringar av användargränssnitt och felrättningar.</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复。</li>
@@ -444,6 +446,7 @@
           <li xml:lang="ru">Улучшения пользовательского интерфейса и исправление ошибок;</li>
           <li xml:lang="sk">Vylepšenia používateľského rozhrania a opravy chýb.</li>
           <li xml:lang="sl">Izboljšave uporabniškega vmesnika in popravki napak.</li>
+          <li xml:lang="sv">Förbättringar av användargränssnitt och felrättningar.</li>
           <li xml:lang="tr">Kullanıcı arayüzü iyileştirmeleri ve hata düzeltmeleri</li>
           <li xml:lang="uk">Удосконалення інтерфейсу користувача і виправлення вад.</li>
           <li xml:lang="zh-CN">用户界面改进和程序缺陷修复。</li>
@@ -473,6 +476,7 @@
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
+        <p xml:lang="sv">Ändringar:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -499,6 +503,7 @@
           <li xml:lang="ru">Исправлены права на запись звука в Android;</li>
           <li xml:lang="sk">Oprava oprávnení na nahrávanie zvuku v systéme Android</li>
           <li xml:lang="sl">Popravi dovoljenja za snemanje zvoka v sistemu Android</li>
+          <li xml:lang="sv">Rätta rättigheter för ljudinspelning på Android</li>
           <li xml:lang="tr">Android üzerindeki ses kayıt izinleri düzeltildi.</li>
           <li xml:lang="uk">Виправлено права доступу до записів звуку у android</li>
           <li xml:lang="zh-CN">修复安卓系统上的音频录制权限</li>
@@ -532,6 +537,7 @@
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
+        <p xml:lang="sv">Ändringar:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -558,6 +564,7 @@
           <li xml:lang="ru">В рабочих средах, отличных от Plasma, используется резервное оформление</li>
           <li xml:lang="sk">Určenie záložnej témy pre konzistentný vzhľad v prostrediach bez Plasma</li>
           <li xml:lang="sl">Določite nadomestno temo, ki bo videti dosledno v okoljih, ki niso Plasma</li>
+          <li xml:lang="sv">Ange reservtema så det ser konsekvent ut i andra omgivningar än Plasma</li>
           <li xml:lang="tr">Plasma dışı ortamlarda tutarlı görünmek için yedek tema belirtildi.</li>
           <li xml:lang="uk">Визначено резервну тему для сумісного вигляду у середовищах поза Плазмою</li>
           <li xml:lang="zh-CN">指定备用主题以在非 Plasma 环境中保持一致性</li>
@@ -588,6 +595,7 @@
         <p xml:lang="ru">Изменения:</p>
         <p xml:lang="sk">Zmeny:</p>
         <p xml:lang="sl">Spremembe:</p>
+        <p xml:lang="sv">Ändringar:</p>
         <p xml:lang="tr">Değişiklikler:</p>
         <p xml:lang="ug">ئۆزگىرىش:</p>
         <p xml:lang="uk">Зміни:</p>
@@ -614,6 +622,7 @@
           <li xml:lang="ru">используется одинаковая высота полос для представлений записи и воспроизведения;</li>
           <li xml:lang="sk">Použitie konzistentnej výšky stĺpcov pre zobrazenie nahrávania a prehrávania</li>
           <li xml:lang="sl">Uporabi konsistentne višine stolpcev za poglede snemanja in predvajanja</li>
+          <li xml:lang="sv">Använd konsekventa stapelhöjder för inspelnings- och uppspelningsvyer</li>
           <li xml:lang="tr">Kayıt ve oynatma görünümleri için tutarlı çubuk yükseklikleri kullanıldı.</li>
           <li xml:lang="uk">Використано сумісні висоти панелей для панелей запису і відтворення</li>
           <li xml:lang="zh-CN">在录制和播放视图中使用一致的音量条高度</li>
@@ -638,6 +647,7 @@
           <li xml:lang="ru">Исправлена проблема, при которой отсутствие звука приводило к полному отсутствию полос;</li>
           <li xml:lang="sk">Opravené nevytvorenie stĺpcov pri absencii zvuku</li>
           <li xml:lang="sl">Odpravljena napaka, zaradi katere se stolpci zvoka sploh niso ustvarjali</li>
+          <li xml:lang="sv">Rätta så att staplar som inte orsakar ljud inte skapas alls</li>
           <li xml:lang="tr">Ses olmamasının çubukların hiç oluşturulmamasına neden olması düzeltildi.</li>
           <li xml:lang="uk">Виправлено помилку, пов'язану із тим, що без звукових даних програма взагалі не створювала панелей рівнів</li>
           <li xml:lang="zh-CN">修复没有声音时会导致音量条不被创建的问题</li>
@@ -662,6 +672,7 @@
           <li xml:lang="ru">Добавлена возможность отладки QML в режиме отладки</li>
           <li xml:lang="sk">Povolenie ladenia QML pri kompilácii v režime ladenia</li>
           <li xml:lang="sl">Omogoči odpravljanje napak v qml pri prevajanju v načinu odpravljanja napak</li>
+          <li xml:lang="sv">Aktivera qml-felsökning vid kompilering i felsökningsläge</li>
           <li xml:lang="tr">Hata ayıklama kipinde derlendiğinde QML hata ayıklaması etkinleştirildi.</li>
           <li xml:lang="uk">Уможливлено діагностику qml, якщо програму зібрано у діагностичному режимі</li>
           <li xml:lang="zh-CN">在调试模式下编译时启用 QML 调试</li>
