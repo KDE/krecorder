@@ -44,6 +44,7 @@ include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(ECMAddAndroidApk)
+include(ECMQmlModule)
 
 # setup version
 ecm_setup_version(${PROJECT_VERSION}

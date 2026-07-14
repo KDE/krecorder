@@ -84,7 +84,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.loadFromModule("KRecorder", "Main");
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

@@ -65,7 +65,7 @@ Kirigami.ApplicationWindow {
                 settingsDialogLoader.item.show();
             }
         } else {
-            pageStack.push("qrc:/settings/SettingsPage.qml");
+            pageStack.push("settings/SettingsPage.qml");
         }
     }
 
@@ -86,14 +86,14 @@ Kirigami.ApplicationWindow {
             AudioPlayer.setMediaPath(null);
 
             if (isWidescreen) {
-                playerPageLoader.setSource("qrc:/DefaultPage.qml");
+                playerPageLoader.setSource("DefaultPage.qml");
                 pageStack.push(playerPageLoader.item);
             }
         } else {
             AudioPlayer.setVolume(100);
             AudioPlayer.setMediaPath(recording.filePath)
             AudioPlayer.play()
-            playerPageLoader.setSource("qrc:/PlayerPage.qml", {recording: recording});
+            playerPageLoader.setSource("PlayerPage.qml", {recording: recording});
             pageStack.push(playerPageLoader.item);
         }
     }
@@ -107,7 +107,7 @@ Kirigami.ApplicationWindow {
     Loader {
         id: settingsDialogLoader
         active: false
-        source: Kirigami.Settings.isMobile ? "qrc:/settings/SettingsDialog.qml" : "qrc:/settings/SettingsWindow.qml"
+        source: Kirigami.Settings.isMobile ? "settings/SettingsDialog.qml" : "settings/SettingsWindow.qml"
     }
 }
 
