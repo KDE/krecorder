@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"POT-Creation-Date: 2026-07-15 00:49+0000\n"
 "PO-Revision-Date: 2026-04-07 15:39+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -56,7 +56,7 @@ msgstr "Riproduci una registrazione, o registrane una nuova"
 msgid "Record a new recording"
 msgstr "Registra un'altra registrazione"
 
-#: contents/ui/main.qml:24
+#: contents/ui/Main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "Registratore"

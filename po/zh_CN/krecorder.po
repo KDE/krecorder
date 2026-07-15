@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"POT-Creation-Date: 2026-07-15 00:49+0000\n"
 "PO-Revision-Date: 2024-04-23 19:24\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -56,7 +56,7 @@ msgstr "播放录音，或录制新录音"
 msgid "Record a new recording"
 msgstr "录制一段新的录音"
 
-#: contents/ui/main.qml:24
+#: contents/ui/Main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "录音机"

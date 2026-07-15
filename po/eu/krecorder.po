@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"POT-Creation-Date: 2026-07-15 00:49+0000\n"
 "PO-Revision-Date: 2026-03-29 21:54+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -59,7 +59,7 @@ msgstr "Grabazio bat jo, edo berri bat grabatu"
 msgid "Record a new recording"
 msgstr "Grabatu grabazio berri bat"
 
-#: contents/ui/main.qml:24
+#: contents/ui/Main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "Grabatzailea"

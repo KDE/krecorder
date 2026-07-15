@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-27 00:49+0000\n"
+"POT-Creation-Date: 2026-07-15 00:49+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -58,7 +58,7 @@ msgstr "एकं रिकार्डिङ्ग् वादयन्तु,
 msgid "Record a new recording"
 msgstr "नूतनं रिकार्डिङ्ग् रिकार्ड् कुर्वन्तु"
 
-#: contents/ui/main.qml:24
+#: contents/ui/Main.qml:24
 #, kde-format
 msgid "Recorder"
 msgstr "अभिलेखकः"
