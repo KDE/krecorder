@@ -12,7 +12,6 @@ Control {
     property bool showSeparator: false
 
     signal clicked()
-    signal rightClicked()
     signal longPressed()
 
     leftPadding: Kirigami.Units.largeSpacing
@@ -29,14 +28,6 @@ Control {
             onTapped: root.clicked()
             onLongPressed: root.longPressed()
         }
-        TapHandler {
-            acceptedButtons: Qt.RightButton
-            enabled: !Kirigami.Settings.isMobile // Disabled on mobile due to QT bug causing this to trigger on touch.
-            onTapped: {
-                root.rightClicked()
-            }
-        }
-
         Kirigami.Separator {
             anchors.bottom: parent.bottom
             anchors.left: parent.left
@@ -48,4 +39,3 @@ Control {
         }
     }
 }
-
