@@ -1,12 +1,12 @@
 # Translation of krecorder to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2020, 2021.
+# Karl Ove Hufthammer <karl@huftis.org>, 2020, 2021, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2021-04-09 23:52+0200\n"
+"PO-Revision-Date: 2026-08-08 12:57+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 26.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -22,22 +22,22 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Karl Ove Hufthammer"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "karl@huftis.org"
 
 #: audiorecorder.cpp:187
 #, kde-format
 msgid "Default file format"
-msgstr ""
+msgstr "Standard filformat"
 
 #: audiorecorder.cpp:201
-#, fuzzy, kde-format
+#, kde-format
 msgid "Default audio codec"
-msgstr "Lyd-kodek"
+msgstr "Standard lydkodek"
 
 #: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
@@ -51,12 +51,12 @@ msgstr "Innstillingar"
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr ""
+msgstr "Spel av opptak, eller spel inn eit nytt"
 
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
-msgstr ""
+msgstr "Spel inn nytt opptak"
 
 #: contents/ui/main.qml:24
 #, kde-format
@@ -66,12 +66,12 @@ msgstr "Opptakar"
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Avspelar"
 
 #: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
-msgstr ""
+msgstr "Teke opp %1"
 
 #: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
@@ -91,17 +91,17 @@ msgstr "Stopp"
 #: contents/ui/RecordingListDelegate.qml:73
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Eksporter til mappe"
 
 #: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Endra namn"
 
 #: contents/ui/RecordingListDelegate.qml:89
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Flytt til papirkorga"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
@@ -140,8 +140,7 @@ msgid "Export to Location"
 msgstr ""
 
 #: contents/ui/RecordingListPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Edit"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
 msgstr "Rediger"
@@ -150,18 +149,18 @@ msgstr "Rediger"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
-msgstr ""
+msgstr "Flytt til papirkorga"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Flytt"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Flytt %1 til papirkorga"
 
 #: contents/ui/RecordingListPage.qml:210
 #, kde-format
@@ -173,7 +172,7 @@ msgstr ""
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Endra namn på %1"
 
 #: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
@@ -193,16 +192,15 @@ msgstr "Ta opp lyd"
 #: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Hald fram"
 
 #: contents/ui/RecordPage.qml:148
-#, fuzzy, kde-format
-#| msgid "Pause"
+#, kde-format
 msgid "Paused"
 msgstr "Pause"
 
 #: contents/ui/RecordPage.qml:183
-#, fuzzy, kde-format
+#, kde-format
 msgid "Save Recording"
 msgstr "Lagra opptak"
 
@@ -224,27 +222,27 @@ msgstr "Namn (valfritt)"
 #: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Lagringsmappe:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
-msgstr ""
+msgstr "Lyd inn"
 
 #: contents/ui/settings/SettingsComponent.qml:126
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Avansert"
 
 #: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
@@ -254,37 +252,37 @@ msgstr "Lyd-kodek"
 #: contents/ui/settings/SettingsComponent.qml:168
 #, kde-format
 msgid "Container Format"
-msgstr ""
+msgstr "Behaldarformat"
 
 #: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
-msgstr ""
+msgstr "Lydkvalitet"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Lågast"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Låg"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Middels"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Høg"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Høgast"
 
 #: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
@@ -300,14 +298,14 @@ msgstr ""
 #: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr ""
+msgstr "© 2020–2024 KDE-fellesskapet"
 
 #: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
