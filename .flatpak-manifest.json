@@ -5,7 +5,9 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "krecorder",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--share=ipc",
@@ -21,7 +23,15 @@
             "name": "krecorder",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".",
+                    "skip": [
+                        ".git"
+                    ]
+                }
+            ]
         }
     ]
 }
