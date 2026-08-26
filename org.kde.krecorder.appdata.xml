@@ -20,7 +20,7 @@
   <name xml:lang="eo">Recorder</name>
   <name xml:lang="es">Recorder</name>
   <name xml:lang="eu">Grabatzailea</name>
-  <name xml:lang="fi">Tallennin</name>
+  <name xml:lang="fi">Recorder</name>
   <name xml:lang="fr">Enregistreur</name>
   <name xml:lang="gl">Gravadora</name>
   <name xml:lang="he">מקליט</name>
@@ -62,7 +62,7 @@
   <summary xml:lang="eo">Aŭdio-Registrilo</summary>
   <summary xml:lang="es">Grabadora de sonido</summary>
   <summary xml:lang="eu">Audio grabatzailea</summary>
-  <summary xml:lang="fi">Äänitallennin</summary>
+  <summary xml:lang="fi">Ääninauhoitin</summary>
   <summary xml:lang="fr">Enregistreur audio</summary>
   <summary xml:lang="gl">Gravadora de son</summary>
   <summary xml:lang="he">מקליט שמע</summary>
@@ -167,7 +167,7 @@
       <caption xml:lang="eo">Superrigardo de la registraĵoj</caption>
       <caption xml:lang="es">Resumen de grabaciones</caption>
       <caption xml:lang="eu">Grabazioen ikuspegi orokorra</caption>
-      <caption xml:lang="fi">Tallennusten yleiskuva</caption>
+      <caption xml:lang="fi">Äänitteiden yleiskuva</caption>
       <caption xml:lang="fr">Aperçu des enregistrements</caption>
       <caption xml:lang="gl">Vista xeral das gravacións.</caption>
       <caption xml:lang="he">סקירת ההקלטות</caption>
@@ -205,7 +205,7 @@
       <caption xml:lang="eo">Registrante kun KRecorder</caption>
       <caption xml:lang="es">Grabando con KRecorder</caption>
       <caption xml:lang="eu">KRecorder erabiliz grabatzea</caption>
-      <caption xml:lang="fi">Tallennus KRecorderilla</caption>
+      <caption xml:lang="fi">Äänitys KRecorderilla</caption>
       <caption xml:lang="fr">Enregistrement avec KRecorder</caption>
       <caption xml:lang="gl">Gravación con KRecorder.</caption>
       <caption xml:lang="he">הקלטה עם KRecorder</caption>
@@ -243,7 +243,7 @@
       <caption xml:lang="eo">Aŭskultante registraĵojn per KRecorder</caption>
       <caption xml:lang="es">Escuchar grabaciones con KRecorder</caption>
       <caption xml:lang="eu">KRecorder erabiliz grabazioak entzutea</caption>
-      <caption xml:lang="fi">Kuuntele tallenteita KRecorderilla</caption>
+      <caption xml:lang="fi">Kuuntele äänitteitä KRecorderilla</caption>
       <caption xml:lang="fr">Écouter des enregistrements avec KRecorder</caption>
       <caption xml:lang="gl">Escoita de gravacións con KRecorder.</caption>
       <caption xml:lang="he">האזנה להקלאות עם KRecorder</caption>
@@ -371,6 +371,7 @@
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak</li>
+          <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות</li>
           <li xml:lang="hu">Felhasználói felület fejlesztése és hibajavítások</li>
@@ -403,6 +404,7 @@
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
+          <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="hu">Felhasználói felület fejlesztése és hibajavítások.</li>
@@ -435,6 +437,7 @@
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
+          <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
           <li xml:lang="fr">Améliorations de l'interface utilisateur et corrections de bogues.</li>
           <li xml:lang="he">שיפורי ממשק משתמש ותיקוני תקלות.</li>
           <li xml:lang="hu">Felhasználói felület fejlesztése és hibajavítások.</li>
@@ -465,6 +468,7 @@
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
+        <p xml:lang="fi">Muutoksia:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="hu">Változások:</p>
@@ -492,6 +496,7 @@
           <li xml:lang="cs">Opraveno oprávnění pro nahrávání zvuku v systému Android</li>
           <li xml:lang="es">Se han corregido los permisos de grabación en Android.</li>
           <li xml:lang="eu">Androiden audioa grabatzeko baimenak zuzendu</li>
+          <li xml:lang="fi">korjattu äänennauhoitusoikeudet Androidissa</li>
           <li xml:lang="fr">Correction des droits pour l'enregistrement audio sous Android</li>
           <li xml:lang="he">תוקנו הרשאות הקלטת שמע ב־Android</li>
           <li xml:lang="hu">Hangfelvételhez szükséges jogosultságok javítása Androidon</li>
@@ -526,6 +531,7 @@
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
+        <p xml:lang="fi">Muutoksia:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="hu">Változások:</p>
@@ -553,6 +559,7 @@
           <li xml:lang="cs">Definován náhradní motiv, aby vypadal konzistentně v prostředí mimo KDE Plasma.</li>
           <li xml:lang="es">Especificar el tema de respaldo para que se vea consistente en entornos que no sean Plasma.</li>
           <li xml:lang="eu">Plasma ez diren inguruneetan itxura koherentea mantentzeko erreserbako gaia zehaztu</li>
+          <li xml:lang="fi">määritetty yhdenmukaisen ulkoasun vuoksi varateema ei-Plasma-ympäristöissä</li>
           <li xml:lang="fr">Définir un thème de secours pour conserver une apparence cohérente avec les environnements  différents de Plasma</li>
           <li xml:lang="he">ציון ערכת עיצוב כנסיגה למראה אחיד בסביבות שאינן פלזמה</li>
           <li xml:lang="hu">Alternatív téma megadása a nem Plasma környezetekkel való konzisztens megjelenéshez</li>
@@ -584,6 +591,7 @@
         <p xml:lang="cs">Změny:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
+        <p xml:lang="fi">Muutoksia:</p>
         <p xml:lang="fr">Modifications :</p>
         <p xml:lang="he">שינויים:</p>
         <p xml:lang="hu">Változások:</p>
@@ -611,6 +619,7 @@
           <li xml:lang="cs">Použita jednotná výška lišty pro zobrazení nahrávání a přehrávání.</li>
           <li xml:lang="es">Uso de alturas de barra consistentes para las vistas de grabación y de reproducción.</li>
           <li xml:lang="eu">Grabazio eta atzera-jotze ikuspegietan barra-altuera koherenteak erabili</li>
+          <li xml:lang="fi">yhdenmukaistettiin palkin korkeudet nauhoitus- ja toistonäkymissä</li>
           <li xml:lang="fr">Utilisez des hauteurs de barre cohérentes pour les vues d'enregistrement et de lecture</li>
           <li xml:lang="he">להשתמש בגובהי עמודות עקביים לתצוגות הקלטה ונגינה</li>
           <li xml:lang="hu">Egységes sávmagasságok a felvételi és lejátszási nézetekben</li>
@@ -636,6 +645,7 @@
           <li xml:lang="cs">Opravena chyba, kvůli které se nevytvářely žádné lišty, protože nebyl žádný zvuk.</li>
           <li xml:lang="es">Se ha solucionado el problema de ausencia de sonido que provocaba que no se crearan barras.</li>
           <li xml:lang="eu">Audiorik ez egotea barrak ez sortzea konponduta.</li>
+          <li xml:lang="fi">korjattiin</li>
           <li xml:lang="fr">Correction d'un problème où l'absence de son empêchait la création des barres</li>
           <li xml:lang="he">תוקנה בעיה שהעדר שמע גורם לכך שהעמודות לא נוצרות בכלל</li>
           <li xml:lang="hu">Javítva az a hiba, amikor a hang hiánya miatt egyáltalán nem jöttek létre a sávok</li>
@@ -661,6 +671,7 @@
           <li xml:lang="cs">Povoleno ladění qml při kompilaci v režimu ladění</li>
           <li xml:lang="es">Habilitar modo de depuración qml cuando se compila en modo de depuración.</li>
           <li xml:lang="eu">Arazte moduan konpilatzean qml araztea gaitu</li>
+          <li xml:lang="fi">Käytä QML-virheenpaikannusta käännettäessä virheenpaikannustilassa</li>
           <li xml:lang="fr">Activer le débogage de QML lorsque compilé en mode débogage</li>
           <li xml:lang="he">הפעלת ניפוי שגיאות ב־qml כשבוצע הידור במצב ניפוי שגיאות</li>
           <li xml:lang="hu">QML hibakeresés engedélyezése, ha a programot hibakeresési módban fordították</li>
