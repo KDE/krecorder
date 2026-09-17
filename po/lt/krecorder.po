@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2020-10-12 02:31+0200\n"
+"PO-Revision-Date: 2026-09-16 15:35+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,26 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "<>"
 
 #: audiorecorder.cpp:187
 #, kde-format
 msgid "Default file format"
-msgstr ""
+msgstr "Numatytasis failo formatas"
 
 #: audiorecorder.cpp:201
 #, kde-format
 msgid "Default audio codec"
-msgstr ""
+msgstr "Numatytasis garso įrašo kodekas"
 
 #: contents/ui/DefaultPage.qml:21 contents/ui/PlayerPage.qml:28
 #: contents/ui/RecordingListPage.qml:47
@@ -45,121 +46,121 @@ msgstr ""
 #: contents/ui/settings/SettingsWindow.qml:13
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Play a recording, or record a new one"
-msgstr ""
+msgstr "Atkurkite garso įrašą arba įrašykite naują"
 
 #: contents/ui/DefaultPage.qml:30
 #, kde-format
 msgid "Record a new recording"
-msgstr ""
+msgstr "Įrašykite nauja garso įrašą"
 
 #: contents/ui/main.qml:24
 #, kde-format
 msgid "Recorder"
-msgstr ""
+msgstr "Diktofonas"
 
 #: contents/ui/PlayerPage.qml:20
 #, kde-format
 msgid "Player"
-msgstr ""
+msgstr "Grotuvas"
 
 #: contents/ui/PlayerPage.qml:51
 #, kde-format
 msgid "Recorded on %1"
-msgstr ""
+msgstr "Garso įrašas įrašytas %1"
 
 #: contents/ui/PlayerPage.qml:77 contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pristabdyti"
 
 #: contents/ui/PlayerPage.qml:77
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Atkurti"
 
 #: contents/ui/PlayerPage.qml:87
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Stabdyti"
 
 #: contents/ui/RecordingListDelegate.qml:73
 #, kde-format
 msgid "Export to location"
-msgstr ""
+msgstr "Eksportuoti į tam tikrą vietą"
 
 #: contents/ui/RecordingListDelegate.qml:81
 #, kde-format
 msgid "Rename"
-msgstr ""
+msgstr "Pervadinti"
 
 #: contents/ui/RecordingListDelegate.qml:89
 #, kde-format
 msgid "Move to trash"
-msgstr ""
+msgstr "Perkelti į šiukšlinę"
 
 #: contents/ui/RecordingListPage.qml:24
 #, kde-format
 msgid "Recordings"
-msgstr ""
+msgstr "Garso įrašai"
 
 #: contents/ui/RecordingListPage.qml:39
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Taisyti"
 
 #: contents/ui/RecordingListPage.qml:53
 #, kde-format
 msgid "Record"
-msgstr ""
+msgstr "Įrašinėti"
 
 #: contents/ui/RecordingListPage.qml:95
 #, kde-format
 msgid "No recordings"
-msgstr ""
+msgstr "Nėra garso įrašų"
 
 #: contents/ui/RecordingListPage.qml:130
 #, kde-format
 msgid "Select a location to save recording %1"
-msgstr ""
+msgstr "Pasirinkite, į kurią vietą įrašyti garso įrašą %1"
 
 #: contents/ui/RecordingListPage.qml:140
 #, kde-format
 msgid "Saved recording to %1"
-msgstr ""
+msgstr "Garso įrašas įrašytas į %1"
 
 #: contents/ui/RecordingListPage.qml:151
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Export to Location"
-msgstr ""
+msgstr "Eksportuoti į tam tikrą vietą"
 
 #: contents/ui/RecordingListPage.qml:156
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
-msgstr ""
+msgstr "Taisyti"
 
 #: contents/ui/RecordingListPage.qml:164
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Move to Trash"
-msgstr ""
+msgstr "Perkelti į šiukšlinę"
 
 #: contents/ui/RecordingListPage.qml:193
 #, kde-format
 msgctxt "@action:button"
 msgid "Move"
-msgstr ""
+msgstr "Perkelti"
 
 #: contents/ui/RecordingListPage.qml:197
 #, kde-format
 msgid "Move %1 to trash"
-msgstr ""
+msgstr "Perkelti %1 į šiukšlinę"
 
 #: contents/ui/RecordingListPage.qml:210
 #, kde-format
@@ -167,144 +168,148 @@ msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
+"Ar tikrai norite perkelti garso įrašą %1 į šiukšlinę?<br/>Vėliau jį galima "
+"bus atkurti."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
 msgid "Rename %1"
-msgstr ""
+msgstr "Pervadinti %1"
 
 #: contents/ui/RecordingListPage.qml:231 contents/ui/RecordPage.qml:241
 #, kde-format
 msgid "Name:"
-msgstr ""
+msgstr "Pavadinimas:"
 
 #: contents/ui/RecordingListPage.qml:236
 #, kde-format
 msgid "Location:"
-msgstr ""
+msgstr "Vieta:"
 
 #: contents/ui/RecordPage.qml:22
 #, kde-format
 msgid "Record Audio"
-msgstr ""
+msgstr "Įrašinėti garso įrašą"
 
 #: contents/ui/RecordPage.qml:124
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Tęsti"
 
 #: contents/ui/RecordPage.qml:148
 #, kde-format
 msgid "Paused"
-msgstr ""
+msgstr "Pristabdyta"
 
 #: contents/ui/RecordPage.qml:183
 #, kde-format
 msgid "Save Recording"
-msgstr ""
+msgstr "Įrašyti garso įrašą į diską"
 
 #: contents/ui/RecordPage.qml:202
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Ištrinti"
 
 #: contents/ui/RecordPage.qml:223
 #, kde-format
 msgid "Save recording"
-msgstr ""
+msgstr "Įrašyti garso įrašą į diską"
 
 #: contents/ui/RecordPage.qml:242
 #, kde-format
 msgid "Name (optional)"
-msgstr ""
+msgstr "Pavadinimas (nebūtinas)"
 
 #: contents/ui/RecordPage.qml:246
 #, kde-format
 msgid "Storage Folder:"
-msgstr ""
+msgstr "Saugojimo aplankas:"
 
 #: contents/ui/settings/SettingsComponent.qml:34
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Bendros"
 
 #: contents/ui/settings/SettingsComponent.qml:40
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: contents/ui/settings/SettingsComponent.qml:58
 #, kde-format
 msgid "Audio Input"
-msgstr ""
+msgstr "Garso įvedimas"
 
 #: contents/ui/settings/SettingsComponent.qml:126
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Išplėstinės"
 
 #: contents/ui/settings/SettingsComponent.qml:133
 #, kde-format
 msgid "Audio Codec"
-msgstr ""
+msgstr "Garso įrašo kodekas"
 
 #: contents/ui/settings/SettingsComponent.qml:168
 #, kde-format
 msgid "Container Format"
-msgstr ""
+msgstr "Konteinerio formatas"
 
 #: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
-msgstr ""
+msgstr "Garso įrašo kokybė"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Lowest"
-msgstr ""
+msgstr "Žemiausia"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Low"
-msgstr ""
+msgstr "Žema"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Vidutinė"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "High"
-msgstr ""
+msgstr "Aukšta"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
 msgid "Highest"
-msgstr ""
+msgstr "Aukščiausia"
 
 #: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Aukštesnė garso įrašo kokybė taip pat padidina failo dydį."
 
 #: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
+"Kai kurios kodekų ir konteinerių formatų kombinacijos gali būti "
+"nesuderinamos."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2020-2024 KDE Community"
-msgstr ""
+msgstr "© 2020–2024 KDE bendruomenė"
 
 #: main.cpp:51
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
