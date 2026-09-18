@@ -31,6 +31,7 @@
   <name xml:lang="it">Registratore</name>
   <name xml:lang="ka">ჩამწერი</name>
   <name xml:lang="ko">녹음기</name>
+  <name xml:lang="lt">Diktofonas</name>
   <name xml:lang="lv">Recorder</name>
   <name xml:lang="nl">Recorder</name>
   <name xml:lang="nn">Recorder</name>
@@ -73,6 +74,7 @@
   <summary xml:lang="it">Registratore audio</summary>
   <summary xml:lang="ka">ხმის ჩამწერი</summary>
   <summary xml:lang="ko">오디오 녹음기</summary>
+  <summary xml:lang="lt">Garso rašytuvas</summary>
   <summary xml:lang="lv">Skaņas ierakstītājs</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
   <summary xml:lang="pl">Nagrywanie dźwięku</summary>
@@ -123,6 +125,7 @@
     <p xml:lang="it">Registratore è un'applicazione di registrazione audio semplice e multi-piattaforma.</p>
     <p xml:lang="ka">ჩამწერი მარტივი, კროსპლატფორმული ხმის ჩამწერი აპლიკაციაა.</p>
     <p xml:lang="ko">녹음기는 간단한 크로스 플랫폼 오디오 녹음기 앱입니다.</p>
+    <p xml:lang="lt">Diktofonas yra paprasta, daugiaplatformė garso įrašų įrašinėjimo programa.</p>
     <p xml:lang="lv">„Recorder“ jeb ierakstītājs ir vienkārša skaņas ierakstīšanas programma, kas darbojas daudzās operētājsistēmās.</p>
     <p xml:lang="nl">Recorder is een eenvoudige, cross-platform toepassing voor geluidsopnamen.</p>
     <p xml:lang="nn">Recorder eit eit enkelt program for lydopptak.</p>
@@ -177,6 +180,7 @@
       <caption xml:lang="it">Panoramica sulle registrazioni</caption>
       <caption xml:lang="ka">ჩანაწერების გადახედვა</caption>
       <caption xml:lang="ko">녹음 요약 보기</caption>
+      <caption xml:lang="lt">Garso įrašų apžvalga</caption>
       <caption xml:lang="lv">Ierakstu pārskats</caption>
       <caption xml:lang="nl">Overzicht van opnamen</caption>
       <caption xml:lang="pl">Przegląd nagrań</caption>
@@ -215,6 +219,7 @@
       <caption xml:lang="it">Registrazione con KRecorder</caption>
       <caption xml:lang="ka">ჩაწერა KRecorder-ით</caption>
       <caption xml:lang="ko">KRecorder를 사용한 녹음</caption>
+      <caption xml:lang="lt">Įrašinėjama naudojant KRecorder</caption>
       <caption xml:lang="lv">Ierakstīšana ar „KRecorder“</caption>
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
       <caption xml:lang="pl">Nagrywanie w KRecorderze</caption>
@@ -253,6 +258,7 @@
       <caption xml:lang="it">Ascoltare le registrazioni con KRecorder</caption>
       <caption xml:lang="ka">ჩანაწერების მოსმენა KRecorder-ით</caption>
       <caption xml:lang="ko">KRecorder를 사용한 녹음 듣기</caption>
+      <caption xml:lang="lt">Garso įrašų klausymasis naudojant KRecorder</caption>
       <caption xml:lang="lv">Ierakstu klausīšanās ar „KRecorder“</caption>
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
       <caption xml:lang="pl">Posłuchaj nagrań z KRecorder</caption>
@@ -291,6 +297,7 @@
       <caption xml:lang="it">Impostazioni di KRecorder</caption>
       <caption xml:lang="ka">KRecorder-ის მორგება</caption>
       <caption xml:lang="ko">KRecorder 설정</caption>
+      <caption xml:lang="lt">KRecorder nuostatos</caption>
       <caption xml:lang="lv">„KRecorder“ iestatījumi</caption>
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
       <caption xml:lang="pl">Ustawienia KRecordera</caption>
@@ -379,6 +386,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება</li>
+          <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori</li>
@@ -412,6 +420,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
@@ -445,6 +454,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="pt-BR">Melhorias na interface do usuário e correções de erros.</li>
           <li xml:lang="ro">Îmbunătățiri pentru interfața cu utilizatorul și corecții de erori.</li>
@@ -476,6 +486,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
@@ -504,6 +515,7 @@
           <li xml:lang="ia">Corrige permissiones de registrar audio sur android</li>
           <li xml:lang="it">Correzioni ai permessi di registrazione in Android</li>
           <li xml:lang="ka">გასწორდა ხმის ჩაწერის უფლებები Android-ზე</li>
+          <li xml:lang="lt">Pataisytas garso įrašų įrašinėjimo leidimai „Android“ sistemoje</li>
           <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
           <li xml:lang="ro">Repară permisiunile de înregistrare a sunetului pe Android</li>
@@ -539,6 +551,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
@@ -567,6 +580,7 @@
           <li xml:lang="ia">Specifica thema de reserva per semblar consistente in ambientes non-Plasma</li>
           <li xml:lang="it">Specifica il tema di riserva per garantire la coerenza in ambienti non Plasma</li>
           <li xml:lang="ka">გადართვის თემის მითითება ინტერფეისის მუდმივობისთვის არა-Plasma-ის გარემოებში</li>
+          <li xml:lang="lt">Nurodytas atsarginis apipavidalinimas, kad ne Plasma aplinkose būtų nuosekli išvaizda</li>
           <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
           <li xml:lang="ro">Specificați tematica de rezervă pentru un aspect consistent în alte medii decât Plasma</li>
@@ -599,6 +613,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
@@ -627,6 +642,7 @@
           <li xml:lang="ia">Usa altessa de barras consistente per vistas de registrar e reproducer</li>
           <li xml:lang="it">Utilizza altezze delle barre uniformi per le viste di registrazione e di riproduzione</li>
           <li xml:lang="ka">მუდმივი პანელის სიმაღლეების გამოყენება ჩაწერისა და დაკვრის ხედებისთვის</li>
+          <li xml:lang="lt">Naudoti įrašinėjimo ir atkūrimo rodiniuose nuoseklius juostos aukščius</li>
           <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
           <li xml:lang="ro">Folosește înălțimi consistente ale barelor pentru vizualizările de înregistrare și redare</li>
@@ -653,6 +669,7 @@
           <li xml:lang="ia">Corrigite nulle audio causante que le barras non es create del toto</li>
           <li xml:lang="it">Risolto il problema dell'audio che impediva la creazione delle barre</li>
           <li xml:lang="ka">გასწორდა შეცდომა, რომ ხმის გარეშე პანელები საერთოდ არ იქმნებოდა</li>
+          <li xml:lang="lt">Ištaisyta klaida, kai nebūdavo jokio garso ir visiškai nebūdavo kuriamos juostos</li>
           <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
           <li xml:lang="ro">Reparat defectul că barele nu erau create deloc în lipsa sunetului</li>
@@ -679,6 +696,7 @@
           <li xml:lang="ia">Habilita cribrar de qml quando  compilate in modo de cribrar</li>
           <li xml:lang="it">Abilita la modalità di debug qml quando compilato in modalità di debug</li>
           <li xml:lang="ka">ჩაირთო QML-ის გამართვა გამართვის რეჟიმში აგებისას</li>
+          <li xml:lang="lt">Įjungtas qml derinimas, kai sukompiliuota derinimo veiksenoje</li>
           <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
           <li xml:lang="ro">Activează depanarea QML la compilarea în regim de depanare</li>
