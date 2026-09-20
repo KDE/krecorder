@@ -77,6 +77,7 @@
   <summary xml:lang="lt">Garso rašytuvas</summary>
   <summary xml:lang="lv">Skaņas ierakstītājs</summary>
   <summary xml:lang="nl">Geluidsrecorder</summary>
+  <summary xml:lang="nn">Lydopptakar</summary>
   <summary xml:lang="pl">Nagrywanie dźwięku</summary>
   <summary xml:lang="pt">Gravador de áudio</summary>
   <summary xml:lang="pt-BR">Gravador de áudio</summary>
@@ -183,6 +184,7 @@
       <caption xml:lang="lt">Garso įrašų apžvalga</caption>
       <caption xml:lang="lv">Ierakstu pārskats</caption>
       <caption xml:lang="nl">Overzicht van opnamen</caption>
+      <caption xml:lang="nn">Oversikt over opptak</caption>
       <caption xml:lang="pl">Przegląd nagrań</caption>
       <caption xml:lang="pt-BR">Visão geral das gravações</caption>
       <caption xml:lang="ro">Prezentare generală a înregistrărilor</caption>
@@ -222,6 +224,7 @@
       <caption xml:lang="lt">Įrašinėjama naudojant KRecorder</caption>
       <caption xml:lang="lv">Ierakstīšana ar „KRecorder“</caption>
       <caption xml:lang="nl">Opnemen met KRecorder</caption>
+      <caption xml:lang="nn">Lydopptak med KRecorder</caption>
       <caption xml:lang="pl">Nagrywanie w KRecorderze</caption>
       <caption xml:lang="pt-BR">Gravando com o KRecorder</caption>
       <caption xml:lang="ro">Înregistrarea cu KRecorder</caption>
@@ -261,6 +264,7 @@
       <caption xml:lang="lt">Garso įrašų klausymasis naudojant KRecorder</caption>
       <caption xml:lang="lv">Ierakstu klausīšanās ar „KRecorder“</caption>
       <caption xml:lang="nl">Luisteren naar opnamen met KRecorder</caption>
+      <caption xml:lang="nn">Lytt på opptak med KRecorder</caption>
       <caption xml:lang="pl">Posłuchaj nagrań z KRecorder</caption>
       <caption xml:lang="pt-BR">Ouvindo as gravações com o KRecorder</caption>
       <caption xml:lang="ro">Ascultați înregistrările cu KRecorder</caption>
@@ -300,6 +304,7 @@
       <caption xml:lang="lt">KRecorder nuostatos</caption>
       <caption xml:lang="lv">„KRecorder“ iestatījumi</caption>
       <caption xml:lang="nl">Instellingen van KRecorder</caption>
+      <caption xml:lang="nn">Innstillingar for KRecorder</caption>
       <caption xml:lang="pl">Ustawienia KRecordera</caption>
       <caption xml:lang="pt-BR">Configurações do KRecorder</caption>
       <caption xml:lang="ro">Configurările KRecorder</caption>
@@ -488,6 +493,7 @@
         <p xml:lang="ka">ცვლილებები:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
+        <p xml:lang="nn">Endringar:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
@@ -553,6 +559,7 @@
         <p xml:lang="ka">ცვლილებები:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
+        <p xml:lang="nn">Endringar:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
@@ -615,6 +622,7 @@
         <p xml:lang="ka">ცვლილებები:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
+        <p xml:lang="nn">Endringar:</p>
         <p xml:lang="pt-BR">Alterações:</p>
         <p xml:lang="ro">Modificări:</p>
         <p xml:lang="ru">Изменения:</p>
