@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-15 00:49+0000\n"
-"PO-Revision-Date: 2026-09-19 17:50+0200\n"
+"PO-Revision-Date: 2026-09-25 17:41+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -168,6 +168,8 @@ msgid ""
 "Are you sure you want to move the recording %1 to trash?<br/>It can be "
 "restored later."
 msgstr ""
+"Er du sikker på at du vil flytta opptaket %1 til papirkorga?<br/>Du kan "
+"gjenoppretta det seinare."
 
 #: contents/ui/RecordingListPage.qml:219
 #, kde-format
@@ -287,13 +289,13 @@ msgstr "Høgast"
 #: contents/ui/settings/SettingsComponent.qml:205
 #, kde-format
 msgid "Higher audio quality also increases file size."
-msgstr ""
+msgstr "Høgare lydkvalitet medførerer òg større filstorleik."
 
 #: contents/ui/settings/SettingsComponent.qml:230
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
-msgstr ""
+msgstr "Ikke alle kombinasjonar av kodekar og behaldarformat er kompatible."
 
 #: main.cpp:50
 #, kde-format
