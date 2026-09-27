@@ -30,9 +30,13 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     // set default style
+#ifdef Q_OS_ANDROID
+    QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
+#else
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
     }
+#endif
     // if using org.kde.desktop, ensure we use kde style if possible
     if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORMTHEME")) {
         qputenv("QT_QPA_PLATFORMTHEME", "kde");
