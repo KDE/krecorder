@@ -393,6 +393,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება</li>
+          <li xml:lang="ko">사용자 인터페이스 개선과 버그 수정</li>
           <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs</li>
           <li xml:lang="nn">Forbetra brukarflate og feilfiksar</li>
@@ -428,6 +429,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="ko">사용자 인터페이스를 개선하고 버그를 수정했습니다.</li>
           <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="nn">Forbetra brukarflate og feilfiksar.</li>
@@ -463,6 +465,7 @@
           <li xml:lang="ia">Melioramentos de interfacie e correctiones de faltas.</li>
           <li xml:lang="it">Miglioramenti all'interfaccia utente, e correzione di alcuni bug.</li>
           <li xml:lang="ka">ინტერფეისის გაუმჯობესება და შეცდომების გასწორება.</li>
+          <li xml:lang="ko">사용자 인터페이스를 개선하고 버그를 수정했습니다.</li>
           <li xml:lang="lt">Naudotojo sąsajos patobulinimai ir klaidų ištaisymai.</li>
           <li xml:lang="nl">Verbeteringen aan het gebruikersinterface en reparaties van bugs.</li>
           <li xml:lang="nn">Forbetra brukarflate og feilfiksar.</li>
@@ -496,6 +499,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="ko">변경 사항:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="nn">Endringar:</p>
@@ -526,6 +530,7 @@
           <li xml:lang="ia">Corrige permissiones de registrar audio sur android</li>
           <li xml:lang="it">Correzioni ai permessi di registrazione in Android</li>
           <li xml:lang="ka">გასწორდა ხმის ჩაწერის უფლებები Android-ზე</li>
+          <li xml:lang="ko">안드로이드에서의 오디오 녹음 권한 수정</li>
           <li xml:lang="lt">Pataisytas garso įrašų įrašinėjimo leidimai „Android“ sistemoje</li>
           <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
@@ -562,6 +567,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="ko">변경 사항:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="nn">Endringar:</p>
@@ -592,6 +598,7 @@
           <li xml:lang="ia">Specifica thema de reserva per semblar consistente in ambientes non-Plasma</li>
           <li xml:lang="it">Specifica il tema di riserva per garantire la coerenza in ambienti non Plasma</li>
           <li xml:lang="ka">გადართვის თემის მითითება ინტერფეისის მუდმივობისთვის არა-Plasma-ის გარემოებში</li>
+          <li xml:lang="ko">비 Plasma 환경에서 실행 중일 때 일관적인 모습을 위한 폴백 테마를 지정</li>
           <li xml:lang="lt">Nurodytas atsarginis apipavidalinimas, kad ne Plasma aplinkose būtų nuosekli išvaizda</li>
           <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
@@ -625,6 +632,7 @@
         <p xml:lang="ia">Modificationes:</p>
         <p xml:lang="it">Modifiche:</p>
         <p xml:lang="ka">ცვლილებები:</p>
+        <p xml:lang="ko">변경 사항:</p>
         <p xml:lang="lt">Pakeitimai:</p>
         <p xml:lang="nl">Wijzigingen:</p>
         <p xml:lang="nn">Endringar:</p>
@@ -655,6 +663,7 @@
           <li xml:lang="ia">Usa altessa de barras consistente per vistas de registrar e reproducer</li>
           <li xml:lang="it">Utilizza altezze delle barre uniformi per le viste di registrazione e di riproduzione</li>
           <li xml:lang="ka">მუდმივი პანელის სიმაღლეების გამოყენება ჩაწერისა და დაკვრის ხედებისთვის</li>
+          <li xml:lang="ko">녹음과 재생 보기에서 일관적인 바 높이 사용</li>
           <li xml:lang="lt">Naudoti įrašinėjimo ir atkūrimo rodiniuose nuoseklius juostos aukščius</li>
           <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
@@ -682,6 +691,7 @@
           <li xml:lang="ia">Corrigite nulle audio causante que le barras non es create del toto</li>
           <li xml:lang="it">Risolto il problema dell'audio che impediva la creazione delle barre</li>
           <li xml:lang="ka">გასწორდა შეცდომა, რომ ხმის გარეშე პანელები საერთოდ არ იქმნებოდა</li>
+          <li xml:lang="ko">오디오가 없을 때 바가 생성되지 않는 문제 수정</li>
           <li xml:lang="lt">Ištaisyta klaida, kai nebūdavo jokio garso ir visiškai nebūdavo kuriamos juostos</li>
           <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
@@ -709,6 +719,7 @@
           <li xml:lang="ia">Habilita cribrar de qml quando  compilate in modo de cribrar</li>
           <li xml:lang="it">Abilita la modalità di debug qml quando compilato in modalità di debug</li>
           <li xml:lang="ka">ჩაირთო QML-ის გამართვა გამართვის რეჟიმში აგებისას</li>
+          <li xml:lang="ko">디버그 모드로 컴파일했을 때 QML 디버깅 활성화</li>
           <li xml:lang="lt">Įjungtas qml derinimas, kai sukompiliuota derinimo veiksenoje</li>
           <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
