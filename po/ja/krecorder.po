@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-15 00:49+0000\n"
+"POT-Creation-Date: 2026-10-07 00:52+0000\n"
 "PO-Revision-Date: 2020-08-24 23:45-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -290,17 +290,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr ""
 
-#: main.cpp:50
+#: main.cpp:54
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
 msgstr ""
 
-#: main.cpp:52
+#: main.cpp:56
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr ""

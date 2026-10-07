@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-15 00:49+0000\n"
+"POT-Creation-Date: 2026-10-07 00:52+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -303,17 +303,17 @@ msgid ""
 "Some combinations of codecs and container formats may not be compatible."
 msgstr "कोडेक्स् तथा कन्टेनर् प्रारूपयोः केचन संयोजनाः सङ्गताः न भवेयुः ।"
 
-#: main.cpp:50
+#: main.cpp:54
 #, kde-format
 msgid "© 2020-2024 KDE Community"
 msgstr "© 2020-2024 केडीई समुदाय"
 
-#: main.cpp:51
+#: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
 msgstr "डेविन् लिन्"
 
-#: main.cpp:52
+#: main.cpp:56
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "जोनाह ब्रुचेर्ट"
