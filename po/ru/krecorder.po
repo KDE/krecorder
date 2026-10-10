@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-27 00:49+0000\n"
-"PO-Revision-Date: 2026-04-03 22:16+0200\n"
+"PO-Revision-Date: 2026-10-09 15:24+0200\n"
 "Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -258,7 +258,7 @@ msgstr "Формат контейнера"
 #: contents/ui/settings/SettingsComponent.qml:203
 #, kde-format
 msgid "Audio Quality"
-msgstr "Качество звука:"
+msgstr "Качество звука"
 
 #: contents/ui/settings/SettingsComponent.qml:204
 #, kde-format
