@@ -9,6 +9,7 @@
 
 #include <QAudioDevice>
 #include <QCoreApplication>
+#include <QDir>
 #include <QFileInfo>
 #include <QMediaDevices>
 #include <QMediaFormat>
@@ -249,6 +250,7 @@ void AudioRecorder::renameCurrentRecording()
                 cur++;
             }
 
+            QDir().mkpath(storageFolder());
             QFile(actualLocation().path()).rename(updatedPath);
         }
 
