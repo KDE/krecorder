@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-07 00:52+0000\n"
+"POT-Creation-Date: 2026-10-29 00:57+0000\n"
 "PO-Revision-Date: 2026-04-08 22:41+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -30,12 +30,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: audiorecorder.cpp:187
+#: audiorecorder.cpp:188
 #, kde-format
 msgid "Default file format"
 msgstr "預設檔案格式"
 
-#: audiorecorder.cpp:201
+#: audiorecorder.cpp:202
 #, kde-format
 msgid "Default audio codec"
 msgstr "預設音訊編碼"

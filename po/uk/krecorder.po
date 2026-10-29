@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-07 00:52+0000\n"
+"POT-Creation-Date: 2026-10-29 00:57+0000\n"
 "PO-Revision-Date: 2026-03-27 08:33+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -30,12 +30,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: audiorecorder.cpp:187
+#: audiorecorder.cpp:188
 #, kde-format
 msgid "Default file format"
 msgstr "Типовий формат файлів"
 
-#: audiorecorder.cpp:201
+#: audiorecorder.cpp:202
 #, kde-format
 msgid "Default audio codec"
 msgstr "Типовий аудіокодек"
