@@ -383,6 +383,7 @@
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb</li>
+          <li xml:lang="de">Verbesserungen der Benutzeroberfläche und Fehlerbehebungen</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak</li>
           <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
@@ -419,6 +420,7 @@
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
+          <li xml:lang="de">Verbesserungen der Benutzeroberfläche und Fehlerbehebungen.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
           <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
@@ -455,6 +457,7 @@
           <li xml:lang="ca">Millores en la interfície d'usuari i correccions d'errors.</li>
           <li xml:lang="ca-valencia">Millores en la interfície d'usuari i esmenes d'errors.</li>
           <li xml:lang="cs">Vylepšení uživatelského rozhraní a opravy chyb.</li>
+          <li xml:lang="de">Verbesserungen der Benutzeroberfläche und Fehlerbehebungen.</li>
           <li xml:lang="es">Mejoras de la interfaz de usuario y corrección de fallos.</li>
           <li xml:lang="eu">Erabiltzaile-interfazean hobekuntza eta akats zuzenketak.</li>
           <li xml:lang="fi">käyttöliittymäparannuksia ja viankorjauksia</li>
@@ -489,6 +492,7 @@
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
+        <p xml:lang="de">Änderungen:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fi">Muutoksia:</p>
@@ -557,6 +561,7 @@
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
+        <p xml:lang="de">Änderungen:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fi">Muutoksia:</p>
@@ -622,6 +627,7 @@
         <p xml:lang="ca">Canvis:</p>
         <p xml:lang="ca-valencia">Canvis:</p>
         <p xml:lang="cs">Změny:</p>
+        <p xml:lang="de">Änderungen:</p>
         <p xml:lang="es">Cambios:</p>
         <p xml:lang="eu">Aldaketak:</p>
         <p xml:lang="fi">Muutoksia:</p>
