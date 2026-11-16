@@ -537,6 +537,7 @@
           <li xml:lang="ko">안드로이드에서의 오디오 녹음 권한 수정</li>
           <li xml:lang="lt">Pataisytas garso įrašų įrašinėjimo leidimai „Android“ sistemoje</li>
           <li xml:lang="nl">Herstel de machtigingen voor audio-opname op Android</li>
+          <li xml:lang="nn">Retta løyve for lydopptak på Android</li>
           <li xml:lang="pt-BR">Corrigidas as permissões de gravação de áudio no Android</li>
           <li xml:lang="ro">Repară permisiunile de înregistrare a sunetului pe Android</li>
           <li xml:lang="ru">Исправлены права на запись звука в Android;</li>
@@ -606,6 +607,7 @@
           <li xml:lang="ko">비 Plasma 환경에서 실행 중일 때 일관적인 모습을 위한 폴백 테마를 지정</li>
           <li xml:lang="lt">Nurodytas atsarginis apipavidalinimas, kad ne Plasma aplinkose būtų nuosekli išvaizda</li>
           <li xml:lang="nl">Geef een terugvalthema op voor een consistente uitstraling in niet-Plasma-omgevingen.</li>
+          <li xml:lang="nn">Definerte eit reservetema, slik at alt ser konsistent ut òg utanfor Plasma</li>
           <li xml:lang="pt-BR">Especifica um tema alternativo para manter a consistência em ambientes que não sejam Plasma</li>
           <li xml:lang="ro">Specificați tematica de rezervă pentru un aspect consistent în alte medii decât Plasma</li>
           <li xml:lang="ru">В рабочих средах, отличных от Plasma, используется резервное оформление</li>
@@ -672,6 +674,7 @@
           <li xml:lang="ko">녹음과 재생 보기에서 일관적인 바 높이 사용</li>
           <li xml:lang="lt">Naudoti įrašinėjimo ir atkūrimo rodiniuose nuoseklius juostos aukščius</li>
           <li xml:lang="nl">Gebruik consistente balkhoogtes voor opname- en afspeelweergaven</li>
+          <li xml:lang="nn">Brukar no konsistente søylehøgder ved visualisering av opptak og avspeling</li>
           <li xml:lang="pt-BR">Uso de alturas de barra consistentes para as visualizações de gravação e reprodução</li>
           <li xml:lang="ro">Folosește înălțimi consistente ale barelor pentru vizualizările de înregistrare și redare</li>
           <li xml:lang="ru">используется одинаковая высота полос для представлений записи и воспроизведения;</li>
@@ -700,6 +703,7 @@
           <li xml:lang="ko">오디오가 없을 때 바가 생성되지 않는 문제 수정</li>
           <li xml:lang="lt">Ištaisyta klaida, kai nebūdavo jokio garso ir visiškai nebūdavo kuriamos juostos</li>
           <li xml:lang="nl">Opgelost: geen audio waardoor er helemaal geen balken werden aangemaakt</li>
+          <li xml:lang="nn">Retta feil med at mangel på lyd førte til at ingen søyler vart viste</li>
           <li xml:lang="pt-BR">Corrigido o problema em que a ausência de áudio impedia a criação das barras</li>
           <li xml:lang="ro">Reparat defectul că barele nu erau create deloc în lipsa sunetului</li>
           <li xml:lang="ru">Исправлена проблема, при которой отсутствие звука приводило к полному отсутствию полос;</li>
@@ -728,6 +732,7 @@
           <li xml:lang="ko">디버그 모드로 컴파일했을 때 QML 디버깅 활성화</li>
           <li xml:lang="lt">Įjungtas qml derinimas, kai sukompiliuota derinimo veiksenoje</li>
           <li xml:lang="nl">Schakel QML-debugging in wanneer de compilatie in debugmodus plaatsvindt</li>
+          <li xml:lang="nn">Slått på QML-feilsøking ved kompilering i feilsøkingsmodus</li>
           <li xml:lang="pt-BR">Ativada a depuração do QML quando compilado no modo de depuração</li>
           <li xml:lang="ro">Activează depanarea QML la compilarea în regim de depanare</li>
           <li xml:lang="ru">Добавлена возможность отладки QML в режиме отладки</li>
