@@ -50,7 +50,19 @@ Kirigami.ApplicationWindow {
         id: playerPageLoader
     }
 
-    onIsWidescreenChanged: switchToRecording(currentRecording);
+    // Rebuild the side pane only. switchToRecording() always calls play(), which is
+    // why resizing across the one-pane / two-pane threshold started playback (BUG 513644).
+    onIsWidescreenChanged: {
+        if (!isWidescreen || pageStack.depth >= 2) {
+            return;
+        }
+        if (currentRecording == null) {
+            playerPageLoader.setSource("DefaultPage.qml");
+        } else {
+            playerPageLoader.setSource("PlayerPage.qml", {recording: currentRecording});
+        }
+        pageStack.push(playerPageLoader.item);
+    }
 
     function openSettings() {
         if (isWidescreen) {
