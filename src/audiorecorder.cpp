@@ -18,6 +18,8 @@
 
 #include <KLocalizedString>
 
+#include <algorithm>
+
 #if QT_CONFIG(permissions)
 #include <QPermissions>
 #endif
@@ -57,10 +59,11 @@ AudioRecorder::AudioRecorder(QObject *parent)
     setQuality(QMediaRecorder::HighQuality);
     setEncodingMode(QMediaRecorder::ConstantQualityEncoding);
 
-    m_audioInput = new QAudioInput(QMediaDevices::defaultAudioInput(), this);
     m_mediaCaptureSession = new QMediaCaptureSession(this);
-    m_mediaCaptureSession->setAudioInput(m_audioInput);
     m_mediaCaptureSession->setRecorder(this);
+
+    updateAudioInput();
+    connect(new QMediaDevices(this), &QMediaDevices::audioInputsChanged, this, &AudioRecorder::updateAudioInput);
 
     // m_audioProbe = new AudioProber(parent, this);
     // m_audioProbe->setSource(actualLocation());
@@ -93,7 +96,43 @@ QString AudioRecorder::audioInput()
     return QString::fromUtf8(m_audioInput->device().id());
 }
 
-void AudioRecorder::setAudioInput(QAudioDevice device)
+void AudioRecorder::setAudioInput(const QAudioDevice &device)
+{
+    SettingsModel::instance()->setAudioInput(QString::fromUtf8(device.id()));
+    updateAudioInput();
+}
+
+// Use the input chosen by the user if it is available, otherwise the system default.
+// The user's choice stays saved, so it is picked up again once the device comes back.
+void AudioRecorder::updateAudioInput()
+{
+    const QList<QAudioDevice> inputs = QMediaDevices::audioInputs();
+    const QByteArray preferredId = SettingsModel::instance()->audioInput().toUtf8();
+
+    QAudioDevice device = QMediaDevices::defaultAudioInput();
+    if (!preferredId.isEmpty()) {
+        const auto it = std::find_if(inputs.begin(), inputs.end(), [&preferredId](const QAudioDevice &input) {
+            return input.id() == preferredId;
+        });
+        if (it != inputs.end()) {
+            device = *it;
+        }
+    }
+
+    if (m_audioInput) {
+        if (m_audioInput->device() == device) {
+            return;
+        }
+        // don't switch in the middle of a recording, unless the current input has gone away
+        if (recorderState() != QMediaRecorder::StoppedState && inputs.contains(m_audioInput->device())) {
+            return;
+        }
+    }
+
+    applyAudioInput(device);
+}
+
+void AudioRecorder::applyAudioInput(const QAudioDevice &device)
 {
     if (m_audioInput) {
         m_audioInput->deleteLater();
@@ -155,6 +194,9 @@ void AudioRecorder::reset()
 void AudioRecorder::handleStateChange(RecorderState state)
 {
     if (state == QMediaRecorder::StoppedState) {
+        // pick up any input change that was deferred during the recording
+        updateAudioInput();
+
         if (m_resetRequest) {
             // reset
             m_resetRequest = false;
