@@ -60,10 +60,12 @@ ColumnLayout {
 
             textRole: 'name'
             valueRole: 'deviceId'
-            onCurrentValueChanged: {
-                for (let device of mediaDevices.audioInputs) {
-                    if (device.id === currentValue) {
+            // only react to the user picking an entry, not to the list being rebuilt
+            onActivated: {
+                for (const device of mediaDevices.audioInputs) {
+                    if (String(device.id) === currentValue) {
                         AudioRecorder.setAudioInput(device);
+                        break;
                     }
                 }
             }
@@ -73,15 +75,18 @@ ColumnLayout {
             }
 
             function refreshAudioInputs() {
-                currentIndex = 0;
                 inputModel.clear();
+                let selected = -1;
                 for (let i = 0; i < mediaDevices.audioInputs.length; i++) {
-                    let device = mediaDevices.audioInputs[i];
-                    inputModel.append({"name": device.description, "deviceId": device.id});
-                    if (device.id == AudioRecorder.audioInput) {
-                        currentIndex = i;
+                    const device = mediaDevices.audioInputs[i];
+                    // ListModel can't hold the ArrayBuffer that QAudioDevice.id maps to, so store it as a string
+                    const deviceId = String(device.id);
+                    inputModel.append({"name": device.description, "deviceId": deviceId});
+                    if (deviceId === AudioRecorder.audioInput) {
+                        selected = i;
                     }
                 }
+                currentIndex = selected;
             }
 
             Component.onCompleted: {

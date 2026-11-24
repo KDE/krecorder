@@ -31,11 +31,12 @@ private:
     void handleStateChange(QMediaRecorder::RecorderState state);
     void updateFormats(QMediaFormat::FileFormat fileFormat = QMediaFormat::FileFormat::UnspecifiedFormat,
                        QMediaFormat::AudioCodec audioCodec = QMediaFormat::AudioCodec::Unspecified);
-    void updateAudioInputs();
+    void updateAudioInput();
+    void applyAudioInput(const QAudioDevice &device);
 
     QMediaFormat *m_mediaFormat;
-    QMediaCaptureSession *m_mediaCaptureSession;
-    QAudioInput *m_audioInput;
+    QMediaCaptureSession *m_mediaCaptureSession = nullptr;
+    QAudioInput *m_audioInput = nullptr;
 
     // AudioProber *m_audioProbe;
 
@@ -60,7 +61,7 @@ public:
     // AudioProber* prober();
 
     QString audioInput();
-    Q_INVOKABLE void setAudioInput(QAudioDevice device);
+    Q_INVOKABLE void setAudioInput(const QAudioDevice &device);
 
     QString audioCodec();
     void setAudioCodec(const QString &codec);

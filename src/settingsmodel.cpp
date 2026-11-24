@@ -61,6 +61,22 @@ void SettingsModel::setAudioCodec(const QString &audioCodec)
     Q_EMIT simpleAudioFormatChanged();
 }
 
+QString SettingsModel::audioInput() const
+{
+    return settings->value(QStringLiteral("General/audioInput")).toString();
+}
+
+void SettingsModel::setAudioInput(const QString &audioInput)
+{
+    if (this->audioInput() == audioInput) {
+        return;
+    }
+
+    settings->setValue(QStringLiteral("General/audioInput"), audioInput);
+
+    Q_EMIT audioInputChanged();
+}
+
 QString SettingsModel::containerFormat() const
 {
     qDebug() << "format " << settings->value(QStringLiteral("General/containerFormat")).toString();
