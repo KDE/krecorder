@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecorder\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-29 00:57+0000\n"
+"POT-Creation-Date: 2026-11-25 01:30+0000\n"
 "PO-Revision-Date: 2026-03-29 21:54+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -30,12 +30,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
 
-#: audiorecorder.cpp:188
+#: audiorecorder.cpp:230
 #, kde-format
 msgid "Default file format"
 msgstr "Fitxategi-formatu lehenetsia"
 
-#: audiorecorder.cpp:202
+#: audiorecorder.cpp:244
 #, kde-format
 msgid "Default audio codec"
 msgstr "Audio-kodek lehenetsia"
@@ -242,57 +242,57 @@ msgstr "Honi buruz"
 msgid "Audio Input"
 msgstr "Audio-sarrera"
 
-#: contents/ui/settings/SettingsComponent.qml:126
+#: contents/ui/settings/SettingsComponent.qml:131
 #, kde-format
 msgid "Advanced"
 msgstr "Aurreratua"
 
-#: contents/ui/settings/SettingsComponent.qml:133
+#: contents/ui/settings/SettingsComponent.qml:138
 #, kde-format
 msgid "Audio Codec"
 msgstr "Audio-kodeka"
 
-#: contents/ui/settings/SettingsComponent.qml:168
+#: contents/ui/settings/SettingsComponent.qml:173
 #, kde-format
 msgid "Container Format"
 msgstr "Edukitzaile formatua"
 
-#: contents/ui/settings/SettingsComponent.qml:203
+#: contents/ui/settings/SettingsComponent.qml:208
 #, kde-format
 msgid "Audio Quality"
 msgstr "Audio-kalitatea"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:209
 #, kde-format
 msgid "Lowest"
 msgstr "Apalena"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:209
 #, kde-format
 msgid "Low"
 msgstr "Apala"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:209
 #, kde-format
 msgid "Medium"
 msgstr "Ertaina"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:209
 #, kde-format
 msgid "High"
 msgstr "Handia"
 
-#: contents/ui/settings/SettingsComponent.qml:204
+#: contents/ui/settings/SettingsComponent.qml:209
 #, kde-format
 msgid "Highest"
 msgstr "Handiena"
 
-#: contents/ui/settings/SettingsComponent.qml:205
+#: contents/ui/settings/SettingsComponent.qml:210
 #, kde-format
 msgid "Higher audio quality also increases file size."
 msgstr "Audio-kalitate handiagoarekin fitxategi-neurria handitzen da."
 
-#: contents/ui/settings/SettingsComponent.qml:230
+#: contents/ui/settings/SettingsComponent.qml:235
 #, kde-format
 msgid ""
 "Some combinations of codecs and container formats may not be compatible."
